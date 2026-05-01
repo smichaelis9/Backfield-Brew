@@ -72,8 +72,8 @@ function isPitcher(player) {
 async function initRankingPage() {
   const status = document.getElementById('status');
   try {
-    const data = await loadAllSheets();
-    const players = data.bio.filter(p => p['Player-ID'] && p.Player);
+    const bio = await loadSheet('Biography Info');
+const players = bio.filter(p => p['Player-ID'] && p.Player);
     setupFilters(players);
     renderRanking(players);
     ['searchBox', 'typeFilter', 'positionFilter', 'levelFilter'].forEach(id => {
