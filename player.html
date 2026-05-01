@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Player Page</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header compact">
+    <a class="back-link" href="index.html">← Rankings</a>
+    <div id="playerHero"></div>
+  </header>
+
+  <main class="container player-grid">
+    <section class="card" id="bioCard"></section>
+    <section class="card" id="toolsCard"></section>
+    <section class="card wide" id="statsCard"></section>
+  </main>
+
+  <script src="script.js"></script>
+  <script>
+    window.addEventListener('DOMContentLoaded', initPlayerPage);
+  </script>
+</body>
+</html>

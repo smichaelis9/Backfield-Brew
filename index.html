@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Brewers Prospect Rankings</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div>
+      <p class="eyebrow">Backfield Brew</p>
+      <h1>Brewers Prospect Rankings</h1>
+      <p class="subhead">Search, sort, and click into full player pages powered by your Google Sheet.</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="controls-card">
+      <input id="searchBox" type="search" placeholder="Search player, position, level, country..." />
+      <select id="typeFilter">
+        <option value="">All Players</option>
+        <option value="Hitter">Hitters</option>
+        <option value="Pitcher">Pitchers</option>
+      </select>
+      <select id="positionFilter">
+        <option value="">All Positions</option>
+      </select>
+      <select id="levelFilter">
+        <option value="">All Levels</option>
+      </select>
+    </section>
+
+    <section class="table-card">
+      <div id="status" class="status">Loading rankings...</div>
+      <div class="table-wrap">
+        <table id="rankingTable">
+          <thead>
+            <tr>
+              <th data-sort="Rank">Rank</th>
+              <th data-sort="Player">Player</th>
+              <th data-sort="Position">Pos</th>
+              <th data-sort="Level">Level</th>
+              <th data-sort="Age">Age</th>
+              <th data-sort="OFP">OFP</th>
+              <th data-sort="Risk">Risk</th>
+              <th data-sort="Acquired">Acquired</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+  <script>
+    window.addEventListener('DOMContentLoaded', initRankingPage);
+  </script>
+</body>
+</html>
