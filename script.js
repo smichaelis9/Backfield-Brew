@@ -488,30 +488,9 @@ function renderStats(stats, isPitcher) {
     ${buildTable("Advanced / Batted Ball Stats", advancedCols)}
   `);
 }
-
 /* =========================
    VIDEOS
 ========================= */
-
-function getYouTubeEmbedUrl(url) {
-  const value = String(url || "").trim();
-
-  let match = value.match(/youtube\.com\/watch\?v=([^&]+)/);
-  if (match) return `https://www.youtube.com/embed/${match[1]}`;
-
-  match = value.match(/youtu\.be\/([^?&]+)/);
-  if (match) return `https://www.youtube.com/embed/${match[1]}`;
-
-  match = value.match(/youtube\.com\/shorts\/([^?&]+)/);
-  if (match) return `https://www.youtube.com/embed/${match[1]}`;
-
-  return "";
-}
-
-function isTwitterUrl(url) {
-  const value = String(url || "").trim().toLowerCase();
-  return value.includes("twitter.com/") || value.includes("x.com/");
-}
 
 function renderVideos(videos) {
   const expandedVideos = [];
@@ -528,60 +507,15 @@ function renderVideos(videos) {
         });
       }
     }
-
-    const singleLabel = get(row, ["Video Label", "Label", "Title", "Video", "Video Name"]);
-    const singleUrl = get(row, ["Video URL", "URL", "Link", "Video Link"]);
-
-    if (isRealValue(singleUrl)) {
-      expandedVideos.push({
-        label: isRealValue(singleLabel) ? singleLabel : "Video",
-        url: singleUrl
-      });
-    }
   });
 
   if (!expandedVideos.length) return;
 
-  const videoHTML = expandedVideos.map(v => {
-    const label = v.label;
-    const url = v.url;
-    const embedUrl = getYouTubeEmbedUrl(url);
-
-    if (embedUrl) {
-      return `
-        <div class="video-item">
-          <h3>${label}</h3>
-          <div class="video-embed">
-            <iframe
-              src="${embedUrl}"
-              title="${label}"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowfullscreen>
-            </iframe>
-          </div>
-        </div>
-      `;
-    }
-
-    if (isTwitterUrl(url)) {
-      return `
-        <div class="video-item">
-          <h3>${label}</h3>
-          <blockquote class="twitter-tweet">
-            <a href="${url}"></a>
-          </blockquote>
-        </div>
-      `;
-    }
-
-    return `
-      <div class="video-item">
-        <h3>${label}</h3>
-        <a class="video-link" href="${url}" target="_blank" rel="noopener">Watch Video</a>
-      </div>
-    `;
-  }).join("");
+  const videoHTML = expandedVideos.map(v => `
+    <a class="video-card-link" href="${v.url}" target="_blank" rel="noopener">
+      ${v.label}
+    </a>
+  `).join("");
 
   const container = document.querySelector(".container");
 
@@ -594,22 +528,5 @@ function renderVideos(videos) {
         </div>
       </section>
     `);
-
-    loadTwitterEmbeds();
   }
-}
-
-function loadTwitterEmbeds() {
-  if (window.twttr && window.twttr.widgets) {
-    window.twttr.widgets.load();
-    return;
-  }
-
-  if (document.querySelector('script[src="https://platform.twitter.com/widgets.js"]')) return;
-
-  const script = document.createElement("script");
-  script.src = "https://platform.twitter.com/widgets.js";
-  script.async = true;
-  script.charset = "utf-8";
-  document.body.appendChild(script);
 }
