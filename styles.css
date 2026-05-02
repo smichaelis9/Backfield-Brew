@@ -267,8 +267,12 @@ tr:nth-child(even) {
   line-height: 1.6;
   font-size: 15px;
   color: #222;
+  padding-left: 22px;
 }
 
+.scouting-notes li {
+  margin-bottom: 8px;
+}
 /* =========================
    MOBILE
 ========================= */
