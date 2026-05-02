@@ -209,7 +209,7 @@ function renderPlayerPage(bio, tools, stats, isPitcher) {
     <p><b>Risk:</b> ${get(bio, ["Risk"])}</p>
   `);
 
-  renderTools(tools);
+  renderTools(tools, isPitcher);
   renderStats(stats, isPitcher);
 }
 
@@ -217,15 +217,85 @@ function renderPlayerPage(bio, tools, stats, isPitcher) {
    TOOLS
 ========================= */
 
-function renderTools(tools) {
+function renderTools(tools, isPitcher) {
+  if (!tools) {
+    setHTML("toolsCard", `<h2>Tools</h2><p>No tools found.</p>`);
+    return;
+  }
+
+  if (isPitcher) {
+    const pitchMap = [
+      ["Primary Pitch", "Pitch #1"],
+      ["Secondary #1", "Pitch #2"],
+      ["Secondary #2", "Pitch #3"],
+      ["Secondary #3", "Pitch #4"],
+      ["Secondary #4", "Pitch #5"],
+      ["Secondary #5", "Pitch #6"]
+    ];
+
+    const pitchTools = pitchMap
+      .map(([nameCol, gradeCol]) => {
+        const pitchName = get(tools, [nameCol]);
+        const grade = get(tools, [gradeCol]);
+
+        if (!pitchName || !grade) return "";
+
+        return `
+          <div class="tool-box">
+            <div class="tool-label">${pitchName}</div>
+            <div class="tool-value">${grade}</div>
+          </div>
+        `;
+      })
+      .join("");
+
+    const commandControl = `
+      ${get(tools, ["Command"]) ? `
+        <div class="tool-box">
+          <div class="tool-label">Command</div>
+          <div class="tool-value">${get(tools, ["Command"])}</div>
+        </div>
+      ` : ""}
+
+      ${get(tools, ["Control"]) ? `
+        <div class="tool-box">
+          <div class="tool-label">Control</div>
+          <div class="tool-value">${get(tools, ["Control"])}</div>
+        </div>
+      ` : ""}
+
+      ${get(tools, ["Fastball Velocity"]) ? `
+        <div class="tool-box">
+          <div class="tool-label">Fastball Velocity</div>
+          <div class="tool-value">${get(tools, ["Fastball Velocity"])}</div>
+        </div>
+      ` : ""}
+    `;
+
+    setHTML("toolsCard", `
+      <h2>Pitch Arsenal</h2>
+      <div class="tool-grid">
+        ${pitchTools}
+        ${commandControl}
+      </div>
+    `);
+
+    return;
+  }
+
   const skip = ["Player-ID", "Player ID", "Player", "Tools Updated"];
 
   setHTML("toolsCard", `
     <h2>Tools</h2>
     <div class="tool-grid">
-      ${Object.entries(tools || {})
+      ${Object.entries(tools)
         .filter(([k, v]) => !skip.includes(k) && v)
-        .map(([k, v]) => `<div><b>${k}:</b> ${v}</div>`)
+        .map(([k, v]) => `
+          <div class="tool-box">
+            <div class="tool-label">${k}</div>
+            <div class="tool-value">${v}</div>
+          </div>
+        `)
         .join("")}
     </div>
   `);
