@@ -24,10 +24,8 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-
   padding: 40px 24px 30px;
   text-align: center;
-
   border-top: 4px solid #1b2a4a;
   border-bottom: 4px solid #1b2a4a;
   position: relative;
@@ -90,9 +88,12 @@ body {
 ========================= */
 
 .player-hero-wrap {
+  position: relative;
   display: flex;
   align-items: center;
   gap: 24px;
+  min-height: 170px;
+  padding-right: 120px;
 }
 
 .player-photo {
@@ -112,31 +113,34 @@ body {
 }
 
 .player-grade-box {
-  margin-left: auto;
+  position: absolute;
+  top: 10px;
+  right: 10px;
   display: flex;
-  gap: 14px;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .player-grade-box > div {
   background: #ffc52f;
   color: #1b2a4a;
-  padding: 14px 18px;
+  padding: 12px 16px;
   border-radius: 8px;
   text-align: center;
-  min-width: 80px;
+  min-width: 74px;
   font-weight: 800;
 }
 
 .grade-label {
   display: block;
-  font-size: 12px;
+  font-size: 11px;
   text-transform: uppercase;
   letter-spacing: 0.08em;
 }
 
 .grade-value {
   display: block;
-  font-size: 34px;
+  font-size: 28px;
   line-height: 1;
 }
 
@@ -178,7 +182,7 @@ body {
 }
 
 /* =========================
-   TABLES (STATS)
+   TABLES
 ========================= */
 
 .table-wrap {
@@ -207,24 +211,9 @@ tr:nth-child(even) {
   background: #f8f9fb;
 }
 
-/* =========================
-   RANKINGS TABLE
-========================= */
-
-#rankingTable {
-  width: 100%;
-  border-collapse: collapse;
-}
-
-#rankingTable th {
-  background: #1b2a4a;
-  color: white;
-  padding: 8px;
-}
-
+#rankingTable th,
 #rankingTable td {
   padding: 8px;
-  border-bottom: 1px solid #ddd;
 }
 
 #rankingTable tr:hover {
@@ -239,10 +228,14 @@ tr:nth-child(even) {
   .player-hero-wrap {
     flex-direction: column;
     text-align: center;
+    padding-right: 0;
   }
 
   .player-grade-box {
-    margin-left: 0;
+    position: static;
+    margin-top: 12px;
+    flex-direction: row;
+    justify-content: center;
   }
 
   .site-nav {
