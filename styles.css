@@ -17,10 +17,16 @@ body {
 }
 
 .site-header {
-  background: linear-gradient(135deg, var(--navy), #1f3f77);
-  color: white;
-  padding: 42px max(20px, 7vw);
-  border-bottom: 6px solid var(--gold);
+  background-image: url('header-bg.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  padding: 40px 24px 30px;
+  text-align: center;
+
+  border-top: 4px solid #1b2a4a;
+  border-bottom: 4px solid #1b2a4a;
 }
 .site-header.compact { padding-top: 24px; }
 .eyebrow {
