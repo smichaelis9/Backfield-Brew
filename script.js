@@ -530,3 +530,14 @@ function renderVideos(videos) {
     `);
   }
 }
+function handleHeaderButtons() {
+  const backBtn = document.getElementById("backToRankings");
+
+  if (!backBtn) return;
+
+  if (window.location.pathname.includes("player.html")) {
+    backBtn.style.display = "inline-block";
+  } else {
+    backBtn.style.display = "none";
+  }
+}
