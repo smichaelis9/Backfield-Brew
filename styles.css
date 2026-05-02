@@ -284,56 +284,37 @@ tr:nth-child(even) {
 
 .video-grid {
   display: grid;
-  grid-template-columns: 1fr;
-  gap: 18px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
 }
 
-.video-item {
+.video-card-link {
+  display: block;
   background: #f4f6f8;
   border: 1px solid #e0e0e0;
+  border-left: 5px solid #ffc52f;
   border-radius: 10px;
   padding: 14px;
-}
-
-.video-item h3 {
-  margin: 0 0 10px;
   color: #1b2a4a;
-}
-
-.video-embed {
-  position: relative;
-  width: 100%;
-  padding-bottom: 56.25%;
-  height: 0;
-  overflow: hidden;
-  border-radius: 10px;
-  background: #111;
-}
-
-.video-embed iframe {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.video-link {
-  display: inline-block;
-  background: #1b2a4a;
-  color: #ffc52f;
-  padding: 10px 14px;
-  border-radius: 8px;
   text-decoration: none;
   font-weight: 700;
 }
 
-.video-link:hover {
+.video-card-link:hover {
   background: #ffc52f;
   color: #1b2a4a;
 }
 
-.twitter-tweet {
-  margin: 0 auto !important;
+@media (max-width: 900px) {
+  .video-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .video-grid {
+    grid-template-columns: 1fr;
+  }
 }
 /* =========================
    MOBILE
