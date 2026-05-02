@@ -305,3 +305,39 @@ tr:nth-child(even) {
     flex-wrap: wrap;
   }
 }
+@media (max-width: 700px) {
+  .ranking-scroll {
+    overflow-x: auto;
+    width: 100%;
+  }
+
+  #rankingTable {
+    min-width: 760px;
+  }
+
+  #rankingTable th:nth-child(1),
+  #rankingTable td:nth-child(1) {
+    position: sticky;
+    left: 0;
+    z-index: 3;
+    background: white;
+    min-width: 52px;
+  }
+
+  #rankingTable th:nth-child(2),
+  #rankingTable td:nth-child(2) {
+    position: sticky;
+    left: 52px;
+    z-index: 3;
+    background: white;
+    min-width: 150px;
+    text-align: left;
+  }
+
+  #rankingTable th:nth-child(1),
+  #rankingTable th:nth-child(2) {
+    background: #1b2a4a;
+    color: white;
+    z-index: 4;
+  }
+}
