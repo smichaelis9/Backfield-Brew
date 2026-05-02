@@ -19,7 +19,7 @@ const SHEET_GIDS = {
 
 function sheetUrl(sheetName) {
   const gid = SHEET_GIDS[sheetName];
-  if (!gid) throw new Error(`No GID configured for sheet: ${sheetName}`);
+  if (!gid) throw new Error(`Missing GID for ${sheetName}`);
   return `https://docs.google.com/spreadsheets/d/e/${PUB_ID}/pub?gid=${gid}&single=true&output=csv`;
 }
 
@@ -36,37 +36,29 @@ function num(value) {
 }
 
 async function loadSheet(sheetName) {
-  const response = await fetch(sheetUrl(sheetName));
-  if (!response.ok) throw new Error(`Failed to load ${sheetName}`);
-
-  const text = await response.text();
-  return parseCSV(text);
+  const res = await fetch(sheetUrl(sheetName));
+  if (!res.ok) throw new Error(`Failed loading ${sheetName}`);
+  return parseCSV(await res.text());
 }
 
 function parseCSV(text) {
   const rows = [];
-  let row = [];
-  let cell = "";
-  let inQuotes = false;
+  let row = [], cell = '', inQuotes = false;
 
   for (let i = 0; i < text.length; i++) {
-    const char = text[i];
-    const next = text[i + 1];
+    const char = text[i], next = text[i + 1];
 
     if (char === '"' && inQuotes && next === '"') {
-      cell += '"';
-      i++;
+      cell += '"'; i++;
     } else if (char === '"') {
       inQuotes = !inQuotes;
-    } else if (char === "," && !inQuotes) {
-      row.push(cell.trim());
-      cell = "";
-    } else if ((char === "\n" || char === "\r") && !inQuotes) {
-      if (char === "\r" && next === "\n") i++;
+    } else if (char === ',' && !inQuotes) {
+      row.push(cell.trim()); cell = '';
+    } else if ((char === '\n' || char === '\r') && !inQuotes) {
+      if (char === '\r' && next === '\n') i++;
       row.push(cell.trim());
       if (row.some(v => v !== "")) rows.push(row);
-      row = [];
-      cell = "";
+      row = []; cell = '';
     } else {
       cell += char;
     }
@@ -77,14 +69,16 @@ function parseCSV(text) {
     rows.push(row);
   }
 
-  const headers = rows.shift().map(h =>
-    h.replace(/^\uFEFF/, "").trim()
-  );
+  const headers = rows.shift().map(h => h.replace(/^\uFEFF/, "").trim());
 
   return rows.map(r =>
     Object.fromEntries(headers.map((h, i) => [h, r[i] || ""]))
   );
 }
+
+/* =========================
+   RANKING PAGE
+========================= */
 
 async function initRankingPage() {
   const status = document.getElementById("status");
@@ -92,83 +86,65 @@ async function initRankingPage() {
   try {
     const players = await loadSheet("Biography Info");
 
-    const filteredPlayers = players.filter(p => {
-      const id = get(p, ["Player-ID", "Player ID", "Player Id", "PlayerID"]);
-      const player = get(p, ["Player", "Name"]);
-
+    const clean = players.filter(p => {
+      const id = get(p, ["Player-ID", "Player ID"]);
+      const name = get(p, ["Player", "Name"]);
       p["Player-ID"] = id;
-      p["Player"] = player;
-
-      return id && player;
+      p["Player"] = name;
+      return id && name;
     });
 
-    if (!filteredPlayers.length) {
-      status.textContent = "No players found.";
-      return;
-    }
-
-    renderRanking(filteredPlayers);
+    renderRanking(clean);
     status.textContent = "";
+
   } catch (err) {
-    status.textContent = `Error loading data: ${err.message}`;
+    status.textContent = err.message;
   }
 }
 
 function renderRanking(players) {
   document.querySelector("#rankingTable tbody").innerHTML = players
     .sort((a, b) => num(get(a, ["Rank"])) - num(get(b, ["Rank"])))
-    .map(p => {
-      const id = get(p, ["Player-ID", "Player ID", "Player Id", "PlayerID"]);
-      const player = get(p, ["Player", "Name"]);
-      const rank = get(p, ["Rank"]);
-      const position = get(p, ["Position", "Pos"]);
-      const level = get(p, ["Level"]);
-      const age = get(p, ["Age"]);
-      const ofp = get(p, ["OFP"]);
-      const risk = get(p, ["Risk"]);
-      const acquired = get(p, ["Acquired"]);
-
-      return `
-        <tr>
-          <td>${rank}</td>
-          <td><a href="player.html?id=${encodeURIComponent(id)}">${player}</a></td>
-          <td>${position}</td>
-          <td>${level}</td>
-          <td>${age}</td>
-          <td>${ofp}</td>
-          <td>${risk}</td>
-          <td>${acquired}</td>
-        </tr>
-      `;
-    })
-    .join("");
+    .map(p => `
+      <tr>
+        <td>${get(p, ["Rank"])}</td>
+        <td><a href="player.html?id=${encodeURIComponent(get(p, ["Player-ID"]))}">${get(p, ["Player"])}</a></td>
+        <td>${get(p, ["Position", "Pos"])}</td>
+        <td>${get(p, ["Level"])}</td>
+        <td>${get(p, ["Age"])}</td>
+        <td>${get(p, ["OFP"])}</td>
+        <td>${get(p, ["Risk"])}</td>
+        <td>${get(p, ["Acquired"])}</td>
+      </tr>
+    `).join("");
 }
+
+/* =========================
+   PLAYER PAGE
+========================= */
+
 async function initPlayerPage() {
   const id = new URLSearchParams(window.location.search).get("id");
-  const container = document.querySelector(".container");
 
   try {
     const players = await loadSheet("Biography Info");
 
-    const bio = players.find(p => {
-      const rowId = get(p, ["Player-ID", "Player ID", "Player Id", "PlayerID"]);
-      return rowId === id;
-    });
+    const bio = players.find(p =>
+      get(p, ["Player-ID", "Player ID"]) === id
+    );
 
     if (!bio) throw new Error("Player not found");
 
-    const playerType = get(bio, ["Player Type"]);
-    const isPitcherType = playerType.toLowerCase().includes("pitch");
+    const isPitcher = get(bio, ["Player Type"]).toLowerCase().includes("pitch");
 
-    const toolsSheet = isPitcherType ? "Pitcher Tools" : "Hitter Tools";
+    const toolsSheet = isPitcher ? "Pitcher Tools" : "Hitter Tools";
     const toolsRows = await loadSheet(toolsSheet);
 
-    const tools = toolsRows.find(p => {
-      const rowId = get(p, ["Player-ID", "Player ID", "Player Id", "PlayerID"]);
-      return rowId === id;
-    });
+    const tools = toolsRows.find(p =>
+      get(p, ["Player-ID", "Player ID"]) === id
+    );
 
-    const statSheets = isPitcherType
+    const statSheets = isPitcher
       ? ["Pitcher Stats 2023", "Pitcher Stats 2024", "Pitcher Stats 2025", "Pitcher Stats 2026"]
       : ["Hitter Stats 2023", "Hitter Stats 2024", "Hitter Stats 2025", "Hitter Stats 2026"];
 
@@ -176,175 +152,86 @@ async function initPlayerPage() {
 
     for (const sheet of statSheets) {
       const rows = await loadSheet(sheet);
-      const row = rows.find(p => {
-        const rowId = get(p, ["Player-ID", "Player ID", "Player Id", "PlayerID"]);
-        return rowId === id;
-      });
+      const row = rows.find(p =>
+        get(p, ["Player-ID", "Player ID"]) === id
+      );
 
       if (row) {
         stats.push({
-          year: sheet.match(/\d{4}/)?.[0],
+          year: sheet.match(/\d{4}/)[0],
           row
         });
       }
     }
 
-    renderPlayerPage(bio, tools, stats, isPitcherType);
+    renderPlayerPage(bio, tools, stats, isPitcher);
 
   } catch (err) {
-    container.innerHTML = `<section class="card"><h2>Error</h2><p>${err.message}</p></section>`;
+    document.body.innerHTML = `<h2>${err.message}</h2>`;
   }
 }
 
-function renderPlayerPage(bio, tools, stats, isPitcherType) {
-  const player = get(bio, ["Player", "Name"]);
-  const rank = get(bio, ["Rank"]);
-  const position = get(bio, ["Position", "Pos"]);
-  const level = get(bio, ["Level"]);
-  const age = get(bio, ["Age"]);
-  const ofp = get(bio, ["OFP"]);
-  const risk = get(bio, ["Risk"]);
-  const acquired = get(bio, ["Acquired"]);
-  const height = get(bio, ["Height"]);
-  const weight = get(bio, ["Weight"]);
-  const batThrow = get(bio, ["Bat / Throw", "B/T"]);
-  const birthday = get(bio, ["Birthday"]);
-  const signedBy = get(bio, ["Signed By"]);
-  const bonus = get(bio, ["Signing Bonus"]);
-  const schoolCountry = get(bio, ["School / Country"]);
-  const draftIFA = get(bio, ["Draft/IFA", "Draft / IFA"]);
-  const picture = get(bio, ["Picture", "Image", "Photo"]);
-
-  document.title = `${player} | Backfield Brew`;
-
+function renderPlayerPage(bio, tools, stats, isPitcher) {
   document.getElementById("playerHero").innerHTML = `
-    <div class="player-hero-wrap">
-      ${picture ? `<img class="player-photo" src="${picture}" alt="${player}">` : ""}
-      <div>
-        <h1>${player}</h1>
-        <div class="player-meta">#${rank} | ${position} | ${level} | OFP ${ofp}</div>
-      </div>
-    </div>
+    <h1>${get(bio, ["Player"])}</h1>
+    <p>#${get(bio, ["Rank"])} | ${get(bio, ["Position", "Pos"])} | ${get(bio, ["Level"])}</p>
   `;
 
   document.getElementById("bioCard").innerHTML = `
-    <h2 class="section-title">Biography</h2>
-    <div class="kv">
-      <strong>Position</strong><span>${position}</span>
-      <strong>Level</strong><span>${level}</span>
-      <strong>Age</strong><span>${age}</span>
-      <strong>Height / Weight</strong><span>${height}, ${weight}</span>
-      <strong>Bat / Throw</strong><span>${batThrow}</span>
-      <strong>Birthday</strong><span>${birthday}</span>
-      <strong>School / Country</strong><span>${schoolCountry}</span>
-      <strong>Draft / IFA</strong><span>${draftIFA}</span>
-      <strong>Acquired</strong><span>${acquired}</span>
-      <strong>Signed By</strong><span>${signedBy}</span>
-      <strong>Signing Bonus</strong><span>${bonus}</span>
-      <strong>OFP</strong><span>${ofp}</span>
-      <strong>Risk</strong><span>${risk}</span>
-    </div>
+    <h2>Biography</h2>
+    <p><b>Age:</b> ${get(bio, ["Age"])}</p>
+    <p><b>Height/Weight:</b> ${get(bio, ["Height"])}, ${get(bio, ["Weight"])}</p>
+    <p><b>B/T:</b> ${get(bio, ["Bat / Throw"])}</p>
+    <p><b>Signed By:</b> ${get(bio, ["Signed By"])}</p>
+    <p><b>OFP:</b> ${get(bio, ["OFP"])}</p>
+    <p><b>Risk:</b> ${get(bio, ["Risk"])}</p>
   `;
 
-  renderTools(tools, isPitcherType);
-  renderStats(stats, isPitcherType);
+  renderTools(tools);
+  renderStats(stats, isPitcher);
 }
-function renderTools(tools, isPitcherType) {
-  const toolsCard = document.getElementById("toolsCard");
-  if (!toolsCard) return;
 
-  if (!tools) {
-    toolsCard.innerHTML = `<h2 class="section-title">Tools</h2><p>No tools found.</p>`;
-    return;
-  }
+/* =========================
+   TOOLS
+========================= */
 
-  const skip = ["Player-ID", "Player ID", "Player", "Tools Updated"];
+function renderTools(tools) {
+  const skip = ["Player-ID", "Player", "Tools Updated"];
 
-  toolsCard.innerHTML = `
-    <h2 class="section-title">${isPitcherType ? "Pitcher Tools" : "Hitter Tools"}</h2>
+  document.getElementById("toolsCard").innerHTML = `
+    <h2>Tools</h2>
     <div class="tool-grid">
-      ${Object.entries(tools)
-        .filter(([key, value]) => !skip.includes(key) && value)
-        .map(([key, value]) => `
-          <div class="tool-box">
-            <div class="tool-label">${key}</div>
-            <div class="tool-value">${value}</div>
-          </div>
-        `)
+      ${Object.entries(tools || {})
+        .filter(([k, v]) => !skip.includes(k) && v)
+        .map(([k, v]) => `<div><b>${k}:</b> ${v}</div>`)
         .join("")}
     </div>
   `;
 }
 
-function renderStats(stats, isPitcherType) {
-  const statsCard = document.getElementById("statsCard");
-  if (!statsCard) return;
+/* =========================
+   STATS
+========================= */
 
-  if (!stats.length) {
-    statsCard.innerHTML = `<h2 class="section-title">Stats</h2><p>No stats found.</p>`;
-    return;
-  }
+function renderStats(stats, isPitcher) {
+  const cols = isPitcher
+    ? ["ERA","FIP","IP","K/9","BB/9","WHIP"]
+    : ["PA","H","HR","OPS","wRC+","K%","BB%"];
 
-  const columns = isPitcherType
-    ? ["ERA", "FIP", "xFIP", "IP", "G", "GS", "K/9", "BB/9", "K/BB", "K%", "BB%", "K-BB %", "SwStr %", "Whiff%", "WHIP", "GB%", "HR/FB"]
-    : ["PA", "H", "2B", "3B", "HR", "OBP", "SLG", "OPS", "wRC+", "BABIP", "wOBA", "K%", "BB%", "SwStr %", "Whiff%", "SB", "CS", "SB%"];
-
-  statsCard.innerHTML = `
-    <h2 class="section-title">Stats</h2>
-    <div class="table-wrap">
-      <table>
-        <thead>
+  document.getElementById("statsCard").innerHTML = `
+    <h2>Stats</h2>
+    <table>
+      <thead>
+        <tr><th>Year</th>${cols.map(c => `<th>${c}</th>`).join("")}</tr>
+      </thead>
+      <tbody>
+        ${stats.map(s => `
           <tr>
-            <th>Year</th>
-            ${columns.map(col => `<th>${col}</th>`).join("")}
+            <td>${s.year}</td>
+            ${cols.map(c => `<td>${s.row[c] || ""}</td>`).join("")}
           </tr>
-        </thead>
-        <tbody>
-          ${stats.map(season => `
-            <tr>
-              <td>${season.year}</td>
-              ${columns.map(col => `<td>${season.row[col] || ""}</td>`).join("")}
-            </tr>
-          `).join("")}
-        </tbody>
-      </table>
-    </div>
+        `).join("")}
+      </tbody>
+    </table>
   `;
 }
-
-  document.title = `${player} | Backfield Brew`;
-
-  const hero = document.getElementById("playerHero");
-  if (hero) {
-    hero.innerHTML = `
-      <div class="player-hero-wrap">
-        ${picture ? `<img class="player-photo" src="${picture}" alt="${player}">` : ""}
-        <div>
-          <h1>${player}</h1>
-          <div class="player-meta">#${rank} | ${position} | ${level} | OFP ${ofp}</div>
-        </div>
-      </div>
-    `;
-  }
-
-  const bioCard = document.getElementById("bioCard");
-  if (bioCard) {
-    bioCard.innerHTML = `
-      <h2 class="section-title">Biography</h2>
-      <div class="kv">
-        <strong>Position</strong><span>${position}</span>
-        <strong>Level</strong><span>${level}</span>
-        <strong>Age</strong><span>${age}</span>
-        <strong>Height / Weight</strong><span>${height}, ${weight}</span>
-        <strong>Bat / Throw</strong><span>${batThrow}</span>
-        <strong>Birthday</strong><span>${birthday}</span>
-        <strong>School / Country</strong><span>${schoolCountry}</span>
-        <strong>Draft / IFA</strong><span>${draftIFA}</span>
-        <strong>Acquired</strong><span>${acquired}</span>
-        <strong>Signed By</strong><span>${signedBy}</span>
-        <strong>Signing Bonus</strong><span>${bonus}</span>
-        <strong>OFP</strong><span>${ofp}</span>
-        <strong>Risk</strong><span>${risk}</span>
-      </div>
-    `;
-  }
