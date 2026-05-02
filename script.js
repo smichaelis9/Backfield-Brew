@@ -17,9 +17,18 @@ const SHEETS = {
 let cache = {};
 let currentSort = { key: 'Rank', dir: 'asc' };
 
+const SHEET_GIDS = {
+  "Biography Info": "536791829"
+};
+
 function sheetUrl(sheetName) {
-  const encoded = encodeURIComponent(sheetName);
-  return `https://docs.google.com/spreadsheets/d/e/${PUB_ID}/gviz/tq?tqx=out:csv&sheet=${encoded}`;
+  const gid = SHEET_GIDS[sheetName];
+
+  if (!gid) {
+    throw new Error(`No GID configured for sheet: ${sheetName}`);
+  }
+
+  return `https://docs.google.com/spreadsheets/d/e/${PUB_ID}/pub?gid=${gid}&single=true&output=csv`;
 }
 
 async function loadSheet(sheetName) {
