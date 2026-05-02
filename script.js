@@ -76,10 +76,6 @@ function parseCSV(text) {
   );
 }
 
-/* =========================
-   SAFE DOM HELPER
-========================= */
-
 function setHTML(id, html) {
   const el = document.getElementById(id);
   if (el) el.innerHTML = html;
@@ -188,9 +184,19 @@ async function initPlayerPage() {
 ========================= */
 
 function renderPlayerPage(bio, tools, stats, isPitcher) {
+  const playerName = get(bio, ["Player", "Name"]);
+  const picture = get(bio, ["Picture", "Image", "Photo", "Picture URL", "Image URL"]);
+
   setHTML("playerHero", `
-    <h1>${get(bio, ["Player"])}</h1>
-    <p>#${get(bio, ["Rank"])} | ${get(bio, ["Position", "Pos"])} | ${get(bio, ["Level"])}</p>
+    <div class="player-hero-wrap">
+      ${picture
+        ? `<img class="player-photo" src="${picture}" alt="${playerName}" onerror="this.style.display='none';">`
+        : ""}
+      <div>
+        <h1>${playerName}</h1>
+        <p>#${get(bio, ["Rank"])} | ${get(bio, ["Position", "Pos"])} | ${get(bio, ["Level"])}</p>
+      </div>
+    </div>
   `);
 
   setHTML("bioCard", `
