@@ -154,7 +154,7 @@ a.player-link:hover { text-decoration: underline; }
   width: 160px;
   height: 160px;
   object-fit: cover;
-  border-radius: 18px;
+  border-radius: 6px; /* this makes it square */
   border: 3px solid #ffc52f;
 }
 
