@@ -251,10 +251,15 @@ async function initPlayerPage() {
       }
     }
 
-    const videoRows = await loadSheet("Videos");
-    const videos = videoRows.filter(v =>
-      get(v, ["Player-ID", "Player ID"]) === id
-    );
+    let videos = [];
+    try {
+      const videoRows = await loadSheet("Videos");
+      videos = videoRows.filter(v =>
+        get(v, ["Player-ID", "Player ID"]) === id
+      );
+    } catch (videoErr) {
+      videos = [];
+    }
 
     renderPlayerPage(bio, tools, stats, isPitcher, videos);
   } catch (err) {
@@ -503,6 +508,11 @@ function getYouTubeEmbedUrl(url) {
   return "";
 }
 
+function isTwitterUrl(url) {
+  const value = String(url || "").trim().toLowerCase();
+  return value.includes("twitter.com/") || value.includes("x.com/");
+}
+
 function renderVideos(videos) {
   const realVideos = (videos || []).filter(v => {
     const url = get(v, ["Video URL", "URL", "Link", "Video Link"]);
@@ -533,6 +543,17 @@ function renderVideos(videos) {
       `;
     }
 
+    if (isTwitterUrl(url)) {
+      return `
+        <div class="video-item">
+          <h3>${label}</h3>
+          <blockquote class="twitter-tweet">
+            <a href="${url}"></a>
+          </blockquote>
+        </div>
+      `;
+    }
+
     return `
       <div class="video-item">
         <h3>${label}</h3>
@@ -552,5 +573,23 @@ function renderVideos(videos) {
         </div>
       </section>
     `);
+
+    loadTwitterEmbeds();
   }
+}
+
+function loadTwitterEmbeds() {
+  if (window.twttr && window.twttr.widgets) {
+    window.twttr.widgets.load();
+    return;
+  }
+
+  const existingScript = document.querySelector('script[src="https://platform.twitter.com/widgets.js"]');
+  if (existingScript) return;
+
+  const script = document.createElement("script");
+  script.src = "https://platform.twitter.com/widgets.js";
+  script.async = true;
+  script.charset = "utf-8";
+  document.body.appendChild(script);
 }
