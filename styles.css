@@ -16,7 +16,7 @@ body {
 }
 
 /* =========================
-   HEADER
+   HEADER (REDUCED HEIGHT)
 ========================= */
 
 .site-header {
@@ -24,10 +24,14 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  padding: 40px 24px 30px;
+
+  padding: 18px 16px; /* reduced height */
+
   text-align: center;
-  border-top: 4px solid #1b2a4a;
-  border-bottom: 4px solid #1b2a4a;
+
+  border-top: 3px solid #1b2a4a;
+  border-bottom: 3px solid #1b2a4a;
+
   position: relative;
 }
 
@@ -44,26 +48,27 @@ body {
 }
 
 .site-logo {
-  max-width: 520px;
-  width: 90%;
-  margin: 0 auto 18px;
+  max-width: 260px;
+  width: 70%;
+  margin: 0 auto 8px;
   display: block;
 }
 
 .site-nav {
   display: flex;
   justify-content: center;
-  gap: 14px;
+  gap: 10px;
 }
 
 .site-nav a {
   background: rgba(0,0,0,0.6);
   color: #ffc52f;
-  padding: 10px 16px;
+  padding: 6px 12px;
   border-radius: 999px;
   border: 1px solid #ffc52f;
   text-decoration: none;
   font-weight: 700;
+  font-size: 13px;
 }
 
 .site-nav a:hover {
@@ -112,18 +117,6 @@ body {
   margin: 0 0 6px;
 }
 
-.two-col {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 20px;
-}
-
-/* Make it stack on mobile */
-@media (max-width: 800px) {
-  .two-col {
-    grid-template-columns: 1fr;
-  }
-}
 .player-grade-box {
   position: absolute;
   top: 10px;
@@ -162,6 +155,16 @@ body {
 
 #bioCard p {
   margin: 6px 0;
+}
+
+/* =========================
+   TWO COLUMN LAYOUT
+========================= */
+
+.two-col {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 20px;
 }
 
 /* =========================
@@ -233,8 +236,32 @@ tr:nth-child(even) {
 }
 
 /* =========================
+   FILTERS
+========================= */
+
+.filter-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 10px;
+}
+
+.filter-grid input,
+.filter-grid select {
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+/* =========================
    MOBILE
 ========================= */
+
+@media (max-width: 800px) {
+  .two-col {
+    grid-template-columns: 1fr;
+  }
+}
 
 @media (max-width: 700px) {
   .player-hero-wrap {
@@ -250,25 +277,11 @@ tr:nth-child(even) {
     justify-content: center;
   }
 
+  .site-logo {
+    max-width: 200px;
+  }
+
   .site-nav {
     flex-wrap: wrap;
   }
-}
-
-/* =========================
-   FILTER
-========================= */
-
-.filter-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-  gap: 10px;
-}
-
-.filter-grid input,
-.filter-grid select {
-  padding: 8px;
-  border-radius: 6px;
-  border: 1px solid #ccc;
-  font-size: 14px;
 }
