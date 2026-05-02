@@ -25,14 +25,19 @@ body {
   background-position: center;
   background-repeat: no-repeat;
 
-  padding: 22px 16px;
+  height: 120px; /* 👈 controls total header height */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
-  text-align: center;
+  padding: 0; /* 👈 remove extra height */
 
   border-top: 3px solid #1b2a4a;
   border-bottom: 3px solid #1b2a4a;
 
   position: relative;
+  overflow: hidden;
 }
 
 .site-header::before {
@@ -50,10 +55,10 @@ body {
 /* 🔥 BIGGER LOGO */
 
 .site-logo {
-  max-width: 780px; /* ~3x larger */
+  max-width: 780px;
   width: 100%;
-  margin: 0 auto 6px;
-  display: block;
+  height: auto;
+  margin: 0;
 }
 
 /* NAV */
