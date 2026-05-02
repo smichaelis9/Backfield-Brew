@@ -314,29 +314,41 @@ function renderTools(tools, isPitcher) {
 ========================= */
 
 function renderStats(stats, isPitcher) {
-  const cols = isPitcher
-    ? ["ERA","FIP","xFIP","IP","G","GS","K/9","BB/9","K/BB","K%","BB%","K-BB %","SwStr %","Whiff%","WHIP"]
-    : ["PA","H","2B","3B","HR","OBP","SLG","OPS","wRC+","BABIP","wOBA","K%","BB%","SwStr %","Whiff%","SB","CS","SB%"];
+  const standardCols = isPitcher
+    ? ["ERA","FIP","xFIP","IP","G","GS","CG","ShO","SV","BS","K/9","BB/9","K/BB","HR/9","WHIP"]
+    : ["PA","H","2B","3B","HR","OBP","SLG","OPS","SB","CS","SB%"];
+
+  const advancedCols = isPitcher
+    ? ["K%","BB%","K-BB %","SwStr %","Whiff%","BABIP","LOB %","LD%","GB%","FB%","IFFB %","HR/FB"]
+    : ["wRC+","BABIP","wOBA","K%","BB%","SwStr %","Whiff%","PULL %","CENT %","OPPO %","LD%","GB%","FB%","IFFB %"];
+
+  function buildTable(title, cols) {
+    return `
+      <h3>${title}</h3>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Year</th>
+              ${cols.map(c => `<th>${c}</th>`).join("")}
+            </tr>
+          </thead>
+          <tbody>
+            ${stats.map(s => `
+              <tr>
+                <td>${s.year}</td>
+                ${cols.map(c => `<td>${isRealValue(s.row[c]) ? s.row[c] : ""}</td>`).join("")}
+              </tr>
+            `).join("")}
+          </tbody>
+        </table>
+      </div>
+    `;
+  }
 
   setHTML("statsCard", `
     <h2>Stats</h2>
-    <div class="table-wrap">
-      <table>
-        <thead>
-          <tr>
-            <th>Year</th>
-            ${cols.map(c => `<th>${c}</th>`).join("")}
-          </tr>
-        </thead>
-        <tbody>
-          ${stats.map(s => `
-            <tr>
-              <td>${s.year}</td>
-              ${cols.map(c => `<td>${isRealValue(s.row[c]) ? s.row[c] : ""}</td>`).join("")}
-            </tr>
-          `).join("")}
-        </tbody>
-      </table>
-    </div>
+    ${buildTable("Standard Stats", standardCols)}
+    ${buildTable("Advanced / Batted Ball Stats", advancedCols)}
   `);
 }
