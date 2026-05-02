@@ -107,6 +107,8 @@ async function initRankingPage() {
       return id && name;
     });
 
+    setupFilters(clean);
+    attachFilterListeners(clean);
     renderRanking(clean);
     status.textContent = "";
 
@@ -115,11 +117,85 @@ async function initRankingPage() {
   }
 }
 
+function setupFilters(players) {
+  const positionFilter = document.getElementById("positionFilter");
+  const levelFilter = document.getElementById("levelFilter");
+
+  if (positionFilter) {
+    const positions = new Set();
+
+    players.forEach(p => {
+      const pos = get(p, ["Position", "Pos"]);
+      pos.split(/[\/, ]+/).forEach(part => {
+        if (part.trim()) positions.add(part.trim());
+      });
+    });
+
+    positionFilter.innerHTML = `<option value="">All Positions</option>` +
+      [...positions].sort().map(pos => `<option value="${pos}">${pos}</option>`).join("");
+  }
+
+  if (levelFilter) {
+    const levels = new Set();
+
+    players.forEach(p => {
+      const level = get(p, ["Level"]);
+      if (level) levels.add(level);
+    });
+
+    levelFilter.innerHTML = `<option value="">All Levels</option>` +
+      [...levels].sort().map(level => `<option value="${level}">${level}</option>`).join("");
+  }
+}
+
+function attachFilterListeners(players) {
+  ["searchBox", "typeFilter", "positionFilter", "levelFilter"].forEach(id => {
+    const el = document.getElementById(id);
+    if (el) {
+      el.addEventListener("input", () => renderRanking(players));
+      el.addEventListener("change", () => renderRanking(players));
+    }
+  });
+}
+
 function renderRanking(players) {
   const table = document.querySelector("#rankingTable tbody");
   if (!table) return;
 
-  table.innerHTML = players
+  const search = String(document.getElementById("searchBox")?.value || "").toLowerCase().trim();
+  const type = document.getElementById("typeFilter")?.value || "";
+  const selectedPosition = document.getElementById("positionFilter")?.value || "";
+  const selectedLevel = document.getElementById("levelFilter")?.value || "";
+
+  const filtered = players.filter(p => {
+    const name = get(p, ["Player", "Name"]).toLowerCase();
+    const playerType = get(p, ["Player Type"]).toLowerCase();
+    const position = get(p, ["Position", "Pos"]);
+    const level = get(p, ["Level"]);
+
+    const matchesSearch =
+      !search ||
+      name.includes(search);
+
+    const matchesType =
+      !type ||
+      playerType === type.toLowerCase();
+
+    const matchesPosition =
+      !selectedPosition ||
+      position
+        .split(/[\/, ]+/)
+        .map(x => x.trim())
+        .includes(selectedPosition);
+
+    const matchesLevel =
+      !selectedLevel ||
+      level === selectedLevel;
+
+    return matchesSearch && matchesType && matchesPosition && matchesLevel;
+  });
+
+  table.innerHTML = filtered
     .sort((a, b) => num(get(a, ["Rank"])) - num(get(b, ["Rank"])))
     .map(p => `
       <tr>
@@ -134,7 +210,6 @@ function renderRanking(players) {
       </tr>
     `).join("");
 }
-
 /* =========================
    PLAYER PAGE
 ========================= */
