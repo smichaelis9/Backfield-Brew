@@ -60,7 +60,33 @@ body {
   height: auto;
   margin: 0;
 }
+/* =========================
+   HEADER BUTTONS (UNDER LOGO)
+========================= */
 
+.header-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 10px;
+}
+
+.header-buttons a {
+  background: #1b2a4a;
+  color: #ffc52f;
+  padding: 8px 16px;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 14px;
+  border: 1px solid #ffc52f;
+  transition: all 0.2s ease;
+}
+
+.header-buttons a:hover {
+  background: #ffc52f;
+  color: #1b2a4a;
+}
 /* NAV */
 
 .site-nav {
