@@ -529,7 +529,6 @@ function renderVideos(videos) {
       }
     }
 
-    // fallback for single-video row format
     const singleLabel = get(row, ["Video Label", "Label", "Title", "Video", "Video Name"]);
     const singleUrl = get(row, ["Video URL", "URL", "Link", "Video Link"]);
 
@@ -553,11 +552,11 @@ function renderVideos(videos) {
         <div class="video-item">
           <h3>${label}</h3>
           <div class="video-embed">
-            <iframe 
-              src="${embedUrl}" 
-              title="${label}" 
-              frameborder="0" 
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            <iframe
+              src="${embedUrl}"
+              title="${label}"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               allowfullscreen>
             </iframe>
           </div>
@@ -598,4 +597,19 @@ function renderVideos(videos) {
 
     loadTwitterEmbeds();
   }
+}
+
+function loadTwitterEmbeds() {
+  if (window.twttr && window.twttr.widgets) {
+    window.twttr.widgets.load();
+    return;
+  }
+
+  if (document.querySelector('script[src="https://platform.twitter.com/widgets.js"]')) return;
+
+  const script = document.createElement("script");
+  script.src = "https://platform.twitter.com/widgets.js";
+  script.async = true;
+  script.charset = "utf-8";
+  document.body.appendChild(script);
 }
