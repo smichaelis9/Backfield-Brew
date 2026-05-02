@@ -77,6 +77,15 @@ function parseCSV(text) {
 }
 
 /* =========================
+   SAFE DOM HELPER
+========================= */
+
+function setHTML(id, html) {
+  const el = document.getElementById(id);
+  if (el) el.innerHTML = html;
+}
+
+/* =========================
    RANKING PAGE
 ========================= */
 
@@ -103,7 +112,10 @@ async function initRankingPage() {
 }
 
 function renderRanking(players) {
-  document.querySelector("#rankingTable tbody").innerHTML = players
+  const table = document.querySelector("#rankingTable tbody");
+  if (!table) return;
+
+  table.innerHTML = players
     .sort((a, b) => num(get(a, ["Rank"])) - num(get(b, ["Rank"])))
     .map(p => `
       <tr>
@@ -171,13 +183,17 @@ async function initPlayerPage() {
   }
 }
 
+/* =========================
+   RENDER PLAYER
+========================= */
+
 function renderPlayerPage(bio, tools, stats, isPitcher) {
-  document.getElementById("playerHero").innerHTML = `
+  setHTML("playerHero", `
     <h1>${get(bio, ["Player"])}</h1>
     <p>#${get(bio, ["Rank"])} | ${get(bio, ["Position", "Pos"])} | ${get(bio, ["Level"])}</p>
-  `;
+  `);
 
-  document.getElementById("bioCard").innerHTML = `
+  setHTML("bioCard", `
     <h2>Biography</h2>
     <p><b>Age:</b> ${get(bio, ["Age"])}</p>
     <p><b>Height/Weight:</b> ${get(bio, ["Height"])}, ${get(bio, ["Weight"])}</p>
@@ -185,7 +201,7 @@ function renderPlayerPage(bio, tools, stats, isPitcher) {
     <p><b>Signed By:</b> ${get(bio, ["Signed By"])}</p>
     <p><b>OFP:</b> ${get(bio, ["OFP"])}</p>
     <p><b>Risk:</b> ${get(bio, ["Risk"])}</p>
-  `;
+  `);
 
   renderTools(tools);
   renderStats(stats, isPitcher);
@@ -196,9 +212,9 @@ function renderPlayerPage(bio, tools, stats, isPitcher) {
 ========================= */
 
 function renderTools(tools) {
-  const skip = ["Player-ID", "Player", "Tools Updated"];
+  const skip = ["Player-ID", "Player ID", "Player", "Tools Updated"];
 
-  document.getElementById("toolsCard").innerHTML = `
+  setHTML("toolsCard", `
     <h2>Tools</h2>
     <div class="tool-grid">
       ${Object.entries(tools || {})
@@ -206,7 +222,7 @@ function renderTools(tools) {
         .map(([k, v]) => `<div><b>${k}:</b> ${v}</div>`)
         .join("")}
     </div>
-  `;
+  `);
 }
 
 /* =========================
@@ -215,23 +231,28 @@ function renderTools(tools) {
 
 function renderStats(stats, isPitcher) {
   const cols = isPitcher
-    ? ["ERA","FIP","IP","K/9","BB/9","WHIP"]
-    : ["PA","H","HR","OPS","wRC+","K%","BB%"];
+    ? ["ERA","FIP","xFIP","IP","G","GS","K/9","BB/9","K/BB","K%","BB%","K-BB %","SwStr %","Whiff%","WHIP"]
+    : ["PA","H","2B","3B","HR","OBP","SLG","OPS","wRC+","BABIP","wOBA","K%","BB%","SwStr %","Whiff%","SB","CS","SB%"];
 
-  document.getElementById("statsCard").innerHTML = `
+  setHTML("statsCard", `
     <h2>Stats</h2>
-    <table>
-      <thead>
-        <tr><th>Year</th>${cols.map(c => `<th>${c}</th>`).join("")}</tr>
-      </thead>
-      <tbody>
-        ${stats.map(s => `
+    <div class="table-wrap">
+      <table>
+        <thead>
           <tr>
-            <td>${s.year}</td>
-            ${cols.map(c => `<td>${s.row[c] || ""}</td>`).join("")}
+            <th>Year</th>
+            ${cols.map(c => `<th>${c}</th>`).join("")}
           </tr>
-        `).join("")}
-      </tbody>
-    </table>
-  `;
+        </thead>
+        <tbody>
+          ${stats.map(s => `
+            <tr>
+              <td>${s.year}</td>
+              ${cols.map(c => `<td>${s.row[c] || ""}</td>`).join("")}
+            </tr>
+          `).join("")}
+        </tbody>
+      </table>
+    </div>
+  `);
 }
