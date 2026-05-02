@@ -1,34 +1,29 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Backfield Brew Player Page</title>
+  <meta charset="UTF-8" />
+  <title>Backfield Brew – Player Page</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <link rel="stylesheet" href="styles.css" />
+  <script defer src="script.js"></script>
 </head>
 
 <body>
   <header class="site-header">
-    <a href="index.html" class="logo-link">
-      <img src="BFB-Logo.png" alt="Backfield Brew" class="site-logo">
-    </a>
+    <img src="logo.png" alt="Backfield Brew" class="site-logo" />
 
-    <nav class="site-nav">
-      <a href="index.html">Rankings</a>
-      <a href="https://www.patreon.com/BackfieldBrew" target="_blank" rel="noopener">
-        Patreon
-      </a>
-    </nav>
+    <div class="site-nav">
+      <a href="index.html" id="backToRankings" style="display:none;">← Rankings</a>
+      <a href="https://www.patreon.com/BackfieldBrew" target="_blank" rel="noopener">Patreon</a>
+    </div>
   </header>
 
   <main class="container">
-
-    <!-- PLAYER HERO -->
     <section id="playerHero" class="card">
       Loading player...
     </section>
 
-    <!-- BIO + TOOLS SIDE BY SIDE -->
     <div class="two-col">
       <section id="bioCard" class="card">
         Loading biography...
@@ -39,16 +34,16 @@
       </section>
     </div>
 
-    <!-- STATS -->
     <section id="statsCard" class="card">
       Loading stats...
     </section>
-
   </main>
 
-  <script src="script.js"></script>
   <script>
-    window.addEventListener("DOMContentLoaded", initPlayerPage);
+    document.addEventListener("DOMContentLoaded", () => {
+      initPlayerPage();
+      handleHeaderButtons();
+    });
   </script>
 </body>
 </html>
