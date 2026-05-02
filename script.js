@@ -348,4 +348,3 @@ function renderStats(stats, isPitcherType) {
       </div>
     `;
   }
-}
