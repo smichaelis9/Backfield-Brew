@@ -514,16 +514,38 @@ function isTwitterUrl(url) {
 }
 
 function renderVideos(videos) {
-  const realVideos = (videos || []).filter(v => {
-    const url = get(v, ["Video URL", "URL", "Link", "Video Link"]);
-    return isRealValue(url);
+  const expandedVideos = [];
+
+  (videos || []).forEach(row => {
+    for (let i = 1; i <= 75; i++) {
+      const label = get(row, [`Video ${i}`, `Video Label ${i}`, `Label ${i}`]);
+      const url = get(row, [`Video Link ${i}`, `Video URL ${i}`, `Link ${i}`]);
+
+      if (isRealValue(url)) {
+        expandedVideos.push({
+          label: isRealValue(label) ? label : `Video ${i}`,
+          url
+        });
+      }
+    }
+
+    // fallback for single-video row format
+    const singleLabel = get(row, ["Video Label", "Label", "Title", "Video", "Video Name"]);
+    const singleUrl = get(row, ["Video URL", "URL", "Link", "Video Link"]);
+
+    if (isRealValue(singleUrl)) {
+      expandedVideos.push({
+        label: isRealValue(singleLabel) ? singleLabel : "Video",
+        url: singleUrl
+      });
+    }
   });
 
-  if (!realVideos.length) return;
+  if (!expandedVideos.length) return;
 
-  const videoHTML = realVideos.map(v => {
-    const label = get(v, ["Video Label", "Label", "Title", "Video", "Video Name"]) || "Video";
-    const url = get(v, ["Video URL", "URL", "Link", "Video Link"]);
+  const videoHTML = expandedVideos.map(v => {
+    const label = v.label;
+    const url = v.url;
     const embedUrl = getYouTubeEmbedUrl(url);
 
     if (embedUrl) {
@@ -576,20 +598,4 @@ function renderVideos(videos) {
 
     loadTwitterEmbeds();
   }
-}
-
-function loadTwitterEmbeds() {
-  if (window.twttr && window.twttr.widgets) {
-    window.twttr.widgets.load();
-    return;
-  }
-
-  const existingScript = document.querySelector('script[src="https://platform.twitter.com/widgets.js"]');
-  if (existingScript) return;
-
-  const script = document.createElement("script");
-  script.src = "https://platform.twitter.com/widgets.js";
-  script.async = true;
-  script.charset = "utf-8";
-  document.body.appendChild(script);
 }
