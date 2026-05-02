@@ -1,7 +1,20 @@
 const PUB_ID = '2PACX-1vS7YJJLyptStf41slMLw1QW6g6gBW1rg6dlHdwFacsqlZth7lSnCKsJ5Sbtck0iw5y0ZAHDoDId9HsE';
 
 const SHEET_GIDS = {
-  "Biography Info": "536791829"
+  "Biography Info": "536791829",
+
+  "Pitcher Tools": "1738771068",
+  "Hitter Tools": "146410825",
+
+  "Hitter Stats 2023": "341964968",
+  "Hitter Stats 2024": "1018953464",
+  "Hitter Stats 2025": "544979732",
+  "Hitter Stats 2026": "1317907704",
+
+  "Pitcher Stats 2023": "1576192112",
+  "Pitcher Stats 2024": "158387021",
+  "Pitcher Stats 2025": "1099458194",
+  "Pitcher Stats 2026": "1603996515"
 };
 
 function sheetUrl(sheetName) {
