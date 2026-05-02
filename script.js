@@ -11,7 +11,8 @@ const SHEET_GIDS = {
   "Pitcher Stats 2023": "1576192112",
   "Pitcher Stats 2024": "158387021",
   "Pitcher Stats 2025": "1099458194",
-  "Pitcher Stats 2026": "1603996515"
+  "Pitcher Stats 2026": "1603996515",
+  "Videos": "1306695134"
 };
 
 function sheetUrl(sheetName) {
@@ -186,18 +187,18 @@ function renderRanking(players) {
   table.innerHTML = filtered
     .sort((a, b) => num(get(a, ["Rank"])) - num(get(b, ["Rank"])))
     .map(p => `
-  <tr>
-    <td>${get(p, ["Rank"])}</td>
-    <td><a href="player.html?id=${encodeURIComponent(get(p, ["Player-ID"]))}">${get(p, ["Player"])}</a></td>
-    <td>${get(p, ["OFP"])}</td>
-    <td>${get(p, ["Risk"])}</td>
-    <td>${get(p, ["Position", "Pos"])}</td>
-    <td>${get(p, ["Level"])}</td>
-    <td>${get(p, ["Age"])}</td>
-    <td>${get(p, ["Height"])}</td>
-    <td>${get(p, ["Weight"])}</td>
-  </tr>
-`).join("");
+      <tr>
+        <td>${get(p, ["Rank"])}</td>
+        <td><a href="player.html?id=${encodeURIComponent(get(p, ["Player-ID"]))}">${get(p, ["Player"])}</a></td>
+        <td>${get(p, ["OFP"])}</td>
+        <td>${get(p, ["Risk"])}</td>
+        <td>${get(p, ["Position", "Pos"])}</td>
+        <td>${get(p, ["Level"])}</td>
+        <td>${get(p, ["Age"])}</td>
+        <td>${get(p, ["Height"])}</td>
+        <td>${get(p, ["Weight"])}</td>
+      </tr>
+    `).join("");
 }
 
 /* =========================
@@ -250,7 +251,12 @@ async function initPlayerPage() {
       }
     }
 
-    renderPlayerPage(bio, tools, stats, isPitcher);
+    const videoRows = await loadSheet("Videos");
+    const videos = videoRows.filter(v =>
+      get(v, ["Player-ID", "Player ID"]) === id
+    );
+
+    renderPlayerPage(bio, tools, stats, isPitcher, videos);
   } catch (err) {
     document.body.innerHTML = `<h2>${err.message}</h2>`;
   }
@@ -260,7 +266,7 @@ async function initPlayerPage() {
    RENDER PLAYER
 ========================= */
 
-function renderPlayerPage(bio, tools, stats, isPitcher) {
+function renderPlayerPage(bio, tools, stats, isPitcher, videos) {
   const playerName = get(bio, ["Player", "Name"]);
   const picture = get(bio, ["Picture", "Image", "Photo", "Picture URL", "Image URL"]);
   const ofp = get(bio, ["OFP"]);
@@ -309,6 +315,7 @@ function renderPlayerPage(bio, tools, stats, isPitcher) {
   renderTools(tools, isPitcher);
   renderScoutingNotes(bio);
   renderStats(stats, isPitcher);
+  renderVideos(videos);
 }
 
 /* =========================
@@ -475,4 +482,75 @@ function renderStats(stats, isPitcher) {
     ${buildTable("Standard Stats", standardCols)}
     ${buildTable("Advanced / Batted Ball Stats", advancedCols)}
   `);
+}
+
+/* =========================
+   VIDEOS
+========================= */
+
+function getYouTubeEmbedUrl(url) {
+  const value = String(url || "").trim();
+
+  let match = value.match(/youtube\.com\/watch\?v=([^&]+)/);
+  if (match) return `https://www.youtube.com/embed/${match[1]}`;
+
+  match = value.match(/youtu\.be\/([^?&]+)/);
+  if (match) return `https://www.youtube.com/embed/${match[1]}`;
+
+  match = value.match(/youtube\.com\/shorts\/([^?&]+)/);
+  if (match) return `https://www.youtube.com/embed/${match[1]}`;
+
+  return "";
+}
+
+function renderVideos(videos) {
+  const realVideos = (videos || []).filter(v => {
+    const url = get(v, ["Video URL", "URL", "Link", "Video Link"]);
+    return isRealValue(url);
+  });
+
+  if (!realVideos.length) return;
+
+  const videoHTML = realVideos.map(v => {
+    const label = get(v, ["Video Label", "Label", "Title", "Video", "Video Name"]) || "Video";
+    const url = get(v, ["Video URL", "URL", "Link", "Video Link"]);
+    const embedUrl = getYouTubeEmbedUrl(url);
+
+    if (embedUrl) {
+      return `
+        <div class="video-item">
+          <h3>${label}</h3>
+          <div class="video-embed">
+            <iframe 
+              src="${embedUrl}" 
+              title="${label}" 
+              frameborder="0" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+              allowfullscreen>
+            </iframe>
+          </div>
+        </div>
+      `;
+    }
+
+    return `
+      <div class="video-item">
+        <h3>${label}</h3>
+        <a class="video-link" href="${url}" target="_blank" rel="noopener">Watch Video</a>
+      </div>
+    `;
+  }).join("");
+
+  const container = document.querySelector(".container");
+
+  if (container) {
+    container.insertAdjacentHTML("beforeend", `
+      <section class="card">
+        <h2>Videos</h2>
+        <div class="video-grid">
+          ${videoHTML}
+        </div>
+      </section>
+    `);
+  }
 }
