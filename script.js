@@ -157,14 +157,46 @@ async function initPlayerPage() {
 
     if (!bio) throw new Error("Player not found");
 
-    renderPlayerPage(bio);
+    const playerType = get(bio, ["Player Type"]);
+    const isPitcherType = playerType.toLowerCase().includes("pitch");
+
+    const toolsSheet = isPitcherType ? "Pitcher Tools" : "Hitter Tools";
+    const toolsRows = await loadSheet(toolsSheet);
+
+    const tools = toolsRows.find(p => {
+      const rowId = get(p, ["Player-ID", "Player ID", "Player Id", "PlayerID"]);
+      return rowId === id;
+    });
+
+    const statSheets = isPitcherType
+      ? ["Pitcher Stats 2023", "Pitcher Stats 2024", "Pitcher Stats 2025", "Pitcher Stats 2026"]
+      : ["Hitter Stats 2023", "Hitter Stats 2024", "Hitter Stats 2025", "Hitter Stats 2026"];
+
+    const stats = [];
+
+    for (const sheet of statSheets) {
+      const rows = await loadSheet(sheet);
+      const row = rows.find(p => {
+        const rowId = get(p, ["Player-ID", "Player ID", "Player Id", "PlayerID"]);
+        return rowId === id;
+      });
+
+      if (row) {
+        stats.push({
+          year: sheet.match(/\d{4}/)?.[0],
+          row
+        });
+      }
+    }
+
+    renderPlayerPage(bio, tools, stats, isPitcherType);
 
   } catch (err) {
     container.innerHTML = `<section class="card"><h2>Error</h2><p>${err.message}</p></section>`;
   }
 }
 
-function renderPlayerPage(bio) {
+function renderPlayerPage(bio, tools, stats, isPitcherType) {
   const player = get(bio, ["Player", "Name"]);
   const rank = get(bio, ["Rank"]);
   const position = get(bio, ["Position", "Pos"]);
@@ -182,6 +214,103 @@ function renderPlayerPage(bio) {
   const schoolCountry = get(bio, ["School / Country"]);
   const draftIFA = get(bio, ["Draft/IFA", "Draft / IFA"]);
   const picture = get(bio, ["Picture", "Image", "Photo"]);
+
+  document.title = `${player} | Backfield Brew`;
+
+  document.getElementById("playerHero").innerHTML = `
+    <div class="player-hero-wrap">
+      ${picture ? `<img class="player-photo" src="${picture}" alt="${player}">` : ""}
+      <div>
+        <h1>${player}</h1>
+        <div class="player-meta">#${rank} | ${position} | ${level} | OFP ${ofp}</div>
+      </div>
+    </div>
+  `;
+
+  document.getElementById("bioCard").innerHTML = `
+    <h2 class="section-title">Biography</h2>
+    <div class="kv">
+      <strong>Position</strong><span>${position}</span>
+      <strong>Level</strong><span>${level}</span>
+      <strong>Age</strong><span>${age}</span>
+      <strong>Height / Weight</strong><span>${height}, ${weight}</span>
+      <strong>Bat / Throw</strong><span>${batThrow}</span>
+      <strong>Birthday</strong><span>${birthday}</span>
+      <strong>School / Country</strong><span>${schoolCountry}</span>
+      <strong>Draft / IFA</strong><span>${draftIFA}</span>
+      <strong>Acquired</strong><span>${acquired}</span>
+      <strong>Signed By</strong><span>${signedBy}</span>
+      <strong>Signing Bonus</strong><span>${bonus}</span>
+      <strong>OFP</strong><span>${ofp}</span>
+      <strong>Risk</strong><span>${risk}</span>
+    </div>
+  `;
+
+  renderTools(tools, isPitcherType);
+  renderStats(stats, isPitcherType);
+}
+function renderTools(tools, isPitcherType) {
+  const toolsCard = document.getElementById("toolsCard");
+  if (!toolsCard) return;
+
+  if (!tools) {
+    toolsCard.innerHTML = `<h2 class="section-title">Tools</h2><p>No tools found.</p>`;
+    return;
+  }
+
+  const skip = ["Player-ID", "Player ID", "Player", "Tools Updated"];
+
+  toolsCard.innerHTML = `
+    <h2 class="section-title">${isPitcherType ? "Pitcher Tools" : "Hitter Tools"}</h2>
+    <div class="tool-grid">
+      ${Object.entries(tools)
+        .filter(([key, value]) => !skip.includes(key) && value)
+        .map(([key, value]) => `
+          <div class="tool-box">
+            <div class="tool-label">${key}</div>
+            <div class="tool-value">${value}</div>
+          </div>
+        `)
+        .join("")}
+    </div>
+  `;
+}
+
+function renderStats(stats, isPitcherType) {
+  const statsCard = document.getElementById("statsCard");
+  if (!statsCard) return;
+
+  if (!stats.length) {
+    statsCard.innerHTML = `<h2 class="section-title">Stats</h2><p>No stats found.</p>`;
+    return;
+  }
+
+  const columns = isPitcherType
+    ? ["ERA", "FIP", "xFIP", "IP", "G", "GS", "K/9", "BB/9", "K/BB", "K%", "BB%", "K-BB %", "SwStr %", "Whiff%", "WHIP", "GB%", "HR/FB"]
+    : ["PA", "H", "2B", "3B", "HR", "OBP", "SLG", "OPS", "wRC+", "BABIP", "wOBA", "K%", "BB%", "SwStr %", "Whiff%", "SB", "CS", "SB%"];
+
+  statsCard.innerHTML = `
+    <h2 class="section-title">Stats</h2>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Year</th>
+            ${columns.map(col => `<th>${col}</th>`).join("")}
+          </tr>
+        </thead>
+        <tbody>
+          ${stats.map(season => `
+            <tr>
+              <td>${season.year}</td>
+              ${columns.map(col => `<td>${season.row[col] || ""}</td>`).join("")}
+            </tr>
+          `).join("")}
+        </tbody>
+      </table>
+    </div>
+  `;
+}
 
   document.title = `${player} | Backfield Brew`;
 
