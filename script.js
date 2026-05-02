@@ -194,27 +194,42 @@ async function initPlayerPage() {
 function renderPlayerPage(bio, tools, stats, isPitcher) {
   const playerName = get(bio, ["Player", "Name"]);
   const picture = get(bio, ["Picture", "Image", "Photo", "Picture URL", "Image URL"]);
+  const ofp = get(bio, ["OFP"]);
+  const risk = get(bio, ["Risk"]);
 
   setHTML("playerHero", `
     <div class="player-hero-wrap">
       ${isRealValue(picture)
         ? `<img class="player-photo" src="${picture}" alt="${playerName}" onerror="this.style.display='none';">`
         : ""}
-      <div>
+      <div class="player-main-info">
         <h1>${playerName}</h1>
         <p>#${get(bio, ["Rank"])} | ${get(bio, ["Position", "Pos"])} | ${get(bio, ["Level"])}</p>
+      </div>
+
+      <div class="player-grade-box">
+        <div>
+          <span class="grade-label">OFP</span>
+          <span class="grade-value">${ofp}</span>
+        </div>
+        <div>
+          <span class="grade-label">Risk</span>
+          <span class="grade-value">${risk}</span>
+        </div>
       </div>
     </div>
   `);
 
   setHTML("bioCard", `
     <h2>Biography</h2>
+    <p><b>Birthday:</b> ${get(bio, ["Birthday", "DOB"])}</p>
     <p><b>Age:</b> ${get(bio, ["Age"])}</p>
-    <p><b>Height/Weight:</b> ${get(bio, ["Height"])}, ${get(bio, ["Weight"])}</p>
-    <p><b>B/T:</b> ${get(bio, ["Bat / Throw"])}</p>
+    <p><b>Height:</b> ${get(bio, ["Height"])}</p>
+    <p><b>Weight:</b> ${get(bio, ["Weight"])}</p>
+    <p><b>Bat / Throw:</b> ${get(bio, ["Bat / Throw", "B/T"])}</p>
+    <p><b>Draft/IFA:</b> ${get(bio, ["Draft/IFA", "Draft / IFA"])}</p>
     <p><b>Signed By:</b> ${get(bio, ["Signed By"])}</p>
-    <p><b>OFP:</b> ${get(bio, ["OFP"])}</p>
-    <p><b>Risk:</b> ${get(bio, ["Risk"])}</p>
+    <p><b>Rule 5 Eligible:</b> ${get(bio, ["Rule 5 Eligible", "Rule5 Eligible"])}</p>
   `);
 
   renderTools(tools, isPitcher);
