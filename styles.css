@@ -144,3 +144,23 @@ a.player-link:hover { text-decoration: underline; }
   background: #ffc52f;
   color: #001f4e;
 }
+.player-hero-wrap {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.player-photo {
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 18px;
+  border: 3px solid #ffc52f;
+}
+
+@media (max-width: 700px) {
+  .player-hero-wrap {
+    flex-direction: column;
+    text-align: center;
+  }
+}
