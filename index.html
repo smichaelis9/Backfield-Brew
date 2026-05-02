@@ -1,85 +1,88 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Backfield Brew</title>
+  <meta charset="UTF-8" />
+  <title>Backfield Brew – Rankings</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <link rel="stylesheet" href="styles.css" />
+  <script defer src="script.js"></script>
 </head>
 
 <body>
-  <header class="site-header">
-    <a href="index.html" class="logo-link">
-      <img src="BFB-Logo.png" alt="Backfield Brew" class="site-logo">
-    </a>
 
-    <nav class="site-nav">
-      <a href="index.html">Rankings</a>
-      <a href="https://www.patreon.com/BackfieldBrew" target="_blank" rel="noopener">
-        Patreon
-      </a>
-    </nav>
+  <!-- =========================
+       HEADER
+  ========================== -->
+  <header class="site-header">
+    <img src="logo.png" alt="Backfield Brew" class="site-logo" />
+
+    <div class="site-nav">
+      <a href="index.html" id="backToRankings" style="display:none;">← Rankings</a>
+      <a href="https://www.patreon.com/BackfieldBrew" target="_blank">Patreon</a>
+    </div>
   </header>
 
+  <!-- =========================
+       MAIN
+  ========================== -->
   <main class="container">
 
-    <!-- FILTERS -->
+    <!-- =========================
+         FILTERS
+    ========================== -->
     <section class="card">
-      <h2>Filters</h2>
-
       <div class="filter-grid">
-        <input
-          id="searchBox"
-          type="text"
-          placeholder="Search player name..."
-        />
+        <input type="text" id="searchBox" placeholder="Search player..." />
 
         <select id="typeFilter">
           <option value="">All Types</option>
-          <option value="hitter">Hitter</option>
-          <option value="pitcher">Pitcher</option>
+          <option value="hitter">Hitters</option>
+          <option value="pitcher">Pitchers</option>
         </select>
 
-        <select id="positionFilter">
-          <option value="">All Positions</option>
-        </select>
-
-        <select id="levelFilter">
-          <option value="">All Levels</option>
-        </select>
+        <select id="positionFilter"></select>
+        <select id="levelFilter"></select>
       </div>
     </section>
 
-    <!-- STATUS -->
-    <div id="status" style="margin-bottom: 12px;">Loading rankings...</div>
-
-    <!-- TABLE -->
+    <!-- =========================
+         RANKING TABLE
+    ========================== -->
     <section class="card">
-  <div class="ranking-scroll">
-    <table id="rankingTable">
-      <thead>
-        <tr>
-  <th>Rank</th>
-  <th>Player</th>
-  <th>OFP</th>
-  <th>Risk</th>
-  <th>Pos</th>
-  <th>Level</th>
-  <th>Age</th>
-  <th>Height</th>
-  <th>Weight</th>
-</tr>
-      </thead>
-      <tbody></tbody>
-    </table>
-  </div>
-</section>
+      <div class="ranking-scroll">
+        <table id="rankingTable">
+          <thead>
+            <tr>
+              <th>Rank</th>
+              <th>Player</th>
+              <th>OFP</th>
+              <th>Risk</th>
+              <th>Pos</th>
+              <th>Level</th>
+              <th>Age</th>
+              <th>Height</th>
+              <th>Weight</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+
+      <p id="status"></p>
+    </section>
 
   </main>
 
-  <script src="script.js"></script>
+  <!-- =========================
+       INIT SCRIPT
+  ========================== -->
   <script>
-    window.addEventListener("DOMContentLoaded", initRankingPage);
+    document.addEventListener("DOMContentLoaded", () => {
+      initRankingPage();
+      handleHeaderButtons();
+    });
   </script>
+
 </body>
 </html>
