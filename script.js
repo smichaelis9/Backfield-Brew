@@ -30,6 +30,11 @@ function get(row, keys) {
   return "";
 }
 
+function isRealValue(value) {
+  const v = String(value || "").trim().toLowerCase();
+  return v && v !== "n/a" && v !== "na" && v !== "-";
+}
+
 function num(value) {
   const n = parseFloat(String(value || "").replace(/[^0-9.-]/g, ""));
   return Number.isFinite(n) ? n : 999999;
@@ -49,16 +54,19 @@ function parseCSV(text) {
     const char = text[i], next = text[i + 1];
 
     if (char === '"' && inQuotes && next === '"') {
-      cell += '"'; i++;
+      cell += '"';
+      i++;
     } else if (char === '"') {
       inQuotes = !inQuotes;
     } else if (char === ',' && !inQuotes) {
-      row.push(cell.trim()); cell = '';
+      row.push(cell.trim());
+      cell = '';
     } else if ((char === '\n' || char === '\r') && !inQuotes) {
       if (char === '\r' && next === '\n') i++;
       row.push(cell.trim());
       if (row.some(v => v !== "")) rows.push(row);
-      row = []; cell = '';
+      row = [];
+      cell = '';
     } else {
       cell += char;
     }
@@ -189,7 +197,7 @@ function renderPlayerPage(bio, tools, stats, isPitcher) {
 
   setHTML("playerHero", `
     <div class="player-hero-wrap">
-      ${picture
+      ${isRealValue(picture)
         ? `<img class="player-photo" src="${picture}" alt="${playerName}" onerror="this.style.display='none';">`
         : ""}
       <div>
@@ -216,11 +224,6 @@ function renderPlayerPage(bio, tools, stats, isPitcher) {
 /* =========================
    TOOLS
 ========================= */
-
-function isRealValue(value) {
-  const v = String(value || "").trim().toLowerCase();
-  return v && v !== "n/a" && v !== "na" && v !== "-";
-}
 
 function renderTools(tools, isPitcher) {
   if (!tools) {
@@ -262,6 +265,7 @@ function renderTools(tools, isPitcher) {
     ]
       .map(([label, key]) => {
         const value = get(tools, [key]);
+
         if (!isRealValue(value)) return "";
 
         return `
@@ -300,25 +304,7 @@ function renderTools(tools, isPitcher) {
   setHTML("toolsCard", `
     <h2>Tools</h2>
     <div class="tool-grid">
-      ${hitterTools}
-    </div>
-  `);
-}
-
-  const skip = ["Player-ID", "Player ID", "Player", "Tools Updated"];
-
-  setHTML("toolsCard", `
-    <h2>Tools</h2>
-    <div class="tool-grid">
-      ${Object.entries(tools)
-        .filter(([k, v]) => !skip.includes(k) && v)
-        .map(([k, v]) => `
-          <div class="tool-box">
-            <div class="tool-label">${k}</div>
-            <div class="tool-value">${v}</div>
-          </div>
-        `)
-        .join("")}
+      ${hitterTools || "<p>No tools found.</p>"}
     </div>
   `);
 }
@@ -346,7 +332,7 @@ function renderStats(stats, isPitcher) {
           ${stats.map(s => `
             <tr>
               <td>${s.year}</td>
-              ${cols.map(c => `<td>${s.row[c] || ""}</td>`).join("")}
+              ${cols.map(c => `<td>${isRealValue(s.row[c]) ? s.row[c] : ""}</td>`).join("")}
             </tr>
           `).join("")}
         </tbody>
