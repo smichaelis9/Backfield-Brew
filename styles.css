@@ -242,3 +242,21 @@ tr:nth-child(even) {
     flex-wrap: wrap;
   }
 }
+
+/* =========================
+   FILTER
+========================= */
+
+.filter-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 10px;
+}
+
+.filter-grid input,
+.filter-grid select {
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
