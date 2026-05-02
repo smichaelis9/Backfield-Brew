@@ -408,11 +408,20 @@ function renderScoutingNotes(bio) {
 
   const statsCard = document.getElementById("statsCard");
 
+  const noteItems = notes
+    .split(/\n|•|- /)
+    .map(item => item.trim())
+    .filter(item => isRealValue(item));
+
+  if (!noteItems.length) return;
+
   if (statsCard) {
     statsCard.insertAdjacentHTML("beforebegin", `
       <section class="card">
         <h2>Scouting Notes</h2>
-        <p class="scouting-notes">${notes}</p>
+        <ul class="scouting-notes">
+          ${noteItems.map(item => `<li>${item}</li>`).join("")}
+        </ul>
       </section>
     `);
   }
