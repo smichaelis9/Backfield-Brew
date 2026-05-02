@@ -322,6 +322,16 @@ function renderStats(stats, isPitcher) {
     ? ["K%","BB%","K-BB %","SwStr %","Whiff%","BABIP","LOB %","LD%","GB%","FB%","IFFB %","HR/FB"]
     : ["wRC+","BABIP","wOBA","K%","BB%","SwStr %","Whiff%","PULL %","CENT %","OPPO %","LD%","GB%","FB%","IFFB %"];
 
+  // 🔑 remove years with no real stats
+  const validStats = stats.filter(season =>
+    Object.values(season.row || {}).some(v => isRealValue(v))
+  );
+
+  if (!validStats.length) {
+    setHTML("statsCard", `<h2>Stats</h2><p>No stats available.</p>`);
+    return;
+  }
+
   function buildTable(title, cols) {
     return `
       <h3>${title}</h3>
@@ -334,7 +344,7 @@ function renderStats(stats, isPitcher) {
             </tr>
           </thead>
           <tbody>
-            ${stats.map(s => `
+            ${validStats.map(s => `
               <tr>
                 <td>${s.year}</td>
                 ${cols.map(c => `<td>${isRealValue(s.row[c]) ? s.row[c] : ""}</td>`).join("")}
