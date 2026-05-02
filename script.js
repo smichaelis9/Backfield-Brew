@@ -159,8 +159,12 @@ function renderPlayerPage(bio, tools, stats, pitcher) {
     `)
     .join('');
 }
-}
 
 function escapeHtml(value) {
-  return String(value ?? '').replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+  return String(value ?? '').replace(/[&<>"]/g, c => ({
+    '&': '&amp;',
+    '<': '&lt;',
+    '>': '&gt;',
+    '"': '&quot;'
+  }[c]));
 }
