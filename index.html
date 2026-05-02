@@ -3,64 +3,80 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Backfield Brew Prospect Rankings</title>
+  <title>Backfield Brew</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
-<body>
-<header class="site-header">
-  <a href="index.html" class="logo-link">
-    <img src="BFB-Logo.png" alt="Backfield Brew" class="site-logo">
-  </a>
 
-  <nav class="site-nav">
-    <a href="index.html">Rankings</a>
-    <a href="https://www.patreon.com/BackfieldBrew" target="_blank" rel="noopener">
-      Patreon
+<body>
+  <header class="site-header">
+    <a href="index.html" class="logo-link">
+      <img src="BFB-Logo.png" alt="Backfield Brew" class="site-logo">
     </a>
-  </nav>
-</header>
+
+    <nav class="site-nav">
+      <a href="index.html">Rankings</a>
+      <a href="https://www.patreon.com/BackfieldBrew" target="_blank" rel="noopener">
+        Patreon
+      </a>
+    </nav>
+  </header>
 
   <main class="container">
-    <section class="controls-card">
-      <input id="searchBox" type="search" placeholder="Search player, position, level, country..." />
-      <select id="typeFilter">
-        <option value="">All Players</option>
-        <option value="Hitter">Hitters</option>
-        <option value="Pitcher">Pitchers</option>
-      </select>
-      <select id="positionFilter">
-        <option value="">All Positions</option>
-      </select>
-      <select id="levelFilter">
-        <option value="">All Levels</option>
-      </select>
-    </section>
 
-    <section class="table-card">
-      <div id="status" class="status">Loading rankings...</div>
-      <div class="table-wrap">
-        <table id="rankingTable">
-          <thead>
-            <tr>
-              <th data-sort="Rank">Rank</th>
-              <th data-sort="Player">Player</th>
-              <th data-sort="Position">Pos</th>
-              <th data-sort="Level">Level</th>
-              <th data-sort="Age">Age</th>
-              <th data-sort="OFP">OFP</th>
-              <th data-sort="Risk">Risk</th>
-              <th data-sort="Acquired">Acquired</th>
-            </tr>
-          </thead>
-          <tbody></tbody>
-        </table>
+    <!-- FILTERS -->
+    <section class="card">
+      <h2>Filters</h2>
+
+      <div class="filter-grid">
+        <input
+          id="searchBox"
+          type="text"
+          placeholder="Search player name..."
+        />
+
+        <select id="typeFilter">
+          <option value="">All Types</option>
+          <option value="hitter">Hitter</option>
+          <option value="pitcher">Pitcher</option>
+        </select>
+
+        <select id="positionFilter">
+          <option value="">All Positions</option>
+        </select>
+
+        <select id="levelFilter">
+          <option value="">All Levels</option>
+        </select>
       </div>
     </section>
+
+    <!-- STATUS -->
+    <div id="status" style="margin-bottom: 12px;">Loading rankings...</div>
+
+    <!-- TABLE -->
+    <section class="card">
+      <table id="rankingTable">
+        <thead>
+          <tr>
+            <th>Rank</th>
+            <th>Player</th>
+            <th>Pos</th>
+            <th>Level</th>
+            <th>Age</th>
+            <th>OFP</th>
+            <th>Risk</th>
+            <th>Acquired</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </section>
+
   </main>
 
   <script src="script.js"></script>
   <script>
-    window.addEventListener('DOMContentLoaded', initRankingPage);
+    window.addEventListener("DOMContentLoaded", initRankingPage);
   </script>
 </body>
 </html>
