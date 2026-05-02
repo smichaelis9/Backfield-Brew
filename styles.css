@@ -28,6 +28,16 @@ body {
   border-top: 4px solid #1b2a4a;
   border-bottom: 4px solid #1b2a4a;
 }
+.site-header .site-nav a {
+  background: rgba(0, 0, 0, 0.55);
+  color: #ffc52f;
+  border: 1px solid #ffc52f;
+}
+
+.site-header .site-nav a:hover {
+  background: #ffc52f;
+  color: #1b2a4a;
+}
 .site-header.compact { padding-top: 24px; }
 .eyebrow {
   color: var(--gold);
