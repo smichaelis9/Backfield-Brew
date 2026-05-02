@@ -16,7 +16,7 @@ body {
 }
 
 /* =========================
-   HEADER (REDUCED HEIGHT)
+   HEADER (SHORT + BIG LOGO)
 ========================= */
 
 .site-header {
@@ -25,7 +25,7 @@ body {
   background-position: center;
   background-repeat: no-repeat;
 
-  padding: 18px 16px; /* reduced height */
+  padding: 22px 16px;
 
   text-align: center;
 
@@ -47,12 +47,16 @@ body {
   z-index: 1;
 }
 
+/* 🔥 BIGGER LOGO */
+
 .site-logo {
-  max-width: 260px;
-  width: 70%;
-  margin: 0 auto 8px;
+  max-width: 780px; /* ~3x larger */
+  width: 100%;
+  margin: 0 auto 6px;
   display: block;
 }
+
+/* NAV */
 
 .site-nav {
   display: flex;
@@ -116,6 +120,8 @@ body {
 .player-main-info h1 {
   margin: 0 0 6px;
 }
+
+/* OFP / RISK BOXES */
 
 .player-grade-box {
   position: absolute;
@@ -254,6 +260,16 @@ tr:nth-child(even) {
 }
 
 /* =========================
+   SCOUTING NOTES
+========================= */
+
+.scouting-notes {
+  line-height: 1.6;
+  font-size: 15px;
+  color: #222;
+}
+
+/* =========================
    MOBILE
 ========================= */
 
@@ -278,7 +294,7 @@ tr:nth-child(even) {
   }
 
   .site-logo {
-    max-width: 200px;
+    max-width: 320px; /* smaller on mobile */
   }
 
   .site-nav {
