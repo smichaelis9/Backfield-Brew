@@ -217,6 +217,11 @@ function renderPlayerPage(bio, tools, stats, isPitcher) {
    TOOLS
 ========================= */
 
+function isRealValue(value) {
+  const v = String(value || "").trim().toLowerCase();
+  return v && v !== "n/a" && v !== "na" && v !== "-";
+}
+
 function renderTools(tools, isPitcher) {
   if (!tools) {
     setHTML("toolsCard", `<h2>Tools</h2><p>No tools found.</p>`);
@@ -238,7 +243,7 @@ function renderTools(tools, isPitcher) {
         const pitchName = get(tools, [nameCol]);
         const grade = get(tools, [gradeCol]);
 
-        if (!pitchName || !grade) return "";
+        if (!isRealValue(pitchName) || !isRealValue(grade)) return "";
 
         return `
           <div class="tool-box">
@@ -247,41 +252,58 @@ function renderTools(tools, isPitcher) {
           </div>
         `;
       })
+      .filter(Boolean)
       .join("");
 
-    const commandControl = `
-      ${get(tools, ["Command"]) ? `
-        <div class="tool-box">
-          <div class="tool-label">Command</div>
-          <div class="tool-value">${get(tools, ["Command"])}</div>
-        </div>
-      ` : ""}
+    const extraTools = [
+      ["Command", "Command"],
+      ["Control", "Control"],
+      ["Fastball Velocity", "Fastball Velocity"]
+    ]
+      .map(([label, key]) => {
+        const value = get(tools, [key]);
+        if (!isRealValue(value)) return "";
 
-      ${get(tools, ["Control"]) ? `
-        <div class="tool-box">
-          <div class="tool-label">Control</div>
-          <div class="tool-value">${get(tools, ["Control"])}</div>
-        </div>
-      ` : ""}
-
-      ${get(tools, ["Fastball Velocity"]) ? `
-        <div class="tool-box">
-          <div class="tool-label">Fastball Velocity</div>
-          <div class="tool-value">${get(tools, ["Fastball Velocity"])}</div>
-        </div>
-      ` : ""}
-    `;
+        return `
+          <div class="tool-box">
+            <div class="tool-label">${label}</div>
+            <div class="tool-value">${value}</div>
+          </div>
+        `;
+      })
+      .filter(Boolean)
+      .join("");
 
     setHTML("toolsCard", `
       <h2>Pitch Arsenal</h2>
       <div class="tool-grid">
         ${pitchTools}
-        ${commandControl}
+        ${extraTools}
       </div>
     `);
 
     return;
   }
+
+  const skip = ["Player-ID", "Player ID", "Player", "Tools Updated"];
+
+  const hitterTools = Object.entries(tools)
+    .filter(([k, v]) => !skip.includes(k) && isRealValue(v))
+    .map(([k, v]) => `
+      <div class="tool-box">
+        <div class="tool-label">${k}</div>
+        <div class="tool-value">${v}</div>
+      </div>
+    `)
+    .join("");
+
+  setHTML("toolsCard", `
+    <h2>Tools</h2>
+    <div class="tool-grid">
+      ${hitterTools}
+    </div>
+  `);
+}
 
   const skip = ["Player-ID", "Player ID", "Player", "Tools Updated"];
 
