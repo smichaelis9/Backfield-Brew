@@ -3,38 +3,45 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Player Page</title>
+  <title>Backfield Brew Player Page</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
+
 <body>
   <header class="site-header">
-  <a href="index.html" class="logo-link">
-    <img src="BFB-Logo.png" alt="Backfield Brew" class="site-logo">
-  </a>
-
-  <nav class="site-nav">
-    <a href="index.html">Rankings</a>
-    <a href="https://www.patreon.com/BackfieldBrew" target="_blank" rel="noopener">
-      Patreon
+    <a href="index.html" class="logo-link">
+      <img src="BFB-Logo.png" alt="Backfield Brew" class="site-logo">
     </a>
-  </nav>
-</header>
 
-  <main class="container player-grid">
-    <section class="card" id="bioCard"></section>
-    <section class="card" id="toolsCard"></section>
-    <section class="card wide" id="statsCard"></section>
+    <nav class="site-nav">
+      <a href="index.html">Rankings</a>
+      <a href="https://www.patreon.com/BackfieldBrew" target="_blank" rel="noopener">
+        Patreon
+      </a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section id="playerHero" class="player-hero card">
+      Loading player...
+    </section>
+
+    <section id="bioCard" class="card">
+      Loading biography...
+    </section>
+
+    <section id="toolsCard" class="card">
+      Loading tools...
+    </section>
+
+    <section id="statsCard" class="card">
+      Loading stats...
+    </section>
   </main>
 
   <script src="script.js"></script>
   <script>
-    window.addEventListener('DOMContentLoaded', initPlayerPage);
+    window.addEventListener("DOMContentLoaded", initPlayerPage);
   </script>
 </body>
 </html>
-<script src="script.js"></script>
-<script>
-  window.addEventListener("DOMContentLoaded", initPlayerPage);
-</script>
-<section id="toolsCard" class="card"></section>
-<section id="statsCard" class="card"></section>
