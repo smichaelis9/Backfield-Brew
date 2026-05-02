@@ -303,6 +303,7 @@ function renderPlayerPage(bio, tools, stats, isPitcher) {
     <p><b>Weight:</b> ${get(bio, ["Weight"])}</p>
     <p><b>Bat / Throw:</b> ${get(bio, ["Bat / Throw", "B/T"])}</p>
     <p><b>Draft/IFA:</b> ${get(bio, ["Draft/IFA", "Draft / IFA"])}</p>
+    <p><b>Acquired:</b> ${get(bio, ["Acquired"])}</p>
     <p><b>Signed By:</b> ${get(bio, ["Signed By"])}</p>
     <p><b>Rule 5 Eligible:</b> ${get(bio, ["Rule 5 Eligible", "Rule5 Eligible"])}</p>
   `);
