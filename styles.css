@@ -522,3 +522,37 @@ tr:nth-child(even) {
     grid-template-columns: repeat(2, 1fr);
   }
 }
+.article-links-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+}
+
+.article-link-card {
+  display: block;
+  background: #f4f6f8;
+  border: 1px solid #ddd;
+  border-left: 5px solid #ffc52f;
+  border-radius: 10px;
+  padding: 14px;
+  color: #1b2a4a;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.article-link-card:hover {
+  background: #ffc52f;
+  color: #1b2a4a;
+}
+
+@media (max-width: 900px) {
+  .article-links-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .article-links-grid {
+    grid-template-columns: 1fr;
+  }
+}
