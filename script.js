@@ -317,10 +317,11 @@ function renderPlayerPage(bio, tools, stats, isPitcher, videos) {
     <p><b>Rule 5 Eligible:</b> ${get(bio, ["Rule 5 Eligible", "Rule5 Eligible"])}</p>
   `);
 
-  renderTools(tools, isPitcher);
-  renderScoutingNotes(bio);
-  renderStats(stats, isPitcher);
-  renderVideos(videos);
+renderExternalLinks(bio);
+renderTools(tools, isPitcher);
+renderScoutingNotes(bio);
+renderStats(stats, isPitcher);
+renderVideos(videos);
 }
 
 /* =========================
@@ -539,5 +540,42 @@ function handleHeaderButtons() {
     backBtn.style.display = "inline-block";
   } else {
     backBtn.style.display = "none";
+  }
+}
+function renderExternalLinks(bio) {
+  const links = [
+    { label: "Baseball Reference", keys: ["Baseball Reference", "BBRef"] },
+    { label: "FanGraphs", keys: ["FanGraphs", "Fangraphs"] },
+    { label: "Baseball America", keys: ["Baseball America"] },
+    { label: "MiLB", keys: ["MiLB", "MILB"] },
+    { label: "Baseball Prospectus", keys: ["Baseball Prospectus"] }
+  ];
+
+  const validLinks = links
+    .map(link => {
+      const url = get(bio, link.keys);
+      if (!isRealValue(url)) return null;
+
+      return `
+        <a href="${url}" target="_blank" rel="noopener" class="external-link-card">
+          ${link.label}
+        </a>
+      `;
+    })
+    .filter(Boolean)
+    .join("");
+
+  if (!validLinks) return;
+
+  const hero = document.getElementById("playerHero");
+
+  if (hero) {
+    hero.insertAdjacentHTML("afterend", `
+      <section class="card">
+        <div class="external-links-grid">
+          ${validLinks}
+        </div>
+      </section>
+    `);
   }
 }
