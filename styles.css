@@ -410,3 +410,43 @@ tr:nth-child(even) {
     z-index: 4;
   }
 }
+/* =========================
+   EXTERNAL LINKS
+========================= */
+
+.external-links-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+}
+
+.external-link-card {
+  display: block;
+  text-align: center;
+  padding: 10px;
+  background: #f4f6f8;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-weight: 700;
+  text-decoration: none;
+  color: #1b2a4a;
+}
+
+.external-link-card:hover {
+  background: #ffc52f;
+  color: #1b2a4a;
+}
+
+/* responsive */
+
+@media (max-width: 900px) {
+  .external-links-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .external-links-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
