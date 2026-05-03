@@ -305,7 +305,7 @@ function renderPlayerPage(bio, tools, stats, isPitcher, videos) {
   `);
 
   setHTML("bioCard", `
-    <h2>Biography</h2>
+    <h2>Bio</h2>
     <p><b>Birthday:</b> ${get(bio, ["Birthday", "DOB"])}</p>
     <p><b>Age:</b> ${get(bio, ["Age"])}</p>
     <p><b>Height:</b> ${get(bio, ["Height"])}</p>
