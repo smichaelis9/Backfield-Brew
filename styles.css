@@ -462,8 +462,8 @@ tr:nth-child(even) {
 }
 
 .social-link-card {
-  width: 44px;
-  height: 44px;
+  width: 28px;
+  height: 28px;
   border-radius: 999px;
   display: flex;
   align-items: center;
@@ -471,11 +471,12 @@ tr:nth-child(even) {
   background: #1b2a4a;
   border: 1px solid #ffc52f;
   transition: all 0.2s ease;
+  padding: 0;
 }
 
 .social-link-card svg {
-  width: 22px;
-  height: 22px;
+  width: 14px;
+  height: 14px;
   fill: #ffc52f;
 }
 
