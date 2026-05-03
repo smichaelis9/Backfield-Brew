@@ -677,19 +677,42 @@ function getSocialIcon(platform) {
     </svg>
   `;
 }
+let PATREON_ACCESS_LEVEL = "free";
+
 async function checkPatreonAccess() {
   try {
     const res = await fetch("/.netlify/functions/patreon-user");
-    if (!res.ok) throw new Error();
-
     const data = await res.json();
 
-    if (data.isActive) {
-      unlockContent();
-    } else {
-      lockContent();
-    }
+    PATREON_ACCESS_LEVEL = data.accessLevel || "free";
+    applyAccessRules();
   } catch {
-    lockContent();
+    PATREON_ACCESS_LEVEL = "free";
+    applyAccessRules();
   }
+}
+
+function applyAccessRules() {
+  const isRankingsUser = PATREON_ACCESS_LEVEL === "rankings";
+  const isPremiumUser = PATREON_ACCESS_LEVEL === "premium";
+
+  document.querySelectorAll("[data-access]").forEach(el => {
+    const needed = el.dataset.access;
+
+    const allowed =
+      needed === "free" ||
+      (needed === "rankings" && (isRankingsUser || isPremiumUser)) ||
+      (needed === "premium" && isPremiumUser);
+
+    if (!allowed) {
+      el.innerHTML = `
+        <div class="paywall">
+          <h3>Patreon Members Only</h3>
+          <p>$6 members get rankings access. $12 members unlock full player cards.</p>
+          <a href="/.netlify/functions/patreon-auth">Login with Patreon</a>
+          <a href="https://www.patreon.com/BackfieldBrew" target="_blank" rel="noopener">Join Patreon</a>
+        </div>
+      `;
+    }
+  });
 }
