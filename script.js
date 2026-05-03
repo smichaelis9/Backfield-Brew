@@ -320,6 +320,7 @@ function renderPlayerPage(bio, tools, stats, isPitcher, videos) {
 renderExternalLinks(bio);
 renderTools(tools, isPitcher);
 renderScoutingNotes(bio);
+renderArticles(bio);
 renderStats(stats, isPitcher);
 renderVideos(videos);
 }
@@ -440,7 +441,43 @@ function renderScoutingNotes(bio) {
     `);
   }
 }
+/* =========================
+   ARTICLES
+========================= */
+function renderArticles(bio) {
+  const articles = [];
 
+  for (let i = 1; i <= 10; i++) {
+    const label = get(bio, [`Article ${i}`]);
+    const url = cleanUrl(get(bio, [`Article ${i} Link`, `Article Link ${i}`]));
+
+    if (isRealValue(url)) {
+      articles.push({
+        label: isRealValue(label) ? label : `Article ${i}`,
+        url
+      });
+    }
+  }
+
+  if (!articles.length) return;
+
+  const statsCard = document.getElementById("statsCard");
+
+  if (statsCard) {
+    statsCard.insertAdjacentHTML("beforebegin", `
+      <section class="card">
+        <h2>Articles</h2>
+        <div class="article-links-grid">
+          ${articles.map(article => `
+            <a class="article-link-card" href="${article.url}" target="_blank" rel="noopener noreferrer">
+              ${article.label}
+            </a>
+          `).join("")}
+        </div>
+      </section>
+    `);
+  }
+}
 /* =========================
    STATS
 ========================= */
