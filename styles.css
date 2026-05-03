@@ -450,3 +450,74 @@ tr:nth-child(even) {
     grid-template-columns: repeat(2, 1fr);
   }
 }
+.links-card {
+  padding: 14px;
+}
+
+.social-links-row {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 14px;
+}
+
+.social-link-card {
+  width: 44px;
+  height: 44px;
+  border-radius: 999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #1b2a4a;
+  border: 1px solid #ffc52f;
+  transition: all 0.2s ease;
+}
+
+.social-link-card svg {
+  width: 22px;
+  height: 22px;
+  fill: #ffc52f;
+}
+
+.social-link-card:hover {
+  background: #ffc52f;
+}
+
+.social-link-card:hover svg {
+  fill: #1b2a4a;
+}
+
+.external-links-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+}
+
+.external-link-card {
+  display: block;
+  text-align: center;
+  padding: 10px;
+  background: #f4f6f8;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-weight: 700;
+  text-decoration: none;
+  color: #1b2a4a;
+}
+
+.external-link-card:hover {
+  background: #ffc52f;
+  color: #1b2a4a;
+}
+
+@media (max-width: 900px) {
+  .external-links-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .external-links-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
