@@ -677,3 +677,19 @@ function getSocialIcon(platform) {
     </svg>
   `;
 }
+async function checkPatreonAccess() {
+  try {
+    const res = await fetch("/.netlify/functions/patreon-user");
+    if (!res.ok) throw new Error();
+
+    const data = await res.json();
+
+    if (data.isActive) {
+      unlockContent();
+    } else {
+      lockContent();
+    }
+  } catch {
+    lockContent();
+  }
+}
