@@ -432,7 +432,7 @@ function renderScoutingNotes(bio) {
 
   if (statsCard) {
     statsCard.insertAdjacentHTML("beforebegin", `
-      <section class="card">
+      <section class="card" data-access="premium">
         <h2>Scouting Notes</h2>
         <ul class="scouting-notes">
           ${noteItems.map(item => `<li>${item}</li>`).join("")}
@@ -465,7 +465,7 @@ function renderArticles(bio) {
 
   if (statsCard) {
     statsCard.insertAdjacentHTML("beforebegin", `
-      <section class="card">
+      <section class="card" data-access="premium">
         <h2>Articles</h2>
         <div class="article-links-grid">
           ${articles.map(article => `
@@ -559,7 +559,7 @@ function renderVideos(videos) {
 
   if (container) {
     container.insertAdjacentHTML("beforeend", `
-      <section class="card">
+      <section class="card" data-access="premium">
         <h2>Videos</h2>
         <div class="video-grid">
           ${videoHTML}
