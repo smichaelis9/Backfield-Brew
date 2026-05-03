@@ -542,8 +542,38 @@ function handleHeaderButtons() {
     backBtn.style.display = "none";
   }
 }
+function cleanUrl(url) {
+  const value = String(url || "").trim();
+
+  if (!isRealValue(value)) return "";
+
+  if (value.startsWith("http://") || value.startsWith("https://")) {
+    return value;
+  }
+
+  return `https://${value}`;
+}
+
 function renderExternalLinks(bio) {
-  const links = [
+  const socials = [
+    {
+      platform: "x",
+      label: get(bio, ["Twitter/X", "Twitter", "X"]),
+      url: cleanUrl(get(bio, ["Twitter/X Link", "Twitter Link", "X Link"]))
+    },
+    {
+      platform: "instagram",
+      label: get(bio, ["Instagram"]),
+      url: cleanUrl(get(bio, ["Instagram Link"]))
+    },
+    {
+      platform: "tiktok",
+      label: get(bio, ["Other Social", "TikTok"]),
+      url: cleanUrl(get(bio, ["Other Social Link", "TikTok Link"]))
+    }
+  ].filter(s => isRealValue(s.url));
+
+  const externalLinks = [
     { label: "Baseball Reference", keys: ["Baseball Reference", "BBRef"] },
     { label: "FanGraphs", keys: ["FanGraphs", "Fangraphs"] },
     { label: "Baseball America", keys: ["Baseball America"] },
@@ -551,13 +581,21 @@ function renderExternalLinks(bio) {
     { label: "Baseball Prospectus", keys: ["Baseball Prospectus"] }
   ];
 
-  const validLinks = links
+  const socialHTML = socials.map(s => `
+    <a href="${s.url}" target="_blank" rel="noopener noreferrer"
+       class="social-link-card ${s.platform}"
+       title="${s.label || s.platform}">
+      ${getSocialIcon(s.platform)}
+    </a>
+  `).join("");
+
+  const externalHTML = externalLinks
     .map(link => {
-      const url = get(bio, link.keys);
-      if (!isRealValue(url)) return null;
+      const url = cleanUrl(get(bio, link.keys));
+      if (!url) return "";
 
       return `
-        <a href="${url}" target="_blank" rel="noopener" class="external-link-card">
+        <a href="${url}" target="_blank" rel="noopener noreferrer" class="external-link-card">
           ${link.label}
         </a>
       `;
@@ -565,17 +603,40 @@ function renderExternalLinks(bio) {
     .filter(Boolean)
     .join("");
 
-  if (!validLinks) return;
+  if (!socialHTML && !externalHTML) return;
 
   const hero = document.getElementById("playerHero");
 
   if (hero) {
     hero.insertAdjacentHTML("afterend", `
-      <section class="card">
-        <div class="external-links-grid">
-          ${validLinks}
-        </div>
+      <section class="card links-card">
+        ${socialHTML ? `<div class="social-links-row">${socialHTML}</div>` : ""}
+        ${externalHTML ? `<div class="external-links-grid">${externalHTML}</div>` : ""}
       </section>
     `);
   }
+}
+
+function getSocialIcon(platform) {
+  if (platform === "x") {
+    return `
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M18.9 2h3.3l-7.2 8.2L23.5 22h-6.7l-5.2-6.8L5.6 22H2.3l7.7-8.8L1.8 2h6.8l4.7 6.2L18.9 2Zm-1.2 18h1.8L7.6 3.9H5.7L17.7 20Z"/>
+      </svg>
+    `;
+  }
+
+  if (platform === "instagram") {
+    return `
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5Zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7Zm5 4.5A3.5 3.5 0 1 1 12 15.5 3.5 3.5 0 0 1 12 8.5Zm0 2A1.5 1.5 0 1 0 12 13.5 1.5 1.5 0 0 0 12 10.5ZM17.8 6.4a.8.8 0 1 1-.8.8.8.8 0 0 1 .8-.8Z"/>
+      </svg>
+    `;
+  }
+
+  return `
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+      <path d="M16.6 5.8c-1.1-.8-1.8-2.1-1.8-3.6h-3.2v13.1a2.6 2.6 0 1 1-2.6-2.6c.3 0 .6.1.9.2V9.6a6.1 6.1 0 0 0-.9-.1A5.8 5.8 0 1 0 14.8 15V8.4a7.1 7.1 0 0 0 4.2 1.4V6.6a4.1 4.1 0 0 1-2.4-.8Z"/>
+    </svg>
+  `;
 }
