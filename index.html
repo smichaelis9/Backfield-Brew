@@ -10,7 +10,21 @@
 </head>
 
 <body>
+<script>
+  const PASSWORD = "Patreon123";
+  const entered = sessionStorage.getItem("siteAccess");
 
+  if (entered !== PASSWORD) {
+    const input = prompt("Enter password to view Backfield Brew:");
+
+    if (input === PASSWORD) {
+      sessionStorage.setItem("siteAccess", PASSWORD);
+    } else {
+      document.body.innerHTML = "<h2>Access denied.</h2>";
+      throw new Error("Access denied");
+    }
+  }
+</script>
   <!-- =========================
        HEADER
   ========================== -->
