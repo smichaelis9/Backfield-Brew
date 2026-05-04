@@ -213,7 +213,7 @@ function renderTrending(value) {
   }
 
   if (v === "new") {
-    return `<img class="trend-img" src="https://i.ibb.co/cS5M0vbN/image-removebg-preview-2.png" alt="New">`;
+    return `<span class="trend new">NEW</span>`;
   }
 
   return "";
