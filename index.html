@@ -82,7 +82,12 @@
     document.addEventListener("DOMContentLoaded", () => {
       initRankingPage();
       handleHeaderButtons();
-      checkPatreonAccess();
+      if (document.cookie.includes("patreon_token")) {
+  checkPatreonAccess();
+} else {
+  PATREON_ACCESS_LEVEL = "free";
+  applyAccessRules();
+}
     });
   </script>
 
