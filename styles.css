@@ -137,11 +137,10 @@ body {
 }
 
 .player-photo {
-  width: 160px;
-  height: 160px;
+  width: 140px;
+  height: 170px; /* taller */
   object-fit: cover;
-  border-radius: 6px;
-  border: 3px solid #ffc52f;
+  object-position: top; /* shows more of head/upper body */
 }
 
 .player-main-info {
