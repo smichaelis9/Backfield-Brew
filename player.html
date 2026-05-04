@@ -39,17 +39,5 @@
     </section>
   </main>
 
-  <script>
-    document.addEventListener("DOMContentLoaded", () => {
-      initPlayerPage();
-      handleHeaderButtons();
-      if (document.cookie.includes("patreon_token")) {
-  checkPatreonAccess();
-} else {
-  PATREON_ACCESS_LEVEL = "free";
-  applyAccessRules();
-}
-    });
-  </script>
 </body>
 </html>
