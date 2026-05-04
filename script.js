@@ -187,19 +187,19 @@ function renderRanking(players) {
   table.innerHTML = filtered
     .sort((a, b) => num(get(a, ["Rank"])) - num(get(b, ["Rank"])))
     .map(p => `
-      <tr>
-        <td>${get(p, ["Rank"])}</td>
-        <td><a href="player.html?id=${encodeURIComponent(get(p, ["Player-ID"]))}">${get(p, ["Player"])}</a></td>
-        <td>${get(p, ["OFP"])}</td>
-        <td>${get(p, ["Risk"])}</td>
-        <td>${renderTrending(get(p, ["Trending"]))}</td>
-        <td>${get(p, ["Position", "Pos"])}</td>
-        <td>${get(p, ["Level"])}</td>
-        <td>${get(p, ["Age"])}</td>
-        <td>${get(p, ["Height"])}</td>
-        <td>${get(p, ["Weight"])}</td>
-      </tr>
-    `).join("");
+    <tr>
+      <td>${get(p, ["Rank"])}</td>
+      <td><a href="player.html?id=${encodeURIComponent(get(p, ["Player-ID"]))}">${get(p, ["Player"])}</a></td>
+      <td>${get(p, ["OFP"])}</td>
+      <td>${get(p, ["Risk"])}</td>
+      <td>${renderTrending(get(p, ["Trending"]))}</td>
+      <td>${get(p, ["Position", "Pos"])}</td>
+      <td>${get(p, ["Level"])}</td>
+      <td>${get(p, ["Age"])}</td>
+      <td>${get(p, ["Height"])}</td>
+      <td>${get(p, ["Weight"])}</td>
+    </tr>
+  `).join("");
 }
 function renderTrending(value) {
   const v = String(value || "").toLowerCase().trim();
