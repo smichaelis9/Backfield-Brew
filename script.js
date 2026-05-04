@@ -192,6 +192,7 @@ function renderRanking(players) {
         <td><a href="player.html?id=${encodeURIComponent(get(p, ["Player-ID"]))}">${get(p, ["Player"])}</a></td>
         <td>${get(p, ["OFP"])}</td>
         <td>${get(p, ["Risk"])}</td>
+        <td>${renderTrending(get(p, ["Trending"]))}</td>
         <td>${get(p, ["Position", "Pos"])}</td>
         <td>${get(p, ["Level"])}</td>
         <td>${get(p, ["Age"])}</td>
@@ -200,7 +201,23 @@ function renderRanking(players) {
       </tr>
     `).join("");
 }
+function renderTrending(value) {
+  const v = String(value || "").toLowerCase().trim();
 
+  if (v === "up") {
+    return `<span class="trend up">▲</span>`;
+  }
+
+  if (v === "down") {
+    return `<span class="trend down">▼</span>`;
+  }
+
+  if (v === "new") {
+    return `<img class="trend-img" src="https://i.ibb.co/cS5M0vbN/image-removebg-preview-2.png" alt="New">`;
+  }
+
+  return "";
+}
 /* =========================
    PLAYER PAGE
 ========================= */
