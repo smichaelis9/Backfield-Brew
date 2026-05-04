@@ -681,11 +681,21 @@ function getSocialIcon(platform) {
 let PATREON_ACCESS_LEVEL = "free";
 
 async function checkPatreonAccess() {
+  const cached = localStorage.getItem("patreon_access");
+
+  if (cached) {
+    PATREON_ACCESS_LEVEL = cached;
+    applyAccessRules();
+    return;
+  }
+
   try {
     const res = await fetch("/.netlify/functions/patreon-user");
     const data = await res.json();
 
     PATREON_ACCESS_LEVEL = data.accessLevel || "free";
+    localStorage.setItem("patreon_access", PATREON_ACCESS_LEVEL);
+
     applyAccessRules();
   } catch {
     PATREON_ACCESS_LEVEL = "free";
