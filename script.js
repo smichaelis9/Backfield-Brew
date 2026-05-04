@@ -290,8 +290,11 @@ function renderPlayerPage(bio, tools, stats, isPitcher, videos) {
   `
   : ""}
       <div class="player-main-info">
-        <h1>${playerName}</h1>
-        <p>#${get(bio, ["Rank"])} | ${get(bio, ["Position", "Pos"])} | ${get(bio, ["Level"])}</p>
+        <h1>
+          <span class="player-rank">#${get(bio, ["Rank"])}</span>
+          <span class="player-name">${playerName}</span>
+        </h1>
+        <p>${get(bio, ["Position", "Pos"])} | ${get(bio, ["Level"])}</p>
       </div>
 
       <div class="player-grade-box">
