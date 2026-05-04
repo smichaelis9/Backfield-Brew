@@ -192,7 +192,7 @@ function renderRanking(players) {
       <td><a href="player.html?id=${encodeURIComponent(get(p, ["Player-ID"]))}">${get(p, ["Player"])}</a></td>
       <td>${get(p, ["OFP"])}</td>
       <td>${get(p, ["Risk"])}</td>
-      <td>${renderTrending(get(p, ["Trending"]))}</td>
+      <td>${renderTrending(get(p, ["Trend"]))}</td>
       <td>${get(p, ["Position", "Pos"])}</td>
       <td>${get(p, ["Level"])}</td>
       <td>${get(p, ["Age"])}</td>
