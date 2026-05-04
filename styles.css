@@ -593,24 +593,22 @@ tr:nth-child(even) {
 }
 .trend {
   font-size: 16px;
-  font-weight: bold;
+  font-weight: 700;
 }
 
 .trend.up {
-  color: #2ecc71; /* green */
+  color: #2ecc71;
 }
 
 .trend.down {
-  color: #e74c3c; /* red */
+  color: #e74c3c;
 }
 
-.trend-img {
-  width: 18px;
-  height: 18px;
-  object-fit: contain;
-}
-td .trend,
-td .trend-img {
-  display: flex;
-  justify-content: center;
+.trend.new {
+  font-size: 11px;
+  padding: 2px 6px;
+  border-radius: 6px;
+  background: #ffc52f;
+  color: #1b2a4a;
+  letter-spacing: 0.5px;
 }
