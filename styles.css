@@ -518,7 +518,11 @@ tr:nth-child(even) {
   text-decoration: none;
   color: #1b2a4a;
 }
-
+.external-link-card {
+  min-width: 160px;
+  max-width: 200px;
+  text-align: center;
+}
 .external-link-card:hover {
   background: #ffc52f;
   color: #1b2a4a;
