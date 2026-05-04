@@ -170,6 +170,19 @@ body {
 .player-name {
   /* keeps it same size, but gives you flexibility later */
 }
+.player-trending-above-name {
+  height: 24px;
+  margin-bottom: 2px;
+}
+
+.player-trending-above-name .trend {
+  font-size: 22px;
+}
+
+.player-trending-above-name .trend.new {
+  font-size: 12px;
+  padding: 4px 8px;
+}
 /* OFP / RISK BOXES */
 
 .player-grade-box {
