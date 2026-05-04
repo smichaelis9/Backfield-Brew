@@ -501,8 +501,9 @@ tr:nth-child(even) {
 }
 
 .external-links-grid {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
   gap: 10px;
 }
 
