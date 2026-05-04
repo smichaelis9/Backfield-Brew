@@ -388,13 +388,18 @@ function renderTools(tools, isPitcher) {
       .filter(Boolean)
       .join("");
 
-    setHTML("toolsCard", `
-      <h2>Pitch Arsenal</h2>
-      <div class="tool-grid">
-        ${pitchTools}
-        ${extraTools}
-      </div>
-    `);
+    const lastUpdated = get(tools, ["Last Updated", "Tools Updated"]);
+
+setHTML("toolsCard", `
+  <h2>
+    Pitch Arsenal
+    ${isRealValue(lastUpdated) ? `<span class="tools-updated">(Last Updated: ${lastUpdated})</span>` : ""}
+  </h2>
+  <div class="tool-grid">
+    ${pitchTools}
+    ${extraTools}
+  </div>
+`);
 
     return;
   }
@@ -411,12 +416,17 @@ function renderTools(tools, isPitcher) {
     `)
     .join("");
 
-  setHTML("toolsCard", `
-    <h2>Tools</h2>
-    <div class="tool-grid">
-      ${hitterTools || "<p>No tools found.</p>"}
-    </div>
-  `);
+  const lastUpdated = get(tools, ["Last Updated", "Tools Updated"]);
+
+setHTML("toolsCard", `
+  <h2>
+    Tool Grades
+    ${isRealValue(lastUpdated) ? `<span class="tools-updated">(Last Updated: ${lastUpdated})</span>` : ""}
+  </h2>
+  <div class="tool-grid">
+    ${hitterTools || "<p>No tools found.</p>"}
+  </div>
+`);
 }
 
 /* =========================
