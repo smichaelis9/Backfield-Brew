@@ -38,10 +38,19 @@ function num(value) {
   return Number.isFinite(n) ? n : 999999;
 }
 
+const sheetCache = {};
+
 async function loadSheet(sheetName) {
+  if (sheetCache[sheetName]) return sheetCache[sheetName];
+
   const res = await fetch(sheetUrl(sheetName));
   if (!res.ok) throw new Error(`Failed loading ${sheetName}`);
-  return parseCSV(await res.text());
+
+  const text = await res.text();
+  const rows = parseCSV(text);
+
+  sheetCache[sheetName] = rows;
+  return rows;
 }
 
 function parseCSV(text) {
@@ -236,49 +245,50 @@ async function initPlayerPage() {
 
     const isPitcher = get(bio, ["Player Type"]).toLowerCase().includes("pitch");
 
-    const toolsSheet = isPitcher ? "Pitcher Tools" : "Hitter Tools";
-    const toolsRows = await loadSheet(toolsSheet);
+const toolsSheet = isPitcher ? "Pitcher Tools" : "Hitter Tools";
 
-    const tools = toolsRows.find(p =>
+const statSheets = isPitcher
+  ? ["Pitcher Stats 2023", "Pitcher Stats 2024", "Pitcher Stats 2025", "Pitcher Stats 2026"]
+  : ["Hitter Stats 2023", "Hitter Stats 2024", "Hitter Stats 2025", "Hitter Stats 2026"];
+
+const [toolsRows, videoRows, ...statRowsByYear] = await Promise.all([
+  loadSheet(toolsSheet),
+  loadSheet("Videos").catch(() => []),
+  ...statSheets.map(sheet => loadSheet(sheet))
+]);
+
+const tools = toolsRows.find(p =>
+  get(p, ["Player-ID", "Player ID"]) === id
+);
+
+const stats = statRowsByYear
+  .map((rows, index) => {
+    const row = rows.find(p =>
       get(p, ["Player-ID", "Player ID"]) === id
     );
 
-    const statSheets = isPitcher
-      ? ["Pitcher Stats 2023", "Pitcher Stats 2024", "Pitcher Stats 2025", "Pitcher Stats 2026"]
-      : ["Hitter Stats 2023", "Hitter Stats 2024", "Hitter Stats 2025", "Hitter Stats 2026"];
+    if (!row) return null;
 
-    const stats = [];
+    const dataKeys = Object.keys(row).filter(k =>
+      !["Player-ID", "Player ID", "Player"].includes(k)
+    );
 
-    for (const sheet of statSheets) {
-      const rows = await loadSheet(sheet);
-      const row = rows.find(p =>
-        get(p, ["Player-ID", "Player ID"]) === id
-      );
+    const hasRealStats = dataKeys.some(k => isRealValue(row[k]));
 
-      if (row) {
-        const dataKeys = Object.keys(row).filter(k => !["Player-ID", "Player ID", "Player"].includes(k));
-        const hasRealStats = dataKeys.some(k => isRealValue(row[k]));
+    if (!hasRealStats) return null;
 
-        if (hasRealStats) {
-          stats.push({
-            year: sheet.match(/\d{4}/)[0],
-            row
-          });
-        }
-      }
-    }
+    return {
+      year: statSheets[index].match(/\d{4}/)[0],
+      row
+    };
+  })
+  .filter(Boolean);
 
-    let videos = [];
-    try {
-      const videoRows = await loadSheet("Videos");
-      videos = videoRows.filter(v =>
-        get(v, ["Player-ID", "Player ID"]) === id
-      );
-    } catch (videoErr) {
-      videos = [];
-    }
+const videos = videoRows.filter(v =>
+  get(v, ["Player-ID", "Player ID"]) === id
+);
 
-    renderPlayerPage(bio, tools, stats, isPitcher, videos);
+renderPlayerPage(bio, tools, stats, isPitcher, videos);
   } catch (err) {
     document.body.innerHTML = `<h2>${err.message}</h2>`;
   }
