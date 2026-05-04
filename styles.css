@@ -327,6 +327,12 @@ tr:nth-child(even) {
 .scouting-notes li {
   margin-bottom: 8px;
 }
+.tools-updated {
+  font-size: 12px;
+  font-weight: 400;
+  color: #666;
+  margin-left: 8px;
+}
 /* =========================
    VIDEOS
 ========================= */
