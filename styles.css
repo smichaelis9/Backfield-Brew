@@ -163,6 +163,13 @@ body {
   margin-top: 4px;
   text-align: center;
 }
+.player-rank {
+  margin-right: 12px; /* controls spacing between # and name */
+}
+
+.player-name {
+  /* keeps it same size, but gives you flexibility later */
+}
 /* OFP / RISK BOXES */
 
 .player-grade-box {
