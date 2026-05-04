@@ -390,16 +390,16 @@ function renderTools(tools, isPitcher) {
 
     const lastUpdated = get(tools, ["Last Updated", "Tools Updated"]);
 
-setHTML("toolsCard", `
-  <h2>
-    Pitch Arsenal
-    ${isRealValue(lastUpdated) ? `<span class="tools-updated">(Last Updated: ${lastUpdated})</span>` : ""}
-  </h2>
-  <div class="tool-grid">
-    ${pitchTools}
-    ${extraTools}
-  </div>
-`);
+    setHTML("toolsCard", `
+      <h2>
+        Pitch Arsenal
+        ${isRealValue(lastUpdated) ? `<span class="tools-updated">(Last Updated: ${lastUpdated})</span>` : ""}
+      </h2>
+      <div class="tool-grid">
+        ${pitchTools}
+        ${extraTools}
+      </div>
+    `);
 
     return;
   }
@@ -418,15 +418,15 @@ setHTML("toolsCard", `
 
   const lastUpdated = get(tools, ["Last Updated", "Tools Updated"]);
 
-setHTML("toolsCard", `
-  <h2>
-    Tool Grades
-    ${isRealValue(lastUpdated) ? `<span class="tools-updated">(Last Updated: ${lastUpdated})</span>` : ""}
-  </h2>
-  <div class="tool-grid">
-    ${hitterTools || "<p>No tools found.</p>"}
-  </div>
-`);
+    setHTML("toolsCard", `
+      <h2>
+        Tool Grades
+        ${isRealValue(lastUpdated) ? `<span class="tools-updated">(Last Updated: ${lastUpdated})</span>` : ""}
+      </h2>
+      <div class="tool-grid">
+        ${hitterTools || "<p>No tools found.</p>"}
+      </div>
+    `);
 }
 
 /* =========================
