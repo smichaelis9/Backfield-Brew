@@ -323,7 +323,6 @@ renderScoutingNotes(bio);
 renderArticles(bio);
 renderStats(stats, isPitcher);
 renderVideos(videos);
-applyAccessRules();
 }
 
 /* =========================
