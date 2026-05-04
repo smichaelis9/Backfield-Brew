@@ -453,7 +453,12 @@ function renderScoutingNotes(bio) {
   if (statsCard) {
     statsCard.insertAdjacentHTML("beforebegin", `
       <section class="card" data-access="premium">
-        <h2>Scouting Notes</h2>
+        <h2>
+        Scouting Notes
+          ${isRealValue(get(bio, ["Notes Updated"]))
+            ? `<span class="tools-updated">(Last Updated: ${get(bio, ["Notes Updated"])})</span>`
+            : ""}
+        </h2>
         <ul class="scouting-notes">
           ${noteItems.map(item => `<li>${item}</li>`).join("")}
         </ul>
