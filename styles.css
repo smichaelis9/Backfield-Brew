@@ -591,3 +591,26 @@ tr:nth-child(even) {
     grid-template-columns: 1fr;
   }
 }
+.trend {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.trend.up {
+  color: #2ecc71; /* green */
+}
+
+.trend.down {
+  color: #e74c3c; /* red */
+}
+
+.trend-img {
+  width: 18px;
+  height: 18px;
+  object-fit: contain;
+}
+td .trend,
+td .trend-img {
+  display: flex;
+  justify-content: center;
+}
