@@ -44,7 +44,12 @@
     document.addEventListener("DOMContentLoaded", () => {
       initPlayerPage();
       handleHeaderButtons();
-      checkPatreonAccess();
+      if (document.cookie.includes("patreon_token")) {
+  checkPatreonAccess();
+} else {
+  PATREON_ACCESS_LEVEL = "free";
+  applyAccessRules();
+}
     });
   </script>
 </body>
