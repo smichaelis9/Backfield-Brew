@@ -317,12 +317,12 @@ function renderPlayerPage(bio, tools, stats, isPitcher, videos) {
     <p><b>Rule 5 Eligible:</b> ${get(bio, ["Rule 5 Eligible", "Rule5 Eligible"])}</p>
   `);
 
-renderExternalLinks(bio);
-renderTools(tools, isPitcher);
-renderScoutingNotes(bio);
-renderArticles(bio);
-renderStats(stats, isPitcher);
-renderVideos(videos);
+  renderExternalLinks(bio);
+  renderTools(tools, isPitcher);
+  renderScoutingNotes(bio);
+  renderArticles(bio);
+  renderStats(stats, isPitcher);
+  renderVideos(videos);
 }
 
 /* =========================
