@@ -280,8 +280,15 @@ function renderPlayerPage(bio, tools, stats, isPitcher, videos) {
   setHTML("playerHero", `
     <div class="player-hero-wrap">
       ${isRealValue(picture)
-        ? `<img class="player-photo" src="${picture}" alt="${playerName}" onerror="this.style.display='none';">`
+  ? `
+    <div class="player-image-wrap">
+      <img class="player-photo" src="${picture}" alt="${playerName}" onerror="this.style.display='none';">
+      ${isRealValue(get(bio, ["Picture source", "Picture Source"]))
+        ? `<div class="image-source">Source: ${get(bio, ["Picture source", "Picture Source"])}</div>`
         : ""}
+    </div>
+  `
+  : ""}
       <div class="player-main-info">
         <h1>${playerName}</h1>
         <p>#${get(bio, ["Rank"])} | ${get(bio, ["Position", "Pos"])} | ${get(bio, ["Level"])}</p>
