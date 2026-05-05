@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Backfield Brew – Rankings</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="script.js"></script>
+</head>
+
+<body>
+  <!-- =========================
+       HEADER
+  ========================== -->
+  <header class="site-header">
+  <img src="BFB-Logo.png" alt="Backfield Brew" class="site-logo" />
+</header>
+
+<div class="header-buttons">
+  <a href="index.html" id="backToRankings" style="display:none;">← Rankings</a>
+
+  <a href="https://www.patreon.com/BackfieldBrew" target="_blank" rel="noopener">
+    Patreon
+  </a>
+
+  <a href="https://docs.google.com/spreadsheets/d/1FvEcJW7pJVV1IQYJs4qvZpyGI2lKRv_TnkyzfRT5h-U/edit?usp=sharing"
+     target="_blank"
+     rel="noopener">
+    Organizational Depth Chart
+  </a>
+</div>
+
+  <!-- =========================
+       MAIN
+  ========================== -->
+  <main class="container" data-access="rankings">
+
+    <!-- =========================
+         FILTERS
+    ========================== -->
+    <section class="card">
+      <div class="filter-grid">
+        <input type="text" id="searchBox" placeholder="Search player..." />
+
+        <select id="typeFilter">
+          <option value="">All Types</option>
+          <option value="hitter">Hitters</option>
+          <option value="pitcher">Pitchers</option>
+        </select>
+
+        <select id="positionFilter"></select>
+        <select id="levelFilter"></select>
+      </div>
+    </section>
+
+    <!-- =========================
+         RANKING TABLE
+    ========================== -->
+    <section class="card">
+      <div class="ranking-scroll">
+        <table id="rankingTable">
+          <thead>
+            <tr>
+              <th>Rank</th>
+              <th>Player</th>
+              <th>OFP</th>
+              <th>Risk</th>
+              <th>Trending</th>
+              <th>Pos</th>
+              <th>Level</th>
+              <th>Age</th>
+              <th>Height</th>
+              <th>Weight</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+
+      <p id="status"></p>
+    </section>
+
+  </main>
+
+  <!-- =========================
+       INIT SCRIPT
+  ========================== -->
+ <script>
+  document.addEventListener("DOMContentLoaded", () => {
+    initRankingPage();
+    handleHeaderButtons();
+  });
+</script>
+</body>
+</html>
