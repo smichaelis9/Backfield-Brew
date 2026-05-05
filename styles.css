@@ -624,3 +624,12 @@ tr:nth-child(even) {
   color: #1b2a4a;
   letter-spacing: 0.5px;
 }
+.archive-reason {
+  margin-top: 12px;
+  font-weight: 700;
+  color: #1b2a4a;
+  background: #f4f6f8;
+  border-left: 5px solid #ffc52f;
+  padding: 10px 12px;
+  border-radius: 8px;
+}
