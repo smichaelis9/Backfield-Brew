@@ -2,6 +2,7 @@ const PUB_ID = '2PACX-1vS7YJJLyptStf41slMLw1QW6g6gBW1rg6dlHdwFacsqlZth7lSnCKsJ5S
 
 const SHEET_GIDS = {
   "Biography Info": "536791829",
+  "Archived Biography Info": "1669539724",
   "Pitcher Tools": "1738771068",
   "Hitter Tools": "146410825",
   "Hitter Stats 2023": "341964968",
