@@ -348,17 +348,21 @@ function renderPlayerPage(bio, tools, stats, isPitcher, videos) {
   `);
 
   setHTML("bioCard", `
-    <h2>Bio</h2>
-    <p><b>Birthday:</b> ${get(bio, ["Birthday", "DOB"])}</p>
-    <p><b>Age:</b> ${get(bio, ["Age"])}</p>
-    <p><b>Height:</b> ${get(bio, ["Height"])}</p>
-    <p><b>Weight:</b> ${get(bio, ["Weight"])}</p>
-    <p><b>Bat / Throw:</b> ${get(bio, ["Bat / Throw", "B/T"])}</p>
-    <p><b>Draft/IFA:</b> ${get(bio, ["Draft/IFA", "Draft / IFA"])}</p>
-    <p><b>Acquired:</b> ${get(bio, ["Acquired"])}</p>
-    <p><b>Signed By:</b> ${get(bio, ["Signed By"])}</p>
-    <p><b>Rule 5 Eligible:</b> ${get(bio, ["Rule 5 Eligible", "Rule5 Eligible"])}</p>
-  `);
+  <h2>Bio</h2>
+
+  ${isRealValue(birthday) ? `<p><strong>Birthday:</strong> ${birthday}</p>` : ""}
+  ${isRealValue(age) ? `<p><strong>Age:</strong> ${age}</p>` : ""}
+  ${isRealValue(height) ? `<p><strong>Height:</strong> ${height}</p>` : ""}
+  ${isRealValue(weight) ? `<p><strong>Weight:</strong> ${weight}</p>` : ""}
+  ${isRealValue(batThrow) ? `<p><strong>Bat / Throw:</strong> ${batThrow}</p>` : ""}
+  ${isRealValue(draft) ? `<p><strong>Draft/IFA:</strong> ${draft}</p>` : ""}
+  ${isRealValue(acquired) ? `<p><strong>Acquired:</strong> ${acquired}</p>` : ""}
+  ${isRealValue(signedBy) ? `<p><strong>Signed By:</strong> ${signedBy}</p>` : ""}
+
+  ${!isArchive && isRealValue(rule5)
+    ? `<p><strong>Rule 5 Eligible:</strong> ${rule5}</p>`
+    : ""}
+`);
 
   renderExternalLinks(bio);
   renderTools(tools, isPitcher);
