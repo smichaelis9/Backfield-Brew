@@ -304,7 +304,16 @@ function renderPlayerPage(bio, tools, stats, isPitcher, videos, isArchive = fals
   const picture = get(bio, ["Picture", "Image", "Photo", "Picture URL", "Image URL"]);
   const ofp = get(bio, ["OFP"]);
   const risk = get(bio, ["Risk"]);
-
+  const birthday = get(bio, ["Birthday"]);
+  const age = get(bio, ["Age"]);
+  const height = get(bio, ["Height"]);
+  const weight = get(bio, ["Weight"]);
+  const batThrow = get(bio, ["Bat / Throw", "Bat/Throw"]);
+  const draft = get(bio, ["Draft/IFA"]);
+  const acquired = get(bio, ["Acquired"]);
+  const signedBy = get(bio, ["Signed By", "Signed"]);
+  const rule5 = get(bio, ["Rule 5 Eligible"]);
+  
   setHTML("playerHero", `
     <div class="player-hero-wrap">
       ${isRealValue(picture)
