@@ -299,7 +299,7 @@ renderPlayerPage(bio, tools, stats, isPitcher, videos);
    RENDER PLAYER
 ========================= */
 
-function renderPlayerPage(bio, tools, stats, isPitcher, videos) {
+function renderPlayerPage(bio, tools, stats, isPitcher, videos, isArchive = false) {
   const playerName = get(bio, ["Player", "Name"]);
   const picture = get(bio, ["Picture", "Image", "Photo", "Picture URL", "Image URL"]);
   const ofp = get(bio, ["OFP"]);
@@ -882,7 +882,7 @@ async function initArchivePlayerPage() {
 }
 
 function renderArchivePlayerPage(bio, tools, stats, isPitcher, videos) {
-  renderPlayerPage(bio, tools, stats, isPitcher, videos);
+  renderPlayerPage(bio, tools, stats, isPitcher, videos, true);
 
   const archiveReason = get(bio, ["Archive Reason", "Reason", "Status"]);
 
