@@ -735,3 +735,166 @@ function getSocialIcon(platform) {
     </svg>
   `;
 }
+/* =========================
+   ARCHIVE PAGES
+========================= */
+
+async function initArchivePage() {
+  const status = document.getElementById("status");
+
+  try {
+    const players = await loadSheet("Archived Biography Info");
+
+    const clean = players.filter(p => {
+      const id = get(p, ["Player-ID", "Player ID"]);
+      const name = get(p, ["Player", "Name"]);
+      p["Player-ID"] = id;
+      p["Player"] = name;
+      return id && name;
+    });
+
+    setupFilters(clean);
+    attachArchiveFilterListeners(clean);
+    renderArchiveRanking(clean);
+
+    status.textContent = "";
+  } catch (err) {
+    status.textContent = err.message;
+  }
+}
+
+function attachArchiveFilterListeners(players) {
+  ["searchBox", "typeFilter", "positionFilter", "levelFilter"].forEach(id => {
+    const el = document.getElementById(id);
+    if (el) {
+      el.addEventListener("input", () => renderArchiveRanking(players));
+      el.addEventListener("change", () => renderArchiveRanking(players));
+    }
+  });
+}
+
+function renderArchiveRanking(players) {
+  const table = document.querySelector("#rankingTable tbody");
+  if (!table) return;
+
+  const search = String(document.getElementById("searchBox")?.value || "").toLowerCase().trim();
+  const type = document.getElementById("typeFilter")?.value || "";
+  const posFilter = document.getElementById("positionFilter")?.value || "";
+  const levelFilter = document.getElementById("levelFilter")?.value || "";
+
+  const filtered = players.filter(p => {
+    const name = get(p, ["Player", "Name"]).toLowerCase();
+    const playerType = get(p, ["Player Type"]).toLowerCase();
+    const positionParts = get(p, ["Position", "Pos"])
+      .split(/[\/, ]+/)
+      .map(x => x.trim())
+      .filter(Boolean);
+    const level = get(p, ["Level"]);
+
+    return (
+      (!search || name.includes(search)) &&
+      (!type || playerType === type.toLowerCase()) &&
+      (!posFilter || positionParts.includes(posFilter)) &&
+      (!levelFilter || level === levelFilter)
+    );
+  });
+
+  table.innerHTML = filtered
+    .sort((a, b) => num(get(a, ["Rank"])) - num(get(b, ["Rank"])))
+    .map(p => `
+      <tr>
+        <td>${get(p, ["Rank"])}</td>
+        <td><a href="archive-player.html?id=${encodeURIComponent(get(p, ["Player-ID"]))}">${get(p, ["Player"])}</a></td>
+        <td>${get(p, ["OFP"])}</td>
+        <td>${get(p, ["Risk"])}</td>
+        <td>${renderTrending(get(p, ["Trending", "Trend", "Movement"]))}</td>
+        <td>${get(p, ["Position", "Pos"])}</td>
+        <td>${get(p, ["Level"])}</td>
+        <td>${get(p, ["Age"])}</td>
+        <td>${get(p, ["Height"])}</td>
+        <td>${get(p, ["Weight"])}</td>
+        <td>${get(p, ["Archive Reason", "Reason", "Status"])}</td>
+      </tr>
+    `).join("");
+}
+
+async function initArchivePlayerPage() {
+  const id = new URLSearchParams(window.location.search).get("id");
+
+  try {
+    const players = await loadSheet("Archived Biography Info");
+
+    const bio = players.find(p =>
+      get(p, ["Player-ID", "Player ID"]) === id
+    );
+
+    if (!bio) throw new Error("Archived player not found");
+
+    const isPitcher = get(bio, ["Player Type"]).toLowerCase().includes("pitch");
+
+    const toolsSheet = isPitcher ? "Pitcher Tools" : "Hitter Tools";
+
+    const statSheets = isPitcher
+      ? ["Pitcher Stats 2023", "Pitcher Stats 2024", "Pitcher Stats 2025", "Pitcher Stats 2026"]
+      : ["Hitter Stats 2023", "Hitter Stats 2024", "Hitter Stats 2025", "Hitter Stats 2026"];
+
+    const [toolsRows, videoRows, ...statRowsByYear] = await Promise.all([
+      loadSheet(toolsSheet).catch(() => []),
+      loadSheet("Videos").catch(() => []),
+      ...statSheets.map(sheet => loadSheet(sheet).catch(() => []))
+    ]);
+
+    const tools = toolsRows.find(p =>
+      get(p, ["Player-ID", "Player ID"]) === id
+    );
+
+    const stats = statRowsByYear
+      .map((rows, index) => {
+        const row = rows.find(p =>
+          get(p, ["Player-ID", "Player ID"]) === id
+        );
+
+        if (!row) return null;
+
+        const dataKeys = Object.keys(row).filter(k =>
+          !["Player-ID", "Player ID", "Player"].includes(k)
+        );
+
+        const hasRealStats = dataKeys.some(k => isRealValue(row[k]));
+
+        if (!hasRealStats) return null;
+
+        return {
+          year: statSheets[index].match(/\d{4}/)[0],
+          row
+        };
+      })
+      .filter(Boolean);
+
+    const videos = videoRows.filter(v =>
+      get(v, ["Player-ID", "Player ID"]) === id
+    );
+
+    renderArchivePlayerPage(bio, tools, stats, isPitcher, videos);
+  } catch (err) {
+    document.body.innerHTML = `<h2>${err.message}</h2>`;
+  }
+}
+
+function renderArchivePlayerPage(bio, tools, stats, isPitcher, videos) {
+  renderPlayerPage(bio, tools, stats, isPitcher, videos);
+
+  const archiveReason = get(bio, ["Archive Reason", "Reason", "Status"]);
+
+  if (isRealValue(archiveReason)) {
+    const hero = document.getElementById("playerHero");
+
+    if (hero) {
+      hero.insertAdjacentHTML("beforeend", `
+        <div class="archive-reason">
+          Archived: ${archiveReason}
+        </div>
+      `);
+    }
+  }
+}
