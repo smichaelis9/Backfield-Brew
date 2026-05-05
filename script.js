@@ -1,4 +1,4 @@
-const PUB_ID = '2PACX-1vS7YJJLyptStf41slMLw1QW6g6gBW1rg6dlHdwFacsqlZth7lSnCKsJ5Sbtck0iw5y0ZAHDoDId9HsE';
+  const PUB_ID = '2PACX-1vS7YJJLyptStf41slMLw1QW6g6gBW1rg6dlHdwFacsqlZth7lSnCKsJ5Sbtck0iw5y0ZAHDoDId9HsE';
 
 const SHEET_GIDS = {
   "Biography Info": "536791829",
@@ -806,11 +806,7 @@ function renderArchiveRanking(players) {
         <td>${get(p, ["Rank"])}</td>
         <td><a href="archive-player.html?id=${encodeURIComponent(get(p, ["Player-ID"]))}">${get(p, ["Player"])}</a></td>
         <td>${get(p, ["OFP"])}</td>
-        <td>${get(p, ["Risk"])}</td>
-        <td>${renderTrending(get(p, ["Trending", "Trend", "Movement"]))}</td>
         <td>${get(p, ["Position", "Pos"])}</td>
-        <td>${get(p, ["Level"])}</td>
-        <td>${get(p, ["Age"])}</td>
         <td>${get(p, ["Height"])}</td>
         <td>${get(p, ["Weight"])}</td>
         <td>${get(p, ["Archive Reason", "Reason", "Status"])}</td>
