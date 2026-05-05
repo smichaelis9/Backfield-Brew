@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Backfield Brew – Player Page</title>
+  <title>Backfield Brew – Archived Player</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <link rel="stylesheet" href="styles.css" />
@@ -11,47 +11,43 @@
 
 <body>
   <header class="site-header">
-  <img src="BFB-Logo.png" alt="Backfield Brew" class="site-logo" />
-</header>
+    <img src="BFB-Logo.png" alt="Backfield Brew" class="site-logo" />
+  </header>
 
-<div class="header-buttons">
-  <a href="index.html" id="backToRankings" style="display:none;">← Rankings</a>
-
-  <a href="https://www.patreon.com/BackfieldBrew" target="_blank" rel="noopener">
-    Patreon
-  </a>
-
-  <a href="https://docs.google.com/spreadsheets/d/1FvEcJW7pJVV1IQYJs4qvZpyGI2lKRv_TnkyzfRT5h-U/edit?usp=sharing"
-     target="_blank"
-     rel="noopener">
-    Organizational Depth Chart
-  </a>
-</div>
+  <div class="header-buttons">
+    <a href="archive.html">← Archived Players</a>
+    <a href="index.html">Active Rankings</a>
+    <a href="https://www.patreon.com/BackfieldBrew" target="_blank" rel="noopener">Patreon</a>
+    <a href="https://docs.google.com/spreadsheets/d/1FvEcJW7pJVV1IQYJs4qvZpyGI2lKRv_TnkyzfRT5h-U/edit?usp=sharing" target="_blank" rel="noopener">
+      Organizational Depth Chart
+    </a>
+  </div>
 
   <main class="container">
-    <section id="playerHero" class="card" data-access="rankings">
+    <section id="playerHero" class="card">
       Loading player...
     </section>
 
     <div class="two-col">
-      <section id="bioCard" class="card" data-access="rankings">
-        Loading biography...
+      <section id="bioCard" class="card">
+        Loading bio...
       </section>
 
-      <section id="toolsCard" class="card" data-access="premium">
+      <section id="toolsCard" class="card">
         Loading tools...
       </section>
     </div>
 
-    <section id="statsCard" class="card" data-access="premium">
+    <section id="statsCard" class="card">
       Loading stats...
     </section>
   </main>
-<script>
-  document.addEventListener("DOMContentLoaded", () => {
-    initArchivePlayerPage();
-    handleHeaderButtons();
-  });
-</script>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      initArchivePlayerPage();
+      handleHeaderButtons();
+    });
+  </script>
 </body>
 </html>
