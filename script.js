@@ -248,8 +248,8 @@ async function initPlayerPage() {
 
 const toolsSheet = isPitcher ? "Pitcher Tools" : "Hitter Tools";
 
-const statSheets = isPitcher
-  ? ["Pitcher Stats 2023", "Pitcher Stats 2024", "Pitcher Stats 2025", "Pitcher Stats 2026"]
+const heets = isPitcher
+  ? ["Pitcher  2023", "Pitcher Stats 2024", "Pitcher Stats 2025", "Pitcher Stats 2026"]
   : ["Hitter Stats 2023", "Hitter Stats 2024", "Hitter Stats 2025", "Hitter Stats 2026"];
 
 const [toolsRows, videoRows, ...statRowsByYear] = await Promise.all([
@@ -592,7 +592,10 @@ function renderStats(stats, isPitcher) {
   }
 
   setHTML("statsCard", `
-    <h2>Stats</h2>
+    <h2>
+      Stats
+      <span class="tools-updated">(MiLB stats only)</span>
+    </h2>
     ${buildTable("Standard Stats", standardCols)}
     ${buildTable("Advanced / Batted Ball Stats", advancedCols)}
   `);
