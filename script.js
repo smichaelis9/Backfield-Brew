@@ -363,7 +363,12 @@ function renderPlayerPage(bio, tools, stats, isPitcher, videos, isArchive = fals
   ${isRealValue(height) ? `<p><strong>Height:</strong> ${height}</p>` : ""}
   ${isRealValue(weight) ? `<p><strong>Weight:</strong> ${weight}</p>` : ""}
   ${isRealValue(batThrow) ? `<p><strong>Bat / Throw:</strong> ${batThrow}</p>` : ""}
-  ${isRealValue(get(bio, ["School/Country", "School", "Country"])) ? `<p><strong>School/Country:</strong> ${get(bio, ["School/Country", "School", "Country"])}</p>` : ""}
+  ${isRealValue(get(bio, ["School/Country"])) ? `
+  <p>
+    <strong>${get(bio, ["School or Country"])}:</strong>
+    ${get(bio, ["School/Country"])}
+  </p>
+` : ""}
   ${isRealValue(draft) ? `<p><strong>Draft/IFA:</strong> ${draft}</p>` : ""}
   ${isRealValue(acquired) ? `<p><strong>Acquired:</strong> ${acquired}</p>` : ""}
   ${isRealValue(get(bio, ["Signing Bonus", "Bonus"])) ? `<p><strong>Signing Bonus:</strong> ${get(bio, ["Signing Bonus", "Bonus"])}</p>` : ""}
