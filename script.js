@@ -246,55 +246,54 @@ async function initPlayerPage() {
 
     const isPitcher = get(bio, ["Player Type"]).toLowerCase().includes("pitch");
 
-const toolsSheet = isPitcher ? "Pitcher Tools" : "Hitter Tools";
+    const toolsSheet = isPitcher ? "Pitcher Tools" : "Hitter Tools";
 
-const statSheets = isPitcher
-  ? ["Pitcher Stats 2023", "Pitcher Stats 2024", "Pitcher Stats 2025", "Pitcher Stats 2026"]
-  : ["Hitter Stats 2023", "Hitter Stats 2024", "Hitter Stats 2025", "Hitter Stats 2026"];
+    const statSheets = isPitcher
+      ? ["Pitcher Stats 2023", "Pitcher Stats 2024", "Pitcher Stats 2025", "Pitcher Stats 2026"]
+      : ["Hitter Stats 2023", "Hitter Stats 2024", "Hitter Stats 2025", "Hitter Stats 2026"];
 
-const [toolsRows, videoRows, ...statRowsByYear] = await Promise.all([
-  loadSheet(toolsSheet).catch(() => []),
-  loadSheet("Videos").catch(() => []),
-  ...statSheets.map(sheet => loadSheet(sheet).catch(() => []))
-]);
+    const [toolsRows, videoRows, ...statRowsByYear] = await Promise.all([
+      loadSheet(toolsSheet).catch(() => []),
+      loadSheet("Videos").catch(() => []),
+      ...statSheets.map(sheet => loadSheet(sheet).catch(() => []))
+    ]);
 
-const tools = toolsRows.find(p =>
-  get(p, ["Player-ID", "Player ID"]) === id
-);
-
-const stats = statRowsByYear
-  .map((rows, index) => {
-    const row = rows.find(p =>
+    const tools = toolsRows.find(p =>
       get(p, ["Player-ID", "Player ID"]) === id
     );
 
-    if (!row) return null;
+    const stats = statRowsByYear
+      .map((rows, index) => {
+        const row = rows.find(p =>
+          get(p, ["Player-ID", "Player ID"]) === id
+        );
 
-    const dataKeys = Object.keys(row).filter(k =>
-      !["Player-ID", "Player ID", "Player"].includes(k)
+        if (!row) return null;
+
+        const dataKeys = Object.keys(row).filter(k =>
+          !["Player-ID", "Player ID", "Player"].includes(k)
+        );
+
+        const hasRealStats = dataKeys.some(k => isRealValue(row[k]));
+        if (!hasRealStats) return null;
+
+        return {
+          year: statSheets[index].match(/\d{4}/)[0],
+          row
+        };
+      })
+      .filter(Boolean);
+
+    const videos = videoRows.filter(v =>
+      get(v, ["Player-ID", "Player ID"]) === id
     );
 
-    const hasRealStats = dataKeys.some(k => isRealValue(row[k]));
+    renderPlayerPage(bio, tools, stats, isPitcher, videos);
 
-    if (!hasRealStats) return null;
-
-    return {
-      year: statSheets[index].match(/\d{4}/)[0],
-      row
-    };
-  })
-  .filter(Boolean);
-
-const videos = videoRows.filter(v =>
-  get(v, ["Player-ID", "Player ID"]) === id
-);
-
-renderPlayerPage(bio, tools, stats, isPitcher, videos);
   } catch (err) {
     document.body.innerHTML = `<h2>${err.message}</h2>`;
   }
 }
-
 /* =========================
    RENDER PLAYER
 ========================= */
