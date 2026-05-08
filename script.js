@@ -248,14 +248,14 @@ async function initPlayerPage() {
 
 const toolsSheet = isPitcher ? "Pitcher Tools" : "Hitter Tools";
 
-const heets = isPitcher
-  ? ["Pitcher  2023", "Pitcher Stats 2024", "Pitcher Stats 2025", "Pitcher Stats 2026"]
+const statSheets = isPitcher
+  ? ["Pitcher Stats 2023", "Pitcher Stats 2024", "Pitcher Stats 2025", "Pitcher Stats 2026"]
   : ["Hitter Stats 2023", "Hitter Stats 2024", "Hitter Stats 2025", "Hitter Stats 2026"];
 
 const [toolsRows, videoRows, ...statRowsByYear] = await Promise.all([
-  loadSheet(toolsSheet),
+  loadSheet(toolsSheet).catch(() => []),
   loadSheet("Videos").catch(() => []),
-  ...statSheets.map(sheet => loadSheet(sheet))
+  ...statSheets.map(sheet => loadSheet(sheet).catch(() => []))
 ]);
 
 const tools = toolsRows.find(p =>
