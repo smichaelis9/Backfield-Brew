@@ -365,6 +365,7 @@ function renderPlayerPage(bio, tools, stats, isPitcher, videos, isArchive = fals
   ${isRealValue(batThrow) ? `<p><strong>Bat / Throw:</strong> ${batThrow}</p>` : ""}
   ${isRealValue(draft) ? `<p><strong>Draft/IFA:</strong> ${draft}</p>` : ""}
   ${isRealValue(acquired) ? `<p><strong>Acquired:</strong> ${acquired}</p>` : ""}
+  ${isRealValue(get(bio, ["Signing Bonus", "Bonus"])) ? `<p><strong>Signing Bonus:</strong> ${get(bio, ["Signing Bonus", "Bonus"])}</p>` : ""}
   ${isRealValue(signedBy) ? `<p><strong>Signed By:</strong> ${signedBy}</p>` : ""}
 
   ${!isArchive && isRealValue(rule5)
