@@ -110,7 +110,28 @@ body {
   background: #ffc52f;
   color: #1b2a4a;
 }
+#rankingTable td {
+  padding: 12px 10px;
+  vertical-align: middle;
+}
 
+.ranking-player-link {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-weight: 700;
+}
+
+.ranking-player-photo {
+  width: 52px;
+  height: 64px;
+  object-fit: cover;
+  object-position: top;
+  border-radius: 6px;
+  border: 2px solid #ffc52f;
+  background: #f4f6f8;
+  flex-shrink: 0;
+}
 /* =========================
    CARDS
 ========================= */
