@@ -345,6 +345,32 @@ tr:nth-child(even) {
   color: #666;
   margin-left: 8px;
 }
+.note-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 14px;
+}
+.note-tab {
+  border: 1px solid #ddd;
+  background: #f4f6f8;
+  color: #1b2a4a;
+  padding: 7px 12px;
+  border-radius: 999px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.note-tab.active {
+  background: #1b2a4a;
+  color: #ffc52f;
+  border-color: #1b2a4a;
+}
+
+.note-panel {
+  border-top: 1px solid #e0e0e0;
+  padding-top: 10px;
+}
 /* =========================
    VIDEOS
 ========================= */
