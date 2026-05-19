@@ -489,34 +489,89 @@ function renderTools(tools, isPitcher) {
 ========================= */
 
 function renderScoutingNotes(bio) {
-  const notes = get(bio, ["Scouting Notes", "Notes"]);
+  const notesList = [];
 
-  if (!isRealValue(notes)) return;
+  for (let i = 1; i <= 10; i++) {
+    const dateKey = i === 1 ? "Notes Updated" : `Notes Updated ${i}`;
+    const notesKey = i === 1 ? "Scouting Notes" : `Scouting Notes ${i}`;
+
+    const date = get(bio, [dateKey]);
+    const notes = get(bio, [notesKey]);
+
+    if (isRealValue(notes)) {
+      notesList.push({
+        title: isRealValue(date) ? date : `Report ${i}`,
+        date,
+        notes
+      });
+    }
+  }
+
+  if (!notesList.length) return;
 
   const statsCard = document.getElementById("statsCard");
+  if (!statsCard) return;
 
-  const noteItems = notes
+  const first = notesList[0];
+
+  statsCard.insertAdjacentHTML("beforebegin", `
+    <section class="card scouting-history-card" data-access="premium">
+      <h2>Scouting Notes</h2>
+
+      <div class="note-tabs">
+        ${notesList.map((item, index) => `
+          <button class="note-tab ${index === 0 ? "active" : ""}" data-note-index="${index}">
+            ${item.title}
+          </button>
+        `).join("")}
+      </div>
+
+      <div class="note-panel">
+        <h3>
+          Report
+          ${isRealValue(first.date)
+            ? `<span class="tools-updated">(Last Updated: ${first.date})</span>`
+            : ""}
+        </h3>
+
+        <ul class="scouting-notes" id="scoutingNotesList">
+          ${formatNotesAsList(first.notes)}
+        </ul>
+      </div>
+    </section>
+  `);
+
+  const tabs = document.querySelectorAll(".note-tab");
+  const list = document.getElementById("scoutingNotesList");
+  const panelTitle = document.querySelector(".note-panel h3");
+
+  tabs.forEach(tab => {
+    tab.addEventListener("click", () => {
+      const index = Number(tab.dataset.noteIndex);
+      const item = notesList[index];
+
+      tabs.forEach(t => t.classList.remove("active"));
+      tab.classList.add("active");
+
+      panelTitle.innerHTML = `
+        Report
+        ${isRealValue(item.date)
+          ? `<span class="tools-updated">(Last Updated: ${item.date})</span>`
+          : ""}
+      `;
+
+      list.innerHTML = formatNotesAsList(item.notes);
+    });
+  });
+}
+
+function formatNotesAsList(notes) {
+  return String(notes || "")
     .split(/\n|•|- /)
     .map(item => item.trim())
-    .filter(item => isRealValue(item));
-
-  if (!noteItems.length) return;
-
-  if (statsCard) {
-    statsCard.insertAdjacentHTML("beforebegin", `
-      <section class="card" data-access="premium">
-        <h2>
-        Scouting Notes
-          ${isRealValue(get(bio, ["Notes Updated"]))
-            ? `<span class="tools-updated">(Last Updated: ${get(bio, ["Notes Updated"])})</span>`
-            : ""}
-        </h2>
-        <ul class="scouting-notes">
-          ${noteItems.map(item => `<li>${item}</li>`).join("")}
-        </ul>
-      </section>
-    `);
-  }
+    .filter(item => isRealValue(item))
+    .map(item => `<li>${item}</li>`)
+    .join("");
 }
 /* =========================
    ARTICLES
