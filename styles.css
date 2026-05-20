@@ -114,7 +114,35 @@ body {
   padding: 12px 10px;
   vertical-align: middle;
 }
+.ranking-player-photo {
+  width: 42px;
+  height: 54px;
+  object-fit: cover;
+  object-position: top;
 
+  border-radius: 6px;
+  border: 2px solid #ffc52f;
+
+  display: block;
+  flex-shrink: 0;
+}
+
+.ranking-player-link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.ranking-player-link span {
+  line-height: 1.15;
+}
+
+#rankingTable td {
+  vertical-align: middle;
+}
 @media (min-width: 701px) {
   #rankingTable th:nth-child(2),
   #rankingTable td:nth-child(2) {
