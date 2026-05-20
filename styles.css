@@ -115,22 +115,22 @@ body {
   vertical-align: middle;
 }
 
+#rankingTable th:nth-child(2),
+#rankingTable td:nth-child(2) {
+  min-width: 240px;
+}
+
 .ranking-player-link {
   display: flex;
   align-items: center;
   gap: 12px;
   font-weight: 700;
+  white-space: nowrap;
 }
 
-.ranking-player-photo {
-  width: 52px;
-  height: 64px;
-  object-fit: cover;
-  object-position: top;
-  border-radius: 6px;
-  border: 2px solid #ffc52f;
-  background: #f4f6f8;
-  flex-shrink: 0;
+.ranking-player-link span {
+  white-space: normal;
+  line-height: 1.15;
 }
 /* =========================
    CARDS
