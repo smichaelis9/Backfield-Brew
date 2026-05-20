@@ -115,9 +115,11 @@ body {
   vertical-align: middle;
 }
 
-#rankingTable th:nth-child(2),
-#rankingTable td:nth-child(2) {
-  min-width: 240px;
+@media (min-width: 701px) {
+  #rankingTable th:nth-child(2),
+  #rankingTable td:nth-child(2) {
+    min-width: 240px;
+  }
 }
 
 .ranking-player-link {
@@ -487,7 +489,8 @@ tr:nth-child(even) {
     left: 52px;
     z-index: 3;
     background: white;
-    min-width: 150px;
+    min-width: 170px;
+    max-width: 170px;
     text-align: left;
   }
 
