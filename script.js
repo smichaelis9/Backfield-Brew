@@ -888,7 +888,17 @@ function renderArchiveRanking(players) {
     .map(p => `
       <tr>
         <td>${get(p, ["Rank"])}</td>
-        <td><a href="archive-player.html?id=${encodeURIComponent(get(p, ["Player-ID"]))}">${get(p, ["Player"])}</a></td>
+        <td>
+          <a class="ranking-player-link" href="archive-player.html?id=${encodeURIComponent(get(p, ["Player-ID"]))}">
+            ${isRealValue(get(p, ["Picture", "Image", "Photo", "Picture URL", "Image URL"]))
+              ? `<img class="ranking-player-photo"
+                      src="${get(p, ["Picture", "Image", "Photo", "Picture URL", "Image URL"])}"
+                      alt="${get(p, ["Player"])}"
+                      onerror="this.style.display='none';">`
+              : ""}
+            <span>${get(p, ["Player"])}</span>
+          </a>
+        </td>
         <td>${get(p, ["OFP"])}</td>
         <td>${get(p, ["Position", "Pos"])}</td>
         <td>${get(p, ["Height"])}</td>
