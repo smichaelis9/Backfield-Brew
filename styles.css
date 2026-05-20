@@ -16,7 +16,7 @@ body {
 }
 
 /* =========================
-   HEADER (SHORT + BIG LOGO)
+   HEADER
 ========================= */
 
 .site-header {
@@ -25,14 +25,13 @@ body {
   background-position: center;
   background-repeat: no-repeat;
 
-  height: 290px; /* 👈 controls total header height */
+  height: 290px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 
-  padding: 0; /* 👈 remove extra height */
-
+  padding: 0;
   border-top: 3px solid #1b2a4a;
   border-bottom: 3px solid #1b2a4a;
 
@@ -52,16 +51,15 @@ body {
   z-index: 1;
 }
 
-/* 🔥 BIGGER LOGO */
-
 .site-logo {
   max-width: 780px;
   width: 100%;
   height: auto;
   margin: 0;
 }
+
 /* =========================
-   HEADER BUTTONS (UNDER LOGO)
+   HEADER BUTTONS
 ========================= */
 
 .header-buttons {
@@ -69,6 +67,7 @@ body {
   justify-content: center;
   gap: 12px;
   margin-top: 10px;
+  flex-wrap: wrap;
 }
 
 .header-buttons a {
@@ -87,75 +86,7 @@ body {
   background: #ffc52f;
   color: #1b2a4a;
 }
-/* NAV */
 
-.site-nav {
-  display: flex;
-  justify-content: center;
-  gap: 10px;
-}
-
-.site-nav a {
-  background: rgba(0,0,0,0.6);
-  color: #ffc52f;
-  padding: 6px 12px;
-  border-radius: 999px;
-  border: 1px solid #ffc52f;
-  text-decoration: none;
-  font-weight: 700;
-  font-size: 13px;
-}
-
-.site-nav a:hover {
-  background: #ffc52f;
-  color: #1b2a4a;
-}
-#rankingTable td {
-  padding: 12px 10px;
-  vertical-align: middle;
-}
-.ranking-player-photo {
-  width: 42px;
-  height: 54px;
-  object-fit: cover;
-  object-position: top;
-
-  border-radius: 6px;
-  border: 2px solid #ffc52f;
-
-  display: block;
-  flex-shrink: 0;
-}
-
-.ranking-player-link {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-
-  text-decoration: none;
-  font-weight: 700;
-}
-
-.ranking-player-link span {
-  line-height: 1.15;
-}
-
-#rankingTable td {
-  vertical-align: middle;
-}
-
-.ranking-player-link {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  font-weight: 700;
-  white-space: nowrap;
-}
-
-.ranking-player-link span {
-  white-space: normal;
-  line-height: 1.15;
-}
 /* =========================
    CARDS
 ========================= */
@@ -166,6 +97,84 @@ body {
   padding: 20px;
   margin-bottom: 20px;
   box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+}
+
+/* =========================
+   FILTERS
+========================= */
+
+.filter-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 10px;
+}
+
+.filter-grid input,
+.filter-grid select {
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+/* =========================
+   TABLES / RANKINGS
+========================= */
+
+.table-wrap,
+.ranking-scroll {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+}
+
+th {
+  background: #1b2a4a;
+  color: white;
+  padding: 6px;
+}
+
+td {
+  padding: 6px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+tr:nth-child(even) {
+  background: #f8f9fb;
+}
+
+#rankingTable th,
+#rankingTable td {
+  padding: 8px;
+  vertical-align: middle;
+}
+
+#rankingTable tr:hover {
+  background: #f1f3f6;
+}
+
+.ranking-player-link {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.ranking-player-photo {
+  width: 52px;
+  height: 64px;
+  object-fit: cover;
+  object-position: top;
+  border-radius: 6px;
+  border: 2px solid #ffc52f;
+  background: #f4f6f8;
+  flex-shrink: 0;
 }
 
 /* =========================
@@ -183,18 +192,11 @@ body {
 
 .player-photo {
   width: 140px;
-  height: 170px; /* taller */
+  height: 170px;
   object-fit: cover;
-  object-position: top; /* shows more of head/upper body */
+  object-position: top;
 }
 
-.player-main-info {
-  flex: 1;
-}
-
-.player-main-info h1 {
-  margin: 0 0 6px;
-}
 .player-image-wrap {
   display: flex;
   flex-direction: column;
@@ -207,13 +209,19 @@ body {
   margin-top: 4px;
   text-align: center;
 }
-.player-rank {
-  margin-right: 12px; /* controls spacing between # and name */
+
+.player-main-info {
+  flex: 1;
 }
 
-.player-name {
-  /* keeps it same size, but gives you flexibility later */
+.player-main-info h1 {
+  margin: 0 0 6px;
 }
+
+.player-rank {
+  margin-right: 12px;
+}
+
 .player-trending-above-name {
   height: 24px;
   margin-bottom: 2px;
@@ -227,6 +235,7 @@ body {
   font-size: 12px;
   padding: 4px 8px;
 }
+
 /* OFP / RISK BOXES */
 
 .player-grade-box {
@@ -307,67 +316,12 @@ body {
   font-size: 20px;
   font-weight: bold;
 }
+
 .tools-updated {
   font-size: 12px;
   font-weight: 400;
   color: #666;
   margin-left: 8px;
-}
-/* =========================
-   TABLES
-========================= */
-
-.table-wrap {
-  overflow-x: auto;
-}
-
-table {
-  width: 100%;
-  border-collapse: collapse;
-  font-size: 13px;
-}
-
-th {
-  background: #1b2a4a;
-  color: white;
-  padding: 6px;
-}
-
-td {
-  padding: 6px;
-  text-align: center;
-  border-bottom: 1px solid #ddd;
-}
-
-tr:nth-child(even) {
-  background: #f8f9fb;
-}
-
-#rankingTable th,
-#rankingTable td {
-  padding: 8px;
-}
-
-#rankingTable tr:hover {
-  background: #f1f3f6;
-}
-
-/* =========================
-   FILTERS
-========================= */
-
-.filter-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-  gap: 10px;
-}
-
-.filter-grid input,
-.filter-grid select {
-  padding: 8px;
-  border-radius: 6px;
-  border: 1px solid #ccc;
-  font-size: 14px;
 }
 
 /* =========================
@@ -384,18 +338,14 @@ tr:nth-child(even) {
 .scouting-notes li {
   margin-bottom: 8px;
 }
-.tools-updated {
-  font-size: 12px;
-  font-weight: 400;
-  color: #666;
-  margin-left: 8px;
-}
+
 .note-tabs {
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
   margin-bottom: 14px;
 }
+
 .note-tab {
   border: 1px solid #ddd;
   background: #f4f6f8;
@@ -416,6 +366,7 @@ tr:nth-child(even) {
   border-top: 1px solid #e0e0e0;
   padding-top: 10px;
 }
+
 /* =========================
    VIDEOS
 ========================= */
@@ -443,127 +394,10 @@ tr:nth-child(even) {
   color: #1b2a4a;
 }
 
-@media (max-width: 900px) {
-  .video-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (max-width: 600px) {
-  .video-grid {
-    grid-template-columns: 1fr;
-  }
-}
 /* =========================
-   MOBILE
+   EXTERNAL / SOCIAL LINKS
 ========================= */
 
-@media (max-width: 800px) {
-  .two-col {
-    grid-template-columns: 1fr;
-  }
-}
-
-@media (max-width: 700px) {
-  .player-hero-wrap {
-    flex-direction: column;
-    text-align: center;
-    padding-right: 0;
-  }
-
-  .player-grade-box {
-    position: static;
-    margin-top: 12px;
-    flex-direction: row;
-    justify-content: center;
-  }
-
-  .site-logo {
-    max-width: 320px; /* smaller on mobile */
-  }
-
-  .site-nav {
-    flex-wrap: wrap;
-  }
-}
-@media (max-width: 700px) {
-  .ranking-scroll {
-    overflow-x: auto;
-    width: 100%;
-  }
-
-  #rankingTable {
-    min-width: 760px;
-  }
-
-  #rankingTable th:nth-child(1),
-  #rankingTable td:nth-child(1) {
-    position: sticky;
-    left: 0;
-    z-index: 3;
-    background: white;
-    min-width: 52px;
-  }
-
-  #rankingTable th:nth-child(2),
-  #rankingTable td:nth-child(2) {
-    position: sticky;
-    left: 52px;
-    z-index: 3;
-    background: white;
-    min-width: 170px;
-    max-width: 170px;
-    text-align: left;
-  }
-
-  #rankingTable th:nth-child(1),
-  #rankingTable th:nth-child(2) {
-    background: #1b2a4a;
-    color: white;
-    z-index: 4;
-  }
-}
-/* =========================
-   EXTERNAL LINKS
-========================= */
-
-.external-links-grid {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 10px;
-}
-
-.external-link-card {
-  display: block;
-  text-align: center;
-  padding: 10px;
-  background: #f4f6f8;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  font-weight: 700;
-  text-decoration: none;
-  color: #1b2a4a;
-}
-
-.external-link-card:hover {
-  background: #ffc52f;
-  color: #1b2a4a;
-}
-
-/* responsive */
-
-@media (max-width: 900px) {
-  .external-links-grid {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-
-@media (max-width: 600px) {
-  .external-links-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
 .links-card {
   padding: 14px;
 }
@@ -619,28 +453,19 @@ tr:nth-child(even) {
   font-weight: 700;
   text-decoration: none;
   color: #1b2a4a;
-}
-.external-link-card {
   min-width: 160px;
   max-width: 200px;
-  text-align: center;
 }
+
 .external-link-card:hover {
   background: #ffc52f;
   color: #1b2a4a;
 }
 
-@media (max-width: 900px) {
-  .external-links-grid {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
+/* =========================
+   ARTICLES
+========================= */
 
-@media (max-width: 600px) {
-  .external-links-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
 .article-links-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -664,17 +489,10 @@ tr:nth-child(even) {
   color: #1b2a4a;
 }
 
-@media (max-width: 900px) {
-  .article-links-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
+/* =========================
+   TRENDING
+========================= */
 
-@media (max-width: 600px) {
-  .article-links-grid {
-    grid-template-columns: 1fr;
-  }
-}
 .trend {
   font-size: 16px;
   font-weight: 700;
@@ -696,6 +514,11 @@ tr:nth-child(even) {
   color: #1b2a4a;
   letter-spacing: 0.5px;
 }
+
+/* =========================
+   ARCHIVE
+========================= */
+
 .archive-reason {
   margin-top: 12px;
   font-weight: 700;
@@ -704,4 +527,88 @@ tr:nth-child(even) {
   border-left: 5px solid #ffc52f;
   padding: 10px 12px;
   border-radius: 8px;
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 900px) {
+  .video-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .article-links-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 800px) {
+  .two-col {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 700px) {
+  .player-hero-wrap {
+    flex-direction: column;
+    text-align: center;
+    padding-right: 0;
+  }
+
+  .player-grade-box {
+    position: static;
+    margin-top: 12px;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .site-logo {
+    max-width: 320px;
+  }
+
+  .ranking-scroll {
+    overflow-x: auto;
+    width: 100%;
+  }
+
+  #rankingTable {
+    min-width: 760px;
+  }
+
+  #rankingTable th:nth-child(1),
+  #rankingTable td:nth-child(1) {
+    position: sticky;
+    left: 0;
+    z-index: 3;
+    background: white;
+    min-width: 52px;
+  }
+
+  #rankingTable th:nth-child(2),
+  #rankingTable td:nth-child(2) {
+    position: sticky;
+    left: 52px;
+    z-index: 3;
+    background: white;
+    min-width: 150px;
+    text-align: left;
+  }
+
+  #rankingTable th:nth-child(1),
+  #rankingTable th:nth-child(2) {
+    background: #1b2a4a;
+    color: white;
+    z-index: 4;
+  }
+}
+
+@media (max-width: 600px) {
+  .video-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .article-links-grid {
+    grid-template-columns: 1fr;
+  }
 }
