@@ -143,12 +143,6 @@ body {
 #rankingTable td {
   vertical-align: middle;
 }
-@media (min-width: 701px) {
-  #rankingTable th:nth-child(2),
-  #rankingTable td:nth-child(2) {
-    min-width: 240px;
-  }
-}
 
 .ranking-player-link {
   display: flex;
