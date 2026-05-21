@@ -1147,7 +1147,13 @@ async function initLogsPage() {
     });
 
     renderLogs(logs);
-
+["logSearchBox", "logTypeFilter"].forEach(id => {
+  const el = document.getElementById(id);
+  if (el) {
+    el.addEventListener("input", () => renderLogs(logs));
+    el.addEventListener("change", () => renderLogs(logs));
+  }
+});
   }
 
   catch(err){
@@ -1161,41 +1167,37 @@ async function initLogsPage() {
 
 }
 
-function renderLogs(logs){
+function renderLogs(logs) {
+  const table = document.querySelector("#logsTable tbody");
+  if (!table) return;
 
-const table=
-document.querySelector(
-"#logsTable tbody"
-);
+  const search = String(document.getElementById("logSearchBox")?.value || "")
+    .toLowerCase()
+    .trim();
 
-if(!table)return;
+  const type = document.getElementById("logTypeFilter")?.value || "";
 
-table.innerHTML=
-logs.map(log=>`
+  const filtered = logs.filter(log => {
+    const player = String(log.player || "").toLowerCase();
 
-<tr>
+    return (
+      (!search || player.includes(search)) &&
+      (!type || log.type === type)
+    );
+  });
 
-<td>${formatLogDate(log.date)}</td>
-
-<td>${log.type}</td>
-
-<td>
-
-<a href=
-"player.html?id=${encodeURIComponent(log.playerID)}">
-
-${log.player}
-
-</a>
-
-</td>
-
-<td>${log.update}</td>
-
-</tr>
-
-`).join("");
-
+  table.innerHTML = filtered.map(log => `
+    <tr>
+      <td>${formatLogDate(log.date)}</td>
+      <td>${log.type}</td>
+      <td>
+        <a href="player.html?id=${encodeURIComponent(log.playerID)}">
+          ${log.player}
+        </a>
+      </td>
+      <td>${log.update}</td>
+    </tr>
+  `).join("");
 }
 if (
   window.location.pathname.includes(
