@@ -985,3 +985,124 @@ function renderArchivePlayerPage(bio, tools, stats, isPitcher, videos) {
     }
   }
 }
+async function initLogsPage() {
+
+  const bioRows = await loadSheet("Biography Info");
+
+  const hitterTools = await loadSheet("Hitter Tools")
+    .catch(() => []);
+
+  const pitcherTools = await loadSheet("Pitcher Tools")
+    .catch(() => []);
+
+  const logs = [];
+
+  // OFP updates
+  bioRows.forEach(p => {
+
+    const date = get(p, ["OFP Updated"]);
+
+    if (isRealValue(date)) {
+
+      logs.push({
+        date,
+        type: "OFP",
+        player: get(p, ["Player"]),
+        playerID: get(p, ["Player-ID"]),
+        update: "OFP tier updated"
+      });
+
+    }
+
+    // Notes history
+
+    for(let i=1;i<=10;i++){
+
+      const dateCol =
+        i===1 ? "Notes Updated"
+             : `Notes Updated ${i}`;
+
+      const noteDate =
+        get(p,[dateCol]);
+
+      if(isRealValue(noteDate)){
+
+        logs.push({
+          date: noteDate,
+          type:"Report",
+          player:get(p,["Player"]),
+          playerID:get(p,["Player-ID"]),
+          update:"Scouting report updated"
+        });
+
+      }
+
+    }
+
+  });
+
+  [...hitterTools,...pitcherTools]
+    .forEach(p=>{
+
+      const date =
+        get(p,["Last Updated"]);
+
+      if(isRealValue(date)){
+
+        logs.push({
+          date,
+          type:"Tools",
+          player:get(p,["Player"]),
+          playerID:get(p,["Player-ID"]),
+          update:"Tool grades updated"
+        });
+
+      }
+
+    });
+
+logs.sort(
+(a,b)=>
+new Date(b.date)-new Date(a.date)
+);
+
+renderLogs(logs);
+
+}
+function renderLogs(logs){
+
+const table=
+document.querySelector(
+"#logsTable tbody"
+);
+
+table.innerHTML=
+logs.map(log=>`
+
+<tr>
+
+<td>${log.date}</td>
+
+<td>${log.type}</td>
+
+<td>
+
+<a href=
+"player.html?id=${encodeURIComponent(log.playerID)}">
+
+${log.player}
+
+</a>
+
+</td>
+
+<td>${log.update}</td>
+
+</tr>
+
+`).join("");
+
+}
+if(location.pathname.includes("logs")){
+initLogsPage();
+}
