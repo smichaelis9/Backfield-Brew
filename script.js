@@ -96,6 +96,27 @@ function setHTML(id, html) {
   const el = document.getElementById(id);
   if (el) el.innerHTML = html;
 }
+function setHTML(id, html) {
+  const el = document.getElementById(id);
+  if (el) el.innerHTML = html;
+}
+
+function formatLogDate(value) {
+
+  if (String(value).includes("/"))
+    return value;
+
+  const n = Number(value);
+
+  if (!Number.isFinite(n))
+    return value;
+
+  const date = new Date(
+    (n - 25569) * 86400 * 1000
+  );
+
+  return `${date.getMonth()+1}/${date.getDate()}/${date.getFullYear()}`;
+}
 
 /* =========================
    RANKING PAGE
@@ -1100,11 +1121,30 @@ async function initLogsPage() {
 
       });
 
-    logs.sort(
-      (a,b)=>
-      new Date(b.date)-
-      new Date(a.date)
+    logs.sort((a,b)=>{
+
+    const parseDate=(d)=>{
+
+    if(String(d).includes("/"))
+    return new Date(d);
+
+    const n=Number(d);
+
+    if(Number.isFinite(n)){
+
+    return new Date(
+    (n-25569)*86400*1000
     );
+
+    }
+
+    return new Date(0);
+
+    };
+
+    return parseDate(b.date)-parseDate(a.date);
+
+    });
 
     renderLogs(logs);
 
@@ -1135,7 +1175,7 @@ logs.map(log=>`
 
 <tr>
 
-<td>${log.date}</td>
+<td>${formatLogDate(log.date)}</td>
 
 <td>${log.type}</td>
 
