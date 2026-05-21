@@ -13,7 +13,8 @@ const SHEET_GIDS = {
   "Pitcher Stats 2024": "158387021",
   "Pitcher Stats 2025": "1099458194",
   "Pitcher Stats 2026": "1603996515",
-  "Videos": "1306695134"
+  "Videos": "1306695134",
+  "MiLB Depth": "949600150"
 };
 
 function sheetUrl(sheetName) {
