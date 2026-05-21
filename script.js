@@ -985,96 +985,150 @@ function renderArchivePlayerPage(bio, tools, stats, isPitcher, videos) {
     }
   }
 }
+/* =========================
+   SCOUTING LOGS
+========================= */
+
 async function initLogsPage() {
 
-  const bioRows = await loadSheet("Biography Info");
+  try {
 
-  const hitterTools = await loadSheet("Hitter Tools")
-    .catch(() => []);
+    const bioRows = await loadSheet("Biography Info");
 
-  const pitcherTools = await loadSheet("Pitcher Tools")
-    .catch(() => []);
+    const hitterTools =
+      await loadSheet("Hitter Tools")
+      .catch(()=>[]);
 
-  const logs = [];
+    const pitcherTools =
+      await loadSheet("Pitcher Tools")
+      .catch(()=>[]);
 
-  // OFP updates
-  bioRows.forEach(p => {
+    const logs=[];
 
-    const date = get(p, ["OFP Updated"]);
+    // OFP updates
 
-    if (isRealValue(date)) {
+    bioRows.forEach(player=>{
 
-      logs.push({
-        date,
-        type: "OFP",
-        player: get(p, ["Player"]),
-        playerID: get(p, ["Player-ID"]),
-        update: "OFP tier updated"
-      });
+      const ofpDate =
+        get(player,["OFP Updated"]);
 
-    }
-
-    // Notes history
-
-    for(let i=1;i<=10;i++){
-
-      const dateCol =
-        i===1 ? "Notes Updated"
-             : `Notes Updated ${i}`;
-
-      const noteDate =
-        get(p,[dateCol]);
-
-      if(isRealValue(noteDate)){
+      if(isRealValue(ofpDate)){
 
         logs.push({
-          date: noteDate,
-          type:"Report",
-          player:get(p,["Player"]),
-          playerID:get(p,["Player-ID"]),
-          update:"Scouting report updated"
+
+          date:ofpDate,
+          type:"OFP",
+
+          player:
+            get(player,["Player"]),
+
+          playerID:
+            get(player,["Player-ID"]),
+
+          update:
+            "OFP tier updated"
+
         });
 
       }
 
-    }
+      // report history
 
-  });
+      for(let i=1;i<=10;i++){
 
-  [...hitterTools,...pitcherTools]
-    .forEach(p=>{
+        const dateCol=
+          i===1
+          ?"Notes Updated"
+          :`Notes Updated ${i}`;
 
-      const date =
-        get(p,["Last Updated"]);
+        const reportDate=
+          get(player,[dateCol]);
 
-      if(isRealValue(date)){
+        if(isRealValue(reportDate)){
 
-        logs.push({
-          date,
-          type:"Tools",
-          player:get(p,["Player"]),
-          playerID:get(p,["Player-ID"]),
-          update:"Tool grades updated"
-        });
+          logs.push({
+
+            date:reportDate,
+
+            type:"Report",
+
+            player:
+              get(player,["Player"]),
+
+            playerID:
+              get(player,["Player-ID"]),
+
+            update:
+              "Scouting report updated"
+
+          });
+
+        }
 
       }
 
     });
 
-logs.sort(
-(a,b)=>
-new Date(b.date)-new Date(a.date)
-);
+    [...hitterTools,...pitcherTools]
+      .forEach(player=>{
 
-renderLogs(logs);
+        const toolDate=
+          get(player,
+          ["Last Updated"]);
+
+        if(isRealValue(toolDate)){
+
+          logs.push({
+
+            date:toolDate,
+
+            type:"Tools",
+
+            player:
+              get(player,["Player"]),
+
+            playerID:
+              get(player,
+              ["Player-ID"]),
+
+            update:
+              "Tool grades updated"
+
+          });
+
+        }
+
+      });
+
+    logs.sort(
+      (a,b)=>
+      new Date(b.date)-
+      new Date(a.date)
+    );
+
+    renderLogs(logs);
+
+  }
+
+  catch(err){
+
+    console.error(
+      "Logs page:",
+      err
+    );
+
+  }
 
 }
+
 function renderLogs(logs){
 
 const table=
 document.querySelector(
 "#logsTable tbody"
 );
+
+if(!table)return;
 
 table.innerHTML=
 logs.map(log=>`
@@ -1103,6 +1157,12 @@ ${log.player}
 `).join("");
 
 }
-if(location.pathname.includes("logs")){
-initLogsPage();
+if (
+  window.location.pathname.includes(
+    "logs"
+  )
+){
+
+  initLogsPage();
+
 }
