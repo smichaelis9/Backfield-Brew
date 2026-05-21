@@ -1319,14 +1319,15 @@ function renderDepthSection(sectionName, sections) {
 
         let href = "";
 
-        if (isRealValue(playerID)) {
-          const isArchived = String(get(row, ["Archived", "Archive"])).toLowerCase().trim() === "yes";
+const isArchived = String(get(row, ["Archived", "Archive"]))
+  .toLowerCase()
+  .trim() === "yes";
 
-        if (isRealValue(playerID)) {
-          href = `${isArchived ? "archive-player.html" : "player.html"}?id=${encodeURIComponent(playerID)}`;
-        } else if (isRealValue(bref)) {
-        href = bref;
-      }
+if (isRealValue(playerID)) {
+  href = `${isArchived ? "archive-player.html" : "player.html"}?id=${encodeURIComponent(playerID)}`;
+} else if (isRealValue(bref)) {
+  href = bref;
+}
 
         return `
           <div class="depth-player-row">
