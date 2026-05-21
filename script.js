@@ -1217,46 +1217,91 @@ if (
 }
 async function initDepthPage() {
   try {
-    const rows = await loadSheet("MiLB Depth");
-    renderDepthTable(rows);
+    const rows = await loadSheet("MiLB Depth Chart");
+    renderDepthCards(rows);
   } catch (err) {
     console.error("Depth page:", err);
   }
 }
 
-function renderDepthTable(rows) {
-  const table = document.getElementById("depthTable");
-  if (!table || !rows.length) return;
+function renderDepthCards(rows) {
+  const container = document.getElementById("depthCards");
+  if (!container || !rows.length) return;
 
-  const headers = Object.keys(rows[0]);
+  const levelOrder = ["AAA", "AA", "A+", "A", "ROK", "DSL"];
 
-  table.classList.add("depth-table");
+  const grouped = {};
 
-  table.querySelector("thead").innerHTML = `
-    <tr>
-      ${headers.map(h => `<th>${h}</th>`).join("")}
-    </tr>
+  rows.forEach(row => {
+    const level = get(row, ["Level"]);
+    const team = get(row, ["Team"]);
+    const section = get(row, ["Section"]);
+
+    if (!isRealValue(level) || !isRealValue(team) || !isRealValue(section)) return;
+
+    if (!grouped[level]) grouped[level] = {};
+    if (!grouped[level][team]) grouped[level][team] = {};
+    if (!grouped[level][team][section]) grouped[level][team][section] = [];
+
+    grouped[level][team][section].push(row);
+  });
+
+  container.innerHTML = levelOrder
+    .filter(level => grouped[level])
+    .map(level => {
+      return Object.entries(grouped[level]).map(([team, sections]) => `
+        <section class="depth-card">
+          <div class="depth-card-header">
+            <h3>${team}</h3>
+            <span>${level}</span>
+          </div>
+
+          <div class="depth-grid">
+            ${renderDepthSection("Rotation", sections)}
+            ${renderDepthSection("Lineup", sections)}
+            ${renderDepthSection("Bullpen", sections)}
+            ${renderDepthSection("Bench", sections)}
+            ${renderDepthSection("60 or Full-Season IL", sections)}
+            ${renderDepthSection("7 Day IL or Development List", sections)}
+          </div>
+        </section>
+      `).join("");
+    }).join("");
+}
+
+function renderDepthSection(sectionName, sections) {
+  const players = sections[sectionName] || [];
+
+  if (!players.length) return "";
+
+  return `
+    <div class="depth-section">
+      <h4>${sectionName}</h4>
+
+      ${players.map(row => {
+        const pos = get(row, ["Pos", "Position", "Hand"]);
+        const player = get(row, ["Player", "Name"]);
+        const playerID = get(row, ["Player-ID", "Player ID"]);
+        const bref = cleanUrl(get(row, ["Baseball Reference", "BBRef", "Baseball Reference Link"]));
+
+        let href = "";
+
+        if (isRealValue(playerID)) {
+          href = `player.html?id=${encodeURIComponent(playerID)}`;
+        } else if (isRealValue(bref)) {
+          href = bref;
+        }
+
+        return `
+          <div class="depth-player-row">
+            <span class="depth-pos">${pos}</span>
+            ${href
+              ? `<a href="${href}" ${href.startsWith("http") ? `target="_blank" rel="noopener"` : ""}>${player}</a>`
+              : `<span>${player}</span>`
+            }
+          </div>
+        `;
+      }).join("")}
+    </div>
   `;
-
-  table.querySelector("tbody").innerHTML = rows.map(row => {
-    const isSectionRow = Object.values(row).some(v =>
-      ["Starting Lineup", "Bench"].includes(String(v).trim())
-    );
-
-    return `
-      <tr class="${isSectionRow ? "depth-section-row" : ""}">
-        ${headers.map(h => {
-          const value = row[h] || "";
-          const isRank = h.toLowerCase().includes("prospect rank");
-          const isForty = h.toLowerCase().includes("40 man");
-
-          return `
-            <td class="${isRank ? "depth-rank" : ""} ${isForty ? "depth-40" : ""}">
-              ${value}
-            </td>
-          `;
-        }).join("")}
-      </tr>
-    `;
-  }).join("");
 }
