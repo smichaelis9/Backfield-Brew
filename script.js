@@ -1230,15 +1230,33 @@ function renderDepthTable(rows) {
 
   const headers = Object.keys(rows[0]);
 
+  table.classList.add("depth-table");
+
   table.querySelector("thead").innerHTML = `
     <tr>
       ${headers.map(h => `<th>${h}</th>`).join("")}
     </tr>
   `;
 
-  table.querySelector("tbody").innerHTML = rows.map(row => `
-    <tr>
-      ${headers.map(h => `<td>${isRealValue(row[h]) ? row[h] : ""}</td>`).join("")}
-    </tr>
-  `).join("");
+  table.querySelector("tbody").innerHTML = rows.map(row => {
+    const isSectionRow = Object.values(row).some(v =>
+      ["Starting Lineup", "Bench"].includes(String(v).trim())
+    );
+
+    return `
+      <tr class="${isSectionRow ? "depth-section-row" : ""}">
+        ${headers.map(h => {
+          const value = row[h] || "";
+          const isRank = h.toLowerCase().includes("prospect rank");
+          const isForty = h.toLowerCase().includes("40 man");
+
+          return `
+            <td class="${isRank ? "depth-rank" : ""} ${isForty ? "depth-40" : ""}">
+              ${value}
+            </td>
+          `;
+        }).join("")}
+      </tr>
+    `;
+  }).join("");
 }
