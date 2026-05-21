@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Backfield Brew – Rankings</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="stylesheet" href="styles.css?v=2" />
+  <script defer src="script.js?v=13"></script>
+</head>
+
+<body>
+  <!-- =========================
+       HEADER
+  ========================== -->
+  <header class="site-header">
+  <img src="BFB-Logo.png" alt="Backfield Brew" class="site-logo" />
+</header>
+
+<div class="header-buttons">
+  <a href="index.html" id="backToRankings" style="display:none;">← Rankings</a>
+
+  <a href="index.html">Active Rankings</a>
+  
+  <a href="archive.html">Archived Players</a>
+
+  <a href="https://www.patreon.com/BackfieldBrew" target="_blank" rel="noopener">
+    Patreon
+  </a>
+
+  <a href="https://docs.google.com/spreadsheets/d/1FvEcJW7pJVV1IQYJs4qvZpyGI2lKRv_TnkyzfRT5h-U/edit?usp=sharing"
+     target="_blank"
+     rel="noopener">
+    Organizational Depth Chart
+  </a>
+</div>
+
+  <!-- =========================
+       MAIN
+  ========================== -->
+  <main class="container" data-access="rankings">
+
+    <!-- =========================
+         FILTERS
+    ========================== -->
+    <section class="card">
+      <div class="filter-grid logs-filter-grid">
+        <input type="text" id="logSearchBox" placeholder="Search player..." />
+
+        <select id="logTypeFilter">
+          <option value="">All Updates</option>
+          <option value="Report">Scouting Reports</option>
+          <option value="OFP">OFP</option>
+          <option value="Tools">Tools</option>
+        </select>
+      </div>
+    </section>
+
+    <!-- =========================
+         RANKING TABLE
+    ========================== -->
+    <div class="card">
+      <h2>Organizational Depth Chart</h2>
+
+      <div class="table-wrap">
+        <table id="depthTable">
+          <thead></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        initDepthPage();
+        handleHeaderButtons();
+      });
+</script>
