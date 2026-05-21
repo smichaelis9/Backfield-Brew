@@ -1215,3 +1215,30 @@ if (
   initLogsPage();
 
 }
+async function initDepthPage() {
+  try {
+    const rows = await loadSheet("MiLB Depth");
+    renderDepthTable(rows);
+  } catch (err) {
+    console.error("Depth page:", err);
+  }
+}
+
+function renderDepthTable(rows) {
+  const table = document.getElementById("depthTable");
+  if (!table || !rows.length) return;
+
+  const headers = Object.keys(rows[0]);
+
+  table.querySelector("thead").innerHTML = `
+    <tr>
+      ${headers.map(h => `<th>${h}</th>`).join("")}
+    </tr>
+  `;
+
+  table.querySelector("tbody").innerHTML = rows.map(row => `
+    <tr>
+      ${headers.map(h => `<td>${isRealValue(row[h]) ? row[h] : ""}</td>`).join("")}
+    </tr>
+  `).join("");
+}
