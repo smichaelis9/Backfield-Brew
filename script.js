@@ -1252,9 +1252,42 @@ function renderDepthCards(rows) {
       return Object.entries(grouped[level]).map(([team, sections]) => `
         <section class="depth-card">
           <div class="depth-card-header">
-            <h3>${team}</h3>
-            <span>${level}</span>
-          </div>
+
+  <div class="depth-team-info">
+    <h3>${team}</h3>
+    <span>${level}</span>
+  </div>
+
+  ${
+    isRealValue(
+      get(
+        sections[
+          Object.keys(sections)[0]
+        ][0],
+        ["Team Logo"]
+      )
+    )
+
+    ?
+
+    `<img
+      class="depth-logo"
+      src="${
+        get(
+          sections[
+            Object.keys(sections)[0]
+          ][0],
+          ["Team Logo"]
+        )
+      }"
+      alt="${team}"
+      onerror="this.style.display='none';"
+    >`
+
+    : ""
+  }
+
+</div>
 
           <div class="depth-grid">
             ${renderDepthSection("Rotation", sections)}
