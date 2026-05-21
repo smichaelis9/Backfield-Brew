@@ -487,7 +487,7 @@ function renderTools(tools, isPitcher) {
     return;
   }
 
-  const skip = ["Player-ID", "Player ID", "Player", "Tools Updated"];
+  const skip = ["Player-ID", "Player ID", "Player", "Tools Updated", "Last Updated"];
 
   const hitterTools = Object.entries(tools)
     .filter(([k, v]) => !skip.includes(k) && isRealValue(v))
