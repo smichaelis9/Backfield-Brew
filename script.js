@@ -1147,13 +1147,13 @@ async function initLogsPage() {
     });
 
     renderLogs(logs);
-["logSearchBox", "logTypeFilter"].forEach(id => {
-  const el = document.getElementById(id);
-  if (el) {
-    el.addEventListener("input", () => renderLogs(logs));
-    el.addEventListener("change", () => renderLogs(logs));
-  }
-});
+      ["logSearchBox", "logTypeFilter"].forEach(id => {
+        const el = document.getElementById(id);
+        if (el) {
+          el.addEventListener("input", () => renderLogs(logs));
+          el.addEventListener("change", () => renderLogs(logs));
+        }
+      });
   }
 
   catch(err){
