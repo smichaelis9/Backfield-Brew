@@ -617,73 +617,68 @@ tr:nth-child(even) {
    DEPTH TABLE
 ========================= */
 
-.depth-table {
-  border-collapse: collapse;
-  width: 100%;
-  font-size: 12px;
-  background: white;
+.depth-cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
 }
 
-.depth-table th {
-  background: #101044;
-  color: white;
-  border: 1px solid #000;
-  padding: 6px 8px;
-  font-weight: 800;
-  font-style: italic;
-  text-decoration: underline;
-  text-align: center;
-}
-
-.depth-table td {
+.depth-card {
   border: 1px solid #111;
-  padding: 4px 6px;
-  text-align: center;
-  vertical-align: middle;
-  line-height: 1.15;
-}
-
-.depth-table tr:nth-child(even) {
+  padding: 12px;
   background: white;
 }
 
-.depth-table tr:nth-child(odd) {
-  background: #f7f7f7;
+.depth-card-header {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid #111;
+  padding-bottom: 8px;
+  margin-bottom: 12px;
 }
 
-.depth-section-row td {
-  background: #101044 !important;
-  color: white;
+.depth-card-header h3 {
+  margin: 0;
+}
+
+.depth-card-header span {
   font-weight: 800;
-  font-style: italic;
+}
+
+.depth-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px 28px;
+}
+
+.depth-section h4 {
+  margin: 0 0 8px;
+  font-size: 15px;
+}
+
+.depth-player-row {
+  display: grid;
+  grid-template-columns: 38px 1fr;
+  gap: 6px;
+  margin: 4px 0;
+  font-size: 14px;
+}
+
+.depth-pos {
+  font-weight: 700;
+}
+
+.depth-player-row a {
+  color: #000;
   text-decoration: underline;
 }
 
-.depth-rank {
-  background: #18f4f4;
-  font-weight: 800;
-}
+@media (max-width: 800px) {
+  .depth-cards {
+    grid-template-columns: 1fr;
+  }
 
-.depth-40 {
-  font-weight: 800;
-}
-
-.depth-40:has(:not(:empty)) {
-  background: #18f4f4;
-}
-
-#depthTable td:nth-child(1),
-#depthTable th:nth-child(1),
-#depthTable td:nth-child(8),
-#depthTable th:nth-child(8),
-#depthTable td:nth-child(15),
-#depthTable th:nth-child(15) {
-  border-left: 14px solid #ef233c;
-}
-
-#depthTable td:nth-child(7),
-#depthTable th:nth-child(7),
-#depthTable td:nth-child(14),
-#depthTable th:nth-child(14) {
-  border-right: 14px solid #ef233c;
+  .depth-grid {
+    grid-template-columns: 1fr;
+  }
 }
