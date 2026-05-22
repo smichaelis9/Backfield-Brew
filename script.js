@@ -1239,7 +1239,7 @@ if (orgRow && depthTitle) {
     <span class="tools-updated">
       (40-Man Total: ${get(orgRow, ["On 40-Man"])} |
       Stateside Total: ${get(orgRow, ["Stateside Total"])}/${get(orgRow, ["Stateside Limit"])} |
-      Total Players in Organization: ${get(orgRow, ["Total Players in Organization"])})
+      Total MiLB Players in Organization: ${get(orgRow, ["Total Players in Organization"])})
     </span>
   `;
 }
