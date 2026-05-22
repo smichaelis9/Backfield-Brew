@@ -1231,24 +1231,22 @@ function renderDepthCards(rows) {
   String(get(row, ["Level"])).toLowerCase().trim() === "organization"
 );
 
-const orgSummaryHTML = orgRow ? `
-  <div class="org-summary">
-    <div class="org-summary-box">
-      <span>40-Man Total</span>
-      <strong>${get(orgRow, ["On 40-Man"])}</strong>
-    </div>
+const orgRow = rows.find(row =>
+  String(get(row, ["Level"])).toLowerCase().trim() === "organization"
+);
 
-    <div class="org-summary-box">
-      <span>Stateside Total</span>
-      <strong>${get(orgRow, ["Stateside Total"])} / ${get(orgRow, ["Stateside Limit"])}</strong>
-    </div>
+const depthTitle = document.getElementById("depthTitle");
 
-    <div class="org-summary-box">
-      <span>Total Players in Organization</span>
-      <strong>${get(orgRow, ["Total Players in Organization"])}</strong>
-    </div>
-  </div>
-` : "";
+if (orgRow && depthTitle) {
+  depthTitle.innerHTML = `
+    Organizational Depth Chart
+    <span class="tools-updated">
+      (40-Man Total: ${get(orgRow, ["On 40-Man"])} |
+      Stateside Total: ${get(orgRow, ["Stateside Total"])}/${get(orgRow, ["Stateside Limit"])} |
+      Total Players in Organization: ${get(orgRow, ["Total Players in Organization"])})
+    </span>
+  `;
+}
   const levelOrder = ["MLB", "AAA", "AA", "A+", "A", "ROK", "DSL"];
 
   const grouped = {};
@@ -1267,7 +1265,7 @@ const orgSummaryHTML = orgRow ? `
     grouped[level][team][section].push(row);
   });
 
-  container.innerHTML = orgSummaryHTML + levelOrder
+  container.innerHTML = levelOrder
     .filter(level => grouped[level])
     .map(level => {
       return Object.entries(grouped[level]).map(([team, sections]) => `
