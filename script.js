@@ -1331,14 +1331,31 @@ if (isRealValue(playerID)) {
   href = bref;
 }
 
-        return `
-          <div class="depth-player-row">
-            <span class="depth-pos">${pos}</span>
-            ${href
-              ? `<a href="${href}" ${href.startsWith("http") ? `target="_blank" rel="noopener"` : ""}>${player}</a>`
-              : `<span>${player}</span>`
-            }
-          </div>
+        const fortyMan =
+  String(get(row, ["40-Man"]))
+    .toLowerCase()
+    .trim() === "yes";
+
+return `
+  <div class="depth-player-row">
+
+    <span class="depth-pos">
+      ${pos}
+    </span>
+
+    <div class="depth-player-link-wrap">
+
+      ${href
+        ? `<a href="${href}" ${href.startsWith("http") ? `target="_blank" rel="noopener"` : ""}>${player}</a>`
+        : `<span>${player}</span>`
+      }
+
+      ${fortyMan
+        ? `<span class="forty-man-badge">40</span>`
+        : ""
+      }
+
+    </div>
         `;
       }).join("")}
     </div>
