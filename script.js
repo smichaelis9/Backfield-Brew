@@ -1227,7 +1227,28 @@ async function initDepthPage() {
 function renderDepthCards(rows) {
   const container = document.getElementById("depthCards");
   if (!container || !rows.length) return;
+  const orgRow = rows.find(row =>
+  String(get(row, ["Level"])).toLowerCase().trim() === "organization"
+);
 
+const orgSummaryHTML = orgRow ? `
+  <div class="org-summary">
+    <div class="org-summary-box">
+      <span>40-Man Total</span>
+      <strong>${get(orgRow, ["On 40-Man"])}</strong>
+    </div>
+
+    <div class="org-summary-box">
+      <span>Stateside Total</span>
+      <strong>${get(orgRow, ["Stateside Total"])} / ${get(orgRow, ["Stateside Limit"])}</strong>
+    </div>
+
+    <div class="org-summary-box">
+      <span>Total Players in Organization</span>
+      <strong>${get(orgRow, ["Total Players in Organization"])}</strong>
+    </div>
+  </div>
+` : "";
   const levelOrder = ["MLB", "AAA", "AA", "A+", "A", "ROK", "DSL"];
 
   const grouped = {};
@@ -1246,7 +1267,7 @@ function renderDepthCards(rows) {
     grouped[level][team][section].push(row);
   });
 
-  container.innerHTML = levelOrder
+  container.innerHTML = orgSummaryHTML + levelOrder
     .filter(level => grouped[level])
     .map(level => {
       return Object.entries(grouped[level]).map(([team, sections]) => `
