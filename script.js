@@ -1228,7 +1228,7 @@ function renderDepthCards(rows) {
   const container = document.getElementById("depthCards");
   if (!container || !rows.length) return;
 
-  const levelOrder = ["AAA", "AA", "A+", "A", "ROK", "DSL"];
+  const levelOrder = ["MLB", "AAA", "AA", "A+", "A", "ROK", "DSL"];
 
   const grouped = {};
 
