@@ -1338,13 +1338,9 @@ if (isRealValue(playerID)) {
 
 return `
   <div class="depth-player-row">
-
-    <span class="depth-pos">
-      ${pos}
-    </span>
+    <span class="depth-pos">${pos}</span>
 
     <div class="depth-player-link-wrap">
-
       ${href
         ? `<a href="${href}" ${href.startsWith("http") ? `target="_blank" rel="noopener"` : ""}>${player}</a>`
         : `<span>${player}</span>`
@@ -1354,9 +1350,9 @@ return `
         ? `<span class="forty-man-badge">40</span>`
         : ""
       }
-
     </div>
-        `;
+  </div>
+`;
       }).join("")}
     </div>
   `;
