@@ -1296,6 +1296,8 @@ function renderDepthCards(rows) {
             ${renderDepthSection("Bench", sections)}
             ${renderDepthSection("60 or Full-Season IL", sections)}
             ${renderDepthSection("7 Day IL or Development List", sections)}
+            ${renderDepthSection("60 Day IL", sections)}
+            ${renderDepthSection("10/15 Day IL", sections)}
           </div>
         </section>
       `).join("");
