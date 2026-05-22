@@ -1231,10 +1231,6 @@ function renderDepthCards(rows) {
   String(get(row, ["Level"])).toLowerCase().trim() === "organization"
 );
 
-const orgRow = rows.find(row =>
-  String(get(row, ["Level"])).toLowerCase().trim() === "organization"
-);
-
 const depthTitle = document.getElementById("depthTitle");
 
 if (orgRow && depthTitle) {
