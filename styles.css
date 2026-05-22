@@ -739,3 +739,38 @@ tr:nth-child(even) {
 
   transform:translateY(-1px);
 }
+.org-summary {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+  margin-bottom: 22px;
+}
+
+.org-summary-box {
+  background: #f4f6f8;
+  border: 1px solid #d8dce2;
+  border-left: 5px solid #ffc52f;
+  border-radius: 10px;
+  padding: 14px;
+  text-align: center;
+}
+
+.org-summary-box span {
+  display: block;
+  font-size: 13px;
+  font-weight: 700;
+  color: #1b2a4a;
+  margin-bottom: 6px;
+}
+
+.org-summary-box strong {
+  display: block;
+  font-size: 24px;
+  color: #111;
+}
+
+@media (max-width: 700px) {
+  .org-summary {
+    grid-template-columns: 1fr;
+  }
+}
