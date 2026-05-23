@@ -1511,3 +1511,132 @@ function renderDraftTable(rows) {
 `;
   }).join("");
 }
+/* =========================
+   International History
+========================= */
+async function initInternationalPage() {
+  try {
+    const rows = await loadSheet("International Signing History");
+
+    const years = [...new Set(
+      rows
+        .map(row => get(row, ["Signing Year"]))
+        .filter(isRealValue)
+    )].sort((a, b) => Number(b) - Number(a));
+
+    renderInternationalTabs(rows, years);
+    renderInternationalYear(rows, years[0]);
+  } catch (err) {
+    console.error("International page:", err);
+  }
+}
+
+function renderInternationalTabs(rows, years) {
+  const tabs = document.getElementById("intlYearTabs");
+  if (!tabs) return;
+
+  tabs.innerHTML = years.map((year, index) => `
+    <button class="draft-tab ${index === 0 ? "active" : ""}" data-year="${year}">
+      ${year}
+    </button>
+  `).join("");
+
+  tabs.querySelectorAll(".draft-tab").forEach(tab => {
+    tab.addEventListener("click", () => {
+      tabs.querySelectorAll(".draft-tab").forEach(t => t.classList.remove("active"));
+      tab.classList.add("active");
+      renderInternationalYear(rows, tab.dataset.year);
+    });
+  });
+}
+
+function renderInternationalYear(rows, year) {
+  const yearRows = rows.filter(row => get(row, ["Signing Year"]) === year);
+
+  const bonusPoolRow = yearRows.find(row =>
+    String(get(row, ["Player"])).toLowerCase().trim() === "bonus pool"
+  );
+
+  const playerRows = yearRows.filter(row =>
+    String(get(row, ["Player"])).toLowerCase().trim() !== "bonus pool"
+  );
+
+  renderInternationalSummary(bonusPoolRow);
+  renderInternationalTable(playerRows);
+}
+
+function renderInternationalSummary(poolRow) {
+  const box = document.getElementById("intlSummary");
+  if (!box) return;
+
+  if (!poolRow) {
+    box.innerHTML = "";
+    return;
+  }
+
+  box.innerHTML = `
+    <div class="draft-summary">
+      <span>Bonus Pool Cap: <strong>${get(poolRow, ["Bonus Pool Cap"])}</strong></span>
+      <span>Cap $ Spent: <strong>${get(poolRow, ["Cap $ Spent"])}</strong></span>
+      <span>Cap $ Remaining: <strong>${get(poolRow, ["Cap $ Remaining"])}</strong></span>
+    </div>
+  `;
+}
+
+function renderInternationalTable(rows) {
+  const table = document.getElementById("intlTable");
+  if (!table) return;
+
+  const headers = [
+    "Position",
+    "Player",
+    "Country",
+    "Signing Bonus",
+    "Pool Hit",
+    "Date Signed"
+  ];
+
+  table.querySelector("thead").innerHTML = `
+    <tr>
+      ${headers.map(h => `<th>${h}</th>`).join("")}
+    </tr>
+  `;
+
+  table.querySelector("tbody").innerHTML = rows.map(row => {
+    const player = get(row, ["Player"]);
+    const playerID = get(row, ["Player ID", "Player-ID"]);
+    const archived = String(get(row, ["Archived?", "Archived", "Archive"]))
+      .toLowerCase()
+      .trim() === "yes";
+
+    const bref = cleanUrl(get(row, ["Baseball Reference", "BBRef", "Baseball Reference Link"]));
+    let href = "";
+    let isBrefLink = false;
+
+    if (isRealValue(playerID)) {
+      href = `${archived ? "archive-player.html" : "player.html"}?id=${encodeURIComponent(playerID)}`;
+    } else if (isRealValue(bref)) {
+      href = bref;
+      isBrefLink = true;
+    }
+
+    return `
+      <tr>
+        <td>${get(row, ["Position", "Pos"])}</td>
+        <td>
+          ${href
+            ? `<a href="${href}" ${isBrefLink ? `target="_blank" rel="noopener"` : ""}>
+                ${player}
+                ${isBrefLink ? `<span class="bref-badge">BRef</span>` : ""}
+              </a>`
+            : player
+          }
+        </td>
+        <td>${get(row, ["Country"])}</td>
+        <td>${get(row, ["Signing Bonus"])}</td>
+        <td>${get(row, ["Pool Hit"])}</td>
+        <td>${get(row, ["Date Signed"])}</td>
+      </tr>
+    `;
+  }).join("");
+}
