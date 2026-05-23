@@ -14,6 +14,7 @@ const SHEET_GIDS = {
   "Pitcher Stats 2025": "1099458194",
   "Pitcher Stats 2026": "1603996515",
   "Videos": "1306695134",
+  "Draft History": "1343344959",
   "MiLB Depth Chart": "1115115429"
 };
 
