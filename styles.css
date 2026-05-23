@@ -774,3 +774,45 @@ tr:nth-child(even) {
     grid-template-columns: 1fr;
   }
 }
+/* =========================
+   Draft History
+========================= */
+.draft-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 12px 0 16px;
+}
+
+.draft-tab {
+  border: 1px solid #ffc52f;
+  background: #1b2a4a;
+  color: #ffc52f;
+  border-radius: 999px;
+  padding: 7px 14px;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.draft-tab.active,
+.draft-tab:hover {
+  background: #ffc52f;
+  color: #1b2a4a;
+}
+
+.draft-summary {
+  font-size: 13px;
+  font-weight: 400;
+  color: #555;
+  margin: 6px 0 16px;
+}
+
+.draft-summary span {
+  margin-right: 14px;
+  white-space: nowrap;
+}
+
+#draftTable td:nth-child(3) {
+  text-align: left;
+  font-weight: 700;
+}
