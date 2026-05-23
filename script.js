@@ -1216,6 +1216,9 @@ if (
   initLogsPage();
 
 }
+/* =========================
+   Depth Chart
+========================= */
 async function initDepthPage() {
   try {
     const rows = await loadSheet("MiLB Depth Chart");
@@ -1372,4 +1375,126 @@ return `
       }).join("")}
     </div>
   `;
+}
+/* =========================
+   Draft History
+========================= */
+async function initDraftPage() {
+  try {
+    const rows = await loadSheet("Draft History");
+
+    const years = [...new Set(
+      rows
+        .map(row => get(row, ["Draft Year"]))
+        .filter(isRealValue)
+    )].sort((a, b) => Number(b) - Number(a));
+
+    renderDraftTabs(rows, years);
+    renderDraftYear(rows, years[0]);
+  } catch (err) {
+    console.error("Draft page:", err);
+  }
+}
+
+function renderDraftTabs(rows, years) {
+  const tabs = document.getElementById("draftYearTabs");
+  if (!tabs) return;
+
+  tabs.innerHTML = years.map((year, index) => `
+    <button class="draft-tab ${index === 0 ? "active" : ""}" data-year="${year}">
+      ${year}
+    </button>
+  `).join("");
+
+  tabs.querySelectorAll(".draft-tab").forEach(tab => {
+    tab.addEventListener("click", () => {
+      tabs.querySelectorAll(".draft-tab").forEach(t => t.classList.remove("active"));
+      tab.classList.add("active");
+      renderDraftYear(rows, tab.dataset.year);
+    });
+  });
+}
+
+function renderDraftYear(rows, year) {
+  const yearRows = rows.filter(row => get(row, ["Draft Year"]) === year);
+
+  const poolRow = yearRows.find(row =>
+    String(get(row, ["Player"])).toLowerCase().trim() === "draft pool"
+  );
+
+  const playerRows = yearRows.filter(row =>
+    String(get(row, ["Player"])).toLowerCase().trim() !== "draft pool"
+  );
+
+  renderDraftSummary(poolRow);
+  renderDraftTable(playerRows);
+}
+
+function renderDraftSummary(poolRow) {
+  const box = document.getElementById("draftSummary");
+  if (!box) return;
+
+  if (!poolRow) {
+    box.innerHTML = "";
+    return;
+  }
+
+  box.innerHTML = `
+    <div class="draft-summary">
+      <span>Bonus Pool Cap: <strong>${get(poolRow, ["Bonus Pool Cap"])}</strong></span>
+      <span>Cap + 5%: <strong>${get(poolRow, ["Cap + 5%"])}</strong></span>
+      <span>Cap $ Spent: <strong>${get(poolRow, ["Cap $ Spent"])}</strong></span>
+      <span>Cap $ Remaining: <strong>${get(poolRow, ["Cap $ Remaining"])}</strong></span>
+    </div>
+  `;
+}
+
+function renderDraftTable(rows) {
+  const table = document.getElementById("draftTable");
+  if (!table) return;
+
+  const headers = [
+    "Rd",
+    "OVR Pick",
+    "Player",
+    "Slot Value",
+    "Signing Bonus",
+    "Pool Hit"
+  ];
+
+  table.querySelector("thead").innerHTML = `
+    <tr>
+      ${headers.map(h => `<th>${h}</th>`).join("")}
+    </tr>
+  `;
+
+  table.querySelector("tbody").innerHTML = rows.map(row => {
+    const player = get(row, ["Player"]);
+    const playerID = get(row, ["Player ID", "Player-ID"]);
+    const archived = String(get(row, ["Archived?", "Archived", "Archive"]))
+      .toLowerCase()
+      .trim() === "yes";
+
+    let href = "";
+
+    if (isRealValue(playerID)) {
+      href = `${archived ? "archive-player.html" : "player.html"}?id=${encodeURIComponent(playerID)}`;
+    }
+
+    return `
+      <tr>
+        <td>${get(row, ["Rd"])}</td>
+        <td>${get(row, ["OVR Pick"])}</td>
+        <td>
+          ${href
+            ? `<a href="${href}">${player}</a>`
+            : player
+          }
+        </td>
+        <td>${get(row, ["Slot Value"])}</td>
+        <td>${get(row, ["Signing Bonus", "Signing Bonus "])}</td>
+        <td>${get(row, ["Pool Hit"])}</td>
+      </tr>
+    `;
+  }).join("");
 }
