@@ -1476,11 +1476,16 @@ function renderDraftTable(rows) {
     const archived = String(get(row, ["Archived?", "Archived", "Archive"]))
       .toLowerCase()
       .trim() === "yes";
+    const bref = cleanUrl(get(row, ["Baseball Reference", "BBRef", "Baseball Reference Link"]));
+    let isBrefLink = false;
 
     let href = "";
 
     if (isRealValue(playerID)) {
       href = `${archived ? "archive-player.html" : "player.html"}?id=${encodeURIComponent(playerID)}`;
+    } else if (isRealValue(bref)) {
+      href = bref;
+      isBrefLink = true;
     }
 
     return `
@@ -1490,7 +1495,10 @@ function renderDraftTable(rows) {
     <td>${get(row, ["Position", "Pos"])}</td>
     <td>
       ${href
-        ? `<a href="${href}">${player}</a>`
+        ? `<a href="${href}" ${isBrefLink ? `target="_blank" rel="noopener"` : ""}>
+            ${player}
+            ${isBrefLink ? `<span class="bref-badge">BRef</span>` : ""}
+          </a>`
         : player
       }
     </td>
