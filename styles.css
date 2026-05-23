@@ -812,7 +812,7 @@ tr:nth-child(even) {
   white-space: nowrap;
 }
 
-#draftTable td:nth-child(3) {
+#draftTable td:nth-child(4) {
   text-align: left;
   font-weight: 700;
 }
