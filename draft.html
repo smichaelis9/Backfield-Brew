@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Backfield Brew – Draft History</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="stylesheet" href="styles.css?v=6" />
+  <script defer src="script.js?v=22"></script>
+</head>
+
+<body>
+  <header class="site-header">
+    <img src="BFB-Logo.png" alt="Backfield Brew" class="site-logo" />
+  </header>
+
+  <div class="header-buttons">
+    <a href="index.html">Active Rankings</a>
+    <a href="archive.html">Archived Players</a>
+    <a href="depth.html">Organizational Depth Chart</a>
+    <a href="logs.html">Scouting Logs</a>
+    <a href="https://www.patreon.com/BackfieldBrew" target="_blank" rel="noopener">Patreon</a>
+  </div>
+
+  <main class="container">
+    <section class="card">
+      <h2>Draft History</h2>
+      <div id="draftYearTabs" class="draft-tabs"></div>
+      <div id="draftSummary"></div>
+      <div class="table-wrap">
+        <table id="draftTable">
+          <thead></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      initDraftPage();
+      handleHeaderButtons();
+    });
+  </script>
+</body>
+</html>
