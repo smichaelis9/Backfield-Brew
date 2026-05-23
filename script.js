@@ -1454,13 +1454,15 @@ function renderDraftTable(rows) {
   if (!table) return;
 
   const headers = [
-    "Rd",
-    "OVR Pick",
-    "Player",
-    "Slot Value",
-    "Signing Bonus",
-    "Pool Hit"
-  ];
+  "Rd",
+  "OVR Pick",
+  "Position",
+  "Player",
+  "School",
+  "Slot Value",
+  "Signing Bonus",
+  "Pool Hit"
+];
 
   table.querySelector("thead").innerHTML = `
     <tr>
@@ -1482,19 +1484,21 @@ function renderDraftTable(rows) {
     }
 
     return `
-      <tr>
-        <td>${get(row, ["Rd"])}</td>
-        <td>${get(row, ["OVR Pick"])}</td>
-        <td>
-          ${href
-            ? `<a href="${href}">${player}</a>`
-            : player
-          }
-        </td>
-        <td>${get(row, ["Slot Value"])}</td>
-        <td>${get(row, ["Signing Bonus", "Signing Bonus "])}</td>
-        <td>${get(row, ["Pool Hit"])}</td>
-      </tr>
-    `;
+  <tr>
+    <td>${get(row, ["Rd"])}</td>
+    <td>${get(row, ["OVR Pick"])}</td>
+    <td>${get(row, ["Position", "Pos"])}</td>
+    <td>
+      ${href
+        ? `<a href="${href}">${player}</a>`
+        : player
+      }
+    </td>
+    <td>${get(row, ["School"])}</td>
+    <td>${get(row, ["Slot Value"])}</td>
+    <td>${get(row, ["Signing Bonus", "Signing Bonus "])}</td>
+    <td>${get(row, ["Pool Hit"])}</td>
+  </tr>
+`;
   }).join("");
 }
