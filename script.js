@@ -1640,3 +1640,20 @@ function renderInternationalTable(rows) {
     `;
   }).join("");
 }
+function setupMobileDropdown() {
+  const dropdown = document.querySelector(".dropdown-nav");
+  const button = document.querySelector(".dropdown-button");
+
+  if (!dropdown || !button) return;
+
+  button.addEventListener("click", e => {
+    e.preventDefault();
+    dropdown.classList.toggle("open");
+  });
+
+  document.addEventListener("click", e => {
+    if (!dropdown.contains(e.target)) {
+      dropdown.classList.remove("open");
+    }
+  });
+}
