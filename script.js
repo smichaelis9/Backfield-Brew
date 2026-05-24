@@ -16,6 +16,7 @@ const SHEET_GIDS = {
   "Videos": "1306695134",
   "Draft History": "1343344959",
   "International Signing History": "1283419308",
+  "Rule 5 Eligibility": "2076057970",
   "MiLB Depth Chart": "1115115429"
 };
 
