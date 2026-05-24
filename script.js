@@ -1663,15 +1663,27 @@ function renderRule5Page(rows) {
 
   grid.innerHTML = years.map(year => {
     const players = rows
-      .map(row => get(row, [year]))
-      .filter(isRealValue);
+      .map(row => ({
+        name: get(row, [year]),
+        playerID: get(row, [`${year} ID`, `${year} Player ID`, "Player ID"])
+      }))
+      .filter(p => isRealValue(p.name));
 
     return `
       <div class="rule5-year">
         <h3>December ${year}</h3>
 
         <ul>
-          ${players.map(player => `<li>${player}</li>`).join("")}
+          ${players.map(player => `
+            <li>
+              ${isRealValue(player.playerID)
+              ? `<a href="player.html?id=${encodeURIComponent(player.playerID)}">
+                   ${player.name}
+                 </a>`
+              : player.name
+            }
+          </li>
+        `).join("")}
         </ul>
       </div>
     `;
