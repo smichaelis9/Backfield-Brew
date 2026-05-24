@@ -887,12 +887,15 @@ tr:nth-child(even) {
 
   padding:12px 16px;
 
-  color:#162447;
+  background:#162447;
+
+  color:#ffc72c;
+
   font-weight:700;
 
   text-decoration:none;
 
-  border-bottom:1px solid #e6e6e6;
+  border-bottom:1px solid rgba(255,255,255,.12);
 }
 
 .dropdown-content a:last-child{
@@ -900,7 +903,7 @@ tr:nth-child(even) {
 }
 
 .dropdown-content a:hover{
-  background:#f3f5f8;
+  background:#22335f;
 }
 
 .dropdown-nav:hover .dropdown-content{
