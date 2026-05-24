@@ -909,3 +909,35 @@ tr:nth-child(even) {
 .dropdown-nav:hover .dropdown-content{
   display:block;
 }
+@media (max-width: 700px) {
+  .header-buttons {
+    align-items: center;
+  }
+
+  .dropdown-nav {
+    width: auto;
+  }
+
+  .dropdown-button {
+    width: auto;
+  }
+
+  .dropdown-content {
+    left: 50%;
+    transform: translateX(-50%);
+    min-width: 230px;
+    text-align: center;
+  }
+
+  .dropdown-nav.open .dropdown-content {
+    display: block;
+  }
+
+  .dropdown-nav:hover .dropdown-content {
+    display: none;
+  }
+
+  .dropdown-nav.open:hover .dropdown-content {
+    display: block;
+  }
+}
