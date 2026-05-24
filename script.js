@@ -1641,6 +1641,44 @@ function renderInternationalTable(rows) {
     `;
   }).join("");
 }
+/* =========================
+   Rule 5
+========================= */
+async function initRule5Page() {
+  try {
+    const rows = await loadSheet("Rule 5 Eligibility");
+    renderRule5Page(rows);
+  } catch (err) {
+    console.error("Rule 5 page:", err);
+  }
+}
+
+function renderRule5Page(rows) {
+  const grid = document.getElementById("rule5Grid");
+  if (!grid || !rows.length) return;
+
+  const years = Object.keys(rows[0]).filter(year =>
+    /^\d{4}$/.test(String(year).trim())
+  );
+
+  grid.innerHTML = years.map(year => {
+    const players = rows
+      .map(row => get(row, [year]))
+      .filter(isRealValue);
+
+    return `
+      <div class="rule5-year">
+        <h3>December ${year}</h3>
+        <ul>
+          ${players.map(player => `<li>${player}</li>`).join("")}
+        </ul>
+      </div>
+    `;
+  }).join("");
+}
+/* =========================
+   MiLB Free Agency
+========================= */
 function setupMobileDropdown() {
   const dropdown = document.querySelector(".dropdown-nav");
   const button = document.querySelector(".dropdown-button");
