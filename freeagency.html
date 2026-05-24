@@ -1,1 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Backfield Brew – MiLB Free Agency</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+  <link rel="stylesheet" href="styles.css?v=8" />
+  <script defer src="script.js?v=27"></script>
+</head>
+
+<body>
+  <header class="site-header">
+    <img src="BFB-Logo.png" alt="Backfield Brew" class="site-logo" />
+  </header>
+
+  <div class="header-buttons">
+    <a href="index.html">Active Rankings</a>
+    <a href="archive.html">Archived Players</a>
+    <a href="https://www.patreon.com/BackfieldBrew" target="_blank" rel="noopener">Patreon</a>
+
+    <div class="dropdown-nav">
+      <button class="dropdown-button">Other Pages ▼</button>
+      <div class="dropdown-content">
+      <a href="logs.html">Scouting Logs</a>
+      <a href="depth.html">Organizational Depth Chart</a>
+      <a href="rule5.html">Rule 5 Eligibility</a>
+      <a href="draft.html">Draft History</a>
+      <a href="international.html">International History</a>
+    </div>
+    </div>
+  </div>
+
+  <main class="container">
+    <section class="card rule5-card">
+      <h2 class="rule5-title">Brewers MiLB Free Agency</h2>
+
+      <p class="rule5-note">
+        The following players will be eligible for minor league free agency in November of the stated year unless they are added to the 40-man roster or re-signed prior to that time.
+      </p>
+
+      <div id="freeAgencyGrid" class="rule5-grid"></div>
+    </section>
+  </main>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      initRule5Page();
+      handleHeaderButtons();
+      setupMobileDropdown();
+    });
+  </script>
+</body>
+</html>
