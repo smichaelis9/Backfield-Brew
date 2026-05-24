@@ -1665,7 +1665,11 @@ function renderRule5Page(rows) {
     const players = rows
       .map(row => ({
         name: get(row, [year]),
-        playerID: get(row, [`${year} ID`, `${year} Player ID`, "Player ID"])
+        playerID: get(row, [
+          `${year} Player ID`,
+          `${year} Player-ID`,
+          `${year} ID`
+        ])
       }))
       .filter(p => isRealValue(p.name));
 
