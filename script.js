@@ -1729,7 +1729,7 @@ function renderFreeAgencyPage(rows) {
 
     return `
       <div class="rule5-year">
-        <h3>${year}</h3>
+        <h3>November ${year}</h3>
         <ul>
           ${players.map(player => `
             <li>
