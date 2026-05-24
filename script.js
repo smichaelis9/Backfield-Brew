@@ -1669,6 +1669,7 @@ function renderRule5Page(rows) {
     return `
       <div class="rule5-year">
         <h3>December ${year}</h3>
+
         <ul>
           ${players.map(player => `<li>${player}</li>`).join("")}
         </ul>
@@ -1676,6 +1677,7 @@ function renderRule5Page(rows) {
     `;
   }).join("");
 }
+
 /* =========================
    MiLB Free Agency
 ========================= */
