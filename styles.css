@@ -834,6 +834,52 @@ tr:nth-child(even) {
 
   text-decoration: none;
 }
+/* =========================
+   Rule 5
+========================= */
+.rule5-title {
+  background: #1b2a4a;
+  color: white;
+  text-align: center;
+  padding: 12px;
+  margin: 0 0 22px;
+  border: 2px solid #111;
+}
+
+.rule5-note {
+  font-style: italic;
+  line-height: 1.25;
+  margin-bottom: 28px;
+}
+
+.rule5-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 34px;
+}
+
+.rule5-year h3 {
+  color: #8b0000;
+  font-size: 16px;
+  margin-bottom: 14px;
+}
+
+.rule5-year ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.rule5-year li {
+  margin-bottom: 3px;
+  font-size: 15px;
+}
+
+@media (max-width: 800px) {
+  .rule5-grid {
+    grid-template-columns: 1fr;
+  }
+}
 
 /* =========================
    Dropdown Button
