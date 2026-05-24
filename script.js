@@ -1698,6 +1698,53 @@ function renderRule5Page(rows) {
 /* =========================
    MiLB Free Agency
 ========================= */
+async function initFreeAgencyPage() {
+  try {
+    const rows = await loadSheet("MiLB Free Agency");
+    renderFreeAgencyPage(rows);
+  } catch (err) {
+    console.error("MiLB Free Agency page:", err);
+  }
+}
+
+function renderFreeAgencyPage(rows) {
+  const grid = document.getElementById("freeAgencyGrid");
+  if (!grid || !rows.length) return;
+
+  const years = Object.keys(rows[0]).filter(year =>
+    /^\d{4}$/.test(String(year).trim())
+  );
+
+  grid.innerHTML = years.map(year => {
+    const players = rows
+      .map(row => ({
+        name: get(row, [year]),
+        playerID: get(row, [
+          `${year} Player ID`,
+          `${year} Player-ID`,
+          `${year} ID`
+        ])
+      }))
+      .filter(p => isRealValue(p.name));
+
+    return `
+      <div class="rule5-year">
+        <h3>${year}</h3>
+        <ul>
+          ${players.map(player => `
+            <li>
+              ${isRealValue(player.playerID)
+                ? `<a href="player.html?id=${encodeURIComponent(player.playerID)}">${player.name}</a>`
+                : player.name
+              }
+            </li>
+          `).join("")}
+        </ul>
+      </div>
+    `;
+  }).join("");
+}
+
 function setupMobileDropdown() {
   const dropdown = document.querySelector(".dropdown-nav");
   const button = document.querySelector(".dropdown-button");
