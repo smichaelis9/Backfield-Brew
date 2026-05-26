@@ -1832,8 +1832,26 @@ function renderCompareCard(player) {
   const isPitcher = get(bio, ["Player Type"]).toLowerCase().includes("pitch");
 
   const toolKeys = isPitcher
-    ? ["Primary Pitch", "Pitch #1", "Secondary #1", "Pitch #2", "Secondary #2", "Pitch #3", "Command", "Control", "Fastball Velocity"]
-    : ["Hit", "Power", "Run", "Field", "Arm", "Overall"];
+  ? [
+      "Primary Pitch", "Pitch #1",
+      "Secondary #1", "Pitch #2",
+      "Secondary #2", "Pitch #3",
+      "Secondary #3", "Pitch #4",
+      "Secondary #4", "Pitch #5",
+      "Command",
+      "Control",
+      "Fastball Velocity"
+    ]
+  : [
+      "Hit",
+      "Raw Power",
+      "Game Power",
+      "Bat to Ball",
+      "Swing Decisions",
+      "Speed",
+      "Field",
+      "Arm"
+    ];
 
   return `
   <div class="compare-card">
