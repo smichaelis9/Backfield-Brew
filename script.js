@@ -1823,6 +1823,7 @@ function findComparePlayer(id) {
 }
 
 function renderCompareCard(player) {
+  const picture = get(bio, ["Picture", "Image", "Photo", "Picture URL", "Image URL"]);
   const bio = player.bio;
   const tools = player.tools || {};
   const playerID = get(bio, ["Player-ID", "Player ID"]);
@@ -1835,10 +1836,15 @@ function renderCompareCard(player) {
     : ["Hit", "Power", "Run", "Field", "Arm", "Overall"];
 
   return `
-    <div class="compare-card">
-      <h3>
-        <a href="player.html?id=${encodeURIComponent(playerID)}">${name}</a>
-      </h3>
+  <div class="compare-card">
+    ${isRealValue(picture)
+      ? `<img class="compare-player-photo" src="${picture}" alt="${name}" onerror="this.style.display='none';">`
+      : ""
+    }
+
+    <h3>
+      <a href="player.html?id=${encodeURIComponent(playerID)}">${name}</a>
+    </h3>
 
       <div class="compare-basics">
         ${compareLine("Rank", `#${get(bio, ["Rank"])}`)}
