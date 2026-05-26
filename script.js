@@ -1832,54 +1832,59 @@ function renderCompareCard(player) {
   const isPitcher = get(bio, ["Player Type"]).toLowerCase().includes("pitch");
 
   const toolKeys = isPitcher
-  ? [
-      "Primary Pitch", "Pitch #1",
-      "Secondary #1", "Pitch #2",
-      "Secondary #2", "Pitch #3",
-      "Secondary #3", "Pitch #4",
-      "Secondary #4", "Pitch #5",
-      "Command",
-      "Control",
-      "Fastball Velocity"
-    ]
-  : [
-      "Hit",
-      "Raw Power",
-      "Game Power",
-      "Bat to Ball",
-      "Swing Decisions",
-      "Speed",
-      "Field",
-      "Arm"
-    ];
+    ? [
+        "Primary Pitch", "Pitch #1",
+        "Secondary #1", "Pitch #2",
+        "Secondary #2", "Pitch #3",
+        "Secondary #3", "Pitch #4",
+        "Secondary #4", "Pitch #5",
+        "Command",
+        "Control",
+        "Fastball Velocity"
+      ]
+    : [
+        "Hit",
+        "Raw Power",
+        "Game Power",
+        "Bat to Ball",
+        "Swing Decisions",
+        "Speed",
+        "Field",
+        "Arm"
+      ];
 
   return `
-  <div class="compare-card">
-    ${isRealValue(picture)
-      ? `<img class="compare-player-photo" src="${picture}" alt="${name}" onerror="this.style.display='none';">`
-      : ""
-    }
+    <div class="compare-card">
 
-    <h3>
-      <a href="player.html?id=${encodeURIComponent(playerID)}">${name}</a>
-    </h3>
+      ${isRealValue(picture)
+        ? `<img class="compare-player-photo" src="${picture}" alt="${name}" onerror="this.style.display='none';">`
+        : ""
+      }
 
-      <div class="compare-basics">
-        ${compareLine("Rank", `#${get(bio, ["Rank"])}`)}
-        ${compareLine("OFP", get(bio, ["OFP"]))}
-        ${compareLine("Risk", get(bio, ["Risk"]))}
-        ${compareLine("Pos", get(bio, ["Position", "Pos"]))}
-        ${compareLine("Level", get(bio, ["Level"]))}
-        ${compareLine("Age", get(bio, ["Age"]))}
-        ${compareLine("Height", get(bio, ["Height"]))}
-        ${compareLine("Weight", get(bio, ["Weight"]))}
+      <h3>
+        <a href="player.html?id=${encodeURIComponent(playerID)}">${name}</a>
+      </h3>
+
+      <div class="compare-two-col">
+        <div>
+          ${compareLine("Rank", `#${get(bio, ["Rank"])}`)}
+          ${compareLine("OFP", get(bio, ["OFP"]))}
+          ${compareLine("Risk", get(bio, ["Risk"]))}
+          ${compareLine("Pos", get(bio, ["Position", "Pos"]))}
+          ${compareLine("Level", get(bio, ["Level"]))}
+          ${compareLine("Age", get(bio, ["Age"]))}
+          ${compareLine("Height", get(bio, ["Height"]))}
+          ${compareLine("Weight", get(bio, ["Weight"]))}
+        </div>
+
+        <div>
+          <h4>Tool Grades</h4>
+          ${toolKeys.map(key => compareLine(key, get(tools, [key]))).join("")}
+        </div>
       </div>
 
-      <h4>${isPitcher ? "Pitch Arsenal" : "Tool Grades"}</h4>
+      <h4 class="compare-stats-title">2026 Stats</h4>
 
-      <div class="compare-tools">
-        ${toolKeys.map(key => compareLine(key, get(tools, [key]))).join("")}
-      </div>
     </div>
   `;
 }
