@@ -880,7 +880,59 @@ tr:nth-child(even) {
     grid-template-columns: 1fr;
   }
 }
+/* =========================
+   Compare Page
+========================= */
+.compare-output {
+  margin-top: 20px;
+}
 
+.compare-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+}
+
+.compare-card {
+  background: #f4f6f8;
+  border: 1px solid #d8dce2;
+  border-left: 5px solid #ffc52f;
+  border-radius: 12px;
+  padding: 16px;
+}
+
+.compare-card h3 {
+  margin-top: 0;
+}
+
+.compare-card h3 a {
+  color: #1b2a4a;
+}
+
+.compare-line {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  border-bottom: 1px solid #ddd;
+  padding: 6px 0;
+  font-size: 14px;
+}
+
+.compare-line span {
+  color: #555;
+  font-weight: 700;
+}
+
+.compare-line strong {
+  color: #111;
+  text-align: right;
+}
+
+@media (max-width: 800px) {
+  .compare-grid {
+    grid-template-columns: 1fr;
+  }
+}
 /* =========================
    Dropdown Button
 ========================= */
