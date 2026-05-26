@@ -986,31 +986,41 @@ tr:nth-child(even) {
 
   .compare-card .compare-player-photo {
   display: block !important;
-
-  width: 120px !important;
-  height: 150px !important;
-
+  width: 150px !important;
+  height: 180px !important;
   object-fit: contain !important;
   object-position: center !important;
-
-  border-radius: 10px;
-  border: 3px solid #ffc52f;
-
-  background: #f4f6f8;
-
+  border: none;
+  background: transparent;
   margin: 0 auto 14px !important;
 }
 
-  .compare-line {
-    font-size: 12px;
+.compare-two-col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+  align-items: start;
+}
+
+.compare-two-col h4 {
+  margin-top: 0;
+}
+
+.compare-stats-title {
+  margin-top: 18px;
+  font-family: "Permanent Marker", cursive;
+  font-size: 20px;
+}
+
+@media (max-width: 700px) {
+  .compare-two-col {
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
   }
 
-  .compare-card h3 {
-    font-size: 16px;
-  }
-
-  .compare-card h4 {
-    font-size: 14px;
+  .compare-card .compare-player-photo {
+    width: 120px !important;
+    height: 150px !important;
   }
 }
 /* =========================
