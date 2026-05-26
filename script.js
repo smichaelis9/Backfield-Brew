@@ -1823,11 +1823,11 @@ function findComparePlayer(id) {
 }
 
 function renderCompareCard(player) {
-  const picture = get(bio, ["Picture", "Image", "Photo", "Picture URL", "Image URL"]);
   const bio = player.bio;
   const tools = player.tools || {};
   const playerID = get(bio, ["Player-ID", "Player ID"]);
   const name = get(bio, ["Player", "Name"]);
+  const picture = get(bio, ["Picture", "Image", "Photo", "Picture URL", "Image URL"]);
 
   const isPitcher = get(bio, ["Player Type"]).toLowerCase().includes("pitch");
 
