@@ -1744,7 +1744,132 @@ function renderFreeAgencyPage(rows) {
     `;
   }).join("");
 }
+/* =========================
+   Compare Page
+========================= */
+async function initComparePage() {
+  try {
+    const players = await loadSheet("Biography Info");
+    const hitterTools = await loadSheet("Hitter Tools").catch(() => []);
+    const pitcherTools = await loadSheet("Pitcher Tools").catch(() => []);
 
+    window.compareData = {
+      players,
+      tools: [...hitterTools, ...pitcherTools]
+    };
+
+    const cleanPlayers = players
+      .filter(p => isRealValue(get(p, ["Player-ID", "Player ID"])) && isRealValue(get(p, ["Player", "Name"])))
+      .sort((a, b) => num(get(a, ["Rank"])) - num(get(b, ["Rank"])));
+
+    populateCompareDropdown("comparePlayer1", cleanPlayers);
+    populateCompareDropdown("comparePlayer2", cleanPlayers);
+
+    document.getElementById("comparePlayer1")?.addEventListener("change", renderComparePlayers);
+    document.getElementById("comparePlayer2")?.addEventListener("change", renderComparePlayers);
+  } catch (err) {
+    console.error("Compare page:", err);
+  }
+}
+
+function populateCompareDropdown(id, players) {
+  const select = document.getElementById(id);
+  if (!select) return;
+
+  select.innerHTML =
+    `<option value="">Select player...</option>` +
+    players.map(p => `
+      <option value="${get(p, ["Player-ID", "Player ID"])}">
+        #${get(p, ["Rank"])} ${get(p, ["Player", "Name"])}
+      </option>
+    `).join("");
+}
+
+function renderComparePlayers() {
+  const id1 = document.getElementById("comparePlayer1")?.value;
+  const id2 = document.getElementById("comparePlayer2")?.value;
+  const output = document.getElementById("compareOutput");
+
+  if (!output || !window.compareData) return;
+
+  if (!id1 || !id2) {
+    output.innerHTML = "";
+    return;
+  }
+
+  const player1 = findComparePlayer(id1);
+  const player2 = findComparePlayer(id2);
+
+  if (!player1 || !player2) return;
+
+  output.innerHTML = `
+    <div class="compare-grid">
+      ${renderCompareCard(player1)}
+      ${renderCompareCard(player2)}
+    </div>
+  `;
+}
+
+function findComparePlayer(id) {
+  const bio = window.compareData.players.find(p =>
+    get(p, ["Player-ID", "Player ID"]) === id
+  );
+
+  const tools = window.compareData.tools.find(t =>
+    get(t, ["Player-ID", "Player ID"]) === id
+  );
+
+  return { bio, tools };
+}
+
+function renderCompareCard(player) {
+  const bio = player.bio;
+  const tools = player.tools || {};
+  const playerID = get(bio, ["Player-ID", "Player ID"]);
+  const name = get(bio, ["Player", "Name"]);
+
+  const isPitcher = get(bio, ["Player Type"]).toLowerCase().includes("pitch");
+
+  const toolKeys = isPitcher
+    ? ["Primary Pitch", "Pitch #1", "Secondary #1", "Pitch #2", "Secondary #2", "Pitch #3", "Command", "Control", "Fastball Velocity"]
+    : ["Hit", "Power", "Run", "Field", "Arm", "Overall"];
+
+  return `
+    <div class="compare-card">
+      <h3>
+        <a href="player.html?id=${encodeURIComponent(playerID)}">${name}</a>
+      </h3>
+
+      <div class="compare-basics">
+        ${compareLine("Rank", `#${get(bio, ["Rank"])}`)}
+        ${compareLine("OFP", get(bio, ["OFP"]))}
+        ${compareLine("Risk", get(bio, ["Risk"]))}
+        ${compareLine("Pos", get(bio, ["Position", "Pos"]))}
+        ${compareLine("Level", get(bio, ["Level"]))}
+        ${compareLine("Age", get(bio, ["Age"]))}
+        ${compareLine("Height", get(bio, ["Height"]))}
+        ${compareLine("Weight", get(bio, ["Weight"]))}
+      </div>
+
+      <h4>${isPitcher ? "Pitch Arsenal" : "Tool Grades"}</h4>
+
+      <div class="compare-tools">
+        ${toolKeys.map(key => compareLine(key, get(tools, [key]))).join("")}
+      </div>
+    </div>
+  `;
+}
+
+function compareLine(label, value) {
+  if (!isRealValue(value)) return "";
+
+  return `
+    <div class="compare-line">
+      <span>${label}</span>
+      <strong>${value}</strong>
+    </div>
+  `;
+}
 function setupMobileDropdown() {
   const dropdown = document.querySelector(".dropdown-nav");
   const button = document.querySelector(".dropdown-button");
