@@ -984,22 +984,22 @@ tr:nth-child(even) {
     padding: 10px;
   }
 
-  .compare-player-photo {
-     display: block;
+  .compare-card .compare-player-photo {
+  display: block !important;
 
-     width: 120px;
-     height: 150px;
+  width: 120px !important;
+  height: 150px !important;
 
-     object-fit: contain;
-     object-position: center;
+  object-fit: contain !important;
+  object-position: center !important;
 
-     border-radius: 10px;
-     border: 3px solid #ffc52f;
+  border-radius: 10px;
+  border: 3px solid #ffc52f;
 
-     background: #f4f6f8;
+  background: #f4f6f8;
 
-     margin: 0 auto 14px;
-  }
+  margin: 0 auto 14px !important;
+}
 
   .compare-line {
     font-size: 12px;
