@@ -866,7 +866,9 @@ async function renderTransactions(bio) {
     );
 
     const data = await res.json();
-    const transactions = data.transactions || [];
+    const transactions = (data.transactions || []).sort(
+      (a, b) => new Date(b.date) - new Date(a.date)
+    );
 
     if (!transactions.length) return;
 
