@@ -866,7 +866,9 @@ async function renderTransactions(bio) {
     );
 
     const data = await res.json();
-    const transactions = data.transactions || [];
+    const transactions = (data.transactions || []).sort(
+      (a, b) => new Date(b.date) - new Date(a.date)
+    );
 
     if (!transactions.length) return;
 
@@ -880,7 +882,7 @@ async function renderTransactions(bio) {
         <h2>Transactions</h2>
 
         <ul class="transactions-list">
-          ${transactions.slice(0, 12).map(t => `
+          ${transactions.slice(0, 30).map(t => `
             <li>
               <strong>${formatTransactionDate(t.date)}</strong>
               ${t.description || ""}
