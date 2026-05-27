@@ -417,6 +417,7 @@ function renderPlayerPage(bio, tools, stats, isPitcher, videos, isArchive = fals
   renderScoutingNotes(bio);
   renderArticles(bio);
   renderStats(stats, isPitcher);
+  renderTransactions(bio);
   renderVideos(videos);
 }
 
@@ -850,6 +851,58 @@ function getSocialIcon(platform) {
       <path d="M16.6 5.8c-1.1-.8-1.8-2.1-1.8-3.6h-3.2v13.1a2.6 2.6 0 1 1-2.6-2.6c.3 0 .6.1.9.2V9.6a6.1 6.1 0 0 0-.9-.1A5.8 5.8 0 1 0 14.8 15V8.4a7.1 7.1 0 0 0 4.2 1.4V6.6a4.1 4.1 0 0 1-2.4-.8Z"/>
     </svg>
   `;
+}
+/* =========================
+   TRANSACTIONS
+========================= */
+async function renderTransactions(bio) {
+  const mlbamId = get(bio, ["MLBAM ID", "MLB ID", "MiLB ID"]);
+
+  if (!isRealValue(mlbamId)) return;
+
+  try {
+    const res = await fetch(
+      `https://statsapi.mlb.com/api/v1/transactions?playerId=${mlbamId}`
+    );
+
+    const data = await res.json();
+    const transactions = data.transactions || [];
+
+    if (!transactions.length) return;
+
+    const container = document.querySelector(".container");
+    const statsCard = document.getElementById("statsCard");
+
+    if (!container || !statsCard) return;
+
+    statsCard.insertAdjacentHTML("afterend", `
+      <section class="card" id="transactionsCard">
+        <h2>Transactions</h2>
+
+        <ul class="transactions-list">
+          ${transactions.slice(0, 12).map(t => `
+            <li>
+              <strong>${formatTransactionDate(t.date)}</strong>
+              ${t.description || ""}
+            </li>
+          `).join("")}
+        </ul>
+      </section>
+    `);
+
+  } catch (err) {
+    console.error("Transactions:", err);
+  }
+}
+
+function formatTransactionDate(value) {
+  if (!value) return "";
+
+  const date = new Date(value);
+
+  if (Number.isNaN(date.getTime())) return value;
+
+  return `${date.getMonth() + 1}/${date.getDate()}/${date.getFullYear()}`;
 }
 /* =========================
    ARCHIVE PAGES
