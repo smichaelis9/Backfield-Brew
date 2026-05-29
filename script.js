@@ -414,6 +414,7 @@ function renderPlayerPage(bio, tools, stats, isPitcher, videos, isArchive = fals
 
   renderExternalLinks(bio);
   renderTools(tools, isPitcher);
+  renderFullScoutingReport(bio, isPitcher);
   renderScoutingNotes(bio);
   renderArticles(bio);
   renderStats(stats, isPitcher);
@@ -522,6 +523,75 @@ function renderTools(tools, isPitcher) {
         ${hitterTools || "<p>No tools found.</p>"}
       </div>
     `);
+}
+
+/* =========================
+   SCOUTING REPORTS FULL
+========================= */
+
+function renderFullScoutingReport(bio, isPitcher) {
+  const fullUpdated = get(bio, ["Full Report Updated"]);
+  const playerName = get(bio, ["Player", "Name"]);
+
+  const sections = [];
+
+  const addSection = (title, text) => {
+    if (isRealValue(text)) {
+      sections.push({ title, text });
+    }
+  };
+
+  addSection("Physical Description", get(bio, ["Physical Description Report"]));
+
+  if (isPitcher) {
+    addSection("Mechanics", get(bio, ["Hit / Mechanics Report", "Mechanics Report"]));
+
+    for (let i = 1; i <= 6; i++) {
+      const pitchName = get(bio, [`Pitch ${i}`]);
+      const pitchReport = get(bio, [`Pitch ${i} Report`]);
+
+      if (isRealValue(pitchName) && isRealValue(pitchReport)) {
+        addSection(pitchName, pitchReport);
+      }
+    }
+  } else {
+    addSection("Hit", get(bio, ["Hit / Mechanics Report", "Hit Report"]));
+    addSection("Power", get(bio, ["Power/Pitch 1 Report", "Power Report"]));
+    addSection("Run", get(bio, ["Run/Pitch 2 Report", "Run Report"]));
+    addSection("Field", get(bio, ["Field/Pitch 3 Report", "Field Report"]));
+    addSection("Arm", get(bio, ["Arm/Pitch 4 Report", "Arm Report"]));
+  }
+
+  addSection("Summary", get(bio, ["Summary Report"]));
+
+  if (!sections.length) return;
+
+  const statsCard = document.getElementById("statsCard");
+  if (!statsCard) return;
+
+  statsCard.insertAdjacentHTML("beforebegin", `
+    <section class="card full-report-card" data-access="premium">
+      <h2>
+        Full Scouting Report
+        ${isRealValue(fullUpdated) ? `<span class="tools-updated">(Last Updated: ${fullUpdated})</span>` : ""}
+      </h2>
+
+      <div class="full-report-grid">
+        ${sections.map(section => `
+          <div class="full-report-section">
+            <h3>${section.title}</h3>
+            <p>${formatReportText(section.text)}</p>
+          </div>
+        `).join("")}
+      </div>
+    </section>
+  `);
+}
+
+function formatReportText(text) {
+  return String(text || "")
+    .trim()
+    .replace(/\n/g, "<br>");
 }
 
 /* =========================
