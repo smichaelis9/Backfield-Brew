@@ -386,6 +386,32 @@ tr:nth-child(even) {
   padding-top: 10px;
 }
 
+.full-report-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px 28px;
+}
+
+.full-report-section h3 {
+  color: #1b2a4a;
+  font-size: 16px;
+  margin: 0 0 6px;
+  border-bottom: 2px solid #ffc52f;
+  padding-bottom: 4px;
+}
+
+.full-report-section p {
+  margin: 0;
+  line-height: 1.45;
+  font-size: 14px;
+}
+
+@media (max-width: 800px) {
+  .full-report-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 .video-grid,
 .article-links-grid {
   display: grid;
