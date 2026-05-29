@@ -546,14 +546,23 @@ function renderFullScoutingReport(bio, isPitcher) {
   if (isPitcher) {
     addSection("Mechanics", get(bio, ["Hit / Mechanics Report", "Mechanics Report"]));
 
-    for (let i = 1; i <= 6; i++) {
-      const pitchName = get(bio, [`Pitch ${i}`]);
-      const pitchReport = get(bio, [`Pitch ${i} Report`]);
+    const pitchColumns = [
+      ["Power/Pitch 1", "Power/Pitch 1 Report"],
+      ["Run/Pitch 2", "Run/Pitch 2 Report"],
+      ["Field/Pitch 3", "Field/Pitch 3 Report"],
+      ["Arm/Pitch 4", "Arm/Pitch 4 Report"],
+      ["Pitch 5", "Pitch 5 Report"],
+      ["Pitch 6", "Pitch 6 Report"]
+    ];
 
-      if (isRealValue(pitchName) && isRealValue(pitchReport)) {
-        addSection(pitchName, pitchReport);
-      }
-    }
+pitchColumns.forEach(([pitchCol, reportCol]) => {
+  const pitchName = get(bio, [pitchCol]);
+  const pitchReport = get(bio, [reportCol]);
+
+  if (isRealValue(pitchName) && isRealValue(pitchReport)) {
+    addSection(pitchName, pitchReport);
+  }
+});
   } else {
     addSection("Hit", get(bio, ["Hit / Mechanics Report", "Hit Report"]));
     addSection("Power", get(bio, ["Power/Pitch 1 Report", "Power Report"]));
