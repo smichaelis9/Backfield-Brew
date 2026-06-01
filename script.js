@@ -552,7 +552,8 @@ function renderFullScoutingReport(bio, isPitcher) {
       ["Field/Pitch 3", "Field/Pitch 3 Report"],
       ["Arm/Pitch 4", "Arm/Pitch 4 Report"],
       ["Pitch 5", "Pitch 5 Report"],
-      ["Pitch 6", "Pitch 6 Report"]
+      ["Pitch 6", "Pitch 6 Report"],
+      ["Pitch 7", "Pitch 7 Report"]
     ];
 
 pitchColumns.forEach(([pitchCol, reportCol]) => {
@@ -1966,16 +1967,18 @@ function renderCompareCard(player) {
   const isPitcher = get(bio, ["Player Type"]).toLowerCase().includes("pitch");
 
   const toolKeys = isPitcher
-    ? [
-        "Primary Pitch", "Pitch #1",
-        "Secondary #1", "Pitch #2",
-        "Secondary #2", "Pitch #3",
-        "Secondary #3", "Pitch #4",
-        "Secondary #4", "Pitch #5",
-        "Command",
-        "Control",
-        "Fastball Velocity"
-      ]
+  ? [
+      "Primary Pitch", "Pitch #1",
+      "Secondary #1", "Pitch #2",
+      "Secondary #2", "Pitch #3",
+      "Secondary #3", "Pitch #4",
+      "Secondary #4", "Pitch #5",
+      "Secondary #5", "Pitch #6",
+      "Secondary #6", "Pitch #7",
+      "Command",
+      "Control",
+      "Fastball Velocity"
+    ]
     : [
         "Hit",
         "Raw Power",
