@@ -548,16 +548,20 @@ function renderFullScoutingReport(bio, isPitcher) {
     addSection("Mechanics", get(bio, ["Hit / Mechanics Report", "Mechanics Report"]));
 
     const pitchColumns = [
-      ["Power/Pitch 1", "Power/Pitch 1 Report"],
-      ["Run/Pitch 2", "Run/Pitch 2 Report"],
-      ["Field/Pitch 3", "Field/Pitch 3 Report"],
-      ["Arm/Pitch 4", "Arm/Pitch 4 Report"],
-      ["Pitch 5", "Pitch 5 Report"],
-      ["Pitch 6", "Pitch 6 Report"],
-      ["Pitch 7", "Pitch 7 Report"]
-    ];
+  ["Power/Pitch 1", "Power/Pitch 1 Report"],
+  ["Run/Pitch 2", "Run/Pitch 2 Report"],
+  ["Field/Pitch 3", "Field/Pitch 3 Report"],
+  ["Arm/Pitch 4", "Arm/Pitch 4 Report"],
+  ["Pitch 5", "Pitch 5 Report"],
+  ["Pitch 6", "Pitch 6 Report"],
+  ["Pitch 7", "Pitch 7 Report"]
+];
 
-pitchColumns.forEach(([pitchCol, reportCol]) => {
+pitchColumns.forEach(pair => {
+  if (!Array.isArray(pair)) return;
+
+  const [pitchCol, reportCol] = pair;
+
   const pitchName = get(bio, [pitchCol]);
   const pitchReport = get(bio, [reportCol]);
 
