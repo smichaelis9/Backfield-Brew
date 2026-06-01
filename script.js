@@ -440,6 +440,7 @@ function renderTools(tools, isPitcher) {
       [["Secondary #3"], ["Pitch #4", "Pitch#4"]],
       [["Secondary #4"], ["Pitch #5", "Pitch#5"]],
       [["Secondary #5"], ["Pitch #6", "Pitch#6"]]
+      [["Secondary #6"], ["Pitch #7", "Pitch#7"]]
     ];
 
     const pitchTools = pitchMap
