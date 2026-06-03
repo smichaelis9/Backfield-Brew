@@ -1216,13 +1216,22 @@ async function initLogsPage() {
         const reportDate=
           get(player,[dateCol]);
 
+        
+        if (isRealValue(get(player, ["Full Report Updated"]))) {
+          logs.push({
+            type: "Full Scouting Reports",
+            date: get(player, ["Full Report Updated"]),
+            player
+          });
+        }
+        
         if(isRealValue(reportDate)){
 
           logs.push({
 
             date:reportDate,
 
-            type:"Report",
+            type:"Notes",
 
             player:
               get(player,["Player"]),
@@ -1231,7 +1240,7 @@ async function initLogsPage() {
               get(player,["Player-ID"]),
 
             update:
-              "Scouting report updated"
+              "Scouting notes updated"
 
           });
 
