@@ -1162,169 +1162,121 @@ function renderArchivePlayerPage(bio, tools, stats, isPitcher, videos) {
 ========================= */
 
 async function initLogsPage() {
-
   try {
-
     const bioRows = await loadSheet("Biography Info");
+    const archivedRows = await loadSheet("Archived Biography Info").catch(() => []);
 
-    const hitterTools =
-      await loadSheet("Hitter Tools")
-      .catch(()=>[]);
+    const hitterTools = await loadSheet("Hitter Tools").catch(() => []);
+    const pitcherTools = await loadSheet("Pitcher Tools").catch(() => []);
 
-    const pitcherTools =
-      await loadSheet("Pitcher Tools")
-      .catch(()=>[]);
+    const logs = [];
 
-    const logs=[];
+    function addBioLogs(player, isArchived = false) {
+      const playerName = get(player, ["Player", "Name"]);
+      const playerID = get(player, ["Player-ID", "Player ID"]);
 
-    // OFP updates
+      if (!isRealValue(playerName) || !isRealValue(playerID)) return;
 
-    bioRows.forEach(player=>{
+      const href = `${isArchived ? "archive-player.html" : "player.html"}?id=${encodeURIComponent(playerID)}`;
 
-      const ofpDate =
-        get(player,["OFP Updated"]);
+      const ofpDate = get(player, ["OFP Updated"]);
 
-      if(isRealValue(ofpDate)){
-
+      if (isRealValue(ofpDate)) {
         logs.push({
-
-          date:ofpDate,
-          type:"OFP",
-
-          player:
-            get(player,["Player"]),
-
-          playerID:
-            get(player,["Player-ID"]),
-
-          update:
-            "OFP tier updated"
-
+          date: ofpDate,
+          type: "OFP",
+          player: playerName,
+          playerID,
+          href,
+          update: "OFP tier updated"
         });
-
       }
 
-      // report history
+      const fullReportDate = get(player, ["Full Report Updated"]);
 
-      for(let i=1;i<=10;i++){
-
-        const dateCol=
-          i===1
-          ?"Notes Updated"
-          :`Notes Updated ${i}`;
-
-        const reportDate=
-          get(player,[dateCol]);
-
-        
-        if (isRealValue(get(player, ["Full Report Updated"]))) {
-          logs.push({
-            type: "Scouting Reports",
-            date: get(player, ["Full Report Updated"]),
-            player
-          });
-        }
-        
-        if(isRealValue(reportDate)){
-
-          logs.push({
-
-            date:reportDate,
-
-            type:"Scouting Notes",
-
-            player:
-              get(player,["Player"]),
-
-            playerID:
-              get(player,["Player-ID"]),
-
-            update:
-              "Scouting notes updated"
-
-          });
-
-        }
-
+      if (isRealValue(fullReportDate)) {
+        logs.push({
+          date: fullReportDate,
+          type: "Full Scouting Reports",
+          player: playerName,
+          playerID,
+          href,
+          update: "Full scouting report updated"
+        });
       }
 
-    });
+      for (let i = 1; i <= 10; i++) {
+        const dateCol = i === 1 ? "Notes Updated" : `Notes Updated ${i}`;
+        const reportDate = get(player, [dateCol]);
 
-    [...hitterTools,...pitcherTools]
-      .forEach(player=>{
-
-        const toolDate=
-          get(player,
-          ["Last Updated"]);
-
-        if(isRealValue(toolDate)){
-
+        if (isRealValue(reportDate)) {
           logs.push({
-
-            date:toolDate,
-
-            type:"Tools",
-
-            player:
-              get(player,["Player"]),
-
-            playerID:
-              get(player,
-              ["Player-ID"]),
-
-            update:
-              "Tool grades updated"
-
+            date: reportDate,
+            type: "Scouting Notes",
+            player: playerName,
+            playerID,
+            href,
+            update: "Scouting notes updated"
           });
-
         }
-
-      });
-
-    logs.sort((a,b)=>{
-
-    const parseDate=(d)=>{
-
-    if(String(d).includes("/"))
-    return new Date(d);
-
-    const n=Number(d);
-
-    if(Number.isFinite(n)){
-
-    return new Date(
-    (n-25569)*86400*1000
-    );
-
+      }
     }
 
-    return new Date(0);
+    bioRows.forEach(player => addBioLogs(player, false));
+    archivedRows.forEach(player => addBioLogs(player, true));
 
-    };
+    [...hitterTools, ...pitcherTools].forEach(player => {
+      const toolDate = get(player, ["Last Updated", "Tools Updated"]);
+      const playerName = get(player, ["Player", "Name"]);
+      const playerID = get(player, ["Player-ID", "Player ID"]);
 
-    return parseDate(b.date)-parseDate(a.date);
-
+      if (isRealValue(toolDate) && isRealValue(playerName) && isRealValue(playerID)) {
+        logs.push({
+          date: toolDate,
+          type: "Tools",
+          player: playerName,
+          playerID,
+          href: `player.html?id=${encodeURIComponent(playerID)}`,
+          update: "Tool grades updated"
+        });
+      }
     });
 
+    logs.sort((a, b) => parseLogDate(b.date) - parseLogDate(a.date));
+
     renderLogs(logs);
-      ["logSearchBox", "logTypeFilter"].forEach(id => {
-        const el = document.getElementById(id);
-        if (el) {
-          el.addEventListener("input", () => renderLogs(logs));
-          el.addEventListener("change", () => renderLogs(logs));
-        }
-      });
+
+    ["logSearchBox", "logTypeFilter"].forEach(id => {
+      const el = document.getElementById(id);
+
+      if (el) {
+        el.addEventListener("input", () => renderLogs(logs));
+        el.addEventListener("change", () => renderLogs(logs));
+      }
+    });
+
+  } catch (err) {
+    console.error("Logs page:", err);
+  }
+}
+
+function parseLogDate(value) {
+  const raw = String(value || "").trim();
+
+  if (!raw) return new Date(0);
+
+  if (raw.includes("/")) {
+    return new Date(raw);
   }
 
-  catch(err){
+  const n = Number(raw);
 
-    console.error(
-      "Logs page:",
-      err
-    );
-
+  if (Number.isFinite(n)) {
+    return new Date((n - 25569) * 86400 * 1000);
   }
 
+  const parsed = new Date(raw);
+  return Number.isNaN(parsed.getTime()) ? new Date(0) : parsed;
 }
 
 function renderLogs(logs) {
@@ -1351,22 +1303,13 @@ function renderLogs(logs) {
       <td>${formatLogDate(log.date)}</td>
       <td>${log.type}</td>
       <td>
-        <a href="player.html?id=${encodeURIComponent(log.playerID)}">
+        <a href="${log.href || `player.html?id=${encodeURIComponent(log.playerID)}`}">
           ${log.player}
         </a>
       </td>
       <td>${log.update}</td>
     </tr>
   `).join("");
-}
-if (
-  window.location.pathname.includes(
-    "logs"
-  )
-){
-
-  initLogsPage();
-
 }
 /* =========================
    Depth Chart
