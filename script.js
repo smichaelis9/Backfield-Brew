@@ -1197,10 +1197,15 @@ async function initLogsPage() {
       if (isRealValue(fullReportDate)) {
         logs.push({
           date: fullReportDate,
+
           type: "Full Scouting Reports",
+
           player: playerName,
-          playerID,
-          href,
+
+          playerID: playerID,
+
+          href: href,
+
           update: "Full scouting report updated"
         });
       }
