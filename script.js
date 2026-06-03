@@ -1219,7 +1219,7 @@ async function initLogsPage() {
         
         if (isRealValue(get(player, ["Full Report Updated"]))) {
           logs.push({
-            type: "Full Scouting Reports",
+            type: "Scouting Reports",
             date: get(player, ["Full Report Updated"]),
             player
           });
@@ -1231,7 +1231,7 @@ async function initLogsPage() {
 
             date:reportDate,
 
-            type:"Notes",
+            type:"Scouting Notes",
 
             player:
               get(player,["Player"]),
