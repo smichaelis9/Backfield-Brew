@@ -1706,6 +1706,7 @@ function draftLegendRow(label, tagClass, text) {
 /* =========================
    International History
 ========================= */
+
 async function initInternationalPage() {
   try {
     const rows = await loadSheet("International Signing History");
@@ -1755,6 +1756,7 @@ function renderInternationalYear(rows, year) {
 
   renderInternationalSummary(bonusPoolRow);
   renderInternationalTable(playerRows);
+  renderInternationalInfo(bonusPoolRow, year);
 }
 
 function renderInternationalSummary(poolRow) {
@@ -1780,6 +1782,7 @@ function renderInternationalTable(rows) {
   if (!table) return;
 
   const headers = [
+    "Tags",
     "Position",
     "Player",
     "Country",
@@ -1814,7 +1817,12 @@ function renderInternationalTable(rows) {
 
     return `
       <tr>
+        <td class="draft-tag-cell">
+          ${renderDraftTags(row)}
+        </td>
+
         <td>${get(row, ["Position", "Pos"])}</td>
+
         <td>
           ${href
             ? `<a href="${href}" ${isBrefLink ? `target="_blank" rel="noopener"` : ""}>
@@ -1824,6 +1832,7 @@ function renderInternationalTable(rows) {
             : player
           }
         </td>
+
         <td>${get(row, ["Country"])}</td>
         <td>${get(row, ["Signing Bonus"])}</td>
         <td>${get(row, ["Pool Hit"])}</td>
@@ -1831,6 +1840,44 @@ function renderInternationalTable(rows) {
       </tr>
     `;
   }).join("");
+}
+
+function renderInternationalInfo(poolRow, year) {
+  const box = document.getElementById("intlInfo");
+  if (!box) return;
+
+  box.innerHTML = `
+    <div class="draft-info-grid">
+      <div>
+        <h3>${year} International Notes</h3>
+
+        <p><strong>Signing Period:</strong> ${get(poolRow, ["Signing Period"]) || "N/A"}</p>
+        <p><strong>GM/POBO:</strong> ${get(poolRow, ["GM/POBO"]) || "N/A"}</p>
+        <p><strong>International Scouting Director:</strong> ${get(poolRow, ["International Scouting Director"]) || "N/A"}</p>
+      </div>
+
+      <div>
+        <h3>International Legend</h3>
+
+        <div class="draft-legend">
+          ${draftLegendRow("CREW", "draft-tag-navy", "Player currently in Brewers organization")}
+          ${draftLegendRow("DNS", "draft-tag-red", "Player did not sign with Brewers")}
+          ${draftLegendRow("MLB", "draft-tag-navy", "Player has MLB experience with Brewers")}
+          ${draftLegendRow("MLB", "draft-tag-yellow", "Player has MLB experience, not with Brewers")}
+          ${draftLegendRow("Released", "draft-tag-light", "Player was released by Brewers")}
+          ${draftLegendRow("Traded", "draft-tag-light", "Player was traded by Brewers")}
+          ${draftLegendRow("Waived", "draft-tag-light", "Player was waived/DFA'd by Brewers")}
+          ${draftLegendRow("FA", "draft-tag-light", "Player left Brewers as MLB free agent")}
+          ${draftLegendRow("MLFA", "draft-tag-light", "Player left Brewers as minor league free agent")}
+        </div>
+
+        <div class="draft-legend-notes">
+          <p><strong>Signing Bonus:</strong> Amount player signed for</p>
+          <p><strong>Pool Hit:</strong> Amount of Bonus $ counted towards Bonus Pool Cap</p>
+        </div>
+      </div>
+    </div>
+  `;
 }
 /* =========================
    Rule 5
