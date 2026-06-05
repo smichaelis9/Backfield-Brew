@@ -1479,6 +1479,7 @@ return `
 /* =========================
    Draft History
 ========================= */
+
 async function initDraftPage() {
   try {
     const rows = await loadSheet("Draft History");
@@ -1528,6 +1529,7 @@ function renderDraftYear(rows, year) {
 
   renderDraftSummary(poolRow);
   renderDraftTable(playerRows);
+  renderDraftInfo(poolRow, year);
 }
 
 function renderDraftSummary(poolRow) {
@@ -1554,15 +1556,16 @@ function renderDraftTable(rows) {
   if (!table) return;
 
   const headers = [
-  "Rd",
-  "OVR Pick",
-  "Position",
-  "Player",
-  "School",
-  "Slot Value",
-  "Signing Bonus",
-  "Pool Hit"
-];
+    "Tags",
+    "Rd",
+    "OVR Pick",
+    "Position",
+    "Player",
+    "School",
+    "Slot Value",
+    "Signing Bonus",
+    "Pool Hit"
+  ];
 
   table.querySelector("thead").innerHTML = `
     <tr>
@@ -1576,9 +1579,9 @@ function renderDraftTable(rows) {
     const archived = String(get(row, ["Archived?", "Archived", "Archive"]))
       .toLowerCase()
       .trim() === "yes";
+
     const bref = cleanUrl(get(row, ["Baseball Reference", "BBRef", "Baseball Reference Link"]));
     let isBrefLink = false;
-
     let href = "";
 
     if (isRealValue(playerID)) {
@@ -1589,26 +1592,116 @@ function renderDraftTable(rows) {
     }
 
     return `
-  <tr>
-    <td>${get(row, ["Rd"])}</td>
-    <td>${get(row, ["OVR Pick"])}</td>
-    <td>${get(row, ["Position", "Pos"])}</td>
-    <td>
-      ${href
-        ? `<a href="${href}" ${isBrefLink ? `target="_blank" rel="noopener"` : ""}>
-            ${player}
-            ${isBrefLink ? `<span class="bref-badge">BRef</span>` : ""}
-          </a>`
-        : player
-      }
-    </td>
-    <td>${get(row, ["School"])}</td>
-    <td>${get(row, ["Slot Value"])}</td>
-    <td>${get(row, ["Signing Bonus", "Signing Bonus "])}</td>
-    <td>${get(row, ["Pool Hit"])}</td>
-  </tr>
-`;
+      <tr>
+        <td class="draft-tag-cell">
+          ${renderDraftTags(row)}
+        </td>
+        <td>${get(row, ["Rd"])}</td>
+        <td>${get(row, ["OVR Pick"])}</td>
+        <td>${get(row, ["Position", "Pos"])}</td>
+        <td>
+          ${href
+            ? `<a href="${href}" ${isBrefLink ? `target="_blank" rel="noopener"` : ""}>
+                ${player}
+                ${isBrefLink ? `<span class="bref-badge">BRef</span>` : ""}
+              </a>`
+            : player
+          }
+        </td>
+        <td>${get(row, ["School"])}</td>
+        <td>${get(row, ["Slot Value"])}</td>
+        <td>${get(row, ["Signing Bonus", "Signing Bonus "])}</td>
+        <td>${get(row, ["Pool Hit"])}</td>
+      </tr>
+    `;
   }).join("");
+}
+
+function renderDraftTags(row) {
+  const tags = [
+    get(row, ["Tag 1"]),
+    get(row, ["Tag 2"])
+  ].filter(isRealValue);
+
+  if (!tags.length) return "";
+
+  return `
+    <div class="draft-tags ${tags.length === 1 ? "single" : ""}">
+      ${tags.map(tag => `<span class="${getDraftTagClass(tag)}">${formatDraftTagText(tag)}</span>`).join("")}
+    </div>
+  `;
+}
+
+function formatDraftTagText(tag) {
+  const clean = String(tag || "").trim();
+
+  if (clean === "MLB-O") return "MLB";
+
+  return clean;
+}
+
+function getDraftTagClass(tag) {
+  const clean = String(tag || "").trim().toLowerCase();
+
+  if (clean === "crew") return "draft-tag draft-tag-navy";
+  if (clean === "dns") return "draft-tag draft-tag-red";
+  if (clean === "mlb") return "draft-tag draft-tag-navy";
+  if (clean === "mlb-o") return "draft-tag draft-tag-yellow";
+
+  return "draft-tag draft-tag-light";
+}
+
+function renderDraftInfo(poolRow, year) {
+  const box = document.getElementById("draftInfo");
+  if (!box) return;
+
+  box.innerHTML = `
+    <div class="draft-info-grid">
+      <div>
+        <h3>${year} Draft Notes</h3>
+
+        <p><strong>Dates:</strong> ${get(poolRow, ["Dates"]) || "N/A"}</p>
+        <p><strong>GM/POBO:</strong> ${get(poolRow, ["GM/POBO"]) || "N/A"}</p>
+        <p><strong>Scouting Director:</strong> ${get(poolRow, ["Scouting Director"]) || "N/A"}</p>
+        <p><strong>Signing Deadline:</strong> ${get(poolRow, ["Signing Deadline"]) || "N/A"}</p>
+
+        <p class="draft-note-text">
+          Unsigned picks must sign by the listed deadline unless otherwise eligible to return to school.
+        </p>
+      </div>
+
+      <div>
+        <h3>Draft Legend</h3>
+
+        <div class="draft-legend">
+          ${draftLegendRow("CREW", "draft-tag-navy", "Player currently in Brewers organization")}
+          ${draftLegendRow("DNS", "draft-tag-red", "Player did not sign with Brewers")}
+          ${draftLegendRow("MLB", "draft-tag-navy", "Player has MLB experience with Brewers")}
+          ${draftLegendRow("MLB", "draft-tag-yellow", "Player has MLB experience, not with Brewers")}
+          ${draftLegendRow("Released", "draft-tag-light", "Player was released by Brewers")}
+          ${draftLegendRow("Traded", "draft-tag-light", "Player was traded by Brewers")}
+          ${draftLegendRow("Waived", "draft-tag-light", "Player was waived/DFA'd by Brewers")}
+          ${draftLegendRow("FA", "draft-tag-light", "Player left Brewers as MLB free agent")}
+          ${draftLegendRow("MLFA", "draft-tag-light", "Player left Brewers as minor league free agent")}
+        </div>
+
+        <div class="draft-legend-notes">
+          <p><strong>Slot Value:</strong> MLB's slot allotment for the given draft slot</p>
+          <p><strong>Signing Bonus:</strong> Amount player signed for</p>
+          <p><strong>Pool Hit:</strong> Amount of Bonus $ counted towards Bonus Pool Cap</p>
+        </div>
+      </div>
+    </div>
+  `;
+}
+
+function draftLegendRow(label, tagClass, text) {
+  return `
+    <div class="draft-legend-row">
+      <span class="draft-tag ${tagClass}">${label}</span>
+      <span>${text}</span>
+    </div>
+  `;
 }
 /* =========================
    International History
