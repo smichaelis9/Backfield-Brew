@@ -691,6 +691,109 @@ tr:nth-child(even) {
   text-decoration: none;
 }
 
+.draft-tag-cell {
+  width: 70px;
+  vertical-align: middle;
+}
+
+.draft-tags {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3px;
+  min-height: 34px;
+}
+
+.draft-tags.single {
+  justify-content: center;
+}
+
+.draft-tag {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 44px;
+  padding: 2px 5px;
+  border-radius: 2px;
+  font-size: 10px;
+  font-weight: 800;
+  line-height: 1.1;
+  color: #fff;
+  text-align: center;
+}
+
+.draft-tag-navy {
+  background: #1b2a4a;
+  color: #fff;
+}
+
+.draft-tag-red {
+  background: #c62828;
+  color: #fff;
+}
+
+.draft-tag-yellow {
+  background: #ffc52f;
+  color: #fff;
+}
+
+.draft-tag-light {
+  background: #9ed8ff;
+  color: #000;
+}
+
+.draft-info-card {
+  border: 1px solid #111;
+}
+
+.draft-info-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 34px;
+  font-size: 13px;
+  line-height: 1.3;
+}
+
+.draft-info-grid h3 {
+  color: #8b0000;
+  font-size: 15px;
+  margin: 0 0 14px;
+}
+
+.draft-info-grid p {
+  margin: 4px 0;
+}
+
+.draft-note-text {
+  margin-top: 12px !important;
+}
+
+.draft-legend {
+  display: grid;
+  gap: 4px;
+}
+
+.draft-legend-row {
+  display: grid;
+  grid-template-columns: 70px 1fr;
+  gap: 8px;
+  align-items: center;
+}
+
+.draft-legend-row .draft-tag {
+  min-width: 58px;
+}
+
+.draft-legend-notes {
+  margin-top: 14px;
+}
+
+@media (max-width: 800px) {
+  .draft-info-grid {
+    grid-template-columns: 1fr;
+  }
+}
 /* =========================
    RULE 5 / FREE AGENCY
 ========================= */
