@@ -1618,16 +1618,30 @@ function renderDraftTable(rows) {
 }
 
 function renderDraftTags(row) {
+
   const tags = [
-    get(row, ["Tag 1"]),
-    get(row, ["Tag 2"])
-  ].filter(isRealValue);
+    {
+      tag: get(row, ["Tag 1"]),
+      note: get(row, ["Tag 1 Note"])
+    },
+    {
+      tag: get(row, ["Tag 2"]),
+      note: get(row, ["Tag 2 Note"])
+    }
+  ].filter(item => isRealValue(item.tag));
 
   if (!tags.length) return "";
 
   return `
     <div class="draft-tags ${tags.length === 1 ? "single" : ""}">
-      ${tags.map(tag => `<span class="${getDraftTagClass(tag)}">${formatDraftTagText(tag)}</span>`).join("")}
+      ${tags.map(item => `
+        <span
+          class="${getDraftTagClass(item.tag)}"
+          title="${item.note || formatDraftTagText(item.tag)}"
+        >
+          ${formatDraftTagText(item.tag)}
+        </span>
+      `).join("")}
     </div>
   `;
 }
