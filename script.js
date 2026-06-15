@@ -1564,7 +1564,8 @@ function renderDraftTable(rows) {
     "School",
     "Slot Value",
     "Signing Bonus",
-    "Pool Hit"
+    "Pool Hit",
+    "Signing Scout"
   ];
 
   table.querySelector("thead").innerHTML = `
@@ -1612,6 +1613,7 @@ function renderDraftTable(rows) {
         <td>${get(row, ["Slot Value"])}</td>
         <td>${get(row, ["Signing Bonus", "Signing Bonus "])}</td>
         <td>${get(row, ["Pool Hit"])}</td>
+        <td>${get(row, ["Signing Scout"])}</td>
       </tr>
     `;
   }).join("");
@@ -1802,7 +1804,8 @@ function renderInternationalTable(rows) {
     "Country",
     "Signing Bonus",
     "Pool Hit",
-    "Date Signed"
+    "Date Signed",
+    "Signing Scout"
   ];
 
   table.querySelector("thead").innerHTML = `
@@ -1851,6 +1854,7 @@ function renderInternationalTable(rows) {
         <td>${get(row, ["Signing Bonus"])}</td>
         <td>${get(row, ["Pool Hit"])}</td>
         <td>${get(row, ["Date Signed"])}</td>
+        <td>${get(row, ["Signing Scout"])}</td>
       </tr>
     `;
   }).join("");
