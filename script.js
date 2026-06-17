@@ -1805,7 +1805,7 @@ function renderInternationalTable(rows) {
     "Signing Bonus",
     "Pool Hit",
     "Date Signed",
-    "Signing Scout"
+    "Signing Scout(s)"
   ];
 
   table.querySelector("thead").innerHTML = `
