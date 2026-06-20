@@ -1900,16 +1900,19 @@ function renderInternationalInfo(poolRow, year) {
 /* =========================
    Rule 5
 ========================= */
+
 async function initRule5Page() {
   try {
     const rows = await loadSheet("Rule 5 Eligibility");
-    renderRule5Page(rows);
+    const freeAgencyRows = await loadSheet("MiLB Free Agency").catch(() => []);
+
+    renderRule5Page(rows, freeAgencyRows);
   } catch (err) {
     console.error("Rule 5 page:", err);
   }
 }
 
-function renderRule5Page(rows) {
+function renderRule5Page(rows, freeAgencyRows = []) {
   const grid = document.getElementById("rule5Grid");
   if (!grid || !rows.length) return;
 
@@ -1918,6 +1921,13 @@ function renderRule5Page(rows) {
   );
 
   grid.innerHTML = years.map(year => {
+    const freeAgentsForYear = new Set(
+      freeAgencyRows
+        .map(row => get(row, [year]))
+        .filter(isRealValue)
+        .map(name => String(name).trim().toLowerCase())
+    );
+
     const players = rows
       .map(row => ({
         name: get(row, [year]),
@@ -1927,7 +1937,8 @@ function renderRule5Page(rows) {
           `${year} ID`
         ])
       }))
-      .filter(p => isRealValue(p.name));
+      .filter(p => isRealValue(p.name))
+      .filter(p => !freeAgentsForYear.has(String(p.name).trim().toLowerCase()));
 
     return `
       <div class="rule5-year">
@@ -1937,19 +1948,16 @@ function renderRule5Page(rows) {
           ${players.map(player => `
             <li>
               ${isRealValue(player.playerID)
-              ? `<a href="player.html?id=${encodeURIComponent(player.playerID)}">
-                   ${player.name}
-                 </a>`
-              : player.name
-            }
-          </li>
-        `).join("")}
+                ? `<a href="player.html?id=${encodeURIComponent(player.playerID)}">${player.name}</a>`
+                : player.name
+              }
+            </li>
+          `).join("")}
         </ul>
       </div>
     `;
   }).join("");
 }
-
 /* =========================
    MiLB Free Agency
 ========================= */
