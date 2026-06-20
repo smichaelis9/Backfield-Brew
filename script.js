@@ -1620,16 +1620,9 @@ function renderDraftTable(rows) {
 }
 
 function renderDraftTags(row) {
-
   const tags = [
-    {
-      tag: get(row, ["Tag 1"]),
-      note: get(row, ["Tag 1 Note"])
-    },
-    {
-      tag: get(row, ["Tag 2"]),
-      note: get(row, ["Tag 2 Note"])
-    }
+    { tag: get(row, ["Tag 1"]), note: get(row, ["Tag 1 Note"]) },
+    { tag: get(row, ["Tag 2"]), note: get(row, ["Tag 2 Note"]) }
   ].filter(item => isRealValue(item.tag));
 
   if (!tags.length) return "";
@@ -1637,11 +1630,12 @@ function renderDraftTags(row) {
   return `
     <div class="draft-tags ${tags.length === 1 ? "single" : ""}">
       ${tags.map(item => `
-        <span
-          class="${getDraftTagClass(item.tag)}"
-          title="${item.note || formatDraftTagText(item.tag)}"
-        >
+        <span class="${getDraftTagClass(item.tag)} draft-tag-tooltip">
           ${formatDraftTagText(item.tag)}
+          ${isRealValue(item.note)
+            ? `<span class="draft-tooltip-text">${item.note}</span>`
+            : ""
+          }
         </span>
       `).join("")}
     </div>
