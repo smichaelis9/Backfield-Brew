@@ -2480,7 +2480,11 @@ function renderTransactionRow(row) {
       "Player ID",
       "Player-ID"
     ]);
-
+  const mlbamID =
+    get(row, [
+      "MLBAM ID",
+      "MLBAM-ID"
+    ]);
 
   const archived =
     String(
@@ -2530,30 +2534,51 @@ function renderTransactionRow(row) {
 
 
   let playerHTML =
-    escapeTransactionHTML(player);
+  escapeTransactionHTML(player);
 
 
-  if (
-    isRealValue(playerID) &&
-    isRealValue(player)
-  ) {
+/* Backfield Brew player page */
+if (
+  isRealValue(playerID) &&
+  isRealValue(player)
+) {
 
-    const href =
-      `${archived
-        ? "archive-player.html"
-        : "player.html"
-      }?id=${encodeURIComponent(playerID)}`;
+  const href =
+    `${archived
+      ? "archive-player.html"
+      : "player.html"
+    }?id=${encodeURIComponent(playerID)}`;
+
+  playerHTML = `
+    <a
+      class="transaction-player"
+      href="${href}"
+    >
+      ${escapeTransactionHTML(player)}
+    </a>
+  `;
 
 
-    playerHTML = `
-      <a
-        class="transaction-player"
-        href="${href}"
-      >
-        ${escapeTransactionHTML(player)}
-      </a>
-    `;
-  }
+/* MLB/MiLB player page fallback */
+} else if (
+  isRealValue(mlbamID) &&
+  isRealValue(player)
+) {
+
+  const href =
+    `https://www.mlb.com/player/${encodeURIComponent(mlbamID)}`;
+
+  playerHTML = `
+    <a
+      class="transaction-player"
+      href="${href}"
+      target="_blank"
+      rel="noopener"
+    >
+      ${escapeTransactionHTML(player)}
+    </a>
+  `;
+}
 
 
   return `
