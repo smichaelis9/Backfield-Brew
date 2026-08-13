@@ -2539,12 +2539,6 @@ function renderTransactionRow(row) {
     );
 
 
-  const date =
-    parseTransactionDate(
-      get(row, ["Date", "Effective Date"])
-    );
-
-
   /* =========================
      PLAYER LINK
   ========================= */
