@@ -1261,6 +1261,16 @@ tr:nth-child(even) {
   text-decoration: none;
 }
 
+/* MLBAM links - players without Backfield Brew pages */
+.transaction-player-mlbam {
+  color: #c8102e;
+}
+
+.transaction-player-mlbam:hover {
+  color: #c8102e;
+  text-decoration: underline;
+}
+
 .transaction-player:hover {
   text-decoration: underline;
 }
