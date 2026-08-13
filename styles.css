@@ -1156,3 +1156,264 @@ tr:nth-child(even) {
     grid-template-columns: 1fr;
   }
 }
+/* =========================
+   TRANSACTIONS PAGE
+========================= */
+
+.transactions-filters {
+  display: grid;
+  grid-template-columns:
+    repeat(
+      auto-fit,
+      minmax(150px, 1fr)
+    );
+  gap: 10px;
+  margin-top: 14px;
+}
+
+.transactions-filters input,
+.transactions-filters select {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 9px 10px;
+
+  border: 1px solid #ccc;
+  border-radius: 7px;
+
+  background: #fff;
+
+  font-size: 13px;
+}
+
+.transactions-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-top: 14px;
+
+  color: #555;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+
+/* =========================
+   TRANSACTION CARD
+========================= */
+
+.transaction-card {
+  border-left: 5px solid #ffc52f;
+  padding: 14px 16px;
+}
+
+.transaction-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  gap: 12px;
+
+  margin-bottom: 8px;
+}
+
+.transaction-date {
+  color: #555;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.transaction-type {
+  background: #1b2a4a;
+  color: #ffc52f;
+
+  border-radius: 999px;
+
+  padding: 4px 9px;
+
+  font-size: 10px;
+  font-weight: 800;
+
+  text-align: center;
+}
+
+
+/* =========================
+   PLAYER
+========================= */
+
+.transaction-player-row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+
+  gap: 7px;
+
+  margin-bottom: 8px;
+}
+
+.transaction-player {
+  color: #1b2a4a;
+
+  font-size: 17px;
+  font-weight: 800;
+
+  text-decoration: none;
+}
+
+.transaction-player:hover {
+  text-decoration: underline;
+}
+
+.transaction-position {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  min-width: 30px;
+
+  background: #ffc52f;
+  color: #1b2a4a;
+
+  border-radius: 5px;
+
+  padding: 3px 6px;
+
+  font-size: 10px;
+  font-weight: 800;
+}
+
+.transaction-level {
+  color: #666;
+
+  font-size: 11px;
+  font-weight: 700;
+}
+
+
+/* =========================
+   MOVEMENT
+========================= */
+
+.transaction-movement {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+
+  gap: 8px;
+
+  color: #555;
+
+  font-size: 12px;
+  font-weight: 700;
+
+  margin-bottom: 8px;
+}
+
+.transaction-arrow {
+  color: #ffc52f;
+  font-size: 16px;
+  font-weight: 900;
+}
+
+
+/* =========================
+   DESCRIPTION
+========================= */
+
+.transaction-description {
+  border-top: 1px solid #e4e4e4;
+
+  padding-top: 8px;
+
+  color: #222;
+
+  font-size: 13px;
+  line-height: 1.4;
+}
+
+.transaction-source {
+  margin-top: 8px;
+}
+
+.transaction-source a {
+  color: #1b2a4a;
+
+  font-size: 11px;
+  font-weight: 700;
+
+  text-decoration: underline;
+}
+
+
+/* =========================
+   LOAD MORE
+========================= */
+
+.transactions-load-more-wrap {
+  text-align: center;
+
+  margin:
+    4px 0
+    30px;
+}
+
+.transactions-load-more {
+  background: #1b2a4a;
+  color: #ffc52f;
+
+  border: 1px solid #ffc52f;
+  border-radius: 999px;
+
+  padding: 9px 18px;
+
+  font-size: 13px;
+  font-weight: 800;
+
+  cursor: pointer;
+}
+
+.transactions-load-more:hover {
+  background: #ffc52f;
+  color: #1b2a4a;
+}
+
+.transactions-empty {
+  text-align: center;
+
+  color: #666;
+
+  font-size: 14px;
+}
+
+
+/* =========================
+   TRANSACTIONS MOBILE
+========================= */
+
+@media (max-width: 700px) {
+
+  .transactions-filters {
+    grid-template-columns:
+      repeat(2, minmax(0, 1fr));
+  }
+
+  .transaction-card {
+    padding: 12px;
+  }
+
+  .transaction-player {
+    font-size: 15px;
+  }
+
+  .transaction-type {
+    max-width: 160px;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .transactions-filters {
+    grid-template-columns: 1fr;
+  }
+}
