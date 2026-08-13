@@ -2475,11 +2475,17 @@ function renderTransactionRow(row) {
     for your site profile URL.
   */
 
-  const playerID =
+  const playerIDRaw =
     get(row, [
       "Player ID",
       "Player-ID"
     ]);
+
+  const playerID =
+    String(playerIDRaw || "")
+      .trim()
+      .replace(/^""$/, "");
+  
   const mlbamID =
     get(row, [
       "MLBAM ID",
@@ -2533,15 +2539,22 @@ function renderTransactionRow(row) {
     );
 
 
+  const date =
+    parseTransactionDate(
+      get(row, ["Date", "Effective Date"])
+    );
+
+
+  /* =========================
+     PLAYER LINK
+  ========================= */
+
   let playerHTML =
-  escapeTransactionHTML(player);
+    escapeTransactionHTML(player);
 
 
-  /* Backfield Brew player page */
-  if (
-    isRealValue(playerID) &&
-    isRealValue(player)
-  ) {
+  /* Backfield Brew player page first */
+  if (playerID !== "") {
 
     const href =
       `${archived
@@ -2559,19 +2572,13 @@ function renderTransactionRow(row) {
     `;
 
 
-  /* MLB/MiLB player page fallback */
-  } else if (
-    isRealValue(mlbamID) &&
-    isRealValue(player)
-  ) {
-
-    const href =
-      `https://www.mlb.com/player/${encodeURIComponent(mlbamID)}`;
+  /* Otherwise use MLBAM page */
+  } else if (isRealValue(mlbamID)) {
 
     playerHTML = `
       <a
         class="transaction-player"
-        href="${href}"
+        href="https://www.mlb.com/player/${encodeURIComponent(String(mlbamID).trim())}"
         target="_blank"
         rel="noopener"
       >
@@ -2580,6 +2587,10 @@ function renderTransactionRow(row) {
     `;
   }
 
+
+  /* =========================
+     RENDER TRANSACTION
+  ========================= */
 
   return `
     <section class="card transaction-card">
