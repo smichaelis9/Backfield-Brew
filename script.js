@@ -2571,7 +2571,7 @@ function renderTransactionRow(row) {
 
     playerHTML = `
       <a
-        class="transaction-player"
+        class="transaction-player transaction-player-mlbam"
         href="https://www.mlb.com/player/${encodeURIComponent(String(mlbamID).trim())}"
         target="_blank"
         rel="noopener"
