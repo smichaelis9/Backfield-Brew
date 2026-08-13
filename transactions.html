@@ -1,1 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+  <meta charset="UTF-8" />
+
+  <title>Backfield Brew – Transactions</title>
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  />
+
+  <link
+    rel="stylesheet"
+    href="styles.css?v=16"
+  />
+
+  <script
+    defer
+    src="script.js?v=36"
+  ></script>
+</head>
+
+<body>
+
+  <!-- =========================
+       HEADER
+  ========================== -->
+
+  <header class="site-header">
+    <img
+      src="BFB-Logo.png"
+      alt="Backfield Brew"
+      class="site-logo"
+    />
+  </header>
+
+  <div class="header-buttons">
+
+    <a href="index.html">
+      Active Rankings
+    </a>
+
+    <a href="archive.html">
+      Archived Players
+    </a>
+
+    <a
+      href="https://www.patreon.com/BackfieldBrew"
+      target="_blank"
+      rel="noopener"
+    >
+      Patreon
+    </a>
+
+    <div class="dropdown-nav">
+
+      <button class="dropdown-button">
+        Other Pages ▼
+      </button>
+
+      <div class="dropdown-content">
+
+        <a href="depth.html">
+          Organizational Depth Chart
+        </a>
+
+        <a href="logs.html">
+          Scouting Logs
+        </a>
+
+        <a href="transactions.html">
+          Transactions
+        </a>
+
+        <a href="draft.html">
+          Draft History
+        </a>
+
+        <a href="international.html">
+          International History
+        </a>
+
+        <a href="rule5.html">
+          Rule 5 Eligibility
+        </a>
+
+        <a href="freeagency.html">
+          MiLB Free Agency
+        </a>
+
+      </div>
+    </div>
+
+  </div>
+
+  <!-- =========================
+       MAIN
+  ========================== -->
+
+  <main class="container">
+
+    <section class="card">
+
+      <h2>Brewers Transactions</h2>
+
+      <div class="transactions-filters">
+
+        <input
+          type="text"
+          id="transactionSearch"
+          placeholder="Search player..."
+        />
+
+        <select id="transactionYear">
+          <option value="">All Years</option>
+        </select>
+
+        <select id="transactionMonth">
+          <option value="">All Months</option>
+
+          <option value="0">January</option>
+          <option value="1">February</option>
+          <option value="2">March</option>
+          <option value="3">April</option>
+          <option value="4">May</option>
+          <option value="5">June</option>
+          <option value="6">July</option>
+          <option value="7">August</option>
+          <option value="8">September</option>
+          <option value="9">October</option>
+          <option value="10">November</option>
+          <option value="11">December</option>
+        </select>
+
+        <select id="transactionOrgLevel">
+          <option value="">MLB + MiLB</option>
+          <option value="MLB">MLB</option>
+          <option value="MiLB">MiLB</option>
+        </select>
+
+        <select id="transactionLevel">
+          <option value="">All Levels</option>
+        </select>
+
+        <select id="transactionAffiliate">
+          <option value="">All Affiliates</option>
+        </select>
+
+        <select id="transactionType">
+          <option value="">All Transaction Types</option>
+        </select>
+
+        <select id="transactionSort">
+          <option value="newest">Newest First</option>
+          <option value="oldest">Oldest First</option>
+        </select>
+
+      </div>
+
+      <div class="transactions-toolbar">
+
+        <div id="transactionCount">
+          Loading transactions...
+        </div>
+
+      </div>
+
+    </section>
+
+    <div id="transactionsList"></div>
+
+    <div class="transactions-load-more-wrap">
+
+      <button
+        id="transactionsLoadMore"
+        class="transactions-load-more"
+        type="button"
+      >
+        Load More
+      </button>
+
+    </div>
+
+  </main>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+
+      initTransactionsPage();
+
+      if (typeof setupMobileDropdown === "function") {
+        setupMobileDropdown();
+      }
+
+    });
+  </script>
+
+</body>
+</html>
