@@ -2787,7 +2787,6 @@ function setupTransactionListeners() {
     "transactionYear",
     "transactionMonth",
     "transactionOrgLevel",
-    "transactionLevel",
     "transactionAffiliate",
     "transactionType",
     "transactionSort"
@@ -2877,12 +2876,6 @@ function getFilteredTransactions() {
   const orgLevel =
     document.getElementById(
       "transactionOrgLevel"
-    )?.value || "";
-
-
-  const level =
-    document.getElementById(
-      "transactionLevel"
     )?.value || "";
 
 
@@ -3007,17 +3000,7 @@ function getFilteredTransactions() {
           return false;
         }
       }
-
-
-      /* Specific level */
-
-      if (
-        level &&
-        rowLevel !== level
-      ) {
-        return false;
-      }
-
+      
 
       /* Affiliate */
 
