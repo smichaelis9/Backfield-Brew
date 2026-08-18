@@ -632,7 +632,28 @@ tr:nth-child(even) {
   font-weight: 800;
   line-height: 1;
 }
+/* =========================
+   Depth Chart Prospect Ranks
+========================= */
 
+.depth-rank {
+  display: inline-block;
+  margin-left: 5px;
+
+  font-size: 10px;
+  font-weight: 800;
+  line-height: 1;
+}
+
+/* Top 50 prospects */
+.depth-rank-top50 {
+  color: #ffc52f;
+}
+
+/* Ranked 51+ */
+.depth-rank-others {
+  color: #888;
+}
 /* =========================
    DRAFT / INTERNATIONAL
 ========================= */
