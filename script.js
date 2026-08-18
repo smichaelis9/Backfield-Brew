@@ -1320,35 +1320,83 @@ function renderLogs(logs) {
 /* =========================
    Depth Chart
 ========================= */
+
 async function initDepthPage() {
   try {
-    const rows = await loadSheet("MiLB Depth Chart");
-    renderDepthCards(rows);
+    const [rows, bioRows] = await Promise.all([
+      loadSheet("MiLB Depth Chart"),
+      loadSheet("Biography Info").catch(() => [])
+    ]);
+
+    const rankMap = new Map();
+
+    bioRows.forEach(player => {
+      const playerID = get(player, ["Player-ID", "Player ID"]);
+      const rank = get(player, ["Rank"]);
+
+      if (isRealValue(playerID) && isRealValue(rank)) {
+        rankMap.set(String(playerID).trim(), rank);
+      }
+    });
+
+    renderDepthCards(rows, rankMap);
+
   } catch (err) {
     console.error("Depth page:", err);
   }
 }
 
-function renderDepthCards(rows) {
+
+function renderDepthCards(rows, rankMap = new Map()) {
   const container = document.getElementById("depthCards");
+
   if (!container || !rows.length) return;
+
+
+  /* =========================
+     ORGANIZATION TOTALS
+  ========================= */
+
   const orgRow = rows.find(row =>
-  String(get(row, ["Level"])).toLowerCase().trim() === "organization"
-);
+    String(get(row, ["Level"]))
+      .toLowerCase()
+      .trim() === "organization"
+  );
 
-const depthTitle = document.getElementById("depthTitle");
+  const depthTitle =
+    document.getElementById("depthTitle");
 
-if (orgRow && depthTitle) {
-  depthTitle.innerHTML = `
-    Organizational Depth Chart
-    <span class="tools-updated">
-      (40-Man Total: ${get(orgRow, ["On 40-Man"])} |
-      Stateside Total: ${get(orgRow, ["Stateside Total"])}/${get(orgRow, ["Stateside Limit"])} |
-      Total MiLB Players in Organization: ${get(orgRow, ["Total Players in Organization"])})
-    </span>
-  `;
-}
-  const levelOrder = ["MLB", "AAA", "AA", "A+", "A", "ROK", "DSL"];
+  if (orgRow && depthTitle) {
+    depthTitle.innerHTML = `
+      Organizational Depth Chart
+
+      <span class="tools-updated">
+        (40-Man Total: ${get(orgRow, ["On 40-Man"])} |
+        Stateside Total: ${get(orgRow, ["Stateside Total"])}/${get(orgRow, ["Stateside Limit"])} |
+        Total MiLB Players in Organization: ${get(orgRow, ["Total Players in Organization"])})
+      </span>
+    `;
+  }
+
+
+  /* =========================
+     LEVEL ORDER
+  ========================= */
+
+  const levelOrder = [
+    "MLB",
+    "AAA",
+    "AA",
+    "A+",
+    "A",
+    "ROK",
+    "DSL"
+  ];
+
+
+  /* =========================
+     GROUP ROWS
+  ========================= */
 
   const grouped = {};
 
@@ -1357,123 +1405,332 @@ if (orgRow && depthTitle) {
     const team = get(row, ["Team"]);
     const section = get(row, ["Section"]);
 
-    if (!isRealValue(level) || !isRealValue(team) || !isRealValue(section)) return;
+    if (
+      !isRealValue(level) ||
+      !isRealValue(team) ||
+      !isRealValue(section)
+    ) {
+      return;
+    }
 
-    if (!grouped[level]) grouped[level] = {};
-    if (!grouped[level][team]) grouped[level][team] = {};
-    if (!grouped[level][team][section]) grouped[level][team][section] = [];
+    if (!grouped[level]) {
+      grouped[level] = {};
+    }
+
+    if (!grouped[level][team]) {
+      grouped[level][team] = {};
+    }
+
+    if (!grouped[level][team][section]) {
+      grouped[level][team][section] = [];
+    }
 
     grouped[level][team][section].push(row);
   });
 
+
+  /* =========================
+     RENDER TEAM CARDS
+  ========================= */
+
   container.innerHTML = levelOrder
     .filter(level => grouped[level])
+
     .map(level => {
-      return Object.entries(grouped[level]).map(([team, sections]) => `
-        <section class="depth-card">
-          <div class="depth-card-header">
 
-  <div class="depth-team-info">
-    <h3>${team}</h3>
-    <span>${level}</span>
-  </div>
+      return Object.entries(grouped[level])
 
-  ${
-    isRealValue(
-      get(
-        sections[
-          Object.keys(sections)[0]
-        ][0],
-        ["Team Logo"]
-      )
-    )
+        .map(([team, sections]) => {
 
-    ?
+          const firstSection =
+            Object.keys(sections)[0];
 
-    `<img
-      class="depth-logo"
-      src="${
-        get(
-          sections[
-            Object.keys(sections)[0]
-          ][0],
-          ["Team Logo"]
-        )
-      }"
-      alt="${team}"
-      onerror="this.style.display='none';"
-    >`
+          const firstRow =
+            sections[firstSection]?.[0];
 
-    : ""
-  }
+          const teamLogo =
+            firstRow
+              ? get(firstRow, ["Team Logo"])
+              : "";
 
-</div>
+          return `
+            <section class="depth-card">
 
-          <div class="depth-grid">
-            ${renderDepthSection("Rotation", sections)}
-            ${renderDepthSection("Lineup", sections)}
-            ${renderDepthSection("Bullpen", sections)}
-            ${renderDepthSection("Bench", sections)}
-            ${renderDepthSection("60 or Full-Season IL", sections)}
-            ${renderDepthSection("7 Day IL or Development List", sections)}
-            ${renderDepthSection("60 Day IL", sections)}
-            ${renderDepthSection("10/15 Day IL", sections)}
-          </div>
-        </section>
-      `).join("");
-    }).join("");
+              <div class="depth-card-header">
+
+                <div class="depth-team-info">
+                  <h3>${team}</h3>
+                  <span>${level}</span>
+                </div>
+
+                ${
+                  isRealValue(teamLogo)
+                    ? `
+                      <img
+                        class="depth-logo"
+                        src="${teamLogo}"
+                        alt="${team}"
+                        onerror="this.style.display='none';"
+                      >
+                    `
+                    : ""
+                }
+
+              </div>
+
+
+              <div class="depth-grid">
+
+                ${renderDepthSection(
+                  "Rotation",
+                  sections,
+                  rankMap
+                )}
+
+                ${renderDepthSection(
+                  "Lineup",
+                  sections,
+                  rankMap
+                )}
+
+                ${renderDepthSection(
+                  "Bullpen",
+                  sections,
+                  rankMap
+                )}
+
+                ${renderDepthSection(
+                  "Bench",
+                  sections,
+                  rankMap
+                )}
+
+                ${renderDepthSection(
+                  "60 or Full-Season IL",
+                  sections,
+                  rankMap
+                )}
+
+                ${renderDepthSection(
+                  "7 Day IL or Development List",
+                  sections,
+                  rankMap
+                )}
+
+                ${renderDepthSection(
+                  "60 Day IL",
+                  sections,
+                  rankMap
+                )}
+
+                ${renderDepthSection(
+                  "10/15 Day IL",
+                  sections,
+                  rankMap
+                )}
+
+              </div>
+
+            </section>
+          `;
+        })
+
+        .join("");
+    })
+
+    .join("");
 }
 
-function renderDepthSection(sectionName, sections) {
-  const players = sections[sectionName] || [];
+
+/* =========================
+   DEPTH SECTION
+========================= */
+
+function renderDepthSection(
+  sectionName,
+  sections,
+  rankMap = new Map()
+) {
+
+  const players =
+    sections[sectionName] || [];
 
   if (!players.length) return "";
 
+
   return `
     <div class="depth-section">
+
       <h4>${sectionName}</h4>
 
       ${players.map(row => {
-        const pos = get(row, ["Pos", "Position", "Hand"]);
-        const player = get(row, ["Player", "Name"]);
-        const playerID = get(row, ["Player-ID", "Player ID"]);
-        const bref = cleanUrl(get(row, ["Baseball Reference", "BBRef", "Baseball Reference Link"]));
+
+        const pos =
+          get(row, [
+            "Pos",
+            "Position",
+            "Hand"
+          ]);
+
+        const player =
+          get(row, [
+            "Player",
+            "Name"
+          ]);
+
+        const playerID =
+          get(row, [
+            "Player-ID",
+            "Player ID"
+          ]);
+
+        const bref =
+          cleanUrl(
+            get(row, [
+              "Baseball Reference",
+              "BBRef",
+              "Baseball Reference Link"
+            ])
+          );
+
+
+        /* =========================
+           PLAYER LINK
+        ========================= */
 
         let href = "";
 
-const isArchived = String(get(row, ["Archived", "Archive"]))
-  .toLowerCase()
-  .trim() === "yes";
+        const isArchived =
+          String(
+            get(row, [
+              "Archived",
+              "Archive"
+            ])
+          )
+            .toLowerCase()
+            .trim() === "yes";
 
-if (isRealValue(playerID)) {
-  href = `${isArchived ? "archive-player.html" : "player.html"}?id=${encodeURIComponent(playerID)}`;
-} else if (isRealValue(bref)) {
-  href = bref;
-}
+
+        if (isRealValue(playerID)) {
+
+          href =
+            `${
+              isArchived
+                ? "archive-player.html"
+                : "player.html"
+            }?id=${encodeURIComponent(playerID)}`;
+
+        } else if (isRealValue(bref)) {
+
+          href = bref;
+        }
+
+
+        /* =========================
+           40-MAN
+        ========================= */
 
         const fortyMan =
-  String(get(row, ["40-Man"]))
-    .toLowerCase()
-    .trim() === "yes";
+          String(
+            get(row, ["40-Man"])
+          )
+            .toLowerCase()
+            .trim() === "yes";
 
-return `
-  <div class="depth-player-row">
-    <span class="depth-pos">${pos}</span>
 
-    <div class="depth-player-link-wrap">
-      ${href
-        ? `<a href="${href}" ${href.startsWith("http") ? `target="_blank" rel="noopener"` : ""}>${player}</a>`
-        : `<span>${player}</span>`
-      }
+        /* =========================
+           PROSPECT RANK
+        ========================= */
 
-      ${fortyMan
-        ? `<span class="forty-man-badge">40</span>`
-        : ""
-      }
-    </div>
-  </div>
-`;
+        const rank =
+          isRealValue(playerID)
+            ? rankMap.get(
+                String(playerID).trim()
+              )
+            : "";
+
+        const rankNumber =
+          Number(rank);
+
+        let rankHTML = "";
+
+        if (
+          isRealValue(rank) &&
+          Number.isFinite(rankNumber)
+        ) {
+
+          const rankClass =
+            rankNumber <= 50
+              ? "depth-rank-top50"
+              : "depth-rank-others";
+
+          rankHTML = `
+            <span
+              class="depth-rank ${rankClass}"
+              title="Backfield Brew Prospect Rank"
+            >
+              #${rank}
+            </span>
+          `;
+        }
+
+
+        /* =========================
+           PLAYER ROW
+        ========================= */
+
+        return `
+          <div class="depth-player-row">
+
+            <span class="depth-pos">
+              ${pos}
+            </span>
+
+
+            <div class="depth-player-link-wrap">
+
+              ${
+                href
+                  ? `
+                    <a
+                      href="${href}"
+                      ${
+                        href.startsWith("http")
+                          ? `target="_blank" rel="noopener"`
+                          : ""
+                      }
+                    >
+                      ${player}
+                    </a>
+                  `
+                  : `
+                    <span>
+                      ${player}
+                    </span>
+                  `
+              }
+
+
+              ${rankHTML}
+
+
+              ${
+                fortyMan
+                  ? `
+                    <span class="forty-man-badge">
+                      40
+                    </span>
+                  `
+                  : ""
+              }
+
+            </div>
+
+          </div>
+        `;
+
       }).join("")}
+
     </div>
   `;
 }
