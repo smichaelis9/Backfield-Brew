@@ -2156,6 +2156,11 @@ function renderInternationalInfo(poolRow, year) {
 let transactionRows = [];
 let transactionVisibleCount = 50;
 
+
+/* =========================
+   INITIALIZE
+========================= */
+
 async function initTransactionsPage() {
   try {
 
@@ -2190,6 +2195,354 @@ async function initTransactionsPage() {
 
 
 /* =========================
+   CLEAN TRANSACTION TYPE
+========================= */
+
+function getCleanTransactionType(row) {
+
+  const rawType =
+    String(get(row, ["Type"]) || "")
+      .trim();
+
+  const rawTypeLower =
+    rawType.toLowerCase();
+
+  const description =
+    String(get(row, ["Description"]) || "")
+      .toLowerCase()
+      .trim();
+
+  const fromTeam =
+    String(get(row, ["From Team"]) || "")
+      .toLowerCase()
+      .trim();
+
+  const toTeam =
+    String(get(row, ["To Team"]) || "")
+      .toLowerCase()
+      .trim();
+
+
+  /* =========================
+     BREWERS MINOR LEAGUE LADDER
+  ========================= */
+
+  const affiliateLevels = [
+
+    /* 0 - DSL */
+    [
+      "dsl",
+      "dsl brewers",
+      "dominican summer league"
+    ],
+
+    /* 1 - ACL */
+    [
+      "acl",
+      "acl brewers",
+      "arizona complex",
+      "arizona complex league"
+    ],
+
+    /* 2 - Wilson */
+    [
+      "wilson",
+      "wilson warbirds"
+    ],
+
+    /* 3 - Wisconsin */
+    [
+      "wisconsin",
+      "wisconsin timber rattlers",
+      "timber rattlers"
+    ],
+
+    /* 4 - Biloxi */
+    [
+      "biloxi",
+      "biloxi shuckers",
+      "shuckers"
+    ],
+
+    /* 5 - Nashville */
+    [
+      "nashville",
+      "nashville sounds",
+      "sounds"
+    ]
+  ];
+
+
+  function getAffiliateIndex(team) {
+
+    if (!team) return -1;
+
+    return affiliateLevels.findIndex(names =>
+      names.some(name =>
+        team.includes(name)
+      )
+    );
+  }
+
+
+  const fromIndex =
+    getAffiliateIndex(fromTeam);
+
+  const toIndex =
+    getAffiliateIndex(toTeam);
+
+
+  /* =========================
+     PROMOTION / DEMOTION
+
+     Check this BEFORE Assigned,
+     because MiLB promotions often
+     say "assigned to..."
+  ========================= */
+
+  if (
+    fromIndex !== -1 &&
+    toIndex !== -1 &&
+    fromIndex !== toIndex
+  ) {
+
+    if (toIndex > fromIndex) {
+      return "Promotion";
+    }
+
+    if (toIndex < fromIndex) {
+      return "Demotion";
+    }
+  }
+
+
+  /* =========================
+     CONTRACT SELECTED
+  ========================= */
+
+  if (
+    description.includes("selected the contract") ||
+    description.includes("contract selected") ||
+    description.includes("selected contract") ||
+    rawTypeLower.includes("contract selected")
+  ) {
+    return "Contract Selected";
+  }
+
+
+  /* =========================
+     RECALLED
+  ========================= */
+
+  if (
+    description.includes("recalled") ||
+    rawTypeLower.includes("recalled")
+  ) {
+    return "Recalled";
+  }
+
+
+  /* =========================
+     OPTIONED
+  ========================= */
+
+  if (
+    description.includes("optioned") ||
+    rawTypeLower.includes("optioned")
+  ) {
+    return "Optioned";
+  }
+
+
+  /* =========================
+     ACTIVATED
+  ========================= */
+
+  if (
+    description.includes("activated") ||
+    rawTypeLower.includes("activated")
+  ) {
+    return "Activated";
+  }
+
+
+  /* =========================
+     INJURED LIST
+  ========================= */
+
+  if (
+    description.includes("injured list") ||
+    description.includes("disabled list") ||
+    description.includes("placed on the il") ||
+    description.includes("placed on il") ||
+    rawTypeLower.includes("injured list") ||
+    rawTypeLower === "il"
+  ) {
+    return "Injured List";
+  }
+
+
+  /* =========================
+     DFA
+  ========================= */
+
+  if (
+    description.includes("designated for assignment") ||
+    rawTypeLower.includes("designated for assignment") ||
+    rawTypeLower === "dfa"
+  ) {
+    return "DFA";
+  }
+
+
+  /* =========================
+     WAIVED
+  ========================= */
+
+  if (
+    description.includes("waived") ||
+    description.includes("placed on waivers") ||
+    rawTypeLower.includes("waived")
+  ) {
+    return "Waived";
+  }
+
+
+  /* =========================
+     CLAIMED
+  ========================= */
+
+  if (
+    description.includes("claimed off waivers") ||
+    description.includes("claimed by") ||
+    rawTypeLower.includes("claimed")
+  ) {
+    return "Claimed";
+  }
+
+
+  /* =========================
+     OUTRIGHTED
+  ========================= */
+
+  if (
+    description.includes("outrighted") ||
+    rawTypeLower.includes("outright")
+  ) {
+    return "Outrighted";
+  }
+
+
+  /* =========================
+     TRADED
+  ========================= */
+
+  if (
+    description.includes("traded") ||
+    rawTypeLower.includes("trade")
+  ) {
+    return "Traded";
+  }
+
+
+  /* =========================
+     RELEASED
+  ========================= */
+
+  if (
+    description.includes("released") ||
+    rawTypeLower.includes("released")
+  ) {
+    return "Released";
+  }
+
+
+  /* =========================
+     FREE AGENCY
+  ========================= */
+
+  if (
+    description.includes("elected free agency") ||
+    description.includes("declared free agency") ||
+    description.includes("became a free agent") ||
+    rawTypeLower.includes("free agent") ||
+    rawTypeLower.includes("free agency")
+  ) {
+    return "Free Agency";
+  }
+
+
+  /* =========================
+     SIGNED
+  ========================= */
+
+  if (
+    description.includes("signed") &&
+    !description.includes("assigned")
+  ) {
+    return "Signed";
+  }
+
+  if (
+    rawTypeLower.includes("signed") &&
+    !description.includes("assigned")
+  ) {
+    return "Signed";
+  }
+
+
+  /* =========================
+     ASSIGNED
+
+     Important: this comes AFTER
+     promotion/demotion detection.
+  ========================= */
+
+  if (
+    description.includes("assigned") ||
+    rawTypeLower === "assigned"
+  ) {
+    return "Assigned";
+  }
+
+
+  /* =========================
+     SUSPENDED
+  ========================= */
+
+  if (
+    description.includes("suspended") ||
+    rawTypeLower.includes("suspended")
+  ) {
+    return "Suspended";
+  }
+
+
+  /* =========================
+     RETIRED
+  ========================= */
+
+  if (
+    description.includes("retired") ||
+    description.includes("voluntarily retired") ||
+    rawTypeLower.includes("retired")
+  ) {
+    return "Retired";
+  }
+
+
+  /* =========================
+     DEFAULT
+
+     Keep original type if we
+     haven't classified it yet.
+  ========================= */
+
+  return rawType || "Other";
+}
+
+
+/* =========================
    FILTER SETUP
 ========================= */
 
@@ -2199,6 +2552,7 @@ function setupTransactionFilters(rows) {
   const levels = new Set();
   const affiliates = new Set();
   const types = new Set();
+
 
   rows.forEach(row => {
 
@@ -2211,12 +2565,14 @@ function setupTransactionFilters(rows) {
       years.add(date.getFullYear());
     }
 
+
     const level =
       get(row, ["Level"]);
 
     if (isRealValue(level)) {
       levels.add(level);
     }
+
 
     const fromTeam =
       get(row, ["From Team"]);
@@ -2232,18 +2588,25 @@ function setupTransactionFilters(rows) {
       affiliates.add(toTeam);
     }
 
+
+    /* Use CLEAN transaction type */
     const type =
-      get(row, ["Type"]);
+      getCleanTransactionType(row);
 
     if (isRealValue(type)) {
       types.add(type);
     }
-
   });
 
 
+  /* =========================
+     YEAR
+  ========================= */
+
   const yearSelect =
-    document.getElementById("transactionYear");
+    document.getElementById(
+      "transactionYear"
+    );
 
   if (yearSelect) {
 
@@ -2252,17 +2615,23 @@ function setupTransactionFilters(rows) {
 
       [...years]
         .sort((a, b) => b - a)
-        .map(year =>
-          `<option value="${year}">
+        .map(year => `
+          <option value="${year}">
             ${year}
-          </option>`
-        )
+          </option>
+        `)
         .join("");
   }
 
 
+  /* =========================
+     LEVEL
+  ========================= */
+
   const levelSelect =
-    document.getElementById("transactionLevel");
+    document.getElementById(
+      "transactionLevel"
+    );
 
   if (levelSelect) {
 
@@ -2276,6 +2645,7 @@ function setupTransactionFilters(rows) {
       "CPX",
       "DSL"
     ];
+
 
     const sortedLevels =
       [...levels].sort((a, b) => {
@@ -2302,14 +2672,18 @@ function setupTransactionFilters(rows) {
       `<option value="">All Levels</option>` +
 
       sortedLevels
-        .map(level =>
-          `<option value="${escapeTransactionHTML(level)}">
+        .map(level => `
+          <option value="${escapeTransactionHTML(level)}">
             ${escapeTransactionHTML(level)}
-          </option>`
-        )
+          </option>
+        `)
         .join("");
   }
 
+
+  /* =========================
+     AFFILIATE
+  ========================= */
 
   const affiliateSelect =
     document.getElementById(
@@ -2325,32 +2699,78 @@ function setupTransactionFilters(rows) {
         .sort((a, b) =>
           a.localeCompare(b)
         )
-        .map(team =>
-          `<option value="${escapeTransactionHTML(team)}">
+        .map(team => `
+          <option value="${escapeTransactionHTML(team)}">
             ${escapeTransactionHTML(team)}
-          </option>`
-        )
+          </option>
+        `)
         .join("");
   }
 
 
+  /* =========================
+     TRANSACTION TYPE
+  ========================= */
+
   const typeSelect =
-    document.getElementById("transactionType");
+    document.getElementById(
+      "transactionType"
+    );
 
   if (typeSelect) {
+
+    const preferredTypes = [
+      "Promotion",
+      "Demotion",
+      "Recalled",
+      "Optioned",
+      "Contract Selected",
+      "Assigned",
+      "Signed",
+      "Activated",
+      "Injured List",
+      "Traded",
+      "Released",
+      "DFA",
+      "Waived",
+      "Claimed",
+      "Outrighted",
+      "Free Agency",
+      "Suspended",
+      "Retired"
+    ];
+
+
+    const sortedTypes =
+      [...types].sort((a, b) => {
+
+        const ai =
+          preferredTypes.indexOf(a);
+
+        const bi =
+          preferredTypes.indexOf(b);
+
+        if (ai !== -1 || bi !== -1) {
+
+          return (
+            (ai === -1 ? 999 : ai) -
+            (bi === -1 ? 999 : bi)
+          );
+        }
+
+        return a.localeCompare(b);
+      });
+
 
     typeSelect.innerHTML =
       `<option value="">All Transaction Types</option>` +
 
-      [...types]
-        .sort((a, b) =>
-          a.localeCompare(b)
-        )
-        .map(type =>
-          `<option value="${escapeTransactionHTML(type)}">
+      sortedTypes
+        .map(type => `
+          <option value="${escapeTransactionHTML(type)}">
             ${escapeTransactionHTML(type)}
-          </option>`
-        )
+          </option>
+        `)
         .join("");
   }
 }
@@ -2373,6 +2793,7 @@ function setupTransactionListeners() {
     "transactionSort"
   ];
 
+
   ids.forEach(id => {
 
     const el =
@@ -2380,16 +2801,27 @@ function setupTransactionListeners() {
 
     if (!el) return;
 
-    el.addEventListener("input", () => {
-      transactionVisibleCount = 50;
-      renderTransactions();
-    });
 
-    el.addEventListener("change", () => {
-      transactionVisibleCount = 50;
-      renderTransactions();
-    });
+    el.addEventListener(
+      "input",
+      () => {
 
+        transactionVisibleCount = 50;
+
+        renderTransactions();
+      }
+    );
+
+
+    el.addEventListener(
+      "change",
+      () => {
+
+        transactionVisibleCount = 50;
+
+        renderTransactions();
+      }
+    );
   });
 
 
@@ -2397,6 +2829,7 @@ function setupTransactionListeners() {
     document.getElementById(
       "transactionsLoadMore"
     );
+
 
   if (loadMore) {
 
@@ -2477,21 +2910,24 @@ function getFilteredTransactions() {
       const player =
         String(
           get(row, ["Player"])
-        ).toLowerCase();
+        )
+          .toLowerCase();
 
 
       const description =
         String(
           get(row, ["Description"])
-        ).toLowerCase();
+        )
+          .toLowerCase();
 
 
       const rowLevel =
         get(row, ["Level"]);
 
 
+      /* Use cleaned type */
       const rowType =
-        get(row, ["Type"]);
+        getCleanTransactionType(row);
 
 
       const fromTeam =
@@ -2508,6 +2944,8 @@ function getFilteredTransactions() {
         );
 
 
+      /* Search */
+
       if (
         search &&
         !player.includes(search) &&
@@ -2516,6 +2954,8 @@ function getFilteredTransactions() {
         return false;
       }
 
+
+      /* Year */
 
       if (
         year &&
@@ -2528,6 +2968,8 @@ function getFilteredTransactions() {
       }
 
 
+      /* Month */
+
       if (
         month !== "" &&
         (
@@ -2539,6 +2981,8 @@ function getFilteredTransactions() {
       }
 
 
+      /* MLB only */
+
       if (orgLevel === "MLB") {
 
         if (
@@ -2548,9 +2992,10 @@ function getFilteredTransactions() {
         ) {
           return false;
         }
-
       }
 
+
+      /* MiLB only */
 
       if (orgLevel === "MiLB") {
 
@@ -2561,9 +3006,10 @@ function getFilteredTransactions() {
         ) {
           return false;
         }
-
       }
 
+
+      /* Specific level */
 
       if (
         level &&
@@ -2573,6 +3019,8 @@ function getFilteredTransactions() {
       }
 
 
+      /* Affiliate */
+
       if (
         affiliate &&
         fromTeam !== affiliate &&
@@ -2581,6 +3029,8 @@ function getFilteredTransactions() {
         return false;
       }
 
+
+      /* Clean transaction type */
 
       if (
         type &&
@@ -2593,6 +3043,10 @@ function getFilteredTransactions() {
       return true;
     });
 
+
+  /* =========================
+     SORT
+  ========================= */
 
   filtered.sort((a, b) => {
 
@@ -2697,12 +3151,14 @@ function renderTransactions() {
       filtered.length
     ) {
 
-      loadMore.style.display = "none";
+      loadMore.style.display =
+        "none";
 
     } else {
 
       loadMore.style.display =
         "inline-block";
+
 
       loadMore.textContent =
         `Load More (${filtered.length - transactionVisibleCount} remaining)`;
@@ -2721,16 +3177,9 @@ function renderTransactionRow(row) {
     get(row, ["Player"]);
 
 
-  /*
-    IMPORTANT:
-
-    "Player ID" below is your
-    Backfield Brew internal ID.
-
-    "MLBAM ID" is the transaction
-    source/player ID and is NOT used
-    for your site profile URL.
-  */
+  /* =========================
+     BACKFIELD BREW PLAYER ID
+  ========================= */
 
   const playerIDRaw =
     get(row, [
@@ -2738,16 +3187,35 @@ function renderTransactionRow(row) {
       "Player-ID"
     ]);
 
+
   const playerID =
     String(playerIDRaw || "")
       .trim()
       .replace(/^""$/, "");
-  
-  const mlbamID =
+
+
+  /* =========================
+     MLBAM ID
+  ========================= */
+
+  const mlbamIDRaw =
     get(row, [
       "MLBAM ID",
-      "MLBAM-ID"
+      "MLBAM-ID",
+      "MLBAM",
+      "MLB ID"
     ]);
+
+
+  const mlbamID =
+    String(mlbamIDRaw || "")
+      .trim()
+      .replace(/[^0-9]/g, "");
+
+
+  /* =========================
+     ARCHIVED?
+  ========================= */
 
   const archived =
     String(
@@ -2768,8 +3236,9 @@ function renderTransactionRow(row) {
     get(row, ["Level"]);
 
 
+  /* CLEANED TYPE */
   const type =
-    get(row, ["Type"]);
+    getCleanTransactionType(row);
 
 
   const description =
@@ -2804,14 +3273,16 @@ function renderTransactionRow(row) {
     escapeTransactionHTML(player);
 
 
-  /* Backfield Brew player page first */
+  /* Backfield Brew page */
   if (playerID !== "") {
 
     const href =
-      `${archived
-        ? "archive-player.html"
-        : "player.html"
+      `${
+        archived
+          ? "archive-player.html"
+          : "player.html"
       }?id=${encodeURIComponent(playerID)}`;
+
 
     playerHTML = `
       <a
@@ -2823,13 +3294,13 @@ function renderTransactionRow(row) {
     `;
 
 
-  /* Otherwise use MLBAM page */
-  } else if (isRealValue(mlbamID)) {
+  /* MLBAM fallback */
+  } else if (mlbamID !== "") {
 
     playerHTML = `
       <a
         class="transaction-player transaction-player-mlbam"
-        href="https://www.mlb.com/player/${encodeURIComponent(String(mlbamID).trim())}"
+        href="https://www.mlb.com/player/${mlbamID}"
         target="_blank"
         rel="noopener"
       >
@@ -2846,6 +3317,7 @@ function renderTransactionRow(row) {
   return `
     <section class="card transaction-card">
 
+
       <div class="transaction-top">
 
         <div class="transaction-date">
@@ -2861,20 +3333,28 @@ function renderTransactionRow(row) {
 
       <div class="transaction-player-row">
 
-        ${isRealValue(position)
-          ? `<span class="transaction-position">
-              ${escapeTransactionHTML(position)}
-            </span>`
-          : ""
+        ${
+          isRealValue(position)
+            ? `
+              <span class="transaction-position">
+                ${escapeTransactionHTML(position)}
+              </span>
+            `
+            : ""
         }
+
 
         ${playerHTML}
 
-        ${isRealValue(level)
-          ? `<span class="transaction-level">
-              ${escapeTransactionHTML(level)}
-            </span>`
-          : ""
+
+        ${
+          isRealValue(level)
+            ? `
+              <span class="transaction-level">
+                ${escapeTransactionHTML(level)}
+              </span>
+            `
+            : ""
         }
 
       </div>
@@ -2887,18 +3367,30 @@ function renderTransactionRow(row) {
           ? `
             <div class="transaction-movement">
 
-              ${isRealValue(fromTeam)
-                ? `<span>${escapeTransactionHTML(fromTeam)}</span>`
-                : `<span>—</span>`
+              ${
+                isRealValue(fromTeam)
+                  ? `
+                    <span>
+                      ${escapeTransactionHTML(fromTeam)}
+                    </span>
+                  `
+                  : `<span>—</span>`
               }
+
 
               <span class="transaction-arrow">
                 →
               </span>
 
-              ${isRealValue(toTeam)
-                ? `<span>${escapeTransactionHTML(toTeam)}</span>`
-                : `<span>—</span>`
+
+              ${
+                isRealValue(toTeam)
+                  ? `
+                    <span>
+                      ${escapeTransactionHTML(toTeam)}
+                    </span>
+                  `
+                  : `<span>—</span>`
               }
 
             </div>
@@ -2908,34 +3400,39 @@ function renderTransactionRow(row) {
       }
 
 
-      ${isRealValue(description)
+      ${
+        isRealValue(description)
 
-        ? `
-          <div class="transaction-description">
-            ${escapeTransactionHTML(description)}
-          </div>
-        `
+          ? `
+            <div class="transaction-description">
+              ${escapeTransactionHTML(description)}
+            </div>
+          `
 
-        : ""
+          : ""
       }
 
 
-      ${isRealValue(sourceURL)
+      ${
+        isRealValue(sourceURL)
 
-        ? `
-          <div class="transaction-source">
-            <a
-              href="${sourceURL}"
-              target="_blank"
-              rel="noopener"
-            >
-              View Source
-            </a>
-          </div>
-        `
+          ? `
+            <div class="transaction-source">
 
-        : ""
+              <a
+                href="${sourceURL}"
+                target="_blank"
+                rel="noopener"
+              >
+                View Source
+              </a>
+
+            </div>
+          `
+
+          : ""
       }
+
 
     </section>
   `;
@@ -2957,9 +3454,7 @@ function parseTransactionDate(value) {
     String(value).trim();
 
 
-  /*
-    Google Sheets serial date
-  */
+  /* Google Sheets serial date */
 
   const numeric =
     Number(raw);
@@ -2979,10 +3474,7 @@ function parseTransactionDate(value) {
   }
 
 
-  /*
-    YYYY-MM-DD avoids UTC
-    date rollover problems
-  */
+  /* YYYY-MM-DD */
 
   const iso =
     raw.match(
@@ -3000,9 +3492,7 @@ function parseTransactionDate(value) {
   }
 
 
-  /*
-    MM/DD/YYYY
-  */
+  /* MM/DD/YYYY */
 
   const slash =
     raw.match(
@@ -3035,6 +3525,7 @@ function parseTransactionDate(value) {
 function formatTransactionDisplayDate(date) {
 
   if (!date) return "";
+
 
   return (
     `${date.getMonth() + 1}/` +
