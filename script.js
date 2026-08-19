@@ -3385,6 +3385,31 @@ function renderOrgStatsPlayer(row) {
     );
 
 
+  const statsPlayerID =
+    get(row, [
+      "Player ID",
+      "Player-ID"
+    ]);
+
+
+  const archived =
+    String(
+      get(row, [
+        "Archived?",
+        "Archived",
+        "Archive"
+      ])
+    )
+      .toLowerCase()
+      .trim() === "yes";
+
+
+  const playerID =
+    isRealValue(statsPlayerID)
+      ? statsPlayerID
+      : bio?.playerID || "";
+
+
   let nameHTML =
     escapeOrgStatsHTML(
       playerName
@@ -3392,14 +3417,20 @@ function renderOrgStatsPlayer(row) {
 
 
   if (
-    bio &&
-    isRealValue(bio.playerID)
+    isRealValue(playerID)
   ) {
+
+    const href =
+      `${archived
+        ? "archive-player.html"
+        : "player.html"
+      }?id=${encodeURIComponent(playerID)}`;
+
 
     nameHTML = `
       <a
         class="org-stats-player-link"
-        href="player.html?id=${encodeURIComponent(bio.playerID)}"
+        href="${href}"
       >
         ${escapeOrgStatsHTML(playerName)}
       </a>
