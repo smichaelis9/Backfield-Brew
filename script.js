@@ -2174,28 +2174,26 @@ const ORG_STATS_HITTER_COLUMNS = {
 
   primary: [
     "PlayerName",
-    "Level",
     "PA",
+    "H",
+    "2B",
+    "3B",
     "HR",
     "BB%",
     "K%",
     "OBP",
     "SLG",
     "OPS",
+    "BABIP",
     "wOBA",
     "wRC+",
     "SB",
+    "CS",
+    "SB%"
     "SwStr%"
   ],
 
   more: [
-    "H",
-    "1B",
-    "2B",
-    "3B",
-    "BABIP",
-    "Spd",
-    "CS",
     "Pull%",
     "Cent%",
     "Oppo%",
@@ -2207,12 +2205,19 @@ const ORG_STATS_HITTER_COLUMNS = {
 
 };
 
+};
+
 
 const ORG_STATS_PITCHER_COLUMNS = {
 
   primary: [
     "PlayerName",
-    "Level",
+    "G",
+    "GS",
+    "CG",
+    "ShO",
+    "SV",
+    "BS",
     "IP",
     "ERA",
     "K%",
@@ -2223,17 +2228,11 @@ const ORG_STATS_PITCHER_COLUMNS = {
     "xFIP",
     "K/9",
     "BB/9",
-    "SwStr%"
+    "K/BB",
   ],
 
   more: [
-    "G",
-    "GS",
-    "CG",
-    "ShO",
-    "SV",
-    "BS",
-    "K/BB",
+    "SwStr%",
     "HR/9",
     "BABIP",
     "LOB%",
@@ -3487,29 +3486,245 @@ function renderOrgStatsPlayer(row) {
    GET CELL VALUE
 ========================= */
 
-function getOrgStatsCellValue(
-  row,
-  column
-) {
+function getOrgStatsCellValue(row, column) {
 
-  if (
-    column === "PlayerName"
-  ) {
+  const aliases = {
 
-    return get(row, [
+    PlayerName: [
       "PlayerName",
+      "Player Name",
       "Player",
       "Name"
-    ]);
-  }
+    ],
+
+    Level: [
+      "Level"
+    ],
+
+    PA: [
+      "PA",
+      "Plate Appearances"
+    ],
+
+    H: [
+      "H",
+      "Hits"
+    ],
+
+    "1B": [
+      "1B",
+      "Singles"
+    ],
+
+    "2B": [
+      "2B",
+      "Doubles"
+    ],
+
+    "3B": [
+      "3B",
+      "Triples"
+    ],
+
+    HR: [
+      "HR",
+      "Home Runs"
+    ],
+
+    "BB%": [
+      "BB%",
+      "BB %",
+      "BBPct"
+    ],
+
+    "K%": [
+      "K%",
+      "K %",
+      "KPct"
+    ],
+
+    OBP: [
+      "OBP"
+    ],
+
+    SLG: [
+      "SLG"
+    ],
+
+    OPS: [
+      "OPS"
+    ],
+
+    BABIP: [
+      "BABIP"
+    ],
+
+    Spd: [
+      "Spd",
+      "Speed"
+    ],
+
+    wOBA: [
+      "wOBA"
+    ],
+
+    "wRC+": [
+      "wRC+",
+      "wRC Plus"
+    ],
+
+    SB: [
+      "SB",
+      "Stolen Bases"
+    ],
+
+    CS: [
+      "CS",
+      "Caught Stealing"
+    ],
+
+    "Pull%": [
+      "Pull%",
+      "Pull %",
+      "Pull"
+    ],
+
+    "Cent%": [
+      "Cent%",
+      "Cent %",
+      "Center%",
+      "Center %",
+      "Cent"
+    ],
+
+    "Oppo%": [
+      "Oppo%",
+      "Oppo %",
+      "Opposite%",
+      "Opposite %"
+    ],
+
+    "LD%": [
+      "LD%",
+      "LD %",
+      "Line Drive%"
+    ],
+
+    "GB%": [
+      "GB%",
+      "GB %",
+      "Ground Ball%"
+    ],
+
+    "FB%": [
+      "FB%",
+      "FB %",
+      "Fly Ball%"
+    ],
+
+    "IFFB%": [
+      "IFFB%",
+      "IFFB %",
+      "Infield Fly%"
+    ],
+
+    "SwStr%": [
+      "SwStr%",
+      "SwStr %",
+      "SwStr",
+      "Swinging Strike%"
+    ],
+
+    IP: [
+      "IP",
+      "Innings Pitched"
+    ],
+
+    ERA: [
+      "ERA"
+    ],
+
+    G: [
+      "G"
+    ],
+
+    GS: [
+      "GS"
+    ],
+
+    CG: [
+      "CG"
+    ],
+
+    ShO: [
+      "ShO",
+      "SHO"
+    ],
+
+    SV: [
+      "SV"
+    ],
+
+    BS: [
+      "BS"
+    ],
+
+    "K/9": [
+      "K/9"
+    ],
+
+    "BB/9": [
+      "BB/9"
+    ],
+
+    "K/BB": [
+      "K/BB"
+    ],
+
+    "HR/9": [
+      "HR/9"
+    ],
+
+    "K-BB%": [
+      "K-BB%",
+      "K-BB %",
+      "K-BB"
+    ],
+
+    WHIP: [
+      "WHIP"
+    ],
+
+    "LOB%": [
+      "LOB%",
+      "LOB %"
+    ],
+
+    FIP: [
+      "FIP"
+    ],
+
+    xFIP: [
+      "xFIP"
+    ],
+
+    "HR/FB": [
+      "HR/FB",
+      "HR/FB%"
+    ]
+
+  };
+
+
+  const keys =
+    aliases[column] || [column];
 
 
   return get(
     row,
-    [column]
+    keys
   );
 }
-
 
 /* =========================
    COLUMN LABEL
