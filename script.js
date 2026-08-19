@@ -2790,14 +2790,23 @@ function updateOrgStatsMinimumLabel() {
       "orgStatsMinLabel"
     );
 
+  const minimum =
+    document.getElementById(
+      "orgStatsMinimum"
+    );
 
-  if (!label) return;
+
+  if (label) {
+    label.textContent =
+      orgStatsType === "hitter"
+        ? "Min PA"
+        : "Min IP";
+  }
 
 
-  label.textContent =
-    orgStatsType === "hitter"
-      ? "Min PA"
-      : "Min IP";
+  if (minimum) {
+    minimum.value = 1;
+  }
 }
 
 
@@ -2849,11 +2858,11 @@ function getFilteredOrgStatsRows() {
 
 
   const minimum =
-    Number(
-      document.getElementById(
-        "orgStatsMinimum"
-      )?.value || 0
-    );
+  Number(
+    document.getElementById(
+      "orgStatsMinimum"
+    )?.value || 1
+  );
 
 
   const top50Only =
