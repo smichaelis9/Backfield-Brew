@@ -1178,6 +1178,414 @@ tr:nth-child(even) {
   }
 }
 /* =========================
+   ORGANIZATIONAL STATS
+========================= */
+
+.org-stats-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.org-stats-heading h2 {
+  margin-bottom: 3px;
+}
+
+.org-stats-subtitle {
+  margin: 0;
+  color: #777;
+  font-size: 12px;
+}
+
+
+/* =========================
+   HITTER / PITCHER TABS
+========================= */
+
+.org-stats-type-tabs {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.org-stats-type-button {
+  border: 1px solid #1b2a4a;
+  border-radius: 7px;
+
+  background: #fff;
+  color: #1b2a4a;
+
+  padding: 8px 14px;
+
+  font-size: 12px;
+  font-weight: 800;
+
+  cursor: pointer;
+}
+
+.org-stats-type-button:hover {
+  background: #f1f3f5;
+}
+
+.org-stats-type-button.active {
+  background: #1b2a4a;
+  color: #ffc52f;
+}
+
+
+/* =========================
+   FILTERS
+========================= */
+
+.org-stats-filters {
+  display: grid;
+
+  grid-template-columns:
+    minmax(170px, 1.5fr)
+    minmax(100px, .7fr)
+    minmax(120px, .8fr)
+    minmax(110px, .7fr)
+    auto
+    auto;
+
+  gap: 10px;
+
+  align-items: end;
+
+  margin-top: 16px;
+}
+
+.org-stats-filters input,
+.org-stats-filters select {
+  width: 100%;
+
+  box-sizing: border-box;
+
+  border: 1px solid #ccc;
+  border-radius: 7px;
+
+  background: #fff;
+
+  padding: 9px 10px;
+
+  font-size: 12px;
+}
+
+.org-stats-min-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.org-stats-min-wrap label {
+  color: #666;
+
+  font-size: 9px;
+  font-weight: 800;
+
+  text-transform: uppercase;
+}
+
+.org-stats-checkbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 6px;
+
+  min-height: 34px;
+
+  white-space: nowrap;
+
+  color: #1b2a4a;
+
+  font-size: 11px;
+  font-weight: 800;
+
+  cursor: pointer;
+}
+
+.org-stats-checkbox input {
+  width: auto;
+  margin: 0;
+}
+
+
+/* =========================
+   MORE STATS BUTTON
+========================= */
+
+.org-stats-more-button {
+  min-height: 34px;
+
+  border: 1px solid #1b2a4a;
+  border-radius: 7px;
+
+  background: #fff;
+  color: #1b2a4a;
+
+  padding: 8px 12px;
+
+  font-size: 11px;
+  font-weight: 800;
+
+  cursor: pointer;
+
+  white-space: nowrap;
+}
+
+.org-stats-more-button:hover,
+.org-stats-more-button.active {
+  background: #1b2a4a;
+  color: #ffc52f;
+}
+
+
+/* =========================
+   TOOLBAR
+========================= */
+
+.org-stats-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 10px;
+
+  margin-top: 14px;
+
+  color: #666;
+
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.org-stats-sort-note {
+  font-style: italic;
+}
+
+
+/* =========================
+   TABLE
+========================= */
+
+.org-stats-table-card {
+  padding: 0;
+  overflow: hidden;
+}
+
+.org-stats-table-wrap {
+  width: 100%;
+  overflow-x: auto;
+}
+
+#orgStatsTable {
+  width: 100%;
+
+  min-width: 1000px;
+
+  border-collapse: collapse;
+
+  font-size: 11px;
+}
+
+#orgStatsTable th,
+#orgStatsTable td {
+  padding: 8px 9px;
+
+  border-bottom: 1px solid #e5e5e5;
+
+  text-align: center;
+
+  white-space: nowrap;
+}
+
+#orgStatsTable th {
+  background: #1b2a4a;
+  color: #fff;
+
+  font-size: 10px;
+  font-weight: 800;
+
+  position: sticky;
+  top: 0;
+
+  z-index: 3;
+}
+
+#orgStatsTable tbody tr:hover {
+  background: #f7f7f7;
+}
+
+
+/* =========================
+   SORTABLE HEADERS
+========================= */
+
+#orgStatsTable th.org-stats-sortable {
+  cursor: pointer;
+  user-select: none;
+}
+
+#orgStatsTable th.org-stats-sortable:hover {
+  color: #ffc52f;
+}
+
+#orgStatsTable th.org-stats-sorted {
+  color: #ffc52f;
+}
+
+
+/* =========================
+   PLAYER COLUMN
+========================= */
+
+#orgStatsTable th:first-child,
+#orgStatsTable td:first-child {
+  position: sticky;
+  left: 0;
+
+  z-index: 2;
+}
+
+#orgStatsTable th:first-child {
+  z-index: 4;
+
+  background: #1b2a4a;
+
+  text-align: left;
+
+  min-width: 155px;
+}
+
+#orgStatsTable td:first-child {
+  background: #fff;
+
+  text-align: left;
+
+  min-width: 155px;
+}
+
+#orgStatsTable tbody tr:hover td:first-child {
+  background: #f7f7f7;
+}
+
+.org-stats-player-wrap {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.org-stats-player-link {
+  color: #1b2a4a;
+
+  font-weight: 800;
+
+  text-decoration: none;
+}
+
+.org-stats-player-link:hover {
+  text-decoration: underline;
+}
+
+
+/* =========================
+   PROSPECT RANK
+========================= */
+
+.org-stats-rank {
+  font-size: 9px;
+  font-weight: 800;
+}
+
+.org-stats-rank-top50 {
+  color: #1b2a4a;
+}
+
+.org-stats-rank-other {
+  color: #999;
+}
+
+
+/* =========================
+   EMPTY
+========================= */
+
+.org-stats-empty {
+  padding: 25px !important;
+
+  color: #777;
+
+  text-align: center !important;
+}
+
+
+/* =========================
+   TABLE SCROLLBAR
+========================= */
+
+.org-stats-table-wrap::-webkit-scrollbar {
+  height: 9px;
+}
+
+.org-stats-table-wrap::-webkit-scrollbar-thumb {
+  background: #1b2a4a;
+  border-radius: 10px;
+}
+
+.org-stats-table-wrap::-webkit-scrollbar-track {
+  background: #eee;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 900px) {
+
+  .org-stats-heading {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .org-stats-filters {
+    grid-template-columns:
+      repeat(2, minmax(0, 1fr));
+  }
+
+  .org-stats-checkbox,
+  .org-stats-more-button {
+    width: 100%;
+  }
+}
+
+
+@media (max-width: 550px) {
+
+  .org-stats-filters {
+    grid-template-columns: 1fr;
+  }
+
+  .org-stats-type-tabs {
+    width: 100%;
+  }
+
+  .org-stats-type-button {
+    flex: 1;
+  }
+
+  .org-stats-toolbar {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  #orgStatsTable {
+    font-size: 10px;
+  }
+}
+/* =========================
    TRANSACTIONS PAGE
 ========================= */
 
