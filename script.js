@@ -2150,6 +2150,1449 @@ function renderInternationalInfo(poolRow, year) {
   `;
 }
 /* =========================
+   ORGANIZATIONAL STATS
+========================= */
+
+let orgStatsType = "hitter";
+
+let orgStatsRows = [];
+
+let orgStatsBioMap = new Map();
+
+let orgStatsSortColumn = "";
+
+let orgStatsSortDirection = "desc";
+
+let orgStatsShowMore = false;
+
+
+/* =========================
+   COLUMN DEFINITIONS
+========================= */
+
+const ORG_STATS_HITTER_COLUMNS = {
+
+  primary: [
+    "PlayerName",
+    "Level",
+    "PA",
+    "HR",
+    "BB%",
+    "K%",
+    "OBP",
+    "SLG",
+    "OPS",
+    "wOBA",
+    "wRC+",
+    "SB",
+    "SwStr%"
+  ],
+
+  more: [
+    "H",
+    "1B",
+    "2B",
+    "3B",
+    "BABIP",
+    "Spd",
+    "CS",
+    "Pull%",
+    "Cent%",
+    "Oppo%",
+    "LD%",
+    "GB%",
+    "FB%",
+    "IFFB%"
+  ]
+
+};
+
+
+const ORG_STATS_PITCHER_COLUMNS = {
+
+  primary: [
+    "PlayerName",
+    "Level",
+    "IP",
+    "ERA",
+    "K%",
+    "BB%",
+    "K-BB%",
+    "WHIP",
+    "FIP",
+    "xFIP",
+    "K/9",
+    "BB/9",
+    "SwStr%"
+  ],
+
+  more: [
+    "G",
+    "GS",
+    "CG",
+    "ShO",
+    "SV",
+    "BS",
+    "K/BB",
+    "HR/9",
+    "BABIP",
+    "LOB%",
+    "LD%",
+    "GB%",
+    "FB%",
+    "IFFB%",
+    "HR/FB"
+  ]
+
+};
+
+
+/* =========================
+   INITIALIZE
+========================= */
+
+async function initOrgStatsPage() {
+
+  try {
+
+    const bioRows =
+      await loadSheet(
+        "Biography Info"
+      ).catch(() => []);
+
+
+    buildOrgStatsBioMap(
+      bioRows
+    );
+
+
+    setupOrgStatsListeners();
+
+
+    await loadOrgStatsSheet();
+
+
+  } catch (err) {
+
+    console.error(
+      "Organizational Stats:",
+      err
+    );
+
+
+    const tbody =
+      document.querySelector(
+        "#orgStatsTable tbody"
+      );
+
+
+    if (tbody) {
+
+      tbody.innerHTML = `
+        <tr>
+          <td>
+            Unable to load organizational stats.
+          </td>
+        </tr>
+      `;
+    }
+  }
+}
+
+
+/* =========================
+   BIO / RANK MAP
+========================= */
+
+function buildOrgStatsBioMap(rows) {
+
+  orgStatsBioMap =
+    new Map();
+
+
+  rows.forEach(row => {
+
+    const name =
+      get(row, [
+        "Player",
+        "Name"
+      ]);
+
+
+    if (!isRealValue(name)) {
+      return;
+    }
+
+
+    const key =
+      normalizeOrgStatsText(name);
+
+
+    const playerID =
+      get(row, [
+        "Player-ID",
+        "Player ID"
+      ]);
+
+
+    const rank =
+      get(row, [
+        "Rank"
+      ]);
+
+
+    const position =
+      get(row, [
+        "Position",
+        "Pos"
+      ]);
+
+
+    orgStatsBioMap.set(
+      key,
+      {
+        playerID,
+        rank,
+        position
+      }
+    );
+  });
+}
+
+
+/* =========================
+   NORMALIZE NAME
+========================= */
+
+function normalizeOrgStatsText(value) {
+
+  return String(value || "")
+    .normalize("NFD")
+    .replace(
+      /[\u0300-\u036f]/g,
+      ""
+    )
+    .toLowerCase()
+    .trim();
+}
+
+
+/* =========================
+   LOAD SELECTED SHEET
+========================= */
+
+async function loadOrgStatsSheet() {
+
+  const year =
+    document.getElementById(
+      "orgStatsYear"
+    )?.value || "2026";
+
+
+  const sheetName =
+    orgStatsType === "hitter"
+      ? `Hitter Stats ${year}`
+      : `Pitcher Stats ${year}`;
+
+
+  const count =
+    document.getElementById(
+      "orgStatsCount"
+    );
+
+
+  if (count) {
+    count.textContent =
+      "Loading...";
+  }
+
+
+  try {
+
+    const rows =
+      await loadSheet(
+        sheetName
+      );
+
+
+    orgStatsRows =
+      rows.filter(row => {
+
+        const name =
+          get(row, [
+            "PlayerName",
+            "Player",
+            "Name"
+          ]);
+
+
+        return isRealValue(name);
+      });
+
+
+    setupOrgStatsLevelFilter(
+      orgStatsRows
+    );
+
+
+    setOrgStatsDefaultSort();
+
+
+    renderOrgStats();
+
+  } catch (err) {
+
+    console.error(
+      `Failed loading ${sheetName}:`,
+      err
+    );
+
+
+    orgStatsRows = [];
+
+
+    renderOrgStats();
+  }
+}
+
+
+/* =========================
+   DEFAULT SORT
+========================= */
+
+function setOrgStatsDefaultSort() {
+
+  if (
+    orgStatsType === "hitter"
+  ) {
+
+    orgStatsSortColumn =
+      "wRC+";
+
+    orgStatsSortDirection =
+      "desc";
+
+  } else {
+
+    orgStatsSortColumn =
+      "ERA";
+
+    orgStatsSortDirection =
+      "asc";
+  }
+}
+
+
+/* =========================
+   LEVEL FILTER
+========================= */
+
+function setupOrgStatsLevelFilter(rows) {
+
+  const select =
+    document.getElementById(
+      "orgStatsLevel"
+    );
+
+
+  if (!select) return;
+
+
+  const levels =
+    new Set();
+
+
+  rows.forEach(row => {
+
+    const level =
+      get(row, [
+        "Level"
+      ]);
+
+
+    if (isRealValue(level)) {
+      levels.add(
+        String(level).trim()
+      );
+    }
+  });
+
+
+  const preferredOrder = [
+    "AAA",
+    "AA",
+    "A+",
+    "A",
+    "ROK",
+    "R",
+    "ACL",
+    "DSL"
+  ];
+
+
+  const sorted =
+    [...levels]
+      .sort((a, b) => {
+
+        const ai =
+          preferredOrder.indexOf(a);
+
+        const bi =
+          preferredOrder.indexOf(b);
+
+
+        if (
+          ai !== -1 ||
+          bi !== -1
+        ) {
+
+          return (
+            (ai === -1 ? 999 : ai) -
+            (bi === -1 ? 999 : bi)
+          );
+        }
+
+
+        return a.localeCompare(b);
+      });
+
+
+  select.innerHTML =
+    `
+      <option value="">
+        All Levels
+      </option>
+    ` +
+
+    sorted
+      .map(level => `
+        <option
+          value="${escapeOrgStatsHTML(level)}"
+        >
+          ${escapeOrgStatsHTML(level)}
+        </option>
+      `)
+      .join("");
+}
+
+
+/* =========================
+   LISTENERS
+========================= */
+
+function setupOrgStatsListeners() {
+
+  const hitterButton =
+    document.getElementById(
+      "orgStatsHittersButton"
+    );
+
+
+  const pitcherButton =
+    document.getElementById(
+      "orgStatsPitchersButton"
+    );
+
+
+  if (hitterButton) {
+
+    hitterButton.addEventListener(
+      "click",
+      async () => {
+
+        if (
+          orgStatsType === "hitter"
+        ) {
+          return;
+        }
+
+
+        orgStatsType =
+          "hitter";
+
+
+        hitterButton.classList.add(
+          "active"
+        );
+
+
+        pitcherButton?.classList.remove(
+          "active"
+        );
+
+
+        updateOrgStatsMinimumLabel();
+
+
+        await loadOrgStatsSheet();
+      }
+    );
+  }
+
+
+  if (pitcherButton) {
+
+    pitcherButton.addEventListener(
+      "click",
+      async () => {
+
+        if (
+          orgStatsType === "pitcher"
+        ) {
+          return;
+        }
+
+
+        orgStatsType =
+          "pitcher";
+
+
+        pitcherButton.classList.add(
+          "active"
+        );
+
+
+        hitterButton?.classList.remove(
+          "active"
+        );
+
+
+        updateOrgStatsMinimumLabel();
+
+
+        await loadOrgStatsSheet();
+      }
+    );
+  }
+
+
+  const year =
+    document.getElementById(
+      "orgStatsYear"
+    );
+
+
+  if (year) {
+
+    year.addEventListener(
+      "change",
+      async () => {
+
+        await loadOrgStatsSheet();
+      }
+    );
+  }
+
+
+  const search =
+    document.getElementById(
+      "orgStatsSearch"
+    );
+
+
+  if (search) {
+
+    search.addEventListener(
+      "input",
+      renderOrgStats
+    );
+  }
+
+
+  const level =
+    document.getElementById(
+      "orgStatsLevel"
+    );
+
+
+  if (level) {
+
+    level.addEventListener(
+      "change",
+      renderOrgStats
+    );
+  }
+
+
+  const minimum =
+    document.getElementById(
+      "orgStatsMinimum"
+    );
+
+
+  if (minimum) {
+
+    minimum.addEventListener(
+      "input",
+      renderOrgStats
+    );
+  }
+
+
+  const top50 =
+    document.getElementById(
+      "orgStatsTop50"
+    );
+
+
+  if (top50) {
+
+    top50.addEventListener(
+      "change",
+      renderOrgStats
+    );
+  }
+
+
+  const moreButton =
+    document.getElementById(
+      "orgStatsMoreButton"
+    );
+
+
+  if (moreButton) {
+
+    moreButton.addEventListener(
+      "click",
+      () => {
+
+        orgStatsShowMore =
+          !orgStatsShowMore;
+
+
+        moreButton.textContent =
+          orgStatsShowMore
+            ? "Fewer Stats"
+            : "More Stats";
+
+
+        moreButton.classList.toggle(
+          "active",
+          orgStatsShowMore
+        );
+
+
+        renderOrgStats();
+      }
+    );
+  }
+}
+
+
+/* =========================
+   MINIMUM LABEL
+========================= */
+
+function updateOrgStatsMinimumLabel() {
+
+  const label =
+    document.getElementById(
+      "orgStatsMinLabel"
+    );
+
+
+  if (!label) return;
+
+
+  label.textContent =
+    orgStatsType === "hitter"
+      ? "Min PA"
+      : "Min IP";
+}
+
+
+/* =========================
+   GET COLUMNS
+========================= */
+
+function getOrgStatsColumns() {
+
+  const config =
+    orgStatsType === "hitter"
+      ? ORG_STATS_HITTER_COLUMNS
+      : ORG_STATS_PITCHER_COLUMNS;
+
+
+  if (!orgStatsShowMore) {
+
+    return [
+      ...config.primary
+    ];
+  }
+
+
+  return [
+    ...config.primary,
+    ...config.more
+  ];
+}
+
+
+/* =========================
+   FILTER ROWS
+========================= */
+
+function getFilteredOrgStatsRows() {
+
+  const search =
+    normalizeOrgStatsText(
+      document.getElementById(
+        "orgStatsSearch"
+      )?.value || ""
+    );
+
+
+  const level =
+    document.getElementById(
+      "orgStatsLevel"
+    )?.value || "";
+
+
+  const minimum =
+    Number(
+      document.getElementById(
+        "orgStatsMinimum"
+      )?.value || 0
+    );
+
+
+  const top50Only =
+    document.getElementById(
+      "orgStatsTop50"
+    )?.checked || false;
+
+
+  return orgStatsRows.filter(row => {
+
+    const playerName =
+      get(row, [
+        "PlayerName",
+        "Player",
+        "Name"
+      ]);
+
+
+    const rowLevel =
+      get(row, [
+        "Level"
+      ]);
+
+
+    const normalizedName =
+      normalizeOrgStatsText(
+        playerName
+      );
+
+
+    if (
+      search &&
+      !normalizedName.includes(search)
+    ) {
+      return false;
+    }
+
+
+    if (
+      level &&
+      rowLevel !== level
+    ) {
+      return false;
+    }
+
+
+    if (minimum > 0) {
+
+      if (
+        orgStatsType === "hitter"
+      ) {
+
+        const pa =
+          orgStatsNumber(
+            get(row, ["PA"])
+          );
+
+
+        if (pa < minimum) {
+          return false;
+        }
+
+      } else {
+
+        const ip =
+          orgStatsInningsNumber(
+            get(row, ["IP"])
+          );
+
+
+        if (ip < minimum) {
+          return false;
+        }
+      }
+    }
+
+
+    if (top50Only) {
+
+      const bio =
+        orgStatsBioMap.get(
+          normalizedName
+        );
+
+
+      if (!bio) {
+        return false;
+      }
+
+
+      const rank =
+        Number(bio.rank);
+
+
+      if (
+        !Number.isFinite(rank) ||
+        rank < 1 ||
+        rank > 50
+      ) {
+        return false;
+      }
+    }
+
+
+    return true;
+  });
+}
+
+
+/* =========================
+   SORT ROWS
+========================= */
+
+function sortOrgStatsRows(rows) {
+
+  return [...rows]
+    .sort((a, b) => {
+
+      const column =
+        orgStatsSortColumn;
+
+
+      let aRaw =
+        getOrgStatsCellValue(
+          a,
+          column
+        );
+
+
+      let bRaw =
+        getOrgStatsCellValue(
+          b,
+          column
+        );
+
+
+      let comparison = 0;
+
+
+      if (
+        column === "PlayerName" ||
+        column === "Level"
+      ) {
+
+        comparison =
+          String(aRaw || "")
+            .localeCompare(
+              String(bRaw || ""),
+              undefined,
+              {
+                sensitivity: "base"
+              }
+            );
+
+      } else {
+
+        const aNum =
+          column === "IP"
+            ? orgStatsInningsNumber(
+                aRaw
+              )
+            : orgStatsNumber(
+                aRaw
+              );
+
+
+        const bNum =
+          column === "IP"
+            ? orgStatsInningsNumber(
+                bRaw
+              )
+            : orgStatsNumber(
+                bRaw
+              );
+
+
+        const aValid =
+          Number.isFinite(aNum);
+
+
+        const bValid =
+          Number.isFinite(bNum);
+
+
+        if (
+          !aValid &&
+          !bValid
+        ) {
+          comparison = 0;
+
+        } else if (!aValid) {
+          comparison = 1;
+
+        } else if (!bValid) {
+          comparison = -1;
+
+        } else {
+          comparison =
+            aNum - bNum;
+        }
+      }
+
+
+      return (
+        orgStatsSortDirection ===
+        "asc"
+          ? comparison
+          : -comparison
+      );
+    });
+}
+
+
+/* =========================
+   RENDER
+========================= */
+
+function renderOrgStats() {
+
+  const table =
+    document.getElementById(
+      "orgStatsTable"
+    );
+
+
+  if (!table) return;
+
+
+  const columns =
+    getOrgStatsColumns();
+
+
+  const filtered =
+    getFilteredOrgStatsRows();
+
+
+  const sorted =
+    sortOrgStatsRows(
+      filtered
+    );
+
+
+  renderOrgStatsHeader(
+    table,
+    columns
+  );
+
+
+  renderOrgStatsBody(
+    table,
+    columns,
+    sorted
+  );
+
+
+  const count =
+    document.getElementById(
+      "orgStatsCount"
+    );
+
+
+  if (count) {
+
+    count.textContent =
+      `${sorted.length.toLocaleString()} player${sorted.length === 1 ? "" : "s"}`;
+  }
+}
+
+
+/* =========================
+   TABLE HEADER
+========================= */
+
+function renderOrgStatsHeader(
+  table,
+  columns
+) {
+
+  const thead =
+    table.querySelector(
+      "thead"
+    );
+
+
+  if (!thead) return;
+
+
+  thead.innerHTML = `
+    <tr>
+
+      ${columns.map(column => {
+
+        const active =
+          orgStatsSortColumn ===
+          column;
+
+
+        let arrow = "";
+
+
+        if (active) {
+
+          arrow =
+            orgStatsSortDirection ===
+            "asc"
+              ? " ▲"
+              : " ▼";
+        }
+
+
+        return `
+          <th
+            class="org-stats-sortable ${
+              active
+                ? "org-stats-sorted"
+                : ""
+            }"
+            data-stat="${escapeOrgStatsHTML(column)}"
+          >
+            ${escapeOrgStatsHTML(
+              getOrgStatsColumnLabel(
+                column
+              )
+            )}${arrow}
+          </th>
+        `;
+      }).join("")}
+
+    </tr>
+  `;
+
+
+  thead
+    .querySelectorAll(
+      "[data-stat]"
+    )
+    .forEach(th => {
+
+      th.addEventListener(
+        "click",
+        () => {
+
+          const column =
+            th.dataset.stat;
+
+
+          if (
+            orgStatsSortColumn ===
+            column
+          ) {
+
+            orgStatsSortDirection =
+              orgStatsSortDirection ===
+              "asc"
+                ? "desc"
+                : "asc";
+
+          } else {
+
+            orgStatsSortColumn =
+              column;
+
+
+            orgStatsSortDirection =
+              getOrgStatsDefaultDirection(
+                column
+              );
+          }
+
+
+          renderOrgStats();
+        }
+      );
+    });
+}
+
+
+/* =========================
+   DEFAULT SORT DIRECTION
+========================= */
+
+function getOrgStatsDefaultDirection(
+  column
+) {
+
+  const lowerIsBetter = [
+    "ERA",
+    "FIP",
+    "xFIP",
+    "WHIP",
+    "BB%",
+    "BB/9",
+  ];
+
+
+  if (
+    orgStatsType === "pitcher" &&
+    lowerIsBetter.includes(column)
+  ) {
+    return "asc";
+  }
+
+
+  if (
+    column === "PlayerName" ||
+    column === "Level"
+  ) {
+    return "asc";
+  }
+
+
+  return "desc";
+}
+
+
+/* =========================
+   TABLE BODY
+========================= */
+
+function renderOrgStatsBody(
+  table,
+  columns,
+  rows
+) {
+
+  const tbody =
+    table.querySelector(
+      "tbody"
+    );
+
+
+  if (!tbody) return;
+
+
+  if (!rows.length) {
+
+    tbody.innerHTML = `
+      <tr>
+        <td
+          colspan="${columns.length}"
+          class="org-stats-empty"
+        >
+          No players match those filters.
+        </td>
+      </tr>
+    `;
+
+    return;
+  }
+
+
+  tbody.innerHTML =
+    rows.map(row => {
+
+      return `
+        <tr>
+
+          ${columns.map(column => {
+
+            if (
+              column ===
+              "PlayerName"
+            ) {
+
+              return `
+                <td class="org-stats-player-cell">
+                  ${renderOrgStatsPlayer(row)}
+                </td>
+              `;
+            }
+
+
+            const value =
+              getOrgStatsCellValue(
+                row,
+                column
+              );
+
+
+            return `
+              <td>
+                ${escapeOrgStatsHTML(value)}
+              </td>
+            `;
+
+          }).join("")}
+
+        </tr>
+      `;
+
+    }).join("");
+}
+
+
+/* =========================
+   PLAYER CELL
+========================= */
+
+function renderOrgStatsPlayer(row) {
+
+  const playerName =
+    get(row, [
+      "PlayerName",
+      "Player",
+      "Name"
+    ]);
+
+
+  const normalized =
+    normalizeOrgStatsText(
+      playerName
+    );
+
+
+  const bio =
+    orgStatsBioMap.get(
+      normalized
+    );
+
+
+  let nameHTML =
+    escapeOrgStatsHTML(
+      playerName
+    );
+
+
+  if (
+    bio &&
+    isRealValue(bio.playerID)
+  ) {
+
+    nameHTML = `
+      <a
+        class="org-stats-player-link"
+        href="player.html?id=${encodeURIComponent(bio.playerID)}"
+      >
+        ${escapeOrgStatsHTML(playerName)}
+      </a>
+    `;
+  }
+
+
+  let rankHTML = "";
+
+
+  if (
+    bio &&
+    isRealValue(bio.rank)
+  ) {
+
+    const rank =
+      Number(bio.rank);
+
+
+    if (
+      Number.isFinite(rank)
+    ) {
+
+      rankHTML = `
+        <span
+          class="org-stats-rank ${
+            rank <= 50
+              ? "org-stats-rank-top50"
+              : "org-stats-rank-other"
+          }"
+        >
+          #${escapeOrgStatsHTML(
+            bio.rank
+          )}
+        </span>
+      `;
+    }
+  }
+
+
+  return `
+    <div class="org-stats-player-wrap">
+
+      ${nameHTML}
+
+      ${rankHTML}
+
+    </div>
+  `;
+}
+
+
+/* =========================
+   GET CELL VALUE
+========================= */
+
+function getOrgStatsCellValue(
+  row,
+  column
+) {
+
+  if (
+    column === "PlayerName"
+  ) {
+
+    return get(row, [
+      "PlayerName",
+      "Player",
+      "Name"
+    ]);
+  }
+
+
+  return get(
+    row,
+    [column]
+  );
+}
+
+
+/* =========================
+   COLUMN LABEL
+========================= */
+
+function getOrgStatsColumnLabel(
+  column
+) {
+
+  if (
+    column === "PlayerName"
+  ) {
+    return "Player";
+  }
+
+
+  return column;
+}
+
+
+/* =========================
+   NUMERIC PARSING
+========================= */
+
+function orgStatsNumber(value) {
+
+  if (
+    value === null ||
+    value === undefined ||
+    String(value).trim() === ""
+  ) {
+    return NaN;
+  }
+
+
+  const cleaned =
+    String(value)
+      .replace(/,/g, "")
+      .replace(/%/g, "")
+      .trim();
+
+
+  const number =
+    Number(cleaned);
+
+
+  return Number.isFinite(number)
+    ? number
+    : NaN;
+}
+
+
+/* =========================
+   BASEBALL IP PARSING
+
+   12.1 = 12 1/3 innings
+   12.2 = 12 2/3 innings
+========================= */
+
+function orgStatsInningsNumber(value) {
+
+  const raw =
+    String(value || "")
+      .trim();
+
+
+  if (!raw) {
+    return NaN;
+  }
+
+
+  const parts =
+    raw.split(".");
+
+
+  const whole =
+    Number(parts[0]);
+
+
+  if (
+    !Number.isFinite(whole)
+  ) {
+    return NaN;
+  }
+
+
+  if (
+    parts.length === 1
+  ) {
+    return whole;
+  }
+
+
+  const outs =
+    Number(parts[1]);
+
+
+  if (outs === 1) {
+    return whole + (1 / 3);
+  }
+
+
+  if (outs === 2) {
+    return whole + (2 / 3);
+  }
+
+
+  return Number(raw);
+}
+
+
+/* =========================
+   HTML SAFETY
+========================= */
+
+function escapeOrgStatsHTML(value) {
+
+  return String(value ?? "")
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&#039;");
+}
+/* =========================
    TRANSACTIONS
 ========================= */
 
