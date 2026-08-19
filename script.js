@@ -2911,17 +2911,17 @@ function getFilteredOrgStatsRows() {
 
     if (minimum > 0) {
 
-      if (
-        orgStatsType === "hitter"
-      ) {
+      if (orgStatsType === "hitter") {
 
         const pa =
           orgStatsNumber(
             get(row, ["PA"])
           );
 
-
-        if (pa < minimum) {
+        if (
+          !Number.isFinite(pa) ||
+          pa < minimum
+        ) {
           return false;
         }
 
@@ -2932,8 +2932,10 @@ function getFilteredOrgStatsRows() {
             get(row, ["IP"])
           );
 
-
-        if (ip < minimum) {
+        if (
+          !Number.isFinite(ip) ||
+          ip < minimum
+        ) {
           return false;
         }
       }
