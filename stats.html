@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+
+  <title>Backfield Brew – Organizational Stats</title>
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  />
+
+  <link
+    rel="stylesheet"
+    href="styles.css?v=30"
+  />
+
+  <script
+    defer
+    src="script.js?v=40"
+  ></script>
+</head>
+
+<body>
+
+  <!-- =========================
+       HEADER
+  ========================== -->
+
+  <header class="site-header">
+
+    <img
+      src="BFB-Logo.png"
+      alt="Backfield Brew"
+      class="site-logo"
+    />
+
+  </header>
+
+
+  <div class="header-buttons">
+
+    <a href="index.html">
+      Active Rankings
+    </a>
+
+    <a href="archive.html">
+      Archived Players
+    </a>
+
+    <a
+      href="https://www.patreon.com/BackfieldBrew"
+      target="_blank"
+      rel="noopener"
+    >
+      Patreon
+    </a>
+
+
+    <div class="dropdown-nav">
+
+      <button class="dropdown-button">
+        Other Pages ▼
+      </button>
+
+
+      <div class="dropdown-content">
+
+        <a href="logs.html">
+          Scouting Logs
+        </a>
+
+        <a href="depth.html">
+          Organizational Depth Chart
+        </a>
+
+        <a href="transactions.html">
+          Transactions
+        </a>
+
+        <a href="rule5.html">
+          Rule 5 Eligibility
+        </a>
+
+        <a href="freeagency.html">
+          MiLB Free Agency
+        </a>
+
+        <a href="draft.html">
+          Draft History
+        </a>
+
+        <a href="international.html">
+          International History
+        </a>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <!-- =========================
+       MAIN
+  ========================== -->
+
+  <main class="container">
+
+    <section class="card">
+
+      <div class="org-stats-heading">
+
+        <div>
+          <h2>Organizational Stats</h2>
+
+          <p class="org-stats-subtitle">
+            Milwaukee Brewers minor league statistical leaders
+          </p>
+        </div>
+
+
+        <div class="org-stats-type-tabs">
+
+          <button
+            id="orgStatsHittersButton"
+            class="org-stats-type-button active"
+            type="button"
+          >
+            Hitters
+          </button>
+
+          <button
+            id="orgStatsPitchersButton"
+            class="org-stats-type-button"
+            type="button"
+          >
+            Pitchers
+          </button>
+
+        </div>
+
+      </div>
+
+
+      <!-- =========================
+           FILTERS
+      ========================== -->
+
+      <div class="org-stats-filters">
+
+        <input
+          type="text"
+          id="orgStatsSearch"
+          placeholder="Search player..."
+        />
+
+
+        <select id="orgStatsYear">
+
+          <option value="2026">
+            2026
+          </option>
+
+          <option value="2025">
+            2025
+          </option>
+
+          <option value="2024">
+            2024
+          </option>
+
+          <option value="2023">
+            2023
+          </option>
+
+        </select>
+
+
+        <select id="orgStatsLevel">
+
+          <option value="">
+            All Levels
+          </option>
+
+        </select>
+
+
+        <div class="org-stats-min-wrap">
+
+          <label id="orgStatsMinLabel" for="orgStatsMinimum">
+            Min PA
+          </label>
+
+          <input
+            type="number"
+            id="orgStatsMinimum"
+            min="0"
+            step="1"
+            value="0"
+            placeholder="0"
+          />
+
+        </div>
+
+
+        <label class="org-stats-checkbox">
+
+          <input
+            type="checkbox"
+            id="orgStatsTop50"
+          />
+
+          <span>
+            Top 50 Only
+          </span>
+
+        </label>
+
+
+        <button
+          type="button"
+          id="orgStatsMoreButton"
+          class="org-stats-more-button"
+        >
+          More Stats
+        </button>
+
+      </div>
+
+
+      <div class="org-stats-toolbar">
+
+        <span id="orgStatsCount">
+          Loading...
+        </span>
+
+        <span class="org-stats-sort-note">
+          Click a column header to sort
+        </span>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         TABLE
+    ========================== -->
+
+    <section class="card org-stats-table-card">
+
+      <div class="org-stats-table-wrap">
+
+        <table id="orgStatsTable">
+
+          <thead></thead>
+
+          <tbody></tbody>
+
+        </table>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- =========================
+       INIT
+  ========================== -->
+
+  <script>
+
+    document.addEventListener(
+      "DOMContentLoaded",
+      () => {
+
+        initOrgStatsPage();
+
+        if (
+          typeof handleHeaderButtons ===
+          "function"
+        ) {
+          handleHeaderButtons();
+        }
+
+        if (
+          typeof setupMobileDropdown ===
+          "function"
+        ) {
+          setupMobileDropdown();
+        }
+
+      }
+    );
+
+  </script>
+
+</body>
+
+</html>
