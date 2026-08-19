@@ -2189,7 +2189,7 @@ const ORG_STATS_HITTER_COLUMNS = {
     "wRC+",
     "SB",
     "CS",
-    "SB%"
+    "SB%",
     "SwStr%"
   ],
 
@@ -2204,9 +2204,6 @@ const ORG_STATS_HITTER_COLUMNS = {
   ]
 
 };
-
-};
-
 
 const ORG_STATS_PITCHER_COLUMNS = {
 
