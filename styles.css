@@ -962,30 +962,22 @@ tr:nth-child(even) {
 
 .international-country-summary h4 {
   margin: 0 0 10px;
-
   color: #1b2a4a;
-
   font-size: 14px;
 }
 
 .international-country-grid {
   display: grid;
-
   grid-template-columns:
     repeat(auto-fit, minmax(150px, 1fr));
-
   gap: 8px;
 }
 
 .international-country-item {
   display: grid;
-
-  grid-template-columns:
-    30px 1fr auto;
-
+  grid-template-columns: 32px 1fr auto;
   align-items: center;
-
-  gap: 7px;
+  gap: 8px;
 
   padding: 8px 10px;
 
@@ -998,10 +990,20 @@ tr:nth-child(even) {
 .international-country-flag {
   width: 28px;
   height: 19px;
+
   object-fit: cover;
 
   border: 1px solid #ccc;
   border-radius: 2px;
+}
+
+.international-country-flag-fallback {
+  width: 28px;
+
+  text-align: center;
+
+  font-size: 18px;
+  line-height: 1;
 }
 
 .international-country-name {
