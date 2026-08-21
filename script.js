@@ -1775,21 +1775,295 @@ function renderDraftTabs(rows, years) {
 }
 
 function renderDraftYear(rows, year) {
-  const yearRows = rows.filter(row => get(row, ["Draft Year"]) === year);
 
-  const poolRow = yearRows.find(row =>
-    String(get(row, ["Player"])).toLowerCase().trim() === "draft pool"
-  );
+  const yearRows =
+    rows.filter(row =>
+      get(row, ["Draft Year"]) === year
+    );
 
-  const playerRows = yearRows.filter(row =>
-    String(get(row, ["Player"])).toLowerCase().trim() !== "draft pool"
-  );
+
+  const poolRow =
+    yearRows.find(row =>
+      String(
+        get(row, ["Player"])
+      )
+        .toLowerCase()
+        .trim() === "draft pool"
+    );
+
+
+  const playerRows =
+    yearRows.filter(row =>
+      String(
+        get(row, ["Player"])
+      )
+        .toLowerCase()
+        .trim() !== "draft pool"
+    );
+
 
   renderDraftSummary(poolRow);
-  renderDraftTable(playerRows);
-  renderDraftInfo(poolRow, year);
-}
 
+  renderDraftTable(playerRows);
+
+  renderDraftClassSummary(
+    playerRows,
+    year
+  );
+
+  renderDraftInfo(
+    poolRow,
+    year
+  );
+}
+/* =========================
+   DRAFT CLASS SUMMARY
+========================= */
+
+function renderDraftClassSummary(
+  rows,
+  year
+) {
+
+  const box =
+    document.getElementById(
+      "draftClassSummary"
+    );
+
+
+  if (!box) return;
+
+
+  let selected = 0;
+
+  let stillInOrg = 0;
+
+  let mlbBrewers = 0;
+
+  let mlbOther = 0;
+
+  let traded = 0;
+
+  let released = 0;
+
+  let waived = 0;
+
+  let mlbFreeAgent = 0;
+
+  let minorLeagueFreeAgent = 0;
+
+  let unsigned = 0;
+
+
+  rows.forEach(row => {
+
+    const player =
+      get(row, ["Player"]);
+
+
+    if (!isRealValue(player)) {
+      return;
+    }
+
+
+    selected++;
+
+
+    const tags = [
+      get(row, ["Tag 1"]),
+      get(row, ["Tag 2"])
+    ]
+      .map(tag =>
+        String(tag || "")
+          .trim()
+          .toUpperCase()
+      )
+      .filter(Boolean);
+
+
+    /* Still with Milwaukee */
+
+    if (
+      tags.includes("CREW")
+    ) {
+      stillInOrg++;
+    }
+
+
+    /* MLB with Milwaukee */
+
+    if (
+      tags.includes("MLB")
+    ) {
+      mlbBrewers++;
+    }
+
+
+    /* MLB elsewhere */
+
+    if (
+      tags.includes("MLB-O")
+    ) {
+      mlbOther++;
+    }
+
+
+    /* Traded */
+
+    if (
+      tags.includes("TRADED")
+    ) {
+      traded++;
+    }
+
+
+    /* Released */
+
+    if (
+      tags.includes("RELEASED")
+    ) {
+      released++;
+    }
+
+
+    /* Waived / DFA */
+
+    if (
+      tags.includes("WAIVED")
+    ) {
+      waived++;
+    }
+
+
+    /* MLB Free Agency */
+
+    if (
+      tags.includes("FA")
+    ) {
+      mlbFreeAgent++;
+    }
+
+
+    /* Minor League Free Agency */
+
+    if (
+      tags.includes("MLFA")
+    ) {
+      minorLeagueFreeAgent++;
+    }
+
+
+    /* Did Not Sign */
+
+    if (
+      tags.includes("DNS")
+    ) {
+      unsigned++;
+    }
+
+  });
+
+
+  const summaryItems = [
+
+    {
+      label: "Players Selected",
+      value: selected,
+      show: true
+    },
+
+    {
+      label: "Still in Organization",
+      value: stillInOrg,
+      show: true
+    },
+
+    {
+      label: "Reached MLB with Brewers",
+      value: mlbBrewers,
+      show: true
+    },
+
+    {
+      label: "Reached MLB Elsewhere",
+      value: mlbOther,
+      show: true
+    },
+
+    {
+      label: "Traded",
+      value: traded,
+      show: traded > 0
+    },
+
+    {
+      label: "Released",
+      value: released,
+      show: released > 0
+    },
+
+    {
+      label: "Waived / DFA",
+      value: waived,
+      show: waived > 0
+    },
+
+    {
+      label: "MLB Free Agent",
+      value: mlbFreeAgent,
+      show: mlbFreeAgent > 0
+    },
+
+    {
+      label: "Minor League Free Agent",
+      value: minorLeagueFreeAgent,
+      show: minorLeagueFreeAgent > 0
+    },
+
+    {
+      label: "Did Not Sign",
+      value: unsigned,
+      show: unsigned > 0
+    }
+
+  ];
+
+
+  box.innerHTML = `
+
+    <div class="draft-class-summary">
+
+      <h3>
+        ${year} Draft Class Summary
+      </h3>
+
+
+      <div class="draft-class-summary-grid">
+
+        ${summaryItems
+          .filter(item => item.show)
+          .map(item => `
+
+            <div class="draft-class-summary-item">
+
+              <span class="draft-class-summary-value">
+                ${item.value}
+              </span>
+
+              <span class="draft-class-summary-label">
+                ${item.label}
+              </span>
+
+            </div>
+
+          `)
+          .join("")}
+
+      </div>
+
+    </div>
+  `;
+}
 function renderDraftSummary(poolRow) {
   const box = document.getElementById("draftSummary");
   if (!box) return;
