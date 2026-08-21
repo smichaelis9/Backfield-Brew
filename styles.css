@@ -953,6 +953,67 @@ tr:nth-child(even) {
   line-height: 1.2;
 }
 /* =========================
+   INTERNATIONAL COUNTRY SUMMARY
+========================= */
+
+.international-country-summary {
+  margin-top: 18px;
+}
+
+.international-country-summary h4 {
+  margin: 0 0 10px;
+
+  color: #1b2a4a;
+
+  font-size: 14px;
+}
+
+.international-country-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(auto-fit, minmax(150px, 1fr));
+
+  gap: 8px;
+}
+
+.international-country-item {
+  display: grid;
+
+  grid-template-columns:
+    30px 1fr auto;
+
+  align-items: center;
+
+  gap: 7px;
+
+  padding: 8px 10px;
+
+  background: #f4f5f7;
+
+  border: 1px solid #ddd;
+  border-radius: 7px;
+}
+
+.international-country-flag {
+  font-size: 21px;
+  line-height: 1;
+}
+
+.international-country-name {
+  color: #333;
+
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.international-country-count {
+  color: #1b2a4a;
+
+  font-size: 14px;
+  font-weight: 900;
+}
+/* =========================
    RULE 5 / FREE AGENCY
 ========================= */
 
