@@ -996,8 +996,12 @@ tr:nth-child(even) {
 }
 
 .international-country-flag {
-  font-size: 21px;
-  line-height: 1;
+  width: 28px;
+  height: 19px;
+  object-fit: cover;
+
+  border: 1px solid #ccc;
+  border-radius: 2px;
 }
 
 .international-country-name {
