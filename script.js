@@ -3422,10 +3422,9 @@ function renderInternationalClassSummary(
       tags.includes("DNS");
 
 
-    /*
-      Players with DNS do not
-      count as actual signings.
-    */
+    /* =========================
+       SIGNING COUNT
+    ========================= */
 
     if (didNotSign) {
 
@@ -3437,7 +3436,7 @@ function renderInternationalClassSummary(
 
 
       /* =========================
-         COUNTRY COUNTS
+         COUNTRY COUNT
       ========================= */
 
       const country =
@@ -3688,31 +3687,58 @@ function renderInternationalClassSummary(
 
                 ${countries
                   .map(
-                    ([country, count]) => `
+                    ([country, count]) => {
 
-                      <div class="international-country-item">
-
-                        <span class="international-country-flag">
-                          ${getCountryFlag(
-                            country
-                          )}
-                        </span>
+                      const flagCode =
+                        getCountryFlagCode(
+                          country
+                        );
 
 
-                        <span class="international-country-name">
-                          ${escapeInternationalHTML(
-                            country
-                          )}
-                        </span>
+                      return `
+
+                        <div class="international-country-item">
+
+                          ${
+                            flagCode
+                              ? `
+                                <img
+                                  class="international-country-flag"
+                                  src="https://flagcdn.com/w40/${flagCode}.png"
+                                  srcset="
+                                    https://flagcdn.com/w80/${flagCode}.png 2x
+                                  "
+                                  alt="${escapeInternationalHTML(country)} flag"
+                                  title="${escapeInternationalHTML(country)}"
+                                  loading="lazy"
+                                >
+                              `
+                              : `
+                                <span
+                                  class="international-country-flag-fallback"
+                                  title="${escapeInternationalHTML(country)}"
+                                >
+                                  🌐
+                                </span>
+                              `
+                          }
 
 
-                        <span class="international-country-count">
-                          ${count}
-                        </span>
+                          <span class="international-country-name">
+                            ${escapeInternationalHTML(
+                              country
+                            )}
+                          </span>
 
-                      </div>
 
-                    `
+                          <span class="international-country-count">
+                            ${count}
+                          </span>
+
+                        </div>
+
+                      `;
+                    }
                   )
                   .join("")}
 
@@ -3731,10 +3757,10 @@ function renderInternationalClassSummary(
 
 
 /* =========================
-   COUNTRY FLAGS
+   COUNTRY FLAG CODES
 ========================= */
 
-function getCountryFlag(
+function getCountryFlagCode(
   country
 ) {
 
@@ -3746,111 +3772,94 @@ function getCountryFlag(
 
   const countryCodes = {
 
-    "dominican republic": "DO",
-    "dominican": "DO",
-    "d.r.": "DO",
-    "dr": "DO",
+    "dominican republic": "do",
+    "dominican": "do",
+    "d.r.": "do",
+    "dr": "do",
 
-    "venezuela": "VE",
+    "venezuela": "ve",
 
-    "colombia": "CO",
+    "colombia": "co",
 
-    "panama": "PA",
+    "panama": "pa",
 
-    "mexico": "MX",
+    "mexico": "mx",
 
-    "nicaragua": "NI",
+    "nicaragua": "ni",
 
-    "costa rica": "CR",
+    "costa rica": "cr",
 
-    "honduras": "HN",
+    "honduras": "hn",
 
-    "guatemala": "GT",
+    "guatemala": "gt",
 
-    "el salvador": "SV",
+    "el salvador": "sv",
 
-    "belize": "BZ",
+    "belize": "bz",
 
-    "bahamas": "BS",
-    "the bahamas": "BS",
+    "bahamas": "bs",
+    "the bahamas": "bs",
 
-    "aruba": "AW",
+    "aruba": "aw",
 
-    "curacao": "CW",
-    "curaçao": "CW",
+    "curacao": "cw",
+    "curaçao": "cw",
 
-    "bonaire": "BQ",
+    "bonaire": "bq",
 
-    "cuba": "CU",
+    "cuba": "cu",
 
-    "haiti": "HT",
+    "haiti": "ht",
 
-    "jamaica": "JM",
+    "jamaica": "jm",
 
-    "puerto rico": "PR",
+    "puerto rico": "pr",
 
-    "brazil": "BR",
+    "brazil": "br",
 
-    "peru": "PE",
+    "peru": "pe",
 
-    "ecuador": "EC",
+    "ecuador": "ec",
 
-    "argentina": "AR",
+    "argentina": "ar",
 
-    "chile": "CL",
+    "chile": "cl",
 
-    "canada": "CA",
+    "canada": "ca",
 
-    "united states": "US",
-    "usa": "US",
-    "u.s.": "US",
+    "united states": "us",
+    "usa": "us",
+    "u.s.": "us",
 
-    "spain": "ES",
+    "spain": "es",
 
-    "italy": "IT",
+    "italy": "it",
 
-    "germany": "DE",
+    "germany": "de",
 
-    "france": "FR",
+    "france": "fr",
 
-    "netherlands": "NL",
+    "netherlands": "nl",
 
-    "australia": "AU",
+    "australia": "au",
 
-    "new zealand": "NZ",
+    "new zealand": "nz",
 
-    "south korea": "KR",
-    "korea": "KR",
+    "south korea": "kr",
+    "korea": "kr",
 
-    "japan": "JP",
+    "japan": "jp",
 
-    "taiwan": "TW",
+    "taiwan": "tw",
 
-    "china": "CN",
+    "china": "cn",
 
-    "philippines": "PH"
+    "philippines": "ph"
 
   };
 
 
-  const code =
-    countryCodes[clean];
-
-
-  if (!code) {
-    return "🌐";
-  }
-
-
-  return code
-    .split("")
-    .map(letter =>
-      String.fromCodePoint(
-        127397 +
-        letter.charCodeAt(0)
-      )
-    )
-    .join("");
+  return countryCodes[clean] || "";
 }
 
 
