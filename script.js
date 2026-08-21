@@ -2896,77 +2896,262 @@ function draftLegendRow(
 
 async function initInternationalPage() {
   try {
-    const rows = await loadSheet("International Signing History");
 
-    const years = [...new Set(
-      rows
-        .map(row => get(row, ["Signing Year"]))
-        .filter(isRealValue)
-    )].sort((a, b) => Number(b) - Number(a));
+    const rows =
+      await loadSheet(
+        "International Signing History"
+      );
 
-    renderInternationalTabs(rows, years);
-    renderInternationalYear(rows, years[0]);
+
+    const years =
+      [...new Set(
+        rows
+          .map(row =>
+            get(row, ["Signing Year"])
+          )
+          .filter(isRealValue)
+      )]
+        .sort(
+          (a, b) =>
+            Number(b) - Number(a)
+        );
+
+
+    renderInternationalTabs(
+      rows,
+      years
+    );
+
+
+    renderInternationalYear(
+      rows,
+      years[0]
+    );
+
+
   } catch (err) {
-    console.error("International page:", err);
+
+    console.error(
+      "International page:",
+      err
+    );
   }
 }
 
-function renderInternationalTabs(rows, years) {
-  const tabs = document.getElementById("intlYearTabs");
+
+/* =========================
+   YEAR TABS
+========================= */
+
+function renderInternationalTabs(
+  rows,
+  years
+) {
+
+  const tabs =
+    document.getElementById(
+      "intlYearTabs"
+    );
+
+
   if (!tabs) return;
 
-  tabs.innerHTML = years.map((year, index) => `
-    <button class="draft-tab ${index === 0 ? "active" : ""}" data-year="${year}">
-      ${year}
-    </button>
-  `).join("");
 
-  tabs.querySelectorAll(".draft-tab").forEach(tab => {
-    tab.addEventListener("click", () => {
-      tabs.querySelectorAll(".draft-tab").forEach(t => t.classList.remove("active"));
-      tab.classList.add("active");
-      renderInternationalYear(rows, tab.dataset.year);
+  tabs.innerHTML =
+    years
+      .map((year, index) => `
+
+        <button
+          class="draft-tab ${
+            index === 0
+              ? "active"
+              : ""
+          }"
+          data-year="${year}"
+        >
+          ${year}
+        </button>
+
+      `)
+      .join("");
+
+
+  tabs
+    .querySelectorAll(
+      ".draft-tab"
+    )
+    .forEach(tab => {
+
+      tab.addEventListener(
+        "click",
+        () => {
+
+          tabs
+            .querySelectorAll(
+              ".draft-tab"
+            )
+            .forEach(t =>
+              t.classList.remove(
+                "active"
+              )
+            );
+
+
+          tab.classList.add(
+            "active"
+          );
+
+
+          renderInternationalYear(
+            rows,
+            tab.dataset.year
+          );
+        }
+      );
     });
-  });
 }
 
-function renderInternationalYear(rows, year) {
-  const yearRows = rows.filter(row => get(row, ["Signing Year"]) === year);
 
-  const bonusPoolRow = yearRows.find(row =>
-    String(get(row, ["Player"])).toLowerCase().trim() === "bonus pool"
+/* =========================
+   RENDER SELECTED YEAR
+========================= */
+
+function renderInternationalYear(
+  rows,
+  year
+) {
+
+  const yearRows =
+    rows.filter(row =>
+      get(row, ["Signing Year"]) === year
+    );
+
+
+  const bonusPoolRow =
+    yearRows.find(row =>
+      String(
+        get(row, ["Player"])
+      )
+        .toLowerCase()
+        .trim() === "bonus pool"
+    );
+
+
+  const playerRows =
+    yearRows.filter(row =>
+      String(
+        get(row, ["Player"])
+      )
+        .toLowerCase()
+        .trim() !== "bonus pool"
+    );
+
+
+  renderInternationalSummary(
+    bonusPoolRow
   );
 
-  const playerRows = yearRows.filter(row =>
-    String(get(row, ["Player"])).toLowerCase().trim() !== "bonus pool"
+
+  renderInternationalTable(
+    playerRows
   );
 
-  renderInternationalSummary(bonusPoolRow);
-  renderInternationalTable(playerRows);
-  renderInternationalInfo(bonusPoolRow, year);
+
+  renderInternationalClassSummary(
+    playerRows,
+    year
+  );
+
+
+  renderInternationalInfo(
+    bonusPoolRow,
+    year
+  );
 }
 
-function renderInternationalSummary(poolRow) {
-  const box = document.getElementById("intlSummary");
+
+/* =========================
+   BONUS POOL SUMMARY
+========================= */
+
+function renderInternationalSummary(
+  poolRow
+) {
+
+  const box =
+    document.getElementById(
+      "intlSummary"
+    );
+
+
   if (!box) return;
 
+
   if (!poolRow) {
+
     box.innerHTML = "";
+
     return;
   }
 
+
   box.innerHTML = `
+
     <div class="draft-summary">
-      <span>Bonus Pool Cap: <strong>${get(poolRow, ["Bonus Pool Cap"])}</strong></span>
-      <span>Cap $ Spent: <strong>${get(poolRow, ["Cap $ Spent"])}</strong></span>
-      <span>Cap $ Remaining: <strong>${get(poolRow, ["Cap $ Remaining"])}</strong></span>
+
+      <span>
+        Bonus Pool Cap:
+        <strong>
+          ${get(
+            poolRow,
+            ["Bonus Pool Cap"]
+          )}
+        </strong>
+      </span>
+
+
+      <span>
+        Cap $ Spent:
+        <strong>
+          ${get(
+            poolRow,
+            ["Cap $ Spent"]
+          )}
+        </strong>
+      </span>
+
+
+      <span>
+        Cap $ Remaining:
+        <strong>
+          ${get(
+            poolRow,
+            ["Cap $ Remaining"]
+          )}
+        </strong>
+      </span>
+
     </div>
   `;
 }
 
-function renderInternationalTable(rows) {
-  const table = document.getElementById("intlTable");
+
+/* =========================
+   INTERNATIONAL TABLE
+========================= */
+
+function renderInternationalTable(
+  rows
+) {
+
+  const table =
+    document.getElementById(
+      "intlTable"
+    );
+
+
   if (!table) return;
+
 
   const headers = [
     "Tags",
@@ -2979,92 +3164,873 @@ function renderInternationalTable(rows) {
     "Signing Scout(s)"
   ];
 
-  table.querySelector("thead").innerHTML = `
-    <tr>
-      ${headers.map(h => `<th>${h}</th>`).join("")}
-    </tr>
-  `;
 
-  table.querySelector("tbody").innerHTML = rows.map(row => {
-    const player = get(row, ["Player"]);
-    const playerID = get(row, ["Player ID", "Player-ID"]);
-    const archived = String(get(row, ["Archived?", "Archived", "Archive"]))
-      .toLowerCase()
-      .trim() === "yes";
+  table
+    .querySelector("thead")
+    .innerHTML = `
 
-    const bref = cleanUrl(get(row, ["Baseball Reference", "BBRef", "Baseball Reference Link"]));
-    let href = "";
-    let isBrefLink = false;
-
-    if (isRealValue(playerID)) {
-      href = `${archived ? "archive-player.html" : "player.html"}?id=${encodeURIComponent(playerID)}`;
-    } else if (isRealValue(bref)) {
-      href = bref;
-      isBrefLink = true;
-    }
-
-    return `
       <tr>
-        <td class="draft-tag-cell">
-          ${renderDraftTags(row)}
-        </td>
-
-        <td>${get(row, ["Position", "Pos"])}</td>
-
-        <td>
-          ${href
-            ? `<a href="${href}" ${isBrefLink ? `target="_blank" rel="noopener"` : ""}>
-                ${player}
-                ${isBrefLink ? `<span class="bref-badge">BRef</span>` : ""}
-              </a>`
-            : player
-          }
-        </td>
-
-        <td>${get(row, ["Country"])}</td>
-        <td>${get(row, ["Signing Bonus"])}</td>
-        <td>${get(row, ["Pool Hit"])}</td>
-        <td>${get(row, ["Date Signed"])}</td>
-        <td>${get(row, ["Signing Scout"])}</td>
+        ${headers
+          .map(h =>
+            `<th>${h}</th>`
+          )
+          .join("")}
       </tr>
     `;
-  }).join("");
+
+
+  table
+    .querySelector("tbody")
+    .innerHTML =
+
+      rows
+        .map(row => {
+
+          const player =
+            get(row, ["Player"]);
+
+
+          const playerID =
+            get(row, [
+              "Player ID",
+              "Player-ID"
+            ]);
+
+
+          const archived =
+            String(
+              get(row, [
+                "Archived?",
+                "Archived",
+                "Archive"
+              ])
+            )
+              .toLowerCase()
+              .trim() === "yes";
+
+
+          const bref =
+            cleanUrl(
+              get(row, [
+                "Baseball Reference",
+                "BBRef",
+                "Baseball Reference Link"
+              ])
+            );
+
+
+          let href = "";
+
+          let isBrefLink = false;
+
+
+          if (
+            isRealValue(playerID)
+          ) {
+
+            href =
+              `${
+                archived
+                  ? "archive-player.html"
+                  : "player.html"
+              }?id=${encodeURIComponent(
+                playerID
+              )}`;
+
+
+          } else if (
+            isRealValue(bref)
+          ) {
+
+            href = bref;
+
+            isBrefLink = true;
+          }
+
+
+          return `
+
+            <tr>
+
+              <td class="draft-tag-cell">
+                ${renderDraftTags(row)}
+              </td>
+
+
+              <td>
+                ${get(
+                  row,
+                  [
+                    "Position",
+                    "Pos"
+                  ]
+                )}
+              </td>
+
+
+              <td>
+
+                ${
+                  href
+
+                    ? `
+                      <a
+                        href="${href}"
+                        ${
+                          isBrefLink
+                            ? `target="_blank" rel="noopener"`
+                            : ""
+                        }
+                      >
+                        ${player}
+
+                        ${
+                          isBrefLink
+                            ? `
+                              <span class="bref-badge">
+                                BRef
+                              </span>
+                            `
+                            : ""
+                        }
+
+                      </a>
+                    `
+
+                    : player
+                }
+
+              </td>
+
+
+              <td>
+                ${get(
+                  row,
+                  ["Country"]
+                )}
+              </td>
+
+
+              <td>
+                ${get(
+                  row,
+                  ["Signing Bonus"]
+                )}
+              </td>
+
+
+              <td>
+                ${get(
+                  row,
+                  ["Pool Hit"]
+                )}
+              </td>
+
+
+              <td>
+                ${get(
+                  row,
+                  ["Date Signed"]
+                )}
+              </td>
+
+
+              <td>
+                ${get(
+                  row,
+                  ["Signing Scout"]
+                )}
+              </td>
+
+            </tr>
+          `;
+
+        })
+        .join("");
 }
 
-function renderInternationalInfo(poolRow, year) {
-  const box = document.getElementById("intlInfo");
+
+/* =========================
+   INTERNATIONAL CLASS SUMMARY
+========================= */
+
+function renderInternationalClassSummary(
+  rows,
+  year
+) {
+
+  const box =
+    document.getElementById(
+      "internationalClassSummary"
+    );
+
+
   if (!box) return;
 
-  box.innerHTML = `
-    <div class="draft-info-grid">
-      <div>
-        <h3>${year} International Notes</h3>
 
-        <p><strong>Signing Period:</strong> ${get(poolRow, ["Signing Period"]) || "N/A"}</p>
-        <p><strong>GM/POBO:</strong> ${get(poolRow, ["GM/POBO"]) || "N/A"}</p>
-        <p><strong>International Scouting Director:</strong> ${get(poolRow, ["International Scouting Director"]) || "N/A"}</p>
+  let signed = 0;
+
+  let stillInOrg = 0;
+
+  let mlbBrewers = 0;
+
+  let mlbOther = 0;
+
+  let traded = 0;
+
+  let released = 0;
+
+  let waived = 0;
+
+  let mlbFreeAgent = 0;
+
+  let minorLeagueFreeAgent = 0;
+
+  let unsigned = 0;
+
+
+  const countryCounts =
+    new Map();
+
+
+  rows.forEach(row => {
+
+    const player =
+      get(row, ["Player"]);
+
+
+    if (
+      !isRealValue(player)
+    ) {
+      return;
+    }
+
+
+    const tags = [
+      get(row, ["Tag 1"]),
+      get(row, ["Tag 2"])
+    ]
+      .map(tag =>
+        String(tag || "")
+          .trim()
+          .toUpperCase()
+      )
+      .filter(Boolean);
+
+
+    const didNotSign =
+      tags.includes("DNS");
+
+
+    /*
+      Players with DNS do not
+      count as actual signings.
+    */
+
+    if (didNotSign) {
+
+      unsigned++;
+
+    } else {
+
+      signed++;
+
+
+      /* =========================
+         COUNTRY COUNTS
+      ========================= */
+
+      const country =
+        String(
+          get(row, ["Country"]) || ""
+        )
+          .trim();
+
+
+      if (
+        isRealValue(country)
+      ) {
+
+        countryCounts.set(
+          country,
+          (
+            countryCounts.get(country) ||
+            0
+          ) + 1
+        );
+      }
+    }
+
+
+    /* =========================
+       STATUS COUNTS
+    ========================= */
+
+    if (
+      tags.includes("CREW")
+    ) {
+      stillInOrg++;
+    }
+
+
+    if (
+      tags.includes("MLB")
+    ) {
+      mlbBrewers++;
+    }
+
+
+    if (
+      tags.includes("MLB-O")
+    ) {
+      mlbOther++;
+    }
+
+
+    if (
+      tags.includes("TRADED")
+    ) {
+      traded++;
+    }
+
+
+    if (
+      tags.includes("RELEASED")
+    ) {
+      released++;
+    }
+
+
+    if (
+      tags.includes("WAIVED")
+    ) {
+      waived++;
+    }
+
+
+    if (
+      tags.includes("FA")
+    ) {
+      mlbFreeAgent++;
+    }
+
+
+    if (
+      tags.includes("MLFA")
+    ) {
+      minorLeagueFreeAgent++;
+    }
+
+  });
+
+
+  const summaryItems = [
+
+    {
+      label:
+        "Players Signed",
+      value:
+        signed,
+      show:
+        true
+    },
+
+    {
+      label:
+        "Still in Organization",
+      value:
+        stillInOrg,
+      show:
+        true
+    },
+
+    {
+      label:
+        "Reached MLB with Brewers",
+      value:
+        mlbBrewers,
+      show:
+        mlbBrewers > 0
+    },
+
+    {
+      label:
+        "Reached MLB Elsewhere",
+      value:
+        mlbOther,
+      show:
+        mlbOther > 0
+    },
+
+    {
+      label:
+        "Traded",
+      value:
+        traded,
+      show:
+        traded > 0
+    },
+
+    {
+      label:
+        "Released",
+      value:
+        released,
+      show:
+        released > 0
+    },
+
+    {
+      label:
+        "Waived / DFA",
+      value:
+        waived,
+      show:
+        waived > 0
+    },
+
+    {
+      label:
+        "MLB Free Agent",
+      value:
+        mlbFreeAgent,
+      show:
+        mlbFreeAgent > 0
+    },
+
+    {
+      label:
+        "Minor League Free Agent",
+      value:
+        minorLeagueFreeAgent,
+      show:
+        minorLeagueFreeAgent > 0
+    },
+
+    {
+      label:
+        "Did Not Sign",
+      value:
+        unsigned,
+      show:
+        unsigned > 0
+    }
+
+  ];
+
+
+  const countries =
+    [...countryCounts.entries()]
+      .sort(
+        (a, b) => {
+
+          if (
+            b[1] !== a[1]
+          ) {
+            return b[1] - a[1];
+          }
+
+
+          return a[0]
+            .localeCompare(b[0]);
+        }
+      );
+
+
+  box.innerHTML = `
+
+    <div class="draft-class-summary">
+
+      <h3>
+        ${year} International Class Summary
+      </h3>
+
+
+      <div class="draft-class-summary-grid">
+
+        ${summaryItems
+          .filter(item =>
+            item.show
+          )
+          .map(item => `
+
+            <div class="draft-class-summary-item">
+
+              <span class="draft-class-summary-value">
+                ${item.value}
+              </span>
+
+              <span class="draft-class-summary-label">
+                ${item.label}
+              </span>
+
+            </div>
+
+          `)
+          .join("")}
+
       </div>
 
+
+      ${
+        countries.length
+
+          ? `
+
+            <div class="international-country-summary">
+
+              <h4>
+                Players Signed By Country
+              </h4>
+
+
+              <div class="international-country-grid">
+
+                ${countries
+                  .map(
+                    ([country, count]) => `
+
+                      <div class="international-country-item">
+
+                        <span class="international-country-flag">
+                          ${getCountryFlag(
+                            country
+                          )}
+                        </span>
+
+
+                        <span class="international-country-name">
+                          ${escapeInternationalHTML(
+                            country
+                          )}
+                        </span>
+
+
+                        <span class="international-country-count">
+                          ${count}
+                        </span>
+
+                      </div>
+
+                    `
+                  )
+                  .join("")}
+
+              </div>
+
+            </div>
+
+          `
+
+          : ""
+      }
+
+    </div>
+  `;
+}
+
+
+/* =========================
+   COUNTRY FLAGS
+========================= */
+
+function getCountryFlag(
+  country
+) {
+
+  const clean =
+    String(country || "")
+      .trim()
+      .toLowerCase();
+
+
+  const countryCodes = {
+
+    "dominican republic": "DO",
+    "dominican": "DO",
+    "d.r.": "DO",
+    "dr": "DO",
+
+    "venezuela": "VE",
+
+    "colombia": "CO",
+
+    "panama": "PA",
+
+    "mexico": "MX",
+
+    "nicaragua": "NI",
+
+    "costa rica": "CR",
+
+    "honduras": "HN",
+
+    "guatemala": "GT",
+
+    "el salvador": "SV",
+
+    "belize": "BZ",
+
+    "bahamas": "BS",
+    "the bahamas": "BS",
+
+    "aruba": "AW",
+
+    "curacao": "CW",
+    "curaçao": "CW",
+
+    "bonaire": "BQ",
+
+    "cuba": "CU",
+
+    "haiti": "HT",
+
+    "jamaica": "JM",
+
+    "puerto rico": "PR",
+
+    "brazil": "BR",
+
+    "peru": "PE",
+
+    "ecuador": "EC",
+
+    "argentina": "AR",
+
+    "chile": "CL",
+
+    "canada": "CA",
+
+    "united states": "US",
+    "usa": "US",
+    "u.s.": "US",
+
+    "spain": "ES",
+
+    "italy": "IT",
+
+    "germany": "DE",
+
+    "france": "FR",
+
+    "netherlands": "NL",
+
+    "australia": "AU",
+
+    "new zealand": "NZ",
+
+    "south korea": "KR",
+    "korea": "KR",
+
+    "japan": "JP",
+
+    "taiwan": "TW",
+
+    "china": "CN",
+
+    "philippines": "PH"
+
+  };
+
+
+  const code =
+    countryCodes[clean];
+
+
+  if (!code) {
+    return "🌐";
+  }
+
+
+  return code
+    .split("")
+    .map(letter =>
+      String.fromCodePoint(
+        127397 +
+        letter.charCodeAt(0)
+      )
+    )
+    .join("");
+}
+
+
+/* =========================
+   INTERNATIONAL HTML SAFETY
+========================= */
+
+function escapeInternationalHTML(
+  value
+) {
+
+  return String(value ?? "")
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&#039;");
+}
+
+
+/* =========================
+   INTERNATIONAL NOTES / LEGEND
+========================= */
+
+function renderInternationalInfo(
+  poolRow,
+  year
+) {
+
+  const box =
+    document.getElementById(
+      "intlInfo"
+    );
+
+
+  if (!box) return;
+
+
+  box.innerHTML = `
+
+    <div class="draft-info-grid">
+
       <div>
-        <h3>International Legend</h3>
+
+        <h3>
+          ${year} International Notes
+        </h3>
+
+
+        <p>
+          <strong>
+            Signing Period:
+          </strong>
+
+          ${get(
+            poolRow,
+            ["Signing Period"]
+          ) || "N/A"}
+        </p>
+
+
+        <p>
+          <strong>
+            GM/POBO:
+          </strong>
+
+          ${get(
+            poolRow,
+            ["GM/POBO"]
+          ) || "N/A"}
+        </p>
+
+
+        <p>
+          <strong>
+            International Scouting Director:
+          </strong>
+
+          ${get(
+            poolRow,
+            [
+              "International Scouting Director"
+            ]
+          ) || "N/A"}
+        </p>
+
+      </div>
+
+
+      <div>
+
+        <h3>
+          International Legend
+        </h3>
+
 
         <div class="draft-legend">
-          ${draftLegendRow("CREW", "draft-tag-navy", "Player currently in Brewers organization")}
-          ${draftLegendRow("DNS", "draft-tag-red", "Player did not sign with Brewers")}
-          ${draftLegendRow("MLB", "draft-tag-navy", "Player has MLB experience with Brewers")}
-          ${draftLegendRow("MLB", "draft-tag-yellow", "Player has MLB experience, not with Brewers")}
-          ${draftLegendRow("Released", "draft-tag-light", "Player was released by Brewers")}
-          ${draftLegendRow("Traded", "draft-tag-light", "Player was traded by Brewers")}
-          ${draftLegendRow("Waived", "draft-tag-light", "Player was waived/DFA'd by Brewers")}
-          ${draftLegendRow("FA", "draft-tag-light", "Player left Brewers as MLB free agent")}
-          ${draftLegendRow("MLFA", "draft-tag-light", "Player left Brewers as minor league free agent")}
+
+          ${draftLegendRow(
+            "CREW",
+            "draft-tag-navy",
+            "Player currently in Brewers organization"
+          )}
+
+
+          ${draftLegendRow(
+            "DNS",
+            "draft-tag-red",
+            "Player did not sign with Brewers"
+          )}
+
+
+          ${draftLegendRow(
+            "MLB",
+            "draft-tag-navy",
+            "Player has MLB experience with Brewers"
+          )}
+
+
+          ${draftLegendRow(
+            "MLB",
+            "draft-tag-yellow",
+            "Player has MLB experience, not with Brewers"
+          )}
+
+
+          ${draftLegendRow(
+            "Released",
+            "draft-tag-light",
+            "Player was released by Brewers"
+          )}
+
+
+          ${draftLegendRow(
+            "Traded",
+            "draft-tag-light",
+            "Player was traded by Brewers"
+          )}
+
+
+          ${draftLegendRow(
+            "Waived",
+            "draft-tag-light",
+            "Player was waived/DFA'd by Brewers"
+          )}
+
+
+          ${draftLegendRow(
+            "FA",
+            "draft-tag-light",
+            "Player left Brewers as MLB free agent"
+          )}
+
+
+          ${draftLegendRow(
+            "MLFA",
+            "draft-tag-light",
+            "Player left Brewers as minor league free agent"
+          )}
+
         </div>
 
+
         <div class="draft-legend-notes">
-          <p><strong>Signing Bonus:</strong> Amount player signed for</p>
-          <p><strong>Pool Hit:</strong> Amount of Bonus $ counted towards Bonus Pool Cap</p>
+
+          <p>
+            <strong>Signing Bonus:</strong>
+            Amount player signed for
+          </p>
+
+
+          <p>
+            <strong>Pool Hit:</strong>
+            Amount of Bonus $ counted towards Bonus Pool Cap
+          </p>
+
         </div>
+
       </div>
+
     </div>
   `;
 }
