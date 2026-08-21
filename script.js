@@ -1740,41 +1740,128 @@ function renderDepthSection(
 
 async function initDraftPage() {
   try {
-    const rows = await loadSheet("Draft History");
 
-    const years = [...new Set(
-      rows
-        .map(row => get(row, ["Draft Year"]))
-        .filter(isRealValue)
-    )].sort((a, b) => Number(b) - Number(a));
+    const rows =
+      await loadSheet("Draft History");
 
-    renderDraftTabs(rows, years);
-    renderDraftYear(rows, years[0]);
+
+    const years =
+      [...new Set(
+        rows
+          .map(row =>
+            get(row, ["Draft Year"])
+          )
+          .filter(isRealValue)
+      )]
+        .sort(
+          (a, b) =>
+            Number(b) - Number(a)
+        );
+
+
+    renderDraftTabs(
+      rows,
+      years
+    );
+
+
+    renderDraftYear(
+      rows,
+      years[0]
+    );
+
+
   } catch (err) {
-    console.error("Draft page:", err);
+
+    console.error(
+      "Draft page:",
+      err
+    );
   }
 }
 
-function renderDraftTabs(rows, years) {
-  const tabs = document.getElementById("draftYearTabs");
+
+/* =========================
+   YEAR TABS
+========================= */
+
+function renderDraftTabs(
+  rows,
+  years
+) {
+
+  const tabs =
+    document.getElementById(
+      "draftYearTabs"
+    );
+
+
   if (!tabs) return;
 
-  tabs.innerHTML = years.map((year, index) => `
-    <button class="draft-tab ${index === 0 ? "active" : ""}" data-year="${year}">
-      ${year}
-    </button>
-  `).join("");
 
-  tabs.querySelectorAll(".draft-tab").forEach(tab => {
-    tab.addEventListener("click", () => {
-      tabs.querySelectorAll(".draft-tab").forEach(t => t.classList.remove("active"));
-      tab.classList.add("active");
-      renderDraftYear(rows, tab.dataset.year);
+  tabs.innerHTML =
+    years
+      .map((year, index) => `
+
+        <button
+          class="draft-tab ${
+            index === 0
+              ? "active"
+              : ""
+          }"
+          data-year="${year}"
+        >
+          ${year}
+        </button>
+
+      `)
+      .join("");
+
+
+  tabs
+    .querySelectorAll(
+      ".draft-tab"
+    )
+    .forEach(tab => {
+
+      tab.addEventListener(
+        "click",
+        () => {
+
+          tabs
+            .querySelectorAll(
+              ".draft-tab"
+            )
+            .forEach(t =>
+              t.classList.remove(
+                "active"
+              )
+            );
+
+
+          tab.classList.add(
+            "active"
+          );
+
+
+          renderDraftYear(
+            rows,
+            tab.dataset.year
+          );
+        }
+      );
     });
-  });
 }
 
-function renderDraftYear(rows, year) {
+
+/* =========================
+   RENDER SELECTED YEAR
+========================= */
+
+function renderDraftYear(
+  rows,
+  year
+) {
 
   const yearRows =
     rows.filter(row =>
@@ -1802,20 +1889,341 @@ function renderDraftYear(rows, year) {
     );
 
 
-  renderDraftSummary(poolRow);
+  renderDraftSummary(
+    poolRow
+  );
 
-  renderDraftTable(playerRows);
+
+  renderDraftTable(
+    playerRows
+  );
+
 
   renderDraftClassSummary(
     playerRows,
     year
   );
 
+
   renderDraftInfo(
     poolRow,
     year
   );
 }
+
+
+/* =========================
+   BONUS POOL SUMMARY
+========================= */
+
+function renderDraftSummary(
+  poolRow
+) {
+
+  const box =
+    document.getElementById(
+      "draftSummary"
+    );
+
+
+  if (!box) return;
+
+
+  if (!poolRow) {
+
+    box.innerHTML = "";
+
+    return;
+  }
+
+
+  box.innerHTML = `
+
+    <div class="draft-summary">
+
+      <span>
+        Bonus Pool Cap:
+        <strong>
+          ${get(
+            poolRow,
+            ["Bonus Pool Cap"]
+          )}
+        </strong>
+      </span>
+
+
+      <span>
+        Cap + 5%:
+        <strong>
+          ${get(
+            poolRow,
+            ["Cap + 5%"]
+          )}
+        </strong>
+      </span>
+
+
+      <span>
+        Cap $ Spent:
+        <strong>
+          ${get(
+            poolRow,
+            ["Cap $ Spent"]
+          )}
+        </strong>
+      </span>
+
+
+      <span>
+        Cap $ Remaining:
+        <strong>
+          ${get(
+            poolRow,
+            ["Cap $ Remaining"]
+          )}
+        </strong>
+      </span>
+
+    </div>
+  `;
+}
+
+
+/* =========================
+   DRAFT TABLE
+========================= */
+
+function renderDraftTable(
+  rows
+) {
+
+  const table =
+    document.getElementById(
+      "draftTable"
+    );
+
+
+  if (!table) return;
+
+
+  const headers = [
+    "Tags",
+    "Rd",
+    "OVR Pick",
+    "Position",
+    "Player",
+    "School",
+    "Slot Value",
+    "Signing Bonus",
+    "Pool Hit",
+    "Signing Scout"
+  ];
+
+
+  table
+    .querySelector("thead")
+    .innerHTML = `
+
+      <tr>
+        ${headers
+          .map(h =>
+            `<th>${h}</th>`
+          )
+          .join("")}
+      </tr>
+    `;
+
+
+  table
+    .querySelector("tbody")
+    .innerHTML =
+
+      rows
+        .map(row => {
+
+          const player =
+            get(row, ["Player"]);
+
+
+          const playerID =
+            get(row, [
+              "Player ID",
+              "Player-ID"
+            ]);
+
+
+          const archived =
+            String(
+              get(row, [
+                "Archived?",
+                "Archived",
+                "Archive"
+              ])
+            )
+              .toLowerCase()
+              .trim() === "yes";
+
+
+          const bref =
+            cleanUrl(
+              get(row, [
+                "Baseball Reference",
+                "BBRef",
+                "Baseball Reference Link"
+              ])
+            );
+
+
+          let isBrefLink = false;
+
+          let href = "";
+
+
+          if (
+            isRealValue(playerID)
+          ) {
+
+            href =
+              `${
+                archived
+                  ? "archive-player.html"
+                  : "player.html"
+              }?id=${encodeURIComponent(
+                playerID
+              )}`;
+
+
+          } else if (
+            isRealValue(bref)
+          ) {
+
+            href = bref;
+
+            isBrefLink = true;
+          }
+
+
+          return `
+
+            <tr>
+
+              <td class="draft-tag-cell">
+                ${renderDraftTags(row)}
+              </td>
+
+
+              <td>
+                ${get(
+                  row,
+                  ["Rd", "Round"]
+                )}
+              </td>
+
+
+              <td>
+                ${get(
+                  row,
+                  ["OVR Pick"]
+                )}
+              </td>
+
+
+              <td>
+                ${get(
+                  row,
+                  [
+                    "Position",
+                    "Pos"
+                  ]
+                )}
+              </td>
+
+
+              <td>
+
+                ${
+                  href
+
+                    ? `
+                      <a
+                        href="${href}"
+                        ${
+                          isBrefLink
+                            ? `target="_blank" rel="noopener"`
+                            : ""
+                        }
+                      >
+                        ${player}
+
+                        ${
+                          isBrefLink
+                            ? `
+                              <span class="bref-badge">
+                                BRef
+                              </span>
+                            `
+                            : ""
+                        }
+
+                      </a>
+                    `
+
+                    : player
+                }
+
+              </td>
+
+
+              <td>
+                ${get(
+                  row,
+                  ["School"]
+                )}
+              </td>
+
+
+              <td>
+                ${get(
+                  row,
+                  ["Slot Value"]
+                )}
+              </td>
+
+
+              <td>
+                ${get(
+                  row,
+                  [
+                    "Signing Bonus",
+                    "Signing Bonus "
+                  ]
+                )}
+              </td>
+
+
+              <td>
+                ${get(
+                  row,
+                  ["Pool Hit"]
+                )}
+              </td>
+
+
+              <td>
+                ${get(
+                  row,
+                  ["Signing Scout"]
+                )}
+              </td>
+
+            </tr>
+          `;
+
+        })
+        .join("");
+}
+
+
 /* =========================
    DRAFT CLASS SUMMARY
 ========================= */
@@ -1835,6 +2243,8 @@ function renderDraftClassSummary(
 
 
   let selected = 0;
+
+  let ndfa = 0;
 
   let stillInOrg = 0;
 
@@ -1861,13 +2271,44 @@ function renderDraftClassSummary(
       get(row, ["Player"]);
 
 
-    if (!isRealValue(player)) {
+    if (
+      !isRealValue(player)
+    ) {
       return;
     }
 
 
-    selected++;
+    /* =========================
+       DRAFT PICK VS NDFA
 
+       NDFA is determined ONLY
+       by the Rd column.
+    ========================= */
+
+    const round =
+      String(
+        get(row, [
+          "Rd",
+          "Round"
+        ]) || ""
+      )
+        .trim()
+        .toUpperCase();
+
+
+    if (round === "NDFA") {
+
+      ndfa++;
+
+    } else {
+
+      selected++;
+    }
+
+
+    /* =========================
+       STATUS TAGS
+    ========================= */
 
     const tags = [
       get(row, ["Tag 1"]),
@@ -1881,16 +2322,12 @@ function renderDraftClassSummary(
       .filter(Boolean);
 
 
-    /* Still with Milwaukee */
-
     if (
       tags.includes("CREW")
     ) {
       stillInOrg++;
     }
 
-
-    /* MLB with Milwaukee */
 
     if (
       tags.includes("MLB")
@@ -1899,16 +2336,12 @@ function renderDraftClassSummary(
     }
 
 
-    /* MLB elsewhere */
-
     if (
       tags.includes("MLB-O")
     ) {
       mlbOther++;
     }
 
-
-    /* Traded */
 
     if (
       tags.includes("TRADED")
@@ -1917,16 +2350,12 @@ function renderDraftClassSummary(
     }
 
 
-    /* Released */
-
     if (
       tags.includes("RELEASED")
     ) {
       released++;
     }
 
-
-    /* Waived / DFA */
 
     if (
       tags.includes("WAIVED")
@@ -1935,8 +2364,6 @@ function renderDraftClassSummary(
     }
 
 
-    /* MLB Free Agency */
-
     if (
       tags.includes("FA")
     ) {
@@ -1944,16 +2371,12 @@ function renderDraftClassSummary(
     }
 
 
-    /* Minor League Free Agency */
-
     if (
       tags.includes("MLFA")
     ) {
       minorLeagueFreeAgent++;
     }
 
-
-    /* Did Not Sign */
 
     if (
       tags.includes("DNS")
@@ -1967,63 +2390,102 @@ function renderDraftClassSummary(
   const summaryItems = [
 
     {
-      label: "Players Selected",
-      value: selected,
-      show: true
+      label:
+        "Players Selected",
+      value:
+        selected,
+      show:
+        true
     },
 
     {
-      label: "Still in Organization",
-      value: stillInOrg,
-      show: true
+      label:
+        "NDFA Signings",
+      value:
+        ndfa,
+      show:
+        ndfa > 0
     },
 
     {
-      label: "Reached MLB with Brewers",
-      value: mlbBrewers,
-      show: true
+      label:
+        "Still in Organization",
+      value:
+        stillInOrg,
+      show:
+        true
     },
 
     {
-      label: "Reached MLB Elsewhere",
-      value: mlbOther,
-      show: true
+      label:
+        "Reached MLB with Brewers",
+      value:
+        mlbBrewers,
+      show:
+        mlbBrewers > 0
     },
 
     {
-      label: "Traded",
-      value: traded,
-      show: traded > 0
+      label:
+        "Reached MLB Elsewhere",
+      value:
+        mlbOther,
+      show:
+        mlbOther > 0
     },
 
     {
-      label: "Released",
-      value: released,
-      show: released > 0
+      label:
+        "Traded",
+      value:
+        traded,
+      show:
+        traded > 0
     },
 
     {
-      label: "Waived / DFA",
-      value: waived,
-      show: waived > 0
+      label:
+        "Released",
+      value:
+        released,
+      show:
+        released > 0
     },
 
     {
-      label: "MLB Free Agent",
-      value: mlbFreeAgent,
-      show: mlbFreeAgent > 0
+      label:
+        "Waived / DFA",
+      value:
+        waived,
+      show:
+        waived > 0
     },
 
     {
-      label: "Minor League Free Agent",
-      value: minorLeagueFreeAgent,
-      show: minorLeagueFreeAgent > 0
+      label:
+        "MLB Free Agent",
+      value:
+        mlbFreeAgent,
+      show:
+        mlbFreeAgent > 0
     },
 
     {
-      label: "Did Not Sign",
-      value: unsigned,
-      show: unsigned > 0
+      label:
+        "Minor League Free Agent",
+      value:
+        minorLeagueFreeAgent,
+      show:
+        minorLeagueFreeAgent > 0
+    },
+
+    {
+      label:
+        "Did Not Sign",
+      value:
+        unsigned,
+      show:
+        unsigned > 0
     }
 
   ];
@@ -2041,7 +2503,9 @@ function renderDraftClassSummary(
       <div class="draft-class-summary-grid">
 
         ${summaryItems
-          .filter(item => item.show)
+          .filter(item =>
+            item.show
+          )
           .map(item => `
 
             <div class="draft-class-summary-item">
@@ -2064,184 +2528,365 @@ function renderDraftClassSummary(
     </div>
   `;
 }
-function renderDraftSummary(poolRow) {
-  const box = document.getElementById("draftSummary");
-  if (!box) return;
 
-  if (!poolRow) {
-    box.innerHTML = "";
-    return;
-  }
 
-  box.innerHTML = `
-    <div class="draft-summary">
-      <span>Bonus Pool Cap: <strong>${get(poolRow, ["Bonus Pool Cap"])}</strong></span>
-      <span>Cap + 5%: <strong>${get(poolRow, ["Cap + 5%"])}</strong></span>
-      <span>Cap $ Spent: <strong>${get(poolRow, ["Cap $ Spent"])}</strong></span>
-      <span>Cap $ Remaining: <strong>${get(poolRow, ["Cap $ Remaining"])}</strong></span>
-    </div>
-  `;
-}
-
-function renderDraftTable(rows) {
-  const table = document.getElementById("draftTable");
-  if (!table) return;
-
-  const headers = [
-    "Tags",
-    "Rd",
-    "OVR Pick",
-    "Position",
-    "Player",
-    "School",
-    "Slot Value",
-    "Signing Bonus",
-    "Pool Hit",
-    "Signing Scout"
-  ];
-
-  table.querySelector("thead").innerHTML = `
-    <tr>
-      ${headers.map(h => `<th>${h}</th>`).join("")}
-    </tr>
-  `;
-
-  table.querySelector("tbody").innerHTML = rows.map(row => {
-    const player = get(row, ["Player"]);
-    const playerID = get(row, ["Player ID", "Player-ID"]);
-    const archived = String(get(row, ["Archived?", "Archived", "Archive"]))
-      .toLowerCase()
-      .trim() === "yes";
-
-    const bref = cleanUrl(get(row, ["Baseball Reference", "BBRef", "Baseball Reference Link"]));
-    let isBrefLink = false;
-    let href = "";
-
-    if (isRealValue(playerID)) {
-      href = `${archived ? "archive-player.html" : "player.html"}?id=${encodeURIComponent(playerID)}`;
-    } else if (isRealValue(bref)) {
-      href = bref;
-      isBrefLink = true;
-    }
-
-    return `
-      <tr>
-        <td class="draft-tag-cell">
-          ${renderDraftTags(row)}
-        </td>
-        <td>${get(row, ["Rd"])}</td>
-        <td>${get(row, ["OVR Pick"])}</td>
-        <td>${get(row, ["Position", "Pos"])}</td>
-        <td>
-          ${href
-            ? `<a href="${href}" ${isBrefLink ? `target="_blank" rel="noopener"` : ""}>
-                ${player}
-                ${isBrefLink ? `<span class="bref-badge">BRef</span>` : ""}
-              </a>`
-            : player
-          }
-        </td>
-        <td>${get(row, ["School"])}</td>
-        <td>${get(row, ["Slot Value"])}</td>
-        <td>${get(row, ["Signing Bonus", "Signing Bonus "])}</td>
-        <td>${get(row, ["Pool Hit"])}</td>
-        <td>${get(row, ["Signing Scout"])}</td>
-      </tr>
-    `;
-  }).join("");
-}
+/* =========================
+   DRAFT TAGS
+========================= */
 
 function renderDraftTags(row) {
-  const tags = [
-    { tag: get(row, ["Tag 1"]), note: get(row, ["Tag 1 Note"]) },
-    { tag: get(row, ["Tag 2"]), note: get(row, ["Tag 2 Note"]) }
-  ].filter(item => isRealValue(item.tag));
 
-  if (!tags.length) return "";
+  const tags = [
+
+    {
+      tag:
+        get(row, ["Tag 1"]),
+
+      note:
+        get(row, ["Tag 1 Note"])
+    },
+
+    {
+      tag:
+        get(row, ["Tag 2"]),
+
+      note:
+        get(row, ["Tag 2 Note"])
+    }
+
+  ]
+    .filter(item =>
+      isRealValue(item.tag)
+    );
+
+
+  if (!tags.length) {
+    return "";
+  }
+
 
   return `
-    <div class="draft-tags ${tags.length === 1 ? "single" : ""}">
-      ${tags.map(item => `
-        <span class="${getDraftTagClass(item.tag)} draft-tag-tooltip">
-          ${formatDraftTagText(item.tag)}
-          ${isRealValue(item.note)
-            ? `<span class="draft-tooltip-text">${item.note}</span>`
-            : ""
-          }
-        </span>
-      `).join("")}
+
+    <div
+      class="draft-tags ${
+        tags.length === 1
+          ? "single"
+          : ""
+      }"
+    >
+
+      ${tags
+        .map(item => `
+
+          <span
+            class="${getDraftTagClass(
+              item.tag
+            )} draft-tag-tooltip"
+          >
+
+            ${formatDraftTagText(
+              item.tag
+            )}
+
+
+            ${
+              isRealValue(
+                item.note
+              )
+
+                ? `
+                  <span class="draft-tooltip-text">
+                    ${item.note}
+                  </span>
+                `
+
+                : ""
+            }
+
+          </span>
+
+        `)
+        .join("")}
+
     </div>
   `;
 }
 
-function formatDraftTagText(tag) {
-  const clean = String(tag || "").trim();
 
-  if (clean === "MLB-O") return "MLB";
+/* =========================
+   FORMAT TAG TEXT
+========================= */
+
+function formatDraftTagText(
+  tag
+) {
+
+  const clean =
+    String(tag || "")
+      .trim();
+
+
+  if (
+    clean === "MLB-O"
+  ) {
+    return "MLB";
+  }
+
 
   return clean;
 }
 
-function getDraftTagClass(tag) {
-  const clean = String(tag || "").trim().toLowerCase();
 
-  if (clean === "crew") return "draft-tag draft-tag-navy";
-  if (clean === "dns") return "draft-tag draft-tag-red";
-  if (clean === "mlb") return "draft-tag draft-tag-navy";
-  if (clean === "mlb-o") return "draft-tag draft-tag-yellow";
+/* =========================
+   TAG COLORS
+========================= */
+
+function getDraftTagClass(
+  tag
+) {
+
+  const clean =
+    String(tag || "")
+      .trim()
+      .toLowerCase();
+
+
+  if (
+    clean === "crew"
+  ) {
+    return "draft-tag draft-tag-navy";
+  }
+
+
+  if (
+    clean === "dns"
+  ) {
+    return "draft-tag draft-tag-red";
+  }
+
+
+  if (
+    clean === "mlb"
+  ) {
+    return "draft-tag draft-tag-navy";
+  }
+
+
+  if (
+    clean === "mlb-o"
+  ) {
+    return "draft-tag draft-tag-yellow";
+  }
+
 
   return "draft-tag draft-tag-light";
 }
 
-function renderDraftInfo(poolRow, year) {
-  const box = document.getElementById("draftInfo");
+
+/* =========================
+   DRAFT NOTES / LEGEND
+========================= */
+
+function renderDraftInfo(
+  poolRow,
+  year
+) {
+
+  const box =
+    document.getElementById(
+      "draftInfo"
+    );
+
+
   if (!box) return;
 
-  box.innerHTML = `
-    <div class="draft-info-grid">
-      <div>
-        <h3>${year} Draft Notes</h3>
 
-        <p><strong>Dates:</strong> ${get(poolRow, ["Dates"]) || "N/A"}</p>
-        <p><strong>GM/POBO:</strong> ${get(poolRow, ["GM/POBO"]) || "N/A"}</p>
-        <p><strong>Scouting Director:</strong> ${get(poolRow, ["Scouting Director"]) || "N/A"}</p>
-        <p><strong>Signing Deadline:</strong> ${get(poolRow, ["Signing Deadline"]) || "N/A"}</p>
+  box.innerHTML = `
+
+    <div class="draft-info-grid">
+
+      <div>
+
+        <h3>
+          ${year} Draft Notes
+        </h3>
+
+
+        <p>
+          <strong>Dates:</strong>
+          ${get(
+            poolRow,
+            ["Dates"]
+          ) || "N/A"}
+        </p>
+
+
+        <p>
+          <strong>GM/POBO:</strong>
+          ${get(
+            poolRow,
+            ["GM/POBO"]
+          ) || "N/A"}
+        </p>
+
+
+        <p>
+          <strong>
+            Scouting Director:
+          </strong>
+
+          ${get(
+            poolRow,
+            ["Scouting Director"]
+          ) || "N/A"}
+        </p>
+
+
+        <p>
+          <strong>
+            Signing Deadline:
+          </strong>
+
+          ${get(
+            poolRow,
+            ["Signing Deadline"]
+          ) || "N/A"}
+        </p>
+
 
         <p class="draft-note-text">
           Unsigned picks must sign by the listed deadline unless otherwise eligible to return to school.
         </p>
+
       </div>
+
 
       <div>
-        <h3>Draft Legend</h3>
+
+        <h3>
+          Draft Legend
+        </h3>
+
 
         <div class="draft-legend">
-          ${draftLegendRow("CREW", "draft-tag-navy", "Player currently in Brewers organization")}
-          ${draftLegendRow("DNS", "draft-tag-red", "Player did not sign with Brewers")}
-          ${draftLegendRow("MLB", "draft-tag-navy", "Player has MLB experience with Brewers")}
-          ${draftLegendRow("MLB", "draft-tag-yellow", "Player has MLB experience, not with Brewers")}
-          ${draftLegendRow("Released", "draft-tag-light", "Player was released by Brewers")}
-          ${draftLegendRow("Traded", "draft-tag-light", "Player was traded by Brewers")}
-          ${draftLegendRow("Waived", "draft-tag-light", "Player was waived/DFA'd by Brewers")}
-          ${draftLegendRow("FA", "draft-tag-light", "Player left Brewers as MLB free agent")}
-          ${draftLegendRow("MLFA", "draft-tag-light", "Player left Brewers as minor league free agent")}
+
+          ${draftLegendRow(
+            "CREW",
+            "draft-tag-navy",
+            "Player currently in Brewers organization"
+          )}
+
+
+          ${draftLegendRow(
+            "DNS",
+            "draft-tag-red",
+            "Player did not sign with Brewers"
+          )}
+
+
+          ${draftLegendRow(
+            "MLB",
+            "draft-tag-navy",
+            "Player has MLB experience with Brewers"
+          )}
+
+
+          ${draftLegendRow(
+            "MLB",
+            "draft-tag-yellow",
+            "Player has MLB experience, not with Brewers"
+          )}
+
+
+          ${draftLegendRow(
+            "Released",
+            "draft-tag-light",
+            "Player was released by Brewers"
+          )}
+
+
+          ${draftLegendRow(
+            "Traded",
+            "draft-tag-light",
+            "Player was traded by Brewers"
+          )}
+
+
+          ${draftLegendRow(
+            "Waived",
+            "draft-tag-light",
+            "Player was waived/DFA'd by Brewers"
+          )}
+
+
+          ${draftLegendRow(
+            "FA",
+            "draft-tag-light",
+            "Player left Brewers as MLB free agent"
+          )}
+
+
+          ${draftLegendRow(
+            "MLFA",
+            "draft-tag-light",
+            "Player left Brewers as minor league free agent"
+          )}
+
         </div>
 
+
         <div class="draft-legend-notes">
-          <p><strong>Slot Value:</strong> MLB's slot allotment for the given draft slot</p>
-          <p><strong>Signing Bonus:</strong> Amount player signed for</p>
-          <p><strong>Pool Hit:</strong> Amount of Bonus $ counted towards Bonus Pool Cap</p>
+
+          <p>
+            <strong>Slot Value:</strong>
+            MLB's slot allotment for the given draft slot
+          </p>
+
+
+          <p>
+            <strong>Signing Bonus:</strong>
+            Amount player signed for
+          </p>
+
+
+          <p>
+            <strong>Pool Hit:</strong>
+            Amount of Bonus $ counted towards Bonus Pool Cap
+          </p>
+
         </div>
+
       </div>
+
     </div>
   `;
 }
 
-function draftLegendRow(label, tagClass, text) {
+
+/* =========================
+   LEGEND ROW
+========================= */
+
+function draftLegendRow(
+  label,
+  tagClass,
+  text
+) {
+
   return `
+
     <div class="draft-legend-row">
-      <span class="draft-tag ${tagClass}">${label}</span>
-      <span>${text}</span>
+
+      <span
+        class="draft-tag ${tagClass}"
+      >
+        ${label}
+      </span>
+
+      <span>
+        ${text}
+      </span>
+
     </div>
   `;
 }
