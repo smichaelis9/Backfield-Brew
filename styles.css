@@ -891,6 +891,68 @@ tr:nth-child(even) {
   opacity: 1;
 }
 /* =========================
+   DRAFT CLASS SUMMARY
+========================= */
+
+.draft-class-summary {
+  margin-top: 22px;
+  padding-top: 18px;
+
+  border-top: 2px solid #1b2a4a;
+}
+
+.draft-class-summary h3 {
+  margin: 0 0 12px;
+
+  color: #1b2a4a;
+
+  font-size: 16px;
+}
+
+.draft-class-summary-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(auto-fit, minmax(130px, 1fr));
+
+  gap: 8px;
+}
+
+.draft-class-summary-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  min-height: 62px;
+
+  padding: 8px 10px;
+
+  background: #f4f5f7;
+
+  border: 1px solid #ddd;
+  border-radius: 7px;
+
+  text-align: center;
+}
+
+.draft-class-summary-value {
+  color: #1b2a4a;
+
+  font-size: 19px;
+  font-weight: 900;
+}
+
+.draft-class-summary-label {
+  margin-top: 3px;
+
+  color: #555;
+
+  font-size: 10px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+/* =========================
    RULE 5 / FREE AGENCY
 ========================= */
 
