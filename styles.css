@@ -519,6 +519,11 @@ tr:nth-child(even) {
   color: #e74c3c;
 }
 
+.trend.same {
+  color: #777;
+  font-weight: 700;
+}
+
 .trend.new {
   font-size: 11px;
   padding: 2px 6px;
