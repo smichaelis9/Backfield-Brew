@@ -752,7 +752,7 @@ function renderStats(stats, isPitcher) {
 
   const advancedCols = isPitcher
     ? ["K%","BB%","K-BB %","SwStr %","Whiff%","BABIP","LOB %","LD%","GB%","FB%","IFFB %","HR/FB"]
-    : ["wRC+","BABIP","wOBA","K%","BB%","SwStr %","Whiff%","PULL %","CENT %","OPPO %","LD%","GB%","FB%","IFFB %"];
+    : ["wRC+","BABIP","wOBA","K%","BB%","SwStr %","Whiff%","Pull %","Cent %","Oppo %","LD%","GB%","FB%","IFFB %"];
 
   function buildTable(title, cols) {
     return `
