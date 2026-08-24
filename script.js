@@ -236,7 +236,12 @@ function renderRanking(players) {
       </td>
       <td>${get(p, ["OFP"])}</td>
       <td>${get(p, ["Risk"])}</td>
-      <td>${renderTrending(get(p, ["Trending"]))}</td>
+      <td>
+        ${renderRankMovement(
+          get(p, ["Rank"]),
+          get(p, ["Previous Rank"])
+        )}
+      </td>
       <td>${get(p, ["Position", "Pos"])}</td>
       <td>${get(p, ["Level"])}</td>
       <td>${get(p, ["Age"])}</td>
@@ -245,22 +250,86 @@ function renderRanking(players) {
     </tr>
   `).join("");
 }
-function renderTrending(value) {
-  const v = String(value || "").toLowerCase().trim();
+function renderRankMovement(
+  currentRank,
+  previousRank
+) {
 
-  if (v === "up") {
-    return `<span class="trend up">▲</span>`;
+  const current =
+    Number(currentRank);
+
+  const previous =
+    Number(previousRank);
+
+
+  /* No current rank */
+  if (
+    !Number.isFinite(current)
+  ) {
+    return "";
   }
 
-  if (v === "down") {
-    return `<span class="trend down">▼</span>`;
+
+  /* No previous ranking = NEW */
+  if (
+    previousRank === "" ||
+    previousRank === null ||
+    previousRank === undefined ||
+    !Number.isFinite(previous)
+  ) {
+
+    return `
+      <span
+        class="trend new"
+        title="New to rankings"
+      >
+        NEW
+      </span>
+    `;
   }
 
-  if (v === "new") {
-    return `<span class="trend new">NEW</span>`;
+
+  const change =
+    previous - current;
+
+
+  /* Moved up */
+  if (change > 0) {
+
+    return `
+      <span
+        class="trend up"
+        title="Previously ranked #${previous}"
+      >
+        ▲ ${change}
+      </span>
+    `;
   }
 
-  return "";
+
+  /* Moved down */
+  if (change < 0) {
+
+    return `
+      <span
+        class="trend down"
+        title="Previously ranked #${previous}"
+      >
+        ▼ ${Math.abs(change)}
+      </span>
+    `;
+  }
+
+
+  /* No movement */
+  return `
+    <span
+      class="trend same"
+      title="Previously ranked #${previous}"
+    >
+      —
+    </span>
+  `;
 }
 /* =========================
    PLAYER PAGE
@@ -361,7 +430,10 @@ function renderPlayerPage(bio, tools, stats, isPitcher, videos, isArchive = fals
   : ""}
       <div class="player-main-info">
   <div class="player-trending-above-name">
-    ${renderTrending(get(bio, ["Trending", "Trend", "Movement"]))}
+    ${renderRankMovement(
+      get(bio, ["Rank"]),
+      get(bio, ["Previous Rank"])
+    )}
   </div>
 
   <h1>
