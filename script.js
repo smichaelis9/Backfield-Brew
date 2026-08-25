@@ -63,6 +63,7 @@ const DATA_FILES = {
 
 };
 
+let currentPlayerExportData = null;
 
 /* =========================
    HELPERS
@@ -612,15 +613,23 @@ async function initPlayerPage() {
     /* =========================
        RENDER ONCE
     ========================= */
-
-    renderPlayerPage(
+     
+    currentPlayerExportData = {
+     bio,
+     tools,
+     stats,
+     isPitcher,
+     videos
+   };
+     renderPlayerPage(
       bio,
       tools,
       stats,
       isPitcher,
       videos
     );
-
+     
+   setupPlayerCardExport();
 
   } catch (err) {
 
@@ -1373,6 +1382,869 @@ function formatTransactionDate(value) {
   if (Number.isNaN(date.getTime())) return value;
 
   return `${date.getMonth() + 1}/${date.getDate()}/${date.getFullYear()}`;
+}
+/* =========================
+   PLAYER CARD EXPORT
+========================= */
+
+function setupPlayerCardExport() {
+
+  const button =
+    document.getElementById(
+      "exportPlayerCardButton"
+    );
+
+
+  if (!button) {
+    return;
+  }
+
+
+  button.onclick =
+    exportPlayerCard;
+}
+
+
+async function exportPlayerCard() {
+
+  if (!currentPlayerExportData) {
+    return;
+  }
+
+
+  const {
+    bio,
+    tools,
+    stats,
+    isPitcher
+  } =
+    currentPlayerExportData;
+
+
+  const card =
+    buildPlayerExportCard(
+      bio,
+      tools,
+      stats,
+      isPitcher
+    );
+
+
+  document.body.appendChild(
+    card
+  );
+
+
+  try {
+
+    /*
+      Wait for images and fonts
+      before capturing.
+    */
+
+    await waitForExportImages(
+      card
+    );
+
+
+    if (
+      document.fonts &&
+      document.fonts.ready
+    ) {
+      await document.fonts.ready;
+    }
+
+
+    const canvas =
+      await html2canvas(
+        card,
+        {
+          backgroundColor:
+            "#ffffff",
+
+          scale:
+            2,
+
+          useCORS:
+            true,
+
+          allowTaint:
+            false,
+
+          logging:
+            false
+        }
+      );
+
+
+    const playerName =
+      get(
+        bio,
+        [
+          "Player",
+          "Name"
+        ]
+      );
+
+
+    const safeName =
+      String(playerName)
+        .trim()
+        .replace(
+          /[^a-zA-Z0-9]+/g,
+          "-"
+        )
+        .replace(
+          /^-+|-+$/g,
+          ""
+        );
+
+
+    const link =
+      document.createElement(
+        "a"
+      );
+
+
+    link.download =
+      `${safeName}-Backfield-Brew-Player-Card.png`;
+
+
+    link.href =
+      canvas.toDataURL(
+        "image/png"
+      );
+
+
+    link.click();
+
+
+  } catch (err) {
+
+    console.error(
+      "Player card export:",
+      err
+    );
+
+    alert(
+      "Unable to export player card."
+    );
+
+
+  } finally {
+
+    card.remove();
+  }
+}
+
+
+/* =========================
+   BUILD EXPORT CARD
+========================= */
+
+function buildPlayerExportCard(
+  bio,
+  tools,
+  stats,
+  isPitcher
+) {
+
+  const card =
+    document.createElement(
+      "div"
+    );
+
+
+  card.className =
+    "player-export-card";
+
+
+  const playerName =
+    get(
+      bio,
+      [
+        "Player",
+        "Name"
+      ]
+    );
+
+
+  const picture =
+    get(
+      bio,
+      [
+        "Picture",
+        "Image",
+        "Photo",
+        "Picture URL",
+        "Image URL"
+      ]
+    );
+
+
+  const rank =
+    get(
+      bio,
+      ["Rank"]
+    );
+
+
+  const previousRank =
+    get(
+      bio,
+      ["Previous Rank"]
+    );
+
+
+  const position =
+    get(
+      bio,
+      [
+        "Position",
+        "Pos"
+      ]
+    );
+
+
+  const level =
+    get(
+      bio,
+      ["Level"]
+    );
+
+
+  const age =
+    get(
+      bio,
+      ["Age"]
+    );
+
+
+  const height =
+    get(
+      bio,
+      ["Height"]
+    );
+
+
+  const weight =
+    get(
+      bio,
+      ["Weight"]
+    );
+
+
+  const batThrow =
+    get(
+      bio,
+      [
+        "Bat / Throw",
+        "Bat/Throw"
+      ]
+    );
+
+
+  const acquired =
+    get(
+      bio,
+      ["Acquired"]
+    );
+
+
+  const draft =
+    get(
+      bio,
+      ["Draft/IFA"]
+    );
+
+
+  const movement =
+    getPlayerExportMovement(
+      rank,
+      previousRank
+    );
+
+
+  const currentStats =
+    getCurrentPlayerStats(
+      stats
+    );
+
+
+  card.innerHTML = `
+
+    <div class="player-export-topbar">
+
+      <img
+        class="player-export-logo"
+        src="BFB-Logo.png"
+        alt="Backfield Brew"
+      >
+
+    </div>
+
+
+    <div class="player-export-header">
+
+      <div class="player-export-photo-wrap">
+
+        ${
+          isRealValue(picture)
+            ? `
+              <img
+                class="player-export-photo"
+                src="${picture}"
+                alt="${playerName}"
+                crossorigin="anonymous"
+              >
+            `
+            : `
+              <div class="player-export-photo-placeholder">
+                No Photo
+              </div>
+            `
+        }
+
+      </div>
+
+
+      <div class="player-export-title">
+
+        <div class="player-export-rank-row">
+
+          ${
+            isRealValue(rank)
+              ? `
+                <span class="player-export-rank">
+                  #${rank}
+                </span>
+              `
+              : ""
+          }
+
+          ${movement}
+
+        </div>
+
+
+        <h1>
+          ${playerName}
+        </h1>
+
+
+        <div class="player-export-subtitle">
+          ${position}
+          ${
+            isRealValue(level)
+              ? ` | ${level}`
+              : ""
+          }
+        </div>
+
+
+        <div class="player-export-bio-grid">
+
+          ${
+            isRealValue(age)
+              ? `
+                <div>
+                  <span>Age</span>
+                  <strong>${age}</strong>
+                </div>
+              `
+              : ""
+          }
+
+          ${
+            isRealValue(height)
+              ? `
+                <div>
+                  <span>Height</span>
+                  <strong>${height}</strong>
+                </div>
+              `
+              : ""
+          }
+
+          ${
+            isRealValue(weight)
+              ? `
+                <div>
+                  <span>Weight</span>
+                  <strong>${weight}</strong>
+                </div>
+              `
+              : ""
+          }
+
+          ${
+            isRealValue(batThrow)
+              ? `
+                <div>
+                  <span>B/T</span>
+                  <strong>${batThrow}</strong>
+                </div>
+              `
+              : ""
+          }
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <div class="player-export-details">
+
+      ${
+        isRealValue(acquired)
+          ? `
+            <div>
+              <span>Acquired</span>
+              <strong>${acquired}</strong>
+            </div>
+          `
+          : ""
+      }
+
+      ${
+        isRealValue(draft)
+          ? `
+            <div>
+              <span>Draft / IFA</span>
+              <strong>${draft}</strong>
+            </div>
+          `
+          : ""
+      }
+
+    </div>
+
+
+    <div class="player-export-section">
+
+      <h2>
+        ${
+          isPitcher
+            ? "Pitch Arsenal"
+            : "Tool Grades"
+        }
+      </h2>
+
+      ${buildPlayerExportTools(
+        tools,
+        isPitcher
+      )}
+
+    </div>
+
+
+    ${
+      currentStats
+        ? `
+          <div class="player-export-section">
+
+            <h2>
+              ${currentStats.year} Stats
+            </h2>
+
+            ${buildPlayerExportStats(
+              currentStats.row,
+              isPitcher
+            )}
+
+          </div>
+        `
+        : ""
+    }
+
+
+    <div class="player-export-footer">
+      backfieldbrew.com
+    </div>
+
+  `;
+
+
+  return card;
+}
+
+
+/* =========================
+   RANK MOVEMENT
+========================= */
+
+function getPlayerExportMovement(
+  currentRank,
+  previousRank
+) {
+
+  const current =
+    Number(currentRank);
+
+
+  const previous =
+    Number(previousRank);
+
+
+  if (
+    !Number.isFinite(current)
+  ) {
+    return "";
+  }
+
+
+  if (
+    previousRank === "" ||
+    previousRank === null ||
+    previousRank === undefined ||
+    !Number.isFinite(previous)
+  ) {
+
+    return `
+      <span class="player-export-movement new">
+        NEW
+      </span>
+    `;
+  }
+
+
+  const change =
+    previous - current;
+
+
+  if (change > 0) {
+
+    return `
+      <span class="player-export-movement up">
+        ▲ ${change}
+      </span>
+    `;
+  }
+
+
+  if (change < 0) {
+
+    return `
+      <span class="player-export-movement down">
+        ▼ ${Math.abs(change)}
+      </span>
+    `;
+  }
+
+
+  return "";
+}
+
+
+/* =========================
+   CURRENT SEASON STATS
+========================= */
+
+function getCurrentPlayerStats(
+  stats
+) {
+
+  if (
+    !Array.isArray(stats) ||
+    !stats.length
+  ) {
+    return null;
+  }
+
+
+  return [...stats]
+    .sort(
+      (a, b) =>
+        Number(b.year) -
+        Number(a.year)
+    )[0];
+}
+
+
+/* =========================
+   EXPORT TOOLS
+========================= */
+
+function buildPlayerExportTools(
+  tools,
+  isPitcher
+) {
+
+  if (!tools) {
+
+    return `
+      <p class="player-export-empty">
+        No tool grades available.
+      </p>
+    `;
+  }
+
+
+  let items = [];
+
+
+  if (isPitcher) {
+
+    const pitchMap = [
+
+      [
+        ["Primary Pitch"],
+        ["Pitch #1", "Pitch#1"]
+      ],
+
+      [
+        ["Secondary #1"],
+        ["Pitch #2", "Pitch#2"]
+      ],
+
+      [
+        ["Secondary #2"],
+        ["Pitch #3", "Pitch#3"]
+      ],
+
+      [
+        ["Secondary #3"],
+        ["Pitch #4", "Pitch#4"]
+      ],
+
+      [
+        ["Secondary #4"],
+        ["Pitch #5", "Pitch#5"]
+      ],
+
+      [
+        ["Secondary #5"],
+        ["Pitch #6", "Pitch#6"]
+      ],
+
+      [
+        ["Secondary #6"],
+        ["Pitch #7", "Pitch#7"]
+      ]
+
+    ];
+
+
+    pitchMap.forEach(
+      ([nameCols, gradeCols]) => {
+
+        const name =
+          get(
+            tools,
+            nameCols
+          );
+
+
+        const grade =
+          get(
+            tools,
+            gradeCols
+          );
+
+
+        if (
+          isRealValue(name) &&
+          isRealValue(grade)
+        ) {
+
+          items.push({
+            label: name,
+            value: grade
+          });
+        }
+      }
+    );
+
+
+    [
+      ["Command", "Command"],
+      ["Control", "Control"],
+      [
+        "Fastball Velo",
+        "Fastball Velocity"
+      ]
+    ]
+      .forEach(
+        ([label, key]) => {
+
+          const value =
+            get(
+              tools,
+              [key]
+            );
+
+
+          if (
+            isRealValue(value)
+          ) {
+
+            items.push({
+              label,
+              value
+            });
+          }
+        }
+      );
+
+
+  } else {
+
+    const skip =
+      new Set([
+        "Player-ID",
+        "Player ID",
+        "Player",
+        "Tools Updated",
+        "Last Updated"
+      ]);
+
+
+    items =
+      Object.entries(
+        tools
+      )
+        .filter(
+          ([key, value]) =>
+            !skip.has(key) &&
+            isRealValue(value)
+        )
+        .map(
+          ([label, value]) => ({
+            label,
+            value
+          })
+        );
+  }
+
+
+  return `
+
+    <div class="player-export-tool-grid">
+
+      ${items
+        .map(item => `
+
+          <div class="player-export-tool">
+
+            <span>
+              ${item.label}
+            </span>
+
+            <strong>
+              ${item.value}
+            </strong>
+
+          </div>
+
+        `)
+        .join("")}
+
+    </div>
+  `;
+}
+
+
+/* =========================
+   EXPORT STATS
+========================= */
+
+function buildPlayerExportStats(
+  row,
+  isPitcher
+) {
+
+  const columns =
+    isPitcher
+
+      ? [
+          "IP",
+          "ERA",
+          "FIP",
+          "WHIP",
+          "K/9",
+          "BB/9"
+        ]
+
+      : [
+          "PA",
+          "HR",
+          "OBP",
+          "SLG",
+          "OPS",
+          "wRC+"
+        ];
+
+
+  return `
+
+    <div class="player-export-stat-grid">
+
+      ${columns
+        .filter(
+          key =>
+            isRealValue(
+              row[key]
+            )
+        )
+        .map(key => `
+
+          <div class="player-export-stat">
+
+            <span>
+              ${key}
+            </span>
+
+            <strong>
+              ${row[key]}
+            </strong>
+
+          </div>
+
+        `)
+        .join("")}
+
+    </div>
+  `;
+}
+
+
+/* =========================
+   IMAGE LOADING
+========================= */
+
+function waitForExportImages(
+  element
+) {
+
+  const images =
+    [
+      ...element.querySelectorAll(
+        "img"
+      )
+    ];
+
+
+  return Promise.all(
+    images.map(img => {
+
+      if (img.complete) {
+        return Promise.resolve();
+      }
+
+
+      return new Promise(resolve => {
+
+        img.onload =
+          resolve;
+
+        img.onerror =
+          resolve;
+
+      });
+    })
+  );
 }
 /* =========================
    ARCHIVE PAGES
