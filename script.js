@@ -1,107 +1,193 @@
-  const PUB_ID = '2PACX-1vS7YJJLyptStf41slMLw1QW6g6gBW1rg6dlHdwFacsqlZth7lSnCKsJ5Sbtck0iw5y0ZAHDoDId9HsE';
+/* =========================
+   LOCAL JSON DATA FILES
+========================= */
 
-const SHEET_GIDS = {
-  "Biography Info": "536791829",
-  "Archived Biography Info": "1669539724",
-  "Pitcher Tools": "1738771068",
-  "Hitter Tools": "146410825",
-  "Hitter Stats 2023": "341964968",
-  "Hitter Stats 2024": "1018953464",
-  "Hitter Stats 2025": "544979732",
-  "Hitter Stats 2026": "1317907704",
-  "Pitcher Stats 2023": "1576192112",
-  "Pitcher Stats 2024": "158387021",
-  "Pitcher Stats 2025": "1099458194",
-  "Pitcher Stats 2026": "1603996515",
-  "Videos": "1306695134",
-  "Draft History": "1343344959",
-  "International Signing History": "1283419308",
-  "Rule 5 Eligibility": "2076057970",
-  "MiLB Free Agency": "951187066",
-  "MiLB Depth Chart": "1115115429",
-  "Transactions": "378792263"
+const DATA_FILES = {
+
+  "Biography Info":
+    "data/biography.json",
+
+  "Archived Biography Info":
+    "data/archived-biography.json",
+
+  "Pitcher Tools":
+    "data/pitcher-tools.json",
+
+  "Hitter Tools":
+    "data/hitter-tools.json",
+
+  "Hitter Stats 2023":
+    "data/hitter-stats-2023.json",
+
+  "Hitter Stats 2024":
+    "data/hitter-stats-2024.json",
+
+  "Hitter Stats 2025":
+    "data/hitter-stats-2025.json",
+
+  "Hitter Stats 2026":
+    "data/hitter-stats-2026.json",
+
+  "Pitcher Stats 2023":
+    "data/pitcher-stats-2023.json",
+
+  "Pitcher Stats 2024":
+    "data/pitcher-stats-2024.json",
+
+  "Pitcher Stats 2025":
+    "data/pitcher-stats-2025.json",
+
+  "Pitcher Stats 2026":
+    "data/pitcher-stats-2026.json",
+
+  "Videos":
+    "data/videos.json",
+
+  "Draft History":
+    "data/draft-history.json",
+
+  "International Signing History":
+    "data/international-history.json",
+
+  "Rule 5 Eligibility":
+    "data/rule5.json",
+
+  "MiLB Free Agency":
+    "data/free-agency.json",
+
+  "MiLB Depth Chart":
+    "data/depth-chart.json",
+
+  "Transactions":
+    "data/transactions.json"
+
 };
 
-function sheetUrl(sheetName) {
-  const gid = SHEET_GIDS[sheetName];
-  if (!gid) throw new Error(`Missing GID for ${sheetName}`);
-  return `https://docs.google.com/spreadsheets/d/e/${PUB_ID}/pub?gid=${gid}&single=true&output=csv`;
-}
+
+/* =========================
+   HELPERS
+========================= */
 
 function get(row, keys) {
+
   for (const key of keys) {
-    if (row[key] !== undefined && row[key] !== "") return row[key];
-  }
-  return "";
-}
 
-function isRealValue(value) {
-  const v = String(value || "").trim().toLowerCase();
-  return v && v !== "n/a" && v !== "na" && v !== "-";
-}
-
-function num(value) {
-  const n = parseFloat(String(value || "").replace(/[^0-9.-]/g, ""));
-  return Number.isFinite(n) ? n : 999999;
-}
-
-const sheetCache = {};
-
-async function loadSheet(sheetName) {
-  if (sheetCache[sheetName]) return sheetCache[sheetName];
-
-  const res = await fetch(sheetUrl(sheetName));
-  if (!res.ok) throw new Error(`Failed loading ${sheetName}`);
-
-  const text = await res.text();
-  const rows = parseCSV(text);
-
-  sheetCache[sheetName] = rows;
-  return rows;
-}
-
-function parseCSV(text) {
-  const rows = [];
-  let row = [], cell = "", inQuotes = false;
-
-  for (let i = 0; i < text.length; i++) {
-    const char = text[i], next = text[i + 1];
-
-    if (char === '"' && inQuotes && next === '"') {
-      cell += '"';
-      i++;
-    } else if (char === '"') {
-      inQuotes = !inQuotes;
-    } else if (char === "," && !inQuotes) {
-      row.push(cell.trim());
-      cell = "";
-    } else if ((char === "\n" || char === "\r") && !inQuotes) {
-      if (char === "\r" && next === "\n") i++;
-      row.push(cell.trim());
-      if (row.some(v => v !== "")) rows.push(row);
-      row = [];
-      cell = "";
-    } else {
-      cell += char;
+    if (
+      row[key] !== undefined &&
+      row[key] !== ""
+    ) {
+      return row[key];
     }
   }
 
-  if (cell || row.length) {
-    row.push(cell.trim());
-    rows.push(row);
-  }
+  return "";
+}
 
-  const headers = rows.shift().map(h => h.replace(/^\uFEFF/, "").trim());
 
-  return rows.map(r =>
-    Object.fromEntries(headers.map((h, i) => [h, r[i] || ""]))
+function isRealValue(value) {
+
+  const v =
+    String(value || "")
+      .trim()
+      .toLowerCase();
+
+  return (
+    v &&
+    v !== "n/a" &&
+    v !== "na" &&
+    v !== "-"
   );
 }
 
-function setHTML(id, html) {
-  const el = document.getElementById(id);
-  if (el) el.innerHTML = html;
+
+function num(value) {
+
+  const n =
+    parseFloat(
+      String(value || "")
+        .replace(
+          /[^0-9.-]/g,
+          ""
+        )
+    );
+
+  return Number.isFinite(n)
+    ? n
+    : 999999;
 }
+
+
+/* =========================
+   DATA CACHE
+========================= */
+
+const sheetCache = {};
+
+
+/* =========================
+   LOAD LOCAL JSON
+========================= */
+
+async function loadSheet(
+  sheetName
+) {
+
+  if (
+    sheetCache[sheetName]
+  ) {
+    return sheetCache[
+      sheetName
+    ];
+  }
+
+
+  const file =
+    DATA_FILES[
+      sheetName
+    ];
+
+
+  if (!file) {
+
+    throw new Error(
+      `Missing data file for ${sheetName}`
+    );
+  }
+
+
+  const response =
+    await fetch(file);
+
+
+  if (!response.ok) {
+
+    throw new Error(
+      `Failed loading ${sheetName}`
+    );
+  }
+
+
+  const rows =
+    await response.json();
+
+
+  if (
+    !Array.isArray(rows)
+  ) {
+
+    throw new Error(
+      `Invalid data for ${sheetName}`
+    );
+  }
+
+
+  sheetCache[sheetName] =
+    rows;
+
+
+  return rows;
+}
+
 function setHTML(id, html) {
   const el = document.getElementById(id);
   if (el) el.innerHTML = html;
