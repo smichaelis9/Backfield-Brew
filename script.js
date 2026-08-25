@@ -1660,6 +1660,18 @@ function buildPlayerExportCard(
       "Draft / IFA"
     ]);
 
+   const signedBy =
+     get(bio, [
+       "Signed By",
+       "Signing Scout",
+       "Scout"
+     ]);
+
+   const rule5 =
+     get(bio, [
+       "Rule 5 Eligible",
+       "Rule 5 Eligibility"
+     ]);
 
   const movement =
     getPlayerExportMovement(
@@ -1819,9 +1831,19 @@ function buildPlayerExportCard(
             )}
 
             ${buildExportInfo(
-              "Draft / IFA",
-              draft
-            )}
+             "Signing Scout",
+             signedBy
+           )}
+
+           ${buildExportInfo(
+             "Draft / IFA",
+             draft
+           )}
+
+           ${buildExportInfo(
+             "Rule 5 Eligible",
+             rule5
+           )}
 
           </div>
 
