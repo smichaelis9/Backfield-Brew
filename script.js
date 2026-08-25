@@ -437,190 +437,130 @@ async function initPlayerPage() {
     ).get("id");
 
 
+  if (!id) {
+
+    document.body.innerHTML =
+      "<h2>Player not found</h2>";
+
+    return;
+  }
+
+
   try {
 
     /* =========================
-       LOAD BIO FIRST
+       MATCH THE FILE NAME USED
+       BY export-sheets.mjs
     ========================= */
 
-    const players =
-      await loadSheet(
-        "Biography Info"
+    const safeID =
+      String(id)
+        .trim()
+        .replace(
+          /[^a-zA-Z0-9._-]/g,
+          "_"
+        );
+
+
+    const response =
+      await fetch(
+        `data/players/${safeID}.json`
       );
 
 
-    const bio =
-      players.find(p =>
-        get(
-          p,
-          [
-            "Player-ID",
-            "Player ID"
-          ]
-        ) === id
-      );
-
-
-    if (!bio) {
+    if (!response.ok) {
 
       throw new Error(
-        "Player not found"
+        "Player data not found"
       );
     }
 
 
+    const playerData =
+      await response.json();
+
+
+    /* =========================
+       PLAYER DATA
+    ========================= */
+
+    const bio =
+      playerData.bio || {};
+
+
+    const tools =
+      playerData.tools || null;
+
+
+    const videos =
+      Array.isArray(
+        playerData.videos
+      )
+        ? playerData.videos
+        : [];
+
+
     const isPitcher =
-      get(
-        bio,
-        ["Player Type"]
+      String(
+        playerData.playerType ||
+        get(
+          bio,
+          ["Player Type"]
+        )
       )
         .toLowerCase()
         .includes("pitch");
 
 
-    const toolsSheet =
-      isPitcher
-        ? "Pitcher Tools"
-        : "Hitter Tools";
-
-
-    const statSheets =
-      isPitcher
-
-        ? [
-            "Pitcher Stats 2023",
-            "Pitcher Stats 2024",
-            "Pitcher Stats 2025",
-            "Pitcher Stats 2026"
-          ]
-
-        : [
-            "Hitter Stats 2023",
-            "Hitter Stats 2024",
-            "Hitter Stats 2025",
-            "Hitter Stats 2026"
-          ];
-
-
     /* =========================
-       START EVERYTHING NOW
+       CONVERT STATS OBJECT
+       TO EXISTING PAGE FORMAT
 
-       These downloads can happen
-       at the same time, but we
-       don't wait for stats/videos
-       before showing the page.
-    ========================= */
+       JSON:
+       {
+         "2024": {...},
+         "2025": {...},
+         "2026": {...}
+       }
 
-    const toolsPromise =
-      loadSheet(
-        toolsSheet
-      ).catch(() => []);
-
-
-    const videoPromise =
-      loadSheet(
-        "Videos"
-      ).catch(() => []);
-
-
-    const statPromises =
-      statSheets.map(
-        sheet =>
-          loadSheet(sheet)
-            .catch(() => [])
-      );
-
-
-    /* =========================
-       WAIT ONLY FOR TOOLS
-    ========================= */
-
-    const toolsRows =
-      await toolsPromise;
-
-
-    const tools =
-      toolsRows.find(p =>
-        get(
-          p,
-          [
-            "Player-ID",
-            "Player ID"
-          ]
-        ) === id
-      );
-
-
-    /* =========================
-       RENDER PAGE ONCE
-    ========================= */
-
-    renderPlayerPage(
-      bio,
-      tools,
-      [],
-      isPitcher,
-      [],
-      false,
-      true
-    );
-
-
-    /* =========================
-       NOW WAIT FOR LOWER DATA
-    ========================= */
-
-    const [
-      videoRows,
-      ...statRowsByYear
-    ] =
-      await Promise.all([
-        videoPromise,
-        ...statPromises
-      ]);
-
-
-    /* =========================
-       BUILD PLAYER STATS
+       Existing renderer expects:
+       [
+         { year: "2024", row: {...} },
+         ...
+       ]
     ========================= */
 
     const stats =
-      statRowsByYear
+      Object.entries(
+        playerData.stats || {}
+      )
         .map(
-          (rows, index) => {
+          ([year, row]) => {
 
-            const row =
-              rows.find(p =>
-                get(
-                  p,
-                  [
-                    "Player-ID",
-                    "Player ID"
-                  ]
-                ) === id
-              );
-
-
-            if (!row) {
+            if (
+              !row ||
+              typeof row !== "object"
+            ) {
               return null;
             }
 
 
             const dataKeys =
               Object.keys(row)
-                .filter(k =>
+                .filter(key =>
                   ![
                     "Player-ID",
                     "Player ID",
-                    "Player"
-                  ].includes(k)
+                    "Player",
+                    "PlayerName"
+                  ].includes(key)
                 );
 
 
             const hasRealStats =
-              dataKeys.some(k =>
+              dataKeys.some(key =>
                 isRealValue(
-                  row[k]
+                  row[key]
                 )
               );
 
@@ -631,53 +571,39 @@ async function initPlayerPage() {
 
 
             return {
-
-              year:
-                statSheets[index]
-                  .match(/\d{4}/)[0],
-
+              year,
               row
-
             };
           }
         )
-        .filter(Boolean);
+        .filter(Boolean)
+        .sort(
+          (a, b) =>
+            Number(a.year) -
+            Number(b.year)
+        );
 
 
     /* =========================
-       BUILD PLAYER VIDEOS
+       RENDER ONCE
     ========================= */
 
-    const videos =
-      videoRows.filter(v =>
-        get(
-          v,
-          [
-            "Player-ID",
-            "Player ID"
-          ]
-        ) === id
-      );
-
-
-    /* =========================
-       UPDATE ONLY LOWER SECTIONS
-
-       NO PLAYER PAGE RE-RENDER
-    ========================= */
-
-    renderStats(
+    renderPlayerPage(
+      bio,
+      tools,
       stats,
-      isPitcher
-    );
-
-
-    renderVideos(
+      isPitcher,
       videos
     );
 
 
   } catch (err) {
+
+    console.error(
+      "Player page:",
+      err
+    );
+
 
     document.body.innerHTML =
       `<h2>${err.message}</h2>`;
