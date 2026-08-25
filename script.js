@@ -429,74 +429,274 @@ function renderRankMovement(
 /* =========================
    PLAYER PAGE
 ========================= */
-
 async function initPlayerPage() {
-  const id = new URLSearchParams(window.location.search).get("id");
+
+  const id =
+    new URLSearchParams(
+      window.location.search
+    ).get("id");
+
 
   try {
-    const players = await loadSheet("Biography Info");
 
-    const bio = players.find(p =>
-      get(p, ["Player-ID", "Player ID"]) === id
+    /* =========================
+       LOAD BIO FIRST
+    ========================= */
+
+    const players =
+      await loadSheet(
+        "Biography Info"
+      );
+
+
+    const bio =
+      players.find(p =>
+        get(
+          p,
+          [
+            "Player-ID",
+            "Player ID"
+          ]
+        ) === id
+      );
+
+
+    if (!bio) {
+
+      throw new Error(
+        "Player not found"
+      );
+    }
+
+
+    const isPitcher =
+      get(
+        bio,
+        ["Player Type"]
+      )
+        .toLowerCase()
+        .includes("pitch");
+
+
+    const toolsSheet =
+      isPitcher
+        ? "Pitcher Tools"
+        : "Hitter Tools";
+
+
+    const statSheets =
+      isPitcher
+
+        ? [
+            "Pitcher Stats 2023",
+            "Pitcher Stats 2024",
+            "Pitcher Stats 2025",
+            "Pitcher Stats 2026"
+          ]
+
+        : [
+            "Hitter Stats 2023",
+            "Hitter Stats 2024",
+            "Hitter Stats 2025",
+            "Hitter Stats 2026"
+          ];
+
+
+    /* =========================
+       START EVERYTHING NOW
+
+       These downloads can happen
+       at the same time, but we
+       don't wait for stats/videos
+       before showing the page.
+    ========================= */
+
+    const toolsPromise =
+      loadSheet(
+        toolsSheet
+      ).catch(() => []);
+
+
+    const videoPromise =
+      loadSheet(
+        "Videos"
+      ).catch(() => []);
+
+
+    const statPromises =
+      statSheets.map(
+        sheet =>
+          loadSheet(sheet)
+            .catch(() => [])
+      );
+
+
+    /* =========================
+       WAIT ONLY FOR TOOLS
+    ========================= */
+
+    const toolsRows =
+      await toolsPromise;
+
+
+    const tools =
+      toolsRows.find(p =>
+        get(
+          p,
+          [
+            "Player-ID",
+            "Player ID"
+          ]
+        ) === id
+      );
+
+
+    /* =========================
+       RENDER PAGE ONCE
+    ========================= */
+
+    renderPlayerPage(
+      bio,
+      tools,
+      [],
+      isPitcher,
+      [],
+      false,
+      true
     );
 
-    if (!bio) throw new Error("Player not found");
 
-    const isPitcher = get(bio, ["Player Type"]).toLowerCase().includes("pitch");
+    /* =========================
+       NOW WAIT FOR LOWER DATA
+    ========================= */
 
-    const toolsSheet = isPitcher ? "Pitcher Tools" : "Hitter Tools";
+    const [
+      videoRows,
+      ...statRowsByYear
+    ] =
+      await Promise.all([
+        videoPromise,
+        ...statPromises
+      ]);
 
-    const statSheets = isPitcher
-      ? ["Pitcher Stats 2023", "Pitcher Stats 2024", "Pitcher Stats 2025", "Pitcher Stats 2026"]
-      : ["Hitter Stats 2023", "Hitter Stats 2024", "Hitter Stats 2025", "Hitter Stats 2026"];
 
-    const [toolsRows, videoRows, ...statRowsByYear] = await Promise.all([
-      loadSheet(toolsSheet).catch(() => []),
-      loadSheet("Videos").catch(() => []),
-      ...statSheets.map(sheet => loadSheet(sheet).catch(() => []))
-    ]);
+    /* =========================
+       BUILD PLAYER STATS
+    ========================= */
 
-    const tools = toolsRows.find(p =>
-      get(p, ["Player-ID", "Player ID"]) === id
+    const stats =
+      statRowsByYear
+        .map(
+          (rows, index) => {
+
+            const row =
+              rows.find(p =>
+                get(
+                  p,
+                  [
+                    "Player-ID",
+                    "Player ID"
+                  ]
+                ) === id
+              );
+
+
+            if (!row) {
+              return null;
+            }
+
+
+            const dataKeys =
+              Object.keys(row)
+                .filter(k =>
+                  ![
+                    "Player-ID",
+                    "Player ID",
+                    "Player"
+                  ].includes(k)
+                );
+
+
+            const hasRealStats =
+              dataKeys.some(k =>
+                isRealValue(
+                  row[k]
+                )
+              );
+
+
+            if (!hasRealStats) {
+              return null;
+            }
+
+
+            return {
+
+              year:
+                statSheets[index]
+                  .match(/\d{4}/)[0],
+
+              row
+
+            };
+          }
+        )
+        .filter(Boolean);
+
+
+    /* =========================
+       BUILD PLAYER VIDEOS
+    ========================= */
+
+    const videos =
+      videoRows.filter(v =>
+        get(
+          v,
+          [
+            "Player-ID",
+            "Player ID"
+          ]
+        ) === id
+      );
+
+
+    /* =========================
+       UPDATE ONLY LOWER SECTIONS
+
+       NO PLAYER PAGE RE-RENDER
+    ========================= */
+
+    renderStats(
+      stats,
+      isPitcher
     );
 
-    const stats = statRowsByYear
-      .map((rows, index) => {
-        const row = rows.find(p =>
-          get(p, ["Player-ID", "Player ID"]) === id
-        );
 
-        if (!row) return null;
-
-        const dataKeys = Object.keys(row).filter(k =>
-          !["Player-ID", "Player ID", "Player"].includes(k)
-        );
-
-        const hasRealStats = dataKeys.some(k => isRealValue(row[k]));
-        if (!hasRealStats) return null;
-
-        return {
-          year: statSheets[index].match(/\d{4}/)[0],
-          row
-        };
-      })
-      .filter(Boolean);
-
-    const videos = videoRows.filter(v =>
-      get(v, ["Player-ID", "Player ID"]) === id
+    renderVideos(
+      videos
     );
 
-    renderPlayerPage(bio, tools, stats, isPitcher, videos);
 
   } catch (err) {
-    document.body.innerHTML = `<h2>${err.message}</h2>`;
+
+    document.body.innerHTML =
+      `<h2>${err.message}</h2>`;
+
   }
 }
 /* =========================
    RENDER PLAYER
 ========================= */
 
-function renderPlayerPage(bio, tools, stats, isPitcher, videos, isArchive = false) {
+function renderPlayerPage(
+  bio,
+  tools,
+  stats,
+  isPitcher,
+  videos,
+  isArchive = false,
+  deferLowerSections = false
+) {
   const playerName = get(bio, ["Player", "Name"]);
   const picture = get(bio, ["Picture", "Image", "Photo", "Picture URL", "Image URL"]);
   const ofp = get(bio, ["OFP"]);
@@ -516,7 +716,14 @@ function renderPlayerPage(bio, tools, stats, isPitcher, videos, isArchive = fals
       ${isRealValue(picture)
   ? `
     <div class="player-image-wrap">
-      <img class="player-photo" src="${picture}" alt="${playerName}" onerror="this.style.display='none';">
+      <img
+        class="player-photo"
+        src="${picture}"
+        alt="${playerName}"
+        decoding="async"
+        fetchpriority="high"
+        onerror="this.style.display='none';"
+      >
       ${isRealValue(get(bio, ["Picture source", "Picture Source"]))
         ? `<div class="image-source">Source: ${get(bio, ["Picture source", "Picture Source"])}</div>`
         : ""}
@@ -581,13 +788,70 @@ function renderPlayerPage(bio, tools, stats, isPitcher, videos, isArchive = fals
 `);
 
   renderExternalLinks(bio);
-  renderTools(tools, isPitcher);
-  renderFullScoutingReport(bio, isPitcher);
-  renderScoutingNotes(bio);
-  renderArticles(bio);
-  renderStats(stats, isPitcher);
-  renderTransactions(bio);
-  renderVideos(videos);
+
+renderTools(
+  tools,
+  isPitcher
+);
+
+renderFullScoutingReport(
+  bio,
+  isPitcher
+);
+
+renderScoutingNotes(
+  bio
+);
+
+renderArticles(
+  bio
+);
+
+
+/* =========================
+   STATS / VIDEOS
+========================= */
+
+if (deferLowerSections) {
+
+  setHTML(
+    "statsCard",
+    `
+      <h2>
+        Stats
+      </h2>
+
+      <p class="player-section-loading">
+        Loading stats...
+      </p>
+    `
+  );
+
+} else {
+
+  renderStats(
+    stats,
+    isPitcher
+  );
+
+
+  renderVideos(
+    videos
+  );
+}
+
+
+/* =========================
+   TRANSACTIONS
+
+   Already loads asynchronously,
+   so it does not need to block
+   the player page.
+========================= */
+
+renderTransactions(
+  bio
+);
 }
 
 /* =========================
