@@ -315,7 +315,16 @@ function renderRanking(players) {
       <td>
         <a class="ranking-player-link" href="player.html?id=${encodeURIComponent(get(p, ["Player-ID"]))}">
           ${isRealValue(get(p, ["Picture", "Image", "Photo", "Picture URL", "Image URL"]))
-            ? `<img class="ranking-player-photo" src="${get(p, ["Picture", "Image", "Photo", "Picture URL", "Image URL"])}" alt="${get(p, ["Player"])}" onerror="this.style.display='none';">`
+            ? `
+              <img
+                class="ranking-player-photo"
+                src="${get(p, ["Picture", "Image", "Photo", "Picture URL", "Image URL"])}"
+                alt="${get(p, ["Player"])}"
+                loading="lazy"
+                decoding="async"
+                onerror="this.style.display='none';"
+              >
+            `
             : ""}
           <span>${get(p, ["Player"])}</span>
         </a>
