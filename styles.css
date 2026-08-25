@@ -512,7 +512,7 @@ tr:nth-child(even) {
 
 .player-export-actions {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   margin: -4px 0 14px;
 }
 
