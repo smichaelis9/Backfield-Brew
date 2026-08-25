@@ -164,8 +164,10 @@ function parseCSV(text) {
       cell = "";
 
     } else if (
-      (char === "\n" ||
-       char === "\r") &&
+      (
+        char === "\n" ||
+        char === "\r"
+      ) &&
       !inQuotes
     ) {
 
@@ -251,7 +253,210 @@ function parseCSV(text) {
 
 
 /* =========================
-   EXPORT ONE SHEET
+   GENERAL HELPERS
+========================= */
+
+function get(row, keys) {
+
+  if (!row) {
+    return "";
+  }
+
+
+  for (const key of keys) {
+
+    if (
+      row[key] !== undefined &&
+      String(row[key]).trim() !== ""
+    ) {
+      return row[key];
+    }
+  }
+
+
+  return "";
+}
+
+
+function cleanValue(value) {
+
+  return String(
+    value ?? ""
+  ).trim();
+}
+
+
+function normalizeName(value) {
+
+  return cleanValue(value)
+    .normalize("NFD")
+    .replace(
+      /[\u0300-\u036f]/g,
+      ""
+    )
+    .toLowerCase()
+    .replace(
+      /[^a-z0-9]+/g,
+      " "
+    )
+    .trim();
+}
+
+
+function getPlayerID(row) {
+
+  return cleanValue(
+    get(
+      row,
+      [
+        "Player-ID",
+        "Player ID"
+      ]
+    )
+  );
+}
+
+
+function getPlayerName(row) {
+
+  return cleanValue(
+    get(
+      row,
+      [
+        "Player",
+        "PlayerName",
+        "Player Name",
+        "Name"
+      ]
+    )
+  );
+}
+
+
+function getMLBAMID(row) {
+
+  return cleanValue(
+    get(
+      row,
+      [
+        "MLBAM ID",
+        "MLBAM-ID",
+        "MLB ID",
+        "MiLB ID"
+      ]
+    )
+  );
+}
+
+
+/* =========================
+   SAFE FILE NAME
+========================= */
+
+function safePlayerFileName(
+  playerID
+) {
+
+  return cleanValue(
+    playerID
+  ).replace(
+    /[^a-zA-Z0-9._-]/g,
+    "_"
+  );
+}
+
+
+/* =========================
+   MATCH ROW TO PLAYER
+========================= */
+
+function rowMatchesPlayer(
+  row,
+  playerID,
+  playerName
+) {
+
+  const rowID =
+    getPlayerID(row);
+
+
+  /*
+    Player-ID is the preferred
+    matching method.
+  */
+
+  if (
+    rowID &&
+    playerID &&
+    rowID === playerID
+  ) {
+    return true;
+  }
+
+
+  /*
+    Name fallback.
+
+    This also handles accents
+    and punctuation differences.
+  */
+
+  const rowName =
+    normalizeName(
+      getPlayerName(row)
+    );
+
+
+  const targetName =
+    normalizeName(
+      playerName
+    );
+
+
+  return Boolean(
+    rowName &&
+    targetName &&
+    rowName === targetName
+  );
+}
+
+
+/* =========================
+   RESET PLAYER DIRECTORY
+========================= */
+
+function prepareDirectory(
+  directory
+) {
+
+  /*
+    Delete old generated files.
+
+    This prevents files for players
+    who have moved from active to
+    archived from hanging around.
+  */
+
+  fs.rmSync(
+    directory,
+    {
+      recursive: true,
+      force: true
+    }
+  );
+
+
+  fs.mkdirSync(
+    directory,
+    {
+      recursive: true
+    }
+  );
+}
+
+
+/* =========================
+   EXPORT ONE GOOGLE SHEET
 ========================= */
 
 async function exportSheet(
@@ -309,6 +514,441 @@ async function exportSheet(
   console.log(
     `${sheetName}: ${rows.length} rows`
   );
+
+
+  return rows;
+}
+
+
+/* =========================
+   FIND PLAYER ROW
+========================= */
+
+function findPlayerRow(
+  rows,
+  playerID,
+  playerName
+) {
+
+  return (
+    rows.find(row =>
+      rowMatchesPlayer(
+        row,
+        playerID,
+        playerName
+      )
+    ) ||
+    null
+  );
+}
+
+
+/* =========================
+   FIND PLAYER ROWS
+========================= */
+
+function findPlayerRows(
+  rows,
+  playerID,
+  playerName
+) {
+
+  return rows.filter(row =>
+    rowMatchesPlayer(
+      row,
+      playerID,
+      playerName
+    )
+  );
+}
+
+
+/* =========================
+   TRANSACTION MATCHING
+========================= */
+
+function findPlayerTransactions(
+  rows,
+  bio
+) {
+
+  const playerID =
+    getPlayerID(bio);
+
+
+  const playerName =
+    getPlayerName(bio);
+
+
+  const mlbamID =
+    getMLBAMID(bio);
+
+
+  return rows.filter(row => {
+
+    /*
+      First try Backfield Brew
+      Player-ID / player name.
+    */
+
+    if (
+      rowMatchesPlayer(
+        row,
+        playerID,
+        playerName
+      )
+    ) {
+      return true;
+    }
+
+
+    /*
+      Transactions can also use
+      MLBAM ID.
+    */
+
+    if (!mlbamID) {
+      return false;
+    }
+
+
+    const transactionMLBAM =
+      cleanValue(
+        get(
+          row,
+          [
+            "MLBAM ID",
+            "MLBAM-ID",
+            "MLB ID"
+          ]
+        )
+      );
+
+
+    return Boolean(
+      transactionMLBAM &&
+      transactionMLBAM === mlbamID
+    );
+  });
+}
+
+
+/* =========================
+   BUILD ONE PLAYER OBJECT
+========================= */
+
+function buildPlayerObject({
+  bio,
+  archived,
+  datasets,
+  generatedAt
+}) {
+
+  const playerID =
+    getPlayerID(bio);
+
+
+  const playerName =
+    getPlayerName(bio);
+
+
+  const playerType =
+    cleanValue(
+      get(
+        bio,
+        ["Player Type"]
+      )
+    ).toLowerCase();
+
+
+  const isPitcher =
+    playerType.includes(
+      "pitch"
+    );
+
+
+  /* =========================
+     TOOLS
+  ========================= */
+
+  const toolsSheet =
+    isPitcher
+      ? "Pitcher Tools"
+      : "Hitter Tools";
+
+
+  const tools =
+    findPlayerRow(
+      datasets[
+        toolsSheet
+      ] || [],
+      playerID,
+      playerName
+    );
+
+
+  /* =========================
+     STATS
+  ========================= */
+
+  const statPrefix =
+    isPitcher
+      ? "Pitcher Stats"
+      : "Hitter Stats";
+
+
+  const stats = {};
+
+
+  for (
+    const year of [
+      "2023",
+      "2024",
+      "2025",
+      "2026"
+    ]
+  ) {
+
+    const sheetName =
+      `${statPrefix} ${year}`;
+
+
+    const statRow =
+      findPlayerRow(
+        datasets[
+          sheetName
+        ] || [],
+        playerID,
+        playerName
+      );
+
+
+    if (statRow) {
+
+      stats[year] =
+        statRow;
+    }
+  }
+
+
+  /* =========================
+     VIDEOS
+  ========================= */
+
+  const videos =
+    findPlayerRows(
+      datasets[
+        "Videos"
+      ] || [],
+      playerID,
+      playerName
+    );
+
+
+  /* =========================
+     TRANSACTIONS
+  ========================= */
+
+  const transactions =
+    findPlayerTransactions(
+      datasets[
+        "Transactions"
+      ] || [],
+      bio
+    );
+
+
+  /* =========================
+     FINAL PLAYER OBJECT
+  ========================= */
+
+  return {
+
+    id:
+      playerID,
+
+    name:
+      playerName,
+
+    archived:
+      archived,
+
+    playerType:
+      isPitcher
+        ? "Pitcher"
+        : "Hitter",
+
+    generatedAt:
+      generatedAt,
+
+    bio:
+      bio,
+
+    tools:
+      tools,
+
+    stats:
+      stats,
+
+    videos:
+      videos,
+
+    transactions:
+      transactions
+
+  };
+}
+
+
+/* =========================
+   BUILD PLAYER FILES
+========================= */
+
+function buildPlayerFiles({
+  bioRows,
+  archived,
+  directory,
+  datasets,
+  generatedAt
+}) {
+
+  prepareDirectory(
+    directory
+  );
+
+
+  const index = [];
+
+
+  let written = 0;
+
+  let skipped = 0;
+
+
+  for (
+    const bio of bioRows
+  ) {
+
+    const playerID =
+      getPlayerID(bio);
+
+
+    const playerName =
+      getPlayerName(bio);
+
+
+    /*
+      Player-ID is required because
+      the website URL is based on it.
+    */
+
+    if (
+      !playerID ||
+      !playerName
+    ) {
+
+      skipped++;
+
+      continue;
+    }
+
+
+    const fileName =
+      `${safePlayerFileName(
+        playerID
+      )}.json`;
+
+
+    const playerObject =
+      buildPlayerObject({
+        bio,
+        archived,
+        datasets,
+        generatedAt
+      });
+
+
+    fs.writeFileSync(
+      path.join(
+        directory,
+        fileName
+      ),
+      JSON.stringify(
+        playerObject,
+        null,
+        2
+      ),
+      "utf8"
+    );
+
+
+    /*
+      Lightweight index.
+
+      We may use this later for
+      universal search or other
+      navigation features.
+    */
+
+    index.push({
+
+      id:
+        playerID,
+
+      name:
+        playerName,
+
+      file:
+        fileName,
+
+      archived:
+        archived
+
+    });
+
+
+    written++;
+  }
+
+
+  /*
+    Create an index of all generated
+    players in this directory.
+  */
+
+  fs.writeFileSync(
+    path.join(
+      directory,
+      "index.json"
+    ),
+    JSON.stringify(
+      index,
+      null,
+      2
+    ),
+    "utf8"
+  );
+
+
+  console.log(
+    `${
+      archived
+        ? "Archived"
+        : "Active"
+    } player files: ${written}`
+  );
+
+
+  if (skipped) {
+
+    console.log(
+      `${
+        archived
+          ? "Archived"
+          : "Active"
+      } rows skipped because Player-ID or Player name was missing: ${skipped}`
+    );
+  }
 }
 
 
@@ -326,19 +966,104 @@ async function main() {
   );
 
 
-  for (
-    const [sheetName, config]
-    of Object.entries(SHEETS)
-  ) {
+  /*
+    Keep all downloaded datasets
+    in memory.
 
-    await exportSheet(
+    That means we download each
+    Google Sheet only once and use
+    those rows to build every player.
+  */
+
+  const datasets = {};
+
+
+  for (
+    const [
       sheetName,
       config
-    );
+    ]
+    of Object.entries(
+      SHEETS
+    )
+  ) {
+
+    datasets[
+      sheetName
+    ] =
+      await exportSheet(
+        sheetName,
+        config
+      );
   }
 
 
-  /* Timestamp file */
+  const generatedAt =
+    new Date()
+      .toISOString();
+
+
+  /* =========================
+     ACTIVE PLAYERS
+  ========================= */
+
+  buildPlayerFiles({
+
+    bioRows:
+      datasets[
+        "Biography Info"
+      ] || [],
+
+    archived:
+      false,
+
+    directory:
+      path.join(
+        "data",
+        "players"
+      ),
+
+    datasets:
+      datasets,
+
+    generatedAt:
+      generatedAt
+
+  });
+
+
+  /* =========================
+     ARCHIVED PLAYERS
+  ========================= */
+
+  buildPlayerFiles({
+
+    bioRows:
+      datasets[
+        "Archived Biography Info"
+      ] || [],
+
+    archived:
+      true,
+
+    directory:
+      path.join(
+        "data",
+        "archived-players"
+      ),
+
+    datasets:
+      datasets,
+
+    generatedAt:
+      generatedAt
+
+  });
+
+
+  /* =========================
+     GLOBAL TIMESTAMP
+  ========================= */
 
   fs.writeFileSync(
     path.join(
@@ -348,24 +1073,32 @@ async function main() {
     JSON.stringify(
       {
         updated:
-          new Date().toISOString()
+          generatedAt
       },
       null,
       2
-    )
+    ),
+    "utf8"
   );
 
 
   console.log(
-    "All sheet exports complete."
+    "All sheet exports and player files complete."
   );
 }
 
 
+/* =========================
+   RUN
+========================= */
+
 main()
   .catch(error => {
 
-    console.error(error);
+    console.error(
+      error
+    );
 
     process.exit(1);
+
   });
