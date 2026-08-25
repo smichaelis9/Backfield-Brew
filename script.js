@@ -1436,65 +1436,175 @@ function renderArchiveRanking(players) {
 }
 
 async function initArchivePlayerPage() {
-  const id = new URLSearchParams(window.location.search).get("id");
+
+  const id =
+    new URLSearchParams(
+      window.location.search
+    ).get("id");
+
+
+  if (!id) {
+
+    document.body.innerHTML =
+      "<h2>Archived player not found</h2>";
+
+    return;
+  }
+
 
   try {
-    const players = await loadSheet("Archived Biography Info");
 
-    const bio = players.find(p =>
-      get(p, ["Player-ID", "Player ID"]) === id
-    );
+    /* =========================
+       MATCH GENERATED FILE NAME
+    ========================= */
 
-    if (!bio) throw new Error("Archived player not found");
-
-    const isPitcher = get(bio, ["Player Type"]).toLowerCase().includes("pitch");
-
-    const toolsSheet = isPitcher ? "Pitcher Tools" : "Hitter Tools";
-
-    const statSheets = isPitcher
-      ? ["Pitcher Stats 2023", "Pitcher Stats 2024", "Pitcher Stats 2025", "Pitcher Stats 2026"]
-      : ["Hitter Stats 2023", "Hitter Stats 2024", "Hitter Stats 2025", "Hitter Stats 2026"];
-
-    const [toolsRows, videoRows, ...statRowsByYear] = await Promise.all([
-      loadSheet(toolsSheet).catch(() => []),
-      loadSheet("Videos").catch(() => []),
-      ...statSheets.map(sheet => loadSheet(sheet).catch(() => []))
-    ]);
-
-    const tools = toolsRows.find(p =>
-      get(p, ["Player-ID", "Player ID"]) === id
-    );
-
-    const stats = statRowsByYear
-      .map((rows, index) => {
-        const row = rows.find(p =>
-          get(p, ["Player-ID", "Player ID"]) === id
+    const safeID =
+      String(id)
+        .trim()
+        .replace(
+          /[^a-zA-Z0-9._-]/g,
+          "_"
         );
 
-        if (!row) return null;
 
-        const dataKeys = Object.keys(row).filter(k =>
-          !["Player-ID", "Player ID", "Player"].includes(k)
+    /* =========================
+       LOAD ONE PLAYER FILE
+    ========================= */
+
+    const response =
+      await fetch(
+        `data/archived-players/${safeID}.json`
+      );
+
+
+    if (!response.ok) {
+
+      throw new Error(
+        "Archived player data not found"
+      );
+    }
+
+
+    const playerData =
+      await response.json();
+
+
+    /* =========================
+       PLAYER DATA
+    ========================= */
+
+    const bio =
+      playerData.bio || {};
+
+
+    const tools =
+      playerData.tools || null;
+
+
+    const videos =
+      Array.isArray(
+        playerData.videos
+      )
+        ? playerData.videos
+        : [];
+
+
+    const isPitcher =
+      String(
+        playerData.playerType ||
+        get(
+          bio,
+          ["Player Type"]
+        )
+      )
+        .toLowerCase()
+        .includes("pitch");
+
+
+    /* =========================
+       CONVERT STATS OBJECT
+       TO EXISTING PAGE FORMAT
+    ========================= */
+
+    const stats =
+      Object.entries(
+        playerData.stats || {}
+      )
+        .map(
+          ([year, row]) => {
+
+            if (
+              !row ||
+              typeof row !== "object"
+            ) {
+              return null;
+            }
+
+
+            const dataKeys =
+              Object.keys(row)
+                .filter(key =>
+                  ![
+                    "Player-ID",
+                    "Player ID",
+                    "Player",
+                    "PlayerName"
+                  ].includes(key)
+                );
+
+
+            const hasRealStats =
+              dataKeys.some(key =>
+                isRealValue(
+                  row[key]
+                )
+              );
+
+
+            if (!hasRealStats) {
+              return null;
+            }
+
+
+            return {
+              year,
+              row
+            };
+          }
+        )
+        .filter(Boolean)
+        .sort(
+          (a, b) =>
+            Number(a.year) -
+            Number(b.year)
         );
 
-        const hasRealStats = dataKeys.some(k => isRealValue(row[k]));
 
-        if (!hasRealStats) return null;
+    /* =========================
+       USE EXISTING ARCHIVE
+       RENDERER
+    ========================= */
 
-        return {
-          year: statSheets[index].match(/\d{4}/)[0],
-          row
-        };
-      })
-      .filter(Boolean);
-
-    const videos = videoRows.filter(v =>
-      get(v, ["Player-ID", "Player ID"]) === id
+    renderArchivePlayerPage(
+      bio,
+      tools,
+      stats,
+      isPitcher,
+      videos
     );
 
-    renderArchivePlayerPage(bio, tools, stats, isPitcher, videos);
+
   } catch (err) {
-    document.body.innerHTML = `<h2>${err.message}</h2>`;
+
+    console.error(
+      "Archived player page:",
+      err
+    );
+
+
+    document.body.innerHTML =
+      `<h2>${err.message}</h2>`;
+
   }
 }
 
