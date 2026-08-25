@@ -844,6 +844,8 @@ tr:nth-child(even) {
 }
 
 .export-tool-bar {
+  position: relative;
+
   height: 13px;
 
   overflow: hidden;
@@ -853,26 +855,36 @@ tr:nth-child(even) {
 
   border-radius: 999px;
 
-  background: #f7f7f7;
+  background: #edf0f4;
 }
 
-.export-tool-bar-fill {
-  height: 100%;
 
-  border-radius: 999px;
+/* CURRENT GRADE — BREWERS BLUE */
+
+.export-tool-bar-current {
+  position: absolute;
+
+  left: 0;
+  top: 0;
+  bottom: 0;
 
   background: #17294b;
+
+  border-radius:
+    999px 0 0 999px;
 }
 
-.export-tool-grade {
-  color: #17294b;
 
-  text-align: right;
+/* FUTURE GRADE — BREWERS GOLD */
 
-  font-size: 17px;
-  font-weight: 900;
+.export-tool-bar-future {
+  position: absolute;
+
+  top: 0;
+  bottom: 0;
+
+  background: #ffc52f;
 }
-
 
 /* =========================
    RANK MOVEMENT
