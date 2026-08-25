@@ -545,24 +545,49 @@ async function initPlayerPage() {
             }
 
 
-            const dataKeys =
-              Object.keys(row)
-                .filter(key =>
-                  ![
-                    "Player-ID",
-                    "Player ID",
-                    "Player",
-                    "PlayerName"
-                  ].includes(key)
-                );
+            /* =========================
+               CHECK FOR ACTUAL STATS
+            ========================= */
+
+            const ignoreFields = new Set([
+              "Player-ID",
+              "Player ID",
+              "Player",
+              "PlayerName",
+              "Player Name",
+              "Name",
+              "Archived?",
+              "Team",
+              "Level",
+              "Age",
+              "Season",
+              "Year"
+            ]);
 
 
             const hasRealStats =
-              dataKeys.some(key =>
-                isRealValue(
-                  row[key]
-                )
-              );
+              Object.entries(row)
+                .some(([key, value]) => {
+
+                  if (
+                    ignoreFields.has(key)
+                  ) {
+                    return false;
+                  }
+
+
+                  const cleaned =
+                    String(value ?? "")
+                      .trim();
+
+
+                  return (
+                    cleaned !== "" &&
+                    cleaned.toLowerCase() !== "n/a" &&
+                    cleaned.toLowerCase() !== "na" &&
+                    cleaned !== "-"
+                  );
+                });
 
 
             if (!hasRealStats) {
@@ -1541,24 +1566,49 @@ async function initArchivePlayerPage() {
             }
 
 
-            const dataKeys =
-              Object.keys(row)
-                .filter(key =>
-                  ![
-                    "Player-ID",
-                    "Player ID",
-                    "Player",
-                    "PlayerName"
-                  ].includes(key)
-                );
+            /* =========================
+               CHECK FOR ACTUAL STATS
+            ========================= */
+
+            const ignoreFields = new Set([
+              "Player-ID",
+              "Player ID",
+              "Player",
+              "PlayerName",
+              "Player Name",
+              "Name",
+              "Archived?",
+              "Team",
+              "Level",
+              "Age",
+              "Season",
+              "Year"
+            ]);
 
 
             const hasRealStats =
-              dataKeys.some(key =>
-                isRealValue(
-                  row[key]
-                )
-              );
+              Object.entries(row)
+                .some(([key, value]) => {
+
+                  if (
+                    ignoreFields.has(key)
+                  ) {
+                    return false;
+                  }
+
+
+                  const cleaned =
+                    String(value ?? "")
+                      .trim();
+
+
+                  return (
+                    cleaned !== "" &&
+                    cleaned.toLowerCase() !== "n/a" &&
+                    cleaned.toLowerCase() !== "na" &&
+                    cleaned !== "-"
+                  );
+                });
 
 
             if (!hasRealStats) {
