@@ -593,7 +593,13 @@ tr:nth-child(even) {
 ========================= */
 
 .export-card-left {
+  position: relative;
+
+  height: 515px;
+
   padding-right: 24px;
+
+  overflow: hidden;
 
   border-right:
     2px solid #17294b;
@@ -605,6 +611,9 @@ tr:nth-child(even) {
 ========================= */
 
 .export-brand {
+  position: relative;
+  z-index: 1;
+
   min-height: 86px;
 
   display: flex;
@@ -619,9 +628,6 @@ tr:nth-child(even) {
   height: auto;
 
   max-width: 100%;
-
-  object-fit: contain;
-  object-position: left top;
 }
 
 
@@ -630,10 +636,13 @@ tr:nth-child(even) {
 ========================= */
 
 .export-photo-frame {
+  position: absolute;
+
+  left: 0;
+  bottom: 0;
+
   width: 270px;
   height: 390px;
-
-  margin-top: 12px;
 
   overflow: hidden;
 
@@ -643,6 +652,8 @@ tr:nth-child(even) {
   border-radius: 16px;
 
   background: #eee;
+
+  z-index: 2;
 }
 
 .export-player-photo {
@@ -666,7 +677,6 @@ tr:nth-child(even) {
   font-size: 22px;
   font-weight: 700;
 }
-
 /* =========================
    PLAYER HEADING
 ========================= */
