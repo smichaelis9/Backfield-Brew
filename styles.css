@@ -310,7 +310,12 @@ tr:nth-child(even) {
   grid-template-columns: 1fr 1.2fr;
   gap: 20px;
 }
-
+.player-section-loading {
+  color: #777;
+  font-size: 12px;
+  font-style: italic;
+  margin: 8px 0 0;
+}
 /* =========================
    TOOLS / NOTES / LINKS
 ========================= */
