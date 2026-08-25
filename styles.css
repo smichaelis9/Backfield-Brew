@@ -534,29 +534,34 @@ tr:nth-child(even) {
   opacity: 0.9;
 }
 
-
 /* =========================
-   PLAYER EXPORT CARD
+   LANDSCAPE PLAYER CARD
 ========================= */
 
 .player-export-card {
   position: fixed;
-  left: -10000px;
+  left: -20000px;
   top: 0;
 
-  width: 1200px;
-  min-height: 1500px;
+  width: 1600px;
+  height: 1000px;
 
   box-sizing: border-box;
 
-  padding: 54px;
+  padding: 26px 30px 22px;
+
+  overflow: hidden;
 
   background:
     linear-gradient(
-      180deg,
+      135deg,
       #ffffff 0%,
-      #f4f5f7 100%
+      #f8f8f6 60%,
+      #f2f3f5 100%
     );
+
+  border: 3px solid #17294b;
+  border-radius: 18px;
 
   color: #111;
 
@@ -566,93 +571,308 @@ tr:nth-child(even) {
     sans-serif;
 }
 
-.player-export-topbar {
-  display: flex;
-  justify-content: center;
 
-  padding-bottom: 30px;
+/* =========================
+   TOP
+========================= */
 
-  border-bottom: 8px solid #1b2a4a;
-}
-
-.player-export-logo {
-  width: 370px;
-  max-height: 120px;
-
-  object-fit: contain;
-}
-
-.player-export-header {
+.export-card-top {
   display: grid;
 
   grid-template-columns:
-    340px 1fr;
+    310px 620px 1fr;
 
-  gap: 44px;
+  gap: 28px;
 
-  align-items: center;
-
-  margin-top: 42px;
+  height: 515px;
 }
 
-.player-export-photo-wrap {
-  width: 340px;
-  height: 340px;
 
-  border-radius: 22px;
+/* =========================
+   BRAND / PHOTO
+========================= */
+
+.export-card-left {
+  padding-right: 24px;
+
+  border-right:
+    2px solid #17294b;
+}
+
+.export-brand {
+  height: 86px;
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.export-brand-logo {
+  width: 245px;
+  height: 76px;
+
+  object-fit: contain;
+  object-position: left top;
+}
+
+.export-photo-frame {
+  width: 270px;
+  height: 390px;
+
+  margin-top: 12px;
 
   overflow: hidden;
 
-  background: #e6e8ec;
+  border:
+    3px solid #ffc52f;
 
-  border: 4px solid #1b2a4a;
+  border-radius: 16px;
+
+  background: #eee;
 }
 
-.player-export-photo {
+.export-player-photo {
   width: 100%;
   height: 100%;
 
   object-fit: cover;
+  object-position: top center;
 }
 
-.player-export-photo-placeholder {
+.export-photo-empty {
+  width: 100%;
+  height: 100%;
+
   display: flex;
   align-items: center;
   justify-content: center;
 
-  width: 100%;
-  height: 100%;
-
   color: #777;
 
-  font-size: 28px;
+  font-size: 22px;
   font-weight: 700;
 }
 
-.player-export-rank-row {
+
+/* =========================
+   PLAYER HEADING
+========================= */
+
+.export-card-center {
+  padding-top: 6px;
+}
+
+.export-player-heading {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
 
   gap: 18px;
+
+  min-height: 118px;
+}
+
+.export-rank-block {
+  color: #17294b;
+
+  font-size: 82px;
+  line-height: 0.9;
+
+  font-weight: 900;
+  letter-spacing: -4px;
+}
+
+.export-name-block {
+  flex: 1;
+}
+
+.export-name-block h1 {
+  margin: 0;
+
+  color: #17294b;
+
+  font-size: 55px;
+  line-height: 0.98;
+
+  font-weight: 900;
+
+  text-transform: uppercase;
+}
+
+.export-position {
+  margin-top: 8px;
+
+  color: #222;
+
+  font-size: 26px;
+  font-weight: 800;
+}
+
+.export-rank-change {
+  padding-top: 5px;
+}
+
+
+/* =========================
+   BIO
+========================= */
+
+.export-bio-columns {
+  display: grid;
+
+  grid-template-columns:
+    1fr 1fr;
+
+  gap: 0 34px;
+
+  margin-top: 24px;
+}
+
+.export-bio-column + .export-bio-column {
+  padding-left: 30px;
+
+  border-left:
+    1px solid #b7bdc8;
+}
+
+.export-info-item {
+  min-height: 78px;
 
   margin-bottom: 8px;
 }
 
-.player-export-rank {
-  color: #1b2a4a;
+.export-info-label {
+  margin-bottom: 6px;
 
-  font-size: 58px;
+  color: #17294b;
+
+  font-size: 15px;
+  line-height: 1;
+
+  font-weight: 900;
+
+  text-transform: uppercase;
+}
+
+.export-info-value {
+  color: #111;
+
+  font-size: 22px;
+  line-height: 1.18;
+
+  font-weight: 700;
+}
+
+.export-info-secondary {
+  margin-left: 5px;
+
+  font-size: 17px;
+  font-weight: 700;
+}
+
+
+/* =========================
+   TOOL GRADES
+========================= */
+
+.export-card-tools {
+  margin-top: 72px;
+
+  height: 385px;
+
+  padding: 18px 20px;
+
+  box-sizing: border-box;
+
+  border:
+    1px solid #9ca7b8;
+
+  border-radius: 14px;
+
+  background:
+    rgba(255,255,255,.75);
+}
+
+.export-section-title {
+  padding-bottom: 10px;
+
+  border-bottom:
+    2px solid #17294b;
+
+  color: #17294b;
+
+  font-size: 24px;
+  font-weight: 900;
+
+  text-transform: uppercase;
+}
+
+.export-tools-list {
+  margin-top: 12px;
+}
+
+.export-tool-row {
+  display: grid;
+
+  grid-template-columns:
+    145px 1fr 58px;
+
+  gap: 10px;
+
+  align-items: center;
+
+  height: 39px;
+}
+
+.export-tool-label {
+  color: #17294b;
+
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.export-tool-bar {
+  height: 13px;
+
+  overflow: hidden;
+
+  border:
+    1px solid #ccd1d8;
+
+  border-radius: 999px;
+
+  background: #f7f7f7;
+}
+
+.export-tool-bar-fill {
+  height: 100%;
+
+  border-radius: 999px;
+
+  background: #17294b;
+}
+
+.export-tool-grade {
+  color: #17294b;
+
+  text-align: right;
+
+  font-size: 17px;
   font-weight: 900;
 }
+
+
+/* =========================
+   RANK MOVEMENT
+========================= */
 
 .player-export-movement {
   display: inline-block;
 
-  padding: 7px 13px;
+  padding: 7px 11px;
 
   border-radius: 999px;
 
-  font-size: 24px;
+  font-size: 16px;
   font-weight: 900;
 }
 
@@ -667,191 +887,134 @@ tr:nth-child(even) {
 }
 
 .player-export-movement.new {
-  background: #fff2bf;
-  color: #1b2a4a;
+  background: #fff0b8;
+  color: #17294b;
 }
 
-.player-export-title h1 {
-  margin: 0;
 
-  color: #111;
+/* =========================
+   STATS AREA
+========================= */
 
-  font-size: 62px;
-  line-height: 1.05;
+.export-card-bottom {
+  margin-top: 18px;
 }
 
-.player-export-subtitle {
-  margin-top: 12px;
+.export-stat-section {
+  margin-bottom: 18px;
 
-  color: #555;
+  overflow: hidden;
 
-  font-size: 28px;
-  font-weight: 700;
-}
-
-.player-export-bio-grid {
-  display: grid;
-
-  grid-template-columns:
-    repeat(4, 1fr);
-
-  gap: 12px;
-
-  margin-top: 28px;
-}
-
-.player-export-bio-grid div,
-.player-export-details div {
-  padding: 14px;
+  border:
+    1px solid #17294b;
 
   border-radius: 12px;
 
   background: #fff;
-
-  border: 1px solid #d7dbe2;
 }
 
-.player-export-bio-grid span,
-.player-export-details span {
-  display: block;
+.export-stat-title {
+  padding:
+    10px 16px 9px;
 
-  margin-bottom: 4px;
+  color: #17294b;
 
-  color: #777;
+  font-size: 22px;
+  line-height: 1;
 
-  font-size: 15px;
-  font-weight: 700;
+  font-weight: 900;
 
   text-transform: uppercase;
 }
 
-.player-export-bio-grid strong,
-.player-export-details strong {
-  color: #1b2a4a;
-
-  font-size: 19px;
-}
-
-.player-export-details {
+.export-stat-grid {
   display: grid;
 
-  grid-template-columns:
-    repeat(2, 1fr);
-
-  gap: 14px;
-
-  margin-top: 28px;
+  border-top:
+    1px solid #17294b;
 }
 
-.player-export-section {
-  margin-top: 34px;
+.export-stat-label {
+  min-width: 0;
 
-  padding: 28px;
+  padding:
+    9px 2px;
 
-  border-radius: 18px;
+  background: #17294b;
 
-  background: #fff;
-
-  border: 1px solid #d7dbe2;
-}
-
-.player-export-section h2 {
-  margin: 0 0 20px;
-
-  padding-bottom: 10px;
-
-  border-bottom: 5px solid #ffcc00;
-
-  color: #1b2a4a;
-
-  font-size: 30px;
-}
-
-.player-export-tool-grid {
-  display: grid;
-
-  grid-template-columns:
-    repeat(4, 1fr);
-
-  gap: 12px;
-}
-
-.player-export-tool {
-  padding: 16px;
-
-  border-radius: 10px;
-
-  background: #f4f5f7;
-
-  text-align: center;
-}
-
-.player-export-tool span {
-  display: block;
-
-  color: #555;
-
-  font-size: 15px;
-  font-weight: 700;
-}
-
-.player-export-tool strong {
-  display: block;
-
-  margin-top: 5px;
-
-  color: #1b2a4a;
-
-  font-size: 25px;
-}
-
-.player-export-stat-grid {
-  display: grid;
-
-  grid-template-columns:
-    repeat(6, 1fr);
-
-  gap: 12px;
-}
-
-.player-export-stat {
-  padding: 16px 10px;
-
-  border-radius: 10px;
-
-  background: #1b2a4a;
-
-  text-align: center;
-}
-
-.player-export-stat span {
-  display: block;
-
-  color: #ffcc00;
-
-  font-size: 16px;
-  font-weight: 800;
-}
-
-.player-export-stat strong {
-  display: block;
-
-  margin-top: 6px;
+  border-right:
+    1px solid rgba(255,255,255,.22);
 
   color: #fff;
 
-  font-size: 25px;
+  text-align: center;
+
+  font-size: 13px;
+  line-height: 1;
+
+  font-weight: 800;
 }
 
-.player-export-footer {
-  margin-top: 28px;
+.export-stat-value {
+  min-width: 0;
 
+  padding:
+    11px 2px;
+
+  border-right:
+    1px solid #c7ccd5;
+
+  color: #17294b;
+
+  text-align: center;
+
+  font-size: 17px;
+  line-height: 1;
+
+  font-weight: 900;
+}
+
+
+/* =========================
+   NO DATA
+========================= */
+
+.export-no-stats,
+.export-no-tools {
   color: #777;
 
-  text-align: right;
-
   font-size: 16px;
-  font-weight: 700;
+  font-style: italic;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+.export-card-footer {
+  display: grid;
+
+  grid-template-columns:
+    1fr auto 1fr;
+
+  gap: 25px;
+
+  align-items: center;
+
+  margin-top: 4px;
+}
+
+.export-card-footer span {
+  height: 2px;
+
+  background: #ffc52f;
+}
+
+.export-card-footer strong {
+  color: #17294b;
+
+  font-size: 17px;
 }
 
 /* =========================
