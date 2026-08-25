@@ -1133,8 +1133,8 @@ function renderStats(stats, isPitcher) {
     : ["PA","H","2B","3B","HR","OBP","SLG","OPS","SB","CS","SB%"];
 
   const advancedCols = isPitcher
-    ? ["K%","BB%","K-BB %","SwStr %","Whiff%","BABIP","LOB %","LD%","GB%","FB%","IFFB %","HR/FB"]
-    : ["wRC+","BABIP","wOBA","K%","BB%","SwStr %","Whiff%","Pull %","Cent %","Oppo %","LD%","GB%","FB%","IFFB %"];
+    ? ["K%","BB%","K-BB %","SwStr %","Whiff%","BABIP","LOB%","LD%","GB%","FB%","IFFB%","HR/FB"]
+    : ["wRC+","BABIP","wOBA","K%","BB%","SwStr %","Whiff%","Pull %","Cent %","Oppo %","LD%","GB%","FB%","IFFB%"];
 
   function buildTable(title, cols) {
     return `
