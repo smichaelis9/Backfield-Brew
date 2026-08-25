@@ -2073,10 +2073,30 @@ function buildLandscapeExportTools(
       ${items
         .map(item => {
 
-          const barWidth =
-            getExportGradeWidth(
-              item.grade
-            );
+          const grades =
+           getExportGradeValues(
+             item.grade
+           );
+
+
+         const currentWidth =
+           getExportGradePosition(
+             grades.current
+           );
+
+
+         const futurePosition =
+           getExportGradePosition(
+             grades.future
+           );
+
+
+         const futureWidth =
+           Math.max(
+             0,
+             futurePosition -
+             currentWidth
+           );
 
 
           return `
@@ -2088,12 +2108,26 @@ function buildLandscapeExportTools(
 
               <div class="export-tool-bar">
 
-                <div
-                  class="export-tool-bar-fill"
-                  style="width:${barWidth}%"
-                ></div>
+                 <div
+                   class="export-tool-bar-current"
+                   style="width:${currentWidth}%"
+                 ></div>
 
-              </div>
+                 ${
+                   futureWidth > 0
+                     ? `
+                       <div
+                         class="export-tool-bar-future"
+                         style="
+                           left:${currentWidth}%;
+                           width:${futureWidth}%;
+                         "
+                       ></div>
+                     `
+                     : ""
+                 }
+
+               </div>
 
               <div class="export-tool-grade">
                 ${item.grade}
@@ -2108,31 +2142,64 @@ function buildLandscapeExportTools(
   `;
 }
 
+function getExportGradeValues(grade) {
 
-function getExportGradeWidth(
-  grade
-) {
-
-  const firstNumber =
-    parseFloat(
-      String(grade)
-        .match(/\d+/)?.[0] || 0
-    );
+  const numbers =
+    String(grade)
+      .match(/\d+/g)
+      ?.map(Number) || [];
 
 
-  if (!firstNumber) {
-    return 0;
+  if (!numbers.length) {
+
+    return {
+      current: 0,
+      future: 0
+    };
   }
 
 
+  const current =
+    numbers[0];
+
+
+  const future =
+    numbers.length > 1
+      ? numbers[1]
+      : current;
+
+
+  return {
+    current,
+    future
+  };
+}
+
+
+function getExportGradePosition(
+  grade
+) {
+
+  const minGrade = 20;
+  const maxGrade = 80;
+
+
+  const percentage =
+    (
+      (grade - minGrade) /
+      (maxGrade - minGrade)
+    ) * 100;
+
+
   return Math.max(
-    15,
+    0,
     Math.min(
       100,
-      (firstNumber / 80) * 100
+      percentage
     )
   );
 }
+
 function buildLandscapeExportStats(
   currentStats,
   isPitcher
