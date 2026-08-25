@@ -506,6 +506,353 @@ tr:nth-child(even) {
   background: #ffc52f;
   color: #1b2a4a;
 }
+/* =========================
+   PLAYER CARD EXPORT BUTTON
+========================= */
+
+.player-export-actions {
+  display: flex;
+  justify-content: flex-end;
+  margin: -4px 0 14px;
+}
+
+.player-export-button {
+  border: 1px solid #1b2a4a;
+  border-radius: 999px;
+  background: #1b2a4a;
+  color: #ffcc00;
+
+  padding: 8px 15px;
+
+  font-size: 12px;
+  font-weight: 800;
+
+  cursor: pointer;
+}
+
+.player-export-button:hover {
+  opacity: 0.9;
+}
+
+
+/* =========================
+   PLAYER EXPORT CARD
+========================= */
+
+.player-export-card {
+  position: fixed;
+  left: -10000px;
+  top: 0;
+
+  width: 1200px;
+  min-height: 1500px;
+
+  box-sizing: border-box;
+
+  padding: 54px;
+
+  background:
+    linear-gradient(
+      180deg,
+      #ffffff 0%,
+      #f4f5f7 100%
+    );
+
+  color: #111;
+
+  font-family:
+    Arial,
+    Helvetica,
+    sans-serif;
+}
+
+.player-export-topbar {
+  display: flex;
+  justify-content: center;
+
+  padding-bottom: 30px;
+
+  border-bottom: 8px solid #1b2a4a;
+}
+
+.player-export-logo {
+  width: 370px;
+  max-height: 120px;
+
+  object-fit: contain;
+}
+
+.player-export-header {
+  display: grid;
+
+  grid-template-columns:
+    340px 1fr;
+
+  gap: 44px;
+
+  align-items: center;
+
+  margin-top: 42px;
+}
+
+.player-export-photo-wrap {
+  width: 340px;
+  height: 340px;
+
+  border-radius: 22px;
+
+  overflow: hidden;
+
+  background: #e6e8ec;
+
+  border: 4px solid #1b2a4a;
+}
+
+.player-export-photo {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+}
+
+.player-export-photo-placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  height: 100%;
+
+  color: #777;
+
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.player-export-rank-row {
+  display: flex;
+  align-items: center;
+
+  gap: 18px;
+
+  margin-bottom: 8px;
+}
+
+.player-export-rank {
+  color: #1b2a4a;
+
+  font-size: 58px;
+  font-weight: 900;
+}
+
+.player-export-movement {
+  display: inline-block;
+
+  padding: 7px 13px;
+
+  border-radius: 999px;
+
+  font-size: 24px;
+  font-weight: 900;
+}
+
+.player-export-movement.up {
+  background: #e5f4e8;
+  color: #188038;
+}
+
+.player-export-movement.down {
+  background: #fde8e7;
+  color: #c5221f;
+}
+
+.player-export-movement.new {
+  background: #fff2bf;
+  color: #1b2a4a;
+}
+
+.player-export-title h1 {
+  margin: 0;
+
+  color: #111;
+
+  font-size: 62px;
+  line-height: 1.05;
+}
+
+.player-export-subtitle {
+  margin-top: 12px;
+
+  color: #555;
+
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.player-export-bio-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(4, 1fr);
+
+  gap: 12px;
+
+  margin-top: 28px;
+}
+
+.player-export-bio-grid div,
+.player-export-details div {
+  padding: 14px;
+
+  border-radius: 12px;
+
+  background: #fff;
+
+  border: 1px solid #d7dbe2;
+}
+
+.player-export-bio-grid span,
+.player-export-details span {
+  display: block;
+
+  margin-bottom: 4px;
+
+  color: #777;
+
+  font-size: 15px;
+  font-weight: 700;
+
+  text-transform: uppercase;
+}
+
+.player-export-bio-grid strong,
+.player-export-details strong {
+  color: #1b2a4a;
+
+  font-size: 19px;
+}
+
+.player-export-details {
+  display: grid;
+
+  grid-template-columns:
+    repeat(2, 1fr);
+
+  gap: 14px;
+
+  margin-top: 28px;
+}
+
+.player-export-section {
+  margin-top: 34px;
+
+  padding: 28px;
+
+  border-radius: 18px;
+
+  background: #fff;
+
+  border: 1px solid #d7dbe2;
+}
+
+.player-export-section h2 {
+  margin: 0 0 20px;
+
+  padding-bottom: 10px;
+
+  border-bottom: 5px solid #ffcc00;
+
+  color: #1b2a4a;
+
+  font-size: 30px;
+}
+
+.player-export-tool-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(4, 1fr);
+
+  gap: 12px;
+}
+
+.player-export-tool {
+  padding: 16px;
+
+  border-radius: 10px;
+
+  background: #f4f5f7;
+
+  text-align: center;
+}
+
+.player-export-tool span {
+  display: block;
+
+  color: #555;
+
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.player-export-tool strong {
+  display: block;
+
+  margin-top: 5px;
+
+  color: #1b2a4a;
+
+  font-size: 25px;
+}
+
+.player-export-stat-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(6, 1fr);
+
+  gap: 12px;
+}
+
+.player-export-stat {
+  padding: 16px 10px;
+
+  border-radius: 10px;
+
+  background: #1b2a4a;
+
+  text-align: center;
+}
+
+.player-export-stat span {
+  display: block;
+
+  color: #ffcc00;
+
+  font-size: 16px;
+  font-weight: 800;
+}
+
+.player-export-stat strong {
+  display: block;
+
+  margin-top: 6px;
+
+  color: #fff;
+
+  font-size: 25px;
+}
+
+.player-export-footer {
+  margin-top: 28px;
+
+  color: #777;
+
+  text-align: right;
+
+  font-size: 16px;
+  font-weight: 700;
+}
 
 /* =========================
    TRENDING / ARCHIVE
