@@ -6,6 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <link rel="stylesheet" href="styles.css?v=23" />
+
+  <script
+    src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"
+    defer
+  ></script>
   <script defer src="script.js?v=55"></script>
 </head>
 
@@ -50,7 +55,17 @@
     <section id="playerHero" class="card" data-access="rankings">
       Loading player...
     </section>
-
+    
+    <div class="player-export-actions">
+      <button
+        type="button"
+        id="exportPlayerCardButton"
+        class="player-export-button"
+      >
+        Export Player Card
+      </button>
+    </div>
+    
     <div class="two-col">
       <section id="bioCard" class="card" data-access="rankings">
         Loading biography...
