@@ -1810,6 +1810,10 @@ function buildPlayerExportCard(
               birthplace
             )}
 
+           ${buildExportInfo(
+             "Rule 5 Eligible",
+             rule5
+           )}
           </div>
 
 
@@ -1838,11 +1842,6 @@ function buildPlayerExportCard(
            ${buildExportInfo(
              "Draft / IFA",
              draft
-           )}
-
-           ${buildExportInfo(
-             "Rule 5 Eligible",
-             rule5
            )}
 
           </div>
