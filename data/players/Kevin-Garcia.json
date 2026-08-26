@@ -3,7 +3,7 @@
   "name": "Kevin Garcia",
   "archived": false,
   "playerType": "Hitter",
-  "generatedAt": "2026-08-26T14:55:05.032Z",
+  "generatedAt": "2026-08-26T16:11:32.246Z",
   "bio": {
     "Player-ID": "Kevin-Garcia",
     "MLBAM ID": "821237",
@@ -212,7 +212,7 @@
       "K%": "32.0%",
       "BB%": "6.3%",
       "SwStr %": "19.7%",
-      "Whiff%": "42.6%",
+      "Whiff%": "36.5%",
       "Pull %": "51.2%",
       "Cent %": "15.7%",
       "Oppo %": "33.1%",
@@ -225,6 +225,18 @@
       "SB%": "100.0%",
       "Archived?": ""
     }
+  },
+  "gamedayWhiff": {
+    "mlbamID": "821237",
+    "swings": 395,
+    "whiffs": 144,
+    "contacts": 251,
+    "whiffPct": 36.5,
+    "contactPct": 63.5,
+    "games": 50,
+    "levels": [
+      "A"
+    ]
   },
   "videos": [
     {

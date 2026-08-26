@@ -3,13 +3,13 @@
   "name": "Sam Garcia",
   "archived": false,
   "playerType": "Pitcher",
-  "generatedAt": "2026-08-26T14:55:05.032Z",
+  "generatedAt": "2026-08-26T16:11:32.246Z",
   "bio": {
     "Player-ID": "Sam-Garcia",
     "MLBAM ID": "822760",
     "Player Type": "Pitcher",
     "Player": "Sam Garcia",
-    "Rank": "185",
+    "Rank": "186",
     "Trending": "",
     "Position": "LHP",
     "Level": "IL",
@@ -89,7 +89,7 @@
     "Instagram Link": "https://www.instagram.com/sam.garcia22/",
     "Other Social": "",
     "Other Social Link": "",
-    "Previous Rank": "185"
+    "Previous Rank": "186"
   },
   "tools": {
     "Player-ID": "Sam-Garcia",
@@ -231,7 +231,7 @@
       "BB%": "13.30%",
       "K-BB %": "16.20%",
       "SwStr %": "12.70%",
-      "Whiff%": "34.1%",
+      "Whiff%": "30.5%",
       "WHIP": "1.47",
       "BABIP": "0.341",
       "LOB%": "60.8%",
@@ -242,6 +242,18 @@
       "HR/FB": "0.07",
       "Archived?": ""
     }
+  },
+  "gamedayWhiff": {
+    "mlbamID": "822760",
+    "swings": 298,
+    "whiffs": 91,
+    "contacts": 207,
+    "whiffPct": 30.5,
+    "contactPct": 69.5,
+    "games": 27,
+    "levels": [
+      "AA"
+    ]
   },
   "videos": [
     {

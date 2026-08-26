@@ -3,13 +3,13 @@
   "name": "Dalvin Bodre",
   "archived": false,
   "playerType": "Pitcher",
-  "generatedAt": "2026-08-26T14:55:05.032Z",
+  "generatedAt": "2026-08-26T16:11:32.246Z",
   "bio": {
     "Player-ID": "Dalvin-Bodre",
     "MLBAM ID": "821182",
     "Player Type": "Pitcher",
     "Player": "Dalvin Bodre",
-    "Rank": "173",
+    "Rank": "174",
     "Trending": "",
     "Position": "RHP",
     "Level": "DSL",
@@ -89,7 +89,7 @@
     "Instagram Link": "https://www.instagram.com/they_call_me_bodre/",
     "Other Social": "TikTok",
     "Other Social Link": "https://www.tiktok.com/@dalvincito27?lang=en",
-    "Previous Rank": "173"
+    "Previous Rank": "174"
   },
   "tools": {
     "Player-ID": "Dalvin-Bodre",
@@ -243,6 +243,7 @@
       "Archived?": ""
     }
   },
+  "gamedayWhiff": null,
   "videos": [
     {
       "Player-ID": "Dalvin-Bodre",

@@ -3,13 +3,13 @@
   "name": "Jhosep Ospino",
   "archived": false,
   "playerType": "Pitcher",
-  "generatedAt": "2026-08-26T14:55:05.032Z",
+  "generatedAt": "2026-08-26T16:11:32.246Z",
   "bio": {
     "Player-ID": "Jhosep-Ospino",
     "MLBAM ID": "815784",
     "Player Type": "Pitcher",
     "Player": "Jhosep Ospino",
-    "Rank": "210",
+    "Rank": "211",
     "Trending": "",
     "Position": "RHP",
     "Level": "ACL",
@@ -89,7 +89,7 @@
     "Instagram Link": "https://www.instagram.com/j_ospino06/",
     "Other Social": "",
     "Other Social Link": "",
-    "Previous Rank": "210"
+    "Previous Rank": "211"
   },
   "tools": {
     "Player-ID": "Jhosep-Ospino",
@@ -243,6 +243,7 @@
       "Archived?": ""
     }
   },
+  "gamedayWhiff": null,
   "videos": [
     {
       "Player-ID": "Jhosep-Ospino",

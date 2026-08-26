@@ -3,7 +3,7 @@
   "name": "Luis Lara",
   "archived": false,
   "playerType": "Hitter",
-  "generatedAt": "2026-08-26T14:55:05.032Z",
+  "generatedAt": "2026-08-26T16:11:32.246Z",
   "bio": {
     "Player-ID": "Luis-Lara",
     "MLBAM ID": "800325",
@@ -212,7 +212,7 @@
       "K%": "13.9%",
       "BB%": "15.6%",
       "SwStr %": "5.1%",
-      "Whiff%": "15.5%",
+      "Whiff%": "12.5%",
       "Pull %": "38.3%",
       "Cent %": "24.2%",
       "Oppo %": "37.5%",
@@ -225,6 +225,18 @@
       "SB%": "77.4%",
       "Archived?": ""
     }
+  },
+  "gamedayWhiff": {
+    "mlbamID": "800325",
+    "swings": 554,
+    "whiffs": 69,
+    "contacts": 485,
+    "whiffPct": 12.5,
+    "contactPct": 87.5,
+    "games": 78,
+    "levels": [
+      "AAA"
+    ]
   },
   "videos": [
     {

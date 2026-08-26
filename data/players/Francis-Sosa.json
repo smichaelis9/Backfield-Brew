@@ -3,13 +3,13 @@
   "name": "Francis Sosa",
   "archived": false,
   "playerType": "Hitter",
-  "generatedAt": "2026-08-26T14:55:05.032Z",
+  "generatedAt": "2026-08-26T16:11:32.246Z",
   "bio": {
     "Player-ID": "Francis-Sosa",
     "MLBAM ID": "829899",
     "Player Type": "Hitter",
     "Player": "Francis Sosa",
-    "Rank": "193",
+    "Rank": "194",
     "Trending": "",
     "Position": "OF",
     "Level": "DSL",
@@ -89,7 +89,7 @@
     "Instagram Link": "https://www.instagram.com/f_sosa_13/",
     "Other Social": "TikTok",
     "Other Social Link": "https://www.tiktok.com/@soy_sosa8?lang=en",
-    "Previous Rank": "193"
+    "Previous Rank": "194"
   },
   "tools": {
     "Player-ID": "Francis-Sosa",
@@ -226,6 +226,7 @@
       "Archived?": ""
     }
   },
+  "gamedayWhiff": null,
   "videos": [
     {
       "Player-ID": "Francis-Sosa",

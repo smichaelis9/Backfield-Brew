@@ -3,13 +3,13 @@
   "name": "Jesus Vasquez",
   "archived": false,
   "playerType": "Pitcher",
-  "generatedAt": "2026-08-26T14:55:05.032Z",
+  "generatedAt": "2026-08-26T16:11:32.246Z",
   "bio": {
     "Player-ID": "Jesus-Vasquez",
     "MLBAM ID": "837235",
     "Player Type": "Pitcher",
     "Player": "Jesus Vasquez",
-    "Rank": "218",
+    "Rank": "219",
     "Trending": "",
     "Position": "RHP",
     "Level": "DSL",
@@ -28,7 +28,7 @@
     "Weight": "160",
     "Bat / Throw": "Right/Right",
     "Birthday": "7/30/2008",
-    "Rule 5 Eligible": "2028",
+    "Rule 5 Eligible": "2029",
     "Picture": "https://i.ibb.co/LdcBb2fs/image.png",
     "Picture Source": "Instagram",
     "Notes Updated": "N/A",
@@ -89,7 +89,7 @@
     "Instagram Link": "https://www.instagram.com/j.v_2024/",
     "Other Social": "",
     "Other Social Link": "",
-    "Previous Rank": "218"
+    "Previous Rank": "219"
   },
   "tools": {
     "Player-ID": "Jesus-Vasquez",
@@ -243,6 +243,7 @@
       "Archived?": ""
     }
   },
+  "gamedayWhiff": null,
   "videos": [
     {
       "Player-ID": "Jesus-Vasquez",

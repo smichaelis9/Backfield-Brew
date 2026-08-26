@@ -3,13 +3,13 @@
   "name": "Blayberg Diaz",
   "archived": false,
   "playerType": "Hitter",
-  "generatedAt": "2026-08-26T14:55:05.032Z",
+  "generatedAt": "2026-08-26T16:11:32.246Z",
   "bio": {
     "Player-ID": "Blayberg-Diaz",
     "MLBAM ID": "691600",
     "Player Type": "Hitter",
     "Player": "Blayberg Diaz",
-    "Rank": "191",
+    "Rank": "192",
     "Trending": "",
     "Position": "C",
     "Level": "A+",
@@ -89,7 +89,7 @@
     "Instagram Link": "https://www.instagram.com/blaydiaz/",
     "Other Social": "",
     "Other Social Link": "",
-    "Previous Rank": "191"
+    "Previous Rank": "192"
   },
   "tools": {
     "Player-ID": "Blayberg-Diaz",
@@ -212,7 +212,7 @@
       "K%": "21.8%",
       "BB%": "6.3%",
       "SwStr %": "13.5%",
-      "Whiff%": "25.6%",
+      "Whiff%": "23.5%",
       "Pull %": "37.9%",
       "Cent %": "25.2%",
       "Oppo %": "36.9%",
@@ -225,6 +225,18 @@
       "SB%": "",
       "Archived?": ""
     }
+  },
+  "gamedayWhiff": {
+    "mlbamID": "691600",
+    "swings": 294,
+    "whiffs": 69,
+    "contacts": 225,
+    "whiffPct": 23.5,
+    "contactPct": 76.5,
+    "games": 42,
+    "levels": [
+      "A+"
+    ]
   },
   "videos": [
     {

@@ -3,13 +3,13 @@
   "name": "Carlos Galindo",
   "archived": false,
   "playerType": "Pitcher",
-  "generatedAt": "2026-08-26T14:55:05.032Z",
+  "generatedAt": "2026-08-26T16:11:32.246Z",
   "bio": {
     "Player-ID": "Carlos-Galindo",
     "MLBAM ID": "829902",
     "Player Type": "Pitcher",
     "Player": "Carlos Galindo",
-    "Rank": "174",
+    "Rank": "175",
     "Trending": "",
     "Position": "RHP",
     "Level": "DSL",
@@ -89,7 +89,7 @@
     "Instagram Link": "https://www.instagram.com/c___galindo1/",
     "Other Social": "TikTok",
     "Other Social Link": "https://www.tiktok.com/@carlos_ofi_1?lang=en",
-    "Previous Rank": "174"
+    "Previous Rank": "175"
   },
   "tools": {
     "Player-ID": "Carlos-Galindo",
@@ -243,6 +243,7 @@
       "Archived?": ""
     }
   },
+  "gamedayWhiff": null,
   "videos": [
     {
       "Player-ID": "Carlos-Galindo",

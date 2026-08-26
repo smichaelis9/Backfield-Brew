@@ -3,7 +3,7 @@
   "name": "Anthony Flores",
   "archived": false,
   "playerType": "Pitcher",
-  "generatedAt": "2026-08-26T14:55:05.032Z",
+  "generatedAt": "2026-08-26T16:11:32.246Z",
   "bio": {
     "Player-ID": "Anthony-Flores",
     "MLBAM ID": "800260",
@@ -231,7 +231,7 @@
       "BB%": "17.70%",
       "K-BB %": "0.40%",
       "SwStr %": "9.90%",
-      "Whiff%": "26.9%",
+      "Whiff%": "24.8%",
       "WHIP": "2.01",
       "BABIP": "0.328",
       "LOB%": "59.4%",
@@ -242,6 +242,18 @@
       "HR/FB": "0.21",
       "Archived?": ""
     }
+  },
+  "gamedayWhiff": {
+    "mlbamID": "800260",
+    "swings": 367,
+    "whiffs": 91,
+    "contacts": 276,
+    "whiffPct": 24.8,
+    "contactPct": 75.2,
+    "games": 29,
+    "levels": [
+      "AA"
+    ]
   },
   "videos": [
     {

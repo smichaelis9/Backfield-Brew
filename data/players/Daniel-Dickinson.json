@@ -3,7 +3,7 @@
   "name": "Daniel Dickinson",
   "archived": false,
   "playerType": "Hitter",
-  "generatedAt": "2026-08-26T14:55:05.032Z",
+  "generatedAt": "2026-08-26T16:11:32.246Z",
   "bio": {
     "Player-ID": "Daniel-Dickinson",
     "MLBAM ID": "823658",
@@ -212,7 +212,7 @@
       "K%": "21.3%",
       "BB%": "18.0%",
       "SwStr %": "9.3%",
-      "Whiff%": "28.2%",
+      "Whiff%": "24.7%",
       "Pull %": "40.7%",
       "Cent %": "29.3%",
       "Oppo %": "30.0%",
@@ -225,6 +225,18 @@
       "SB%": "81.0%",
       "Archived?": ""
     }
+  },
+  "gamedayWhiff": {
+    "mlbamID": "823658",
+    "swings": 717,
+    "whiffs": 177,
+    "contacts": 540,
+    "whiffPct": 24.7,
+    "contactPct": 75.3,
+    "games": 106,
+    "levels": [
+      "A+"
+    ]
   },
   "videos": [
     {

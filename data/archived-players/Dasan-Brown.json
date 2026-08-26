@@ -3,7 +3,7 @@
   "name": "Dasan Brown",
   "archived": true,
   "playerType": "Hitter",
-  "generatedAt": "2026-08-26T14:55:05.032Z",
+  "generatedAt": "2026-08-26T16:11:32.246Z",
   "bio": {
     "Player-ID": "Dasan-Brown",
     "MLBAM ID": "672018",
@@ -210,7 +210,7 @@
       "K%": "29.2%",
       "BB%": "16.1%",
       "SwStr %": "12.8%",
-      "Whiff%": "34.0%",
+      "Whiff%": "32.8%",
       "Pull %": "37.6%",
       "Cent %": "23.5%",
       "Oppo %": "38.8%",
@@ -223,6 +223,18 @@
       "SB%": "68.4%",
       "Archived?": "yes"
     }
+  },
+  "gamedayWhiff": {
+    "mlbamID": "672018",
+    "swings": 274,
+    "whiffs": 90,
+    "contacts": 184,
+    "whiffPct": 32.8,
+    "contactPct": 67.2,
+    "games": 45,
+    "levels": [
+      "AA"
+    ]
   },
   "videos": [
     {

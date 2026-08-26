@@ -3,7 +3,7 @@
   "name": "Ayendy Bravo",
   "archived": true,
   "playerType": "Pitcher",
-  "generatedAt": "2026-08-26T14:55:05.032Z",
+  "generatedAt": "2026-08-26T16:11:32.246Z",
   "bio": {
     "Player-ID": "Ayendy-Bravo",
     "MLBAM ID": "821131",
@@ -229,7 +229,7 @@
       "BB%": "24.60%",
       "K-BB %": "-12.30%",
       "SwStr %": "8.70%",
-      "Whiff%": "30.2%",
+      "Whiff%": "23.8%",
       "WHIP": "2.60",
       "BABIP": "0.354",
       "LOB%": "56.7%",
@@ -240,6 +240,19 @@
       "HR/FB": "0.08",
       "Archived?": "yes"
     }
+  },
+  "gamedayWhiff": {
+    "mlbamID": "821131",
+    "swings": 126,
+    "whiffs": 30,
+    "contacts": 96,
+    "whiffPct": 23.8,
+    "contactPct": 76.2,
+    "games": 10,
+    "levels": [
+      "A",
+      "A+"
+    ]
   },
   "videos": [
     {

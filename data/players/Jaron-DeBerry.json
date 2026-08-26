@@ -3,7 +3,7 @@
   "name": "Jaron DeBerry",
   "archived": false,
   "playerType": "Pitcher",
-  "generatedAt": "2026-08-26T14:55:05.032Z",
+  "generatedAt": "2026-08-26T16:11:32.246Z",
   "bio": {
     "Player-ID": "Jaron-DeBerry",
     "MLBAM ID": "809229",
@@ -231,7 +231,7 @@
       "BB%": "11.20%",
       "K-BB %": "14.70%",
       "SwStr %": "10.80%",
-      "Whiff%": "27.1%",
+      "Whiff%": "23.5%",
       "WHIP": "1.34",
       "BABIP": "0.284",
       "LOB%": "70.3%",
@@ -242,6 +242,18 @@
       "HR/FB": "0.15",
       "Archived?": ""
     }
+  },
+  "gamedayWhiff": {
+    "mlbamID": "809229",
+    "swings": 858,
+    "whiffs": 202,
+    "contacts": 656,
+    "whiffPct": 23.5,
+    "contactPct": 76.5,
+    "games": 23,
+    "levels": [
+      "AA"
+    ]
   },
   "videos": [
     {

@@ -3,13 +3,13 @@
   "name": "Daniel Guilarte",
   "archived": false,
   "playerType": "Hitter",
-  "generatedAt": "2026-08-26T14:55:05.032Z",
+  "generatedAt": "2026-08-26T16:11:32.246Z",
   "bio": {
     "Player-ID": "Daniel-Guilarte",
     "MLBAM ID": "694206",
     "Player Type": "Hitter",
     "Player": "Daniel Guilarte",
-    "Rank": "196",
+    "Rank": "197",
     "Trending": "",
     "Position": "SS",
     "Level": "AA",
@@ -89,7 +89,7 @@
     "Instagram Link": "https://instagram.com/the_guili13?igshid=YmMyMTA2M2Y=",
     "Other Social": "",
     "Other Social Link": "",
-    "Previous Rank": "196"
+    "Previous Rank": "197"
   },
   "tools": {
     "Player-ID": "Daniel-Guilarte",
@@ -212,7 +212,7 @@
       "K%": "29.4%",
       "BB%": "12.3%",
       "SwStr %": "12.5%",
-      "Whiff%": "42.3%",
+      "Whiff%": "30.8%",
       "Pull %": "44.1%",
       "Cent %": "22.0%",
       "Oppo %": "33.9%",
@@ -225,6 +225,19 @@
       "SB%": "92.3%",
       "Archived?": ""
     }
+  },
+  "gamedayWhiff": {
+    "mlbamID": "694206",
+    "swings": 302,
+    "whiffs": 93,
+    "contacts": 209,
+    "whiffPct": 30.8,
+    "contactPct": 69.2,
+    "games": 47,
+    "levels": [
+      "A+",
+      "AA"
+    ]
   },
   "videos": [
     {

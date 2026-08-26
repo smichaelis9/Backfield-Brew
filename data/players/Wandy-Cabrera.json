@@ -3,13 +3,13 @@
   "name": "Wandy Cabrera",
   "archived": false,
   "playerType": "Pitcher",
-  "generatedAt": "2026-08-26T14:55:05.032Z",
+  "generatedAt": "2026-08-26T16:11:32.246Z",
   "bio": {
     "Player-ID": "Wandy-Cabrera",
     "MLBAM ID": "815770",
     "Player Type": "Pitcher",
     "Player": "Wandy Cabrera",
-    "Rank": "192",
+    "Rank": "193",
     "Trending": "",
     "Position": "RHP",
     "Level": "DSL",
@@ -89,7 +89,7 @@
     "Instagram Link": "https://www.instagram.com/x_.cabrera/",
     "Other Social": "TikTok",
     "Other Social Link": "https://www.tiktok.com/@w_.cabrera06",
-    "Previous Rank": "192"
+    "Previous Rank": "193"
   },
   "tools": {
     "Player-ID": "Wandy-Cabrera",
@@ -243,6 +243,7 @@
       "Archived?": ""
     }
   },
+  "gamedayWhiff": null,
   "videos": [
     {
       "Player-ID": "Wandy-Cabrera",

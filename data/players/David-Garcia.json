@@ -3,13 +3,13 @@
   "name": "David García",
   "archived": false,
   "playerType": "Hitter",
-  "generatedAt": "2026-08-26T14:55:05.032Z",
+  "generatedAt": "2026-08-26T16:11:32.246Z",
   "bio": {
     "Player-ID": "David-Garcia",
     "MLBAM ID": "671272",
     "Player Type": "Hitter",
     "Player": "David García",
-    "Rank": "209",
+    "Rank": "210",
     "Trending": "",
     "Position": "C",
     "Level": "AA",
@@ -89,7 +89,7 @@
     "Instagram Link": "https://www.instagram.com/davidagf_7/",
     "Other Social": "TikTok",
     "Other Social Link": "https://www.tiktok.com/@davidagf_7",
-    "Previous Rank": "209"
+    "Previous Rank": "210"
   },
   "tools": {
     "Player-ID": "David-Garcia",
@@ -212,7 +212,7 @@
       "K%": "25.9%",
       "BB%": "9.4%",
       "SwStr %": "13.4%",
-      "Whiff%": "29.2%",
+      "Whiff%": "27.3%",
       "Pull %": "38.2%",
       "Cent %": "23.6%",
       "Oppo %": "38.2%",
@@ -225,6 +225,19 @@
       "SB%": "100.0%",
       "Archived?": ""
     }
+  },
+  "gamedayWhiff": {
+    "mlbamID": "671272",
+    "swings": 319,
+    "whiffs": 87,
+    "contacts": 232,
+    "whiffPct": 27.3,
+    "contactPct": 72.7,
+    "games": 46,
+    "levels": [
+      "A+",
+      "AA"
+    ]
   },
   "videos": [
     {

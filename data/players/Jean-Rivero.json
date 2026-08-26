@@ -3,13 +3,13 @@
   "name": "Jean Rivero",
   "archived": false,
   "playerType": "Pitcher",
-  "generatedAt": "2026-08-26T14:55:05.032Z",
+  "generatedAt": "2026-08-26T16:11:32.246Z",
   "bio": {
     "Player-ID": "Jean-Rivero",
     "MLBAM ID": "837801",
     "Player Type": "Pitcher",
     "Player": "Jean Rivero",
-    "Rank": "201",
+    "Rank": "202",
     "Trending": "",
     "Position": "RHP",
     "Level": "DSL",
@@ -89,7 +89,7 @@
     "Instagram Link": "https://www.instagram.com/jean_rivero1",
     "Other Social": "",
     "Other Social Link": "",
-    "Previous Rank": "201"
+    "Previous Rank": "202"
   },
   "tools": {
     "Player-ID": "Jean-Rivero",
@@ -243,6 +243,7 @@
       "Archived?": ""
     }
   },
+  "gamedayWhiff": null,
   "videos": [
     {
       "Player-ID": "Jean-Rivero",

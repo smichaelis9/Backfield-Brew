@@ -3,7 +3,7 @@
   "name": "Peyton Niksch",
   "archived": false,
   "playerType": "Pitcher",
-  "generatedAt": "2026-08-26T14:55:05.032Z",
+  "generatedAt": "2026-08-26T16:11:32.246Z",
   "bio": {
     "Player-ID": "Peyton-Niksch",
     "MLBAM ID": "836172",
@@ -231,7 +231,7 @@
       "BB%": "7.90%",
       "K-BB %": "13.20%",
       "SwStr %": "10.60%",
-      "Whiff%": "24.7%",
+      "Whiff%": "22.6%",
       "WHIP": "1.45",
       "BABIP": "0.316",
       "LOB%": "65.9%",
@@ -242,6 +242,20 @@
       "HR/FB": "0.17",
       "Archived?": ""
     }
+  },
+  "gamedayWhiff": {
+    "mlbamID": "836172",
+    "swings": 451,
+    "whiffs": 102,
+    "contacts": 349,
+    "whiffPct": 22.6,
+    "contactPct": 77.4,
+    "games": 27,
+    "levels": [
+      "A",
+      "A+",
+      "AA"
+    ]
   },
   "videos": [
     {

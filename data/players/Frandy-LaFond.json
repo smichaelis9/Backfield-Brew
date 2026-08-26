@@ -3,13 +3,13 @@
   "name": "Frandy LaFond",
   "archived": false,
   "playerType": "Hitter",
-  "generatedAt": "2026-08-26T14:55:05.032Z",
+  "generatedAt": "2026-08-26T16:11:32.246Z",
   "bio": {
     "Player-ID": "Frandy-LaFond",
     "MLBAM ID": "821143",
     "Player Type": "Hitter",
     "Player": "Frandy LaFond",
-    "Rank": "184",
+    "Rank": "185",
     "Trending": "",
     "Position": "OF",
     "Level": "DSL",
@@ -89,7 +89,7 @@
     "Instagram Link": "https://www.instagram.com/frandy.lafond/",
     "Other Social": "TikTok",
     "Other Social Link": "https://www.tiktok.com/@lafond.frandy?_t=8n85vVKbVNO&_r=1",
-    "Previous Rank": "184"
+    "Previous Rank": "185"
   },
   "tools": {
     "Player-ID": "Frandy-LaFond",
@@ -226,6 +226,7 @@
       "Archived?": ""
     }
   },
+  "gamedayWhiff": null,
   "videos": [
     {
       "Player-ID": "Frandy-LaFond",

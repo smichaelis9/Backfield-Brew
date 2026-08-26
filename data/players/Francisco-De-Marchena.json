@@ -3,13 +3,13 @@
   "name": "Francisco De Marchena",
   "archived": false,
   "playerType": "Hitter",
-  "generatedAt": "2026-08-26T14:55:05.032Z",
+  "generatedAt": "2026-08-26T16:11:32.246Z",
   "bio": {
     "Player-ID": "Francisco-De-Marchena",
     "MLBAM ID": "825718",
     "Player Type": "Hitter",
     "Player": "Francisco De Marchena",
-    "Rank": "211",
+    "Rank": "212",
     "Trending": "",
     "Position": "C",
     "Level": "DSL",
@@ -89,7 +89,7 @@
     "Instagram Link": "https://www.instagram.com/pepesotomir/",
     "Other Social": "",
     "Other Social Link": "",
-    "Previous Rank": "211"
+    "Previous Rank": "212"
   },
   "tools": {
     "Player-ID": "Francisco-De-Marchena",
@@ -226,6 +226,7 @@
       "Archived?": ""
     }
   },
+  "gamedayWhiff": null,
   "videos": [
     {
       "Player-ID": "Francisco-De-Marchena",

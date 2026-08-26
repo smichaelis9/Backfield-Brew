@@ -3,7 +3,7 @@
   "name": "Luis Corobo",
   "archived": false,
   "playerType": "Hitter",
-  "generatedAt": "2026-08-26T14:55:05.032Z",
+  "generatedAt": "2026-08-26T16:11:32.246Z",
   "bio": {
     "Player-ID": "Luis-Corobo",
     "MLBAM ID": "821818",
@@ -212,7 +212,7 @@
       "K%": "34.0%",
       "BB%": "20.8%",
       "SwStr %": "7.3%",
-      "Whiff%": "41.4%",
+      "Whiff%": "21.3%",
       "Pull %": "41.7%",
       "Cent %": "16.7%",
       "Oppo %": "41.7%",
@@ -225,6 +225,18 @@
       "SB%": "",
       "Archived?": ""
     }
+  },
+  "gamedayWhiff": {
+    "mlbamID": "821818",
+    "swings": 47,
+    "whiffs": 10,
+    "contacts": 37,
+    "whiffPct": 21.3,
+    "contactPct": 78.7,
+    "games": 7,
+    "levels": [
+      "A"
+    ]
   },
   "videos": [
     {

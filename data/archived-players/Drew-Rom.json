@@ -3,7 +3,7 @@
   "name": "Drew Rom",
   "archived": true,
   "playerType": "Pitcher",
-  "generatedAt": "2026-08-26T14:55:05.032Z",
+  "generatedAt": "2026-08-26T16:11:32.246Z",
   "bio": {
     "Player-ID": "Drew-Rom",
     "MLBAM ID": "680723",
@@ -229,7 +229,7 @@
       "BB%": "6.50%",
       "K-BB %": "29.60%",
       "SwStr %": "12.10%",
-      "Whiff%": "28.8%",
+      "Whiff%": "26.7%",
       "WHIP": "1.10",
       "BABIP": "0.355",
       "LOB%": "75.1%",
@@ -240,6 +240,18 @@
       "HR/FB": "0.03",
       "Archived?": "yes"
     }
+  },
+  "gamedayWhiff": {
+    "mlbamID": "680723",
+    "swings": 333,
+    "whiffs": 89,
+    "contacts": 244,
+    "whiffPct": 26.7,
+    "contactPct": 73.3,
+    "games": 31,
+    "levels": [
+      "AAA"
+    ]
   },
   "videos": [
     {

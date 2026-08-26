@@ -3,7 +3,7 @@
   "name": "Alexander Frias",
   "archived": true,
   "playerType": "Hitter",
-  "generatedAt": "2026-08-26T14:55:05.032Z",
+  "generatedAt": "2026-08-26T16:11:32.246Z",
   "bio": {
     "Player-ID": "Alexander-Frias",
     "MLBAM ID": "825484",
@@ -210,7 +210,7 @@
       "K%": "17.9%",
       "BB%": "11.0%",
       "SwStr %": "11.9%",
-      "Whiff%": "26.3%",
+      "Whiff%": "22.9%",
       "Pull %": "31.7%",
       "Cent %": "25.7%",
       "Oppo %": "42.6%",
@@ -223,6 +223,18 @@
       "SB%": "70.4%",
       "Archived?": "yes"
     }
+  },
+  "gamedayWhiff": {
+    "mlbamID": "825484",
+    "swings": 236,
+    "whiffs": 54,
+    "contacts": 182,
+    "whiffPct": 22.9,
+    "contactPct": 77.1,
+    "games": 29,
+    "levels": [
+      "A"
+    ]
   },
   "videos": [
     {

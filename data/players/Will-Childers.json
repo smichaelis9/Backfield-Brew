@@ -3,7 +3,7 @@
   "name": "Will Childers",
   "archived": false,
   "playerType": "Pitcher",
-  "generatedAt": "2026-08-26T14:55:05.032Z",
+  "generatedAt": "2026-08-26T16:11:32.246Z",
   "bio": {
     "Player-ID": "Will-Childers",
     "MLBAM ID": "682999",
@@ -231,7 +231,7 @@
       "BB%": "7.70%",
       "K-BB %": "11.80%",
       "SwStr %": "10.40%",
-      "Whiff%": "25.0%",
+      "Whiff%": "21.3%",
       "WHIP": "1.45",
       "BABIP": "0.313",
       "LOB%": "74.2%",
@@ -242,6 +242,19 @@
       "HR/FB": "0.22",
       "Archived?": ""
     }
+  },
+  "gamedayWhiff": {
+    "mlbamID": "682999",
+    "swings": 329,
+    "whiffs": 70,
+    "contacts": 259,
+    "whiffPct": 21.3,
+    "contactPct": 78.7,
+    "games": 36,
+    "levels": [
+      "AA",
+      "AAA"
+    ]
   },
   "videos": [
     {

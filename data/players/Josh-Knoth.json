@@ -3,7 +3,7 @@
   "name": "Josh Knoth",
   "archived": false,
   "playerType": "Pitcher",
-  "generatedAt": "2026-08-26T14:55:05.032Z",
+  "generatedAt": "2026-08-26T16:11:32.246Z",
   "bio": {
     "Player-ID": "Josh-Knoth",
     "MLBAM ID": "805807",
@@ -231,7 +231,7 @@
       "BB%": "9.60%",
       "K-BB %": "14.00%",
       "SwStr %": "11.40%",
-      "Whiff%": "32.7%",
+      "Whiff%": "23.5%",
       "WHIP": "1.31",
       "BABIP": "0.302",
       "LOB%": "67.3%",
@@ -242,6 +242,18 @@
       "HR/FB": "0.14",
       "Archived?": ""
     }
+  },
+  "gamedayWhiff": {
+    "mlbamID": "805807",
+    "swings": 544,
+    "whiffs": 128,
+    "contacts": 416,
+    "whiffPct": 23.5,
+    "contactPct": 76.5,
+    "games": 16,
+    "levels": [
+      "A+"
+    ]
   },
   "videos": [
     {

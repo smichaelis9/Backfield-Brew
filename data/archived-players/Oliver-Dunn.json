@@ -3,7 +3,7 @@
   "name": "Oliver Dunn",
   "archived": true,
   "playerType": "Hitter",
-  "generatedAt": "2026-08-26T14:55:05.032Z",
+  "generatedAt": "2026-08-26T16:11:32.246Z",
   "bio": {
     "Player-ID": "Oliver-Dunn",
     "MLBAM ID": "686554",
@@ -210,7 +210,7 @@
       "K%": "",
       "BB%": "",
       "SwStr %": "",
-      "Whiff%": "",
+      "Whiff%": "24.4%",
       "Pull %": "",
       "Cent %": "",
       "Oppo %": "",
@@ -223,6 +223,18 @@
       "SB%": "",
       "Archived?": "yes"
     }
+  },
+  "gamedayWhiff": {
+    "mlbamID": "686554",
+    "swings": 127,
+    "whiffs": 31,
+    "contacts": 96,
+    "whiffPct": 24.4,
+    "contactPct": 75.6,
+    "games": 16,
+    "levels": [
+      "AAA"
+    ]
   },
   "videos": [
     {

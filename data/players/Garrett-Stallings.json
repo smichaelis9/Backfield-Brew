@@ -3,7 +3,7 @@
   "name": "Garrett Stallings",
   "archived": false,
   "playerType": "Pitcher",
-  "generatedAt": "2026-08-26T14:55:05.032Z",
+  "generatedAt": "2026-08-26T16:11:32.246Z",
   "bio": {
     "Player-ID": "Garrett-Stallings",
     "MLBAM ID": "668831",
@@ -231,7 +231,7 @@
       "BB%": "8.30%",
       "K-BB %": "14.20%",
       "SwStr %": "11.50%",
-      "Whiff%": "26.0%",
+      "Whiff%": "24.7%",
       "WHIP": "1.37",
       "BABIP": "0.326",
       "LOB%": "71.7%",
@@ -242,6 +242,18 @@
       "HR/FB": "0.09",
       "Archived?": ""
     }
+  },
+  "gamedayWhiff": {
+    "mlbamID": "668831",
+    "swings": 596,
+    "whiffs": 147,
+    "contacts": 449,
+    "whiffPct": 24.7,
+    "contactPct": 75.3,
+    "games": 22,
+    "levels": [
+      "AAA"
+    ]
   },
   "videos": [
     {

@@ -3,7 +3,7 @@
   "name": "Mason Molina",
   "archived": true,
   "playerType": "Pitcher",
-  "generatedAt": "2026-08-26T14:55:05.032Z",
+  "generatedAt": "2026-08-26T16:11:32.246Z",
   "bio": {
     "Player-ID": "Mason-Molina",
     "MLBAM ID": "695766",
@@ -229,7 +229,7 @@
       "BB%": "",
       "K-BB %": "",
       "SwStr %": "",
-      "Whiff%": "",
+      "Whiff%": "14.0%",
       "WHIP": "",
       "BABIP": "",
       "LOB%": "",
@@ -240,6 +240,18 @@
       "HR/FB": "",
       "Archived?": "yes"
     }
+  },
+  "gamedayWhiff": {
+    "mlbamID": "695766",
+    "swings": 43,
+    "whiffs": 6,
+    "contacts": 37,
+    "whiffPct": 14,
+    "contactPct": 86,
+    "games": 1,
+    "levels": [
+      "AAA"
+    ]
   },
   "videos": [
     {

@@ -3,13 +3,13 @@
   "name": "Brailin Aguirrez",
   "archived": false,
   "playerType": "Pitcher",
-  "generatedAt": "2026-08-26T14:55:05.032Z",
+  "generatedAt": "2026-08-26T16:11:32.246Z",
   "bio": {
     "Player-ID": "Brailin-Aguirrez",
     "MLBAM ID": "827489",
     "Player Type": "Pitcher",
     "Player": "Brailin Aguirrez",
-    "Rank": "202",
+    "Rank": "203",
     "Trending": "",
     "Position": "RHP",
     "Level": "DSL",
@@ -89,7 +89,7 @@
     "Instagram Link": "https://www.instagram.com/aguirrez_05_18/",
     "Other Social": "",
     "Other Social Link": "",
-    "Previous Rank": "202"
+    "Previous Rank": "203"
   },
   "tools": {
     "Player-ID": "Brailin-Aguirrez",
@@ -243,6 +243,7 @@
       "Archived?": ""
     }
   },
+  "gamedayWhiff": null,
   "videos": [
     {
       "Player-ID": "Brailin-Aguirrez",

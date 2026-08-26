@@ -3,13 +3,13 @@
   "name": "Josue Jean",
   "archived": false,
   "playerType": "Hitter",
-  "generatedAt": "2026-08-26T14:55:05.032Z",
+  "generatedAt": "2026-08-26T16:11:32.246Z",
   "bio": {
     "Player-ID": "Josue-Jean",
     "MLBAM ID": "825657",
     "Player Type": "Hitter",
     "Player": "Josue Jean",
-    "Rank": "212",
+    "Rank": "213",
     "Trending": "",
     "Position": "OF",
     "Level": "IL",
@@ -89,7 +89,7 @@
     "Instagram Link": "https://www.instagram.com/jean_05_10/",
     "Other Social": "",
     "Other Social Link": "",
-    "Previous Rank": "212"
+    "Previous Rank": "213"
   },
   "tools": {
     "Player-ID": "Josue-Jean",
@@ -226,6 +226,7 @@
       "Archived?": ""
     }
   },
+  "gamedayWhiff": null,
   "videos": [
     {
       "Player-ID": "Josue-Jean",

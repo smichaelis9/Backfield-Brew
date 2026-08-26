@@ -3,7 +3,7 @@
   "name": "Eric Brown Jr.",
   "archived": false,
   "playerType": "Hitter",
-  "generatedAt": "2026-08-26T14:55:05.032Z",
+  "generatedAt": "2026-08-26T16:11:32.246Z",
   "bio": {
     "Player-ID": "Eric-Brown",
     "MLBAM ID": "687521",
@@ -212,7 +212,7 @@
       "K%": "24.1%",
       "BB%": "14.0%",
       "SwStr %": "9.9%",
-      "Whiff%": "25.9%",
+      "Whiff%": "24.9%",
       "Pull %": "50.7%",
       "Cent %": "24.3%",
       "Oppo %": "25.0%",
@@ -225,6 +225,19 @@
       "SB%": "75.0%",
       "Archived?": ""
     }
+  },
+  "gamedayWhiff": {
+    "mlbamID": "687521",
+    "swings": 405,
+    "whiffs": 101,
+    "contacts": 304,
+    "whiffPct": 24.9,
+    "contactPct": 75.1,
+    "games": 67,
+    "levels": [
+      "AA",
+      "AAA"
+    ]
   },
   "videos": [
     {

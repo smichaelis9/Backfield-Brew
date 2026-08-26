@@ -3,7 +3,7 @@
   "name": "Michael Fowler",
   "archived": false,
   "playerType": "Pitcher",
-  "generatedAt": "2026-08-26T14:55:05.032Z",
+  "generatedAt": "2026-08-26T16:11:32.246Z",
   "bio": {
     "Player-ID": "Michael-Fowler",
     "MLBAM ID": "694725",
@@ -231,7 +231,7 @@
       "BB%": "12.80%",
       "K-BB %": "12.10%",
       "SwStr %": "11.30%",
-      "Whiff%": "31.6%",
+      "Whiff%": "26.7%",
       "WHIP": "1.15",
       "BABIP": "0.207",
       "LOB%": "81.5%",
@@ -242,6 +242,18 @@
       "HR/FB": "0.17",
       "Archived?": ""
     }
+  },
+  "gamedayWhiff": {
+    "mlbamID": "694725",
+    "swings": 225,
+    "whiffs": 60,
+    "contacts": 165,
+    "whiffPct": 26.7,
+    "contactPct": 73.3,
+    "games": 23,
+    "levels": [
+      "A+"
+    ]
   },
   "videos": [
     {

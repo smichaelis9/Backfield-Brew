@@ -3,7 +3,7 @@
   "name": "Duncan Garcia",
   "archived": true,
   "playerType": "Hitter",
-  "generatedAt": "2026-08-26T14:55:05.032Z",
+  "generatedAt": "2026-08-26T16:11:32.246Z",
   "bio": {
     "Player-ID": "Duncan-Garcia",
     "MLBAM ID": "699219",
@@ -224,6 +224,7 @@
       "Archived?": "yes"
     }
   },
+  "gamedayWhiff": null,
   "videos": [
     {
       "Player-ID": "Duncan-Garcia",

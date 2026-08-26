@@ -3,7 +3,7 @@
   "name": "Anthony Seigler",
   "archived": true,
   "playerType": "Hitter",
-  "generatedAt": "2026-08-26T14:55:05.032Z",
+  "generatedAt": "2026-08-26T16:11:32.246Z",
   "bio": {
     "Player-ID": "Anthony-Seigler",
     "MLBAM ID": "678011",
@@ -210,7 +210,7 @@
       "K%": "",
       "BB%": "",
       "SwStr %": "",
-      "Whiff%": "",
+      "Whiff%": "28.0%",
       "Pull %": "",
       "Cent %": "",
       "Oppo %": "",
@@ -223,6 +223,18 @@
       "SB%": "",
       "Archived?": "yes"
     }
+  },
+  "gamedayWhiff": {
+    "mlbamID": "678011",
+    "swings": 25,
+    "whiffs": 7,
+    "contacts": 18,
+    "whiffPct": 28,
+    "contactPct": 72,
+    "games": 3,
+    "levels": [
+      "AAA"
+    ]
   },
   "videos": [
     {

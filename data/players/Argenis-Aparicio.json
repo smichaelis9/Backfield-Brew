@@ -3,13 +3,13 @@
   "name": "Argenis Aparicio",
   "archived": false,
   "playerType": "Pitcher",
-  "generatedAt": "2026-08-26T14:55:05.032Z",
+  "generatedAt": "2026-08-26T16:11:32.246Z",
   "bio": {
     "Player-ID": "Argenis-Aparicio",
     "MLBAM ID": "809699",
     "Player Type": "Pitcher",
     "Player": "Argenis Aparicio",
-    "Rank": "178",
+    "Rank": "179",
     "Trending": "",
     "Position": "RHP",
     "Level": "ACL",
@@ -89,7 +89,7 @@
     "Instagram Link": "https://www.instagram.com/argenisaparicio8/",
     "Other Social": "",
     "Other Social Link": "",
-    "Previous Rank": "178"
+    "Previous Rank": "179"
   },
   "tools": {
     "Player-ID": "Argenis-Aparicio",
@@ -243,6 +243,7 @@
       "Archived?": ""
     }
   },
+  "gamedayWhiff": null,
   "videos": [
     {
       "Player-ID": "Argenis-Aparicio",

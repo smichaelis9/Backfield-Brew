@@ -3,7 +3,7 @@
   "name": "Noah Zavolas",
   "archived": true,
   "playerType": "Pitcher",
-  "generatedAt": "2026-08-26T14:55:05.032Z",
+  "generatedAt": "2026-08-26T16:11:32.246Z",
   "bio": {
     "Player-ID": "Noah-Zavolas",
     "MLBAM ID": "681928",
@@ -241,6 +241,7 @@
       "Archived?": "yes"
     }
   },
+  "gamedayWhiff": null,
   "videos": [
     {
       "Player-ID": "Noah-Zavolas",

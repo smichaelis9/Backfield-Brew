@@ -3,7 +3,7 @@
   "name": "Steward Berroa",
   "archived": true,
   "playerType": "Hitter",
-  "generatedAt": "2026-08-26T14:55:05.032Z",
+  "generatedAt": "2026-08-26T16:11:32.246Z",
   "bio": {
     "Player-ID": "Steward-Berroa",
     "MLBAM ID": "672642",
@@ -210,7 +210,7 @@
       "K%": "33.3%",
       "BB%": "11.1%",
       "SwStr %": "18.8%",
-      "Whiff%": "20.4%",
+      "Whiff%": "37.5%",
       "Pull %": "60.0%",
       "Cent %": "20.0%",
       "Oppo %": "20.0%",
@@ -223,6 +223,18 @@
       "SB%": "",
       "Archived?": "yes"
     }
+  },
+  "gamedayWhiff": {
+    "mlbamID": "672642",
+    "swings": 16,
+    "whiffs": 6,
+    "contacts": 10,
+    "whiffPct": 37.5,
+    "contactPct": 62.5,
+    "games": 2,
+    "levels": [
+      "AAA"
+    ]
   },
   "videos": [
     {

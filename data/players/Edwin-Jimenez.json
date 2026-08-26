@@ -3,13 +3,13 @@
   "name": "Edwin Jimenez",
   "archived": false,
   "playerType": "Pitcher",
-  "generatedAt": "2026-08-26T14:55:05.032Z",
+  "generatedAt": "2026-08-26T16:11:32.246Z",
   "bio": {
     "Player-ID": "Edwin-Jimenez",
     "MLBAM ID": "683720",
     "Player Type": "Pitcher",
     "Player": "Edwin Jimenez",
-    "Rank": "181",
+    "Rank": "182",
     "Trending": "",
     "Position": "RHP",
     "Level": "AA",
@@ -89,7 +89,7 @@
     "Instagram Link": "https://instagram.com/edwin_jimenez.12?igshid=YmMyMTA2M2Y=",
     "Other Social": "",
     "Other Social Link": "",
-    "Previous Rank": "181"
+    "Previous Rank": "182"
   },
   "tools": {
     "Player-ID": "Edwin-Jimenez",
@@ -231,7 +231,7 @@
       "BB%": "7.00%",
       "K-BB %": "15.10%",
       "SwStr %": "11.00%",
-      "Whiff%": "25.7%",
+      "Whiff%": "22.9%",
       "WHIP": "1.34",
       "BABIP": "0.274",
       "LOB%": "85.6%",
@@ -242,6 +242,18 @@
       "HR/FB": "0.27",
       "Archived?": ""
     }
+  },
+  "gamedayWhiff": {
+    "mlbamID": "683720",
+    "swings": 350,
+    "whiffs": 80,
+    "contacts": 270,
+    "whiffPct": 22.9,
+    "contactPct": 77.1,
+    "games": 31,
+    "levels": [
+      "AA"
+    ]
   },
   "videos": [
     {

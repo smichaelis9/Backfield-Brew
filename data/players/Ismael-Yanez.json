@@ -3,13 +3,13 @@
   "name": "Ismael Yanez",
   "archived": false,
   "playerType": "Pitcher",
-  "generatedAt": "2026-08-26T14:55:05.032Z",
+  "generatedAt": "2026-08-26T16:11:32.246Z",
   "bio": {
     "Player-ID": "Ismael-Yanez",
     "MLBAM ID": "808254",
     "Player Type": "Pitcher",
     "Player": "Ismael Yanez",
-    "Rank": "188",
+    "Rank": "189",
     "Trending": "",
     "Position": "RHP",
     "Level": "A",
@@ -89,7 +89,7 @@
     "Instagram Link": "https://www.instagram.com/ismael_jose_2024/",
     "Other Social": "TikTok",
     "Other Social Link": "https://www.tiktok.com/@y4nezz21",
-    "Previous Rank": "188"
+    "Previous Rank": "189"
   },
   "tools": {
     "Player-ID": "Ismael-Yanez",
@@ -231,7 +231,7 @@
       "BB%": "25.00%",
       "K-BB %": "0.00%",
       "SwStr %": "11.40%",
-      "Whiff%": "38.9%",
+      "Whiff%": "25.3%",
       "WHIP": "2.32",
       "BABIP": "0.391",
       "LOB%": "73.1%",
@@ -242,6 +242,18 @@
       "HR/FB": "0.12",
       "Archived?": ""
     }
+  },
+  "gamedayWhiff": {
+    "mlbamID": "808254",
+    "swings": 174,
+    "whiffs": 44,
+    "contacts": 130,
+    "whiffPct": 25.3,
+    "contactPct": 74.7,
+    "games": 17,
+    "levels": [
+      "A"
+    ]
   },
   "videos": [
     {

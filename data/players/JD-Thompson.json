@@ -3,7 +3,7 @@
   "name": "J.D. Thompson",
   "archived": false,
   "playerType": "Pitcher",
-  "generatedAt": "2026-08-26T14:55:05.032Z",
+  "generatedAt": "2026-08-26T16:11:32.246Z",
   "bio": {
     "Player-ID": "JD-Thompson",
     "MLBAM ID": "702505",
@@ -231,7 +231,7 @@
       "BB%": "13.80%",
       "K-BB %": "17.30%",
       "SwStr %": "13.90%",
-      "Whiff%": "34.1%",
+      "Whiff%": "31.3%",
       "WHIP": "1.35",
       "BABIP": "0.314",
       "LOB%": "69.1%",
@@ -242,6 +242,19 @@
       "HR/FB": "0.12",
       "Archived?": ""
     }
+  },
+  "gamedayWhiff": {
+    "mlbamID": "702505",
+    "swings": 329,
+    "whiffs": 103,
+    "contacts": 226,
+    "whiffPct": 31.3,
+    "contactPct": 68.7,
+    "games": 12,
+    "levels": [
+      "A+",
+      "AA"
+    ]
   },
   "videos": [
     {

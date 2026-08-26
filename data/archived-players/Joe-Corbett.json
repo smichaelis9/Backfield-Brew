@@ -3,7 +3,7 @@
   "name": "Joe Corbett",
   "archived": true,
   "playerType": "Pitcher",
-  "generatedAt": "2026-08-26T14:55:05.032Z",
+  "generatedAt": "2026-08-26T16:11:32.246Z",
   "bio": {
     "Player-ID": "Joe-Corbett",
     "MLBAM ID": "663782",
@@ -229,7 +229,7 @@
       "BB%": "11.10%",
       "K-BB %": "14.80%",
       "SwStr %": "13.40%",
-      "Whiff%": "36.0%",
+      "Whiff%": "31.6%",
       "WHIP": "2.00",
       "BABIP": "0.438",
       "LOB%": "62.5%",
@@ -240,6 +240,19 @@
       "HR/FB": "0.13",
       "Archived?": "yes"
     }
+  },
+  "gamedayWhiff": {
+    "mlbamID": "663782",
+    "swings": 98,
+    "whiffs": 31,
+    "contacts": 67,
+    "whiffPct": 31.6,
+    "contactPct": 68.4,
+    "games": 10,
+    "levels": [
+      "AA",
+      "AAA"
+    ]
   },
   "videos": [
     {

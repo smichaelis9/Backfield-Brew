@@ -3,7 +3,7 @@
   "name": "Easton McGee",
   "archived": true,
   "playerType": "Pitcher",
-  "generatedAt": "2026-08-26T14:55:05.032Z",
+  "generatedAt": "2026-08-26T16:11:32.246Z",
   "bio": {
     "Player-ID": "Easton-McGee",
     "MLBAM ID": "668834",
@@ -229,7 +229,7 @@
       "BB%": "8.90%",
       "K-BB %": "13.60%",
       "SwStr %": "10.30%",
-      "Whiff%": "23.0%",
+      "Whiff%": "20.7%",
       "WHIP": "1.58",
       "BABIP": "0.364",
       "LOB%": "67.2%",
@@ -240,6 +240,18 @@
       "HR/FB": "0.13",
       "Archived?": "yes"
     }
+  },
+  "gamedayWhiff": {
+    "mlbamID": "668834",
+    "swings": 347,
+    "whiffs": 72,
+    "contacts": 275,
+    "whiffPct": 20.7,
+    "contactPct": 79.3,
+    "games": 25,
+    "levels": [
+      "AAA"
+    ]
   },
   "videos": [
     {

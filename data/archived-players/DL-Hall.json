@@ -3,7 +3,7 @@
   "name": "DL Hall",
   "archived": true,
   "playerType": "Pitcher",
-  "generatedAt": "2026-08-26T14:55:05.032Z",
+  "generatedAt": "2026-08-26T16:11:32.246Z",
   "bio": {
     "Player-ID": "DL-Hall",
     "MLBAM ID": "669084",
@@ -229,7 +229,7 @@
       "BB%": "13.00%",
       "K-BB %": "26.10%",
       "SwStr %": "14.60%",
-      "Whiff%": "46.2%",
+      "Whiff%": "38.2%",
       "WHIP": "1.06",
       "BABIP": "0.200",
       "LOB%": "87.0%",
@@ -240,6 +240,19 @@
       "HR/FB": "0.20",
       "Archived?": "yes"
     }
+  },
+  "gamedayWhiff": {
+    "mlbamID": "669084",
+    "swings": 34,
+    "whiffs": 13,
+    "contacts": 21,
+    "whiffPct": 38.2,
+    "contactPct": 61.8,
+    "games": 4,
+    "levels": [
+      "A+",
+      "AAA"
+    ]
   },
   "videos": [
     {

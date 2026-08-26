@@ -3,7 +3,7 @@
   "name": "Carlos Done",
   "archived": false,
   "playerType": "Hitter",
-  "generatedAt": "2026-08-26T14:55:05.032Z",
+  "generatedAt": "2026-08-26T16:11:32.246Z",
   "bio": {
     "Player-ID": "Carlos-Done",
     "MLBAM ID": "821152",
@@ -226,6 +226,7 @@
       "Archived?": ""
     }
   },
+  "gamedayWhiff": null,
   "videos": [
     {
       "Player-ID": "Carlos-Done",

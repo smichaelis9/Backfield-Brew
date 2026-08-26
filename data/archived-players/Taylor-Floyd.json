@@ -3,7 +3,7 @@
   "name": "Taylor Floyd",
   "archived": true,
   "playerType": "Pitcher",
-  "generatedAt": "2026-08-26T14:55:05.032Z",
+  "generatedAt": "2026-08-26T16:11:32.246Z",
   "bio": {
     "Player-ID": "Taylor-Floyd",
     "MLBAM ID": "687905",
@@ -229,7 +229,7 @@
       "BB%": "",
       "K-BB %": "",
       "SwStr %": "",
-      "Whiff%": "",
+      "Whiff%": "25.0%",
       "WHIP": "",
       "BABIP": "",
       "LOB%": "",
@@ -240,6 +240,18 @@
       "HR/FB": "",
       "Archived?": "yes"
     }
+  },
+  "gamedayWhiff": {
+    "mlbamID": "687905",
+    "swings": 84,
+    "whiffs": 21,
+    "contacts": 63,
+    "whiffPct": 25,
+    "contactPct": 75,
+    "games": 4,
+    "levels": [
+      "AA"
+    ]
   },
   "videos": [
     {

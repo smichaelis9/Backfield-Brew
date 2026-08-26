@@ -3,7 +3,7 @@
   "name": "Mark Manfredi Sr.",
   "archived": true,
   "playerType": "Pitcher",
-  "generatedAt": "2026-08-26T14:55:05.032Z",
+  "generatedAt": "2026-08-26T16:11:32.246Z",
   "bio": {
     "Player-ID": "Mark-Manfredi",
     "MLBAM ID": "815081",
@@ -229,7 +229,7 @@
       "BB%": "",
       "K-BB %": "",
       "SwStr %": "",
-      "Whiff%": "35.5%",
+      "Whiff%": "30.2%",
       "WHIP": "",
       "BABIP": "",
       "LOB%": "",
@@ -240,6 +240,19 @@
       "HR/FB": "",
       "Archived?": "yes"
     }
+  },
+  "gamedayWhiff": {
+    "mlbamID": "815081",
+    "swings": 374,
+    "whiffs": 113,
+    "contacts": 261,
+    "whiffPct": 30.2,
+    "contactPct": 69.8,
+    "games": 34,
+    "levels": [
+      "AA",
+      "AAA"
+    ]
   },
   "videos": [
     {

@@ -3,7 +3,7 @@
   "name": "Sam Carlson",
   "archived": true,
   "playerType": "Pitcher",
-  "generatedAt": "2026-08-26T14:55:05.032Z",
+  "generatedAt": "2026-08-26T16:11:32.246Z",
   "bio": {
     "Player-ID": "Sam-Carlson",
     "MLBAM ID": "672277",
@@ -229,7 +229,7 @@
       "BB%": "",
       "K-BB %": "",
       "SwStr %": "",
-      "Whiff%": "",
+      "Whiff%": "30.8%",
       "WHIP": "",
       "BABIP": "",
       "LOB%": "",
@@ -240,6 +240,18 @@
       "HR/FB": "",
       "Archived?": "yes"
     }
+  },
+  "gamedayWhiff": {
+    "mlbamID": "672277",
+    "swings": 13,
+    "whiffs": 4,
+    "contacts": 9,
+    "whiffPct": 30.8,
+    "contactPct": 69.2,
+    "games": 2,
+    "levels": [
+      "AAA"
+    ]
   },
   "videos": [
     {

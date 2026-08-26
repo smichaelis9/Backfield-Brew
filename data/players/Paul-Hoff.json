@@ -3,19 +3,19 @@
   "name": "Paul Hoff",
   "archived": false,
   "playerType": "Pitcher",
-  "generatedAt": "2026-08-26T14:55:05.032Z",
+  "generatedAt": "2026-08-26T16:11:32.246Z",
   "bio": {
     "Player-ID": "Paul-Hoff",
     "MLBAM ID": "821155",
     "Player Type": "Pitcher",
     "Player": "Paul Hoff",
-    "Rank": "225",
+    "Rank": "170",
     "Trending": "",
     "Position": "RHP",
     "Level": "DSL",
     "Age": "20.0",
-    "OFP": "25",
-    "OFP Updated": "",
+    "OFP": "30+",
+    "OFP Updated": "8/20/2026",
     "Risk": "Extreme",
     "School or Country": "Country",
     "School/Country": "Germany",
@@ -28,7 +28,7 @@
     "Weight": "180",
     "Bat / Throw": "Right/Right",
     "Birthday": "9/4/2006",
-    "Rule 5 Eligible": "",
+    "Rule 5 Eligible": "2028",
     "Picture": "https://i.ibb.co/mFhfxmL1/image.png",
     "Picture Source": "Instagram",
     "Notes Updated": "N/A",
@@ -89,12 +89,12 @@
     "Instagram Link": "https://www.instagram.com/paul.hoff.1/",
     "Other Social": "",
     "Other Social Link": "",
-    "Previous Rank": "225"
+    "Previous Rank": "170"
   },
   "tools": {
     "Player-ID": "Paul-Hoff",
     "Player": "Paul Hoff",
-    "Last Updated": "1/25/2025",
+    "Last Updated": "8/20/2026",
     "Primary Pitch": "Four-Seam FB",
     "Pitch #1": "35/45",
     "Secondary #1": "Curveball",
@@ -109,8 +109,8 @@
     "Pitch #6": "N/A",
     "Secondary #6": "N/A",
     "Pitch #7": "N/A",
-    "Control": "25/35",
-    "Command": "25/35",
+    "Control": "30/40",
+    "Command": "30/40",
     "Fastball Velocity": "88-89/T92"
   },
   "stats": {
@@ -243,6 +243,7 @@
       "Archived?": ""
     }
   },
+  "gamedayWhiff": null,
   "videos": [
     {
       "Player-ID": "Paul-Hoff",

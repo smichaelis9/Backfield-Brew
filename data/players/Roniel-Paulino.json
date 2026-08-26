@@ -3,13 +3,13 @@
   "name": "Roniel Paulino",
   "archived": false,
   "playerType": "Hitter",
-  "generatedAt": "2026-08-26T14:55:05.032Z",
+  "generatedAt": "2026-08-26T16:11:32.246Z",
   "bio": {
     "Player-ID": "Roniel-Paulino",
     "MLBAM ID": "829830",
     "Player Type": "Hitter",
     "Player": "Roniel Paulino",
-    "Rank": "208",
+    "Rank": "209",
     "Trending": "",
     "Position": "C",
     "Level": "DSL",
@@ -28,7 +28,7 @@
     "Weight": "182",
     "Bat / Throw": "Right/Right",
     "Birthday": "10/30/2007",
-    "Rule 5 Eligible": "2029",
+    "Rule 5 Eligible": "2028",
     "Picture": "https://i.ibb.co/JW86Ysxk/image.png",
     "Picture Source": "Instagram",
     "Notes Updated": "N/A",
@@ -89,7 +89,7 @@
     "Instagram Link": "https://www.instagram.com/r___paulino15/",
     "Other Social": "TikTok",
     "Other Social Link": "https://www.tiktok.com/@ronielpaulinosa23?lang=en",
-    "Previous Rank": "208"
+    "Previous Rank": "209"
   },
   "tools": {
     "Player-ID": "Roniel-Paulino",
@@ -226,6 +226,7 @@
       "Archived?": ""
     }
   },
+  "gamedayWhiff": null,
   "videos": [
     {
       "Player-ID": "Roniel-Paulino",

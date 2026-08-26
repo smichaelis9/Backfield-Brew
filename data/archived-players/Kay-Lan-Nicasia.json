@@ -3,7 +3,7 @@
   "name": "Kay-Lan Nicasia",
   "archived": true,
   "playerType": "Hitter",
-  "generatedAt": "2026-08-26T14:55:05.032Z",
+  "generatedAt": "2026-08-26T16:11:32.246Z",
   "bio": {
     "Player-ID": "Kay-Lan-Nicasia",
     "MLBAM ID": "702461",
@@ -223,6 +223,18 @@
       "SB%": "100.0%",
       "Archived?": "yes"
     }
+  },
+  "gamedayWhiff": {
+    "mlbamID": "702461",
+    "swings": 78,
+    "whiffs": 44,
+    "contacts": 34,
+    "whiffPct": 56.4,
+    "contactPct": 43.6,
+    "games": 12,
+    "levels": [
+      "AA"
+    ]
   },
   "videos": [
     {

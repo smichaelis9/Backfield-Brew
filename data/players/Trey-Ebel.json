@@ -3,7 +3,7 @@
   "name": "Trey Ebel",
   "archived": false,
   "playerType": "Hitter",
-  "generatedAt": "2026-08-26T14:55:05.032Z",
+  "generatedAt": "2026-08-26T16:11:32.246Z",
   "bio": {
     "Player-ID": "Trey-Ebel",
     "MLBAM ID": "821931",
@@ -29,8 +29,8 @@
     "Bat / Throw": "Right/Right",
     "Birthday": "9/29/2008",
     "Rule 5 Eligible": "2030",
-    "Picture": "https://i.ibb.co/FqBYky67/image.png",
-    "Picture Source": "Instagram",
+    "Picture": "https://img.mlbstatic.com/mlb-photos/image/upload/c_fill,g_auto/w_360/v1/people/821931/headshot/milb/current",
+    "Picture Source": "MiLB.com",
     "Notes Updated": "N/A",
     "Scouting Notes": "N/A",
     "Notes Updated 2": "N/A",
@@ -212,7 +212,7 @@
       "K%": "17.6%",
       "BB%": "29.4%",
       "SwStr %": "6.8%",
-      "Whiff%": "",
+      "Whiff%": "21.6%",
       "Pull %": "52.9%",
       "Cent %": "17.6%",
       "Oppo %": "29.4%",
@@ -225,6 +225,18 @@
       "SB%": "66.7%",
       "Archived?": ""
     }
+  },
+  "gamedayWhiff": {
+    "mlbamID": "821931",
+    "swings": 37,
+    "whiffs": 8,
+    "contacts": 29,
+    "whiffPct": 21.6,
+    "contactPct": 78.4,
+    "games": 7,
+    "levels": [
+      "A"
+    ]
   },
   "videos": [
     {

@@ -3,7 +3,7 @@
   "name": "Jadyn Fielder",
   "archived": true,
   "playerType": "Hitter",
-  "generatedAt": "2026-08-26T14:55:05.032Z",
+  "generatedAt": "2026-08-26T16:11:32.246Z",
   "bio": {
     "Player-ID": "Jadyn-Fielder",
     "MLBAM ID": "815723",
@@ -210,7 +210,7 @@
       "K%": "24.4%",
       "BB%": "18.8%",
       "SwStr %": "14.2%",
-      "Whiff%": "34.1%",
+      "Whiff%": "33.7%",
       "Pull %": "45.1%",
       "Cent %": "24.2%",
       "Oppo %": "30.8%",
@@ -223,6 +223,18 @@
       "SB%": "83.3%",
       "Archived?": "yes"
     }
+  },
+  "gamedayWhiff": {
+    "mlbamID": "815723",
+    "swings": 294,
+    "whiffs": 99,
+    "contacts": 195,
+    "whiffPct": 33.7,
+    "contactPct": 66.3,
+    "games": 44,
+    "levels": [
+      "A"
+    ]
   },
   "videos": [
     {

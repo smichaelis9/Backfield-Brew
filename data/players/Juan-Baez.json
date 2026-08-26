@@ -3,7 +3,7 @@
   "name": "Juan Baez",
   "archived": false,
   "playerType": "Hitter",
-  "generatedAt": "2026-08-26T14:55:05.032Z",
+  "generatedAt": "2026-08-26T16:11:32.246Z",
   "bio": {
     "Player-ID": "Juan-Baez",
     "MLBAM ID": "800345",
@@ -212,7 +212,7 @@
       "K%": "18.7%",
       "BB%": "9.4%",
       "SwStr %": "9.3%",
-      "Whiff%": "22.1%",
+      "Whiff%": "20.9%",
       "Pull %": "44.2%",
       "Cent %": "23.1%",
       "Oppo %": "32.7%",
@@ -225,6 +225,18 @@
       "SB%": "66.7%",
       "Archived?": ""
     }
+  },
+  "gamedayWhiff": {
+    "mlbamID": "800345",
+    "swings": 470,
+    "whiffs": 98,
+    "contacts": 372,
+    "whiffPct": 20.9,
+    "contactPct": 79.1,
+    "games": 72,
+    "levels": [
+      "A+"
+    ]
   },
   "videos": [
     {

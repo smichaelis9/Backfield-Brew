@@ -3,7 +3,7 @@
   "name": "Robert Gasser",
   "archived": true,
   "playerType": "Pitcher",
-  "generatedAt": "2026-08-26T14:55:05.032Z",
+  "generatedAt": "2026-08-26T16:11:32.246Z",
   "bio": {
     "Player-ID": "Robert-Gasser",
     "MLBAM ID": "688107",
@@ -229,7 +229,7 @@
       "BB%": "7.00%",
       "K-BB %": "26.30%",
       "SwStr %": "14.50%",
-      "Whiff%": "31.0%",
+      "Whiff%": "29.5%",
       "WHIP": "1.31",
       "BABIP": "0.388",
       "LOB%": "68.5%",
@@ -240,6 +240,18 @@
       "HR/FB": "0.05",
       "Archived?": "yes"
     }
+  },
+  "gamedayWhiff": {
+    "mlbamID": "688107",
+    "swings": 210,
+    "whiffs": 62,
+    "contacts": 148,
+    "whiffPct": 29.5,
+    "contactPct": 70.5,
+    "games": 7,
+    "levels": [
+      "AAA"
+    ]
   },
   "videos": [
     {

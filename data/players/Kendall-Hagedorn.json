@@ -3,13 +3,13 @@
   "name": "Kendall Hagedorn",
   "archived": false,
   "playerType": "Hitter",
-  "generatedAt": "2026-08-26T14:55:05.032Z",
+  "generatedAt": "2026-08-26T16:11:32.246Z",
   "bio": {
     "Player-ID": "Kendall-Hagedorn",
     "MLBAM ID": "844366",
     "Player Type": "Hitter",
     "Player": "Kendall Hagedorn",
-    "Rank": "170",
+    "Rank": "171",
     "Trending": "New",
     "Position": "C",
     "Level": "ACL",
@@ -89,7 +89,7 @@
     "Instagram Link": "https://www.instagram.com/kendall.hagedorn/",
     "Other Social": "",
     "Other Social Link": "",
-    "Previous Rank": "170"
+    "Previous Rank": "171"
   },
   "tools": {
     "Player-ID": "Kendall-Hagedorn",
@@ -226,6 +226,7 @@
       "Archived?": ""
     }
   },
+  "gamedayWhiff": null,
   "videos": [
     {
       "Player-ID": "Kendall-Hagedorn",

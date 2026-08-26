@@ -3,7 +3,7 @@
   "name": "Juan Martinez",
   "archived": true,
   "playerType": "Hitter",
-  "generatedAt": "2026-08-26T14:55:05.032Z",
+  "generatedAt": "2026-08-26T16:11:32.246Z",
   "bio": {
     "Player-ID": "Juan-Martinez",
     "MLBAM ID": "821197",
@@ -210,7 +210,7 @@
       "K%": "12.3%",
       "BB%": "16.0%",
       "SwStr %": "9.6%",
-      "Whiff%": "25.8%",
+      "Whiff%": "23.3%",
       "Pull %": "41.8%",
       "Cent %": "30.6%",
       "Oppo %": "27.6%",
@@ -223,6 +223,18 @@
       "SB%": "84.4%",
       "Archived?": "yes"
     }
+  },
+  "gamedayWhiff": {
+    "mlbamID": "821197",
+    "swings": 120,
+    "whiffs": 28,
+    "contacts": 92,
+    "whiffPct": 23.3,
+    "contactPct": 76.7,
+    "games": 19,
+    "levels": [
+      "A"
+    ]
   },
   "videos": [
     {

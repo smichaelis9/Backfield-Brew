@@ -3,7 +3,7 @@
   "name": "Carlos Carra",
   "archived": false,
   "playerType": "Pitcher",
-  "generatedAt": "2026-08-26T14:55:05.032Z",
+  "generatedAt": "2026-08-26T16:11:32.246Z",
   "bio": {
     "Player-ID": "Carlos-Carra",
     "MLBAM ID": "820902",
@@ -231,7 +231,7 @@
       "BB%": "14.30%",
       "K-BB %": "7.50%",
       "SwStr %": "12.20%",
-      "Whiff%": "31.2%",
+      "Whiff%": "26.5%",
       "WHIP": "1.52",
       "BABIP": "0.278",
       "LOB%": "66.7%",
@@ -242,6 +242,18 @@
       "HR/FB": "0.17",
       "Archived?": ""
     }
+  },
+  "gamedayWhiff": {
+    "mlbamID": "820902",
+    "swings": 750,
+    "whiffs": 199,
+    "contacts": 551,
+    "whiffPct": 26.5,
+    "contactPct": 73.5,
+    "games": 23,
+    "levels": [
+      "A"
+    ]
   },
   "videos": [
     {

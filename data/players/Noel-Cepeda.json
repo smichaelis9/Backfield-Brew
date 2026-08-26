@@ -3,13 +3,13 @@
   "name": "Noel Cepeda",
   "archived": false,
   "playerType": "Pitcher",
-  "generatedAt": "2026-08-26T14:55:05.032Z",
+  "generatedAt": "2026-08-26T16:11:32.246Z",
   "bio": {
     "Player-ID": "Noel-Cepeda",
     "MLBAM ID": "842329",
     "Player Type": "Pitcher",
     "Player": "Noel Cepeda",
-    "Rank": "214",
+    "Rank": "215",
     "Trending": "",
     "Position": "LHP",
     "Level": "DSL",
@@ -89,7 +89,7 @@
     "Instagram Link": "https://www.instagram.com/noel_120329/",
     "Other Social": "",
     "Other Social Link": "",
-    "Previous Rank": "214"
+    "Previous Rank": "215"
   },
   "tools": {
     "Player-ID": "Noel-Cepeda",
@@ -243,6 +243,7 @@
       "Archived?": ""
     }
   },
+  "gamedayWhiff": null,
   "videos": [
     {
       "Player-ID": "Noel-Cepeda",

@@ -3,7 +3,7 @@
   "name": "Anfernny Reyes",
   "archived": false,
   "playerType": "Pitcher",
-  "generatedAt": "2026-08-26T14:55:05.032Z",
+  "generatedAt": "2026-08-26T16:11:32.246Z",
   "bio": {
     "Player-ID": "Anfernny-Reyes",
     "MLBAM ID": "703102",
@@ -242,6 +242,18 @@
       "HR/FB": "0.08",
       "Archived?": ""
     }
+  },
+  "gamedayWhiff": {
+    "mlbamID": "703102",
+    "swings": 156,
+    "whiffs": 59,
+    "contacts": 97,
+    "whiffPct": 37.8,
+    "contactPct": 62.2,
+    "games": 11,
+    "levels": [
+      "A"
+    ]
   },
   "videos": [
     {

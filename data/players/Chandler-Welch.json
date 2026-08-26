@@ -3,13 +3,13 @@
   "name": "Chandler Welch",
   "archived": false,
   "playerType": "Pitcher",
-  "generatedAt": "2026-08-26T14:55:05.032Z",
+  "generatedAt": "2026-08-26T16:11:32.246Z",
   "bio": {
     "Player-ID": "Chandler-Welch",
     "MLBAM ID": "803068",
     "Player Type": "Pitcher",
     "Player": "Chandler Welch",
-    "Rank": "177",
+    "Rank": "178",
     "Trending": "Down",
     "Position": "RHP",
     "Level": "A+",
@@ -89,7 +89,7 @@
     "Instagram Link": "https://www.instagram.com/chan.welch/",
     "Other Social": "TikTok",
     "Other Social Link": "https://www.tiktok.com/@chan.welch",
-    "Previous Rank": "177"
+    "Previous Rank": "178"
   },
   "tools": {
     "Player-ID": "Chandler-Welch",
@@ -231,7 +231,7 @@
       "BB%": "13.00%",
       "K-BB %": "8.50%",
       "SwStr %": "11.20%",
-      "Whiff%": "27.6%",
+      "Whiff%": "25.2%",
       "WHIP": "1.55",
       "BABIP": "0.305",
       "LOB%": "65.7%",
@@ -242,6 +242,19 @@
       "HR/FB": "0.13",
       "Archived?": ""
     }
+  },
+  "gamedayWhiff": {
+    "mlbamID": "803068",
+    "swings": 469,
+    "whiffs": 118,
+    "contacts": 351,
+    "whiffPct": 25.2,
+    "contactPct": 74.8,
+    "games": 25,
+    "levels": [
+      "A+",
+      "AA"
+    ]
   },
   "videos": [
     {

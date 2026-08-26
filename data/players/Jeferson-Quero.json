@@ -3,7 +3,7 @@
   "name": "Jeferson Quero",
   "archived": false,
   "playerType": "Hitter",
-  "generatedAt": "2026-08-26T14:55:05.032Z",
+  "generatedAt": "2026-08-26T16:11:32.246Z",
   "bio": {
     "Player-ID": "Jeferson-Quero",
     "MLBAM ID": "691620",
@@ -212,7 +212,7 @@
       "K%": "20.6%",
       "BB%": "8.6%",
       "SwStr %": "14.2%",
-      "Whiff%": "29.4%",
+      "Whiff%": "27.6%",
       "Pull %": "46.7%",
       "Cent %": "24.7%",
       "Oppo %": "28.5%",
@@ -225,6 +225,18 @@
       "SB%": "66.7%",
       "Archived?": ""
     }
+  },
+  "gamedayWhiff": {
+    "mlbamID": "691620",
+    "swings": 761,
+    "whiffs": 210,
+    "contacts": 551,
+    "whiffPct": 27.6,
+    "contactPct": 72.4,
+    "games": 101,
+    "levels": [
+      "AAA"
+    ]
   },
   "videos": [
     {

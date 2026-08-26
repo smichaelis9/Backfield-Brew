@@ -3,13 +3,13 @@
   "name": "Yoneiker Lugo",
   "archived": false,
   "playerType": "Hitter",
-  "generatedAt": "2026-08-26T14:55:05.032Z",
+  "generatedAt": "2026-08-26T16:11:32.246Z",
   "bio": {
     "Player-ID": "Yoneiker-Lugo",
     "MLBAM ID": "821268",
     "Player Type": "Hitter",
     "Player": "Yoneiker Lugo",
-    "Rank": "190",
+    "Rank": "191",
     "Trending": "",
     "Position": "C",
     "Level": "DSL",
@@ -89,7 +89,7 @@
     "Instagram Link": "https://www.instagram.com/yoneiker_l27/",
     "Other Social": "",
     "Other Social Link": "",
-    "Previous Rank": "190"
+    "Previous Rank": "191"
   },
   "tools": {
     "Player-ID": "Yoneiker-Lugo",
@@ -226,6 +226,7 @@
       "Archived?": ""
     }
   },
+  "gamedayWhiff": null,
   "videos": [
     {
       "Player-ID": "Yoneiker-Lugo",

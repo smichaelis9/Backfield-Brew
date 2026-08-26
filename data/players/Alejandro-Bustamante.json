@@ -3,13 +3,13 @@
   "name": "Alejandro Bustamante",
   "archived": false,
   "playerType": "Pitcher",
-  "generatedAt": "2026-08-26T14:55:05.032Z",
+  "generatedAt": "2026-08-26T16:11:32.246Z",
   "bio": {
     "Player-ID": "Alejandro-Bustamante",
     "MLBAM ID": "834289",
     "Player Type": "Pitcher",
     "Player": "Alejandro Bustamante",
-    "Rank": "194",
+    "Rank": "195",
     "Trending": "",
     "Position": "RHP",
     "Level": "DSL",
@@ -89,7 +89,7 @@
     "Instagram Link": "https://www.instagram.com/ale_busta04/?hl=en",
     "Other Social": "",
     "Other Social Link": "",
-    "Previous Rank": "194"
+    "Previous Rank": "195"
   },
   "tools": {
     "Player-ID": "Alejandro-Bustamante",
@@ -243,6 +243,7 @@
       "Archived?": ""
     }
   },
+  "gamedayWhiff": null,
   "videos": [
     {
       "Player-ID": "Alejandro-Bustamante",

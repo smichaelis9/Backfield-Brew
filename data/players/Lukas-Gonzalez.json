@@ -3,13 +3,13 @@
   "name": "Lukas Gonzalez",
   "archived": false,
   "playerType": "Pitcher",
-  "generatedAt": "2026-08-26T14:55:05.032Z",
+  "generatedAt": "2026-08-26T16:11:32.246Z",
   "bio": {
     "Player-ID": "Lukas-Gonzalez",
     "MLBAM ID": "821172",
     "Player Type": "Pitcher",
     "Player": "Lukas Gonzalez",
-    "Rank": "220",
+    "Rank": "221",
     "Trending": "",
     "Position": "RHP",
     "Level": "DSL",
@@ -89,7 +89,7 @@
     "Instagram Link": "https://www.instagram.com/lukas23g/",
     "Other Social": "",
     "Other Social Link": "",
-    "Previous Rank": "220"
+    "Previous Rank": "221"
   },
   "tools": {
     "Player-ID": "Lukas-Gonzalez",
@@ -243,6 +243,7 @@
       "Archived?": ""
     }
   },
+  "gamedayWhiff": null,
   "videos": [
     {
       "Player-ID": "Lukas-Gonzalez",

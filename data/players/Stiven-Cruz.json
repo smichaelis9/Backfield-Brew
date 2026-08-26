@@ -3,7 +3,7 @@
   "name": "Stiven Cruz",
   "archived": false,
   "playerType": "Pitcher",
-  "generatedAt": "2026-08-26T14:55:05.032Z",
+  "generatedAt": "2026-08-26T16:11:32.246Z",
   "bio": {
     "Player-ID": "Stiven-Cruz",
     "MLBAM ID": "691602",
@@ -231,7 +231,7 @@
       "BB%": "5.60%",
       "K-BB %": "22.10%",
       "SwStr %": "13.00%",
-      "Whiff%": "29.2%",
+      "Whiff%": "25.3%",
       "WHIP": "1.25",
       "BABIP": "0.317",
       "LOB%": "58.6%",
@@ -242,6 +242,18 @@
       "HR/FB": "0.19",
       "Archived?": ""
     }
+  },
+  "gamedayWhiff": {
+    "mlbamID": "691602",
+    "swings": 467,
+    "whiffs": 118,
+    "contacts": 349,
+    "whiffPct": 25.3,
+    "contactPct": 74.7,
+    "games": 32,
+    "levels": [
+      "AA"
+    ]
   },
   "videos": [
     {

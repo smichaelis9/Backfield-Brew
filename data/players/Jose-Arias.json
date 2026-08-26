@@ -3,13 +3,13 @@
   "name": "Jose Arias",
   "archived": false,
   "playerType": "Pitcher",
-  "generatedAt": "2026-08-26T14:55:05.032Z",
+  "generatedAt": "2026-08-26T16:11:32.246Z",
   "bio": {
     "Player-ID": "Jose-Arias",
     "MLBAM ID": "829417",
     "Player Type": "Pitcher",
     "Player": "Jose Arias",
-    "Rank": "222",
+    "Rank": "223",
     "Trending": "",
     "Position": "RHP",
     "Level": "DSL",
@@ -89,7 +89,7 @@
     "Instagram Link": "https://www.instagram.com/josearias7048/",
     "Other Social": "",
     "Other Social Link": "",
-    "Previous Rank": "222"
+    "Previous Rank": "223"
   },
   "tools": {
     "Player-ID": "Jose-Arias",
@@ -243,6 +243,7 @@
       "Archived?": ""
     }
   },
+  "gamedayWhiff": null,
   "videos": [
     {
       "Player-ID": "Jose-Arias",

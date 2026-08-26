@@ -1014,6 +1014,12 @@
     "archived": false
   },
   {
+    "id": "Paul-Hoff",
+    "name": "Paul Hoff",
+    "file": "Paul-Hoff.json",
+    "archived": false
+  },
+  {
     "id": "Kendall-Hagedorn",
     "name": "Kendall Hagedorn",
     "file": "Kendall-Hagedorn.json",
@@ -1341,12 +1347,6 @@
     "id": "Freider-Rojas",
     "name": "Freider Rojas",
     "file": "Freider-Rojas.json",
-    "archived": false
-  },
-  {
-    "id": "Paul-Hoff",
-    "name": "Paul Hoff",
-    "file": "Paul-Hoff.json",
     "archived": false
   },
   {

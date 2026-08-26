@@ -3,7 +3,7 @@
   "name": "Gregory Barrios",
   "archived": true,
   "playerType": "Hitter",
-  "generatedAt": "2026-08-26T14:55:05.032Z",
+  "generatedAt": "2026-08-26T16:11:32.246Z",
   "bio": {
     "Player-ID": "Gregory-Barrios",
     "MLBAM ID": "699126",
@@ -210,7 +210,7 @@
       "K%": "",
       "BB%": "",
       "SwStr %": "",
-      "Whiff%": "",
+      "Whiff%": "13.9%",
       "Pull %": "",
       "Cent %": "",
       "Oppo %": "",
@@ -223,6 +223,18 @@
       "SB%": "",
       "Archived?": "yes"
     }
+  },
+  "gamedayWhiff": {
+    "mlbamID": "699126",
+    "swings": 137,
+    "whiffs": 19,
+    "contacts": 118,
+    "whiffPct": 13.9,
+    "contactPct": 86.1,
+    "games": 20,
+    "levels": [
+      "AA"
+    ]
   },
   "videos": [
     {

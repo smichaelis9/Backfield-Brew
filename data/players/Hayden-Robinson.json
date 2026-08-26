@@ -3,7 +3,7 @@
   "name": "Hayden Robinson",
   "archived": false,
   "playerType": "Pitcher",
-  "generatedAt": "2026-08-26T14:55:05.032Z",
+  "generatedAt": "2026-08-26T16:11:32.246Z",
   "bio": {
     "Player-ID": "Hayden-Robinson",
     "MLBAM ID": "815300",
@@ -231,7 +231,7 @@
       "BB%": "13.70%",
       "K-BB %": "6.70%",
       "SwStr %": "11.20%",
-      "Whiff%": "29.4%",
+      "Whiff%": "26.9%",
       "WHIP": "1.57",
       "BABIP": "0.290",
       "LOB%": "67.2%",
@@ -242,6 +242,18 @@
       "HR/FB": "0.20",
       "Archived?": ""
     }
+  },
+  "gamedayWhiff": {
+    "mlbamID": "815300",
+    "swings": 349,
+    "whiffs": 94,
+    "contacts": 255,
+    "whiffPct": 26.9,
+    "contactPct": 73.1,
+    "games": 15,
+    "levels": [
+      "A"
+    ]
   },
   "videos": [
     {

@@ -3,13 +3,13 @@
   "name": "Cesar Espinal",
   "archived": false,
   "playerType": "Pitcher",
-  "generatedAt": "2026-08-26T14:55:05.032Z",
+  "generatedAt": "2026-08-26T16:11:32.246Z",
   "bio": {
     "Player-ID": "Cesar-Espinal",
     "MLBAM ID": "805238",
     "Player Type": "Pitcher",
     "Player": "Cesar Espinal",
-    "Rank": "200",
+    "Rank": "201",
     "Trending": "",
     "Position": "RHP",
     "Level": "A",
@@ -89,7 +89,7 @@
     "Instagram Link": "https://www.instagram.com/p/DG91jjqOfP4/?img_index=1",
     "Other Social": "TikTok",
     "Other Social Link": "https://www.tiktok.com/@cesarespinal64",
-    "Previous Rank": "200"
+    "Previous Rank": "201"
   },
   "tools": {
     "Player-ID": "Cesar-Espinal",
@@ -231,7 +231,7 @@
       "BB%": "18.50%",
       "K-BB %": "10.20%",
       "SwStr %": "15.30%",
-      "Whiff%": "40.4%",
+      "Whiff%": "44.7%",
       "WHIP": "1.42",
       "BABIP": "0.259",
       "LOB%": "64.0%",
@@ -242,6 +242,18 @@
       "HR/FB": "0.15",
       "Archived?": ""
     }
+  },
+  "gamedayWhiff": {
+    "mlbamID": "805238",
+    "swings": 38,
+    "whiffs": 17,
+    "contacts": 21,
+    "whiffPct": 44.7,
+    "contactPct": 55.3,
+    "games": 6,
+    "levels": [
+      "A"
+    ]
   },
   "videos": [
     {

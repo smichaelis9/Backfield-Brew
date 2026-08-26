@@ -3,7 +3,7 @@
   "name": "Quinton Low",
   "archived": false,
   "playerType": "Pitcher",
-  "generatedAt": "2026-08-26T14:55:05.032Z",
+  "generatedAt": "2026-08-26T16:11:32.246Z",
   "bio": {
     "Player-ID": "Quinton-Low",
     "MLBAM ID": "701703",
@@ -231,7 +231,7 @@
       "BB%": "22.40%",
       "K-BB %": "4.60%",
       "SwStr %": "14.00%",
-      "Whiff%": "37.5%",
+      "Whiff%": "35.1%",
       "WHIP": "2.13",
       "BABIP": "0.378",
       "LOB%": "54.0%",
@@ -242,6 +242,18 @@
       "HR/FB": "0.14",
       "Archived?": ""
     }
+  },
+  "gamedayWhiff": {
+    "mlbamID": "701703",
+    "swings": 288,
+    "whiffs": 101,
+    "contacts": 187,
+    "whiffPct": 35.1,
+    "contactPct": 64.9,
+    "games": 25,
+    "levels": [
+      "A+"
+    ]
   },
   "videos": [
     {

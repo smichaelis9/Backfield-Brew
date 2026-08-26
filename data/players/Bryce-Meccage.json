@@ -3,7 +3,7 @@
   "name": "Bryce Meccage",
   "archived": false,
   "playerType": "Pitcher",
-  "generatedAt": "2026-08-26T14:55:05.032Z",
+  "generatedAt": "2026-08-26T16:11:32.246Z",
   "bio": {
     "Player-ID": "Bryce-Meccage",
     "MLBAM ID": "815501",
@@ -231,7 +231,7 @@
       "BB%": "24.70%",
       "K-BB %": "-5.20%",
       "SwStr %": "10.10%",
-      "Whiff%": "29.8%",
+      "Whiff%": "27.3%",
       "WHIP": "1.80",
       "BABIP": "0.220",
       "LOB%": "58.8%",
@@ -242,6 +242,18 @@
       "HR/FB": "0.12",
       "Archived?": ""
     }
+  },
+  "gamedayWhiff": {
+    "mlbamID": "815501",
+    "swings": 121,
+    "whiffs": 33,
+    "contacts": 88,
+    "whiffPct": 27.3,
+    "contactPct": 72.7,
+    "games": 5,
+    "levels": [
+      "A+"
+    ]
   },
   "videos": [
     {

@@ -3,7 +3,7 @@
   "name": "Tanner Gillis",
   "archived": false,
   "playerType": "Pitcher",
-  "generatedAt": "2026-08-26T14:55:05.032Z",
+  "generatedAt": "2026-08-26T16:11:32.246Z",
   "bio": {
     "Player-ID": "Tanner-Gillis",
     "MLBAM ID": "828705",
@@ -231,7 +231,7 @@
       "BB%": "5.80%",
       "K-BB %": "13.30%",
       "SwStr %": "12.60%",
-      "Whiff%": "25.5%",
+      "Whiff%": "24.1%",
       "WHIP": "0.96",
       "BABIP": "0.203",
       "LOB%": "79.1%",
@@ -242,6 +242,18 @@
       "HR/FB": "0.18",
       "Archived?": ""
     }
+  },
+  "gamedayWhiff": {
+    "mlbamID": "828705",
+    "swings": 440,
+    "whiffs": 106,
+    "contacts": 334,
+    "whiffPct": 24.1,
+    "contactPct": 75.9,
+    "games": 15,
+    "levels": [
+      "AA"
+    ]
   },
   "videos": [
     {

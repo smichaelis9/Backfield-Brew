@@ -3,7 +3,7 @@
   "name": "Jesus Flores",
   "archived": false,
   "playerType": "Pitcher",
-  "generatedAt": "2026-08-26T14:55:05.032Z",
+  "generatedAt": "2026-08-26T16:11:32.246Z",
   "bio": {
     "Player-ID": "Jesus-Flores",
     "MLBAM ID": "808222",
@@ -231,7 +231,7 @@
       "BB%": "32.10%",
       "K-BB %": "-21.40%",
       "SwStr %": "8.80%",
-      "Whiff%": "28.6%",
+      "Whiff%": "26.5%",
       "WHIP": "2.79",
       "BABIP": "0.267",
       "LOB%": "78.6%",
@@ -242,6 +242,18 @@
       "HR/FB": "0.00",
       "Archived?": ""
     }
+  },
+  "gamedayWhiff": {
+    "mlbamID": "808222",
+    "swings": 34,
+    "whiffs": 9,
+    "contacts": 25,
+    "whiffPct": 26.5,
+    "contactPct": 73.5,
+    "games": 5,
+    "levels": [
+      "A+"
+    ]
   },
   "videos": [
     {

@@ -3,7 +3,7 @@
   "name": "Jarrette Bonet",
   "archived": false,
   "playerType": "Pitcher",
-  "generatedAt": "2026-08-26T14:55:05.032Z",
+  "generatedAt": "2026-08-26T16:11:32.246Z",
   "bio": {
     "Player-ID": "Jarrette-Bonet",
     "MLBAM ID": "806426",
@@ -231,7 +231,7 @@
       "BB%": "11.70%",
       "K-BB %": "9.60%",
       "SwStr %": "10.10%",
-      "Whiff%": "26.9%",
+      "Whiff%": "22.0%",
       "WHIP": "1.43",
       "BABIP": "0.299",
       "LOB%": "66.1%",
@@ -242,6 +242,18 @@
       "HR/FB": "0.12",
       "Archived?": ""
     }
+  },
+  "gamedayWhiff": {
+    "mlbamID": "806426",
+    "swings": 854,
+    "whiffs": 188,
+    "contacts": 666,
+    "whiffPct": 22,
+    "contactPct": 78,
+    "games": 24,
+    "levels": [
+      "A"
+    ]
   },
   "videos": [
     {

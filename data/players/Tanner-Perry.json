@@ -3,7 +3,7 @@
   "name": "Tanner Perry",
   "archived": false,
   "playerType": "Pitcher",
-  "generatedAt": "2026-08-26T14:55:05.032Z",
+  "generatedAt": "2026-08-26T16:11:32.246Z",
   "bio": {
     "Player-ID": "Tanner-Perry",
     "MLBAM ID": "811697",
@@ -231,7 +231,7 @@
       "BB%": "12.10%",
       "K-BB %": "10.20%",
       "SwStr %": "11.10%",
-      "Whiff%": "30.1%",
+      "Whiff%": "23.9%",
       "WHIP": "1.46",
       "BABIP": "0.284",
       "LOB%": "68.9%",
@@ -242,6 +242,20 @@
       "HR/FB": "0.14",
       "Archived?": ""
     }
+  },
+  "gamedayWhiff": {
+    "mlbamID": "811697",
+    "swings": 451,
+    "whiffs": 108,
+    "contacts": 343,
+    "whiffPct": 23.9,
+    "contactPct": 76.1,
+    "games": 25,
+    "levels": [
+      "A",
+      "A+",
+      "AA"
+    ]
   },
   "videos": [
     {

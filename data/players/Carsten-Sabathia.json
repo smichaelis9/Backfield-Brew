@@ -3,7 +3,7 @@
   "name": "Carsten Sabathia III",
   "archived": false,
   "playerType": "Hitter",
-  "generatedAt": "2026-08-26T14:55:05.032Z",
+  "generatedAt": "2026-08-26T16:11:32.246Z",
   "bio": {
     "Player-ID": "Carsten-Sabathia",
     "MLBAM ID": "702276",
@@ -212,7 +212,7 @@
       "K%": "14.9%",
       "BB%": "10.6%",
       "SwStr %": "11.6%",
-      "Whiff%": "",
+      "Whiff%": "24.1%",
       "Pull %": "48.6%",
       "Cent %": "25.7%",
       "Oppo %": "25.7%",
@@ -225,6 +225,18 @@
       "SB%": "100.0%",
       "Archived?": ""
     }
+  },
+  "gamedayWhiff": {
+    "mlbamID": "702276",
+    "swings": 83,
+    "whiffs": 20,
+    "contacts": 63,
+    "whiffPct": 24.1,
+    "contactPct": 75.9,
+    "games": 11,
+    "levels": [
+      "A"
+    ]
   },
   "videos": [
     {

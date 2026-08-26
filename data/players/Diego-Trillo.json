@@ -3,13 +3,13 @@
   "name": "Diego Trillo",
   "archived": false,
   "playerType": "Pitcher",
-  "generatedAt": "2026-08-26T14:55:05.032Z",
+  "generatedAt": "2026-08-26T16:11:32.246Z",
   "bio": {
     "Player-ID": "Diego-Trillo",
     "MLBAM ID": "837818",
     "Player Type": "Pitcher",
     "Player": "Diego Trillo",
-    "Rank": "204",
+    "Rank": "205",
     "Trending": "",
     "Position": "RHP",
     "Level": "IL",
@@ -89,7 +89,7 @@
     "Instagram Link": "",
     "Other Social": "",
     "Other Social Link": "",
-    "Previous Rank": "204"
+    "Previous Rank": "205"
   },
   "tools": {
     "Player-ID": "Diego-Trillo",
@@ -243,6 +243,7 @@
       "Archived?": ""
     }
   },
+  "gamedayWhiff": null,
   "videos": [
     {
       "Player-ID": "Diego-Trillo",

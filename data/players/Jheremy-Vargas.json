@@ -3,13 +3,13 @@
   "name": "Jheremy Vargas",
   "archived": false,
   "playerType": "Hitter",
-  "generatedAt": "2026-08-26T14:55:05.032Z",
+  "generatedAt": "2026-08-26T16:11:32.246Z",
   "bio": {
     "Player-ID": "Jheremy-Vargas",
     "MLBAM ID": "691621",
     "Player Type": "Hitter",
     "Player": "Jheremy Vargas",
-    "Rank": "215",
+    "Rank": "216",
     "Trending": "",
     "Position": "3B",
     "Level": "AA",
@@ -89,7 +89,7 @@
     "Instagram Link": "https://instagram.com/jhereoficial_13?igshid=YmMyMTA2M2Y=",
     "Other Social": "",
     "Other Social Link": "",
-    "Previous Rank": "215"
+    "Previous Rank": "216"
   },
   "tools": {
     "Player-ID": "Jheremy-Vargas",
@@ -212,7 +212,7 @@
       "K%": "17.6%",
       "BB%": "12.8%",
       "SwStr %": "8.6%",
-      "Whiff%": "16.0%",
+      "Whiff%": "19.2%",
       "Pull %": "40.4%",
       "Cent %": "17.2%",
       "Oppo %": "42.4%",
@@ -225,6 +225,19 @@
       "SB%": "25.0%",
       "Archived?": ""
     }
+  },
+  "gamedayWhiff": {
+    "mlbamID": "691621",
+    "swings": 261,
+    "whiffs": 50,
+    "contacts": 211,
+    "whiffPct": 19.2,
+    "contactPct": 80.8,
+    "games": 44,
+    "levels": [
+      "AA",
+      "AAA"
+    ]
   },
   "videos": [
     {

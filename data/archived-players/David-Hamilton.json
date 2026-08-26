@@ -3,7 +3,7 @@
   "name": "David Hamilton",
   "archived": true,
   "playerType": "Hitter",
-  "generatedAt": "2026-08-26T14:55:05.032Z",
+  "generatedAt": "2026-08-26T16:11:32.246Z",
   "bio": {
     "Player-ID": "David-Hamilton",
     "MLBAM ID": "666152",
@@ -223,6 +223,18 @@
       "SB%": "0.0%",
       "Archived?": "yes"
     }
+  },
+  "gamedayWhiff": {
+    "mlbamID": "666152",
+    "swings": 11,
+    "whiffs": 1,
+    "contacts": 10,
+    "whiffPct": 9.1,
+    "contactPct": 90.9,
+    "games": 2,
+    "levels": [
+      "AAA"
+    ]
   },
   "videos": [
     {

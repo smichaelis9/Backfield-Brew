@@ -3,13 +3,13 @@
   "name": "Justin Lugo",
   "archived": false,
   "playerType": "Pitcher",
-  "generatedAt": "2026-08-26T14:55:05.032Z",
+  "generatedAt": "2026-08-26T16:11:32.246Z",
   "bio": {
     "Player-ID": "Justin-Lugo",
     "MLBAM ID": "823783",
     "Player Type": "Pitcher",
     "Player": "Justin Lugo",
-    "Rank": "207",
+    "Rank": "208",
     "Trending": "",
     "Position": "RHP",
     "Level": "DSL",
@@ -89,7 +89,7 @@
     "Instagram Link": "https://www.instagram.com/j.lugo26/",
     "Other Social": "",
     "Other Social Link": "",
-    "Previous Rank": "207"
+    "Previous Rank": "208"
   },
   "tools": {
     "Player-ID": "Justin-Lugo",
@@ -243,6 +243,7 @@
       "Archived?": ""
     }
   },
+  "gamedayWhiff": null,
   "videos": [
     {
       "Player-ID": "Justin-Lugo",

@@ -3,13 +3,13 @@
   "name": "Joan Gonzalez",
   "archived": false,
   "playerType": "Pitcher",
-  "generatedAt": "2026-08-26T14:55:05.032Z",
+  "generatedAt": "2026-08-26T16:11:32.246Z",
   "bio": {
     "Player-ID": "Joan-Gonzalez",
     "MLBAM ID": "838000",
     "Player Type": "Pitcher",
     "Player": "Joan Gonzalez",
-    "Rank": "182",
+    "Rank": "183",
     "Trending": "",
     "Position": "RHP",
     "Level": "DSL",
@@ -89,7 +89,7 @@
     "Instagram Link": "https://www.instagram.com/joangonzalez0880?igsh=cjliZTRmN3Z2eWM0",
     "Other Social": "",
     "Other Social Link": "",
-    "Previous Rank": "182"
+    "Previous Rank": "183"
   },
   "tools": {
     "Player-ID": "Joan-Gonzalez",
@@ -243,6 +243,7 @@
       "Archived?": ""
     }
   },
+  "gamedayWhiff": null,
   "videos": [
     {
       "Player-ID": "Joan-Gonzalez",

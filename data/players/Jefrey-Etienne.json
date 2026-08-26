@@ -3,13 +3,13 @@
   "name": "Jefrey Etienne",
   "archived": false,
   "playerType": "Pitcher",
-  "generatedAt": "2026-08-26T14:55:05.032Z",
+  "generatedAt": "2026-08-26T16:11:32.246Z",
   "bio": {
     "Player-ID": "Jefrey-Etienne",
     "MLBAM ID": "842031",
     "Player Type": "Pitcher",
     "Player": "Jefrey Etienne",
-    "Rank": "217",
+    "Rank": "218",
     "Trending": "",
     "Position": "RHP",
     "Level": "IL",
@@ -28,7 +28,7 @@
     "Weight": "165",
     "Bat / Throw": "Right/Right",
     "Birthday": "10/18/2007",
-    "Rule 5 Eligible": "2030",
+    "Rule 5 Eligible": "2029",
     "Picture": "https://i.ibb.co/DfKrV1cM/image.png",
     "Picture Source": "Instagram",
     "Notes Updated": "N/A",
@@ -89,7 +89,7 @@
     "Instagram Link": "https://www.instagram.com/jex_xx2/",
     "Other Social": "",
     "Other Social Link": "",
-    "Previous Rank": "217"
+    "Previous Rank": "218"
   },
   "tools": {
     "Player-ID": "Jefrey-Etienne",
@@ -243,6 +243,7 @@
       "Archived?": ""
     }
   },
+  "gamedayWhiff": null,
   "videos": [
     {
       "Player-ID": "Jefrey-Etienne",

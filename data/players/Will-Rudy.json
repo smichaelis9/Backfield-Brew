@@ -3,13 +3,13 @@
   "name": "Will Rudy",
   "archived": false,
   "playerType": "Pitcher",
-  "generatedAt": "2026-08-26T14:55:05.032Z",
+  "generatedAt": "2026-08-26T16:11:32.246Z",
   "bio": {
     "Player-ID": "Will-Rudy",
     "MLBAM ID": "805733",
     "Player Type": "Pitcher",
     "Player": "Will Rudy",
-    "Rank": "187",
+    "Rank": "188",
     "Trending": "",
     "Position": "RHP",
     "Level": "IL",
@@ -89,7 +89,7 @@
     "Instagram Link": "https://instagram.com/willrudyy?igshid=YmMyMTA2M2Y=",
     "Other Social": "",
     "Other Social Link": "",
-    "Previous Rank": "187"
+    "Previous Rank": "188"
   },
   "tools": {
     "Player-ID": "Will-Rudy",
@@ -243,6 +243,7 @@
       "Archived?": ""
     }
   },
+  "gamedayWhiff": null,
   "videos": [
     {
       "Player-ID": "Will-Rudy",

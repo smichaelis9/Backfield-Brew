@@ -3,7 +3,7 @@
   "name": "Nick Merkel",
   "archived": false,
   "playerType": "Pitcher",
-  "generatedAt": "2026-08-26T14:55:05.032Z",
+  "generatedAt": "2026-08-26T16:11:32.246Z",
   "bio": {
     "Player-ID": "Nick-Merkel",
     "MLBAM ID": "806581",
@@ -231,7 +231,7 @@
       "BB%": "9.20%",
       "K-BB %": "12.80%",
       "SwStr %": "11.30%",
-      "Whiff%": "25.7%",
+      "Whiff%": "24.1%",
       "WHIP": "1.42",
       "BABIP": "0.324",
       "LOB%": "57.9%",
@@ -242,6 +242,18 @@
       "HR/FB": "0.20",
       "Archived?": ""
     }
+  },
+  "gamedayWhiff": {
+    "mlbamID": "806581",
+    "swings": 187,
+    "whiffs": 45,
+    "contacts": 142,
+    "whiffPct": 24.1,
+    "contactPct": 75.9,
+    "games": 20,
+    "levels": [
+      "AA"
+    ]
   },
   "videos": [
     {

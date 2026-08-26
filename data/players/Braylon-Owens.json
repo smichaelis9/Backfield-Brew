@@ -3,7 +3,7 @@
   "name": "Braylon Owens",
   "archived": false,
   "playerType": "Pitcher",
-  "generatedAt": "2026-08-26T14:55:05.032Z",
+  "generatedAt": "2026-08-26T16:11:32.246Z",
   "bio": {
     "Player-ID": "Braylon-Owens",
     "MLBAM ID": "823182",
@@ -231,7 +231,7 @@
       "BB%": "10.90%",
       "K-BB %": "19.00%",
       "SwStr %": "12.30%",
-      "Whiff%": "30.7%",
+      "Whiff%": "26.9%",
       "WHIP": "1.31",
       "BABIP": "0.324",
       "LOB%": "71.4%",
@@ -242,6 +242,19 @@
       "HR/FB": "0.09",
       "Archived?": ""
     }
+  },
+  "gamedayWhiff": {
+    "mlbamID": "823182",
+    "swings": 724,
+    "whiffs": 195,
+    "contacts": 529,
+    "whiffPct": 26.9,
+    "contactPct": 73.1,
+    "games": 21,
+    "levels": [
+      "A+",
+      "AA"
+    ]
   },
   "videos": [
     {

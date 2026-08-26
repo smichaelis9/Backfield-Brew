@@ -3,7 +3,7 @@
   "name": "Wenderlyn King",
   "archived": false,
   "playerType": "Pitcher",
-  "generatedAt": "2026-08-26T14:55:05.032Z",
+  "generatedAt": "2026-08-26T16:11:32.246Z",
   "bio": {
     "Player-ID": "Wenderlyn-King",
     "MLBAM ID": "820936",
@@ -231,7 +231,7 @@
       "BB%": "13.90%",
       "K-BB %": "5.60%",
       "SwStr %": "16.90%",
-      "Whiff%": "36.2%",
+      "Whiff%": "8.3%",
       "WHIP": "1.57",
       "BABIP": "0.238",
       "LOB%": "68.6%",
@@ -242,6 +242,18 @@
       "HR/FB": "0.18",
       "Archived?": ""
     }
+  },
+  "gamedayWhiff": {
+    "mlbamID": "820936",
+    "swings": 12,
+    "whiffs": 1,
+    "contacts": 11,
+    "whiffPct": 8.3,
+    "contactPct": 91.7,
+    "games": 1,
+    "levels": [
+      "A"
+    ]
   },
   "videos": [
     {

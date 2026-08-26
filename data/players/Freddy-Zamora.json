@@ -3,13 +3,13 @@
   "name": "Freddy Zamora",
   "archived": false,
   "playerType": "Hitter",
-  "generatedAt": "2026-08-26T14:55:05.032Z",
+  "generatedAt": "2026-08-26T16:11:32.246Z",
   "bio": {
     "Player-ID": "Freddy-Zamora",
     "MLBAM ID": "668965",
     "Player Type": "Hitter",
     "Player": "Freddy Zamora",
-    "Rank": "199",
+    "Rank": "200",
     "Trending": "",
     "Position": "SS",
     "Level": "IL",
@@ -89,7 +89,7 @@
     "Instagram Link": "https://www.instagram.com/freddyzamoraa/",
     "Other Social": "",
     "Other Social Link": "",
-    "Previous Rank": "199"
+    "Previous Rank": "200"
   },
   "tools": {
     "Player-ID": "Freddy-Zamora",
@@ -212,7 +212,7 @@
       "K%": "23.6%",
       "BB%": "12.2%",
       "SwStr %": "9.9%",
-      "Whiff%": "23.5%",
+      "Whiff%": "23.1%",
       "Pull %": "52.2%",
       "Cent %": "21.7%",
       "Oppo %": "26.1%",
@@ -225,6 +225,18 @@
       "SB%": "100.0%",
       "Archived?": ""
     }
+  },
+  "gamedayWhiff": {
+    "mlbamID": "668965",
+    "swings": 268,
+    "whiffs": 62,
+    "contacts": 206,
+    "whiffPct": 23.1,
+    "contactPct": 76.9,
+    "games": 47,
+    "levels": [
+      "AAA"
+    ]
   },
   "videos": [
     {

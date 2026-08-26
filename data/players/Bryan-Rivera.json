@@ -3,7 +3,7 @@
   "name": "Bryan Rivera",
   "archived": false,
   "playerType": "Pitcher",
-  "generatedAt": "2026-08-26T14:55:05.032Z",
+  "generatedAt": "2026-08-26T16:11:32.246Z",
   "bio": {
     "Player-ID": "Bryan-Rivera",
     "MLBAM ID": "800469",
@@ -231,7 +231,7 @@
       "BB%": "16.00%",
       "K-BB %": "-2.50%",
       "SwStr %": "9.30%",
-      "Whiff%": "23.4%",
+      "Whiff%": "21.3%",
       "WHIP": "2.22",
       "BABIP": "0.346",
       "LOB%": "59.7%",
@@ -242,6 +242,18 @@
       "HR/FB": "0.13",
       "Archived?": ""
     }
+  },
+  "gamedayWhiff": {
+    "mlbamID": "800469",
+    "swings": 141,
+    "whiffs": 30,
+    "contacts": 111,
+    "whiffPct": 21.3,
+    "contactPct": 78.7,
+    "games": 9,
+    "levels": [
+      "A+"
+    ]
   },
   "videos": [
     {

@@ -3,7 +3,7 @@
   "name": "Andy Yerzy",
   "archived": true,
   "playerType": "Hitter",
-  "generatedAt": "2026-08-26T14:55:05.032Z",
+  "generatedAt": "2026-08-26T16:11:32.246Z",
   "bio": {
     "Player-ID": "Andy-Yerzy",
     "MLBAM ID": "647378",
@@ -210,7 +210,7 @@
       "K%": "",
       "BB%": "",
       "SwStr %": "",
-      "Whiff%": "",
+      "Whiff%": "14.3%",
       "Pull %": "",
       "Cent %": "",
       "Oppo %": "",
@@ -223,6 +223,18 @@
       "SB%": "",
       "Archived?": "yes"
     }
+  },
+  "gamedayWhiff": {
+    "mlbamID": "647378",
+    "swings": 7,
+    "whiffs": 1,
+    "contacts": 6,
+    "whiffPct": 14.3,
+    "contactPct": 85.7,
+    "games": 2,
+    "levels": [
+      "AAA"
+    ]
   },
   "videos": [
     {

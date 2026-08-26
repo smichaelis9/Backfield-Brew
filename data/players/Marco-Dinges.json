@@ -3,7 +3,7 @@
   "name": "Marco Dinges",
   "archived": false,
   "playerType": "Hitter",
-  "generatedAt": "2026-08-26T14:55:05.032Z",
+  "generatedAt": "2026-08-26T16:11:32.246Z",
   "bio": {
     "Player-ID": "Marco-Dinges",
     "MLBAM ID": "701392",
@@ -212,7 +212,7 @@
       "K%": "21.6%",
       "BB%": "14.5%",
       "SwStr %": "14.8%",
-      "Whiff%": "32.9%",
+      "Whiff%": "30.7%",
       "Pull %": "46.3%",
       "Cent %": "30.5%",
       "Oppo %": "23.2%",
@@ -225,6 +225,19 @@
       "SB%": "100.0%",
       "Archived?": ""
     }
+  },
+  "gamedayWhiff": {
+    "mlbamID": "701392",
+    "swings": 610,
+    "whiffs": 187,
+    "contacts": 423,
+    "whiffPct": 30.7,
+    "contactPct": 69.3,
+    "games": 76,
+    "levels": [
+      "A+",
+      "AA"
+    ]
   },
   "videos": [
     {

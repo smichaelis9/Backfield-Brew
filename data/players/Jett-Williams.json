@@ -3,7 +3,7 @@
   "name": "Jett Williams",
   "archived": false,
   "playerType": "Hitter",
-  "generatedAt": "2026-08-26T14:55:05.032Z",
+  "generatedAt": "2026-08-26T16:11:32.246Z",
   "bio": {
     "Player-ID": "Jett-Williams",
     "MLBAM ID": "702518",
@@ -212,7 +212,7 @@
       "K%": "22.0%",
       "BB%": "13.1%",
       "SwStr %": "8.2%",
-      "Whiff%": "20.7%",
+      "Whiff%": "18.7%",
       "Pull %": "49.1%",
       "Cent %": "25.9%",
       "Oppo %": "25.0%",
@@ -225,6 +225,18 @@
       "SB%": "84.0%",
       "Archived?": ""
     }
+  },
+  "gamedayWhiff": {
+    "mlbamID": "702518",
+    "swings": 615,
+    "whiffs": 115,
+    "contacts": 500,
+    "whiffPct": 18.7,
+    "contactPct": 81.3,
+    "games": 80,
+    "levels": [
+      "AAA"
+    ]
   },
   "videos": [
     {

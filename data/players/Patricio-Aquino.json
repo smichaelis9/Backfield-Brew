@@ -3,7 +3,7 @@
   "name": "Patricio Aquino",
   "archived": false,
   "playerType": "Pitcher",
-  "generatedAt": "2026-08-26T14:55:05.032Z",
+  "generatedAt": "2026-08-26T16:11:32.246Z",
   "bio": {
     "Player-ID": "Patricio-Aquino",
     "MLBAM ID": "699223",
@@ -231,7 +231,7 @@
       "BB%": "21.70%",
       "K-BB %": "-6.50%",
       "SwStr %": "11.20%",
-      "Whiff%": "25.9%",
+      "Whiff%": "23.5%",
       "WHIP": "1.59",
       "BABIP": "0.250",
       "LOB%": "66.7%",
@@ -242,6 +242,18 @@
       "HR/FB": "0.00",
       "Archived?": ""
     }
+  },
+  "gamedayWhiff": {
+    "mlbamID": "699223",
+    "swings": 85,
+    "whiffs": 20,
+    "contacts": 65,
+    "whiffPct": 23.5,
+    "contactPct": 76.5,
+    "games": 6,
+    "levels": [
+      "AA"
+    ]
   },
   "videos": [
     {

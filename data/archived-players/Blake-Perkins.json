@@ -3,7 +3,7 @@
   "name": "Blake Perkins",
   "archived": true,
   "playerType": "Hitter",
-  "generatedAt": "2026-08-26T14:55:05.032Z",
+  "generatedAt": "2026-08-26T16:11:32.246Z",
   "bio": {
     "Player-ID": "Blake-Perkins",
     "MLBAM ID": "663368",
@@ -210,7 +210,7 @@
       "K%": "30.3%",
       "BB%": "18.2%",
       "SwStr %": "9.8%",
-      "Whiff%": "34.0%",
+      "Whiff%": "27.7%",
       "Pull %": "41.2%",
       "Cent %": "29.4%",
       "Oppo %": "29.4%",
@@ -223,6 +223,18 @@
       "SB%": "100.0%",
       "Archived?": "yes"
     }
+  },
+  "gamedayWhiff": {
+    "mlbamID": "663368",
+    "swings": 47,
+    "whiffs": 13,
+    "contacts": 34,
+    "whiffPct": 27.7,
+    "contactPct": 72.3,
+    "games": 7,
+    "levels": [
+      "AAA"
+    ]
   },
   "videos": [
     {

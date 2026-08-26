@@ -3,7 +3,7 @@
   "name": "Tyson Hardin",
   "archived": false,
   "playerType": "Pitcher",
-  "generatedAt": "2026-08-26T14:55:05.032Z",
+  "generatedAt": "2026-08-26T16:11:32.246Z",
   "bio": {
     "Player-ID": "Tyson-Hardin",
     "MLBAM ID": "824620",
@@ -231,7 +231,7 @@
       "BB%": "7.20%",
       "K-BB %": "19.60%",
       "SwStr %": "11.70%",
-      "Whiff%": "30.1%",
+      "Whiff%": "24.5%",
       "WHIP": "1.43",
       "BABIP": "0.366",
       "LOB%": "57.7%",
@@ -242,6 +242,19 @@
       "HR/FB": "0.12",
       "Archived?": ""
     }
+  },
+  "gamedayWhiff": {
+    "mlbamID": "824620",
+    "swings": 898,
+    "whiffs": 220,
+    "contacts": 678,
+    "whiffPct": 24.5,
+    "contactPct": 75.5,
+    "games": 24,
+    "levels": [
+      "AA",
+      "AAA"
+    ]
   },
   "videos": [
     {

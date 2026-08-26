@@ -3,13 +3,13 @@
   "name": "Deivy Gonzalez",
   "archived": false,
   "playerType": "Pitcher",
-  "generatedAt": "2026-08-26T14:55:05.032Z",
+  "generatedAt": "2026-08-26T16:11:32.246Z",
   "bio": {
     "Player-ID": "Deivy-Gonzalez",
     "MLBAM ID": "842325",
     "Player Type": "Pitcher",
     "Player": "Deivy Gonzalez",
-    "Rank": "213",
+    "Rank": "214",
     "Trending": "",
     "Position": "RHP",
     "Level": "DSL",
@@ -89,7 +89,7 @@
     "Instagram Link": "https://www.instagram.com/deivy_g22/",
     "Other Social": "",
     "Other Social Link": "",
-    "Previous Rank": "213"
+    "Previous Rank": "214"
   },
   "tools": {
     "Player-ID": "Deivy-Gonzalez",
@@ -243,6 +243,7 @@
       "Archived?": ""
     }
   },
+  "gamedayWhiff": null,
   "videos": [
     {
       "Player-ID": "Deivy-Gonzalez",

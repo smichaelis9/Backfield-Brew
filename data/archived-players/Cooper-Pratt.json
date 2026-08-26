@@ -3,7 +3,7 @@
   "name": "Cooper Pratt",
   "archived": true,
   "playerType": "Hitter",
-  "generatedAt": "2026-08-26T14:55:05.032Z",
+  "generatedAt": "2026-08-26T16:11:32.246Z",
   "bio": {
     "Player-ID": "Cooper-Pratt",
     "MLBAM ID": "806198",
@@ -210,7 +210,7 @@
       "K%": "14.0%",
       "BB%": "12.9%",
       "SwStr %": "6.3%",
-      "Whiff%": "17.2%",
+      "Whiff%": "14.5%",
       "Pull %": "43.5%",
       "Cent %": "20.9%",
       "Oppo %": "35.6%",
@@ -223,6 +223,19 @@
       "SB%": "94.4%",
       "Archived?": "yes"
     }
+  },
+  "gamedayWhiff": {
+    "mlbamID": "806198",
+    "swings": 428,
+    "whiffs": 62,
+    "contacts": 366,
+    "whiffPct": 14.5,
+    "contactPct": 85.5,
+    "games": 59,
+    "levels": [
+      "A+",
+      "AAA"
+    ]
   },
   "videos": [
     {

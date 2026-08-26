@@ -3,13 +3,13 @@
   "name": "Yu-Lin Liao",
   "archived": false,
   "playerType": "Hitter",
-  "generatedAt": "2026-08-26T14:55:05.032Z",
+  "generatedAt": "2026-08-26T16:11:32.246Z",
   "bio": {
     "Player-ID": "Yu-Lin-Liao",
     "MLBAM ID": "835879",
     "Player Type": "Hitter",
     "Player": "Yu-Lin Liao",
-    "Rank": "186",
+    "Rank": "187",
     "Trending": "",
     "Position": "3B",
     "Level": "ACL",
@@ -89,7 +89,7 @@
     "Instagram Link": "https://www.instagram.com/liao.yu.lin/",
     "Other Social": "",
     "Other Social Link": "",
-    "Previous Rank": "186"
+    "Previous Rank": "187"
   },
   "tools": {
     "Player-ID": "Yu-Lin-Liao",
@@ -226,6 +226,7 @@
       "Archived?": ""
     }
   },
+  "gamedayWhiff": null,
   "videos": [
     {
       "Player-ID": "Yu-Lin-Liao",

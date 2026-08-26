@@ -3,13 +3,13 @@
   "name": "Ruben Revost",
   "archived": false,
   "playerType": "Hitter",
-  "generatedAt": "2026-08-26T14:55:05.032Z",
+  "generatedAt": "2026-08-26T16:11:32.246Z",
   "bio": {
     "Player-ID": "Ruben-Revost",
     "MLBAM ID": "837964",
     "Player Type": "Hitter",
     "Player": "Ruben Revost",
-    "Rank": "176",
+    "Rank": "177",
     "Trending": "",
     "Position": "SS",
     "Level": "DSL",
@@ -89,7 +89,7 @@
     "Instagram Link": "https://www.instagram.com/chico_milwuakee_07/",
     "Other Social": "",
     "Other Social Link": "",
-    "Previous Rank": "176"
+    "Previous Rank": "177"
   },
   "tools": {
     "Player-ID": "Ruben-Revost",
@@ -226,6 +226,7 @@
       "Archived?": ""
     }
   },
+  "gamedayWhiff": null,
   "videos": [
     {
       "Player-ID": "Ruben-Revost",

@@ -3,7 +3,7 @@
   "name": "Justin Chambers",
   "archived": true,
   "playerType": "Pitcher",
-  "generatedAt": "2026-08-26T14:55:05.032Z",
+  "generatedAt": "2026-08-26T16:11:32.246Z",
   "bio": {
     "Player-ID": "Justin-Chambers",
     "MLBAM ID": "807724",
@@ -229,7 +229,7 @@
       "BB%": "",
       "K-BB %": "",
       "SwStr %": "",
-      "Whiff%": "",
+      "Whiff%": "33.3%",
       "WHIP": "",
       "BABIP": "",
       "LOB%": "",
@@ -240,6 +240,18 @@
       "HR/FB": "",
       "Archived?": "yes"
     }
+  },
+  "gamedayWhiff": {
+    "mlbamID": "807724",
+    "swings": 27,
+    "whiffs": 9,
+    "contacts": 18,
+    "whiffPct": 33.3,
+    "contactPct": 66.7,
+    "games": 3,
+    "levels": [
+      "A+"
+    ]
   },
   "videos": [
     {

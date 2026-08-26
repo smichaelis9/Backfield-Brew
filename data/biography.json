@@ -1764,8 +1764,8 @@
     "Bat / Throw": "Right/Right",
     "Birthday": "9/29/2008",
     "Rule 5 Eligible": "2030",
-    "Picture": "https://i.ibb.co/FqBYky67/image.png",
-    "Picture Source": "Instagram",
+    "Picture": "https://img.mlbstatic.com/mlb-photos/image/upload/c_fill,g_auto/w_360/v1/people/821931/headshot/milb/current",
+    "Picture Source": "MiLB.com",
     "Notes Updated": "N/A",
     "Scouting Notes": "N/A",
     "Notes Updated 2": "N/A",
@@ -14703,11 +14703,98 @@
     "Previous Rank": "169"
   },
   {
+    "Player-ID": "Paul-Hoff",
+    "MLBAM ID": "821155",
+    "Player Type": "Pitcher",
+    "Player": "Paul Hoff",
+    "Rank": "170",
+    "Trending": "",
+    "Position": "RHP",
+    "Level": "DSL",
+    "Age": "20.0",
+    "OFP": "30+",
+    "OFP Updated": "8/20/2026",
+    "Risk": "Extreme",
+    "School or Country": "Country",
+    "School/Country": "Germany",
+    "Date Signed": "1/15/2024",
+    "Signed By": "Andrew Berglund/Miguel Vásquez",
+    "Draft/IFA": "2024 International Free Agency",
+    "Acquired": "International Free Agent",
+    "Signing Bonus": "Unreported",
+    "Height": "6'5\"",
+    "Weight": "180",
+    "Bat / Throw": "Right/Right",
+    "Birthday": "9/4/2006",
+    "Rule 5 Eligible": "2028",
+    "Picture": "https://i.ibb.co/mFhfxmL1/image.png",
+    "Picture Source": "Instagram",
+    "Notes Updated": "N/A",
+    "Scouting Notes": "N/A",
+    "Notes Updated 2": "N/A",
+    "Scouting Notes 2": "N/A",
+    "Notes Updated 3": "N/A",
+    "Scouting Notes 3": "N/A",
+    "Notes Updated 4": "N/A",
+    "Scouting Notes 4": "N/A",
+    "Full Report Updated": "",
+    "Physical Description Report": "",
+    "Hit / Mechanics Report": "",
+    "Power/Pitch 1": "",
+    "Power/Pitch 1 Report": "",
+    "Run/Pitch 2": "",
+    "Run/Pitch 2 Report": "",
+    "Field/Pitch 3": "",
+    "Field/Pitch 3 Report": "",
+    "Arm/Pitch 4": "",
+    "Arm/Pitch 4 Report": "",
+    "Pitch 5": "",
+    "Pitch 5 Report": "",
+    "Pitch 6": "",
+    "Pitch 6 Report": "",
+    "Pitch 7": "",
+    "Pitch 7 Report": "",
+    "Summary Report": "",
+    "Article 1": "",
+    "Article Link 1": "",
+    "Article 2": "",
+    "Article Link 2": "",
+    "Article 3": "",
+    "Article Link 3": "",
+    "Article 4": "",
+    "Article Link 4": "",
+    "Article 5": "",
+    "Article Link 5": "",
+    "Article 6": "",
+    "Article Link 6": "",
+    "Article 7": "",
+    "Article Link 7": "",
+    "Article 8": "",
+    "Article Link 8": "",
+    "Article 9": "",
+    "Article Link 9": "",
+    "Article 10": "",
+    "Article Link 10": "",
+    "": "",
+    "Baseball Reference": "https://www.baseball-reference.com/register/player.fcgi?id=hoff--000pau",
+    "Fangraphs": "https://www.fangraphs.com/players/paul-hoff/sa3024777/stats?position=P",
+    "Baseball America": "https://www.baseballamerica.com/players/1431372-paul-hoff/",
+    "MiLB": "https://www.milb.com/player/paul-hoff-821155",
+    "Baseball Prospectus": "",
+    "Twitter/X": "",
+    "Twitter/X Link": "",
+    "Instagram": "Instagram",
+    "Instagram Link": "https://www.instagram.com/paul.hoff.1/",
+    "Other Social": "",
+    "Other Social Link": "",
+    "Previous Rank": "170"
+  },
+  {
     "Player-ID": "Kendall-Hagedorn",
     "MLBAM ID": "844366",
     "Player Type": "Hitter",
     "Player": "Kendall Hagedorn",
-    "Rank": "170",
+    "Rank": "171",
     "Trending": "New",
     "Position": "C",
     "Level": "ACL",
@@ -14787,14 +14874,14 @@
     "Instagram Link": "https://www.instagram.com/kendall.hagedorn/",
     "Other Social": "",
     "Other Social Link": "",
-    "Previous Rank": "170"
+    "Previous Rank": "171"
   },
   {
     "Player-ID": "Daniel-Garcia",
     "MLBAM ID": "830031",
     "Player Type": "Pitcher",
     "Player": "Daniel Garcia",
-    "Rank": "171",
+    "Rank": "172",
     "Trending": "",
     "Position": "LHP",
     "Level": "DSL",
@@ -14874,14 +14961,14 @@
     "Instagram Link": "https://www.instagram.com/daniel2541garcia/",
     "Other Social": "",
     "Other Social Link": "",
-    "Previous Rank": "171"
+    "Previous Rank": "172"
   },
   {
     "Player-ID": "Malachai-Halterman",
     "MLBAM ID": "836165",
     "Player Type": "Hitter",
     "Player": "Malachai Halterman",
-    "Rank": "172",
+    "Rank": "173",
     "Trending": "",
     "Position": "C/3B",
     "Level": "ACL",
@@ -14961,14 +15048,14 @@
     "Instagram Link": "https://www.instagram.com/malachai_halterman/",
     "Other Social": "",
     "Other Social Link": "",
-    "Previous Rank": "172"
+    "Previous Rank": "173"
   },
   {
     "Player-ID": "Dalvin-Bodre",
     "MLBAM ID": "821182",
     "Player Type": "Pitcher",
     "Player": "Dalvin Bodre",
-    "Rank": "173",
+    "Rank": "174",
     "Trending": "",
     "Position": "RHP",
     "Level": "DSL",
@@ -15048,14 +15135,14 @@
     "Instagram Link": "https://www.instagram.com/they_call_me_bodre/",
     "Other Social": "TikTok",
     "Other Social Link": "https://www.tiktok.com/@dalvincito27?lang=en",
-    "Previous Rank": "173"
+    "Previous Rank": "174"
   },
   {
     "Player-ID": "Carlos-Galindo",
     "MLBAM ID": "829902",
     "Player Type": "Pitcher",
     "Player": "Carlos Galindo",
-    "Rank": "174",
+    "Rank": "175",
     "Trending": "",
     "Position": "RHP",
     "Level": "DSL",
@@ -15135,14 +15222,14 @@
     "Instagram Link": "https://www.instagram.com/c___galindo1/",
     "Other Social": "TikTok",
     "Other Social Link": "https://www.tiktok.com/@carlos_ofi_1?lang=en",
-    "Previous Rank": "174"
+    "Previous Rank": "175"
   },
   {
     "Player-ID": "Jack-Seppings",
     "MLBAM ID": "808952",
     "Player Type": "Pitcher",
     "Player": "Jack Seppings",
-    "Rank": "175",
+    "Rank": "176",
     "Trending": "",
     "Position": "RHP",
     "Level": "AA",
@@ -15222,14 +15309,14 @@
     "Instagram Link": "https://www.instagram.com/jack_seppo_7/",
     "Other Social": "",
     "Other Social Link": "",
-    "Previous Rank": "175"
+    "Previous Rank": "176"
   },
   {
     "Player-ID": "Ruben-Revost",
     "MLBAM ID": "837964",
     "Player Type": "Hitter",
     "Player": "Ruben Revost",
-    "Rank": "176",
+    "Rank": "177",
     "Trending": "",
     "Position": "SS",
     "Level": "DSL",
@@ -15309,14 +15396,14 @@
     "Instagram Link": "https://www.instagram.com/chico_milwuakee_07/",
     "Other Social": "",
     "Other Social Link": "",
-    "Previous Rank": "176"
+    "Previous Rank": "177"
   },
   {
     "Player-ID": "Chandler-Welch",
     "MLBAM ID": "803068",
     "Player Type": "Pitcher",
     "Player": "Chandler Welch",
-    "Rank": "177",
+    "Rank": "178",
     "Trending": "Down",
     "Position": "RHP",
     "Level": "A+",
@@ -15396,14 +15483,14 @@
     "Instagram Link": "https://www.instagram.com/chan.welch/",
     "Other Social": "TikTok",
     "Other Social Link": "https://www.tiktok.com/@chan.welch",
-    "Previous Rank": "177"
+    "Previous Rank": "178"
   },
   {
     "Player-ID": "Argenis-Aparicio",
     "MLBAM ID": "809699",
     "Player Type": "Pitcher",
     "Player": "Argenis Aparicio",
-    "Rank": "178",
+    "Rank": "179",
     "Trending": "",
     "Position": "RHP",
     "Level": "ACL",
@@ -15483,14 +15570,14 @@
     "Instagram Link": "https://www.instagram.com/argenisaparicio8/",
     "Other Social": "",
     "Other Social Link": "",
-    "Previous Rank": "178"
+    "Previous Rank": "179"
   },
   {
     "Player-ID": "Johandry-Ramirez",
     "MLBAM ID": "829282",
     "Player Type": "Pitcher",
     "Player": "Johandry Ramirez",
-    "Rank": "179",
+    "Rank": "180",
     "Trending": "",
     "Position": "RHP",
     "Level": "IL",
@@ -15570,14 +15657,14 @@
     "Instagram Link": "https://www.instagram.com/j.ramirez.22/",
     "Other Social": "",
     "Other Social Link": "",
-    "Previous Rank": "179"
+    "Previous Rank": "180"
   },
   {
     "Player-ID": "Mark-Coley",
     "MLBAM ID": "696501",
     "Player Type": "Hitter",
     "Player": "Mark Coley II",
-    "Rank": "180",
+    "Rank": "181",
     "Trending": "",
     "Position": "OF",
     "Level": "AA",
@@ -15657,14 +15744,14 @@
     "Instagram Link": "https://www.instagram.com/mark.coley3/?hl=en",
     "Other Social": "",
     "Other Social Link": "",
-    "Previous Rank": "180"
+    "Previous Rank": "181"
   },
   {
     "Player-ID": "Edwin-Jimenez",
     "MLBAM ID": "683720",
     "Player Type": "Pitcher",
     "Player": "Edwin Jimenez",
-    "Rank": "181",
+    "Rank": "182",
     "Trending": "",
     "Position": "RHP",
     "Level": "AA",
@@ -15744,14 +15831,14 @@
     "Instagram Link": "https://instagram.com/edwin_jimenez.12?igshid=YmMyMTA2M2Y=",
     "Other Social": "",
     "Other Social Link": "",
-    "Previous Rank": "181"
+    "Previous Rank": "182"
   },
   {
     "Player-ID": "Joan-Gonzalez",
     "MLBAM ID": "838000",
     "Player Type": "Pitcher",
     "Player": "Joan Gonzalez",
-    "Rank": "182",
+    "Rank": "183",
     "Trending": "",
     "Position": "RHP",
     "Level": "DSL",
@@ -15831,14 +15918,14 @@
     "Instagram Link": "https://www.instagram.com/joangonzalez0880?igsh=cjliZTRmN3Z2eWM0",
     "Other Social": "",
     "Other Social Link": "",
-    "Previous Rank": "182"
+    "Previous Rank": "183"
   },
   {
     "Player-ID": "Kaleb-Bowman",
     "MLBAM ID": "689337",
     "Player Type": "Pitcher",
     "Player": "Kaleb Bowman",
-    "Rank": "183",
+    "Rank": "184",
     "Trending": "",
     "Position": "RHP",
     "Level": "AAA",
@@ -15918,14 +16005,14 @@
     "Instagram Link": "https://www.instagram.com/its_bobo_time05/",
     "Other Social": "",
     "Other Social Link": "",
-    "Previous Rank": "183"
+    "Previous Rank": "184"
   },
   {
     "Player-ID": "Frandy-LaFond",
     "MLBAM ID": "821143",
     "Player Type": "Hitter",
     "Player": "Frandy LaFond",
-    "Rank": "184",
+    "Rank": "185",
     "Trending": "",
     "Position": "OF",
     "Level": "DSL",
@@ -16005,14 +16092,14 @@
     "Instagram Link": "https://www.instagram.com/frandy.lafond/",
     "Other Social": "TikTok",
     "Other Social Link": "https://www.tiktok.com/@lafond.frandy?_t=8n85vVKbVNO&_r=1",
-    "Previous Rank": "184"
+    "Previous Rank": "185"
   },
   {
     "Player-ID": "Sam-Garcia",
     "MLBAM ID": "822760",
     "Player Type": "Pitcher",
     "Player": "Sam Garcia",
-    "Rank": "185",
+    "Rank": "186",
     "Trending": "",
     "Position": "LHP",
     "Level": "IL",
@@ -16092,14 +16179,14 @@
     "Instagram Link": "https://www.instagram.com/sam.garcia22/",
     "Other Social": "",
     "Other Social Link": "",
-    "Previous Rank": "185"
+    "Previous Rank": "186"
   },
   {
     "Player-ID": "Yu-Lin-Liao",
     "MLBAM ID": "835879",
     "Player Type": "Hitter",
     "Player": "Yu-Lin Liao",
-    "Rank": "186",
+    "Rank": "187",
     "Trending": "",
     "Position": "3B",
     "Level": "ACL",
@@ -16179,14 +16266,14 @@
     "Instagram Link": "https://www.instagram.com/liao.yu.lin/",
     "Other Social": "",
     "Other Social Link": "",
-    "Previous Rank": "186"
+    "Previous Rank": "187"
   },
   {
     "Player-ID": "Will-Rudy",
     "MLBAM ID": "805733",
     "Player Type": "Pitcher",
     "Player": "Will Rudy",
-    "Rank": "187",
+    "Rank": "188",
     "Trending": "",
     "Position": "RHP",
     "Level": "IL",
@@ -16266,14 +16353,14 @@
     "Instagram Link": "https://instagram.com/willrudyy?igshid=YmMyMTA2M2Y=",
     "Other Social": "",
     "Other Social Link": "",
-    "Previous Rank": "187"
+    "Previous Rank": "188"
   },
   {
     "Player-ID": "Ismael-Yanez",
     "MLBAM ID": "808254",
     "Player Type": "Pitcher",
     "Player": "Ismael Yanez",
-    "Rank": "188",
+    "Rank": "189",
     "Trending": "",
     "Position": "RHP",
     "Level": "A",
@@ -16353,14 +16440,14 @@
     "Instagram Link": "https://www.instagram.com/ismael_jose_2024/",
     "Other Social": "TikTok",
     "Other Social Link": "https://www.tiktok.com/@y4nezz21",
-    "Previous Rank": "188"
+    "Previous Rank": "189"
   },
   {
     "Player-ID": "Edgardo-Ordonez",
     "MLBAM ID": "699166",
     "Player Type": "Hitter",
     "Player": "Edgardo Ordonez",
-    "Rank": "189",
+    "Rank": "190",
     "Trending": "",
     "Position": "C",
     "Level": "A+",
@@ -16440,14 +16527,14 @@
     "Instagram Link": "https://instagram.com/eordonez13?igshid=YmMyMTA2M2Y=",
     "Other Social": "",
     "Other Social Link": "",
-    "Previous Rank": "189"
+    "Previous Rank": "190"
   },
   {
     "Player-ID": "Yoneiker-Lugo",
     "MLBAM ID": "821268",
     "Player Type": "Hitter",
     "Player": "Yoneiker Lugo",
-    "Rank": "190",
+    "Rank": "191",
     "Trending": "",
     "Position": "C",
     "Level": "DSL",
@@ -16527,14 +16614,14 @@
     "Instagram Link": "https://www.instagram.com/yoneiker_l27/",
     "Other Social": "",
     "Other Social Link": "",
-    "Previous Rank": "190"
+    "Previous Rank": "191"
   },
   {
     "Player-ID": "Blayberg-Diaz",
     "MLBAM ID": "691600",
     "Player Type": "Hitter",
     "Player": "Blayberg Diaz",
-    "Rank": "191",
+    "Rank": "192",
     "Trending": "",
     "Position": "C",
     "Level": "A+",
@@ -16614,14 +16701,14 @@
     "Instagram Link": "https://www.instagram.com/blaydiaz/",
     "Other Social": "",
     "Other Social Link": "",
-    "Previous Rank": "191"
+    "Previous Rank": "192"
   },
   {
     "Player-ID": "Wandy-Cabrera",
     "MLBAM ID": "815770",
     "Player Type": "Pitcher",
     "Player": "Wandy Cabrera",
-    "Rank": "192",
+    "Rank": "193",
     "Trending": "",
     "Position": "RHP",
     "Level": "DSL",
@@ -16701,14 +16788,14 @@
     "Instagram Link": "https://www.instagram.com/x_.cabrera/",
     "Other Social": "TikTok",
     "Other Social Link": "https://www.tiktok.com/@w_.cabrera06",
-    "Previous Rank": "192"
+    "Previous Rank": "193"
   },
   {
     "Player-ID": "Francis-Sosa",
     "MLBAM ID": "829899",
     "Player Type": "Hitter",
     "Player": "Francis Sosa",
-    "Rank": "193",
+    "Rank": "194",
     "Trending": "",
     "Position": "OF",
     "Level": "DSL",
@@ -16788,14 +16875,14 @@
     "Instagram Link": "https://www.instagram.com/f_sosa_13/",
     "Other Social": "TikTok",
     "Other Social Link": "https://www.tiktok.com/@soy_sosa8?lang=en",
-    "Previous Rank": "193"
+    "Previous Rank": "194"
   },
   {
     "Player-ID": "Alejandro-Bustamante",
     "MLBAM ID": "834289",
     "Player Type": "Pitcher",
     "Player": "Alejandro Bustamante",
-    "Rank": "194",
+    "Rank": "195",
     "Trending": "",
     "Position": "RHP",
     "Level": "DSL",
@@ -16875,14 +16962,14 @@
     "Instagram Link": "https://www.instagram.com/ale_busta04/?hl=en",
     "Other Social": "",
     "Other Social Link": "",
-    "Previous Rank": "194"
+    "Previous Rank": "195"
   },
   {
     "Player-ID": "Yannic-Walther",
     "MLBAM ID": "806921",
     "Player Type": "Hitter",
     "Player": "Yannic Walther",
-    "Rank": "195",
+    "Rank": "196",
     "Trending": "",
     "Position": "C",
     "Level": "A+",
@@ -16962,14 +17049,14 @@
     "Instagram Link": "https://www.instagram.com/yannic.walther/",
     "Other Social": "",
     "Other Social Link": "",
-    "Previous Rank": "195"
+    "Previous Rank": "196"
   },
   {
     "Player-ID": "Daniel-Guilarte",
     "MLBAM ID": "694206",
     "Player Type": "Hitter",
     "Player": "Daniel Guilarte",
-    "Rank": "196",
+    "Rank": "197",
     "Trending": "",
     "Position": "SS",
     "Level": "AA",
@@ -17049,14 +17136,14 @@
     "Instagram Link": "https://instagram.com/the_guili13?igshid=YmMyMTA2M2Y=",
     "Other Social": "",
     "Other Social Link": "",
-    "Previous Rank": "196"
+    "Previous Rank": "197"
   },
   {
     "Player-ID": "Manuel-Moreno",
     "MLBAM ID": "821191",
     "Player Type": "Pitcher",
     "Player": "Manuel Moreno",
-    "Rank": "197",
+    "Rank": "198",
     "Trending": "",
     "Position": "RHP",
     "Level": "DSL",
@@ -17136,14 +17223,14 @@
     "Instagram Link": "https://www.instagram.com/m_moreno.23/",
     "Other Social": "",
     "Other Social Link": "",
-    "Previous Rank": "197"
+    "Previous Rank": "198"
   },
   {
     "Player-ID": "Wilmer-Duarte",
     "MLBAM ID": "837327",
     "Player Type": "Pitcher",
     "Player": "Wilmer Duarte",
-    "Rank": "198",
+    "Rank": "199",
     "Trending": "",
     "Position": "RHP",
     "Level": "DSL",
@@ -17223,14 +17310,14 @@
     "Instagram Link": "https://www.instagram.com/wilmer_duarte15/",
     "Other Social": "",
     "Other Social Link": "",
-    "Previous Rank": "198"
+    "Previous Rank": "199"
   },
   {
     "Player-ID": "Freddy-Zamora",
     "MLBAM ID": "668965",
     "Player Type": "Hitter",
     "Player": "Freddy Zamora",
-    "Rank": "199",
+    "Rank": "200",
     "Trending": "",
     "Position": "SS",
     "Level": "IL",
@@ -17310,14 +17397,14 @@
     "Instagram Link": "https://www.instagram.com/freddyzamoraa/",
     "Other Social": "",
     "Other Social Link": "",
-    "Previous Rank": "199"
+    "Previous Rank": "200"
   },
   {
     "Player-ID": "Cesar-Espinal",
     "MLBAM ID": "805238",
     "Player Type": "Pitcher",
     "Player": "Cesar Espinal",
-    "Rank": "200",
+    "Rank": "201",
     "Trending": "",
     "Position": "RHP",
     "Level": "A",
@@ -17397,14 +17484,14 @@
     "Instagram Link": "https://www.instagram.com/p/DG91jjqOfP4/?img_index=1",
     "Other Social": "TikTok",
     "Other Social Link": "https://www.tiktok.com/@cesarespinal64",
-    "Previous Rank": "200"
+    "Previous Rank": "201"
   },
   {
     "Player-ID": "Jean-Rivero",
     "MLBAM ID": "837801",
     "Player Type": "Pitcher",
     "Player": "Jean Rivero",
-    "Rank": "201",
+    "Rank": "202",
     "Trending": "",
     "Position": "RHP",
     "Level": "DSL",
@@ -17484,14 +17571,14 @@
     "Instagram Link": "https://www.instagram.com/jean_rivero1",
     "Other Social": "",
     "Other Social Link": "",
-    "Previous Rank": "201"
+    "Previous Rank": "202"
   },
   {
     "Player-ID": "Brailin-Aguirrez",
     "MLBAM ID": "827489",
     "Player Type": "Pitcher",
     "Player": "Brailin Aguirrez",
-    "Rank": "202",
+    "Rank": "203",
     "Trending": "",
     "Position": "RHP",
     "Level": "DSL",
@@ -17571,14 +17658,14 @@
     "Instagram Link": "https://www.instagram.com/aguirrez_05_18/",
     "Other Social": "",
     "Other Social Link": "",
-    "Previous Rank": "202"
+    "Previous Rank": "203"
   },
   {
     "Player-ID": "Jordy-Brache",
     "MLBAM ID": "837883",
     "Player Type": "Pitcher",
     "Player": "Jordy Brache",
-    "Rank": "203",
+    "Rank": "204",
     "Trending": "",
     "Position": "RHP",
     "Level": "DSL",
@@ -17658,14 +17745,14 @@
     "Instagram Link": "",
     "Other Social": "",
     "Other Social Link": "",
-    "Previous Rank": "203"
+    "Previous Rank": "204"
   },
   {
     "Player-ID": "Diego-Trillo",
     "MLBAM ID": "837818",
     "Player Type": "Pitcher",
     "Player": "Diego Trillo",
-    "Rank": "204",
+    "Rank": "205",
     "Trending": "",
     "Position": "RHP",
     "Level": "IL",
@@ -17745,14 +17832,14 @@
     "Instagram Link": "",
     "Other Social": "",
     "Other Social Link": "",
-    "Previous Rank": "204"
+    "Previous Rank": "205"
   },
   {
     "Player-ID": "Miguel-Andrade",
     "MLBAM ID": "837804",
     "Player Type": "Pitcher",
     "Player": "Miguel Andrade",
-    "Rank": "205",
+    "Rank": "206",
     "Trending": "",
     "Position": "RHP",
     "Level": "IL",
@@ -17832,14 +17919,14 @@
     "Instagram Link": "https://www.instagram.com/miguel_andrade2008?igsh=M3hydmh3aTVhN3Rq",
     "Other Social": "",
     "Other Social Link": "",
-    "Previous Rank": "205"
+    "Previous Rank": "206"
   },
   {
     "Player-ID": "Daniel-Munoz",
     "MLBAM ID": "837809",
     "Player Type": "Pitcher",
     "Player": "Daniel Munoz",
-    "Rank": "206",
+    "Rank": "207",
     "Trending": "",
     "Position": "RHP",
     "Level": "DSL",
@@ -17919,14 +18006,14 @@
     "Instagram Link": "https://www.instagram.com/danieleduardo864/",
     "Other Social": "",
     "Other Social Link": "",
-    "Previous Rank": "206"
+    "Previous Rank": "207"
   },
   {
     "Player-ID": "Justin-Lugo",
     "MLBAM ID": "823783",
     "Player Type": "Pitcher",
     "Player": "Justin Lugo",
-    "Rank": "207",
+    "Rank": "208",
     "Trending": "",
     "Position": "RHP",
     "Level": "DSL",
@@ -18006,14 +18093,14 @@
     "Instagram Link": "https://www.instagram.com/j.lugo26/",
     "Other Social": "",
     "Other Social Link": "",
-    "Previous Rank": "207"
+    "Previous Rank": "208"
   },
   {
     "Player-ID": "Roniel-Paulino",
     "MLBAM ID": "829830",
     "Player Type": "Hitter",
     "Player": "Roniel Paulino",
-    "Rank": "208",
+    "Rank": "209",
     "Trending": "",
     "Position": "C",
     "Level": "DSL",
@@ -18032,7 +18119,7 @@
     "Weight": "182",
     "Bat / Throw": "Right/Right",
     "Birthday": "10/30/2007",
-    "Rule 5 Eligible": "2029",
+    "Rule 5 Eligible": "2028",
     "Picture": "https://i.ibb.co/JW86Ysxk/image.png",
     "Picture Source": "Instagram",
     "Notes Updated": "N/A",
@@ -18093,14 +18180,14 @@
     "Instagram Link": "https://www.instagram.com/r___paulino15/",
     "Other Social": "TikTok",
     "Other Social Link": "https://www.tiktok.com/@ronielpaulinosa23?lang=en",
-    "Previous Rank": "208"
+    "Previous Rank": "209"
   },
   {
     "Player-ID": "David-Garcia",
     "MLBAM ID": "671272",
     "Player Type": "Hitter",
     "Player": "David García",
-    "Rank": "209",
+    "Rank": "210",
     "Trending": "",
     "Position": "C",
     "Level": "AA",
@@ -18180,14 +18267,14 @@
     "Instagram Link": "https://www.instagram.com/davidagf_7/",
     "Other Social": "TikTok",
     "Other Social Link": "https://www.tiktok.com/@davidagf_7",
-    "Previous Rank": "209"
+    "Previous Rank": "210"
   },
   {
     "Player-ID": "Jhosep-Ospino",
     "MLBAM ID": "815784",
     "Player Type": "Pitcher",
     "Player": "Jhosep Ospino",
-    "Rank": "210",
+    "Rank": "211",
     "Trending": "",
     "Position": "RHP",
     "Level": "ACL",
@@ -18267,14 +18354,14 @@
     "Instagram Link": "https://www.instagram.com/j_ospino06/",
     "Other Social": "",
     "Other Social Link": "",
-    "Previous Rank": "210"
+    "Previous Rank": "211"
   },
   {
     "Player-ID": "Francisco-De-Marchena",
     "MLBAM ID": "825718",
     "Player Type": "Hitter",
     "Player": "Francisco De Marchena",
-    "Rank": "211",
+    "Rank": "212",
     "Trending": "",
     "Position": "C",
     "Level": "DSL",
@@ -18354,14 +18441,14 @@
     "Instagram Link": "https://www.instagram.com/pepesotomir/",
     "Other Social": "",
     "Other Social Link": "",
-    "Previous Rank": "211"
+    "Previous Rank": "212"
   },
   {
     "Player-ID": "Josue-Jean",
     "MLBAM ID": "825657",
     "Player Type": "Hitter",
     "Player": "Josue Jean",
-    "Rank": "212",
+    "Rank": "213",
     "Trending": "",
     "Position": "OF",
     "Level": "IL",
@@ -18441,14 +18528,14 @@
     "Instagram Link": "https://www.instagram.com/jean_05_10/",
     "Other Social": "",
     "Other Social Link": "",
-    "Previous Rank": "212"
+    "Previous Rank": "213"
   },
   {
     "Player-ID": "Deivy-Gonzalez",
     "MLBAM ID": "842325",
     "Player Type": "Pitcher",
     "Player": "Deivy Gonzalez",
-    "Rank": "213",
+    "Rank": "214",
     "Trending": "",
     "Position": "RHP",
     "Level": "DSL",
@@ -18528,14 +18615,14 @@
     "Instagram Link": "https://www.instagram.com/deivy_g22/",
     "Other Social": "",
     "Other Social Link": "",
-    "Previous Rank": "213"
+    "Previous Rank": "214"
   },
   {
     "Player-ID": "Noel-Cepeda",
     "MLBAM ID": "842329",
     "Player Type": "Pitcher",
     "Player": "Noel Cepeda",
-    "Rank": "214",
+    "Rank": "215",
     "Trending": "",
     "Position": "LHP",
     "Level": "DSL",
@@ -18615,14 +18702,14 @@
     "Instagram Link": "https://www.instagram.com/noel_120329/",
     "Other Social": "",
     "Other Social Link": "",
-    "Previous Rank": "214"
+    "Previous Rank": "215"
   },
   {
     "Player-ID": "Jheremy-Vargas",
     "MLBAM ID": "691621",
     "Player Type": "Hitter",
     "Player": "Jheremy Vargas",
-    "Rank": "215",
+    "Rank": "216",
     "Trending": "",
     "Position": "3B",
     "Level": "AA",
@@ -18702,14 +18789,14 @@
     "Instagram Link": "https://instagram.com/jhereoficial_13?igshid=YmMyMTA2M2Y=",
     "Other Social": "",
     "Other Social Link": "",
-    "Previous Rank": "215"
+    "Previous Rank": "216"
   },
   {
     "Player-ID": "Victor-Garcia",
     "MLBAM ID": "822134",
     "Player Type": "Pitcher",
     "Player": "Victor Garcia",
-    "Rank": "216",
+    "Rank": "217",
     "Trending": "",
     "Position": "LHP",
     "Level": "IL",
@@ -18789,14 +18876,14 @@
     "Instagram Link": "https://www.instagram.com/emilianogarcia28.06/",
     "Other Social": "",
     "Other Social Link": "",
-    "Previous Rank": "216"
+    "Previous Rank": "217"
   },
   {
     "Player-ID": "Jefrey-Etienne",
     "MLBAM ID": "842031",
     "Player Type": "Pitcher",
     "Player": "Jefrey Etienne",
-    "Rank": "217",
+    "Rank": "218",
     "Trending": "",
     "Position": "RHP",
     "Level": "IL",
@@ -18815,7 +18902,7 @@
     "Weight": "165",
     "Bat / Throw": "Right/Right",
     "Birthday": "10/18/2007",
-    "Rule 5 Eligible": "2030",
+    "Rule 5 Eligible": "2029",
     "Picture": "https://i.ibb.co/DfKrV1cM/image.png",
     "Picture Source": "Instagram",
     "Notes Updated": "N/A",
@@ -18876,14 +18963,14 @@
     "Instagram Link": "https://www.instagram.com/jex_xx2/",
     "Other Social": "",
     "Other Social Link": "",
-    "Previous Rank": "217"
+    "Previous Rank": "218"
   },
   {
     "Player-ID": "Jesus-Vasquez",
     "MLBAM ID": "837235",
     "Player Type": "Pitcher",
     "Player": "Jesus Vasquez",
-    "Rank": "218",
+    "Rank": "219",
     "Trending": "",
     "Position": "RHP",
     "Level": "DSL",
@@ -18902,7 +18989,7 @@
     "Weight": "160",
     "Bat / Throw": "Right/Right",
     "Birthday": "7/30/2008",
-    "Rule 5 Eligible": "2028",
+    "Rule 5 Eligible": "2029",
     "Picture": "https://i.ibb.co/LdcBb2fs/image.png",
     "Picture Source": "Instagram",
     "Notes Updated": "N/A",
@@ -18963,14 +19050,14 @@
     "Instagram Link": "https://www.instagram.com/j.v_2024/",
     "Other Social": "",
     "Other Social Link": "",
-    "Previous Rank": "218"
+    "Previous Rank": "219"
   },
   {
     "Player-ID": "Adrian-Bello",
     "MLBAM ID": "837323",
     "Player Type": "Pitcher",
     "Player": "Adrian Bello",
-    "Rank": "219",
+    "Rank": "220",
     "Trending": "",
     "Position": "RHP",
     "Level": "DSL",
@@ -19050,14 +19137,14 @@
     "Instagram Link": "https://www.instagram.com/bello__016/",
     "Other Social": "",
     "Other Social Link": "",
-    "Previous Rank": "219"
+    "Previous Rank": "220"
   },
   {
     "Player-ID": "Lukas-Gonzalez",
     "MLBAM ID": "821172",
     "Player Type": "Pitcher",
     "Player": "Lukas Gonzalez",
-    "Rank": "220",
+    "Rank": "221",
     "Trending": "",
     "Position": "RHP",
     "Level": "DSL",
@@ -19137,14 +19224,14 @@
     "Instagram Link": "https://www.instagram.com/lukas23g/",
     "Other Social": "",
     "Other Social Link": "",
-    "Previous Rank": "220"
+    "Previous Rank": "221"
   },
   {
     "Player-ID": "Eric-Martinez",
     "MLBAM ID": "702444",
     "Player Type": "Hitter",
     "Player": "Eric Martinez",
-    "Rank": "221",
+    "Rank": "222",
     "Trending": "",
     "Position": "C",
     "Level": "A",
@@ -19224,14 +19311,14 @@
     "Instagram Link": "https://www.instagram.com/_ericbm_28/",
     "Other Social": "",
     "Other Social Link": "",
-    "Previous Rank": "221"
+    "Previous Rank": "222"
   },
   {
     "Player-ID": "Jose-Arias",
     "MLBAM ID": "829417",
     "Player Type": "Pitcher",
     "Player": "Jose Arias",
-    "Rank": "222",
+    "Rank": "223",
     "Trending": "",
     "Position": "RHP",
     "Level": "DSL",
@@ -19311,14 +19398,14 @@
     "Instagram Link": "https://www.instagram.com/josearias7048/",
     "Other Social": "",
     "Other Social Link": "",
-    "Previous Rank": "222"
+    "Previous Rank": "223"
   },
   {
     "Player-ID": "Jose-Nova",
     "MLBAM ID": "703360",
     "Player Type": "Pitcher",
     "Player": "Jose Nova",
-    "Rank": "223",
+    "Rank": "224",
     "Trending": "",
     "Position": "RHP",
     "Level": "A+",
@@ -19398,14 +19485,14 @@
     "Instagram Link": "https://www.instagram.com/novas_sebastian/",
     "Other Social": "",
     "Other Social Link": "",
-    "Previous Rank": "223"
+    "Previous Rank": "224"
   },
   {
     "Player-ID": "Freider-Rojas",
     "MLBAM ID": "808248",
     "Player Type": "Hitter",
     "Player": "Freider Rojas",
-    "Rank": "224",
+    "Rank": "225",
     "Trending": "",
     "Position": "C",
     "Level": "ACL",
@@ -19485,93 +19572,6 @@
     "Instagram Link": "https://www.instagram.com/freiderrojas16/",
     "Other Social": "TikTok",
     "Other Social Link": "https://www.tiktok.com/@freiderrojas16?lang=en",
-    "Previous Rank": "224"
-  },
-  {
-    "Player-ID": "Paul-Hoff",
-    "MLBAM ID": "821155",
-    "Player Type": "Pitcher",
-    "Player": "Paul Hoff",
-    "Rank": "225",
-    "Trending": "",
-    "Position": "RHP",
-    "Level": "DSL",
-    "Age": "20.0",
-    "OFP": "25",
-    "OFP Updated": "",
-    "Risk": "Extreme",
-    "School or Country": "Country",
-    "School/Country": "Germany",
-    "Date Signed": "1/15/2024",
-    "Signed By": "Andrew Berglund/Miguel Vásquez",
-    "Draft/IFA": "2024 International Free Agency",
-    "Acquired": "International Free Agent",
-    "Signing Bonus": "Unreported",
-    "Height": "6'5\"",
-    "Weight": "180",
-    "Bat / Throw": "Right/Right",
-    "Birthday": "9/4/2006",
-    "Rule 5 Eligible": "",
-    "Picture": "https://i.ibb.co/mFhfxmL1/image.png",
-    "Picture Source": "Instagram",
-    "Notes Updated": "N/A",
-    "Scouting Notes": "N/A",
-    "Notes Updated 2": "N/A",
-    "Scouting Notes 2": "N/A",
-    "Notes Updated 3": "N/A",
-    "Scouting Notes 3": "N/A",
-    "Notes Updated 4": "N/A",
-    "Scouting Notes 4": "N/A",
-    "Full Report Updated": "",
-    "Physical Description Report": "",
-    "Hit / Mechanics Report": "",
-    "Power/Pitch 1": "",
-    "Power/Pitch 1 Report": "",
-    "Run/Pitch 2": "",
-    "Run/Pitch 2 Report": "",
-    "Field/Pitch 3": "",
-    "Field/Pitch 3 Report": "",
-    "Arm/Pitch 4": "",
-    "Arm/Pitch 4 Report": "",
-    "Pitch 5": "",
-    "Pitch 5 Report": "",
-    "Pitch 6": "",
-    "Pitch 6 Report": "",
-    "Pitch 7": "",
-    "Pitch 7 Report": "",
-    "Summary Report": "",
-    "Article 1": "",
-    "Article Link 1": "",
-    "Article 2": "",
-    "Article Link 2": "",
-    "Article 3": "",
-    "Article Link 3": "",
-    "Article 4": "",
-    "Article Link 4": "",
-    "Article 5": "",
-    "Article Link 5": "",
-    "Article 6": "",
-    "Article Link 6": "",
-    "Article 7": "",
-    "Article Link 7": "",
-    "Article 8": "",
-    "Article Link 8": "",
-    "Article 9": "",
-    "Article Link 9": "",
-    "Article 10": "",
-    "Article Link 10": "",
-    "": "",
-    "Baseball Reference": "https://www.baseball-reference.com/register/player.fcgi?id=hoff--000pau",
-    "Fangraphs": "https://www.fangraphs.com/players/paul-hoff/sa3024777/stats?position=P",
-    "Baseball America": "https://www.baseballamerica.com/players/1431372-paul-hoff/",
-    "MiLB": "https://www.milb.com/player/paul-hoff-821155",
-    "Baseball Prospectus": "",
-    "Twitter/X": "",
-    "Twitter/X Link": "",
-    "Instagram": "Instagram",
-    "Instagram Link": "https://www.instagram.com/paul.hoff.1/",
-    "Other Social": "",
-    "Other Social Link": "",
     "Previous Rank": "225"
   },
   {

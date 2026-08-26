@@ -3,7 +3,7 @@
   "name": "Daniel Corniel",
   "archived": false,
   "playerType": "Pitcher",
-  "generatedAt": "2026-08-26T14:55:05.032Z",
+  "generatedAt": "2026-08-26T16:11:32.246Z",
   "bio": {
     "Player-ID": "Daniel-Corniel",
     "MLBAM ID": "802192",
@@ -231,7 +231,7 @@
       "BB%": "7.80%",
       "K-BB %": "8.80%",
       "SwStr %": "8.50%",
-      "Whiff%": "20.4%",
+      "Whiff%": "18.2%",
       "WHIP": "1.26",
       "BABIP": "0.279",
       "LOB%": "62.5%",
@@ -242,6 +242,18 @@
       "HR/FB": "0.08",
       "Archived?": ""
     }
+  },
+  "gamedayWhiff": {
+    "mlbamID": "802192",
+    "swings": 286,
+    "whiffs": 52,
+    "contacts": 234,
+    "whiffPct": 18.2,
+    "contactPct": 81.8,
+    "games": 11,
+    "levels": [
+      "A+"
+    ]
   },
   "videos": [
     {

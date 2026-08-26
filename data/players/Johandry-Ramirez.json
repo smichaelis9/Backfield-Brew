@@ -3,13 +3,13 @@
   "name": "Johandry Ramirez",
   "archived": false,
   "playerType": "Pitcher",
-  "generatedAt": "2026-08-26T14:55:05.032Z",
+  "generatedAt": "2026-08-26T16:11:32.246Z",
   "bio": {
     "Player-ID": "Johandry-Ramirez",
     "MLBAM ID": "829282",
     "Player Type": "Pitcher",
     "Player": "Johandry Ramirez",
-    "Rank": "179",
+    "Rank": "180",
     "Trending": "",
     "Position": "RHP",
     "Level": "IL",
@@ -89,7 +89,7 @@
     "Instagram Link": "https://www.instagram.com/j.ramirez.22/",
     "Other Social": "",
     "Other Social Link": "",
-    "Previous Rank": "179"
+    "Previous Rank": "180"
   },
   "tools": {
     "Player-ID": "Johandry-Ramirez",
@@ -243,6 +243,7 @@
       "Archived?": ""
     }
   },
+  "gamedayWhiff": null,
   "videos": [
     {
       "Player-ID": "Johandry-Ramirez",

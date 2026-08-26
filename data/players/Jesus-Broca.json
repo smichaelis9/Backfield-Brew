@@ -3,7 +3,7 @@
   "name": "Jesús Broca",
   "archived": false,
   "playerType": "Pitcher",
-  "generatedAt": "2026-08-26T14:55:05.032Z",
+  "generatedAt": "2026-08-26T16:11:32.246Z",
   "bio": {
     "Player-ID": "Jesus-Broca",
     "MLBAM ID": "695871",
@@ -231,7 +231,7 @@
       "BB%": "12.40%",
       "K-BB %": "9.20%",
       "SwStr %": "11.70%",
-      "Whiff%": "27.5%",
+      "Whiff%": "25.2%",
       "WHIP": "1.72",
       "BABIP": "0.342",
       "LOB%": "59.9%",
@@ -242,6 +242,18 @@
       "HR/FB": "0.16",
       "Archived?": ""
     }
+  },
+  "gamedayWhiff": {
+    "mlbamID": "695871",
+    "swings": 457,
+    "whiffs": 115,
+    "contacts": 342,
+    "whiffPct": 25.2,
+    "contactPct": 74.8,
+    "games": 34,
+    "levels": [
+      "AA"
+    ]
   },
   "videos": [
     {

@@ -3,13 +3,13 @@
   "name": "Eric Martinez",
   "archived": false,
   "playerType": "Hitter",
-  "generatedAt": "2026-08-26T14:55:05.032Z",
+  "generatedAt": "2026-08-26T16:11:32.246Z",
   "bio": {
     "Player-ID": "Eric-Martinez",
     "MLBAM ID": "702444",
     "Player Type": "Hitter",
     "Player": "Eric Martinez",
-    "Rank": "221",
+    "Rank": "222",
     "Trending": "",
     "Position": "C",
     "Level": "A",
@@ -89,7 +89,7 @@
     "Instagram Link": "https://www.instagram.com/_ericbm_28/",
     "Other Social": "",
     "Other Social Link": "",
-    "Previous Rank": "221"
+    "Previous Rank": "222"
   },
   "tools": {
     "Player-ID": "Eric-Martinez",
@@ -225,6 +225,18 @@
       "SB%": "100.0%",
       "Archived?": ""
     }
+  },
+  "gamedayWhiff": {
+    "mlbamID": "702444",
+    "swings": 33,
+    "whiffs": 12,
+    "contacts": 21,
+    "whiffPct": 36.4,
+    "contactPct": 63.6,
+    "games": 6,
+    "levels": [
+      "A"
+    ]
   },
   "videos": [
     {

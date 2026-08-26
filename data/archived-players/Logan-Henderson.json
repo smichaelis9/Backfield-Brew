@@ -3,7 +3,7 @@
   "name": "Logan Henderson",
   "archived": true,
   "playerType": "Pitcher",
-  "generatedAt": "2026-08-26T14:55:05.032Z",
+  "generatedAt": "2026-08-26T16:11:32.246Z",
   "bio": {
     "Player-ID": "Logan-Henderson",
     "MLBAM ID": "701656",
@@ -229,7 +229,7 @@
       "BB%": "11.20%",
       "K-BB %": "26.50%",
       "SwStr %": "12.30%",
-      "Whiff%": "30.5%",
+      "Whiff%": "27.3%",
       "WHIP": "1.13",
       "BABIP": "0.320",
       "LOB%": "85.2%",
@@ -240,6 +240,18 @@
       "HR/FB": "0.00",
       "Archived?": "yes"
     }
+  },
+  "gamedayWhiff": {
+    "mlbamID": "701656",
+    "swings": 187,
+    "whiffs": 51,
+    "contacts": 136,
+    "whiffPct": 27.3,
+    "contactPct": 72.7,
+    "games": 7,
+    "levels": [
+      "AAA"
+    ]
   },
   "videos": [
     {

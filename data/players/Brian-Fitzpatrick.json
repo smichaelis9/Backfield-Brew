@@ -3,7 +3,7 @@
   "name": "Brian Fitzpatrick",
   "archived": false,
   "playerType": "Pitcher",
-  "generatedAt": "2026-08-26T14:55:05.032Z",
+  "generatedAt": "2026-08-26T16:11:32.246Z",
   "bio": {
     "Player-ID": "Brian-Fitzpatrick",
     "MLBAM ID": "702153",
@@ -231,7 +231,7 @@
       "BB%": "6.50%",
       "K-BB %": "25.80%",
       "SwStr %": "13.30%",
-      "Whiff%": "32.4%",
+      "Whiff%": "30.7%",
       "WHIP": "1.00",
       "BABIP": "0.324",
       "LOB%": "76.5%",
@@ -242,6 +242,18 @@
       "HR/FB": "0.00",
       "Archived?": ""
     }
+  },
+  "gamedayWhiff": {
+    "mlbamID": "702153",
+    "swings": 114,
+    "whiffs": 35,
+    "contacts": 79,
+    "whiffPct": 30.7,
+    "contactPct": 69.3,
+    "games": 15,
+    "levels": [
+      "AAA"
+    ]
   },
   "videos": [
     {

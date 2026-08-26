@@ -3,7 +3,7 @@
   "name": "Miguel Briceno",
   "archived": true,
   "playerType": "Hitter",
-  "generatedAt": "2026-08-26T14:55:05.032Z",
+  "generatedAt": "2026-08-26T16:11:32.246Z",
   "bio": {
     "Player-ID": "Miguel-Briceno",
     "MLBAM ID": "691605",
@@ -210,7 +210,7 @@
       "K%": "",
       "BB%": "",
       "SwStr %": "",
-      "Whiff%": "",
+      "Whiff%": "26.1%",
       "Pull %": "",
       "Cent %": "",
       "Oppo %": "",
@@ -223,6 +223,18 @@
       "SB%": "",
       "Archived?": "yes"
     }
+  },
+  "gamedayWhiff": {
+    "mlbamID": "691605",
+    "swings": 46,
+    "whiffs": 12,
+    "contacts": 34,
+    "whiffPct": 26.1,
+    "contactPct": 73.9,
+    "games": 8,
+    "levels": [
+      "A+"
+    ]
   },
   "videos": [
     {

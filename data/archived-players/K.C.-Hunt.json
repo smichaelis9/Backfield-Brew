@@ -3,7 +3,7 @@
   "name": "K.C. Hunt",
   "archived": true,
   "playerType": "Pitcher",
-  "generatedAt": "2026-08-26T14:55:05.032Z",
+  "generatedAt": "2026-08-26T16:11:32.246Z",
   "bio": {
     "Player-ID": "K.C.-Hunt",
     "MLBAM ID": "687268",
@@ -229,7 +229,7 @@
       "BB%": "",
       "K-BB %": "",
       "SwStr %": "",
-      "Whiff%": "",
+      "Whiff%": "31.4%",
       "WHIP": "",
       "BABIP": "",
       "LOB%": "",
@@ -240,6 +240,19 @@
       "HR/FB": "",
       "Archived?": "yes"
     }
+  },
+  "gamedayWhiff": {
+    "mlbamID": "687268",
+    "swings": 51,
+    "whiffs": 16,
+    "contacts": 35,
+    "whiffPct": 31.4,
+    "contactPct": 68.6,
+    "games": 4,
+    "levels": [
+      "AA",
+      "AAA"
+    ]
   },
   "videos": [
     {

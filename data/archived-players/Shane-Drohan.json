@@ -3,7 +3,7 @@
   "name": "Shane Drohan",
   "archived": true,
   "playerType": "Pitcher",
-  "generatedAt": "2026-08-26T14:55:05.032Z",
+  "generatedAt": "2026-08-26T16:11:32.246Z",
   "bio": {
     "Player-ID": "Shane-Drohan",
     "MLBAM ID": "675660",
@@ -229,7 +229,7 @@
       "BB%": "11.10%",
       "K-BB %": "15.90%",
       "SwStr %": "8.40%",
-      "Whiff%": "21.5%",
+      "Whiff%": "19.6%",
       "WHIP": "1.54",
       "BABIP": "0.343",
       "LOB%": "84.2%",
@@ -240,6 +240,18 @@
       "HR/FB": "0.18",
       "Archived?": "yes"
     }
+  },
+  "gamedayWhiff": {
+    "mlbamID": "675660",
+    "swings": 107,
+    "whiffs": 21,
+    "contacts": 86,
+    "whiffPct": 19.6,
+    "contactPct": 80.4,
+    "games": 3,
+    "levels": [
+      "AAA"
+    ]
   },
   "videos": [
     {

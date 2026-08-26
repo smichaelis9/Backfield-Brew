@@ -3,7 +3,7 @@
   "name": "Jackson Chourio",
   "archived": true,
   "playerType": "Hitter",
-  "generatedAt": "2026-08-26T14:55:05.032Z",
+  "generatedAt": "2026-08-26T16:11:32.246Z",
   "bio": {
     "Player-ID": "Jackson-Chourio",
     "MLBAM ID": "694192",
@@ -223,6 +223,18 @@
       "SB%": "",
       "Archived?": "yes"
     }
+  },
+  "gamedayWhiff": {
+    "mlbamID": "694192",
+    "swings": 15,
+    "whiffs": 4,
+    "contacts": 11,
+    "whiffPct": 26.7,
+    "contactPct": 73.3,
+    "games": 3,
+    "levels": [
+      "AAA"
+    ]
   },
   "videos": [
     {

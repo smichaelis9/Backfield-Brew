@@ -3,13 +3,13 @@
   "name": "Kaleb Bowman",
   "archived": false,
   "playerType": "Pitcher",
-  "generatedAt": "2026-08-26T14:55:05.032Z",
+  "generatedAt": "2026-08-26T16:11:32.246Z",
   "bio": {
     "Player-ID": "Kaleb-Bowman",
     "MLBAM ID": "689337",
     "Player Type": "Pitcher",
     "Player": "Kaleb Bowman",
-    "Rank": "183",
+    "Rank": "184",
     "Trending": "",
     "Position": "RHP",
     "Level": "AAA",
@@ -89,7 +89,7 @@
     "Instagram Link": "https://www.instagram.com/its_bobo_time05/",
     "Other Social": "",
     "Other Social Link": "",
-    "Previous Rank": "183"
+    "Previous Rank": "184"
   },
   "tools": {
     "Player-ID": "Kaleb-Bowman",
@@ -231,7 +231,7 @@
       "BB%": "16.40%",
       "K-BB %": "2.30%",
       "SwStr %": "10.60%",
-      "Whiff%": "27.4%",
+      "Whiff%": "24.0%",
       "WHIP": "1.81",
       "BABIP": "0.323",
       "LOB%": "71.6%",
@@ -242,6 +242,18 @@
       "HR/FB": "0.09",
       "Archived?": ""
     }
+  },
+  "gamedayWhiff": {
+    "mlbamID": "689337",
+    "swings": 417,
+    "whiffs": 100,
+    "contacts": 317,
+    "whiffPct": 24,
+    "contactPct": 76,
+    "games": 29,
+    "levels": [
+      "AAA"
+    ]
   },
   "videos": [
     {

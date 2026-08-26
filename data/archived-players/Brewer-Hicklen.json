@@ -3,7 +3,7 @@
   "name": "Brewer Hicklen",
   "archived": true,
   "playerType": "Hitter",
-  "generatedAt": "2026-08-26T14:55:05.032Z",
+  "generatedAt": "2026-08-26T16:11:32.246Z",
   "bio": {
     "Player-ID": "Brewer-Hicklen",
     "MLBAM ID": "676551",
@@ -210,7 +210,7 @@
       "K%": "",
       "BB%": "",
       "SwStr %": "",
-      "Whiff%": "",
+      "Whiff%": "28.7%",
       "Pull %": "",
       "Cent %": "",
       "Oppo %": "",
@@ -223,6 +223,18 @@
       "SB%": "",
       "Archived?": "yes"
     }
+  },
+  "gamedayWhiff": {
+    "mlbamID": "676551",
+    "swings": 129,
+    "whiffs": 37,
+    "contacts": 92,
+    "whiffPct": 28.7,
+    "contactPct": 71.3,
+    "games": 17,
+    "levels": [
+      "AAA"
+    ]
   },
   "videos": [
     {

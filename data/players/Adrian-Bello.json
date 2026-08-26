@@ -3,13 +3,13 @@
   "name": "Adrian Bello",
   "archived": false,
   "playerType": "Pitcher",
-  "generatedAt": "2026-08-26T14:55:05.032Z",
+  "generatedAt": "2026-08-26T16:11:32.246Z",
   "bio": {
     "Player-ID": "Adrian-Bello",
     "MLBAM ID": "837323",
     "Player Type": "Pitcher",
     "Player": "Adrian Bello",
-    "Rank": "219",
+    "Rank": "220",
     "Trending": "",
     "Position": "RHP",
     "Level": "DSL",
@@ -89,7 +89,7 @@
     "Instagram Link": "https://www.instagram.com/bello__016/",
     "Other Social": "",
     "Other Social Link": "",
-    "Previous Rank": "219"
+    "Previous Rank": "220"
   },
   "tools": {
     "Player-ID": "Adrian-Bello",
@@ -243,6 +243,7 @@
       "Archived?": ""
     }
   },
+  "gamedayWhiff": null,
   "videos": [
     {
       "Player-ID": "Adrian-Bello",

@@ -3,13 +3,13 @@
   "name": "Daniel Garcia",
   "archived": false,
   "playerType": "Pitcher",
-  "generatedAt": "2026-08-26T14:55:05.032Z",
+  "generatedAt": "2026-08-26T16:11:32.246Z",
   "bio": {
     "Player-ID": "Daniel-Garcia",
     "MLBAM ID": "830031",
     "Player Type": "Pitcher",
     "Player": "Daniel Garcia",
-    "Rank": "171",
+    "Rank": "172",
     "Trending": "",
     "Position": "LHP",
     "Level": "DSL",
@@ -89,7 +89,7 @@
     "Instagram Link": "https://www.instagram.com/daniel2541garcia/",
     "Other Social": "",
     "Other Social Link": "",
-    "Previous Rank": "171"
+    "Previous Rank": "172"
   },
   "tools": {
     "Player-ID": "Daniel-Garcia",
@@ -243,6 +243,7 @@
       "Archived?": ""
     }
   },
+  "gamedayWhiff": null,
   "videos": [
     {
       "Player-ID": "Daniel-Garcia",

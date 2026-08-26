@@ -3,7 +3,7 @@
   "name": "Sal Frelick",
   "archived": true,
   "playerType": "Hitter",
-  "generatedAt": "2026-08-26T14:55:05.032Z",
+  "generatedAt": "2026-08-26T16:11:32.246Z",
   "bio": {
     "Player-ID": "Sal-Frelick",
     "MLBAM ID": "686217",
@@ -210,7 +210,7 @@
       "K%": "13.6%",
       "BB%": "11.4%",
       "SwStr %": "4.7%",
-      "Whiff%": "",
+      "Whiff%": "11.4%",
       "Pull %": "50.0%",
       "Cent %": "26.7%",
       "Oppo %": "23.3%",
@@ -223,6 +223,18 @@
       "SB%": "100.0%",
       "Archived?": "yes"
     }
+  },
+  "gamedayWhiff": {
+    "mlbamID": "686217",
+    "swings": 70,
+    "whiffs": 8,
+    "contacts": 62,
+    "whiffPct": 11.4,
+    "contactPct": 88.6,
+    "games": 10,
+    "levels": [
+      "AAA"
+    ]
   },
   "videos": [
     {

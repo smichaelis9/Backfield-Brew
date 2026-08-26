@@ -3,13 +3,13 @@
   "name": "Manuel Moreno",
   "archived": false,
   "playerType": "Pitcher",
-  "generatedAt": "2026-08-26T14:55:05.032Z",
+  "generatedAt": "2026-08-26T16:11:32.246Z",
   "bio": {
     "Player-ID": "Manuel-Moreno",
     "MLBAM ID": "821191",
     "Player Type": "Pitcher",
     "Player": "Manuel Moreno",
-    "Rank": "197",
+    "Rank": "198",
     "Trending": "",
     "Position": "RHP",
     "Level": "DSL",
@@ -89,7 +89,7 @@
     "Instagram Link": "https://www.instagram.com/m_moreno.23/",
     "Other Social": "",
     "Other Social Link": "",
-    "Previous Rank": "197"
+    "Previous Rank": "198"
   },
   "tools": {
     "Player-ID": "Manuel-Moreno",
@@ -243,6 +243,7 @@
       "Archived?": ""
     }
   },
+  "gamedayWhiff": null,
   "videos": [
     {
       "Player-ID": "Manuel-Moreno",

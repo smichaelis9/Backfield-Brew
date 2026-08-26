@@ -3,7 +3,7 @@
   "name": "Yorman Galindez",
   "archived": false,
   "playerType": "Pitcher",
-  "generatedAt": "2026-08-26T14:55:05.032Z",
+  "generatedAt": "2026-08-26T16:11:32.246Z",
   "bio": {
     "Player-ID": "Yorman-Galindez",
     "MLBAM ID": "800223",
@@ -231,7 +231,7 @@
       "BB%": "13.60%",
       "K-BB %": "6.60%",
       "SwStr %": "12.70%",
-      "Whiff%": "37.6%",
+      "Whiff%": "29.4%",
       "WHIP": "1.74",
       "BABIP": "0.351",
       "LOB%": "60.4%",
@@ -242,6 +242,19 @@
       "HR/FB": "0.13",
       "Archived?": ""
     }
+  },
+  "gamedayWhiff": {
+    "mlbamID": "800223",
+    "swings": 503,
+    "whiffs": 148,
+    "contacts": 355,
+    "whiffPct": 29.4,
+    "contactPct": 70.6,
+    "games": 24,
+    "levels": [
+      "A+",
+      "AA"
+    ]
   },
   "videos": [
     {

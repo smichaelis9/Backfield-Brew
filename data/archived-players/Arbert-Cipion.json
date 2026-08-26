@@ -3,7 +3,7 @@
   "name": "Arbert Cipion",
   "archived": true,
   "playerType": "Hitter",
-  "generatedAt": "2026-08-26T14:55:05.032Z",
+  "generatedAt": "2026-08-26T16:11:32.246Z",
   "bio": {
     "Player-ID": "Arbert-Cipion",
     "MLBAM ID": "681832",
@@ -224,6 +224,7 @@
       "Archived?": "yes"
     }
   },
+  "gamedayWhiff": null,
   "videos": [
     {
       "Player-ID": "Arbert-Cipion",

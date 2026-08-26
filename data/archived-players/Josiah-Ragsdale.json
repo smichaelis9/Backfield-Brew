@@ -3,7 +3,7 @@
   "name": "Josiah Ragsdale",
   "archived": true,
   "playerType": "Hitter",
-  "generatedAt": "2026-08-26T14:55:05.032Z",
+  "generatedAt": "2026-08-26T16:11:32.246Z",
   "bio": {
     "Player-ID": "Josiah-Ragsdale",
     "MLBAM ID": "828824",
@@ -210,7 +210,7 @@
       "K%": "25.8%",
       "BB%": "17.5%",
       "SwStr %": "10.0%",
-      "Whiff%": "25.4%",
+      "Whiff%": "23.8%",
       "Pull %": "43.4%",
       "Cent %": "30.2%",
       "Oppo %": "26.4%",
@@ -223,6 +223,19 @@
       "SB%": "91.2%",
       "Archived?": "yes"
     }
+  },
+  "gamedayWhiff": {
+    "mlbamID": "828824",
+    "swings": 676,
+    "whiffs": 161,
+    "contacts": 515,
+    "whiffPct": 23.8,
+    "contactPct": 76.2,
+    "games": 86,
+    "levels": [
+      "A+",
+      "AA"
+    ]
   },
   "videos": [
     {

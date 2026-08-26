@@ -3,7 +3,7 @@
   "name": "Joshua Quezada",
   "archived": false,
   "playerType": "Pitcher",
-  "generatedAt": "2026-08-26T14:55:05.032Z",
+  "generatedAt": "2026-08-26T16:11:32.246Z",
   "bio": {
     "Player-ID": "Joshua-Quezada",
     "MLBAM ID": "808350",
@@ -231,7 +231,7 @@
       "BB%": "8.20%",
       "K-BB %": "21.30%",
       "SwStr %": "15.70%",
-      "Whiff%": "34.5%",
+      "Whiff%": "31.7%",
       "WHIP": "1.23",
       "BABIP": "0.325",
       "LOB%": "58.9%",
@@ -242,6 +242,20 @@
       "HR/FB": "0.10",
       "Archived?": ""
     }
+  },
+  "gamedayWhiff": {
+    "mlbamID": "808350",
+    "swings": 401,
+    "whiffs": 127,
+    "contacts": 274,
+    "whiffPct": 31.7,
+    "contactPct": 68.3,
+    "games": 33,
+    "levels": [
+      "A",
+      "A+",
+      "AAA"
+    ]
   },
   "videos": [
     {

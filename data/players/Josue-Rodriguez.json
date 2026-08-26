@@ -3,7 +3,7 @@
   "name": "Josue Rodriguez",
   "archived": false,
   "playerType": "Hitter",
-  "generatedAt": "2026-08-26T14:55:05.032Z",
+  "generatedAt": "2026-08-26T16:11:32.246Z",
   "bio": {
     "Player-ID": "Josue-Rodriguez",
     "MLBAM ID": "835005",
@@ -94,15 +94,15 @@
   "tools": {
     "Player-ID": "Josue-Rodriguez",
     "Player": "Josue Rodriguez",
-    "Last Updated": "N/A",
-    "Hit": "N/A",
-    "Raw Power": "N/A",
-    "Game Power": "N/A",
-    "Bat to Ball": "N/A",
-    "Swing Decisions": "N/A",
-    "Speed": "N/A",
-    "Field": "N/A",
-    "Arm": "N/A"
+    "Last Updated": "8/22/2026",
+    "Hit": "25/45",
+    "Raw Power": "40/45",
+    "Game Power": "30/50",
+    "Bat to Ball": "30/45",
+    "Swing Decisions": "35/50",
+    "Speed": "50/50",
+    "Field": "30/45 (OF)",
+    "Arm": "50/50"
   },
   "stats": {
     "2023": {
@@ -226,6 +226,7 @@
       "Archived?": ""
     }
   },
+  "gamedayWhiff": null,
   "videos": [
     {
       "Player-ID": "Josue-Rodriguez",

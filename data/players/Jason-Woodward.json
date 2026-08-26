@@ -3,7 +3,7 @@
   "name": "Jason Woodward",
   "archived": false,
   "playerType": "Pitcher",
-  "generatedAt": "2026-08-26T14:55:05.032Z",
+  "generatedAt": "2026-08-26T16:11:32.246Z",
   "bio": {
     "Player-ID": "Jason-Woodward",
     "MLBAM ID": "814710",
@@ -231,7 +231,7 @@
       "BB%": "13.00%",
       "K-BB %": "7.50%",
       "SwStr %": "11.80%",
-      "Whiff%": "29.8%",
+      "Whiff%": "26.6%",
       "WHIP": "1.80",
       "BABIP": "0.345",
       "LOB%": "70.2%",
@@ -242,6 +242,18 @@
       "HR/FB": "0.16",
       "Archived?": ""
     }
+  },
+  "gamedayWhiff": {
+    "mlbamID": "814710",
+    "swings": 338,
+    "whiffs": 90,
+    "contacts": 248,
+    "whiffPct": 26.6,
+    "contactPct": 73.4,
+    "games": 21,
+    "levels": [
+      "A+"
+    ]
   },
   "videos": [
     {

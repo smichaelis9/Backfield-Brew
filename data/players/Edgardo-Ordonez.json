@@ -3,13 +3,13 @@
   "name": "Edgardo Ordonez",
   "archived": false,
   "playerType": "Hitter",
-  "generatedAt": "2026-08-26T14:55:05.032Z",
+  "generatedAt": "2026-08-26T16:11:32.246Z",
   "bio": {
     "Player-ID": "Edgardo-Ordonez",
     "MLBAM ID": "699166",
     "Player Type": "Hitter",
     "Player": "Edgardo Ordonez",
-    "Rank": "189",
+    "Rank": "190",
     "Trending": "",
     "Position": "C",
     "Level": "A+",
@@ -89,7 +89,7 @@
     "Instagram Link": "https://instagram.com/eordonez13?igshid=YmMyMTA2M2Y=",
     "Other Social": "",
     "Other Social Link": "",
-    "Previous Rank": "189"
+    "Previous Rank": "190"
   },
   "tools": {
     "Player-ID": "Edgardo-Ordonez",
@@ -212,7 +212,7 @@
       "K%": "30.0%",
       "BB%": "6.7%",
       "SwStr %": "16.8%",
-      "Whiff%": "46.2%",
+      "Whiff%": "35.2%",
       "Pull %": "52.6%",
       "Cent %": "15.8%",
       "Oppo %": "31.6%",
@@ -225,6 +225,19 @@
       "SB%": "",
       "Archived?": ""
     }
+  },
+  "gamedayWhiff": {
+    "mlbamID": "699166",
+    "swings": 54,
+    "whiffs": 19,
+    "contacts": 35,
+    "whiffPct": 35.2,
+    "contactPct": 64.8,
+    "games": 10,
+    "levels": [
+      "A+",
+      "AA"
+    ]
   },
   "videos": [
     {

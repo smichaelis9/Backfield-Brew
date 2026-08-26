@@ -3,7 +3,7 @@
   "name": "Enniel Cortez",
   "archived": false,
   "playerType": "Pitcher",
-  "generatedAt": "2026-08-26T14:55:05.032Z",
+  "generatedAt": "2026-08-26T16:11:32.246Z",
   "bio": {
     "Player-ID": "Enniel-Cortez",
     "MLBAM ID": "808308",
@@ -231,7 +231,7 @@
       "BB%": "13.60%",
       "K-BB %": "4.50%",
       "SwStr %": "11.10%",
-      "Whiff%": "24.3%",
+      "Whiff%": "22.9%",
       "WHIP": "1.90",
       "BABIP": "0.360",
       "LOB%": "55.9%",
@@ -242,6 +242,18 @@
       "HR/FB": "0.15",
       "Archived?": ""
     }
+  },
+  "gamedayWhiff": {
+    "mlbamID": "808308",
+    "swings": 306,
+    "whiffs": 70,
+    "contacts": 236,
+    "whiffPct": 22.9,
+    "contactPct": 77.1,
+    "games": 14,
+    "levels": [
+      "A"
+    ]
   },
   "videos": [
     {
