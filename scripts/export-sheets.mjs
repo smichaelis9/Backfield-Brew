@@ -428,7 +428,252 @@ function loadGamedayWhiffData() {
     };
   }
 }
+/* =========================
+   MERGE GAMEDAY WHIFF DATA
+   INTO ORGANIZATION STATS
+========================= */
 
+function mergeGamedayWhiffsIntoOrgStats(
+  datasets,
+  gamedayData
+) {
+
+  if (
+    !gamedayData ||
+    !gamedayData.season
+  ) {
+
+    console.warn(
+      "No Gameday Whiff season found. Skipping org stats merge."
+    );
+
+    return;
+  }
+
+
+  const season =
+    String(
+      gamedayData.season
+    );
+
+
+  const bioRows =
+    datasets[
+      "Biography Info"
+    ] || [];
+
+
+  /*
+    Build:
+    Player-ID → MLBAM ID
+
+    This lets the stats sheets use
+    Player-ID while Gameday uses MLBAM.
+  */
+
+  const playerToMLBAM =
+    new Map();
+
+
+  for (
+    const bio of bioRows
+  ) {
+
+    const playerID =
+      String(
+        get(
+          bio,
+          [
+            "Player-ID",
+            "Player ID"
+          ]
+        ) || ""
+      ).trim();
+
+
+    const mlbamID =
+      getMLBAMID(
+        bio
+      );
+
+
+    if (
+      playerID &&
+      mlbamID
+    ) {
+
+      playerToMLBAM.set(
+        playerID,
+        String(mlbamID)
+      );
+    }
+  }
+
+
+  /* =========================
+     MERGE ONE STAT DATASET
+  ========================= */
+
+  function mergeRows(
+    rows,
+    type
+  ) {
+
+    if (
+      !Array.isArray(rows)
+    ) {
+      return;
+    }
+
+
+    const collection =
+      type === "pitcher"
+        ? gamedayData.pitchers || {}
+        : gamedayData.hitters || {};
+
+
+    let matched = 0;
+    let added = 0;
+
+
+    for (
+      const row of rows
+    ) {
+
+      const playerID =
+        String(
+          get(
+            row,
+            [
+              "Player-ID",
+              "Player ID"
+            ]
+          ) || ""
+        ).trim();
+
+
+      if (!playerID) {
+        continue;
+      }
+
+
+      const mlbamID =
+        playerToMLBAM.get(
+          playerID
+        );
+
+
+      if (!mlbamID) {
+        continue;
+      }
+
+
+      const whiff =
+        collection[
+          mlbamID
+        ];
+
+
+      if (!whiff) {
+        continue;
+      }
+
+
+      matched++;
+
+
+      const whiffPct =
+        Number(
+          whiff.whiffPct
+        );
+
+
+      if (
+        !Number.isFinite(
+          whiffPct
+        )
+      ) {
+        continue;
+      }
+
+
+      /*
+        Gameday becomes the automatic
+        source for Whiff%.
+
+        Store it in the same format
+        your tables already expect.
+      */
+
+      row["Whiff%"] =
+        `${whiffPct.toFixed(1)}%`;
+
+
+      added++;
+    }
+
+
+    console.log(
+      `${type} ${season}: ` +
+      `${matched} Gameday matches, ` +
+      `${added} Whiff% values added`
+    );
+  }
+
+
+  /* =========================
+     FIND CURRENT-SEASON SHEETS
+  ========================= */
+
+  const hitterSheet =
+    `Hitting Stats ${season}`;
+
+
+  const pitcherSheet =
+    `Pitching Stats ${season}`;
+
+
+  if (
+    datasets[
+      hitterSheet
+    ]
+  ) {
+
+    mergeRows(
+      datasets[
+        hitterSheet
+      ],
+      "hitter"
+    );
+
+  } else {
+
+    console.warn(
+      `${hitterSheet} not found in datasets.`
+    );
+  }
+
+
+  if (
+    datasets[
+      pitcherSheet
+    ]
+  ) {
+
+    mergeRows(
+      datasets[
+        pitcherSheet
+      ],
+      "pitcher"
+    );
+
+  } else {
+
+    console.warn(
+      `${pitcherSheet} not found in datasets.`
+    );
+  }
+}
 /* =========================
    SAFE FILE NAME
 ========================= */
@@ -1179,7 +1424,17 @@ async function main() {
       const generatedAt =
         new Date()
           .toISOString();
+    /* =========================
+       MERGE GAMEDAY WHIFF%
+       INTO ORGANIZATION STATS
+    ========================= */
 
+    mergeGamedayWhiffsIntoOrgStats(
+      datasets,
+      datasets[
+        "Gameday Whiffs"
+      ]
+    );
 
   /* =========================
      ACTIVE PLAYERS
