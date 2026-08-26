@@ -1,0 +1,51 @@
+name: Update Gameday Whiff Rates
+
+on:
+  workflow_dispatch:
+
+  schedule:
+    - cron: "20 9 * * *"
+
+
+permissions:
+  contents: write
+
+
+jobs:
+
+  update-whiffs:
+
+    runs-on: ubuntu-latest
+
+
+    steps:
+
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+
+      - name: Build Gameday whiff rates
+        run: node scripts/update-whiff-rates.mjs
+
+
+      - name: Commit updated data
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add data/gameday-whiff-rates.json
+
+          if git diff --cached --quiet; then
+            echo "No whiff-rate changes."
+            exit 0
+          fi
+
+          git commit -m "Update Gameday whiff rates"
+          git pull --rebase
+          git push
