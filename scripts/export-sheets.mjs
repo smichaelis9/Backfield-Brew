@@ -347,7 +347,87 @@ function getMLBAMID(row) {
     )
   );
 }
+/* =========================
+   LOAD GAMEDAY WHIFF DATA
+========================= */
 
+function loadGamedayWhiffData() {
+
+  const filePath =
+    path.join(
+      "data",
+      "gameday-whiff-rates.json"
+    );
+
+
+  if (
+    !fs.existsSync(filePath)
+  ) {
+
+    console.warn(
+      "No gameday-whiff-rates.json found. Continuing without Gameday Whiff%."
+    );
+
+    return {
+      hitters: {},
+      pitchers: {}
+    };
+  }
+
+
+  try {
+
+    const data =
+      JSON.parse(
+        fs.readFileSync(
+          filePath,
+          "utf8"
+        )
+      );
+
+
+    console.log(
+      `Loaded Gameday Whiff data: ${
+        Object.keys(
+          data.hitters || {}
+        ).length
+      } hitters, ${
+        Object.keys(
+          data.pitchers || {}
+        ).length
+      } pitchers`
+    );
+
+
+    return {
+      hitters:
+        data.hitters || {},
+
+      pitchers:
+        data.pitchers || {},
+
+      season:
+        data.season || "",
+
+      generatedAt:
+        data.generatedAt || ""
+    };
+
+
+  } catch (error) {
+
+    console.warn(
+      "Could not read gameday-whiff-rates.json:",
+      error.message
+    );
+
+
+    return {
+      hitters: {},
+      pitchers: {}
+    };
+  }
+}
 
 /* =========================
    SAFE FILE NAME
@@ -665,7 +745,32 @@ function buildPlayerObject({
     playerType.includes(
       "pitch"
     );
+/* =========================
+   GAMEDAY WHIFF DATA
+========================= */
 
+const mlbamID =
+  getMLBAMID(bio);
+
+
+const gamedayData =
+  datasets[
+    "Gameday Whiffs"
+  ] || {};
+
+
+const whiffCollection =
+  isPitcher
+    ? gamedayData.pitchers || {}
+    : gamedayData.hitters || {};
+
+
+const gamedayWhiff =
+  mlbamID
+    ? whiffCollection[
+        String(mlbamID)
+      ] || null
+    : null;
 
   /* =========================
      TOOLS
@@ -725,8 +830,45 @@ function buildPlayerObject({
 
     if (statRow) {
 
+      /*
+        Clone the row so we don't
+        alter the organization-wide
+        stats dataset in memory.
+      */
+
+      const playerStatRow = {
+        ...statRow
+      };
+
+
+      /*
+        Add automated Gameday Whiff%
+        to the current season.
+      */
+
+      if (
+        year === String(
+          gamedayData.season ||
+          new Date().getFullYear()
+        ) &&
+        gamedayWhiff &&
+        Number.isFinite(
+          Number(
+            gamedayWhiff.whiffPct
+          )
+        )
+      ) {
+
+        playerStatRow["Whiff%"] =
+          `${Number(
+            gamedayWhiff.whiffPct
+          ).toFixed(1)}%`;
+
+      }
+
+
       stats[year] =
-        statRow;
+        playerStatRow;
     }
   }
 
@@ -789,6 +931,35 @@ function buildPlayerObject({
 
     stats:
       stats,
+
+    gamedayWhiff:
+      gamedayWhiff
+        ? {
+            mlbamID:
+              mlbamID,
+
+            swings:
+              gamedayWhiff.swings ?? null,
+
+            whiffs:
+              gamedayWhiff.whiffs ?? null,
+
+            contacts:
+              gamedayWhiff.contacts ?? null,
+
+            whiffPct:
+              gamedayWhiff.whiffPct ?? null,
+
+            contactPct:
+              gamedayWhiff.contactPct ?? null,
+
+            games:
+              gamedayWhiff.games ?? null,
+
+            levels:
+              gamedayWhiff.levels || []
+          }
+        : null,
 
     videos:
       videos,
@@ -996,11 +1167,18 @@ async function main() {
         config
       );
   }
+    /* =========================
+       ADD GAMEDAY WHIFF DATA
+    ========================= */
 
+    datasets[
+      "Gameday Whiffs"
+    ] =
+      loadGamedayWhiffData();
 
-  const generatedAt =
-    new Date()
-      .toISOString();
+      const generatedAt =
+        new Date()
+          .toISOString();
 
 
   /* =========================
