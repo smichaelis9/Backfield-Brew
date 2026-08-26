@@ -3,7 +3,7 @@
   "name": "Patricio Aquino",
   "archived": false,
   "playerType": "Pitcher",
-  "generatedAt": "2026-08-26T12:56:52.254Z",
+  "generatedAt": "2026-08-26T14:01:27.303Z",
   "bio": {
     "Player-ID": "Patricio-Aquino",
     "MLBAM ID": "699223",
@@ -214,7 +214,7 @@
       "Player-ID": "Patricio-Aquino",
       "Player": "Patricio Aquino",
       "ERA": "5.06",
-      "FIP": "5.34",
+      "FIP": "5.35",
       "xFIP": "8.03",
       "IP": "10.2",
       "G": "6",

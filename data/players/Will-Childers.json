@@ -3,7 +3,7 @@
   "name": "Will Childers",
   "archived": false,
   "playerType": "Pitcher",
-  "generatedAt": "2026-08-26T12:56:52.254Z",
+  "generatedAt": "2026-08-26T14:01:27.303Z",
   "bio": {
     "Player-ID": "Will-Childers",
     "MLBAM ID": "682999",
@@ -215,7 +215,7 @@
       "Player": "Will Childers",
       "ERA": "4.35",
       "FIP": "5.48",
-      "xFIP": "4.55",
+      "xFIP": "4.56",
       "IP": "39.1",
       "G": "36",
       "GS": "1",

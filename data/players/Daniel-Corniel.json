@@ -3,7 +3,7 @@
   "name": "Daniel Corniel",
   "archived": false,
   "playerType": "Pitcher",
-  "generatedAt": "2026-08-26T12:56:52.254Z",
+  "generatedAt": "2026-08-26T14:01:27.303Z",
   "bio": {
     "Player-ID": "Daniel-Corniel",
     "MLBAM ID": "802192",
@@ -214,7 +214,7 @@
       "Player-ID": "Daniel-Corniel",
       "Player": "Daniel Corniel",
       "ERA": "4.50",
-      "FIP": "4.88",
+      "FIP": "4.89",
       "xFIP": "5.61",
       "IP": "46",
       "G": "16",

@@ -3,7 +3,7 @@
   "name": "Cameron Wagoner",
   "archived": false,
   "playerType": "Pitcher",
-  "generatedAt": "2026-08-26T12:56:52.254Z",
+  "generatedAt": "2026-08-26T14:01:27.303Z",
   "bio": {
     "Player-ID": "Cameron-Wagoner",
     "MLBAM ID": "687726",
@@ -215,7 +215,7 @@
       "Player": "Cameron Wagoner",
       "ERA": "1.85",
       "FIP": "3.17",
-      "xFIP": "3.57",
+      "xFIP": "3.58",
       "IP": "34",
       "G": "25",
       "GS": "0",

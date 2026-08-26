@@ -3,7 +3,7 @@
   "name": "Travis Smith",
   "archived": false,
   "playerType": "Pitcher",
-  "generatedAt": "2026-08-26T12:56:52.254Z",
+  "generatedAt": "2026-08-26T14:01:27.303Z",
   "bio": {
     "Player-ID": "Travis-Smith",
     "MLBAM ID": "695605",
@@ -214,7 +214,7 @@
       "Player-ID": "Travis-Smith",
       "Player": "Travis Smith",
       "ERA": "8.13",
-      "FIP": "7.64",
+      "FIP": "7.65",
       "xFIP": "6.39",
       "IP": "65.1",
       "G": "21",
