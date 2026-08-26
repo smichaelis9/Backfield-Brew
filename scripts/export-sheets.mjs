@@ -626,11 +626,11 @@ function mergeGamedayWhiffsIntoOrgStats(
   ========================= */
 
   const hitterSheet =
-    `Hitting Stats ${season}`;
+    `Hitter Stats ${season}`;
 
 
   const pitcherSheet =
-    `Pitching Stats ${season}`;
+    `Pitcher Stats ${season}`;
 
 
   if (
@@ -784,6 +784,11 @@ function prepareDirectory(
    EXPORT ONE GOOGLE SHEET
 ========================= */
 
+/* =========================
+   EXPORT ONE GOOGLE SHEET
+   WITH RETRIES
+========================= */
+
 async function exportSheet(
   sheetName,
   config
@@ -793,58 +798,169 @@ async function exportSheet(
     `https://docs.google.com/spreadsheets/d/e/${PUB_ID}/pub?gid=${config.gid}&single=true&output=csv`;
 
 
-  console.log(
-    `Downloading ${sheetName}...`
-  );
+  const maxAttempts = 4;
 
 
-  const response =
-    await fetch(url);
+  for (
+    let attempt = 1;
+    attempt <= maxAttempts;
+    attempt++
+  ) {
+
+    try {
+
+      console.log(
+        `Downloading ${sheetName}... ` +
+        `(attempt ${attempt}/${maxAttempts})`
+      );
 
 
-  if (!response.ok) {
+      const controller =
+        new AbortController();
 
-    throw new Error(
-      `${sheetName} failed: ${response.status}`
-    );
+
+      /*
+        Don't let one Google request
+        hang for several minutes.
+      */
+
+      const timeout =
+        setTimeout(
+          () =>
+            controller.abort(),
+          45000
+        );
+
+
+      const response =
+        await fetch(
+          `${url}&cacheBust=${Date.now()}`,
+          {
+            signal:
+              controller.signal,
+
+            headers: {
+              "User-Agent":
+                "Backfield-Brew/1.0"
+            }
+          }
+        );
+
+
+      clearTimeout(
+        timeout
+      );
+
+
+      if (!response.ok) {
+
+        throw new Error(
+          `${sheetName} failed: ${response.status}`
+        );
+      }
+
+
+      const csv =
+        await response.text();
+
+
+      /*
+        Make sure Google actually
+        returned CSV and not an
+        error page.
+      */
+
+      if (
+        !csv ||
+        csv.trim().length < 5
+      ) {
+
+        throw new Error(
+          `${sheetName} returned empty data`
+        );
+      }
+
+
+      const rows =
+        parseCSV(csv);
+
+
+      if (!rows.length) {
+
+        throw new Error(
+          `${sheetName} returned no rows`
+        );
+      }
+
+
+      const outputPath =
+        path.join(
+          "data",
+          config.file
+        );
+
+
+      fs.writeFileSync(
+        outputPath,
+        JSON.stringify(
+          rows,
+          null,
+          2
+        ),
+        "utf8"
+      );
+
+
+      console.log(
+        `${sheetName}: ${rows.length} rows`
+      );
+
+
+      return rows;
+
+
+    } catch (error) {
+
+      console.warn(
+        `${sheetName} attempt ${attempt} failed:`,
+        error.message
+      );
+
+
+      if (
+        attempt === maxAttempts
+      ) {
+
+        throw new Error(
+          `${sheetName} failed after ${maxAttempts} attempts: ${error.message}`
+        );
+      }
+
+
+      /*
+        Wait longer after each
+        failed attempt.
+      */
+
+      const waitMs =
+        attempt * 3000;
+
+
+      console.log(
+        `Waiting ${waitMs / 1000}s before retrying ${sheetName}...`
+      );
+
+
+      await new Promise(
+        resolve =>
+          setTimeout(
+            resolve,
+            waitMs
+          )
+      );
+    }
   }
-
-
-  const csv =
-    await response.text();
-
-
-  const rows =
-    parseCSV(csv);
-
-
-  const outputPath =
-    path.join(
-      "data",
-      config.file
-    );
-
-
-  fs.writeFileSync(
-    outputPath,
-    JSON.stringify(
-      rows,
-      null,
-      2
-    ),
-    "utf8"
-  );
-
-
-  console.log(
-    `${sheetName}: ${rows.length} rows`
-  );
-
-
-  return rows;
 }
-
-
 /* =========================
    FIND PLAYER ROW
 ========================= */
