@@ -5975,7 +5975,7 @@ const ORG_STATS_HITTER_COLUMNS = {
     "SB",
     "CS",
     "SB%",
-    "SwStr%"
+    "Whiff%"
   ],
 
   more: [
@@ -6011,6 +6011,7 @@ const ORG_STATS_PITCHER_COLUMNS = {
     "K/9",
     "BB/9",
     "K/BB",
+    "Whiff%"
   ],
 
   more: [
