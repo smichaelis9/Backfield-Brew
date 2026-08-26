@@ -3,7 +3,7 @@
   "name": "Eduardo Garcia",
   "archived": false,
   "playerType": "Hitter",
-  "generatedAt": "2026-08-26T14:01:27.303Z",
+  "generatedAt": "2026-08-26T14:55:05.032Z",
   "bio": {
     "Player-ID": "Eduardo-Garcia",
     "MLBAM ID": "682633",
@@ -384,6 +384,23 @@
     }
   ],
   "transactions": [
+    {
+      "Transaction ID": "939478",
+      "Date": "2026-08-26",
+      "Effective Date": "2026-08-26",
+      "MLBAM ID": "682633",
+      "Player": "Eduardo Garcia",
+      "Position": "",
+      "From Team": "",
+      "To Team": "Nashville Sounds",
+      "Level": "MiLB",
+      "Type": "Activated",
+      "Description": "Nashville Sounds activated SS Eduardo Garcia from the 7-day injured list.",
+      "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2026-08",
+      "Imported At": "08/26/2026 09:46:30",
+      "Player ID": "Eduardo-Garcia",
+      "Archived?": ""
+    },
     {
       "Transaction ID": "938114",
       "Date": "2026-08-18",

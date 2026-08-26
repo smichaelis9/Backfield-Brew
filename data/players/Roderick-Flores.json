@@ -3,7 +3,7 @@
   "name": "Roderick Flores",
   "archived": false,
   "playerType": "Hitter",
-  "generatedAt": "2026-08-26T14:01:27.303Z",
+  "generatedAt": "2026-08-26T14:55:05.032Z",
   "bio": {
     "Player-ID": "Roderick-Flores",
     "MLBAM ID": "808228",
@@ -11,7 +11,7 @@
     "Player": "Roderick Flores",
     "Rank": "116",
     "Trending": "",
-    "Position": "SS",
+    "Position": "1B/3B",
     "Level": "ACL",
     "Age": "20.0",
     "OFP": "35",
@@ -94,15 +94,15 @@
   "tools": {
     "Player-ID": "Roderick-Flores",
     "Player": "Roderick Flores",
-    "Last Updated": "N/A",
-    "Hit": "N/A",
-    "Raw Power": "N/A",
-    "Game Power": "N/A",
-    "Bat to Ball": "N/A",
-    "Swing Decisions": "N/A",
-    "Speed": "N/A",
-    "Field": "N/A",
-    "Arm": "N/A"
+    "Last Updated": "8/1/2026",
+    "Hit": "30/45",
+    "Raw Power": "40/45",
+    "Game Power": "30/40",
+    "Bat to Ball": "25/40",
+    "Swing Decisions": "40/55",
+    "Speed": "45/45",
+    "Field": "40/50 (1B)",
+    "Arm": "50/50"
   },
   "stats": {
     "2023": {
