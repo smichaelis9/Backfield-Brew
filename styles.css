@@ -123,7 +123,248 @@ body {
 .dropdown-nav.open .dropdown-content {
   display: block;
 }
+/* =========================
+   PATREON ACCOUNT CONTROL
+========================= */
 
+.patreon-account-control {
+  position: relative;
+  display: inline-block;
+}
+
+
+/* =========================
+   ACCOUNT BUTTON
+========================= */
+
+.patreon-account-button {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+
+  padding: 8px 14px;
+
+  border:
+    1px solid #ffc52f;
+
+  border-radius: 999px;
+
+  background:
+    #1b2a4a;
+
+  color:
+    #ffc52f;
+
+  font-family:
+    inherit;
+
+  font-size: 14px;
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition:
+    all 0.2s ease;
+}
+
+
+.patreon-account-button:hover {
+  background:
+    #ffc52f;
+
+  color:
+    #1b2a4a;
+}
+
+
+/* =========================
+   GREEN AUTH DOT
+========================= */
+
+.patreon-account-dot {
+  width: 8px;
+  height: 8px;
+
+  flex-shrink: 0;
+
+  border-radius: 50%;
+
+  background:
+    #35a853;
+}
+
+
+.patreon-account-arrow {
+  margin-left: 2px;
+
+  font-size: 9px;
+
+  transition:
+    transform 0.2s ease;
+}
+
+
+.patreon-account-control.open
+.patreon-account-arrow {
+  transform:
+    rotate(180deg);
+}
+
+
+/* =========================
+   ACCOUNT MENU
+========================= */
+
+.patreon-account-menu {
+  display: none;
+
+  position: absolute;
+
+  top:
+    calc(100% + 8px);
+
+  right: 0;
+
+  width: 220px;
+
+  overflow: hidden;
+
+  z-index: 10000;
+
+  border:
+    2px solid #ffc52f;
+
+  border-radius: 14px;
+
+  background:
+    #ffffff;
+
+  box-shadow:
+    0 8px 24px
+    rgba(0, 0, 0, 0.18);
+}
+
+
+.patreon-account-control.open
+.patreon-account-menu {
+  display: block;
+}
+
+
+/* =========================
+   STATUS
+========================= */
+
+.patreon-account-status {
+  padding:
+    14px 16px;
+
+  border-bottom:
+    1px solid #e1e4e8;
+
+  text-align: left;
+}
+
+
+.patreon-account-status-label {
+  display: block;
+
+  margin-bottom: 4px;
+
+  color:
+    #777;
+
+  font-size: 11px;
+  font-weight: 700;
+
+  text-transform:
+    uppercase;
+}
+
+
+.patreon-account-status strong {
+  display: block;
+
+  color:
+    #1b2a4a;
+
+  font-size: 14px;
+}
+
+
+/* =========================
+   MENU LINKS
+========================= */
+
+.header-buttons
+.patreon-account-menu-link {
+  display: block;
+
+  padding:
+    11px 16px;
+
+  border: 0;
+  border-radius: 0;
+
+  background:
+    #ffffff;
+
+  color:
+    #1b2a4a;
+
+  text-align: left;
+
+  font-size: 13px;
+  font-weight: 700;
+}
+
+
+.header-buttons
+.patreon-account-menu-link:hover {
+  background:
+    #f2f4f7;
+
+  color:
+    #1b2a4a;
+}
+
+
+.header-buttons
+.patreon-logout-link {
+  border-top:
+    1px solid #e1e4e8;
+
+  color:
+    #a51d2d;
+}
+
+
+.header-buttons
+.patreon-logout-link:hover {
+  background:
+    #fff3f3;
+
+  color:
+    #a51d2d;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (
+  max-width: 700px
+) {
+
+  .patreon-account-menu {
+    right: 50%;
+
+    transform:
+      translateX(50%);
+  }
+
+}
 /* =========================
    CARDS / FILTERS
 ========================= */
