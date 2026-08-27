@@ -66,6 +66,13 @@ const DATA_FILES = {
 let currentPlayerExportData = null;
 
 /* =========================
+   PATREON AUTH
+========================= */
+
+const AUTH_BASE =
+  "https://auth.backfieldbrew.com";
+
+/* =========================
    HELPERS
 ========================= */
 
@@ -1219,6 +1226,296 @@ function renderVideos(videos) {
       </section>
     `);
   }
+}
+/* =========================
+   PATREON ACCOUNT CONTROL
+========================= */
+
+async function setupPatreonAccountControl() {
+
+  const header =
+    document.querySelector(
+      ".header-buttons"
+    );
+
+
+  if (!header) {
+    return;
+  }
+
+
+  /*
+    Prevent duplicate controls if
+    this function ever runs twice.
+  */
+
+  if (
+    document.getElementById(
+      "patreonAccountControl"
+    )
+  ) {
+    return;
+  }
+
+
+  try {
+
+    const response =
+      await fetch(
+        `${AUTH_BASE}/auth/status`,
+        {
+          credentials:
+            "include",
+
+          cache:
+            "no-store"
+        }
+      );
+
+
+    if (!response.ok) {
+      return;
+    }
+
+
+    const auth =
+      await response.json();
+
+
+    if (
+      !auth.authenticated ||
+      !auth.access
+    ) {
+      return;
+    }
+
+
+    const wrapper =
+      document.createElement(
+        "div"
+      );
+
+
+    wrapper.id =
+      "patreonAccountControl";
+
+
+    wrapper.className =
+      "patreon-account-control";
+
+
+    /* =========================
+       ACCOUNT LABEL
+    ========================= */
+
+    let accountLabel =
+      "Patreon Member";
+
+
+    if (auth.admin) {
+
+      accountLabel =
+        "Backfield Brew Admin";
+
+    } else if (
+      Array.isArray(
+        auth.tierTitles
+      ) &&
+      auth.tierTitles.length
+    ) {
+
+      accountLabel =
+        auth.tierTitles[0];
+    }
+
+
+    wrapper.innerHTML = `
+
+      <button
+        type="button"
+        class="patreon-account-button"
+        aria-expanded="false"
+      >
+
+        <span class="patreon-account-dot"></span>
+
+        <span>
+          ${escapeAccountHTML(
+            accountLabel
+          )}
+        </span>
+
+        <span class="patreon-account-arrow">
+          ▼
+        </span>
+
+      </button>
+
+
+      <div
+        class="patreon-account-menu"
+      >
+
+        <div
+          class="patreon-account-status"
+        >
+
+          <span class="patreon-account-status-label">
+            Signed in with Patreon
+          </span>
+
+          <strong>
+            ${escapeAccountHTML(
+              accountLabel
+            )}
+          </strong>
+
+        </div>
+
+
+        <a
+          href="https://www.patreon.com/BackfieldBrew"
+          target="_blank"
+          rel="noopener"
+          class="patreon-account-menu-link"
+        >
+          View Patreon
+        </a>
+
+
+        <a
+          href="${AUTH_BASE}/logout"
+          class="patreon-account-menu-link patreon-logout-link"
+        >
+          Log Out
+        </a>
+
+      </div>
+
+    `;
+
+
+    /*
+      Put account control at the
+      end of the header buttons.
+    */
+
+    header.appendChild(
+      wrapper
+    );
+
+
+    setupPatreonAccountMenu(
+      wrapper
+    );
+
+
+  } catch (error) {
+
+    console.warn(
+      "Patreon account status unavailable:",
+      error
+    );
+  }
+}
+
+
+/* =========================
+   ACCOUNT DROPDOWN
+========================= */
+
+function setupPatreonAccountMenu(
+  wrapper
+) {
+
+  const button =
+    wrapper.querySelector(
+      ".patreon-account-button"
+    );
+
+
+  if (!button) {
+    return;
+  }
+
+
+  button.addEventListener(
+    "click",
+    event => {
+
+      event.stopPropagation();
+
+
+      const isOpen =
+        wrapper.classList.toggle(
+          "open"
+        );
+
+
+      button.setAttribute(
+        "aria-expanded",
+        String(isOpen)
+      );
+    }
+  );
+
+
+  document.addEventListener(
+    "click",
+    event => {
+
+      if (
+        !wrapper.contains(
+          event.target
+        )
+      ) {
+
+        wrapper.classList.remove(
+          "open"
+        );
+
+
+        button.setAttribute(
+          "aria-expanded",
+          "false"
+        );
+      }
+    }
+  );
+}
+
+
+/* =========================
+   SMALL HTML ESCAPER
+========================= */
+
+function escapeAccountHTML(
+  value
+) {
+
+  return String(
+    value ?? ""
+  )
+    .replace(
+      /&/g,
+      "&amp;"
+    )
+    .replace(
+      /</g,
+      "&lt;"
+    )
+    .replace(
+      />/g,
+      "&gt;"
+    )
+    .replace(
+      /"/g,
+      "&quot;"
+    )
+    .replace(
+      /'/g,
+      "&#039;"
+    );
 }
 function handleHeaderButtons() {
   const backBtn = document.getElementById("backToRankings");
@@ -9298,3 +9595,15 @@ function setupMobileDropdown() {
     }
   });
 }
+/* =========================
+   GLOBAL PATREON ACCOUNT
+========================= */
+
+document.addEventListener(
+  "DOMContentLoaded",
+  () => {
+
+    setupPatreonAccountControl();
+
+  }
+);
