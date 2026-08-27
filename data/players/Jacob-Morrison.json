@@ -3,7 +3,7 @@
   "name": "Jacob Morrison",
   "archived": false,
   "playerType": "Pitcher",
-  "generatedAt": "2026-08-27T10:09:30.465Z",
+  "generatedAt": "2026-08-27T15:13:58.425Z",
   "bio": {
     "Player-ID": "Jacob-Morrison",
     "MLBAM ID": "804756",
@@ -214,7 +214,7 @@
       "Player-ID": "Jacob-Morrison",
       "Player": "Jacob Morrison",
       "ERA": "4.76",
-      "FIP": "4.59",
+      "FIP": "4.58",
       "xFIP": "4.84",
       "IP": "51",
       "G": "15",

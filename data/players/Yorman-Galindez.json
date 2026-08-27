@@ -3,7 +3,7 @@
   "name": "Yorman Galindez",
   "archived": false,
   "playerType": "Pitcher",
-  "generatedAt": "2026-08-27T10:09:30.465Z",
+  "generatedAt": "2026-08-27T15:13:58.425Z",
   "bio": {
     "Player-ID": "Yorman-Galindez",
     "MLBAM ID": "800223",
@@ -214,7 +214,7 @@
       "Player-ID": "Yorman-Galindez",
       "Player": "Yorman Galindez",
       "ERA": "6.47",
-      "FIP": "5.28",
+      "FIP": "5.29",
       "xFIP": "5.45",
       "IP": "65.1",
       "G": "24",

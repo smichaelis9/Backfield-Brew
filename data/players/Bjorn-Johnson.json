@@ -3,7 +3,7 @@
   "name": "Bjorn Johnson",
   "archived": false,
   "playerType": "Pitcher",
-  "generatedAt": "2026-08-27T10:09:30.465Z",
+  "generatedAt": "2026-08-27T15:13:58.425Z",
   "bio": {
     "Player-ID": "Bjorn-Johnson",
     "MLBAM ID": "807723",
@@ -215,7 +215,7 @@
       "Player": "Bjorn Johnson",
       "ERA": "6.39",
       "FIP": "5.18",
-      "xFIP": "5.21",
+      "xFIP": "5.22",
       "IP": "31",
       "G": "21",
       "GS": "0",

@@ -3,7 +3,7 @@
   "name": "Jose Nova",
   "archived": false,
   "playerType": "Pitcher",
-  "generatedAt": "2026-08-27T10:09:30.465Z",
+  "generatedAt": "2026-08-27T15:13:58.425Z",
   "bio": {
     "Player-ID": "Jose-Nova",
     "MLBAM ID": "703360",
@@ -215,7 +215,7 @@
       "Player": "Jose Nova",
       "ERA": "14.91",
       "FIP": "8.66",
-      "xFIP": "6.80",
+      "xFIP": "6.81",
       "IP": "22.1",
       "G": "24",
       "GS": "0",

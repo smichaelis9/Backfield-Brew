@@ -3,7 +3,7 @@
   "name": "Bryce Schaum",
   "archived": true,
   "playerType": "Pitcher",
-  "generatedAt": "2026-08-27T10:09:30.465Z",
+  "generatedAt": "2026-08-27T15:13:58.425Z",
   "bio": {
     "Player-ID": "Bryce-Schaum",
     "MLBAM ID": "842295",
@@ -213,7 +213,7 @@
       "Player": "Bryce Schaum",
       "ERA": "7.71",
       "FIP": "7.96",
-      "xFIP": "7.58",
+      "xFIP": "7.57",
       "IP": "11.2",
       "G": "12",
       "GS": "0",

@@ -3,7 +3,7 @@
   "name": "Tyler Renz",
   "archived": false,
   "playerType": "Pitcher",
-  "generatedAt": "2026-08-27T10:09:30.465Z",
+  "generatedAt": "2026-08-27T15:13:58.425Z",
   "bio": {
     "Player-ID": "Tyler-Renz",
     "MLBAM ID": "815868",
@@ -215,7 +215,7 @@
       "Player": "Tyler Renz",
       "ERA": "4.69",
       "FIP": "5.19",
-      "xFIP": "5.46",
+      "xFIP": "5.45",
       "IP": "88.1",
       "G": "23",
       "GS": "14",

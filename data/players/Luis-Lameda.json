@@ -3,7 +3,7 @@
   "name": "Luis Lameda",
   "archived": false,
   "playerType": "Hitter",
-  "generatedAt": "2026-08-27T10:09:30.465Z",
+  "generatedAt": "2026-08-27T15:13:58.425Z",
   "bio": {
     "Player-ID": "Luis-Lameda",
     "MLBAM ID": "808288",
@@ -208,7 +208,7 @@
       "OPS": "0.681",
       "wRC+": "90",
       "BABIP": "0.305",
-      "wOBA": "0.343",
+      "wOBA": "0.342",
       "K%": "20.4%",
       "BB%": "16.8%",
       "SwStr %": "8.7%",

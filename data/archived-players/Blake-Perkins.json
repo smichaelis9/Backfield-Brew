@@ -3,7 +3,7 @@
   "name": "Blake Perkins",
   "archived": true,
   "playerType": "Hitter",
-  "generatedAt": "2026-08-27T10:09:30.465Z",
+  "generatedAt": "2026-08-27T15:13:58.425Z",
   "bio": {
     "Player-ID": "Blake-Perkins",
     "MLBAM ID": "663368",
@@ -206,7 +206,7 @@
       "OPS": "0.586",
       "wRC+": "76",
       "BABIP": "0.353",
-      "wOBA": "0.302",
+      "wOBA": "0.301",
       "K%": "30.3%",
       "BB%": "18.2%",
       "SwStr %": "9.8%",

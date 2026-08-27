@@ -3,7 +3,7 @@
   "name": "Brandon Sproat",
   "archived": true,
   "playerType": "Pitcher",
-  "generatedAt": "2026-08-27T10:09:30.465Z",
+  "generatedAt": "2026-08-27T15:13:58.425Z",
   "bio": {
     "Player-ID": "Brandon-Sproat",
     "MLBAM ID": "687075",
@@ -212,7 +212,7 @@
       "Player-ID": "Brandon-Sproat",
       "Player": "Brandon Sproat",
       "ERA": "4.50",
-      "FIP": "3.35",
+      "FIP": "3.34",
       "xFIP": "3.17",
       "IP": "12",
       "G": "3",

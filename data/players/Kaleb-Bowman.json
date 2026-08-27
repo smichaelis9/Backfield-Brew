@@ -3,7 +3,7 @@
   "name": "Kaleb Bowman",
   "archived": false,
   "playerType": "Pitcher",
-  "generatedAt": "2026-08-27T10:09:30.465Z",
+  "generatedAt": "2026-08-27T15:13:58.425Z",
   "bio": {
     "Player-ID": "Kaleb-Bowman",
     "MLBAM ID": "689337",
@@ -214,7 +214,7 @@
       "Player-ID": "Kaleb-Bowman",
       "Player": "Kaleb Bowman",
       "ERA": "5.44",
-      "FIP": "5.74",
+      "FIP": "5.73",
       "xFIP": "6.50",
       "IP": "46.1",
       "G": "29",

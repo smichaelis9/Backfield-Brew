@@ -3,7 +3,7 @@
   "name": "Brady Ebel",
   "archived": false,
   "playerType": "Hitter",
-  "generatedAt": "2026-08-27T10:09:30.465Z",
+  "generatedAt": "2026-08-27T15:13:58.425Z",
   "bio": {
     "Player-ID": "Brady-Ebel",
     "MLBAM ID": "815816",
@@ -206,7 +206,7 @@
       "OBP": "0.410",
       "SLG": "0.412",
       "OPS": "0.822",
-      "wRC+": "123",
+      "wRC+": "124",
       "BABIP": "0.321",
       "wOBA": "0.398",
       "K%": "21.0%",

@@ -3,7 +3,7 @@
   "name": "Kegnnalex Seijas",
   "archived": false,
   "playerType": "Hitter",
-  "generatedAt": "2026-08-27T10:09:30.465Z",
+  "generatedAt": "2026-08-27T15:13:58.425Z",
   "bio": {
     "Player-ID": "Kegnnalex-Seijas",
     "MLBAM ID": "815767",
@@ -385,6 +385,23 @@
     }
   ],
   "transactions": [
+    {
+      "Transaction ID": "939615",
+      "Date": "2026-08-25",
+      "Effective Date": "2026-08-25",
+      "MLBAM ID": "815767",
+      "Player": "Kegnnalex Seijas",
+      "Position": "",
+      "From Team": "",
+      "To Team": "DSL Brewers Gold",
+      "Level": "MiLB",
+      "Type": "Released",
+      "Description": "DSL Brewers Gold released C Kegnnalex Seijas.",
+      "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2026-08",
+      "Imported At": "08/27/2026 09:46:36",
+      "Player ID": "Kegnnalex-Seijas",
+      "Archived?": ""
+    },
     {
       "Transaction ID": "913622",
       "Date": "2026-05-30",

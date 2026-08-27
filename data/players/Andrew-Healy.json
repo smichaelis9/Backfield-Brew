@@ -3,7 +3,7 @@
   "name": "Andrew Healy",
   "archived": false,
   "playerType": "Pitcher",
-  "generatedAt": "2026-08-27T10:09:30.465Z",
+  "generatedAt": "2026-08-27T15:13:58.425Z",
   "bio": {
     "Player-ID": "Andrew-Healy",
     "MLBAM ID": "804986",
@@ -214,7 +214,7 @@
       "Player-ID": "Andrew-Healy",
       "Player": "Andrew Healy",
       "ERA": "4.46",
-      "FIP": "3.99",
+      "FIP": "3.98",
       "xFIP": "4.32",
       "IP": "72.2",
       "G": "23",

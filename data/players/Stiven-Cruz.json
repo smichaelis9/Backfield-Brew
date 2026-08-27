@@ -3,7 +3,7 @@
   "name": "Stiven Cruz",
   "archived": false,
   "playerType": "Pitcher",
-  "generatedAt": "2026-08-27T10:09:30.465Z",
+  "generatedAt": "2026-08-27T15:13:58.425Z",
   "bio": {
     "Player-ID": "Stiven-Cruz",
     "MLBAM ID": "691602",
@@ -214,7 +214,7 @@
       "Player-ID": "Stiven-Cruz",
       "Player": "Stiven Cruz",
       "ERA": "5.56",
-      "FIP": "4.60",
+      "FIP": "4.61",
       "xFIP": "4.01",
       "IP": "55",
       "G": "32",

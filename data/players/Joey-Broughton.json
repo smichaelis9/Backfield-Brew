@@ -3,7 +3,7 @@
   "name": "Joey Broughton",
   "archived": false,
   "playerType": "Pitcher",
-  "generatedAt": "2026-08-27T10:09:30.465Z",
+  "generatedAt": "2026-08-27T15:13:58.425Z",
   "bio": {
     "Player-ID": "Joey-Broughton",
     "MLBAM ID": "820833",
@@ -215,7 +215,7 @@
       "Player": "Joey Broughton",
       "ERA": "5.14",
       "FIP": "5.31",
-      "xFIP": "5.52",
+      "xFIP": "5.51",
       "IP": "56",
       "G": "18",
       "GS": "11",
