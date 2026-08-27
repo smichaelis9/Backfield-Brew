@@ -114,6 +114,12 @@
     "archived": false
   },
   {
+    "id": "Brailyn-Antunez",
+    "name": "Brailyn Antunez",
+    "file": "Brailyn-Antunez.json",
+    "archived": false
+  },
+  {
     "id": "Ricki-Moneys",
     "name": "Ricki Moneys",
     "file": "Ricki-Moneys.json",
@@ -135,12 +141,6 @@
     "id": "Jayden-Dubanewicz",
     "name": "Jayden Dubanewicz",
     "file": "Jayden-Dubanewicz.json",
-    "archived": false
-  },
-  {
-    "id": "Brailyn-Antunez",
-    "name": "Brailyn Antunez",
-    "file": "Brailyn-Antunez.json",
     "archived": false
   },
   {

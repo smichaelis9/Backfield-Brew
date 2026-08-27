@@ -182,6 +182,19 @@
     "Arm": "55/55"
   },
   {
+    "Player-ID": "Brailyn-Antunez",
+    "Player": "Brailyn Antunez",
+    "Last Updated": "3/24/2026",
+    "Hit": "30/45",
+    "Raw Power": "50/60",
+    "Game Power": "40/55",
+    "Bat to Ball": "30/45",
+    "Swing Decisions": "40/55",
+    "Speed": "60/60",
+    "Field": "30/55 (CF)",
+    "Arm": "45/50"
+  },
+  {
     "Player-ID": "Ricki-Moneys",
     "Player": "Ricki Moneys",
     "Last Updated": "1/15/2026",
@@ -206,19 +219,6 @@
     "Speed": "50/50",
     "Field": "35/50 (SS)",
     "Arm": "55/55"
-  },
-  {
-    "Player-ID": "Brailyn-Antunez",
-    "Player": "Brailyn Antunez",
-    "Last Updated": "3/24/2026",
-    "Hit": "30/45",
-    "Raw Power": "50/60",
-    "Game Power": "40/55",
-    "Bat to Ball": "30/45",
-    "Swing Decisions": "40/55",
-    "Speed": "60/60",
-    "Field": "30/55 (CF)",
-    "Arm": "45/50"
   },
   {
     "Player-ID": "Handelfry-Encarnacion",
