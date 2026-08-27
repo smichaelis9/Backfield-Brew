@@ -1,21 +1,20 @@
 {
   "id": "Merwin-Manrique",
   "name": "Merwin Manrique",
-  "archived": false,
+  "archived": true,
   "playerType": "Pitcher",
-  "generatedAt": "2026-08-27T15:13:58.425Z",
+  "generatedAt": "2026-08-27T19:57:52.423Z",
   "bio": {
     "Player-ID": "Merwin-Manrique",
     "MLBAM ID": "829882",
     "Player Type": "Pitcher",
     "Player": "Merwin Manrique",
-    "Rank": "228",
-    "Trending": "",
+    "Rank": "",
+    "Archive Reason": "Released on 8/25/2026",
     "Position": "RHP",
     "Level": "DSL",
-    "Age": "19.1",
+    "Age": "",
     "OFP": "25",
-    "OFP Updated": "",
     "Risk": "Extreme",
     "School or Country": "Country",
     "School/Country": "Venezuela",
@@ -29,16 +28,16 @@
     "Bat / Throw": "Right/Right",
     "Birthday": "7/13/2007",
     "Rule 5 Eligible": "",
-    "Picture": "https://i.ibb.co/QFrRd2GN/image.png",
+    "Picture": "",
     "Picture Source": "Instagram",
     "Notes Updated": "N/A",
     "Scouting Notes": "N/A",
-    "Notes Updated 2": "N/A",
-    "Scouting Notes 2": "N/A",
-    "Notes Updated 3": "N/A",
-    "Scouting Notes 3": "N/A",
-    "Notes Updated 4": "N/A",
-    "Scouting Notes 4": "N/A",
+    "Notes Updated 2": "",
+    "Scouting Notes 2": "",
+    "Notes Updated 3": "",
+    "Scouting Notes 3": "",
+    "Notes Updated 4": "",
+    "Scouting Notes 4": "",
     "Full Report Updated": "",
     "Physical Description Report": "",
     "Hit / Mechanics Report": "",
@@ -88,8 +87,7 @@
     "Instagram": "Instagram",
     "Instagram Link": "https://www.instagram.com/merwin_manrique/",
     "Other Social": "",
-    "Other Social Link": "",
-    "Previous Rank": "228"
+    "Other Social Link": ""
   },
   "tools": {
     "Player-ID": "Merwin-Manrique",
@@ -144,7 +142,7 @@
       "FB%": "",
       "IFFB%": "",
       "HR/FB": "",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     "2024": {
       "Player-ID": "Merwin-Manrique",
@@ -176,7 +174,7 @@
       "FB%": "",
       "IFFB%": "",
       "HR/FB": "",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     "2025": {
       "Player-ID": "Merwin-Manrique",
@@ -208,7 +206,7 @@
       "FB%": "40.0%",
       "IFFB%": "30.0%",
       "HR/FB": "0.20",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     "2026": {
       "Player-ID": "Merwin-Manrique",
@@ -240,14 +238,14 @@
       "FB%": "35.0%",
       "IFFB%": "14.3%",
       "HR/FB": "0.29",
-      "Archived?": ""
+      "Archived?": "yes"
     }
   },
   "gamedayWhiff": null,
   "videos": [
     {
       "Player-ID": "Merwin-Manrique",
-      "Player Type": "Pitcher",
+      "Player Type": "",
       "Player": "Merwin Manrique",
       "Video 1": "",
       "Video Link 1": "",
@@ -417,7 +415,7 @@
       "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2026-08",
       "Imported At": "08/27/2026 09:46:36",
       "Player ID": "Merwin-Manrique",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     {
       "Transaction ID": "845910",
@@ -434,7 +432,7 @@
       "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2025-06",
       "Imported At": "08/13/2026 10:20:26",
       "Player ID": "Merwin-Manrique",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     {
       "Transaction ID": "842837",
@@ -451,7 +449,7 @@
       "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2025-06",
       "Imported At": "08/13/2026 10:20:26",
       "Player ID": "Merwin-Manrique",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     {
       "Transaction ID": "842836",
@@ -468,7 +466,7 @@
       "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2025-04",
       "Imported At": "08/13/2026 10:20:12",
       "Player ID": "Merwin-Manrique",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     {
       "Transaction ID": "831909",
@@ -485,7 +483,7 @@
       "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2025-04",
       "Imported At": "08/13/2026 10:20:12",
       "Player ID": "Merwin-Manrique",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     {
       "Transaction ID": "810716",
@@ -502,7 +500,7 @@
       "Source URL": "https://www.mlb.com/brewers/roster/transactions/2025/01",
       "Imported At": "08/13/2026 09:59:16",
       "Player ID": "Merwin-Manrique",
-      "Archived?": ""
+      "Archived?": "yes"
     }
   ]
 }

@@ -1,5 +1,107 @@
 [
   {
+    "Transaction ID": "939673",
+    "Date": "2026-08-27",
+    "Effective Date": "2026-08-27",
+    "MLBAM ID": "687521",
+    "Player": "Eric Brown Jr.",
+    "Position": "",
+    "From Team": "",
+    "To Team": "Nashville Sounds",
+    "Level": "MiLB",
+    "Type": "Injured List",
+    "Description": "Nashville Sounds placed SS Eric Brown Jr. on the 7-day injured list.",
+    "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2026-08",
+    "Imported At": "08/27/2026 14:46:32",
+    "Player ID": "Eric-Brown",
+    "Archived?": ""
+  },
+  {
+    "Transaction ID": "939647",
+    "Date": "2026-08-27",
+    "Effective Date": "2026-08-27",
+    "MLBAM ID": "694206",
+    "Player": "Daniel Guilarte",
+    "Position": "",
+    "From Team": "Biloxi Shuckers",
+    "To Team": "Nashville Sounds",
+    "Level": "MiLB",
+    "Type": "Signed",
+    "Description": "SS Daniel Guilarte assigned to Nashville Sounds from Biloxi Shuckers.",
+    "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2026-08",
+    "Imported At": "08/27/2026 13:46:34",
+    "Player ID": "Daniel-Guilarte",
+    "Archived?": ""
+  },
+  {
+    "Transaction ID": "939646",
+    "Date": "2026-08-27",
+    "Effective Date": "2026-08-27",
+    "MLBAM ID": "805807",
+    "Player": "Josh Knoth",
+    "Position": "",
+    "From Team": "",
+    "To Team": "Biloxi Shuckers",
+    "Level": "MiLB",
+    "Type": "Activated",
+    "Description": "Biloxi Shuckers activated RHP Josh Knoth.",
+    "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2026-08",
+    "Imported At": "08/27/2026 13:46:34",
+    "Player ID": "Josh-Knoth",
+    "Archived?": ""
+  },
+  {
+    "Transaction ID": "939645",
+    "Date": "2026-08-27",
+    "Effective Date": "2026-08-27",
+    "MLBAM ID": "805807",
+    "Player": "Josh Knoth",
+    "Position": "",
+    "From Team": "Wisconsin Timber Rattlers",
+    "To Team": "Biloxi Shuckers",
+    "Level": "MiLB",
+    "Type": "Signed",
+    "Description": "RHP Josh Knoth assigned to Biloxi Shuckers from Wisconsin Timber Rattlers.",
+    "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2026-08",
+    "Imported At": "08/27/2026 13:46:34",
+    "Player ID": "Josh-Knoth",
+    "Archived?": ""
+  },
+  {
+    "Transaction ID": "939644",
+    "Date": "2026-08-26",
+    "Effective Date": "2026-08-26",
+    "MLBAM ID": "815816",
+    "Player": "Brady Ebel",
+    "Position": "",
+    "From Team": "",
+    "To Team": "Wisconsin Timber Rattlers",
+    "Level": "MiLB",
+    "Type": "Injured List",
+    "Description": "Wisconsin Timber Rattlers placed SS Brady Ebel on the 7-day injured list.",
+    "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2026-08",
+    "Imported At": "08/27/2026 13:46:34",
+    "Player ID": "Brady-Ebel",
+    "Archived?": ""
+  },
+  {
+    "Transaction ID": "939635",
+    "Date": "2026-08-26",
+    "Effective Date": "2026-08-26",
+    "MLBAM ID": "820902",
+    "Player": "Carlos Carra",
+    "Position": "",
+    "From Team": "",
+    "To Team": "Wilson Warbirds",
+    "Level": "MiLB",
+    "Type": "Injured List",
+    "Description": "Wilson Warbirds placed RHP Carlos Carra on the 7-day injured list.",
+    "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2026-08",
+    "Imported At": "08/27/2026 11:46:34",
+    "Player ID": "Carlos-Carra",
+    "Archived?": ""
+  },
+  {
     "Transaction ID": "939478",
     "Date": "2026-08-26",
     "Effective Date": "2026-08-26",
@@ -31,7 +133,7 @@
     "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2026-08",
     "Imported At": "08/27/2026 09:46:36",
     "Player ID": "Kegnnalex-Seijas",
-    "Archived?": ""
+    "Archived?": "yes"
   },
   {
     "Transaction ID": "939614",
@@ -48,7 +150,7 @@
     "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2026-08",
     "Imported At": "08/27/2026 09:46:36",
     "Player ID": "Merwin-Manrique",
-    "Archived?": ""
+    "Archived?": "yes"
   },
   {
     "Transaction ID": "939477",
@@ -1509,7 +1611,7 @@
     "Description": "Wilson Warbirds released RHP Bryce Schaum.",
     "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2026-08",
     "Imported At": "08/13/2026 10:22:09",
-    "Player ID": "Bryce-Schaum",
+    "Player ID": "",
     "Archived?": "yes"
   },
   {
@@ -7391,7 +7493,7 @@
     "Description": "RHP Bryce Schaum assigned to Wilson Warbirds from ACL Brewers.",
     "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2026-06",
     "Imported At": "08/13/2026 10:21:59",
-    "Player ID": "Bryce-Schaum",
+    "Player ID": "",
     "Archived?": "yes"
   },
   {
@@ -8769,7 +8871,7 @@
     "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2026-05",
     "Imported At": "08/13/2026 10:21:53",
     "Player ID": "Kegnnalex-Seijas",
-    "Archived?": ""
+    "Archived?": "yes"
   },
   {
     "Transaction ID": "913620",
@@ -9108,7 +9210,7 @@
     "Description": "RHP Bryce Schaum assigned to ACL Brewers.",
     "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2026-05",
     "Imported At": "08/13/2026 10:21:53",
-    "Player ID": "Bryce-Schaum",
+    "Player ID": "",
     "Archived?": "yes"
   },
   {
@@ -9125,7 +9227,7 @@
     "Description": "Milwaukee Brewers signed free agent RHP Bryce Schaum to a minor league contract.",
     "Source URL": "https://www.mlb.com/brewers/roster/transactions/2026/05",
     "Imported At": "08/13/2026 10:00:33",
-    "Player ID": "Bryce-Schaum",
+    "Player ID": "",
     "Archived?": "yes"
   },
   {
@@ -32433,7 +32535,7 @@
     "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2025-06",
     "Imported At": "08/13/2026 10:20:26",
     "Player ID": "Merwin-Manrique",
-    "Archived?": ""
+    "Archived?": "yes"
   },
   {
     "Transaction ID": "846079",
@@ -33232,7 +33334,7 @@
     "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2025-06",
     "Imported At": "08/13/2026 10:20:26",
     "Player ID": "Kegnnalex-Seijas",
-    "Archived?": ""
+    "Archived?": "yes"
   },
   {
     "Transaction ID": "842861",
@@ -33487,7 +33589,7 @@
     "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2025-06",
     "Imported At": "08/13/2026 10:20:26",
     "Player ID": "Merwin-Manrique",
-    "Archived?": ""
+    "Archived?": "yes"
   },
   {
     "Transaction ID": "842835",
@@ -37414,7 +37516,7 @@
     "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2025-04",
     "Imported At": "08/13/2026 10:20:12",
     "Player ID": "Merwin-Manrique",
-    "Archived?": ""
+    "Archived?": "yes"
   },
   {
     "Transaction ID": "831909",
@@ -37431,7 +37533,7 @@
     "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2025-04",
     "Imported At": "08/13/2026 10:20:12",
     "Player ID": "Merwin-Manrique",
-    "Archived?": ""
+    "Archived?": "yes"
   },
   {
     "Transaction ID": "831794",
@@ -41425,7 +41527,7 @@
     "Description": "Biloxi Shuckers activated SS Casey Martin.",
     "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2025-03",
     "Imported At": "08/13/2026 10:20:06",
-    "Player ID": "Casey-Martin",
+    "Player ID": "",
     "Archived?": "yes"
   },
   {
@@ -42003,7 +42105,7 @@
     "Description": "SS Casey Martin roster status changed by Milwaukee Brewers.",
     "Source URL": "https://www.mlb.com/brewers/roster/transactions/2025/03",
     "Imported At": "08/13/2026 09:59:34",
-    "Player ID": "Casey-Martin",
+    "Player ID": "",
     "Archived?": "yes"
   },
   {
@@ -42020,7 +42122,7 @@
     "Description": "SS Casey Martin assigned to Milwaukee Brewers.",
     "Source URL": "https://www.mlb.com/brewers/roster/transactions/2025/03",
     "Imported At": "08/13/2026 09:59:34",
-    "Player ID": "Casey-Martin",
+    "Player ID": "",
     "Archived?": "yes"
   },
   {
@@ -44962,7 +45064,7 @@
     "Source URL": "https://www.mlb.com/brewers/roster/transactions/2025/01",
     "Imported At": "08/13/2026 09:59:16",
     "Player ID": "Merwin-Manrique",
-    "Archived?": ""
+    "Archived?": "yes"
   },
   {
     "Transaction ID": "810710",
@@ -51456,7 +51558,7 @@
     "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2024-08",
     "Imported At": "08/13/2026 10:19:16",
     "Player ID": "Kegnnalex-Seijas",
-    "Archived?": ""
+    "Archived?": "yes"
   },
   {
     "Transaction ID": "793780",
@@ -51796,7 +51898,7 @@
     "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2024-08",
     "Imported At": "08/13/2026 10:19:16",
     "Player ID": "Kegnnalex-Seijas",
-    "Archived?": ""
+    "Archived?": "yes"
   },
   {
     "Transaction ID": "792657",
@@ -56283,7 +56385,7 @@
     "Description": "Biloxi Shuckers activated SS Casey Martin.",
     "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2024-06",
     "Imported At": "08/13/2026 10:19:02",
-    "Player ID": "Casey-Martin",
+    "Player ID": "",
     "Archived?": "yes"
   },
   {
@@ -56572,7 +56674,7 @@
     "Description": "SS Casey Martin assigned to Biloxi Shuckers.",
     "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2024-06",
     "Imported At": "08/13/2026 10:19:02",
-    "Player ID": "Casey-Martin",
+    "Player ID": "",
     "Archived?": "yes"
   },
   {
@@ -56589,7 +56691,7 @@
     "Description": "Philadelphia Phillies traded SS Casey Martin to Milwaukee Brewers.",
     "Source URL": "https://www.mlb.com/brewers/roster/transactions/2024/06",
     "Imported At": "08/13/2026 09:58:50",
-    "Player ID": "Casey-Martin",
+    "Player ID": "",
     "Archived?": "yes"
   },
   {
@@ -58137,7 +58239,7 @@
     "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2024-06",
     "Imported At": "08/13/2026 10:19:02",
     "Player ID": "Kegnnalex-Seijas",
-    "Archived?": ""
+    "Archived?": "yes"
   },
   {
     "Transaction ID": "776710",
@@ -76990,7 +77092,7 @@
     "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2023-08",
     "Imported At": "08/13/2026 10:17:52",
     "Player ID": "Kegnnalex-Seijas",
-    "Archived?": ""
+    "Archived?": "yes"
   },
   {
     "Transaction ID": "716936",
@@ -77398,7 +77500,7 @@
     "Source URL": "https://www.mlb.com/brewers/roster/transactions/2023/07",
     "Imported At": "08/13/2026 09:58:09",
     "Player ID": "Kegnnalex-Seijas",
-    "Archived?": ""
+    "Archived?": "yes"
   },
   {
     "Transaction ID": "716934",

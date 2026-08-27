@@ -3,7 +3,7 @@
   "name": "Luke Adams",
   "archived": false,
   "playerType": "Hitter",
-  "generatedAt": "2026-08-27T15:13:58.425Z",
+  "generatedAt": "2026-08-27T19:57:52.423Z",
   "bio": {
     "Player-ID": "Luke-Adams",
     "MLBAM ID": "702726",
@@ -228,12 +228,12 @@
   },
   "gamedayWhiff": {
     "mlbamID": "702726",
-    "swings": 377,
-    "whiffs": 73,
-    "contacts": 304,
+    "swings": 381,
+    "whiffs": 74,
+    "contacts": 307,
     "whiffPct": 19.4,
     "contactPct": 80.6,
-    "games": 63,
+    "games": 64,
     "levels": [
       "AAA"
     ]

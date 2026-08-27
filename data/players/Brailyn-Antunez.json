@@ -3,7 +3,7 @@
   "name": "Brailyn Antunez",
   "archived": false,
   "playerType": "Hitter",
-  "generatedAt": "2026-08-27T15:13:58.425Z",
+  "generatedAt": "2026-08-27T19:57:52.423Z",
   "bio": {
     "Player-ID": "Brailyn-Antunez",
     "MLBAM ID": "829073",
@@ -212,7 +212,7 @@
       "K%": "28.5%",
       "BB%": "11.2%",
       "SwStr %": "18.1%",
-      "Whiff%": "29.9%",
+      "Whiff%": "30.1%",
       "Pull %": "42.2%",
       "Cent %": "32.8%",
       "Oppo %": "25.0%",
@@ -228,12 +228,12 @@
   },
   "gamedayWhiff": {
     "mlbamID": "829073",
-    "swings": 201,
-    "whiffs": 60,
-    "contacts": 141,
-    "whiffPct": 29.9,
-    "contactPct": 70.1,
-    "games": 24,
+    "swings": 206,
+    "whiffs": 62,
+    "contacts": 144,
+    "whiffPct": 30.1,
+    "contactPct": 69.9,
+    "games": 25,
     "levels": [
       "A"
     ]

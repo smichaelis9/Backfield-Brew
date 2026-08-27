@@ -1,21 +1,20 @@
 {
   "id": "Kegnnalex-Seijas",
   "name": "Kegnnalex Seijas",
-  "archived": false,
+  "archived": true,
   "playerType": "Hitter",
-  "generatedAt": "2026-08-27T15:13:58.425Z",
+  "generatedAt": "2026-08-27T19:57:52.423Z",
   "bio": {
     "Player-ID": "Kegnnalex-Seijas",
     "MLBAM ID": "815767",
     "Player Type": "Hitter",
     "Player": "Kegnnalex Seijas",
-    "Rank": "232",
-    "Trending": "",
-    "Position": "C",
-    "Level": "DSL",
-    "Age": "20.8",
+    "Rank": "",
+    "Archive Reason": "Released on 8/25/2026",
+    "Position": "",
+    "Level": "",
+    "Age": "",
     "OFP": "25",
-    "OFP Updated": "",
     "Risk": "Extreme",
     "School or Country": "Country",
     "School/Country": "Venezuela",
@@ -29,16 +28,16 @@
     "Bat / Throw": "Right/Right",
     "Birthday": "11/5/2005",
     "Rule 5 Eligible": "",
-    "Picture": "https://i.ibb.co/BH46J6Kg/image.png",
+    "Picture": "",
     "Picture Source": "Instagram",
     "Notes Updated": "N/A",
     "Scouting Notes": "N/A",
-    "Notes Updated 2": "N/A",
-    "Scouting Notes 2": "N/A",
-    "Notes Updated 3": "N/A",
-    "Scouting Notes 3": "N/A",
-    "Notes Updated 4": "N/A",
-    "Scouting Notes 4": "N/A",
+    "Notes Updated 2": "",
+    "Scouting Notes 2": "",
+    "Notes Updated 3": "",
+    "Scouting Notes 3": "",
+    "Notes Updated 4": "",
+    "Scouting Notes 4": "",
     "Full Report Updated": "",
     "Physical Description Report": "",
     "Hit / Mechanics Report": "",
@@ -88,8 +87,7 @@
     "Instagram": "Instagram",
     "Instagram Link": "https://www.instagram.com/kegnnalexseijas/",
     "Other Social": "",
-    "Other Social Link": "",
-    "Previous Rank": "232"
+    "Other Social Link": ""
   },
   "tools": {
     "Player-ID": "Kegnnalex-Seijas",
@@ -133,37 +131,37 @@
       "SB": "",
       "CS": "",
       "SB%": "",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     "2024": {
       "Player-ID": "Kegnnalex-Seijas",
       "Player": "Kegnnalex Seijas",
-      "PA": "36",
-      "H": "5",
-      "2B": "1",
-      "3B": "0",
-      "HR": "0",
-      "OBP": "0.333",
-      "SLG": "0.222",
-      "OPS": "0.556",
-      "wRC+": "69",
-      "BABIP": "0.185",
-      "wOBA": "0.308",
-      "K%": "5.6%",
-      "BB%": "19.4%",
-      "SwStr %": "7.7%",
+      "PA": "",
+      "H": "",
+      "2B": "",
+      "3B": "",
+      "HR": "",
+      "OBP": "",
+      "SLG": "",
+      "OPS": "",
+      "wRC+": "",
+      "BABIP": "",
+      "wOBA": "",
+      "K%": "",
+      "BB%": "",
+      "SwStr %": "",
       "Whiff%": "",
-      "Pull %": "40.7%",
-      "Cent %": "7.4%",
-      "Oppo %": "51.9%",
-      "LD%": "8.0%",
-      "GB%": "48.0%",
-      "FB%": "44.0%",
-      "IFFB %": "9.1%",
-      "SB": "1",
-      "CS": "0",
-      "SB%": "100.0%",
-      "Archived?": ""
+      "Pull %": "",
+      "Cent %": "",
+      "Oppo %": "",
+      "LD%": "",
+      "GB%": "",
+      "FB%": "",
+      "IFFB %": "",
+      "SB": "",
+      "CS": "",
+      "SB%": "",
+      "Archived?": "yes"
     },
     "2025": {
       "Player-ID": "Kegnnalex-Seijas",
@@ -193,7 +191,7 @@
       "SB": "2",
       "CS": "0",
       "SB%": "100.0%",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     "2026": {
       "Player-ID": "Kegnnalex-Seijas",
@@ -223,14 +221,14 @@
       "SB": "0",
       "CS": "0",
       "SB%": "",
-      "Archived?": ""
+      "Archived?": "yes"
     }
   },
   "gamedayWhiff": null,
   "videos": [
     {
-      "Player-ID": "Kegnnalex-Seijas",
-      "Player Type": "Hitter",
+      "Player-ID": "",
+      "Player Type": "",
       "Player": "Kegnnalex Seijas",
       "Video 1": "",
       "Video Link 1": "",
@@ -400,7 +398,7 @@
       "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2026-08",
       "Imported At": "08/27/2026 09:46:36",
       "Player ID": "Kegnnalex-Seijas",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     {
       "Transaction ID": "913622",
@@ -417,7 +415,7 @@
       "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2026-05",
       "Imported At": "08/13/2026 10:21:53",
       "Player ID": "Kegnnalex-Seijas",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     {
       "Transaction ID": "842862",
@@ -434,7 +432,7 @@
       "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2025-06",
       "Imported At": "08/13/2026 10:20:26",
       "Player ID": "Kegnnalex-Seijas",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     {
       "Transaction ID": "793822",
@@ -451,7 +449,7 @@
       "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2024-08",
       "Imported At": "08/13/2026 10:19:16",
       "Player ID": "Kegnnalex-Seijas",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     {
       "Transaction ID": "792670",
@@ -468,7 +466,7 @@
       "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2024-08",
       "Imported At": "08/13/2026 10:19:16",
       "Player ID": "Kegnnalex-Seijas",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     {
       "Transaction ID": "776711",
@@ -485,7 +483,7 @@
       "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2024-06",
       "Imported At": "08/13/2026 10:19:02",
       "Player ID": "Kegnnalex-Seijas",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     {
       "Transaction ID": "716938",
@@ -502,7 +500,7 @@
       "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2023-08",
       "Imported At": "08/13/2026 10:17:52",
       "Player ID": "Kegnnalex-Seijas",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     {
       "Transaction ID": "716937",
@@ -519,7 +517,7 @@
       "Source URL": "https://www.mlb.com/brewers/roster/transactions/2023/07",
       "Imported At": "08/13/2026 09:58:09",
       "Player ID": "Kegnnalex-Seijas",
-      "Archived?": ""
+      "Archived?": "yes"
     }
   ]
 }

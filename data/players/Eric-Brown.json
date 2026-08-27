@@ -3,7 +3,7 @@
   "name": "Eric Brown Jr.",
   "archived": false,
   "playerType": "Hitter",
-  "generatedAt": "2026-08-27T15:13:58.425Z",
+  "generatedAt": "2026-08-27T19:57:52.423Z",
   "bio": {
     "Player-ID": "Eric-Brown",
     "MLBAM ID": "687521",
@@ -12,7 +12,7 @@
     "Rank": "144",
     "Trending": "",
     "Position": "SS",
-    "Level": "AAA",
+    "Level": "IL",
     "Age": "25.7",
     "OFP": "30+",
     "OFP Updated": "",
@@ -228,12 +228,12 @@
   },
   "gamedayWhiff": {
     "mlbamID": "687521",
-    "swings": 405,
+    "swings": 406,
     "whiffs": 101,
-    "contacts": 304,
+    "contacts": 305,
     "whiffPct": 24.9,
     "contactPct": 75.1,
-    "games": 67,
+    "games": 68,
     "levels": [
       "AA",
       "AAA"
@@ -397,6 +397,23 @@
     }
   ],
   "transactions": [
+    {
+      "Transaction ID": "939673",
+      "Date": "2026-08-27",
+      "Effective Date": "2026-08-27",
+      "MLBAM ID": "687521",
+      "Player": "Eric Brown Jr.",
+      "Position": "",
+      "From Team": "",
+      "To Team": "Nashville Sounds",
+      "Level": "MiLB",
+      "Type": "Injured List",
+      "Description": "Nashville Sounds placed SS Eric Brown Jr. on the 7-day injured list.",
+      "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2026-08",
+      "Imported At": "08/27/2026 14:46:32",
+      "Player ID": "Eric-Brown",
+      "Archived?": ""
+    },
     {
       "Transaction ID": "935543",
       "Date": "2026-08-05",

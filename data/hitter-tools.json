@@ -1261,19 +1261,6 @@
     "Arm": "55/55"
   },
   {
-    "Player-ID": "Kegnnalex-Seijas",
-    "Player": "Kegnnalex Seijas",
-    "Last Updated": "8/2/2025",
-    "Hit": "25/40",
-    "Raw Power": "40/45",
-    "Game Power": "25/35",
-    "Bat to Ball": "35/45",
-    "Swing Decisions": "35/45",
-    "Speed": "35/35",
-    "Field": "40/50",
-    "Arm": "50/50"
-  },
-  {
     "Player-ID": "Angel-Gonzalez",
     "Player": "Angel Gonzalez",
     "Last Updated": "N/A",
@@ -2962,6 +2949,19 @@
     "Speed": "50/50",
     "Field": "40\n40/45 (OF)\n40 (IF)",
     "Arm": "45/45"
+  },
+  {
+    "Player-ID": "Kegnnalex-Seijas",
+    "Player": "Kegnnalex Seijas",
+    "Last Updated": "8/2/2025",
+    "Hit": "25/40",
+    "Raw Power": "40/45",
+    "Game Power": "25/35",
+    "Bat to Ball": "35/45",
+    "Swing Decisions": "35/45",
+    "Speed": "35/35",
+    "Field": "40/50",
+    "Arm": "50/50"
   },
   {
     "Player-ID": "Joandrew-Pena",
@@ -4704,6 +4704,19 @@
     "Speed": "50/50",
     "Field": "40\n40/45 (OF)\n40 (IF)",
     "Arm": "45/45"
+  },
+  {
+    "Player-ID": "Kegnnalex-Seijas",
+    "Player": "Kegnnalex Seijas",
+    "Last Updated": "8/2/2025",
+    "Hit": "25/40",
+    "Raw Power": "40/45",
+    "Game Power": "25/35",
+    "Bat to Ball": "35/45",
+    "Swing Decisions": "35/45",
+    "Speed": "35/35",
+    "Field": "40/50",
+    "Arm": "50/50"
   },
   {
     "Player-ID": "Joandrew-Pena",

@@ -3,7 +3,7 @@
   "name": "Luis Castillo",
   "archived": false,
   "playerType": "Hitter",
-  "generatedAt": "2026-08-27T15:13:58.425Z",
+  "generatedAt": "2026-08-27T19:57:52.423Z",
   "bio": {
     "Player-ID": "Luis-Castillo",
     "MLBAM ID": "699127",
@@ -212,7 +212,7 @@
       "K%": "24.1%",
       "BB%": "13.4%",
       "SwStr %": "10.8%",
-      "Whiff%": "27.4%",
+      "Whiff%": "27.5%",
       "Pull %": "47.3%",
       "Cent %": "20.4%",
       "Oppo %": "32.2%",
@@ -228,12 +228,12 @@
   },
   "gamedayWhiff": {
     "mlbamID": "699127",
-    "swings": 635,
-    "whiffs": 174,
-    "contacts": 461,
-    "whiffPct": 27.4,
-    "contactPct": 72.6,
-    "games": 97,
+    "swings": 639,
+    "whiffs": 176,
+    "contacts": 463,
+    "whiffPct": 27.5,
+    "contactPct": 72.5,
+    "games": 98,
     "levels": [
       "A+"
     ]

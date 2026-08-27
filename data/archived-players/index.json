@@ -1698,6 +1698,12 @@
     "archived": true
   },
   {
+    "id": "Merwin-Manrique",
+    "name": "Merwin Manrique",
+    "file": "Merwin-Manrique.json",
+    "archived": true
+  },
+  {
     "id": "Enrique-Velasquez",
     "name": "Enrique Velasquez",
     "file": "Enrique-Velasquez.json",
@@ -1725,6 +1731,12 @@
     "id": "Adam-Hall",
     "name": "Adam Hall",
     "file": "Adam-Hall.json",
+    "archived": true
+  },
+  {
+    "id": "Kegnnalex-Seijas",
+    "name": "Kegnnalex Seijas",
+    "file": "Kegnnalex-Seijas.json",
     "archived": true
   },
   {

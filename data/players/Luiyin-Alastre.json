@@ -3,7 +3,7 @@
   "name": "Luiyin Alastre",
   "archived": false,
   "playerType": "Hitter",
-  "generatedAt": "2026-08-27T15:13:58.425Z",
+  "generatedAt": "2026-08-27T19:57:52.423Z",
   "bio": {
     "Player-ID": "Luiyin-Alastre",
     "MLBAM ID": "808236",
@@ -228,12 +228,12 @@
   },
   "gamedayWhiff": {
     "mlbamID": "808236",
-    "swings": 451,
-    "whiffs": 91,
-    "contacts": 360,
+    "swings": 456,
+    "whiffs": 92,
+    "contacts": 364,
     "whiffPct": 20.2,
     "contactPct": 79.8,
-    "games": 78,
+    "games": 79,
     "levels": [
       "A",
       "A+"

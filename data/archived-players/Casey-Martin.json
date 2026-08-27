@@ -3,10 +3,10 @@
   "name": "Casey Martin",
   "archived": true,
   "playerType": "Hitter",
-  "generatedAt": "2026-08-27T15:13:58.425Z",
+  "generatedAt": "2026-08-27T19:57:52.423Z",
   "bio": {
     "Player-ID": "Casey-Martin",
-    "MLBAM ID": "676045",
+    "MLBAM ID": "",
     "Player Type": "Hitter",
     "Player": "Casey Martin",
     "Rank": "",
@@ -397,7 +397,7 @@
       "Description": "Biloxi Shuckers activated SS Casey Martin.",
       "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2025-03",
       "Imported At": "08/13/2026 10:20:06",
-      "Player ID": "Casey-Martin",
+      "Player ID": "",
       "Archived?": "yes"
     },
     {
@@ -414,7 +414,7 @@
       "Description": "SS Casey Martin roster status changed by Milwaukee Brewers.",
       "Source URL": "https://www.mlb.com/brewers/roster/transactions/2025/03",
       "Imported At": "08/13/2026 09:59:34",
-      "Player ID": "Casey-Martin",
+      "Player ID": "",
       "Archived?": "yes"
     },
     {
@@ -431,7 +431,7 @@
       "Description": "SS Casey Martin assigned to Milwaukee Brewers.",
       "Source URL": "https://www.mlb.com/brewers/roster/transactions/2025/03",
       "Imported At": "08/13/2026 09:59:34",
-      "Player ID": "Casey-Martin",
+      "Player ID": "",
       "Archived?": "yes"
     },
     {
@@ -448,7 +448,7 @@
       "Description": "Biloxi Shuckers activated SS Casey Martin.",
       "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2024-06",
       "Imported At": "08/13/2026 10:19:02",
-      "Player ID": "Casey-Martin",
+      "Player ID": "",
       "Archived?": "yes"
     },
     {
@@ -465,7 +465,7 @@
       "Description": "SS Casey Martin assigned to Biloxi Shuckers.",
       "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2024-06",
       "Imported At": "08/13/2026 10:19:02",
-      "Player ID": "Casey-Martin",
+      "Player ID": "",
       "Archived?": "yes"
     },
     {
@@ -482,7 +482,7 @@
       "Description": "Philadelphia Phillies traded SS Casey Martin to Milwaukee Brewers.",
       "Source URL": "https://www.mlb.com/brewers/roster/transactions/2024/06",
       "Imported At": "08/13/2026 09:58:50",
-      "Player ID": "Casey-Martin",
+      "Player ID": "",
       "Archived?": "yes"
     }
   ]

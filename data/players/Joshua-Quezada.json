@@ -3,7 +3,7 @@
   "name": "Joshua Quezada",
   "archived": false,
   "playerType": "Pitcher",
-  "generatedAt": "2026-08-27T15:13:58.425Z",
+  "generatedAt": "2026-08-27T19:57:52.423Z",
   "bio": {
     "Player-ID": "Joshua-Quezada",
     "MLBAM ID": "808350",
@@ -245,12 +245,12 @@
   },
   "gamedayWhiff": {
     "mlbamID": "808350",
-    "swings": 401,
-    "whiffs": 127,
-    "contacts": 274,
+    "swings": 416,
+    "whiffs": 132,
+    "contacts": 284,
     "whiffPct": 31.7,
     "contactPct": 68.3,
-    "games": 33,
+    "games": 34,
     "levels": [
       "A",
       "A+",

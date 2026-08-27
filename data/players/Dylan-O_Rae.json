@@ -3,7 +3,7 @@
   "name": "Dylan O'Rae",
   "archived": false,
   "playerType": "Hitter",
-  "generatedAt": "2026-08-27T15:13:58.425Z",
+  "generatedAt": "2026-08-27T19:57:52.423Z",
   "bio": {
     "Player-ID": "Dylan-O'Rae",
     "MLBAM ID": "802506",
@@ -212,7 +212,7 @@
       "K%": "17.7%",
       "BB%": "16.2%",
       "SwStr %": "5.6%",
-      "Whiff%": "15.0%",
+      "Whiff%": "14.9%",
       "Pull %": "32.3%",
       "Cent %": "19.5%",
       "Oppo %": "48.2%",
@@ -228,12 +228,12 @@
   },
   "gamedayWhiff": {
     "mlbamID": "802506",
-    "swings": 602,
+    "swings": 605,
     "whiffs": 90,
-    "contacts": 512,
-    "whiffPct": 15,
-    "contactPct": 85,
-    "games": 89,
+    "contacts": 515,
+    "whiffPct": 14.9,
+    "contactPct": 85.1,
+    "games": 90,
     "levels": [
       "AA"
     ]

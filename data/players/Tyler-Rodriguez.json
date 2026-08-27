@@ -3,7 +3,7 @@
   "name": "Tyler Rodriguez",
   "archived": false,
   "playerType": "Hitter",
-  "generatedAt": "2026-08-27T15:13:58.425Z",
+  "generatedAt": "2026-08-27T19:57:52.423Z",
   "bio": {
     "Player-ID": "Tyler-Rodriguez",
     "MLBAM ID": "808291",
@@ -212,7 +212,7 @@
       "K%": "19.2%",
       "BB%": "18.0%",
       "SwStr %": "10.3%",
-      "Whiff%": "23.5%",
+      "Whiff%": "24.2%",
       "Pull %": "54.0%",
       "Cent %": "20.0%",
       "Oppo %": "26.0%",
@@ -228,12 +228,12 @@
   },
   "gamedayWhiff": {
     "mlbamID": "808291",
-    "swings": 366,
-    "whiffs": 86,
-    "contacts": 280,
-    "whiffPct": 23.5,
-    "contactPct": 76.5,
-    "games": 58,
+    "swings": 376,
+    "whiffs": 91,
+    "contacts": 285,
+    "whiffPct": 24.2,
+    "contactPct": 75.8,
+    "games": 59,
     "levels": [
       "A",
       "A+"

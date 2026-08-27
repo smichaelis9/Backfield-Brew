@@ -3,7 +3,7 @@
   "name": "Blayberg Diaz",
   "archived": false,
   "playerType": "Hitter",
-  "generatedAt": "2026-08-27T15:13:58.425Z",
+  "generatedAt": "2026-08-27T19:57:52.423Z",
   "bio": {
     "Player-ID": "Blayberg-Diaz",
     "MLBAM ID": "691600",
@@ -212,7 +212,7 @@
       "K%": "21.2%",
       "BB%": "6.8%",
       "SwStr %": "13.0%",
-      "Whiff%": "23.5%",
+      "Whiff%": "23.0%",
       "Pull %": "37.7%",
       "Cent %": "25.5%",
       "Oppo %": "36.8%",
@@ -228,12 +228,12 @@
   },
   "gamedayWhiff": {
     "mlbamID": "691600",
-    "swings": 294,
+    "swings": 300,
     "whiffs": 69,
-    "contacts": 225,
-    "whiffPct": 23.5,
-    "contactPct": 76.5,
-    "games": 42,
+    "contacts": 231,
+    "whiffPct": 23,
+    "contactPct": 77,
+    "games": 43,
     "levels": [
       "A+"
     ]

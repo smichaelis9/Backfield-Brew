@@ -3,7 +3,7 @@
   "name": "Daniel Guilarte",
   "archived": false,
   "playerType": "Hitter",
-  "generatedAt": "2026-08-27T15:13:58.425Z",
+  "generatedAt": "2026-08-27T19:57:52.423Z",
   "bio": {
     "Player-ID": "Daniel-Guilarte",
     "MLBAM ID": "694206",
@@ -12,7 +12,7 @@
     "Rank": "197",
     "Trending": "",
     "Position": "SS",
-    "Level": "AA",
+    "Level": "AAA",
     "Age": "22.8",
     "OFP": "30",
     "OFP Updated": "",
@@ -397,6 +397,23 @@
     }
   ],
   "transactions": [
+    {
+      "Transaction ID": "939647",
+      "Date": "2026-08-27",
+      "Effective Date": "2026-08-27",
+      "MLBAM ID": "694206",
+      "Player": "Daniel Guilarte",
+      "Position": "",
+      "From Team": "Biloxi Shuckers",
+      "To Team": "Nashville Sounds",
+      "Level": "MiLB",
+      "Type": "Signed",
+      "Description": "SS Daniel Guilarte assigned to Nashville Sounds from Biloxi Shuckers.",
+      "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2026-08",
+      "Imported At": "08/27/2026 13:46:34",
+      "Player ID": "Daniel-Guilarte",
+      "Archived?": ""
+    },
     {
       "Transaction ID": "933043",
       "Date": "2026-07-29",

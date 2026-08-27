@@ -3,7 +3,7 @@
   "name": "Eric Bitonti",
   "archived": false,
   "playerType": "Hitter",
-  "generatedAt": "2026-08-27T15:13:58.425Z",
+  "generatedAt": "2026-08-27T19:57:52.423Z",
   "bio": {
     "Player-ID": "Eric-Bitonti",
     "MLBAM ID": "800724",
@@ -212,7 +212,7 @@
       "K%": "34.2%",
       "BB%": "16.5%",
       "SwStr %": "15.9%",
-      "Whiff%": "37.2%",
+      "Whiff%": "37.1%",
       "Pull %": "47.2%",
       "Cent %": "27.8%",
       "Oppo %": "25.0%",
@@ -228,12 +228,12 @@
   },
   "gamedayWhiff": {
     "mlbamID": "800724",
-    "swings": 804,
-    "whiffs": 299,
-    "contacts": 505,
-    "whiffPct": 37.2,
-    "contactPct": 62.8,
-    "games": 100,
+    "swings": 809,
+    "whiffs": 300,
+    "contacts": 509,
+    "whiffPct": 37.1,
+    "contactPct": 62.9,
+    "games": 101,
     "levels": [
       "A+"
     ]

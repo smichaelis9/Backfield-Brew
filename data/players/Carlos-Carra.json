@@ -3,7 +3,7 @@
   "name": "Carlos Carra",
   "archived": false,
   "playerType": "Pitcher",
-  "generatedAt": "2026-08-27T15:13:58.425Z",
+  "generatedAt": "2026-08-27T19:57:52.423Z",
   "bio": {
     "Player-ID": "Carlos-Carra",
     "MLBAM ID": "820902",
@@ -12,7 +12,7 @@
     "Rank": "57",
     "Trending": "Up",
     "Position": "RHP",
-    "Level": "A",
+    "Level": "IL",
     "Age": "19.8",
     "OFP": "35+",
     "OFP Updated": "",
@@ -413,6 +413,23 @@
     }
   ],
   "transactions": [
+    {
+      "Transaction ID": "939635",
+      "Date": "2026-08-26",
+      "Effective Date": "2026-08-26",
+      "MLBAM ID": "820902",
+      "Player": "Carlos Carra",
+      "Position": "",
+      "From Team": "",
+      "To Team": "Wilson Warbirds",
+      "Level": "MiLB",
+      "Type": "Injured List",
+      "Description": "Wilson Warbirds placed RHP Carlos Carra on the 7-day injured list.",
+      "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2026-08",
+      "Imported At": "08/27/2026 11:46:34",
+      "Player ID": "Carlos-Carra",
+      "Archived?": ""
+    },
     {
       "Transaction ID": "866221",
       "Date": "2025-08-26",

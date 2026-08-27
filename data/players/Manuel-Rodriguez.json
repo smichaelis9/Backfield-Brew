@@ -3,7 +3,7 @@
   "name": "Manuel Rodriguez",
   "archived": false,
   "playerType": "Pitcher",
-  "generatedAt": "2026-08-27T15:13:58.425Z",
+  "generatedAt": "2026-08-27T19:57:52.423Z",
   "bio": {
     "Player-ID": "Manuel-Rodriguez",
     "MLBAM ID": "804973",
@@ -231,7 +231,7 @@
       "BB%": "5.90%",
       "K-BB %": "14.80%",
       "SwStr %": "11.50%",
-      "Whiff%": "22.7%",
+      "Whiff%": "22.5%",
       "WHIP": "1.18",
       "BABIP": "0.250",
       "LOB%": "76.2%",
@@ -245,12 +245,12 @@
   },
   "gamedayWhiff": {
     "mlbamID": "804973",
-    "swings": 966,
-    "whiffs": 219,
-    "contacts": 747,
-    "whiffPct": 22.7,
-    "contactPct": 77.3,
-    "games": 23,
+    "swings": 1019,
+    "whiffs": 229,
+    "contacts": 790,
+    "whiffPct": 22.5,
+    "contactPct": 77.5,
+    "games": 24,
     "levels": [
       "AA"
     ]

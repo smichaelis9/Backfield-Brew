@@ -3,7 +3,7 @@
   "name": "Bryce Schaum",
   "archived": true,
   "playerType": "Pitcher",
-  "generatedAt": "2026-08-27T15:13:58.425Z",
+  "generatedAt": "2026-08-27T19:57:52.423Z",
   "bio": {
     "Player-ID": "Bryce-Schaum",
     "MLBAM ID": "842295",
@@ -425,7 +425,7 @@
       "Description": "Wilson Warbirds released RHP Bryce Schaum.",
       "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2026-08",
       "Imported At": "08/13/2026 10:22:09",
-      "Player ID": "Bryce-Schaum",
+      "Player ID": "",
       "Archived?": "yes"
     },
     {
@@ -442,7 +442,7 @@
       "Description": "RHP Bryce Schaum assigned to Wilson Warbirds from ACL Brewers.",
       "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2026-06",
       "Imported At": "08/13/2026 10:21:59",
-      "Player ID": "Bryce-Schaum",
+      "Player ID": "",
       "Archived?": "yes"
     },
     {
@@ -459,7 +459,7 @@
       "Description": "RHP Bryce Schaum assigned to ACL Brewers.",
       "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2026-05",
       "Imported At": "08/13/2026 10:21:53",
-      "Player ID": "Bryce-Schaum",
+      "Player ID": "",
       "Archived?": "yes"
     },
     {
@@ -476,7 +476,7 @@
       "Description": "Milwaukee Brewers signed free agent RHP Bryce Schaum to a minor league contract.",
       "Source URL": "https://www.mlb.com/brewers/roster/transactions/2026/05",
       "Imported At": "08/13/2026 10:00:33",
-      "Player ID": "Bryce-Schaum",
+      "Player ID": "",
       "Archived?": "yes"
     }
   ]
