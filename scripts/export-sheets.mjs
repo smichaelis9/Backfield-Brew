@@ -348,6 +348,62 @@ function getMLBAMID(row) {
   );
 }
 /* =========================
+   WRITE DATASET TO JSON
+========================= */
+
+function writeDatasetJSON(
+  sheetName,
+  datasets
+) {
+
+  const config =
+    SHEETS[
+      sheetName
+    ];
+
+
+  const rows =
+    datasets[
+      sheetName
+    ];
+
+
+  if (
+    !config ||
+    !Array.isArray(rows)
+  ) {
+
+    console.warn(
+      `Could not rewrite ${sheetName}.`
+    );
+
+    return;
+  }
+
+
+  const outputPath =
+    path.join(
+      "data",
+      config.file
+    );
+
+
+  fs.writeFileSync(
+    outputPath,
+    JSON.stringify(
+      rows,
+      null,
+      2
+    ),
+    "utf8"
+  );
+
+
+  console.log(
+    `Rewrote ${config.file} with merged Gameday data.`
+  );
+}
+/* =========================
    LOAD GAMEDAY WHIFF DATA
 ========================= */
 
@@ -1551,7 +1607,30 @@ async function main() {
         "Gameday Whiffs"
       ]
     );
+    /* =========================
+       REWRITE CURRENT-SEASON
+       ORG STAT JSON FILES
+    ========================= */
 
+    const whiffSeason =
+      String(
+        datasets[
+          "Gameday Whiffs"
+        ]?.season ||
+        new Date().getFullYear()
+      );
+
+
+    writeDatasetJSON(
+      `Hitter Stats ${whiffSeason}`,
+      datasets
+    );
+
+
+    writeDatasetJSON(
+      `Pitcher Stats ${whiffSeason}`,
+      datasets
+    );
   /* =========================
      ACTIVE PLAYERS
   ========================= */
