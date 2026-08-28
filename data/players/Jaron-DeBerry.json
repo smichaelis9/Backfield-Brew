@@ -3,7 +3,7 @@
   "name": "Jaron DeBerry",
   "archived": false,
   "playerType": "Pitcher",
-  "generatedAt": "2026-08-28T04:31:02.091Z",
+  "generatedAt": "2026-08-28T14:17:40.892Z",
   "bio": {
     "Player-ID": "Jaron-DeBerry",
     "MLBAM ID": "809229",
@@ -215,7 +215,7 @@
       "Player": "Jaron DeBerry",
       "ERA": "4.41",
       "FIP": "4.88",
-      "xFIP": "4.81",
+      "xFIP": "4.82",
       "IP": "114.1",
       "G": "23",
       "GS": "23",

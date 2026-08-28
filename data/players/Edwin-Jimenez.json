@@ -3,7 +3,7 @@
   "name": "Edwin Jimenez",
   "archived": false,
   "playerType": "Pitcher",
-  "generatedAt": "2026-08-28T04:31:02.091Z",
+  "generatedAt": "2026-08-28T14:17:40.892Z",
   "bio": {
     "Player-ID": "Edwin-Jimenez",
     "MLBAM ID": "683720",
@@ -215,7 +215,7 @@
       "Player": "Edwin Jimenez",
       "ERA": "4.64",
       "FIP": "6.43",
-      "xFIP": "4.78",
+      "xFIP": "4.79",
       "IP": "42.2",
       "G": "31",
       "GS": "0",

@@ -3,7 +3,7 @@
   "name": "Nick Merkel",
   "archived": false,
   "playerType": "Pitcher",
-  "generatedAt": "2026-08-28T04:31:02.091Z",
+  "generatedAt": "2026-08-28T14:17:40.892Z",
   "bio": {
     "Player-ID": "Nick-Merkel",
     "MLBAM ID": "806581",
@@ -215,7 +215,7 @@
       "Player": "Nick Merkel",
       "ERA": "6.04",
       "FIP": "4.52",
-      "xFIP": "4.10",
+      "xFIP": "4.11",
       "IP": "25.1",
       "G": "20",
       "GS": "0",

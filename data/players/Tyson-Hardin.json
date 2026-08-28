@@ -3,7 +3,7 @@
   "name": "Tyson Hardin",
   "archived": false,
   "playerType": "Pitcher",
-  "generatedAt": "2026-08-28T04:31:02.091Z",
+  "generatedAt": "2026-08-28T14:17:40.892Z",
   "bio": {
     "Player-ID": "Tyson-Hardin",
     "MLBAM ID": "824620",
@@ -214,7 +214,7 @@
       "Player-ID": "Tyson-Hardin",
       "Player": "Tyson Hardin",
       "ERA": "5.63",
-      "FIP": "3.35",
+      "FIP": "3.36",
       "xFIP": "3.53",
       "IP": "108.2",
       "G": "24",
