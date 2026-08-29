@@ -3,7 +3,7 @@
   "name": "Bjorn Johnson",
   "archived": false,
   "playerType": "Pitcher",
-  "generatedAt": "2026-08-28T16:56:46.137Z",
+  "generatedAt": "2026-08-29T00:54:39.571Z",
   "bio": {
     "Player-ID": "Bjorn-Johnson",
     "MLBAM ID": "807723",
@@ -231,7 +231,7 @@
       "BB%": "14.40%",
       "K-BB %": "9.20%",
       "SwStr %": "10.00%",
-      "Whiff%": "23.6%",
+      "Whiff%": "24.6%",
       "WHIP": "1.77",
       "BABIP": "0.374",
       "LOB%": "62.7%",
@@ -245,12 +245,12 @@
   },
   "gamedayWhiff": {
     "mlbamID": "807723",
-    "swings": 225,
-    "whiffs": 53,
-    "contacts": 172,
-    "whiffPct": 23.6,
-    "contactPct": 76.4,
-    "games": 21,
+    "swings": 244,
+    "whiffs": 60,
+    "contacts": 184,
+    "whiffPct": 24.6,
+    "contactPct": 75.4,
+    "games": 22,
     "levels": [
       "A+"
     ]

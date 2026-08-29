@@ -3,7 +3,7 @@
   "name": "Stiven Cruz",
   "archived": false,
   "playerType": "Pitcher",
-  "generatedAt": "2026-08-28T16:56:46.137Z",
+  "generatedAt": "2026-08-29T00:54:39.571Z",
   "bio": {
     "Player-ID": "Stiven-Cruz",
     "MLBAM ID": "691602",
@@ -245,12 +245,12 @@
   },
   "gamedayWhiff": {
     "mlbamID": "691602",
-    "swings": 467,
-    "whiffs": 118,
-    "contacts": 349,
+    "swings": 490,
+    "whiffs": 124,
+    "contacts": 366,
     "whiffPct": 25.3,
     "contactPct": 74.7,
-    "games": 32,
+    "games": 33,
     "levels": [
       "AA"
     ]

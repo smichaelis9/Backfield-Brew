@@ -3,7 +3,7 @@
   "name": "Bradley Blalock",
   "archived": true,
   "playerType": "Pitcher",
-  "generatedAt": "2026-08-28T16:56:46.137Z",
+  "generatedAt": "2026-08-29T00:54:39.571Z",
   "bio": {
     "Player-ID": "Bradley-Blalock",
     "MLBAM ID": "687134",
@@ -229,7 +229,7 @@
       "BB%": "",
       "K-BB %": "",
       "SwStr %": "",
-      "Whiff%": "13.2%",
+      "Whiff%": "13.3%",
       "WHIP": "",
       "BABIP": "",
       "LOB%": "",
@@ -243,12 +243,12 @@
   },
   "gamedayWhiff": {
     "mlbamID": "687134",
-    "swings": 68,
-    "whiffs": 9,
-    "contacts": 59,
-    "whiffPct": 13.2,
-    "contactPct": 86.8,
-    "games": 2,
+    "swings": 105,
+    "whiffs": 14,
+    "contacts": 91,
+    "whiffPct": 13.3,
+    "contactPct": 86.7,
+    "games": 3,
     "levels": [
       "AAA"
     ]

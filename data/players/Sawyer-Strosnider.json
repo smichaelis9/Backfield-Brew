@@ -3,7 +3,7 @@
   "name": "Sawyer Strosnider",
   "archived": false,
   "playerType": "Hitter",
-  "generatedAt": "2026-08-28T16:56:46.137Z",
+  "generatedAt": "2026-08-29T00:54:39.571Z",
   "bio": {
     "Player-ID": "Sawyer-Strosnider",
     "MLBAM ID": "820831",
@@ -212,7 +212,7 @@
       "K%": "27.7%",
       "BB%": "13.8%",
       "SwStr %": "13.6%",
-      "Whiff%": "32.7%",
+      "Whiff%": "33.0%",
       "Pull %": "43.2%",
       "Cent %": "24.3%",
       "Oppo %": "32.4%",
@@ -228,12 +228,12 @@
   },
   "gamedayWhiff": {
     "mlbamID": "820831",
-    "swings": 107,
-    "whiffs": 35,
-    "contacts": 72,
-    "whiffPct": 32.7,
-    "contactPct": 67.3,
-    "games": 13,
+    "swings": 115,
+    "whiffs": 38,
+    "contacts": 77,
+    "whiffPct": 33,
+    "contactPct": 67,
+    "games": 14,
     "levels": [
       "A+"
     ]
