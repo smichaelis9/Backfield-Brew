@@ -3,7 +3,7 @@
   "name": "Yerlin Rodriguez",
   "archived": false,
   "playerType": "Pitcher",
-  "generatedAt": "2026-08-29T13:23:42.056Z",
+  "generatedAt": "2026-08-29T17:19:53.260Z",
   "bio": {
     "Player-ID": "Yerlin-Rodriguez",
     "MLBAM ID": "693750",
@@ -231,7 +231,7 @@
       "BB%": "23.90%",
       "K-BB %": "0.00%",
       "SwStr %": "11.40%",
-      "Whiff%": "32.4%",
+      "Whiff%": "32.5%",
       "WHIP": "2.03",
       "BABIP": "0.313",
       "LOB%": "72.5%",
@@ -245,12 +245,12 @@
   },
   "gamedayWhiff": {
     "mlbamID": "693750",
-    "swings": 281,
-    "whiffs": 91,
-    "contacts": 190,
-    "whiffPct": 32.4,
-    "contactPct": 67.6,
-    "games": 34,
+    "swings": 283,
+    "whiffs": 92,
+    "contacts": 191,
+    "whiffPct": 32.5,
+    "contactPct": 67.5,
+    "games": 35,
     "levels": [
       "A+"
     ]

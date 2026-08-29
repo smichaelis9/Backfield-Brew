@@ -3,7 +3,7 @@
   "name": "Diustin Mayorquin",
   "archived": false,
   "playerType": "Pitcher",
-  "generatedAt": "2026-08-29T13:23:42.056Z",
+  "generatedAt": "2026-08-29T17:19:53.260Z",
   "bio": {
     "Player-ID": "Diustin-Mayorquin",
     "MLBAM ID": "829944",
@@ -231,7 +231,7 @@
       "BB%": "7.40%",
       "K-BB %": "14.80%",
       "SwStr %": "10.90%",
-      "Whiff%": "18.7%",
+      "Whiff%": "21.1%",
       "WHIP": "1.24",
       "BABIP": "0.294",
       "LOB%": "67.8%",
@@ -245,12 +245,12 @@
   },
   "gamedayWhiff": {
     "mlbamID": "829944",
-    "swings": 171,
-    "whiffs": 32,
-    "contacts": 139,
-    "whiffPct": 18.7,
-    "contactPct": 81.3,
-    "games": 7,
+    "swings": 209,
+    "whiffs": 44,
+    "contacts": 165,
+    "whiffPct": 21.1,
+    "contactPct": 78.9,
+    "games": 8,
     "levels": [
       "A"
     ]

@@ -3,7 +3,7 @@
   "name": "Mike Boeve",
   "archived": false,
   "playerType": "Hitter",
-  "generatedAt": "2026-08-29T13:23:42.056Z",
+  "generatedAt": "2026-08-29T17:19:53.260Z",
   "bio": {
     "Player-ID": "Mike-Boeve",
     "MLBAM ID": "801670",
@@ -228,12 +228,12 @@
   },
   "gamedayWhiff": {
     "mlbamID": "801670",
-    "swings": 750,
-    "whiffs": 148,
-    "contacts": 602,
+    "swings": 755,
+    "whiffs": 149,
+    "contacts": 606,
     "whiffPct": 19.7,
     "contactPct": 80.3,
-    "games": 109,
+    "games": 110,
     "levels": [
       "AA"
     ]

@@ -3,7 +3,7 @@
   "name": "Jose Meneses",
   "archived": false,
   "playerType": "Pitcher",
-  "generatedAt": "2026-08-29T13:23:42.056Z",
+  "generatedAt": "2026-08-29T17:19:53.260Z",
   "bio": {
     "Player-ID": "Jose-Meneses",
     "MLBAM ID": "800427",
@@ -231,7 +231,7 @@
       "BB%": "11.10%",
       "K-BB %": "20.00%",
       "SwStr %": "11.10%",
-      "Whiff%": "24.2%",
+      "Whiff%": "24.5%",
       "WHIP": "1.02",
       "BABIP": "0.250",
       "LOB%": "67.7%",
@@ -245,12 +245,12 @@
   },
   "gamedayWhiff": {
     "mlbamID": "800427",
-    "swings": 413,
-    "whiffs": 100,
-    "contacts": 313,
-    "whiffPct": 24.2,
-    "contactPct": 75.8,
-    "games": 36,
+    "swings": 421,
+    "whiffs": 103,
+    "contacts": 318,
+    "whiffPct": 24.5,
+    "contactPct": 75.5,
+    "games": 37,
     "levels": [
       "A",
       "A+"

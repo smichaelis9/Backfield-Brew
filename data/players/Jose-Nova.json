@@ -3,7 +3,7 @@
   "name": "Jose Nova",
   "archived": false,
   "playerType": "Pitcher",
-  "generatedAt": "2026-08-29T13:23:42.056Z",
+  "generatedAt": "2026-08-29T17:19:53.260Z",
   "bio": {
     "Player-ID": "Jose-Nova",
     "MLBAM ID": "703360",
@@ -231,7 +231,7 @@
       "BB%": "22.70%",
       "K-BB %": "3.10%",
       "SwStr %": "12.40%",
-      "Whiff%": "31.0%",
+      "Whiff%": "31.5%",
       "WHIP": "2.78",
       "BABIP": "0.474",
       "LOB%": "47.7%",
@@ -245,12 +245,12 @@
   },
   "gamedayWhiff": {
     "mlbamID": "703360",
-    "swings": 226,
-    "whiffs": 70,
-    "contacts": 156,
-    "whiffPct": 31,
-    "contactPct": 69,
-    "games": 24,
+    "swings": 238,
+    "whiffs": 75,
+    "contacts": 163,
+    "whiffPct": 31.5,
+    "contactPct": 68.5,
+    "games": 25,
     "levels": [
       "A+"
     ]

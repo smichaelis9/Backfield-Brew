@@ -3,7 +3,7 @@
   "name": "Quinton Low",
   "archived": false,
   "playerType": "Pitcher",
-  "generatedAt": "2026-08-29T13:23:42.056Z",
+  "generatedAt": "2026-08-29T17:19:53.260Z",
   "bio": {
     "Player-ID": "Quinton-Low",
     "MLBAM ID": "701703",
@@ -413,6 +413,23 @@
     }
   ],
   "transactions": [
+    {
+      "Transaction ID": "939939",
+      "Date": "2026-08-28",
+      "Effective Date": "2026-08-28",
+      "MLBAM ID": "701703",
+      "Player": "Quinton Low",
+      "Position": "",
+      "From Team": "",
+      "To Team": "Wisconsin Timber Rattlers",
+      "Level": "MiLB",
+      "Type": "Transferred",
+      "Description": "Wisconsin Timber Rattlers transferred RHP Quinton Low from the 7-day injured list to the 60-day injured list.",
+      "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2026-08",
+      "Imported At": "08/29/2026 09:46:32",
+      "Player ID": "Quinton-Low",
+      "Archived?": ""
+    },
     {
       "Transaction ID": "938072",
       "Date": "2026-08-16",

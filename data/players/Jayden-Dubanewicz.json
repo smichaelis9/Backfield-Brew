@@ -3,7 +3,7 @@
   "name": "Jayden Dubanewicz",
   "archived": false,
   "playerType": "Pitcher",
-  "generatedAt": "2026-08-29T13:23:42.056Z",
+  "generatedAt": "2026-08-29T17:19:53.260Z",
   "bio": {
     "Player-ID": "Jayden-Dubanewicz",
     "MLBAM ID": "803848",
@@ -231,7 +231,7 @@
       "BB%": "9.50%",
       "K-BB %": "12.90%",
       "SwStr %": "13.30%",
-      "Whiff%": "26.0%",
+      "Whiff%": "26.7%",
       "WHIP": "1.37",
       "BABIP": "0.310",
       "LOB%": "70.7%",
@@ -245,12 +245,12 @@
   },
   "gamedayWhiff": {
     "mlbamID": "803848",
-    "swings": 593,
-    "whiffs": 154,
-    "contacts": 439,
-    "whiffPct": 26,
-    "contactPct": 74,
-    "games": 17,
+    "swings": 630,
+    "whiffs": 168,
+    "contacts": 462,
+    "whiffPct": 26.7,
+    "contactPct": 73.3,
+    "games": 18,
     "levels": [
       "A",
       "A+"

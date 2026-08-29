@@ -3,7 +3,7 @@
   "name": "Eric Prado",
   "archived": false,
   "playerType": "Pitcher",
-  "generatedAt": "2026-08-29T13:23:42.056Z",
+  "generatedAt": "2026-08-29T17:19:53.260Z",
   "bio": {
     "Player-ID": "Eric-Prado",
     "MLBAM ID": "808260",
@@ -231,7 +231,7 @@
       "BB%": "17.50%",
       "K-BB %": "4.50%",
       "SwStr %": "14.20%",
-      "Whiff%": "31.7%",
+      "Whiff%": "31.3%",
       "WHIP": "1.72",
       "BABIP": "0.290",
       "LOB%": "66.8%",
@@ -245,12 +245,12 @@
   },
   "gamedayWhiff": {
     "mlbamID": "808260",
-    "swings": 360,
-    "whiffs": 114,
-    "contacts": 246,
-    "whiffPct": 31.7,
-    "contactPct": 68.3,
-    "games": 23,
+    "swings": 387,
+    "whiffs": 121,
+    "contacts": 266,
+    "whiffPct": 31.3,
+    "contactPct": 68.7,
+    "games": 24,
     "levels": [
       "A"
     ]

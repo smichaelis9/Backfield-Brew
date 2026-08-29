@@ -3,7 +3,7 @@
   "name": "Kyle Jones",
   "archived": false,
   "playerType": "Hitter",
-  "generatedAt": "2026-08-29T13:23:42.056Z",
+  "generatedAt": "2026-08-29T17:19:53.260Z",
   "bio": {
     "Player-ID": "Kyle-Jones",
     "MLBAM ID": "812807",
@@ -212,7 +212,7 @@
       "K%": "15.6%",
       "BB%": "7.8%",
       "SwStr %": "7.9%",
-      "Whiff%": "16.0%",
+      "Whiff%": "14.5%",
       "Pull %": "36.4%",
       "Cent %": "31.8%",
       "Oppo %": "31.8%",
@@ -228,12 +228,12 @@
   },
   "gamedayWhiff": {
     "mlbamID": "812807",
-    "swings": 100,
+    "swings": 110,
     "whiffs": 16,
-    "contacts": 84,
-    "whiffPct": 16,
-    "contactPct": 84,
-    "games": 14,
+    "contacts": 94,
+    "whiffPct": 14.5,
+    "contactPct": 85.5,
+    "games": 16,
     "levels": [
       "A"
     ]

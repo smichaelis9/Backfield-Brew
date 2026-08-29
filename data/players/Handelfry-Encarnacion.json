@@ -3,7 +3,7 @@
   "name": "Handelfry Encarnacion",
   "archived": false,
   "playerType": "Hitter",
-  "generatedAt": "2026-08-29T13:23:42.056Z",
+  "generatedAt": "2026-08-29T17:19:53.260Z",
   "bio": {
     "Player-ID": "Handelfry-Encarnacion",
     "MLBAM ID": "821136",
@@ -228,12 +228,12 @@
   },
   "gamedayWhiff": {
     "mlbamID": "821136",
-    "swings": 907,
-    "whiffs": 214,
-    "contacts": 693,
+    "swings": 916,
+    "whiffs": 216,
+    "contacts": 700,
     "whiffPct": 23.6,
     "contactPct": 76.4,
-    "games": 110,
+    "games": 111,
     "levels": [
       "A"
     ]

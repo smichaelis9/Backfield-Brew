@@ -3,7 +3,7 @@
   "name": "Luke Roupe",
   "archived": false,
   "playerType": "Pitcher",
-  "generatedAt": "2026-08-29T13:23:42.056Z",
+  "generatedAt": "2026-08-29T17:19:53.260Z",
   "bio": {
     "Player-ID": "Luke-Roupe",
     "MLBAM ID": "828069",
@@ -231,7 +231,7 @@
       "BB%": "15.50%",
       "K-BB %": "0.60%",
       "SwStr %": "11.60%",
-      "Whiff%": "20.3%",
+      "Whiff%": "20.7%",
       "WHIP": "2.13",
       "BABIP": "0.384",
       "LOB%": "47.3%",
@@ -245,12 +245,12 @@
   },
   "gamedayWhiff": {
     "mlbamID": "828069",
-    "swings": 64,
-    "whiffs": 13,
-    "contacts": 51,
-    "whiffPct": 20.3,
-    "contactPct": 79.7,
-    "games": 3,
+    "swings": 82,
+    "whiffs": 17,
+    "contacts": 65,
+    "whiffPct": 20.7,
+    "contactPct": 79.3,
+    "games": 4,
     "levels": [
       "A"
     ]

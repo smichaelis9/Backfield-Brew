@@ -3,7 +3,7 @@
   "name": "Luis Lameda",
   "archived": false,
   "playerType": "Hitter",
-  "generatedAt": "2026-08-29T13:23:42.056Z",
+  "generatedAt": "2026-08-29T17:19:53.260Z",
   "bio": {
     "Player-ID": "Luis-Lameda",
     "MLBAM ID": "808288",
@@ -228,12 +228,12 @@
   },
   "gamedayWhiff": {
     "mlbamID": "808288",
-    "swings": 434,
-    "whiffs": 100,
-    "contacts": 334,
+    "swings": 444,
+    "whiffs": 102,
+    "contacts": 342,
     "whiffPct": 23,
     "contactPct": 77,
-    "games": 68,
+    "games": 69,
     "levels": [
       "A",
       "A+"
