@@ -3,7 +3,7 @@
   "name": "Will Childers",
   "archived": false,
   "playerType": "Pitcher",
-  "generatedAt": "2026-08-29T00:54:39.571Z",
+  "generatedAt": "2026-08-29T07:43:26.411Z",
   "bio": {
     "Player-ID": "Will-Childers",
     "MLBAM ID": "682999",
@@ -414,6 +414,23 @@
     }
   ],
   "transactions": [
+    {
+      "Transaction ID": "939932",
+      "Date": "2026-08-28",
+      "Effective Date": "2026-08-28",
+      "MLBAM ID": "682999",
+      "Player": "Will Childers",
+      "Position": "",
+      "From Team": "",
+      "To Team": "Nashville Sounds",
+      "Level": "MiLB",
+      "Type": "Transferred",
+      "Description": "Nashville Sounds transferred RHP Will Childers from the 7-day injured list to the 60-day injured list.",
+      "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2026-08",
+      "Imported At": "08/28/2026 23:46:31",
+      "Player ID": "Will-Childers",
+      "Archived?": ""
+    },
     {
       "Transaction ID": "938780",
       "Date": "2026-08-20",
