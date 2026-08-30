@@ -3,7 +3,7 @@
   "name": "Anthony Flores",
   "archived": false,
   "playerType": "Pitcher",
-  "generatedAt": "2026-08-30T15:27:39.932Z",
+  "generatedAt": "2026-08-30T18:46:01.051Z",
   "bio": {
     "Player-ID": "Anthony-Flores",
     "MLBAM ID": "800260",
@@ -413,6 +413,23 @@
     }
   ],
   "transactions": [
+    {
+      "Transaction ID": "940092",
+      "Date": "2026-08-30",
+      "Effective Date": "2026-08-29",
+      "MLBAM ID": "800260",
+      "Player": "Anthony Flores",
+      "Position": "",
+      "From Team": "",
+      "To Team": "Biloxi Shuckers",
+      "Level": "MiLB",
+      "Type": "Injured List",
+      "Description": "Biloxi Shuckers placed LHP Anthony Flores on the 7-day injured list retroactive to August 29, 2026.",
+      "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2026-08",
+      "Imported At": "08/30/2026 10:46:48",
+      "Player ID": "Anthony-Flores",
+      "Archived?": ""
+    },
     {
       "Transaction ID": "887082",
       "Date": "2026-02-21",
