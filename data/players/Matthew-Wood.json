@@ -3,7 +3,7 @@
   "name": "Matthew Wood",
   "archived": false,
   "playerType": "Hitter",
-  "generatedAt": "2026-08-30T11:30:05.319Z",
+  "generatedAt": "2026-08-30T15:27:39.932Z",
   "bio": {
     "Player-ID": "Matthew-Wood",
     "MLBAM ID": "687783",
@@ -212,7 +212,7 @@
       "K%": "12.9%",
       "BB%": "17.4%",
       "SwStr %": "5.8%",
-      "Whiff%": "14.5%",
+      "Whiff%": "14.6%",
       "Pull %": "42.4%",
       "Cent %": "25.0%",
       "Oppo %": "32.6%",
@@ -228,12 +228,12 @@
   },
   "gamedayWhiff": {
     "mlbamID": "687783",
-    "swings": 567,
-    "whiffs": 82,
-    "contacts": 485,
-    "whiffPct": 14.5,
-    "contactPct": 85.5,
-    "games": 87,
+    "swings": 574,
+    "whiffs": 84,
+    "contacts": 490,
+    "whiffPct": 14.6,
+    "contactPct": 85.4,
+    "games": 88,
     "levels": [
       "AA"
     ]

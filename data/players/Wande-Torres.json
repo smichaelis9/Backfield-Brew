@@ -3,7 +3,7 @@
   "name": "Wande Torres",
   "archived": false,
   "playerType": "Pitcher",
-  "generatedAt": "2026-08-30T11:30:05.319Z",
+  "generatedAt": "2026-08-30T15:27:39.932Z",
   "bio": {
     "Player-ID": "Wande-Torres",
     "MLBAM ID": "800485",
@@ -413,6 +413,23 @@
     }
   ],
   "transactions": [
+    {
+      "Transaction ID": "940080",
+      "Date": "2026-08-30",
+      "Effective Date": "2026-08-30",
+      "MLBAM ID": "800485",
+      "Player": "Wande Torres",
+      "Position": "",
+      "From Team": "Wisconsin Timber Rattlers",
+      "To Team": "Biloxi Shuckers",
+      "Level": "MiLB",
+      "Type": "Signed",
+      "Description": "LHP Wande Torres assigned to Biloxi Shuckers from Wisconsin Timber Rattlers.",
+      "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2026-08",
+      "Imported At": "08/30/2026 08:46:34",
+      "Player ID": "Wande-Torres",
+      "Archived?": ""
+    },
     {
       "Transaction ID": "895438",
       "Date": "2026-03-31",

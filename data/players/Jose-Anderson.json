@@ -3,7 +3,7 @@
   "name": "José Anderson",
   "archived": false,
   "playerType": "Hitter",
-  "generatedAt": "2026-08-30T11:30:05.319Z",
+  "generatedAt": "2026-08-30T15:27:39.932Z",
   "bio": {
     "Player-ID": "Jose-Anderson",
     "MLBAM ID": "821262",
@@ -212,7 +212,7 @@
       "K%": "40.9%",
       "BB%": "10.2%",
       "SwStr %": "17.8%",
-      "Whiff%": "39.0%",
+      "Whiff%": "38.9%",
       "Pull %": "44.9%",
       "Cent %": "30.3%",
       "Oppo %": "24.7%",
@@ -228,12 +228,12 @@
   },
   "gamedayWhiff": {
     "mlbamID": "821262",
-    "swings": 805,
-    "whiffs": 314,
-    "contacts": 491,
-    "whiffPct": 39,
-    "contactPct": 61,
-    "games": 96,
+    "swings": 812,
+    "whiffs": 316,
+    "contacts": 496,
+    "whiffPct": 38.9,
+    "contactPct": 61.1,
+    "games": 97,
     "levels": [
       "A"
     ]

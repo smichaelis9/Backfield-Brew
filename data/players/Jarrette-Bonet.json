@@ -3,7 +3,7 @@
   "name": "Jarrette Bonet",
   "archived": false,
   "playerType": "Pitcher",
-  "generatedAt": "2026-08-30T11:30:05.319Z",
+  "generatedAt": "2026-08-30T15:27:39.932Z",
   "bio": {
     "Player-ID": "Jarrette-Bonet",
     "MLBAM ID": "806426",
@@ -413,6 +413,23 @@
     }
   ],
   "transactions": [
+    {
+      "Transaction ID": "940079",
+      "Date": "2026-08-30",
+      "Effective Date": "2026-08-30",
+      "MLBAM ID": "806426",
+      "Player": "Jarrette Bonet",
+      "Position": "",
+      "From Team": "Wilson Warbirds",
+      "To Team": "Wisconsin Timber Rattlers",
+      "Level": "MiLB",
+      "Type": "Signed",
+      "Description": "RHP Jarrette Bonet assigned to Wisconsin Timber Rattlers from Wilson Warbirds.",
+      "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2026-08",
+      "Imported At": "08/30/2026 08:46:34",
+      "Player ID": "Jarrette-Bonet",
+      "Archived?": ""
+    },
     {
       "Transaction ID": "895616",
       "Date": "2026-03-31",

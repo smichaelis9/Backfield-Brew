@@ -3,7 +3,7 @@
   "name": "Enderson Mercado",
   "archived": false,
   "playerType": "Pitcher",
-  "generatedAt": "2026-08-30T11:30:05.319Z",
+  "generatedAt": "2026-08-30T15:27:39.932Z",
   "bio": {
     "Player-ID": "Enderson-Mercado",
     "MLBAM ID": "821253",
@@ -231,7 +231,7 @@
       "BB%": "15.40%",
       "K-BB %": "2.50%",
       "SwStr %": "9.30%",
-      "Whiff%": "22.0%",
+      "Whiff%": "21.6%",
       "WHIP": "2.09",
       "BABIP": "0.385",
       "LOB%": "56.5%",
@@ -245,12 +245,12 @@
   },
   "gamedayWhiff": {
     "mlbamID": "821253",
-    "swings": 722,
-    "whiffs": 159,
-    "contacts": 563,
-    "whiffPct": 22,
-    "contactPct": 78,
-    "games": 24,
+    "swings": 760,
+    "whiffs": 164,
+    "contacts": 596,
+    "whiffPct": 21.6,
+    "contactPct": 78.4,
+    "games": 25,
     "levels": [
       "A"
     ]

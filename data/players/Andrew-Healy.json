@@ -3,7 +3,7 @@
   "name": "Andrew Healy",
   "archived": false,
   "playerType": "Pitcher",
-  "generatedAt": "2026-08-30T11:30:05.319Z",
+  "generatedAt": "2026-08-30T15:27:39.932Z",
   "bio": {
     "Player-ID": "Andrew-Healy",
     "MLBAM ID": "804986",
@@ -231,7 +231,7 @@
       "BB%": "10.10%",
       "K-BB %": "13.30%",
       "SwStr %": "9.90%",
-      "Whiff%": "22.6%",
+      "Whiff%": "22.0%",
       "WHIP": "1.44",
       "BABIP": "0.337",
       "LOB%": "69.3%",
@@ -245,12 +245,12 @@
   },
   "gamedayWhiff": {
     "mlbamID": "804986",
-    "swings": 514,
-    "whiffs": 116,
-    "contacts": 398,
-    "whiffPct": 22.6,
-    "contactPct": 77.4,
-    "games": 23,
+    "swings": 550,
+    "whiffs": 121,
+    "contacts": 429,
+    "whiffPct": 22,
+    "contactPct": 78,
+    "games": 24,
     "levels": [
       "A",
       "A+"

@@ -3,7 +3,7 @@
   "name": "Kaleb Bowman",
   "archived": false,
   "playerType": "Pitcher",
-  "generatedAt": "2026-08-30T11:30:05.319Z",
+  "generatedAt": "2026-08-30T15:27:39.932Z",
   "bio": {
     "Player-ID": "Kaleb-Bowman",
     "MLBAM ID": "689337",
@@ -231,7 +231,7 @@
       "BB%": "16.40%",
       "K-BB %": "2.30%",
       "SwStr %": "10.60%",
-      "Whiff%": "24.0%",
+      "Whiff%": "23.9%",
       "WHIP": "1.81",
       "BABIP": "0.323",
       "LOB%": "71.6%",
@@ -245,12 +245,12 @@
   },
   "gamedayWhiff": {
     "mlbamID": "689337",
-    "swings": 417,
+    "swings": 418,
     "whiffs": 100,
-    "contacts": 317,
-    "whiffPct": 24,
-    "contactPct": 76,
-    "games": 29,
+    "contacts": 318,
+    "whiffPct": 23.9,
+    "contactPct": 76.1,
+    "games": 30,
     "levels": [
       "AAA"
     ]

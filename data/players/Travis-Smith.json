@@ -3,7 +3,7 @@
   "name": "Travis Smith",
   "archived": false,
   "playerType": "Pitcher",
-  "generatedAt": "2026-08-30T11:30:05.319Z",
+  "generatedAt": "2026-08-30T15:27:39.932Z",
   "bio": {
     "Player-ID": "Travis-Smith",
     "MLBAM ID": "695605",
@@ -231,7 +231,7 @@
       "BB%": "13.70%",
       "K-BB %": "0.60%",
       "SwStr %": "8.90%",
-      "Whiff%": "19.3%",
+      "Whiff%": "19.4%",
       "WHIP": "1.82",
       "BABIP": "0.290",
       "LOB%": "60.2%",
@@ -245,12 +245,12 @@
   },
   "gamedayWhiff": {
     "mlbamID": "695605",
-    "swings": 560,
-    "whiffs": 108,
-    "contacts": 452,
-    "whiffPct": 19.3,
-    "contactPct": 80.7,
-    "games": 21,
+    "swings": 583,
+    "whiffs": 113,
+    "contacts": 470,
+    "whiffPct": 19.4,
+    "contactPct": 80.6,
+    "games": 22,
     "levels": [
       "A+",
       "AA"

@@ -3,7 +3,7 @@
   "name": "Yannic Walther",
   "archived": false,
   "playerType": "Hitter",
-  "generatedAt": "2026-08-30T11:30:05.319Z",
+  "generatedAt": "2026-08-30T15:27:39.932Z",
   "bio": {
     "Player-ID": "Yannic-Walther",
     "MLBAM ID": "806921",
@@ -212,7 +212,7 @@
       "K%": "31.4%",
       "BB%": "17.3%",
       "SwStr %": "13.6%",
-      "Whiff%": "32.4%",
+      "Whiff%": "32.6%",
       "Pull %": "46.1%",
       "Cent %": "26.1%",
       "Oppo %": "27.8%",
@@ -228,12 +228,12 @@
   },
   "gamedayWhiff": {
     "mlbamID": "806921",
-    "swings": 401,
-    "whiffs": 130,
-    "contacts": 271,
-    "whiffPct": 32.4,
-    "contactPct": 67.6,
-    "games": 59,
+    "swings": 411,
+    "whiffs": 134,
+    "contacts": 277,
+    "whiffPct": 32.6,
+    "contactPct": 67.4,
+    "games": 60,
     "levels": [
       "A",
       "A+"
