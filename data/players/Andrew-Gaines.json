@@ -3,7 +3,7 @@
   "name": "Andrew Gaines",
   "archived": false,
   "playerType": "Pitcher",
-  "generatedAt": "2026-08-31T13:17:09.267Z",
+  "generatedAt": "2026-08-31T19:36:11.844Z",
   "bio": {
     "Player-ID": "Andrew-Gaines",
     "MLBAM ID": "811669",
@@ -231,7 +231,7 @@
       "BB%": "25.00%",
       "K-BB %": "-10.00%",
       "SwStr %": "12.30%",
-      "Whiff%": "28.6%",
+      "Whiff%": "30.6%",
       "WHIP": "4.12",
       "BABIP": "0.455",
       "LOB%": "0.0%",
@@ -245,12 +245,12 @@
   },
   "gamedayWhiff": {
     "mlbamID": "811669",
-    "swings": 35,
-    "whiffs": 10,
-    "contacts": 25,
-    "whiffPct": 28.6,
-    "contactPct": 71.4,
-    "games": 3,
+    "swings": 49,
+    "whiffs": 15,
+    "contacts": 34,
+    "whiffPct": 30.6,
+    "contactPct": 69.4,
+    "games": 4,
     "levels": [
       "A"
     ]

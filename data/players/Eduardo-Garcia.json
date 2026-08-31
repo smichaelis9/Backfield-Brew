@@ -3,7 +3,7 @@
   "name": "Eduardo Garcia",
   "archived": false,
   "playerType": "Hitter",
-  "generatedAt": "2026-08-31T13:17:09.267Z",
+  "generatedAt": "2026-08-31T19:36:11.844Z",
   "bio": {
     "Player-ID": "Eduardo-Garcia",
     "MLBAM ID": "682633",
@@ -212,7 +212,7 @@
       "K%": "29.2%",
       "BB%": "10.5%",
       "SwStr %": "14.5%",
-      "Whiff%": "30.6%",
+      "Whiff%": "30.7%",
       "Pull %": "53.1%",
       "Cent %": "22.2%",
       "Oppo %": "24.6%",
@@ -228,12 +228,12 @@
   },
   "gamedayWhiff": {
     "mlbamID": "682633",
-    "swings": 700,
-    "whiffs": 214,
-    "contacts": 486,
-    "whiffPct": 30.6,
-    "contactPct": 69.4,
-    "games": 97,
+    "swings": 709,
+    "whiffs": 218,
+    "contacts": 491,
+    "whiffPct": 30.7,
+    "contactPct": 69.3,
+    "games": 98,
     "levels": [
       "AA",
       "AAA"

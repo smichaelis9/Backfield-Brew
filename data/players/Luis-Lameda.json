@@ -3,7 +3,7 @@
   "name": "Luis Lameda",
   "archived": false,
   "playerType": "Hitter",
-  "generatedAt": "2026-08-31T13:17:09.267Z",
+  "generatedAt": "2026-08-31T19:36:11.844Z",
   "bio": {
     "Player-ID": "Luis-Lameda",
     "MLBAM ID": "808288",
@@ -212,7 +212,7 @@
       "K%": "20.5%",
       "BB%": "16.9%",
       "SwStr %": "8.9%",
-      "Whiff%": "23.0%",
+      "Whiff%": "22.5%",
       "Pull %": "45.0%",
       "Cent %": "20.5%",
       "Oppo %": "34.5%",
@@ -228,12 +228,12 @@
   },
   "gamedayWhiff": {
     "mlbamID": "808288",
-    "swings": 444,
+    "swings": 454,
     "whiffs": 102,
-    "contacts": 342,
-    "whiffPct": 23,
-    "contactPct": 77,
-    "games": 69,
+    "contacts": 352,
+    "whiffPct": 22.5,
+    "contactPct": 77.5,
+    "games": 70,
     "levels": [
       "A",
       "A+"

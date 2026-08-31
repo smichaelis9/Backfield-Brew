@@ -3,7 +3,7 @@
   "name": "Trey Ebel",
   "archived": false,
   "playerType": "Hitter",
-  "generatedAt": "2026-08-31T13:17:09.267Z",
+  "generatedAt": "2026-08-31T19:36:11.844Z",
   "bio": {
     "Player-ID": "Trey-Ebel",
     "MLBAM ID": "821931",
@@ -79,7 +79,7 @@
     "Article Link 10": "",
     "": "",
     "Baseball Reference": "https://www.baseball-reference.com/register/player.fcgi?id=ebel--000tre",
-    "Fangraphs": "",
+    "Fangraphs": "https://www.fangraphs.com/players/trey-ebel/sa3078039/stats/batting",
     "Baseball America": "https://www.baseballamerica.com/players/1566168-trey-ebel/",
     "MiLB": "https://www.milb.com/player/trey-ebel-821931",
     "Baseball Prospectus": "",
@@ -212,7 +212,7 @@
       "K%": "21.1%",
       "BB%": "31.6%",
       "SwStr %": "8.1%",
-      "Whiff%": "26.2%",
+      "Whiff%": "24.6%",
       "Pull %": "52.9%",
       "Cent %": "17.6%",
       "Oppo %": "29.4%",
@@ -228,12 +228,12 @@
   },
   "gamedayWhiff": {
     "mlbamID": "821931",
-    "swings": 61,
+    "swings": 65,
     "whiffs": 16,
-    "contacts": 45,
-    "whiffPct": 26.2,
-    "contactPct": 73.8,
-    "games": 11,
+    "contacts": 49,
+    "whiffPct": 24.6,
+    "contactPct": 75.4,
+    "games": 12,
     "levels": [
       "A"
     ]

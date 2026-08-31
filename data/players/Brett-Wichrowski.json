@@ -3,7 +3,7 @@
   "name": "Brett Wichrowski",
   "archived": false,
   "playerType": "Pitcher",
-  "generatedAt": "2026-08-31T13:17:09.267Z",
+  "generatedAt": "2026-08-31T19:36:11.844Z",
   "bio": {
     "Player-ID": "Brett-Wichrowski",
     "MLBAM ID": "814489",
@@ -231,7 +231,7 @@
       "BB%": "9.90%",
       "K-BB %": "14.10%",
       "SwStr %": "12.60%",
-      "Whiff%": "27.5%",
+      "Whiff%": "27.2%",
       "WHIP": "1.44",
       "BABIP": "0.294",
       "LOB%": "62.4%",
@@ -245,12 +245,12 @@
   },
   "gamedayWhiff": {
     "mlbamID": "814489",
-    "swings": 586,
+    "swings": 591,
     "whiffs": 161,
-    "contacts": 425,
-    "whiffPct": 27.5,
-    "contactPct": 72.5,
-    "games": 22,
+    "contacts": 430,
+    "whiffPct": 27.2,
+    "contactPct": 72.8,
+    "games": 23,
     "levels": [
       "AA",
       "AAA"

@@ -3,7 +3,7 @@
   "name": "David García",
   "archived": false,
   "playerType": "Hitter",
-  "generatedAt": "2026-08-31T13:17:09.267Z",
+  "generatedAt": "2026-08-31T19:36:11.844Z",
   "bio": {
     "Player-ID": "David-Garcia",
     "MLBAM ID": "671272",
@@ -212,7 +212,7 @@
       "K%": "25.9%",
       "BB%": "9.4%",
       "SwStr %": "13.4%",
-      "Whiff%": "27.3%",
+      "Whiff%": "27.2%",
       "Pull %": "38.2%",
       "Cent %": "23.6%",
       "Oppo %": "38.2%",
@@ -228,12 +228,12 @@
   },
   "gamedayWhiff": {
     "mlbamID": "671272",
-    "swings": 319,
-    "whiffs": 87,
-    "contacts": 232,
-    "whiffPct": 27.3,
-    "contactPct": 72.7,
-    "games": 46,
+    "swings": 327,
+    "whiffs": 89,
+    "contacts": 238,
+    "whiffPct": 27.2,
+    "contactPct": 72.8,
+    "games": 47,
     "levels": [
       "A+",
       "AA"

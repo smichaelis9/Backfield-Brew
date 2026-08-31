@@ -3,7 +3,7 @@
   "name": "Mark Coley II",
   "archived": false,
   "playerType": "Hitter",
-  "generatedAt": "2026-08-31T13:17:09.267Z",
+  "generatedAt": "2026-08-31T19:36:11.844Z",
   "bio": {
     "Player-ID": "Mark-Coley",
     "MLBAM ID": "696501",
@@ -212,7 +212,7 @@
       "K%": "33.6%",
       "BB%": "9.9%",
       "SwStr %": "17.7%",
-      "Whiff%": "37.2%",
+      "Whiff%": "38.2%",
       "Pull %": "43.4%",
       "Cent %": "26.5%",
       "Oppo %": "30.1%",
@@ -228,12 +228,12 @@
   },
   "gamedayWhiff": {
     "mlbamID": "696501",
-    "swings": 478,
-    "whiffs": 178,
-    "contacts": 300,
-    "whiffPct": 37.2,
-    "contactPct": 62.8,
-    "games": 69,
+    "swings": 490,
+    "whiffs": 187,
+    "contacts": 303,
+    "whiffPct": 38.2,
+    "contactPct": 61.8,
+    "games": 70,
     "levels": [
       "AA"
     ]

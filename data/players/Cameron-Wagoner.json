@@ -3,7 +3,7 @@
   "name": "Cameron Wagoner",
   "archived": false,
   "playerType": "Pitcher",
-  "generatedAt": "2026-08-31T13:17:09.267Z",
+  "generatedAt": "2026-08-31T19:36:11.844Z",
   "bio": {
     "Player-ID": "Cameron-Wagoner",
     "MLBAM ID": "687726",
@@ -231,7 +231,7 @@
       "BB%": "6.50%",
       "K-BB %": "29.70%",
       "SwStr %": "16.10%",
-      "Whiff%": "31.2%",
+      "Whiff%": "31.0%",
       "WHIP": "0.83",
       "BABIP": "0.243",
       "LOB%": "90.9%",
@@ -245,12 +245,12 @@
   },
   "gamedayWhiff": {
     "mlbamID": "687726",
-    "swings": 285,
-    "whiffs": 89,
-    "contacts": 196,
-    "whiffPct": 31.2,
-    "contactPct": 68.8,
-    "games": 26,
+    "swings": 290,
+    "whiffs": 90,
+    "contacts": 200,
+    "whiffPct": 31,
+    "contactPct": 69,
+    "games": 27,
     "levels": [
       "AA",
       "AAA"
