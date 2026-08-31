@@ -3,10 +3,10 @@
   "name": "Bryce Schaum",
   "archived": true,
   "playerType": "Pitcher",
-  "generatedAt": "2026-08-31T19:36:11.844Z",
+  "generatedAt": "2026-08-31T23:26:31.594Z",
   "bio": {
     "Player-ID": "Bryce-Schaum",
-    "MLBAM ID": "842295",
+    "MLBAM ID": "",
     "Player Type": "Pitcher",
     "Player": "Bryce Schaum",
     "Rank": "",
@@ -229,7 +229,7 @@
       "BB%": "14.80%",
       "K-BB %": "-6.60%",
       "SwStr %": "8.30%",
-      "Whiff%": "18.9%",
+      "Whiff%": "22.1%",
       "WHIP": "2.40",
       "BABIP": "0.395",
       "LOB%": "73.5%",
@@ -241,18 +241,7 @@
       "Archived?": "yes"
     }
   },
-  "gamedayWhiff": {
-    "mlbamID": "842295",
-    "swings": 95,
-    "whiffs": 18,
-    "contacts": 77,
-    "whiffPct": 18.9,
-    "contactPct": 81.1,
-    "games": 11,
-    "levels": [
-      "A"
-    ]
-  },
+  "gamedayWhiff": null,
   "videos": [
     {
       "Player-ID": "",

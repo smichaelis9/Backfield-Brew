@@ -1,21 +1,20 @@
 {
   "id": "Jose-Nova",
   "name": "Jose Nova",
-  "archived": false,
+  "archived": true,
   "playerType": "Pitcher",
-  "generatedAt": "2026-08-31T19:36:11.844Z",
+  "generatedAt": "2026-08-31T23:26:31.594Z",
   "bio": {
     "Player-ID": "Jose-Nova",
     "MLBAM ID": "703360",
     "Player Type": "Pitcher",
     "Player": "Jose Nova",
     "Rank": "224",
-    "Trending": "",
+    "Archive Reason": "Released on 8/31/2026",
     "Position": "RHP",
     "Level": "A+",
-    "Age": "24.4",
+    "Age": "",
     "OFP": "25",
-    "OFP Updated": "",
     "Risk": "High",
     "School or Country": "Country",
     "School/Country": "Dominican Republic",
@@ -33,12 +32,12 @@
     "Picture Source": "MiLB.com",
     "Notes Updated": "N/A",
     "Scouting Notes": "N/A",
-    "Notes Updated 2": "N/A",
-    "Scouting Notes 2": "N/A",
-    "Notes Updated 3": "N/A",
-    "Scouting Notes 3": "N/A",
-    "Notes Updated 4": "N/A",
-    "Scouting Notes 4": "N/A",
+    "Notes Updated 2": "",
+    "Scouting Notes 2": "",
+    "Notes Updated 3": "",
+    "Scouting Notes 3": "",
+    "Notes Updated 4": "",
+    "Scouting Notes 4": "",
     "Full Report Updated": "",
     "Physical Description Report": "",
     "Hit / Mechanics Report": "",
@@ -88,8 +87,7 @@
     "Instagram": "Instagram",
     "Instagram Link": "https://www.instagram.com/novas_sebastian/",
     "Other Social": "",
-    "Other Social Link": "",
-    "Previous Rank": "224"
+    "Other Social Link": ""
   },
   "tools": {
     "Player-ID": "Jose-Nova",
@@ -144,7 +142,7 @@
       "FB%": "",
       "IFFB%": "",
       "HR/FB": "",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     "2024": {
       "Player-ID": "Jose-Nova",
@@ -176,7 +174,7 @@
       "FB%": "34.4%",
       "IFFB%": "31.8%",
       "HR/FB": "0.05",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     "2025": {
       "Player-ID": "Jose-Nova",
@@ -208,7 +206,7 @@
       "FB%": "36.7%",
       "IFFB%": "24.1%",
       "HR/FB": "0.03",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     "2026": {
       "Player-ID": "Jose-Nova",
@@ -240,7 +238,7 @@
       "FB%": "33.3%",
       "IFFB%": "14.3%",
       "HR/FB": "0.29",
-      "Archived?": ""
+      "Archived?": "yes"
     }
   },
   "gamedayWhiff": {
@@ -414,6 +412,23 @@
   ],
   "transactions": [
     {
+      "Transaction ID": "940268",
+      "Date": "2026-08-31",
+      "Effective Date": "2026-08-31",
+      "MLBAM ID": "703360",
+      "Player": "Jose Nova",
+      "Position": "",
+      "From Team": "",
+      "To Team": "Wisconsin Timber Rattlers",
+      "Level": "MiLB",
+      "Type": "Released",
+      "Description": "Wisconsin Timber Rattlers released RHP Jose Nova.",
+      "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2026-08",
+      "Imported At": "08/31/2026 15:46:34",
+      "Player ID": "Jose-Nova",
+      "Archived?": "yes"
+    },
+    {
       "Transaction ID": "915485",
       "Date": "2026-06-03",
       "Effective Date": "2026-06-03",
@@ -428,7 +443,7 @@
       "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2026-06",
       "Imported At": "08/13/2026 10:21:59",
       "Player ID": "Jose-Nova",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     {
       "Transaction ID": "911973",
@@ -445,7 +460,7 @@
       "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2026-05",
       "Imported At": "08/13/2026 10:21:53",
       "Player ID": "Jose-Nova",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     {
       "Transaction ID": "895436",
@@ -462,7 +477,7 @@
       "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2026-03",
       "Imported At": "08/13/2026 10:21:44",
       "Player ID": "Jose-Nova",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     {
       "Transaction ID": "890928",
@@ -479,7 +494,7 @@
       "Source URL": "https://www.mlb.com/brewers/roster/transactions/2026/03",
       "Imported At": "08/13/2026 10:00:24",
       "Player ID": "Jose-Nova",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     {
       "Transaction ID": "849155",
@@ -496,7 +511,7 @@
       "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2025-06",
       "Imported At": "08/13/2026 10:20:26",
       "Player ID": "Jose-Nova",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     {
       "Transaction ID": "840958",
@@ -513,7 +528,7 @@
       "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2025-05",
       "Imported At": "08/13/2026 10:20:19",
       "Player ID": "Jose-Nova",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     {
       "Transaction ID": "837756",
@@ -530,7 +545,7 @@
       "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2025-05",
       "Imported At": "08/13/2026 10:20:19",
       "Player ID": "Jose-Nova",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     {
       "Transaction ID": "834432",
@@ -547,7 +562,7 @@
       "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2025-04",
       "Imported At": "08/13/2026 10:20:12",
       "Player ID": "Jose-Nova",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     {
       "Transaction ID": "833051",
@@ -564,7 +579,7 @@
       "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2025-04",
       "Imported At": "08/13/2026 10:20:12",
       "Player ID": "Jose-Nova",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     {
       "Transaction ID": "823836",
@@ -581,7 +596,7 @@
       "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2024-09",
       "Imported At": "08/13/2026 10:19:22",
       "Player ID": "Jose-Nova",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     {
       "Transaction ID": "799736",
@@ -598,7 +613,7 @@
       "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2024-09",
       "Imported At": "08/13/2026 10:19:22",
       "Player ID": "Jose-Nova",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     {
       "Transaction ID": "795374",
@@ -615,7 +630,7 @@
       "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2024-08",
       "Imported At": "08/13/2026 10:19:16",
       "Player ID": "Jose-Nova",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     {
       "Transaction ID": "793693",
@@ -632,7 +647,7 @@
       "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2024-08",
       "Imported At": "08/13/2026 10:19:16",
       "Player ID": "Jose-Nova",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     {
       "Transaction ID": "789750",
@@ -649,7 +664,7 @@
       "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2024-07",
       "Imported At": "08/13/2026 10:19:10",
       "Player ID": "Jose-Nova",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     {
       "Transaction ID": "783308",
@@ -666,7 +681,7 @@
       "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2024-06",
       "Imported At": "08/13/2026 10:19:02",
       "Player ID": "Jose-Nova",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     {
       "Transaction ID": "769537",
@@ -683,7 +698,7 @@
       "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2024-05",
       "Imported At": "08/13/2026 10:18:56",
       "Player ID": "Jose-Nova",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     {
       "Transaction ID": "732701",
@@ -700,7 +715,7 @@
       "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2023-11",
       "Imported At": "08/13/2026 10:18:11",
       "Player ID": "Jose-Nova",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     {
       "Transaction ID": "732700",
@@ -717,7 +732,7 @@
       "Source URL": "https://www.mlb.com/brewers/roster/transactions/2023/11",
       "Imported At": "08/13/2026 09:58:22",
       "Player ID": "Jose-Nova",
-      "Archived?": ""
+      "Archived?": "yes"
     }
   ]
 }

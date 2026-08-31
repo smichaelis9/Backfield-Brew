@@ -3,7 +3,7 @@
   "name": "Juan Ortuno",
   "archived": false,
   "playerType": "Hitter",
-  "generatedAt": "2026-08-31T19:36:11.844Z",
+  "generatedAt": "2026-08-31T23:26:31.594Z",
   "bio": {
     "Player-ID": "Juan-Ortuno",
     "MLBAM ID": "821187",
@@ -12,7 +12,7 @@
     "Rank": "42",
     "Trending": "",
     "Position": "2B/3B",
-    "Level": "A",
+    "Level": "A+",
     "Age": "19.3",
     "OFP": "35+",
     "OFP Updated": "6/1/2026",
@@ -396,6 +396,23 @@
     }
   ],
   "transactions": [
+    {
+      "Transaction ID": "940270",
+      "Date": "2026-08-31",
+      "Effective Date": "2026-08-31",
+      "MLBAM ID": "821187",
+      "Player": "Juan Ortuno",
+      "Position": "",
+      "From Team": "Wilson Warbirds",
+      "To Team": "Wisconsin Timber Rattlers",
+      "Level": "MiLB",
+      "Type": "Signed",
+      "Description": "3B Juan Ortuno assigned to Wisconsin Timber Rattlers from Wilson Warbirds.",
+      "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2026-08",
+      "Imported At": "08/31/2026 15:46:34",
+      "Player ID": "Juan-Ortuno",
+      "Archived?": ""
+    },
     {
       "Transaction ID": "892851",
       "Date": "2026-03-22",

@@ -3,7 +3,7 @@
   "name": "Miqueas Mercedes",
   "archived": false,
   "playerType": "Pitcher",
-  "generatedAt": "2026-08-31T19:36:11.844Z",
+  "generatedAt": "2026-08-31T23:26:31.594Z",
   "bio": {
     "Player-ID": "Miqueas-Mercedes",
     "MLBAM ID": "823650",
@@ -12,7 +12,7 @@
     "Rank": "82",
     "Trending": "",
     "Position": "RHP",
-    "Level": "A",
+    "Level": "A+",
     "Age": "20.2",
     "OFP": "35",
     "OFP Updated": "",
@@ -413,6 +413,23 @@
     }
   ],
   "transactions": [
+    {
+      "Transaction ID": "940269",
+      "Date": "2026-08-31",
+      "Effective Date": "2026-08-31",
+      "MLBAM ID": "823650",
+      "Player": "Miqueas Mercedes",
+      "Position": "",
+      "From Team": "Wilson Warbirds",
+      "To Team": "Wisconsin Timber Rattlers",
+      "Level": "MiLB",
+      "Type": "Signed",
+      "Description": "RHP Miqueas Mercedes assigned to Wisconsin Timber Rattlers from Wilson Warbirds.",
+      "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2026-08",
+      "Imported At": "08/31/2026 15:46:34",
+      "Player ID": "Miqueas-Mercedes",
+      "Archived?": ""
+    },
     {
       "Transaction ID": "912929",
       "Date": "2026-05-29",

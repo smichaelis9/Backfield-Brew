@@ -3,7 +3,7 @@
   "name": "Luis Lameda",
   "archived": false,
   "playerType": "Hitter",
-  "generatedAt": "2026-08-31T19:36:11.844Z",
+  "generatedAt": "2026-08-31T23:26:31.594Z",
   "bio": {
     "Player-ID": "Luis-Lameda",
     "MLBAM ID": "808288",
@@ -12,7 +12,7 @@
     "Rank": "80",
     "Trending": "Up",
     "Position": "2B/OF",
-    "Level": "A+",
+    "Level": "ACL",
     "Age": "20.6",
     "OFP": "35",
     "OFP Updated": "",
@@ -397,6 +397,23 @@
     }
   ],
   "transactions": [
+    {
+      "Transaction ID": "940267",
+      "Date": "2026-08-31",
+      "Effective Date": "2026-08-31",
+      "MLBAM ID": "808288",
+      "Player": "Luis Lameda",
+      "Position": "",
+      "From Team": "Wisconsin Timber Rattlers",
+      "To Team": "ACL Brewers",
+      "Level": "MiLB",
+      "Type": "Signed",
+      "Description": "2B Luis Lameda assigned to ACL Brewers from Wisconsin Timber Rattlers.",
+      "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2026-08",
+      "Imported At": "08/31/2026 15:46:34",
+      "Player ID": "Luis-Lameda",
+      "Archived?": ""
+    },
     {
       "Transaction ID": "930551",
       "Date": "2026-07-23",

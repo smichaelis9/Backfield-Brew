@@ -3,7 +3,7 @@
   "name": "Abner Uribe",
   "archived": true,
   "playerType": "Pitcher",
-  "generatedAt": "2026-08-31T19:36:11.844Z",
+  "generatedAt": "2026-08-31T23:26:31.594Z",
   "bio": {
     "Player-ID": "Abner-Uribe",
     "MLBAM ID": "682842",
@@ -411,6 +411,40 @@
     }
   ],
   "transactions": [
+    {
+      "Transaction ID": "940257",
+      "Date": "2026-08-31",
+      "Effective Date": "2026-08-31",
+      "MLBAM ID": "682842",
+      "Player": "Abner Uribe",
+      "Position": "",
+      "From Team": "",
+      "To Team": "Milwaukee Brewers",
+      "Level": "MLB",
+      "Type": "Activated",
+      "Description": "Milwaukee Brewers activated RHP Abner Uribe from the 15-day injured list.",
+      "Source URL": "https://www.mlb.com/brewers/roster/transactions/2026/08",
+      "Imported At": "08/31/2026 14:46:28",
+      "Player ID": "Abner-Uribe",
+      "Archived?": "yes"
+    },
+    {
+      "Transaction ID": "940256",
+      "Date": "2026-08-25",
+      "Effective Date": "2026-08-25",
+      "MLBAM ID": "682842",
+      "Player": "Abner Uribe",
+      "Position": "",
+      "From Team": "Milwaukee Brewers",
+      "To Team": "Wisconsin Timber Rattlers",
+      "Level": "MiLB",
+      "Type": "Rehab Assignment",
+      "Description": "Milwaukee Brewers sent RHP Abner Uribe on a rehab assignment to Wisconsin Timber Rattlers.",
+      "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2026-08",
+      "Imported At": "08/31/2026 14:46:28",
+      "Player ID": "Abner-Uribe",
+      "Archived?": "yes"
+    },
     {
       "Transaction ID": "939373",
       "Date": "2026-08-25",

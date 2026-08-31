@@ -3,7 +3,7 @@
   "name": "Aldrin Gonzalez",
   "archived": true,
   "playerType": "Pitcher",
-  "generatedAt": "2026-08-31T19:36:11.844Z",
+  "generatedAt": "2026-08-31T23:26:31.594Z",
   "bio": {
     "Player-ID": "Aldrin-Gonzalez",
     "MLBAM ID": "808305",
@@ -414,7 +414,7 @@
       "Description": "ACL Brewers released RHP Aldrin Gonzalez.",
       "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2026-03",
       "Imported At": "08/13/2026 10:21:44",
-      "Player ID": "Aldrin-Gonzalez",
+      "Player ID": "",
       "Archived?": "yes"
     },
     {
@@ -431,7 +431,7 @@
       "Description": "RHP Aldrin Gonzalez assigned to ACL Brewers from DSL Brewers Gold.",
       "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2025-06",
       "Imported At": "08/13/2026 10:20:26",
-      "Player ID": "Aldrin-Gonzalez",
+      "Player ID": "",
       "Archived?": "yes"
     },
     {
@@ -448,7 +448,7 @@
       "Description": "DSL Brewers Gold activated RHP Aldrin Gonzalez from the 7-day injured list.",
       "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2024-07",
       "Imported At": "08/13/2026 10:19:10",
-      "Player ID": "Aldrin-Gonzalez",
+      "Player ID": "",
       "Archived?": "yes"
     },
     {
@@ -465,7 +465,7 @@
       "Description": "DSL Brewers 2 activated RHP Aldrin Gonzalez from the 7-day injured list.",
       "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2024-07",
       "Imported At": "08/13/2026 10:19:10",
-      "Player ID": "Aldrin-Gonzalez",
+      "Player ID": "",
       "Archived?": "yes"
     },
     {
@@ -482,7 +482,7 @@
       "Description": "RHP Aldrin Gonzalez assigned to DSL Brewers 2.",
       "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2024-06",
       "Imported At": "08/13/2026 10:19:02",
-      "Player ID": "Aldrin-Gonzalez",
+      "Player ID": "",
       "Archived?": "yes"
     },
     {
@@ -499,7 +499,7 @@
       "Description": "ACL Brewers activated RHP Aldrin Gonzalez.",
       "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2023-11",
       "Imported At": "08/13/2026 10:18:11",
-      "Player ID": "Aldrin-Gonzalez",
+      "Player ID": "",
       "Archived?": "yes"
     },
     {
@@ -516,7 +516,7 @@
       "Description": "RHP Aldrin Gonzalez roster status changed by ACL Brewers.",
       "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2023-06",
       "Imported At": "08/13/2026 10:17:38",
-      "Player ID": "Aldrin-Gonzalez",
+      "Player ID": "",
       "Archived?": "yes"
     },
     {
@@ -533,7 +533,7 @@
       "Description": "RHP Aldrin Gonzalez assigned to ACL Brewers.",
       "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2023-06",
       "Imported At": "08/13/2026 10:17:38",
-      "Player ID": "Aldrin-Gonzalez",
+      "Player ID": "",
       "Archived?": "yes"
     },
     {
@@ -550,7 +550,7 @@
       "Description": "Milwaukee Brewers signed free agent RHP Aldrin Gonzalez to a minor league contract.",
       "Source URL": "https://www.mlb.com/brewers/roster/transactions/2023/01",
       "Imported At": "08/13/2026 09:57:46",
-      "Player ID": "Aldrin-Gonzalez",
+      "Player ID": "",
       "Archived?": "yes"
     }
   ]

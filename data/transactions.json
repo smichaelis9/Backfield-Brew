@@ -1,5 +1,107 @@
 [
   {
+    "Transaction ID": "940270",
+    "Date": "2026-08-31",
+    "Effective Date": "2026-08-31",
+    "MLBAM ID": "821187",
+    "Player": "Juan Ortuno",
+    "Position": "",
+    "From Team": "Wilson Warbirds",
+    "To Team": "Wisconsin Timber Rattlers",
+    "Level": "MiLB",
+    "Type": "Signed",
+    "Description": "3B Juan Ortuno assigned to Wisconsin Timber Rattlers from Wilson Warbirds.",
+    "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2026-08",
+    "Imported At": "08/31/2026 15:46:34",
+    "Player ID": "Juan-Ortuno",
+    "Archived?": ""
+  },
+  {
+    "Transaction ID": "940269",
+    "Date": "2026-08-31",
+    "Effective Date": "2026-08-31",
+    "MLBAM ID": "823650",
+    "Player": "Miqueas Mercedes",
+    "Position": "",
+    "From Team": "Wilson Warbirds",
+    "To Team": "Wisconsin Timber Rattlers",
+    "Level": "MiLB",
+    "Type": "Signed",
+    "Description": "RHP Miqueas Mercedes assigned to Wisconsin Timber Rattlers from Wilson Warbirds.",
+    "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2026-08",
+    "Imported At": "08/31/2026 15:46:34",
+    "Player ID": "Miqueas-Mercedes",
+    "Archived?": ""
+  },
+  {
+    "Transaction ID": "940268",
+    "Date": "2026-08-31",
+    "Effective Date": "2026-08-31",
+    "MLBAM ID": "703360",
+    "Player": "Jose Nova",
+    "Position": "",
+    "From Team": "",
+    "To Team": "Wisconsin Timber Rattlers",
+    "Level": "MiLB",
+    "Type": "Released",
+    "Description": "Wisconsin Timber Rattlers released RHP Jose Nova.",
+    "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2026-08",
+    "Imported At": "08/31/2026 15:46:34",
+    "Player ID": "Jose-Nova",
+    "Archived?": "yes"
+  },
+  {
+    "Transaction ID": "940267",
+    "Date": "2026-08-31",
+    "Effective Date": "2026-08-31",
+    "MLBAM ID": "808288",
+    "Player": "Luis Lameda",
+    "Position": "",
+    "From Team": "Wisconsin Timber Rattlers",
+    "To Team": "ACL Brewers",
+    "Level": "MiLB",
+    "Type": "Signed",
+    "Description": "2B Luis Lameda assigned to ACL Brewers from Wisconsin Timber Rattlers.",
+    "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2026-08",
+    "Imported At": "08/31/2026 15:46:34",
+    "Player ID": "Luis-Lameda",
+    "Archived?": ""
+  },
+  {
+    "Transaction ID": "940258",
+    "Date": "2026-08-31",
+    "Effective Date": "2026-08-31",
+    "MLBAM ID": "669060",
+    "Player": "Bryse Wilson",
+    "Position": "",
+    "From Team": "",
+    "To Team": "Milwaukee Brewers",
+    "Level": "MLB",
+    "Type": "Injured List",
+    "Description": "Milwaukee Brewers placed RHP Bryse Wilson on the 15-day injured list. Low back strain.",
+    "Source URL": "https://www.mlb.com/brewers/roster/transactions/2026/08",
+    "Imported At": "08/31/2026 15:46:34",
+    "Player ID": "",
+    "Archived?": ""
+  },
+  {
+    "Transaction ID": "940257",
+    "Date": "2026-08-31",
+    "Effective Date": "2026-08-31",
+    "MLBAM ID": "682842",
+    "Player": "Abner Uribe",
+    "Position": "",
+    "From Team": "",
+    "To Team": "Milwaukee Brewers",
+    "Level": "MLB",
+    "Type": "Activated",
+    "Description": "Milwaukee Brewers activated RHP Abner Uribe from the 15-day injured list.",
+    "Source URL": "https://www.mlb.com/brewers/roster/transactions/2026/08",
+    "Imported At": "08/31/2026 14:46:28",
+    "Player ID": "Abner-Uribe",
+    "Archived?": "yes"
+  },
+  {
     "Transaction ID": "940092",
     "Date": "2026-08-30",
     "Effective Date": "2026-08-29",
@@ -253,6 +355,23 @@
     "Imported At": "08/26/2026 09:46:30",
     "Player ID": "Eduardo-Garcia",
     "Archived?": ""
+  },
+  {
+    "Transaction ID": "940256",
+    "Date": "2026-08-25",
+    "Effective Date": "2026-08-25",
+    "MLBAM ID": "682842",
+    "Player": "Abner Uribe",
+    "Position": "",
+    "From Team": "Milwaukee Brewers",
+    "To Team": "Wisconsin Timber Rattlers",
+    "Level": "MiLB",
+    "Type": "Rehab Assignment",
+    "Description": "Milwaukee Brewers sent RHP Abner Uribe on a rehab assignment to Wisconsin Timber Rattlers.",
+    "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2026-08",
+    "Imported At": "08/31/2026 14:46:28",
+    "Player ID": "Abner-Uribe",
+    "Archived?": "yes"
   },
   {
     "Transaction ID": "939615",
@@ -8242,7 +8361,7 @@
     "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2026-06",
     "Imported At": "08/13/2026 10:21:59",
     "Player ID": "Jose-Nova",
-    "Archived?": ""
+    "Archived?": "yes"
   },
   {
     "Transaction ID": "915484",
@@ -9415,7 +9534,7 @@
     "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2026-05",
     "Imported At": "08/13/2026 10:21:53",
     "Player ID": "Jose-Nova",
-    "Archived?": ""
+    "Archived?": "yes"
   },
   {
     "Transaction ID": "911955",
@@ -14923,7 +15042,7 @@
     "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2026-03",
     "Imported At": "08/13/2026 10:21:44",
     "Player ID": "Jose-Nova",
-    "Archived?": ""
+    "Archived?": "yes"
   },
   {
     "Transaction ID": "895435",
@@ -15704,7 +15823,7 @@
     "Description": "ACL Brewers released RHP Aldrin Gonzalez.",
     "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2026-03",
     "Imported At": "08/13/2026 10:21:44",
-    "Player ID": "Aldrin-Gonzalez",
+    "Player ID": "",
     "Archived?": "yes"
   },
   {
@@ -16572,7 +16691,7 @@
     "Source URL": "https://www.mlb.com/brewers/roster/transactions/2026/03",
     "Imported At": "08/13/2026 10:00:24",
     "Player ID": "Jose-Nova",
-    "Archived?": ""
+    "Archived?": "yes"
   },
   {
     "Transaction ID": "892804",
@@ -31429,7 +31548,7 @@
     "Description": "RHP Aldrin Gonzalez assigned to ACL Brewers from DSL Brewers Gold.",
     "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2025-06",
     "Imported At": "08/13/2026 10:20:26",
-    "Player ID": "Aldrin-Gonzalez",
+    "Player ID": "",
     "Archived?": "yes"
   },
   {
@@ -31549,7 +31668,7 @@
     "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2025-06",
     "Imported At": "08/13/2026 10:20:26",
     "Player ID": "Jose-Nova",
-    "Archived?": ""
+    "Archived?": "yes"
   },
   {
     "Transaction ID": "849125",
@@ -34082,7 +34201,7 @@
     "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2025-05",
     "Imported At": "08/13/2026 10:20:19",
     "Player ID": "Jose-Nova",
-    "Archived?": ""
+    "Archived?": "yes"
   },
   {
     "Transaction ID": "840954",
@@ -35187,7 +35306,7 @@
     "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2025-05",
     "Imported At": "08/13/2026 10:20:19",
     "Player ID": "Jose-Nova",
-    "Archived?": ""
+    "Archived?": "yes"
   },
   {
     "Transaction ID": "837755",
@@ -36632,7 +36751,7 @@
     "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2025-04",
     "Imported At": "08/13/2026 10:20:12",
     "Player ID": "Jose-Nova",
-    "Archived?": ""
+    "Archived?": "yes"
   },
   {
     "Transaction ID": "834431",
@@ -36853,7 +36972,7 @@
     "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2025-04",
     "Imported At": "08/13/2026 10:20:12",
     "Player ID": "Jose-Nova",
-    "Archived?": ""
+    "Archived?": "yes"
   },
   {
     "Transaction ID": "833050",
@@ -49093,7 +49212,7 @@
     "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2024-09",
     "Imported At": "08/13/2026 10:19:22",
     "Player ID": "Jose-Nova",
-    "Archived?": ""
+    "Archived?": "yes"
   },
   {
     "Transaction ID": "823835",
@@ -49229,7 +49348,7 @@
     "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2024-09",
     "Imported At": "08/13/2026 10:19:22",
     "Player ID": "Jose-Nova",
-    "Archived?": ""
+    "Archived?": "yes"
   },
   {
     "Transaction ID": "798860",
@@ -50912,7 +51031,7 @@
     "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2024-08",
     "Imported At": "08/13/2026 10:19:16",
     "Player ID": "Jose-Nova",
-    "Archived?": ""
+    "Archived?": "yes"
   },
   {
     "Transaction ID": "795176",
@@ -51728,7 +51847,7 @@
     "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2024-08",
     "Imported At": "08/13/2026 10:19:16",
     "Player ID": "Jose-Nova",
-    "Archived?": ""
+    "Archived?": "yes"
   },
   {
     "Transaction ID": "796669",
@@ -53360,7 +53479,7 @@
     "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2024-07",
     "Imported At": "08/13/2026 10:19:10",
     "Player ID": "Jose-Nova",
-    "Archived?": ""
+    "Archived?": "yes"
   },
   {
     "Transaction ID": "789605",
@@ -54685,7 +54804,7 @@
     "Description": "DSL Brewers Gold activated RHP Aldrin Gonzalez from the 7-day injured list.",
     "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2024-07",
     "Imported At": "08/13/2026 10:19:10",
-    "Player ID": "Aldrin-Gonzalez",
+    "Player ID": "",
     "Archived?": "yes"
   },
   {
@@ -54702,7 +54821,7 @@
     "Description": "DSL Brewers 2 activated RHP Aldrin Gonzalez from the 7-day injured list.",
     "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2024-07",
     "Imported At": "08/13/2026 10:19:10",
-    "Player ID": "Aldrin-Gonzalez",
+    "Player ID": "",
     "Archived?": "yes"
   },
   {
@@ -55383,7 +55502,7 @@
     "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2024-06",
     "Imported At": "08/13/2026 10:19:02",
     "Player ID": "Jose-Nova",
-    "Archived?": ""
+    "Archived?": "yes"
   },
   {
     "Transaction ID": "783305",
@@ -58595,7 +58714,7 @@
     "Description": "RHP Aldrin Gonzalez assigned to DSL Brewers 2.",
     "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2024-06",
     "Imported At": "08/13/2026 10:19:02",
-    "Player ID": "Aldrin-Gonzalez",
+    "Player ID": "",
     "Archived?": "yes"
   },
   {
@@ -60840,7 +60959,7 @@
     "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2024-05",
     "Imported At": "08/13/2026 10:18:56",
     "Player ID": "Jose-Nova",
-    "Archived?": ""
+    "Archived?": "yes"
   },
   {
     "Transaction ID": "769105",
@@ -70887,7 +71006,7 @@
     "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2023-11",
     "Imported At": "08/13/2026 10:18:11",
     "Player ID": "Jose-Nova",
-    "Archived?": ""
+    "Archived?": "yes"
   },
   {
     "Transaction ID": "732700",
@@ -70904,7 +71023,7 @@
     "Source URL": "https://www.mlb.com/brewers/roster/transactions/2023/11",
     "Imported At": "08/13/2026 09:58:22",
     "Player ID": "Jose-Nova",
-    "Archived?": ""
+    "Archived?": "yes"
   },
   {
     "Transaction ID": "732584",
@@ -71022,7 +71141,7 @@
     "Description": "ACL Brewers activated RHP Aldrin Gonzalez.",
     "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2023-11",
     "Imported At": "08/13/2026 10:18:11",
-    "Player ID": "Aldrin-Gonzalez",
+    "Player ID": "",
     "Archived?": "yes"
   },
   {
@@ -82582,7 +82701,7 @@
     "Description": "RHP Aldrin Gonzalez roster status changed by ACL Brewers.",
     "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2023-06",
     "Imported At": "08/13/2026 10:17:38",
-    "Player ID": "Aldrin-Gonzalez",
+    "Player ID": "",
     "Archived?": "yes"
   },
   {
@@ -82888,7 +83007,7 @@
     "Description": "RHP Aldrin Gonzalez assigned to ACL Brewers.",
     "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2023-06",
     "Imported At": "08/13/2026 10:17:38",
-    "Player ID": "Aldrin-Gonzalez",
+    "Player ID": "",
     "Archived?": "yes"
   },
   {
@@ -94091,7 +94210,7 @@
     "Description": "Milwaukee Brewers signed free agent RHP Aldrin Gonzalez to a minor league contract.",
     "Source URL": "https://www.mlb.com/brewers/roster/transactions/2023/01",
     "Imported At": "08/13/2026 09:57:46",
-    "Player ID": "Aldrin-Gonzalez",
+    "Player ID": "",
     "Archived?": "yes"
   },
   {
