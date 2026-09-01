@@ -3,7 +3,7 @@
   "name": "Juan Martinez",
   "archived": true,
   "playerType": "Hitter",
-  "generatedAt": "2026-09-01T12:47:46.340Z",
+  "generatedAt": "2026-09-01T15:28:54.775Z",
   "bio": {
     "Player-ID": "Juan-Martinez",
     "MLBAM ID": "821197",
@@ -204,7 +204,7 @@
       "OBP": "0.428",
       "SLG": "0.490",
       "OPS": "0.918",
-      "wRC+": "130",
+      "wRC+": "131",
       "BABIP": "0.335",
       "wOBA": "0.428",
       "K%": "12.3%",

@@ -3,7 +3,7 @@
   "name": "Ayendy Bravo",
   "archived": true,
   "playerType": "Pitcher",
-  "generatedAt": "2026-09-01T12:47:46.340Z",
+  "generatedAt": "2026-09-01T15:28:54.775Z",
   "bio": {
     "Player-ID": "Ayendy-Bravo",
     "MLBAM ID": "821131",
@@ -213,7 +213,7 @@
       "Player": "Ayendy Bravo",
       "ERA": "10.08",
       "FIP": "8.38",
-      "xFIP": "8.94",
+      "xFIP": "8.95",
       "IP": "25",
       "G": "20",
       "GS": "0",

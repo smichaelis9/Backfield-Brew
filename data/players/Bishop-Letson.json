@@ -3,7 +3,7 @@
   "name": "Bishop Letson",
   "archived": false,
   "playerType": "Pitcher",
-  "generatedAt": "2026-09-01T12:47:46.340Z",
+  "generatedAt": "2026-09-01T15:28:54.775Z",
   "bio": {
     "Player-ID": "Bishop-Letson",
     "MLBAM ID": "811309",
@@ -214,7 +214,7 @@
       "Player-ID": "Bishop-Letson",
       "Player": "Bishop Letson",
       "ERA": "5.16",
-      "FIP": "4.86",
+      "FIP": "4.87",
       "xFIP": "5.15",
       "IP": "83.2",
       "G": "20",

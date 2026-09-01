@@ -3,7 +3,7 @@
   "name": "Tayden Hall",
   "archived": false,
   "playerType": "Hitter",
-  "generatedAt": "2026-09-01T12:47:46.340Z",
+  "generatedAt": "2026-09-01T15:28:54.775Z",
   "bio": {
     "Player-ID": "Tayden-Hall",
     "MLBAM ID": "695554",
@@ -206,7 +206,7 @@
       "OBP": "0.412",
       "SLG": "0.459",
       "OPS": "0.871",
-      "wRC+": "129",
+      "wRC+": "128",
       "BABIP": "0.321",
       "wOBA": "0.404",
       "K%": "23.4%",
