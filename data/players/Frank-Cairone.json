@@ -3,7 +3,7 @@
   "name": "Frank Cairone",
   "archived": false,
   "playerType": "Pitcher",
-  "generatedAt": "2026-09-01T17:14:00.696Z",
+  "generatedAt": "2026-09-01T17:57:49.423Z",
   "bio": {
     "Player-ID": "Frank-Cairone",
     "MLBAM ID": "827980",
@@ -402,6 +402,23 @@
     }
   ],
   "transactions": [
+    {
+      "Transaction ID": "940423",
+      "Date": "2026-09-01",
+      "Effective Date": "2026-09-01",
+      "MLBAM ID": "827980",
+      "Player": "Frank Cairone",
+      "Position": "",
+      "From Team": "ACL Brewers",
+      "To Team": "Wilson Warbirds",
+      "Level": "MiLB",
+      "Type": "Signed",
+      "Description": "LHP Frank Cairone assigned to Wilson Warbirds from ACL Brewers.",
+      "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2026-09",
+      "Imported At": "09/01/2026 12:46:30",
+      "Player ID": "Frank-Cairone",
+      "Archived?": ""
+    },
     {
       "Transaction ID": "862048",
       "Date": "2025-08-04",

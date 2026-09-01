@@ -3,7 +3,7 @@
   "name": "Ma'Kale Holden",
   "archived": false,
   "playerType": "Pitcher",
-  "generatedAt": "2026-09-01T17:14:00.696Z",
+  "generatedAt": "2026-09-01T17:57:49.423Z",
   "bio": {
     "Player-ID": "Ma'Kale-Holden",
     "MLBAM ID": "829204",
@@ -12,7 +12,7 @@
     "Rank": "84",
     "Trending": "",
     "Position": "RHP",
-    "Level": "ACL",
+    "Level": "A",
     "Age": "19.5",
     "OFP": "35",
     "OFP Updated": "",
@@ -402,6 +402,23 @@
     }
   ],
   "transactions": [
+    {
+      "Transaction ID": "940424",
+      "Date": "2026-09-01",
+      "Effective Date": "2026-09-01",
+      "MLBAM ID": "829204",
+      "Player": "Ma'Kale Holden",
+      "Position": "",
+      "From Team": "ACL Brewers",
+      "To Team": "Wilson Warbirds",
+      "Level": "MiLB",
+      "Type": "Signed",
+      "Description": "RHP Ma'Kale Holden assigned to Wilson Warbirds from ACL Brewers.",
+      "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2026-09",
+      "Imported At": "09/01/2026 12:46:30",
+      "Player ID": "Ma'Kale-Holden",
+      "Archived?": ""
+    },
     {
       "Transaction ID": "888695",
       "Date": "2026-03-01",
