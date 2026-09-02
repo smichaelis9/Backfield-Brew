@@ -1,5 +1,22 @@
 [
   {
+    "Transaction ID": "940760",
+    "Date": "2026-09-01",
+    "Effective Date": "2026-09-01",
+    "MLBAM ID": "678225",
+    "Player": "Jihwan Bae",
+    "Position": "",
+    "From Team": "",
+    "To Team": "Nashville Sounds",
+    "Level": "MiLB",
+    "Type": "Transferred",
+    "Description": "Nashville Sounds transferred CF Jihwan Bae from the 7-day injured list to the 60-day injured list.",
+    "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2026-09",
+    "Imported At": "09/02/2026 09:46:28",
+    "Player ID": "",
+    "Archived?": ""
+  },
+  {
     "Transaction ID": "940531",
     "Date": "2026-09-01",
     "Effective Date": "2026-09-01",
