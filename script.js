@@ -9607,3 +9607,479 @@ document.addEventListener(
 
   }
 );
+/* =========================================================
+   YESTERDAY ON THE FARM
+========================================================= */
+
+async function initYesterdayOnTheFarm() {
+
+  const dateElement =
+    document.getElementById(
+      "yotfDate"
+    );
+
+
+  const hittersElement =
+    document.getElementById(
+      "yotfHitters"
+    );
+
+
+  const pitchersElement =
+    document.getElementById(
+      "yotfPitchers"
+    );
+
+
+  const statusElement =
+    document.getElementById(
+      "yotfStatus"
+    );
+
+
+  if (
+    !hittersElement ||
+    !pitchersElement
+  ) {
+
+    return;
+  }
+
+
+  try {
+
+    const response =
+      await fetch(
+        "data/yesterday-on-the-farm.json",
+        {
+          cache:
+            "no-store"
+        }
+      );
+
+
+    if (
+      !response.ok
+    ) {
+
+      throw new Error(
+        `HTTP ${response.status}`
+      );
+    }
+
+
+    const data =
+      await response.json();
+
+
+    /* =========================
+       DATE
+    ========================== */
+
+    if (
+      dateElement
+    ) {
+
+      dateElement.textContent =
+        formatYotfDate(
+          data.date
+        );
+    }
+
+
+    /* =========================
+       HITTERS
+    ========================== */
+
+    renderYotfPlayers(
+
+      hittersElement,
+
+      data.hitters ||
+      [],
+
+      "hitter"
+
+    );
+
+
+    /* =========================
+       PITCHERS
+    ========================== */
+
+    renderYotfPlayers(
+
+      pitchersElement,
+
+      data.pitchers ||
+      [],
+
+      "pitcher"
+
+    );
+
+
+    /* =========================
+       STATUS
+    ========================== */
+
+    if (
+      statusElement
+    ) {
+
+      const gameCount =
+        Number(
+          data.completedGames ||
+          0
+        );
+
+
+      statusElement.textContent =
+
+        gameCount === 1
+
+          ? "1 completed Brewers minor league game"
+
+          : `${gameCount} completed Brewers minor league games`;
+
+    }
+
+  } catch (error) {
+
+    console.error(
+      "Yesterday on the Farm failed:",
+      error
+    );
+
+
+    if (
+      dateElement
+    ) {
+
+      dateElement.textContent =
+        "";
+    }
+
+
+    hittersElement.innerHTML =
+
+      `
+        <div class="yotf-empty">
+          Yesterday on the Farm is currently unavailable.
+        </div>
+      `;
+
+
+    pitchersElement.innerHTML =
+      "";
+
+  }
+
+}
+
+
+/* =========================================================
+   RENDER YOTF PLAYER LIST
+========================================================= */
+
+function renderYotfPlayers(
+  container,
+  players,
+  type
+) {
+
+  container.innerHTML =
+    "";
+
+
+  if (
+    !players.length
+  ) {
+
+    container.innerHTML =
+
+      `
+        <div class="yotf-empty">
+          No qualifying performances.
+        </div>
+      `;
+
+
+    return;
+  }
+
+
+  players.forEach(
+    (
+      player,
+      index
+    ) => {
+
+      const item =
+        document.createElement(
+          "article"
+        );
+
+
+      item.className =
+        "yotf-player";
+
+
+      const playerUrl =
+        getYotfPlayerUrl(
+          player
+        );
+
+
+      const rank =
+        Number(
+          player.rank
+        );
+
+
+      const rankText =
+
+        Number.isFinite(
+          rank
+        ) &&
+        rank > 0
+
+          ? `#${rank} Prospect`
+
+          : "";
+
+
+      const metaParts =
+        [
+
+          player.affiliate,
+
+          player.level,
+
+          rankText
+
+        ]
+          .filter(
+            Boolean
+          );
+
+
+      item.innerHTML =
+
+        `
+          <div class="yotf-number">
+            ${index + 1}
+          </div>
+
+
+          <div class="yotf-player-main">
+
+            <a
+              class="yotf-player-name"
+              href="${escapeYotfHtml(
+                playerUrl
+              )}"
+            >
+              ${escapeYotfHtml(
+                player.name ||
+                "Unknown Player"
+              )}
+            </a>
+
+
+            <div class="yotf-player-meta">
+
+              ${metaParts
+                .map(
+                  part =>
+                    escapeYotfHtml(
+                      part
+                    )
+                )
+                .join(
+                  " · "
+                )}
+
+            </div>
+
+
+            <div class="yotf-player-line">
+
+              ${escapeYotfHtml(
+                player.line ||
+                ""
+              )}
+
+            </div>
+
+          </div>
+
+
+          <div class="yotf-type">
+
+            ${
+              type === "pitcher"
+                ? "P"
+                : "H"
+            }
+
+          </div>
+        `;
+
+
+      container.appendChild(
+        item
+      );
+
+    }
+  );
+
+}
+
+
+/* =========================================================
+   PLAYER LINK
+========================================================= */
+
+function getYotfPlayerUrl(
+  player
+) {
+
+  const playerId =
+    String(
+      player.playerId ||
+      ""
+    )
+      .trim();
+
+
+  if (
+    !playerId
+  ) {
+
+    return "index.html";
+  }
+
+
+  return (
+    "player.html?id=" +
+    encodeURIComponent(
+      playerId
+    )
+  );
+
+}
+
+
+/* =========================================================
+   DATE FORMAT
+========================================================= */
+
+function formatYotfDate(
+  dateString
+) {
+
+  if (
+    !dateString
+  ) {
+
+    return "";
+  }
+
+
+  const parts =
+    String(
+      dateString
+    )
+      .split(
+        "-"
+      )
+      .map(
+        Number
+      );
+
+
+  if (
+    parts.length !== 3
+  ) {
+
+    return dateString;
+  }
+
+
+  const [
+    year,
+    month,
+    day
+  ] =
+    parts;
+
+
+  const date =
+    new Date(
+      year,
+      month - 1,
+      day
+    );
+
+
+  return date.toLocaleDateString(
+
+    "en-US",
+
+    {
+
+      month:
+        "long",
+
+      day:
+        "numeric",
+
+      year:
+        "numeric"
+
+    }
+
+  );
+
+}
+
+
+/* =========================================================
+   HTML ESCAPE
+========================================================= */
+
+function escapeYotfHtml(
+  value
+) {
+
+  return String(
+    value ?? ""
+  )
+
+    .replaceAll(
+      "&",
+      "&amp;"
+    )
+
+    .replaceAll(
+      "<",
+      "&lt;"
+    )
+
+    .replaceAll(
+      ">",
+      "&gt;"
+    )
+
+    .replaceAll(
+      "\"",
+      "&quot;"
+    )
+
+    .replaceAll(
+      "'",
+      "&#039;"
+    );
+
+}
