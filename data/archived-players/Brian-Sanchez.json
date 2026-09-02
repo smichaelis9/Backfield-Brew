@@ -3,7 +3,7 @@
   "name": "Brian Sanchez",
   "archived": true,
   "playerType": "Hitter",
-  "generatedAt": "2026-09-02T09:39:50.982Z",
+  "generatedAt": "2026-09-02T13:54:14.481Z",
   "bio": {
     "Player-ID": "Brian-Sanchez",
     "MLBAM ID": "809331",
@@ -210,7 +210,7 @@
       "K%": "",
       "BB%": "",
       "SwStr %": "",
-      "Whiff%": "30.4%",
+      "Whiff%": "29.4%",
       "Pull %": "",
       "Cent %": "",
       "Oppo %": "",
@@ -226,12 +226,12 @@
   },
   "gamedayWhiff": {
     "mlbamID": "809331",
-    "swings": 23,
-    "whiffs": 7,
-    "contacts": 16,
-    "whiffPct": 30.4,
-    "contactPct": 69.6,
-    "games": 4,
+    "swings": 34,
+    "whiffs": 10,
+    "contacts": 24,
+    "whiffPct": 29.4,
+    "contactPct": 70.6,
+    "games": 5,
     "levels": [
       "A+"
     ]

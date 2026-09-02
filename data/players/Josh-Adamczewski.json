@@ -3,7 +3,7 @@
   "name": "Josh Adamczewski",
   "archived": false,
   "playerType": "Hitter",
-  "generatedAt": "2026-09-02T09:39:50.982Z",
+  "generatedAt": "2026-09-02T13:54:14.481Z",
   "bio": {
     "Player-ID": "Josh-Adamczewski",
     "MLBAM ID": "815304",
@@ -212,7 +212,7 @@
       "K%": "19.1%",
       "BB%": "14.6%",
       "SwStr %": "11.5%",
-      "Whiff%": "24.9%",
+      "Whiff%": "25.0%",
       "Pull %": "48.1%",
       "Cent %": "24.4%",
       "Oppo %": "27.5%",
@@ -228,12 +228,12 @@
   },
   "gamedayWhiff": {
     "mlbamID": "815304",
-    "swings": 858,
-    "whiffs": 214,
-    "contacts": 644,
-    "whiffPct": 24.9,
-    "contactPct": 75.1,
-    "games": 103,
+    "swings": 860,
+    "whiffs": 215,
+    "contacts": 645,
+    "whiffPct": 25,
+    "contactPct": 75,
+    "games": 104,
     "levels": [
       "A+",
       "AA"

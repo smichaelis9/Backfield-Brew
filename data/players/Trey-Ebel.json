@@ -3,7 +3,7 @@
   "name": "Trey Ebel",
   "archived": false,
   "playerType": "Hitter",
-  "generatedAt": "2026-09-02T09:39:50.982Z",
+  "generatedAt": "2026-09-02T13:54:14.481Z",
   "bio": {
     "Player-ID": "Trey-Ebel",
     "MLBAM ID": "821931",
@@ -212,7 +212,7 @@
       "K%": "21.8%",
       "BB%": "27.3%",
       "SwStr %": "7.9%",
-      "Whiff%": "24.6%",
+      "Whiff%": "23.9%",
       "Pull %": "50.0%",
       "Cent %": "19.2%",
       "Oppo %": "30.8%",
@@ -228,12 +228,12 @@
   },
   "gamedayWhiff": {
     "mlbamID": "821931",
-    "swings": 65,
+    "swings": 67,
     "whiffs": 16,
-    "contacts": 49,
-    "whiffPct": 24.6,
-    "contactPct": 75.4,
-    "games": 12,
+    "contacts": 51,
+    "whiffPct": 23.9,
+    "contactPct": 76.1,
+    "games": 13,
     "levels": [
       "A"
     ]

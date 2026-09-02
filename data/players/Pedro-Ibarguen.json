@@ -3,7 +3,7 @@
   "name": "Pedro Ibarguen",
   "archived": false,
   "playerType": "Hitter",
-  "generatedAt": "2026-09-02T09:39:50.982Z",
+  "generatedAt": "2026-09-02T13:54:14.481Z",
   "bio": {
     "Player-ID": "Pedro-Ibarguen",
     "MLBAM ID": "808338",
@@ -212,7 +212,7 @@
       "K%": "23.4%",
       "BB%": "14.7%",
       "SwStr %": "12.9%",
-      "Whiff%": "28.9%",
+      "Whiff%": "28.8%",
       "Pull %": "47.1%",
       "Cent %": "20.1%",
       "Oppo %": "32.8%",
@@ -228,12 +228,12 @@
   },
   "gamedayWhiff": {
     "mlbamID": "808338",
-    "swings": 547,
-    "whiffs": 158,
-    "contacts": 389,
-    "whiffPct": 28.9,
-    "contactPct": 71.1,
-    "games": 79,
+    "swings": 552,
+    "whiffs": 159,
+    "contacts": 393,
+    "whiffPct": 28.8,
+    "contactPct": 71.2,
+    "games": 80,
     "levels": [
       "A"
     ]

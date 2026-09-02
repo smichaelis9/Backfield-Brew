@@ -3,7 +3,7 @@
   "name": "Moises Polanco",
   "archived": false,
   "playerType": "Hitter",
-  "generatedAt": "2026-09-02T09:39:50.982Z",
+  "generatedAt": "2026-09-02T13:54:14.481Z",
   "bio": {
     "Player-ID": "Moises-Polanco",
     "MLBAM ID": "821199",
@@ -212,7 +212,7 @@
       "K%": "19.1%",
       "BB%": "18.2%",
       "SwStr %": "12.1%",
-      "Whiff%": "33.3%",
+      "Whiff%": "25.0%",
       "Pull %": "27.7%",
       "Cent %": "15.4%",
       "Oppo %": "56.9%",
@@ -228,12 +228,12 @@
   },
   "gamedayWhiff": {
     "mlbamID": "821199",
-    "swings": 18,
+    "swings": 24,
     "whiffs": 6,
-    "contacts": 12,
-    "whiffPct": 33.3,
-    "contactPct": 66.7,
-    "games": 3,
+    "contacts": 18,
+    "whiffPct": 25,
+    "contactPct": 75,
+    "games": 4,
     "levels": [
       "A"
     ]

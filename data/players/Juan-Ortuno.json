@@ -3,7 +3,7 @@
   "name": "Juan Ortuno",
   "archived": false,
   "playerType": "Hitter",
-  "generatedAt": "2026-09-02T09:39:50.982Z",
+  "generatedAt": "2026-09-02T13:54:14.481Z",
   "bio": {
     "Player-ID": "Juan-Ortuno",
     "MLBAM ID": "821187",
@@ -212,7 +212,7 @@
       "K%": "16.0%",
       "BB%": "17.1%",
       "SwStr %": "7.6%",
-      "Whiff%": "19.6%",
+      "Whiff%": "19.7%",
       "Pull %": "43.5%",
       "Cent %": "22.9%",
       "Oppo %": "33.6%",
@@ -228,14 +228,15 @@
   },
   "gamedayWhiff": {
     "mlbamID": "821187",
-    "swings": 728,
-    "whiffs": 143,
-    "contacts": 585,
-    "whiffPct": 19.6,
-    "contactPct": 80.4,
-    "games": 102,
+    "swings": 730,
+    "whiffs": 144,
+    "contacts": 586,
+    "whiffPct": 19.7,
+    "contactPct": 80.3,
+    "games": 103,
     "levels": [
-      "A"
+      "A",
+      "A+"
     ]
   },
   "videos": [
