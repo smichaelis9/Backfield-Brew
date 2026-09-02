@@ -1634,16 +1634,16 @@ function scorePitcher(
       2.00 +
 
     player.strikeOuts *
-      0.80 -
+      1.00 +
 
     player.hits *
       0.70 -
 
     player.baseOnBalls *
-      0.70 -
+      1.00 -
 
     player.hitByPitch *
-      0.40 -
+      1.00 -
 
     player.earnedRuns *
       2.00 -
