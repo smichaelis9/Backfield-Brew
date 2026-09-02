@@ -1079,6 +1079,19 @@
     "Arm": "50/55"
   },
   {
+    "Player-ID": "Jheremy-Vargas",
+    "Player": "Jheremy Vargas",
+    "Last Updated": "12/13/2024",
+    "Hit": "40/50",
+    "Raw Power": "35/40",
+    "Game Power": "30/35",
+    "Bat to Ball": "50/55",
+    "Swing Decisions": "35/40",
+    "Speed": "50/50",
+    "Field": "45/55",
+    "Arm": "60/60"
+  },
+  {
     "Player-ID": "Yoneiker-Lugo",
     "Player": "Yoneiker Lugo",
     "Last Updated": "12/10/2024",
@@ -1207,19 +1220,6 @@
     "Speed": "60/60",
     "Field": "40/50 (OF)",
     "Arm": "50/50"
-  },
-  {
-    "Player-ID": "Jheremy-Vargas",
-    "Player": "Jheremy Vargas",
-    "Last Updated": "12/13/2024",
-    "Hit": "40/50",
-    "Raw Power": "35/40",
-    "Game Power": "30/35",
-    "Bat to Ball": "50/55",
-    "Swing Decisions": "35/40",
-    "Speed": "50/50",
-    "Field": "45/55",
-    "Arm": "60/60"
   },
   {
     "Player-ID": "Eric-Martinez",

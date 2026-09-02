@@ -912,6 +912,12 @@
     "archived": false
   },
   {
+    "id": "Jesus-Vasquez",
+    "name": "Jesus Vasquez",
+    "file": "Jesus-Vasquez.json",
+    "archived": false
+  },
+  {
     "id": "Garrett-Hodges",
     "name": "Garrett Hodges",
     "file": "Garrett-Hodges.json",
@@ -1140,6 +1146,12 @@
     "archived": false
   },
   {
+    "id": "Jheremy-Vargas",
+    "name": "Jheremy Vargas",
+    "file": "Jheremy-Vargas.json",
+    "archived": false
+  },
+  {
     "id": "Yoneiker-Lugo",
     "name": "Yoneiker Lugo",
     "file": "Yoneiker-Lugo.json",
@@ -1290,12 +1302,6 @@
     "archived": false
   },
   {
-    "id": "Jheremy-Vargas",
-    "name": "Jheremy Vargas",
-    "file": "Jheremy-Vargas.json",
-    "archived": false
-  },
-  {
     "id": "Victor-Garcia",
     "name": "Victor Garcia",
     "file": "Victor-Garcia.json",
@@ -1305,12 +1311,6 @@
     "id": "Jefrey-Etienne",
     "name": "Jefrey Etienne",
     "file": "Jefrey-Etienne.json",
-    "archived": false
-  },
-  {
-    "id": "Jesus-Vasquez",
-    "name": "Jesus Vasquez",
-    "file": "Jesus-Vasquez.json",
     "archived": false
   },
   {
