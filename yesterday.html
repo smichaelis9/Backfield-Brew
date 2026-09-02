@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+
+  <title>Backfield Brew – Yesterday on the Farm</title>
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  />
+
+  <link
+    rel="stylesheet"
+    href="styles.css?v=28"
+  />
+
+  <script
+    defer
+    src="script.js?v=54"
+  ></script>
+
+  <link
+    rel="icon"
+    type="image/png"
+    href="/favicon.png"
+  >
+
+  <link
+    rel="apple-touch-icon"
+    href="/favicon.png"
+  >
+</head>
+
+<body>
+
+  <!-- =========================
+       HEADER
+  ========================== -->
+
+  <header class="site-header">
+
+    <img
+      src="BFB-Logo.png"
+      alt="Backfield Brew"
+      class="site-logo"
+    />
+
+  </header>
+
+
+  <div class="header-buttons">
+
+    <a href="index.html">
+      Active Rankings
+    </a>
+
+    <a href="archive.html">
+      Archived Players
+    </a>
+
+    <a
+      href="https://www.patreon.com/BackfieldBrew"
+      target="_blank"
+      rel="noopener"
+    >
+      Patreon
+    </a>
+
+
+    <div class="dropdown-nav">
+
+      <button class="dropdown-button">
+        Other Pages ▼
+      </button>
+
+
+      <div class="dropdown-content">
+
+        <a href="yesterday.html">
+          Yesterday on the Farm
+        </a>
+
+        <a href="depth.html">
+          Organizational Depth Chart
+        </a>
+
+        <a href="stats.html">
+          Organizational Stats
+        </a>
+
+        <a href="logs.html">
+          Scouting Logs
+        </a>
+
+        <a href="transactions.html">
+          Transactions
+        </a>
+
+        <a href="rule5.html">
+          Rule 5 Eligibility
+        </a>
+
+        <a href="freeagency.html">
+          MiLB Free Agency
+        </a>
+
+        <a href="draft.html">
+          Draft History
+        </a>
+
+        <a href="international.html">
+          International History
+        </a>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <!-- =========================
+       MAIN
+  ========================== -->
+
+  <main class="container">
+
+    <section class="card yotf-header-card">
+
+      <h1>
+        Yesterday on the Farm
+      </h1>
+
+      <p
+        id="yotfDate"
+        class="yotf-date"
+      >
+        Loading...
+      </p>
+
+    </section>
+
+
+    <!-- =========================
+         HITTERS
+    ========================== -->
+
+    <section class="card">
+
+      <div class="yotf-section-heading">
+
+        <div>
+          <span class="yotf-eyebrow">
+            TOP PERFORMERS
+          </span>
+
+          <h2>
+            Hitters
+          </h2>
+        </div>
+
+      </div>
+
+
+      <div
+        id="yotfHitters"
+        class="yotf-list"
+      >
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         PITCHERS
+    ========================== -->
+
+    <section class="card">
+
+      <div class="yotf-section-heading">
+
+        <div>
+          <span class="yotf-eyebrow">
+            TOP PERFORMERS
+          </span>
+
+          <h2>
+            Pitchers
+          </h2>
+        </div>
+
+      </div>
+
+
+      <div
+        id="yotfPitchers"
+        class="yotf-list"
+      >
+      </div>
+
+    </section>
+
+
+    <p
+      id="yotfStatus"
+      class="yotf-status"
+    >
+    </p>
+
+  </main>
+
+
+  <!-- =========================
+       INIT
+  ========================== -->
+
+  <script>
+
+    document.addEventListener(
+      "DOMContentLoaded",
+      () => {
+
+        initYesterdayOnTheFarm();
+
+        handleHeaderButtons();
+
+        setupMobileDropdown();
+
+      }
+    );
+
+  </script>
+
+</body>
+
+</html>
