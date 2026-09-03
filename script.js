@@ -11994,7 +11994,7 @@ async function renderHomeStandings() {
 
   const select =
     document.getElementById(
-      "standingsLeagueSelect"
+      "standingsLeague"
     );
 
 
