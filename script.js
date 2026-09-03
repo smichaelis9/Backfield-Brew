@@ -10182,3 +10182,1189 @@ function escapeYotfHtml(
     );
 
 }
+/* =========================================================
+   HOME DASHBOARD
+   YOTF / TOP 100 / TRENDING
+========================================================= */
+
+async function initHomeDashboard() {
+
+  const yesterdayBox =
+    document.getElementById(
+      "yesterdayHomeContent"
+    );
+
+  const top100Box =
+    document.getElementById(
+      "top100SnapshotContent"
+    );
+
+  const trendingBox =
+    document.getElementById(
+      "trendingUpContent"
+    );
+
+
+  /*
+   * If we're not on the homepage,
+   * don't do anything.
+   */
+  if (
+    !yesterdayBox &&
+    !top100Box &&
+    !trendingBox
+  ) {
+    return;
+  }
+
+
+  try {
+
+    /*
+     * Load Biography Info once.
+     *
+     * loadSheet() already caches it,
+     * so other homepage sections will
+     * be able to reuse this later.
+     */
+    const biography =
+      await loadSheet(
+        "Biography Info"
+      );
+
+
+    const cleanPlayers =
+      biography.filter(player => {
+
+        const playerId =
+          get(
+            player,
+            [
+              "Player-ID",
+              "Player ID"
+            ]
+          );
+
+        const playerName =
+          get(
+            player,
+            [
+              "Player",
+              "Name"
+            ]
+          );
+
+
+        return (
+          isRealValue(playerId) &&
+          isRealValue(playerName)
+        );
+      });
+
+
+    /*
+     * Render biography-based sections.
+     */
+    renderHomeTop100(
+      cleanPlayers
+    );
+
+    renderHomeTrending(
+      cleanPlayers
+    );
+
+
+    /*
+     * Yesterday on the Farm has
+     * its own generated JSON.
+     */
+    await renderHomeYesterday(
+      cleanPlayers
+    );
+
+
+  } catch (err) {
+
+    console.error(
+      "Home dashboard:",
+      err
+    );
+
+
+    if (top100Box) {
+
+      top100Box.innerHTML = `
+        <div class="home-empty">
+          Rankings unavailable.
+        </div>
+      `;
+    }
+
+
+    if (trendingBox) {
+
+      trendingBox.innerHTML = `
+        <div class="home-empty">
+          Trending players unavailable.
+        </div>
+      `;
+    }
+
+
+    if (yesterdayBox) {
+
+      yesterdayBox.innerHTML = `
+        <div class="home-empty">
+          Yesterday's performers unavailable.
+        </div>
+      `;
+    }
+
+  }
+}
+
+
+/* =========================================================
+   HOME PLAYER HELPERS
+========================================================= */
+
+function getHomePlayerId(player) {
+
+  return String(
+    get(
+      player,
+      [
+        "Player-ID",
+        "Player ID"
+      ]
+    ) || ""
+  ).trim();
+}
+
+
+function getHomePlayerName(player) {
+
+  return String(
+    get(
+      player,
+      [
+        "Player",
+        "Name"
+      ]
+    ) || ""
+  ).trim();
+}
+
+
+function getHomePlayerRank(player) {
+
+  const rank =
+    Number(
+      get(
+        player,
+        ["Rank"]
+      )
+    );
+
+
+  return (
+    Number.isFinite(rank) &&
+    rank > 0
+  )
+    ? rank
+    : null;
+}
+
+
+function getHomePreviousRank(player) {
+
+  const rank =
+    Number(
+      get(
+        player,
+        ["Previous Rank"]
+      )
+    );
+
+
+  return (
+    Number.isFinite(rank) &&
+    rank > 0
+  )
+    ? rank
+    : null;
+}
+
+
+function getHomePlayerPicture(
+  player
+) {
+
+  const picture =
+    get(
+      player,
+      [
+        "Picture",
+        "Image",
+        "Photo",
+        "Picture URL",
+        "Image URL"
+      ]
+    );
+
+
+  if (
+    isRealValue(picture)
+  ) {
+    return picture;
+  }
+
+
+  const mlbam =
+    String(
+      get(
+        player,
+        [
+          "MLBAM ID",
+          "MLBAM",
+          "MLB ID"
+        ]
+      ) || ""
+    ).trim();
+
+
+  return getHomeMlbamPicture(
+    mlbam
+  );
+}
+
+
+function getHomeMlbamPicture(
+  mlbamId
+) {
+
+  const id =
+    String(
+      mlbamId || ""
+    ).trim();
+
+
+  if (!id) {
+
+    return (
+      "https://img.mlbstatic.com/" +
+      "mlb-photos/image/upload/" +
+      "d_people:generic:headshot:" +
+      "silo:current.png"
+    );
+  }
+
+
+  return (
+    "https://img.mlbstatic.com/" +
+    "mlb-photos/image/upload/" +
+    "w_180," +
+    "d_people:generic:headshot:" +
+    "silo:current.png," +
+    "q_auto:best," +
+    "f_auto/" +
+    "v1/people/" +
+    id +
+    "/headshot/67/current"
+  );
+}
+
+
+function getHomePlayerURL(
+  player
+) {
+
+  const playerId =
+    getHomePlayerId(
+      player
+    );
+
+
+  if (!playerId) {
+    return "rankings.html";
+  }
+
+
+  return (
+    "player.html?id=" +
+    encodeURIComponent(
+      playerId
+    )
+  );
+}
+
+
+/* =========================================================
+   TOP 100 SNAPSHOT
+========================================================= */
+
+function renderHomeTop100(
+  players
+) {
+
+  const container =
+    document.getElementById(
+      "top100SnapshotContent"
+    );
+
+
+  if (!container) {
+    return;
+  }
+
+
+  const rankedPlayers =
+    players
+      .filter(player => {
+
+        const rank =
+          getHomePlayerRank(
+            player
+          );
+
+
+        return (
+          rank !== null &&
+          rank <= 100
+        );
+      })
+      .sort(
+        (a, b) =>
+          getHomePlayerRank(a) -
+          getHomePlayerRank(b)
+      )
+      .slice(0, 10);
+
+
+  if (!rankedPlayers.length) {
+
+    container.innerHTML = `
+      <div class="home-empty">
+        No ranked players available.
+      </div>
+    `;
+
+    return;
+  }
+
+
+  container.innerHTML =
+    rankedPlayers
+      .map(player =>
+        buildHomeRankingRow(
+          player
+        )
+      )
+      .join("");
+}
+
+
+/* =========================
+   TOP 100 PLAYER ROW
+========================= */
+
+function buildHomeRankingRow(
+  player
+) {
+
+  const rank =
+    getHomePlayerRank(
+      player
+    );
+
+
+  const previousRank =
+    getHomePreviousRank(
+      player
+    );
+
+
+  const name =
+    getHomePlayerName(
+      player
+    );
+
+
+  const href =
+    getHomePlayerURL(
+      player
+    );
+
+
+  const picture =
+    getHomePlayerPicture(
+      player
+    );
+
+
+  const position =
+    get(
+      player,
+      [
+        "Position",
+        "Pos"
+      ]
+    );
+
+
+  const level =
+    get(
+      player,
+      ["Level"]
+    );
+
+
+  const ofp =
+    get(
+      player,
+      ["OFP"]
+    );
+
+
+  const movement =
+    getHomeMovement(
+      rank,
+      previousRank
+    );
+
+
+  return `
+
+    <div class="home-player-row">
+
+      <div class="home-player-rank">
+        ${rank}
+      </div>
+
+
+      <a
+        href="${escapeHomeHTML(href)}"
+        class="home-player-photo-link"
+      >
+
+        <img
+          src="${escapeHomeHTML(picture)}"
+          alt="${escapeHomeHTML(name)}"
+          class="home-player-photo"
+          loading="lazy"
+          onerror="
+            this.onerror=null;
+            this.src='${getHomeMlbamPicture(
+              get(
+                player,
+                ["MLBAM ID"]
+              )
+            )}';
+          "
+        >
+
+      </a>
+
+
+      <div class="home-player-info">
+
+        <a
+          href="${escapeHomeHTML(href)}"
+          class="home-player-name"
+        >
+          ${escapeHomeHTML(name)}
+        </a>
+
+
+        <div class="home-player-meta">
+
+          ${escapeHomeHTML(position)}
+
+          ${
+            isRealValue(level)
+              ? ` · ${escapeHomeHTML(level)}`
+              : ""
+          }
+
+          ${
+            isRealValue(ofp)
+              ? ` · ${escapeHomeHTML(ofp)} OFP`
+              : ""
+          }
+
+        </div>
+
+      </div>
+
+
+      <div class="home-player-value">
+        ${movement}
+      </div>
+
+    </div>
+  `;
+}
+
+
+/* =========================================================
+   TRENDING UP
+========================================================= */
+
+function renderHomeTrending(
+  players
+) {
+
+  const container =
+    document.getElementById(
+      "trendingUpContent"
+    );
+
+
+  if (!container) {
+    return;
+  }
+
+
+  const risers =
+    players
+      .map(player => {
+
+        const currentRank =
+          getHomePlayerRank(
+            player
+          );
+
+
+        const previousRank =
+          getHomePreviousRank(
+            player
+          );
+
+
+        if (
+          currentRank === null ||
+          previousRank === null
+        ) {
+          return null;
+        }
+
+
+        const movement =
+          previousRank -
+          currentRank;
+
+
+        if (
+          movement <= 0
+        ) {
+          return null;
+        }
+
+
+        return {
+          player,
+          movement
+        };
+      })
+      .filter(Boolean)
+      .sort(
+        (a, b) => {
+
+          /*
+           * Biggest jump first.
+           *
+           * Tie breaker:
+           * current ranking.
+           */
+          if (
+            b.movement !==
+            a.movement
+          ) {
+            return (
+              b.movement -
+              a.movement
+            );
+          }
+
+
+          return (
+            getHomePlayerRank(
+              a.player
+            ) -
+            getHomePlayerRank(
+              b.player
+            )
+          );
+        }
+      )
+      .slice(0, 5);
+
+
+  if (!risers.length) {
+
+    container.innerHTML = `
+      <div class="home-empty">
+        No current ranking risers.
+      </div>
+    `;
+
+    return;
+  }
+
+
+  container.innerHTML =
+    risers
+      .map(item =>
+        buildHomeTrendingRow(
+          item.player,
+          item.movement
+        )
+      )
+      .join("");
+}
+
+
+/* =========================
+   TRENDING PLAYER ROW
+========================= */
+
+function buildHomeTrendingRow(
+  player,
+  movement
+) {
+
+  const rank =
+    getHomePlayerRank(
+      player
+    );
+
+
+  const name =
+    getHomePlayerName(
+      player
+    );
+
+
+  const href =
+    getHomePlayerURL(
+      player
+    );
+
+
+  const picture =
+    getHomePlayerPicture(
+      player
+    );
+
+
+  const position =
+    get(
+      player,
+      [
+        "Position",
+        "Pos"
+      ]
+    );
+
+
+  const level =
+    get(
+      player,
+      ["Level"]
+    );
+
+
+  return `
+
+    <div class="home-player-row">
+
+      <div class="home-player-rank">
+        ${rank}
+      </div>
+
+
+      <a
+        href="${escapeHomeHTML(href)}"
+        class="home-player-photo-link"
+      >
+
+        <img
+          src="${escapeHomeHTML(picture)}"
+          alt="${escapeHomeHTML(name)}"
+          class="home-player-photo"
+          loading="lazy"
+          onerror="
+            this.onerror=null;
+            this.src='${getHomeMlbamPicture(
+              get(
+                player,
+                ["MLBAM ID"]
+              )
+            )}';
+          "
+        >
+
+      </a>
+
+
+      <div class="home-player-info">
+
+        <a
+          href="${escapeHomeHTML(href)}"
+          class="home-player-name"
+        >
+          ${escapeHomeHTML(name)}
+        </a>
+
+
+        <div class="home-player-meta">
+
+          #${rank}
+
+          ${
+            isRealValue(position)
+              ? ` · ${escapeHomeHTML(position)}`
+              : ""
+          }
+
+          ${
+            isRealValue(level)
+              ? ` · ${escapeHomeHTML(level)}`
+              : ""
+          }
+
+        </div>
+
+
+        <div class="home-player-detail">
+
+          Previously #${getHomePreviousRank(player)}
+
+        </div>
+
+      </div>
+
+
+      <div
+        class="home-player-value home-trending-arrow up"
+      >
+        ▲ ${movement}
+      </div>
+
+    </div>
+  `;
+}
+
+
+/* =========================================================
+   HOME YESTERDAY ON THE FARM
+========================================================= */
+
+async function renderHomeYesterday(
+  biography
+) {
+
+  const container =
+    document.getElementById(
+      "yesterdayHomeContent"
+    );
+
+
+  if (!container) {
+    return;
+  }
+
+
+  try {
+
+    const response =
+      await fetch(
+        "data/yesterday-on-the-farm.json",
+        {
+          cache: "no-store"
+        }
+      );
+
+
+    if (!response.ok) {
+
+      throw new Error(
+        "Yesterday on the Farm data unavailable"
+      );
+    }
+
+
+    const data =
+      await response.json();
+
+
+    /*
+     * Build lookup by Player-ID.
+     */
+    const biographyMap =
+      new Map();
+
+
+    biography.forEach(player => {
+
+      const playerId =
+        getHomePlayerId(
+          player
+        );
+
+
+      if (playerId) {
+
+        biographyMap.set(
+          playerId,
+          player
+        );
+      }
+    });
+
+
+    /*
+     * Homepage:
+     * 3 hitters + 2 pitchers
+     */
+    const hitters =
+      Array.isArray(
+        data.hitters
+      )
+        ? data.hitters.slice(0, 3)
+        : [];
+
+
+    const pitchers =
+      Array.isArray(
+        data.pitchers
+      )
+        ? data.pitchers.slice(0, 2)
+        : [];
+
+
+    if (
+      !hitters.length &&
+      !pitchers.length
+    ) {
+
+      container.innerHTML = `
+        <div class="home-empty">
+          No qualifying performances.
+        </div>
+      `;
+
+      return;
+    }
+
+
+    container.innerHTML = `
+
+      ${
+        hitters.length
+          ? `
+
+            <div class="home-yotf-group">
+
+              <div class="home-yotf-label">
+                HITTERS
+              </div>
+
+              ${hitters
+                .map(player =>
+                  buildHomeYotfRow(
+                    player,
+                    biographyMap
+                  )
+                )
+                .join("")}
+
+            </div>
+
+          `
+          : ""
+      }
+
+
+      ${
+        pitchers.length
+          ? `
+
+            <div class="home-yotf-group">
+
+              <div class="home-yotf-label">
+                PITCHERS
+              </div>
+
+              ${pitchers
+                .map(player =>
+                  buildHomeYotfRow(
+                    player,
+                    biographyMap
+                  )
+                )
+                .join("")}
+
+            </div>
+
+          `
+          : ""
+      }
+
+    `;
+
+
+  } catch (err) {
+
+    console.error(
+      "Homepage YOTF:",
+      err
+    );
+
+
+    container.innerHTML = `
+      <div class="home-empty">
+        Yesterday's performers unavailable.
+      </div>
+    `;
+  }
+}
+
+
+/* =========================
+   YOTF PLAYER ROW
+========================= */
+
+function buildHomeYotfRow(
+  player,
+  biographyMap
+) {
+
+  const playerId =
+    String(
+      player.playerId ||
+      ""
+    ).trim();
+
+
+  const bio =
+    biographyMap.get(
+      playerId
+    ) || {};
+
+
+  const name =
+    String(
+      player.name ||
+      getHomePlayerName(bio) ||
+      ""
+    );
+
+
+  const mlbamId =
+    player.mlbamId ||
+    get(
+      bio,
+      ["MLBAM ID"]
+    );
+
+
+  /*
+   * Ranked player:
+   * use Biography Info Picture.
+   *
+   * Otherwise:
+   * use MLBAM.
+   */
+  const rank =
+    Number(
+      player.rank ||
+      getHomePlayerRank(bio)
+    );
+
+
+  const bioPicture =
+    get(
+      bio,
+      [
+        "Picture",
+        "Image",
+        "Photo",
+        "Picture URL",
+        "Image URL"
+      ]
+    );
+
+
+  const picture =
+    (
+      Number.isFinite(rank) &&
+      rank > 0 &&
+      isRealValue(bioPicture)
+    )
+      ? bioPicture
+      : getHomeMlbamPicture(
+          mlbamId
+        );
+
+
+  const href =
+    playerId
+      ? (
+          "player.html?id=" +
+          encodeURIComponent(
+            playerId
+          )
+        )
+      : "rankings.html";
+
+
+  const line =
+    String(
+      player.line ||
+      ""
+    );
+
+
+  return `
+
+    <div class="home-yotf-row">
+
+      <a
+        href="${escapeHomeHTML(href)}"
+      >
+
+        <img
+          src="${escapeHomeHTML(picture)}"
+          alt="${escapeHomeHTML(name)}"
+          class="home-yotf-photo"
+          loading="lazy"
+          onerror="
+            this.onerror=null;
+            this.src='${getHomeMlbamPicture(
+              mlbamId
+            )}';
+          "
+        >
+
+      </a>
+
+
+      <div>
+
+        <a
+          href="${escapeHomeHTML(href)}"
+          class="home-yotf-name"
+        >
+          ${escapeHomeHTML(name)}
+        </a>
+
+
+        <div class="home-yotf-line">
+          ${escapeHomeHTML(line)}
+        </div>
+
+      </div>
+
+    </div>
+  `;
+}
+
+
+/* =========================================================
+   MOVEMENT
+========================================================= */
+
+function getHomeMovement(
+  currentRank,
+  previousRank
+) {
+
+  if (
+    !Number.isFinite(
+      Number(currentRank)
+    )
+  ) {
+    return "";
+  }
+
+
+  if (
+    !Number.isFinite(
+      Number(previousRank)
+    )
+  ) {
+
+    return `
+      <span class="trend new">
+        NEW
+      </span>
+    `;
+  }
+
+
+  const change =
+    Number(previousRank) -
+    Number(currentRank);
+
+
+  if (change > 0) {
+
+    return `
+      <span class="trend up">
+        ▲ ${change}
+      </span>
+    `;
+  }
+
+
+  if (change < 0) {
+
+    return `
+      <span class="trend down">
+        ▼ ${Math.abs(change)}
+      </span>
+    `;
+  }
+
+
+  return `
+    <span class="trend same">
+      —
+    </span>
+  `;
+}
+
+
+/* =========================================================
+   HOME HTML ESCAPE
+========================================================= */
+
+function escapeHomeHTML(
+  value
+) {
+
+  return String(
+    value ?? ""
+  )
+    .replaceAll(
+      "&",
+      "&amp;"
+    )
+    .replaceAll(
+      "<",
+      "&lt;"
+    )
+    .replaceAll(
+      ">",
+      "&gt;"
+    )
+    .replaceAll(
+      '"',
+      "&quot;"
+    )
+    .replaceAll(
+      "'",
+      "&#039;"
+    );
+}
