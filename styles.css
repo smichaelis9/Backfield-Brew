@@ -3848,3 +3848,183 @@ tr:nth-child(even) {
   }
 
 }
+/* =========================================================
+   HOME - TODAY ON THE FARM
+========================================================= */
+
+.home-game-row {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 14px;
+  align-items: center;
+  padding: 12px 0;
+  border-bottom: 1px solid rgba(0,0,0,.08);
+}
+
+.home-game-row:last-child {
+  border-bottom: 0;
+}
+
+.home-game-main {
+  min-width: 0;
+}
+
+.home-game-affiliate {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 6px;
+  font-size: .94rem;
+  font-weight: 800;
+}
+
+.home-game-affiliate > span {
+  font-size: .68rem;
+  font-weight: 800;
+  opacity: .55;
+}
+
+.home-game-matchup {
+  margin-top: 2px;
+  font-size: .82rem;
+  font-weight: 600;
+  opacity: .68;
+}
+
+.home-game-right {
+  text-align: right;
+  white-space: nowrap;
+}
+
+.home-game-time {
+  font-size: .94rem;
+  font-weight: 900;
+}
+
+.home-game-status {
+  font-size: .76rem;
+  font-weight: 900;
+}
+
+.home-game-status.cancelled,
+.home-game-status.postponed {
+  opacity: .55;
+}
+
+.home-game-doubleheader {
+  padding: 2px 5px;
+  border-radius: 4px;
+  background: rgba(0,0,0,.06);
+  font-size: .61rem !important;
+  opacity: .7 !important;
+}
+
+.home-game-starter {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  margin-top: 7px;
+}
+
+.home-game-starter-photo-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  overflow: hidden;
+  border-radius: 5px;
+  background: #eee;
+}
+
+.home-game-starter-photo {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center bottom;
+}
+
+.home-game-starter-info {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.home-game-starter-label {
+  font-size: .55rem;
+  font-weight: 900;
+  letter-spacing: .08em;
+  opacity: .45;
+}
+
+.home-game-starter-name {
+  color: inherit;
+  font-size: .77rem;
+  font-weight: 800;
+  line-height: 1.1;
+  text-decoration: none;
+}
+
+a.home-game-starter-name:hover {
+  text-decoration: underline;
+}
+
+.home-game-starter-rank {
+  margin-top: 1px;
+  font-size: .62rem;
+  font-weight: 700;
+  opacity: .55;
+}
+
+.home-game-final,
+.home-game-live {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 1px;
+  font-size: .72rem;
+}
+
+.home-game-final strong,
+.home-game-live strong {
+  font-size: 1rem;
+}
+
+.home-game-result {
+  font-size: .65rem;
+  font-weight: 900;
+}
+
+.home-game-live span {
+  font-weight: 800;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+
+  .home-game-row {
+    gap: 8px;
+    padding: 10px 0;
+  }
+
+  .home-game-affiliate {
+    font-size: .86rem;
+  }
+
+  .home-game-matchup {
+    font-size: .75rem;
+  }
+
+  .home-game-starter-photo-link {
+    width: 32px;
+    height: 32px;
+  }
+
+  .home-game-time {
+    font-size: .84rem;
+  }
+
+}
