@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "generatedAt": "2026-09-02T13:43:44.308Z",
+  "generatedAt": "2026-09-03T13:38:46.313Z",
   "source": "MLB Stats API Gameday play-by-play",
   "definition": {
     "whiffPct": "Whiffs divided by swings",
@@ -32,7 +32,7 @@
       "sportId": 14
     }
   ],
-  "gamesProcessed": 514,
+  "gamesProcessed": 518,
   "hitters": {
     "506702": {
       "playerId": 506702,
@@ -93,13 +93,13 @@
     "606115": {
       "playerId": 606115,
       "name": "Orlando Arcia",
-      "pitches": 7,
-      "swings": 5,
+      "pitches": 22,
+      "swings": 10,
       "whiffs": 3,
-      "contacts": 2,
-      "whiffPct": 60,
-      "contactPct": 40,
-      "games": 1,
+      "contacts": 7,
+      "whiffPct": 30,
+      "contactPct": 70,
+      "games": 2,
       "levels": [
         "AAA"
       ]
@@ -205,13 +205,13 @@
     "641658": {
       "playerId": 641658,
       "name": "Garrett Hampson",
-      "pitches": 45,
-      "swings": 23,
+      "pitches": 54,
+      "swings": 27,
       "whiffs": 2,
-      "contacts": 21,
-      "whiffPct": 8.7,
-      "contactPct": 91.3,
-      "games": 4,
+      "contacts": 25,
+      "whiffPct": 7.4,
+      "contactPct": 92.6,
+      "games": 5,
       "levels": [
         "AAA"
       ]
@@ -317,13 +317,13 @@
     "656308": {
       "playerId": 656308,
       "name": "Michael Chavis",
-      "pitches": 47,
-      "swings": 32,
-      "whiffs": 8,
-      "contacts": 24,
-      "whiffPct": 25,
-      "contactPct": 75,
-      "games": 4,
+      "pitches": 57,
+      "swings": 39,
+      "whiffs": 10,
+      "contacts": 29,
+      "whiffPct": 25.6,
+      "contactPct": 74.4,
+      "games": 5,
       "levels": [
         "AAA"
       ]
@@ -359,13 +359,13 @@
     "663604": {
       "playerId": 663604,
       "name": "Brandon Lockridge",
-      "pitches": 205,
-      "swings": 93,
+      "pitches": 220,
+      "swings": 103,
       "whiffs": 23,
-      "contacts": 70,
-      "whiffPct": 24.7,
-      "contactPct": 75.3,
-      "games": 12,
+      "contacts": 80,
+      "whiffPct": 22.3,
+      "contactPct": 77.7,
+      "games": 13,
       "levels": [
         "AAA"
       ]
@@ -401,13 +401,13 @@
     "664731": {
       "playerId": 664731,
       "name": "P.J. Higgins",
-      "pitches": 72,
-      "swings": 31,
-      "whiffs": 5,
-      "contacts": 26,
-      "whiffPct": 16.1,
-      "contactPct": 83.9,
-      "games": 4,
+      "pitches": 82,
+      "swings": 38,
+      "whiffs": 6,
+      "contacts": 32,
+      "whiffPct": 15.8,
+      "contactPct": 84.2,
+      "games": 5,
       "levels": [
         "AAA"
       ]
@@ -527,13 +527,13 @@
     "666181": {
       "playerId": 666181,
       "name": "Will Benson",
-      "pitches": 22,
-      "swings": 12,
-      "whiffs": 4,
-      "contacts": 8,
-      "whiffPct": 33.3,
-      "contactPct": 66.7,
-      "games": 1,
+      "pitches": 35,
+      "swings": 21,
+      "whiffs": 6,
+      "contacts": 15,
+      "whiffPct": 28.6,
+      "contactPct": 71.4,
+      "games": 2,
       "levels": [
         "AAA"
       ]
@@ -598,13 +598,13 @@
     "668731": {
       "playerId": 668731,
       "name": "Akil Baddoo",
-      "pitches": 811,
-      "swings": 369,
+      "pitches": 822,
+      "swings": 373,
       "whiffs": 93,
-      "contacts": 276,
-      "whiffPct": 25.2,
-      "contactPct": 74.8,
-      "games": 50,
+      "contacts": 280,
+      "whiffPct": 24.9,
+      "contactPct": 75.1,
+      "games": 51,
       "levels": [
         "AAA"
       ]
@@ -782,13 +782,13 @@
     "670232": {
       "playerId": 670232,
       "name": "Ramón Rodríguez",
-      "pitches": 636,
-      "swings": 319,
-      "whiffs": 57,
-      "contacts": 262,
-      "whiffPct": 17.9,
-      "contactPct": 82.1,
-      "games": 45,
+      "pitches": 645,
+      "swings": 325,
+      "whiffs": 58,
+      "contacts": 267,
+      "whiffPct": 17.8,
+      "contactPct": 82.2,
+      "games": 46,
       "levels": [
         "AAA"
       ]
@@ -895,13 +895,13 @@
     "672012": {
       "playerId": 672012,
       "name": "Tyler Black",
-      "pitches": 1575,
-      "swings": 664,
+      "pitches": 1596,
+      "swings": 674,
       "whiffs": 148,
-      "contacts": 516,
-      "whiffPct": 22.3,
-      "contactPct": 77.7,
-      "games": 88,
+      "contacts": 526,
+      "whiffPct": 22,
+      "contactPct": 78,
+      "games": 89,
       "levels": [
         "AAA"
       ]
@@ -1440,6 +1440,20 @@
         "AA"
       ]
     },
+    "680716": {
+      "playerId": 680716,
+      "name": "Jonathan Ornelas",
+      "pitches": 15,
+      "swings": 7,
+      "whiffs": 3,
+      "contacts": 4,
+      "whiffPct": 42.9,
+      "contactPct": 57.1,
+      "games": 1,
+      "levels": [
+        "AAA"
+      ]
+    },
     "680846": {
       "playerId": 680846,
       "name": "Pablo Aliendo",
@@ -1626,13 +1640,13 @@
     "682622": {
       "playerId": 682622,
       "name": "Noelvi Marte",
-      "pitches": 91,
-      "swings": 48,
+      "pitches": 104,
+      "swings": 54,
       "whiffs": 9,
-      "contacts": 39,
-      "whiffPct": 18.8,
-      "contactPct": 81.3,
-      "games": 7,
+      "contacts": 45,
+      "whiffPct": 16.7,
+      "contactPct": 83.3,
+      "games": 8,
       "levels": [
         "AAA"
       ]
@@ -1640,13 +1654,13 @@
     "682633": {
       "playerId": 682633,
       "name": "Eduardo Garcia",
-      "pitches": 1494,
-      "swings": 714,
-      "whiffs": 218,
-      "contacts": 496,
+      "pitches": 1507,
+      "swings": 718,
+      "whiffs": 219,
+      "contacts": 499,
       "whiffPct": 30.5,
       "contactPct": 69.5,
-      "games": 99,
+      "games": 100,
       "levels": [
         "AA",
         "AAA"
@@ -1860,6 +1874,20 @@
       "whiffPct": 20,
       "contactPct": 80,
       "games": 4,
+      "levels": [
+        "AA"
+      ]
+    },
+    "683569": {
+      "playerId": 683569,
+      "name": "Jose Colmenares",
+      "pitches": 15,
+      "swings": 9,
+      "whiffs": 3,
+      "contacts": 6,
+      "whiffPct": 33.3,
+      "contactPct": 66.7,
+      "games": 1,
       "levels": [
         "AA"
       ]
@@ -2119,13 +2147,13 @@
     "687152": {
       "playerId": 687152,
       "name": "Darrien Miller",
-      "pitches": 1295,
-      "swings": 473,
-      "whiffs": 91,
-      "contacts": 382,
-      "whiffPct": 19.2,
-      "contactPct": 80.8,
-      "games": 73,
+      "pitches": 1310,
+      "swings": 479,
+      "whiffs": 93,
+      "contacts": 386,
+      "whiffPct": 19.4,
+      "contactPct": 80.6,
+      "games": 74,
       "levels": [
         "AA",
         "AAA"
@@ -2190,13 +2218,13 @@
     "687262": {
       "playerId": 687262,
       "name": "Jorge Corona",
-      "pitches": 98,
-      "swings": 53,
+      "pitches": 107,
+      "swings": 58,
       "whiffs": 20,
-      "contacts": 33,
-      "whiffPct": 37.7,
-      "contactPct": 62.3,
-      "games": 6,
+      "contacts": 38,
+      "whiffPct": 34.5,
+      "contactPct": 65.5,
+      "games": 7,
       "levels": [
         "AA"
       ]
@@ -2360,13 +2388,13 @@
     "688005": {
       "playerId": 688005,
       "name": "Francisco Urbaez",
-      "pitches": 88,
-      "swings": 40,
-      "whiffs": 6,
-      "contacts": 34,
-      "whiffPct": 15,
-      "contactPct": 85,
-      "games": 7,
+      "pitches": 98,
+      "swings": 46,
+      "whiffs": 8,
+      "contacts": 38,
+      "whiffPct": 17.4,
+      "contactPct": 82.6,
+      "games": 8,
       "levels": [
         "AAA"
       ]
@@ -2430,13 +2458,13 @@
     "689052": {
       "playerId": 689052,
       "name": "Jordan Williams",
-      "pitches": 92,
-      "swings": 47,
-      "whiffs": 10,
-      "contacts": 37,
-      "whiffPct": 21.3,
-      "contactPct": 78.7,
-      "games": 7,
+      "pitches": 107,
+      "swings": 55,
+      "whiffs": 11,
+      "contacts": 44,
+      "whiffPct": 20,
+      "contactPct": 80,
+      "games": 8,
       "levels": [
         "A"
       ]
@@ -2865,13 +2893,13 @@
     "691600": {
       "playerId": 691600,
       "name": "Blayberg Diaz",
-      "pitches": 545,
-      "swings": 308,
-      "whiffs": 71,
-      "contacts": 237,
-      "whiffPct": 23.1,
-      "contactPct": 76.9,
-      "games": 44,
+      "pitches": 562,
+      "swings": 318,
+      "whiffs": 74,
+      "contacts": 244,
+      "whiffPct": 23.3,
+      "contactPct": 76.7,
+      "games": 45,
       "levels": [
         "A+"
       ]
@@ -2893,13 +2921,13 @@
     "691620": {
       "playerId": 691620,
       "name": "Jeferson Quero",
-      "pitches": 1539,
-      "swings": 791,
-      "whiffs": 220,
-      "contacts": 571,
-      "whiffPct": 27.8,
-      "contactPct": 72.2,
-      "games": 105,
+      "pitches": 1550,
+      "swings": 797,
+      "whiffs": 222,
+      "contacts": 575,
+      "whiffPct": 27.9,
+      "contactPct": 72.1,
+      "games": 106,
       "levels": [
         "AAA"
       ]
@@ -2907,13 +2935,13 @@
     "691621": {
       "playerId": 691621,
       "name": "Jheremy Vargas",
-      "pitches": 617,
-      "swings": 279,
+      "pitches": 633,
+      "swings": 284,
       "whiffs": 55,
-      "contacts": 224,
-      "whiffPct": 19.7,
-      "contactPct": 80.3,
-      "games": 46,
+      "contacts": 229,
+      "whiffPct": 19.4,
+      "contactPct": 80.6,
+      "games": 47,
       "levels": [
         "AA",
         "AAA"
@@ -3246,13 +3274,13 @@
     "694214": {
       "playerId": 694214,
       "name": "Samuel Zavala",
-      "pitches": 132,
-      "swings": 56,
+      "pitches": 145,
+      "swings": 61,
       "whiffs": 9,
-      "contacts": 47,
-      "whiffPct": 16.1,
-      "contactPct": 83.9,
-      "games": 9,
+      "contacts": 52,
+      "whiffPct": 14.8,
+      "contactPct": 85.2,
+      "games": 10,
       "levels": [
         "AA"
       ]
@@ -3358,13 +3386,13 @@
     "694385": {
       "playerId": 694385,
       "name": "Brock Wilken",
-      "pitches": 2019,
-      "swings": 755,
-      "whiffs": 181,
-      "contacts": 574,
-      "whiffPct": 24,
-      "contactPct": 76,
-      "games": 114,
+      "pitches": 2033,
+      "swings": 765,
+      "whiffs": 186,
+      "contacts": 579,
+      "whiffPct": 24.3,
+      "contactPct": 75.7,
+      "games": 115,
       "levels": [
         "AAA"
       ]
@@ -3442,13 +3470,13 @@
     "694689": {
       "playerId": 694689,
       "name": "Dominic Pitelli",
-      "pitches": 20,
-      "swings": 7,
-      "whiffs": 1,
-      "contacts": 6,
-      "whiffPct": 14.3,
-      "contactPct": 85.7,
-      "games": 1,
+      "pitches": 24,
+      "swings": 10,
+      "whiffs": 3,
+      "contacts": 7,
+      "whiffPct": 30,
+      "contactPct": 70,
+      "games": 2,
       "levels": [
         "AAA"
       ]
@@ -3456,13 +3484,13 @@
     "694749": {
       "playerId": 694749,
       "name": "Dylan Campbell",
-      "pitches": 61,
-      "swings": 29,
-      "whiffs": 8,
-      "contacts": 21,
-      "whiffPct": 27.6,
-      "contactPct": 72.4,
-      "games": 3,
+      "pitches": 80,
+      "swings": 39,
+      "whiffs": 11,
+      "contacts": 28,
+      "whiffPct": 28.2,
+      "contactPct": 71.8,
+      "games": 4,
       "levels": [
         "AA"
       ]
@@ -3698,13 +3726,13 @@
     "695501": {
       "playerId": 695501,
       "name": "Blake Burke",
-      "pitches": 1958,
-      "swings": 1036,
-      "whiffs": 288,
-      "contacts": 748,
+      "pitches": 1972,
+      "swings": 1044,
+      "whiffs": 290,
+      "contacts": 754,
       "whiffPct": 27.8,
       "contactPct": 72.2,
-      "games": 113,
+      "games": 114,
       "levels": [
         "AA",
         "AAA"
@@ -3741,13 +3769,13 @@
     "695554": {
       "playerId": 695554,
       "name": "Tayden Hall",
-      "pitches": 1462,
-      "swings": 550,
-      "whiffs": 150,
-      "contacts": 400,
-      "whiffPct": 27.3,
-      "contactPct": 72.7,
-      "games": 87,
+      "pitches": 1474,
+      "swings": 556,
+      "whiffs": 153,
+      "contacts": 403,
+      "whiffPct": 27.5,
+      "contactPct": 72.5,
+      "games": 88,
       "levels": [
         "A+",
         "AA"
@@ -3911,13 +3939,13 @@
     "698929": {
       "playerId": 698929,
       "name": "Jesus Hernandez",
-      "pitches": 120,
-      "swings": 42,
-      "whiffs": 7,
-      "contacts": 35,
-      "whiffPct": 16.7,
-      "contactPct": 83.3,
-      "games": 7,
+      "pitches": 140,
+      "swings": 49,
+      "whiffs": 8,
+      "contacts": 41,
+      "whiffPct": 16.3,
+      "contactPct": 83.7,
+      "games": 8,
       "levels": [
         "A+"
       ]
@@ -3995,13 +4023,13 @@
     "699114": {
       "playerId": 699114,
       "name": "Leo Balcazar",
-      "pitches": 184,
-      "swings": 95,
-      "whiffs": 18,
-      "contacts": 77,
-      "whiffPct": 18.9,
-      "contactPct": 81.1,
-      "games": 13,
+      "pitches": 193,
+      "swings": 102,
+      "whiffs": 20,
+      "contacts": 82,
+      "whiffPct": 19.6,
+      "contactPct": 80.4,
+      "games": 14,
       "levels": [
         "AA",
         "AAA"
@@ -4010,13 +4038,13 @@
     "699115": {
       "playerId": 699115,
       "name": "Carlos Jorge",
-      "pitches": 14,
-      "swings": 7,
-      "whiffs": 1,
-      "contacts": 6,
-      "whiffPct": 14.3,
-      "contactPct": 85.7,
-      "games": 1,
+      "pitches": 26,
+      "swings": 16,
+      "whiffs": 2,
+      "contacts": 14,
+      "whiffPct": 12.5,
+      "contactPct": 87.5,
+      "games": 2,
       "levels": [
         "AAA"
       ]
@@ -4038,13 +4066,13 @@
     "699127": {
       "playerId": 699127,
       "name": "Luis Castillo",
-      "pitches": 1731,
-      "swings": 672,
-      "whiffs": 183,
-      "contacts": 489,
+      "pitches": 1752,
+      "swings": 680,
+      "whiffs": 185,
+      "contacts": 495,
       "whiffPct": 27.2,
       "contactPct": 72.8,
-      "games": 103,
+      "games": 104,
       "levels": [
         "A+"
       ]
@@ -4251,13 +4279,13 @@
     "701062": {
       "playerId": 701062,
       "name": "Alec Briley",
-      "pitches": 201,
-      "swings": 119,
-      "whiffs": 26,
-      "contacts": 93,
-      "whiffPct": 21.8,
-      "contactPct": 78.2,
-      "games": 13,
+      "pitches": 221,
+      "swings": 133,
+      "whiffs": 27,
+      "contacts": 106,
+      "whiffPct": 20.3,
+      "contactPct": 79.7,
+      "games": 14,
       "levels": [
         "AA"
       ]
@@ -4307,13 +4335,13 @@
     "701333": {
       "playerId": 701333,
       "name": "Colby Shelton",
-      "pitches": 185,
-      "swings": 95,
-      "whiffs": 19,
-      "contacts": 76,
-      "whiffPct": 20,
-      "contactPct": 80,
-      "games": 13,
+      "pitches": 199,
+      "swings": 102,
+      "whiffs": 20,
+      "contacts": 82,
+      "whiffPct": 19.6,
+      "contactPct": 80.4,
+      "games": 14,
       "levels": [
         "AA"
       ]
@@ -4420,13 +4448,13 @@
     "701618": {
       "playerId": 701618,
       "name": "Damon Keith",
-      "pitches": 782,
-      "swings": 389,
-      "whiffs": 123,
-      "contacts": 266,
+      "pitches": 794,
+      "swings": 396,
+      "whiffs": 125,
+      "contacts": 271,
       "whiffPct": 31.6,
       "contactPct": 68.4,
-      "games": 52,
+      "games": 53,
       "levels": [
         "AA"
       ]
@@ -4490,13 +4518,13 @@
     "701784": {
       "playerId": 701784,
       "name": "Cam Clayton",
-      "pitches": 58,
-      "swings": 18,
+      "pitches": 71,
+      "swings": 22,
       "whiffs": 3,
-      "contacts": 15,
-      "whiffPct": 16.7,
-      "contactPct": 83.3,
-      "games": 5,
+      "contacts": 19,
+      "whiffPct": 13.6,
+      "contactPct": 86.4,
+      "games": 6,
       "levels": [
         "A+"
       ]
@@ -4560,13 +4588,13 @@
     "702276": {
       "playerId": 702276,
       "name": "Carsten Sabathia III",
-      "pitches": 244,
-      "swings": 116,
-      "whiffs": 31,
-      "contacts": 85,
-      "whiffPct": 26.7,
-      "contactPct": 73.3,
-      "games": 16,
+      "pitches": 261,
+      "swings": 122,
+      "whiffs": 33,
+      "contacts": 89,
+      "whiffPct": 27,
+      "contactPct": 73,
+      "games": 17,
       "levels": [
         "A"
       ]
@@ -4574,13 +4602,13 @@
     "702309": {
       "playerId": 702309,
       "name": "Hunter Hines",
-      "pitches": 171,
-      "swings": 74,
+      "pitches": 181,
+      "swings": 79,
       "whiffs": 13,
-      "contacts": 61,
-      "whiffPct": 17.6,
-      "contactPct": 82.4,
-      "games": 9,
+      "contacts": 66,
+      "whiffPct": 16.5,
+      "contactPct": 83.5,
+      "games": 10,
       "levels": [
         "A"
       ]
@@ -4785,13 +4813,13 @@
     "702652": {
       "playerId": 702652,
       "name": "Andrew Fischer",
-      "pitches": 2240,
-      "swings": 960,
-      "whiffs": 349,
-      "contacts": 611,
+      "pitches": 2258,
+      "swings": 968,
+      "whiffs": 352,
+      "contacts": 616,
       "whiffPct": 36.4,
       "contactPct": 63.6,
-      "games": 115,
+      "games": 116,
       "levels": [
         "A+",
         "AA"
@@ -4927,13 +4955,13 @@
     "702977": {
       "playerId": 702977,
       "name": "Dillon Head",
-      "pitches": 202,
-      "swings": 99,
-      "whiffs": 23,
-      "contacts": 76,
-      "whiffPct": 23.2,
-      "contactPct": 76.8,
-      "games": 13,
+      "pitches": 222,
+      "swings": 109,
+      "whiffs": 28,
+      "contacts": 81,
+      "whiffPct": 25.7,
+      "contactPct": 74.3,
+      "games": 14,
       "levels": [
         "A+"
       ]
@@ -4941,13 +4969,13 @@
     "703143": {
       "playerId": 703143,
       "name": "Cristhian Vaquero",
-      "pitches": 44,
-      "swings": 23,
-      "whiffs": 4,
-      "contacts": 19,
-      "whiffPct": 17.4,
-      "contactPct": 82.6,
-      "games": 3,
+      "pitches": 60,
+      "swings": 33,
+      "whiffs": 9,
+      "contacts": 24,
+      "whiffPct": 27.3,
+      "contactPct": 72.7,
+      "games": 4,
       "levels": [
         "A"
       ]
@@ -5238,13 +5266,13 @@
     "703861": {
       "playerId": 703861,
       "name": "Victor Ortega",
-      "pitches": 21,
-      "swings": 9,
-      "whiffs": 1,
-      "contacts": 8,
-      "whiffPct": 11.1,
-      "contactPct": 88.9,
-      "games": 1,
+      "pitches": 37,
+      "swings": 17,
+      "whiffs": 3,
+      "contacts": 14,
+      "whiffPct": 17.6,
+      "contactPct": 82.4,
+      "games": 2,
       "levels": [
         "A+"
       ]
@@ -5336,13 +5364,13 @@
     "800201": {
       "playerId": 800201,
       "name": "Rafael Ramirez Jr.",
-      "pitches": 89,
-      "swings": 34,
-      "whiffs": 11,
-      "contacts": 23,
-      "whiffPct": 32.4,
-      "contactPct": 67.6,
-      "games": 6,
+      "pitches": 104,
+      "swings": 39,
+      "whiffs": 12,
+      "contacts": 27,
+      "whiffPct": 30.8,
+      "contactPct": 69.2,
+      "games": 7,
       "levels": [
         "A"
       ]
@@ -5378,13 +5406,13 @@
     "800254": {
       "playerId": 800254,
       "name": "Abrahan Ramirez",
-      "pitches": 120,
-      "swings": 55,
-      "whiffs": 10,
-      "contacts": 45,
-      "whiffPct": 18.2,
-      "contactPct": 81.8,
-      "games": 6,
+      "pitches": 138,
+      "swings": 64,
+      "whiffs": 12,
+      "contacts": 52,
+      "whiffPct": 18.8,
+      "contactPct": 81.3,
+      "games": 7,
       "levels": [
         "A+"
       ]
@@ -5686,13 +5714,13 @@
     "800724": {
       "playerId": 800724,
       "name": "Eric Bitonti",
-      "pitches": 1974,
-      "swings": 848,
-      "whiffs": 310,
-      "contacts": 538,
-      "whiffPct": 36.6,
-      "contactPct": 63.4,
-      "games": 106,
+      "pitches": 1992,
+      "swings": 852,
+      "whiffs": 311,
+      "contacts": 541,
+      "whiffPct": 36.5,
+      "contactPct": 63.5,
+      "games": 107,
       "levels": [
         "A+"
       ]
@@ -5842,13 +5870,13 @@
     "801670": {
       "playerId": 801670,
       "name": "Mike Boeve",
-      "pitches": 1838,
-      "swings": 771,
-      "whiffs": 149,
-      "contacts": 622,
-      "whiffPct": 19.3,
-      "contactPct": 80.7,
-      "games": 113,
+      "pitches": 1858,
+      "swings": 780,
+      "whiffs": 154,
+      "contacts": 626,
+      "whiffPct": 19.7,
+      "contactPct": 80.3,
+      "games": 114,
       "levels": [
         "AA"
       ]
@@ -5927,13 +5955,13 @@
     "802018": {
       "playerId": 802018,
       "name": "Ryan Burrowes",
-      "pitches": 15,
-      "swings": 7,
-      "whiffs": 2,
-      "contacts": 5,
-      "whiffPct": 28.6,
-      "contactPct": 71.4,
-      "games": 1,
+      "pitches": 29,
+      "swings": 12,
+      "whiffs": 4,
+      "contacts": 8,
+      "whiffPct": 33.3,
+      "contactPct": 66.7,
+      "games": 2,
       "levels": [
         "AA"
       ]
@@ -6589,13 +6617,13 @@
     "806499": {
       "playerId": 806499,
       "name": "Avery Ortiz",
-      "pitches": 17,
-      "swings": 9,
-      "whiffs": 1,
-      "contacts": 8,
-      "whiffPct": 11.1,
-      "contactPct": 88.9,
-      "games": 1,
+      "pitches": 34,
+      "swings": 14,
+      "whiffs": 2,
+      "contacts": 12,
+      "whiffPct": 14.3,
+      "contactPct": 85.7,
+      "games": 2,
       "levels": [
         "A"
       ]
@@ -6617,13 +6645,13 @@
     "806550": {
       "playerId": 806550,
       "name": "Sir Jamison Jones",
-      "pitches": 89,
-      "swings": 47,
-      "whiffs": 13,
-      "contacts": 34,
-      "whiffPct": 27.7,
-      "contactPct": 72.3,
-      "games": 6,
+      "pitches": 99,
+      "swings": 52,
+      "whiffs": 14,
+      "contacts": 38,
+      "whiffPct": 26.9,
+      "contactPct": 73.1,
+      "games": 7,
       "levels": [
         "A"
       ]
@@ -6758,13 +6786,13 @@
     "806982": {
       "playerId": 806982,
       "name": "Esmil Valencia",
-      "pitches": 58,
-      "swings": 29,
+      "pitches": 77,
+      "swings": 34,
       "whiffs": 4,
-      "contacts": 25,
-      "whiffPct": 13.8,
-      "contactPct": 86.2,
-      "games": 6,
+      "contacts": 30,
+      "whiffPct": 11.8,
+      "contactPct": 88.2,
+      "games": 7,
       "levels": [
         "A+"
       ]
@@ -6814,13 +6842,13 @@
     "806995": {
       "playerId": 806995,
       "name": "Filippo Di Turi",
-      "pitches": 1649,
-      "swings": 758,
-      "whiffs": 226,
-      "contacts": 532,
+      "pitches": 1670,
+      "swings": 764,
+      "whiffs": 228,
+      "contacts": 536,
       "whiffPct": 29.8,
       "contactPct": 70.2,
-      "games": 101,
+      "games": 102,
       "levels": [
         "A",
         "A+"
@@ -6843,13 +6871,13 @@
     "806999": {
       "playerId": 806999,
       "name": "Manuel Cabrera",
-      "pitches": 160,
-      "swings": 69,
-      "whiffs": 10,
-      "contacts": 59,
-      "whiffPct": 14.5,
-      "contactPct": 85.5,
-      "games": 10,
+      "pitches": 172,
+      "swings": 73,
+      "whiffs": 11,
+      "contacts": 62,
+      "whiffPct": 15.1,
+      "contactPct": 84.9,
+      "games": 11,
       "levels": [
         "A"
       ]
@@ -7168,13 +7196,13 @@
     "808236": {
       "playerId": 808236,
       "name": "Luiyin Alastre",
-      "pitches": 1275,
-      "swings": 501,
-      "whiffs": 106,
-      "contacts": 395,
-      "whiffPct": 21.2,
-      "contactPct": 78.8,
-      "games": 84,
+      "pitches": 1287,
+      "swings": 506,
+      "whiffs": 107,
+      "contacts": 399,
+      "whiffPct": 21.1,
+      "contactPct": 78.9,
+      "games": 85,
       "levels": [
         "A",
         "A+"
@@ -7268,13 +7296,13 @@
     "808291": {
       "playerId": 808291,
       "name": "Tyler Rodriguez",
-      "pitches": 959,
-      "swings": 395,
+      "pitches": 968,
+      "swings": 399,
       "whiffs": 93,
-      "contacts": 302,
-      "whiffPct": 23.5,
-      "contactPct": 76.5,
-      "games": 62,
+      "contacts": 306,
+      "whiffPct": 23.3,
+      "contactPct": 76.7,
+      "games": 63,
       "levels": [
         "A",
         "A+"
@@ -7535,13 +7563,13 @@
     "809331": {
       "playerId": 809331,
       "name": "Brian Sanchez",
-      "pitches": 67,
-      "swings": 34,
-      "whiffs": 10,
-      "contacts": 24,
-      "whiffPct": 29.4,
-      "contactPct": 70.6,
-      "games": 5,
+      "pitches": 85,
+      "swings": 40,
+      "whiffs": 12,
+      "contacts": 28,
+      "whiffPct": 30,
+      "contactPct": 70,
+      "games": 6,
       "levels": [
         "A+"
       ]
@@ -7549,13 +7577,13 @@
     "809397": {
       "playerId": 809397,
       "name": "Juan Cruz",
-      "pitches": 125,
-      "swings": 60,
-      "whiffs": 12,
-      "contacts": 48,
-      "whiffPct": 20,
-      "contactPct": 80,
-      "games": 8,
+      "pitches": 141,
+      "swings": 68,
+      "whiffs": 16,
+      "contacts": 52,
+      "whiffPct": 23.5,
+      "contactPct": 76.5,
+      "games": 9,
       "levels": [
         "A"
       ]
@@ -7676,13 +7704,13 @@
     "812158": {
       "playerId": 812158,
       "name": "Dashyll Tejeda",
-      "pitches": 145,
-      "swings": 47,
-      "whiffs": 4,
-      "contacts": 43,
-      "whiffPct": 8.5,
-      "contactPct": 91.5,
-      "games": 8,
+      "pitches": 156,
+      "swings": 53,
+      "whiffs": 5,
+      "contacts": 48,
+      "whiffPct": 9.4,
+      "contactPct": 90.6,
+      "games": 9,
       "levels": [
         "A"
       ]
@@ -7690,13 +7718,13 @@
     "812807": {
       "playerId": 812807,
       "name": "Kyle Jones",
-      "pitches": 271,
-      "swings": 125,
+      "pitches": 289,
+      "swings": 130,
       "whiffs": 18,
-      "contacts": 107,
-      "whiffPct": 14.4,
-      "contactPct": 85.6,
-      "games": 18,
+      "contacts": 112,
+      "whiffPct": 13.8,
+      "contactPct": 86.2,
+      "games": 19,
       "levels": [
         "A"
       ]
@@ -7788,13 +7816,13 @@
     "814172": {
       "playerId": 814172,
       "name": "Chase Jaworsky",
-      "pitches": 100,
-      "swings": 47,
-      "whiffs": 11,
-      "contacts": 36,
-      "whiffPct": 23.4,
-      "contactPct": 76.6,
-      "games": 8,
+      "pitches": 119,
+      "swings": 52,
+      "whiffs": 15,
+      "contacts": 37,
+      "whiffPct": 28.8,
+      "contactPct": 71.2,
+      "games": 9,
       "levels": [
         "A+"
       ]
@@ -8084,13 +8112,13 @@
     "815304": {
       "playerId": 815304,
       "name": "Josh Adamczewski",
-      "pitches": 1867,
-      "swings": 860,
+      "pitches": 1880,
+      "swings": 864,
       "whiffs": 215,
-      "contacts": 645,
-      "whiffPct": 25,
-      "contactPct": 75,
-      "games": 104,
+      "contacts": 649,
+      "whiffPct": 24.9,
+      "contactPct": 75.1,
+      "games": 105,
       "levels": [
         "A+",
         "AA"
@@ -8099,13 +8127,13 @@
     "815352": {
       "playerId": 815352,
       "name": "Caleb Bonemer",
-      "pitches": 26,
-      "swings": 9,
-      "whiffs": 3,
-      "contacts": 6,
-      "whiffPct": 33.3,
-      "contactPct": 66.7,
-      "games": 1,
+      "pitches": 55,
+      "swings": 18,
+      "whiffs": 7,
+      "contacts": 11,
+      "whiffPct": 38.9,
+      "contactPct": 61.1,
+      "games": 2,
       "levels": [
         "AA"
       ]
@@ -8155,13 +8183,13 @@
     "815520": {
       "playerId": 815520,
       "name": "Braylon Payne",
-      "pitches": 1628,
-      "swings": 836,
-      "whiffs": 276,
-      "contacts": 560,
-      "whiffPct": 33,
-      "contactPct": 67,
-      "games": 92,
+      "pitches": 1650,
+      "swings": 847,
+      "whiffs": 279,
+      "contacts": 568,
+      "whiffPct": 32.9,
+      "contactPct": 67.1,
+      "games": 93,
       "levels": [
         "A+",
         "AA"
@@ -8226,13 +8254,13 @@
     "815793": {
       "playerId": 815793,
       "name": "Carter Johnson",
-      "pitches": 175,
-      "swings": 86,
-      "whiffs": 26,
-      "contacts": 60,
-      "whiffPct": 30.2,
-      "contactPct": 69.8,
-      "games": 10,
+      "pitches": 189,
+      "swings": 94,
+      "whiffs": 28,
+      "contacts": 66,
+      "whiffPct": 29.8,
+      "contactPct": 70.2,
+      "games": 11,
       "levels": [
         "A+"
       ]
@@ -8409,13 +8437,13 @@
     "815908": {
       "playerId": 815908,
       "name": "Jesús Made",
-      "pitches": 1855,
-      "swings": 862,
+      "pitches": 1870,
+      "swings": 871,
       "whiffs": 161,
-      "contacts": 701,
-      "whiffPct": 18.7,
-      "contactPct": 81.3,
-      "games": 114,
+      "contacts": 710,
+      "whiffPct": 18.5,
+      "contactPct": 81.5,
+      "games": 115,
       "levels": [
         "AA"
       ]
@@ -8493,13 +8521,13 @@
     "820831": {
       "playerId": 820831,
       "name": "Sawyer Strosnider",
-      "pitches": 351,
-      "swings": 150,
-      "whiffs": 46,
-      "contacts": 104,
-      "whiffPct": 30.7,
-      "contactPct": 69.3,
-      "games": 18,
+      "pitches": 371,
+      "swings": 157,
+      "whiffs": 50,
+      "contacts": 107,
+      "whiffPct": 31.8,
+      "contactPct": 68.2,
+      "games": 19,
       "levels": [
         "A+"
       ]
@@ -8606,13 +8634,13 @@
     "821149": {
       "playerId": 821149,
       "name": "Frederi Montero",
-      "pitches": 1699,
-      "swings": 769,
+      "pitches": 1712,
+      "swings": 773,
       "whiffs": 239,
-      "contacts": 530,
-      "whiffPct": 31.1,
-      "contactPct": 68.9,
-      "games": 101,
+      "contacts": 534,
+      "whiffPct": 30.9,
+      "contactPct": 69.1,
+      "games": 102,
       "levels": [
         "A"
       ]
@@ -8706,13 +8734,13 @@
     "821187": {
       "playerId": 821187,
       "name": "Juan Ortuno",
-      "pitches": 1893,
-      "swings": 730,
-      "whiffs": 144,
-      "contacts": 586,
+      "pitches": 1911,
+      "swings": 735,
+      "whiffs": 145,
+      "contacts": 590,
       "whiffPct": 19.7,
       "contactPct": 80.3,
-      "games": 103,
+      "games": 104,
       "levels": [
         "A",
         "A+"
@@ -8735,13 +8763,13 @@
     "821199": {
       "playerId": 821199,
       "name": "Moises Polanco",
-      "pitches": 48,
-      "swings": 24,
+      "pitches": 60,
+      "swings": 31,
       "whiffs": 6,
-      "contacts": 18,
-      "whiffPct": 25,
-      "contactPct": 75,
-      "games": 4,
+      "contacts": 25,
+      "whiffPct": 19.4,
+      "contactPct": 80.6,
+      "games": 5,
       "levels": [
         "A"
       ]
@@ -8763,13 +8791,13 @@
     "821237": {
       "playerId": 821237,
       "name": "Kevin Garcia",
-      "pitches": 814,
-      "swings": 427,
-      "whiffs": 155,
-      "contacts": 272,
-      "whiffPct": 36.3,
-      "contactPct": 63.7,
-      "games": 54,
+      "pitches": 828,
+      "swings": 433,
+      "whiffs": 156,
+      "contacts": 277,
+      "whiffPct": 36,
+      "contactPct": 64,
+      "games": 55,
       "levels": [
         "A"
       ]
@@ -8791,13 +8819,13 @@
     "821262": {
       "playerId": 821262,
       "name": "José Anderson",
-      "pitches": 1841,
-      "swings": 827,
-      "whiffs": 323,
-      "contacts": 504,
+      "pitches": 1854,
+      "swings": 833,
+      "whiffs": 326,
+      "contacts": 507,
       "whiffPct": 39.1,
       "contactPct": 60.9,
-      "games": 99,
+      "games": 100,
       "levels": [
         "A"
       ]
@@ -8805,13 +8833,13 @@
     "821270": {
       "playerId": 821270,
       "name": "Luis Peña",
-      "pitches": 964,
-      "swings": 487,
-      "whiffs": 119,
-      "contacts": 368,
+      "pitches": 974,
+      "swings": 495,
+      "whiffs": 121,
+      "contacts": 374,
       "whiffPct": 24.4,
       "contactPct": 75.6,
-      "games": 63,
+      "games": 64,
       "levels": [
         "A+",
         "AA"
@@ -9044,13 +9072,13 @@
     "823658": {
       "playerId": 823658,
       "name": "Daniel Dickinson",
-      "pitches": 1989,
-      "swings": 765,
+      "pitches": 2002,
+      "swings": 769,
       "whiffs": 191,
-      "contacts": 574,
-      "whiffPct": 25,
-      "contactPct": 75,
-      "games": 112,
+      "contacts": 578,
+      "whiffPct": 24.8,
+      "contactPct": 75.2,
+      "games": 113,
       "levels": [
         "A+"
       ]
@@ -9497,13 +9525,13 @@
     "829073": {
       "playerId": 829073,
       "name": "Brailyn Antunez",
-      "pitches": 503,
-      "swings": 238,
-      "whiffs": 73,
-      "contacts": 165,
-      "whiffPct": 30.7,
-      "contactPct": 69.3,
-      "games": 30,
+      "pitches": 517,
+      "swings": 246,
+      "whiffs": 76,
+      "contacts": 170,
+      "whiffPct": 30.9,
+      "contactPct": 69.1,
+      "games": 31,
       "levels": [
         "A"
       ]
@@ -9693,13 +9721,13 @@
     "834962": {
       "playerId": 834962,
       "name": "Anthony DePino",
-      "pitches": 214,
-      "swings": 104,
-      "whiffs": 29,
-      "contacts": 75,
-      "whiffPct": 27.9,
-      "contactPct": 72.1,
-      "games": 13,
+      "pitches": 232,
+      "swings": 113,
+      "whiffs": 31,
+      "contacts": 82,
+      "whiffPct": 27.4,
+      "contactPct": 72.6,
+      "games": 14,
       "levels": [
         "AA"
       ]
@@ -9749,13 +9777,13 @@
     "836079": {
       "playerId": 836079,
       "name": "Rylan Mills",
-      "pitches": 961,
-      "swings": 434,
-      "whiffs": 166,
-      "contacts": 268,
-      "whiffPct": 38.2,
-      "contactPct": 61.8,
-      "games": 56,
+      "pitches": 974,
+      "swings": 442,
+      "whiffs": 171,
+      "contacts": 271,
+      "whiffPct": 38.7,
+      "contactPct": 61.3,
+      "games": 57,
       "levels": [
         "A"
       ]
@@ -10720,13 +10748,13 @@
     "668831": {
       "playerId": 668831,
       "name": "Garrett Stallings",
-      "pitches": 1315,
-      "swings": 615,
-      "whiffs": 152,
-      "contacts": 463,
+      "pitches": 1339,
+      "swings": 632,
+      "whiffs": 156,
+      "contacts": 476,
       "whiffPct": 24.7,
       "contactPct": 75.3,
-      "games": 23,
+      "games": 24,
       "levels": [
         "AAA"
       ]
@@ -10741,6 +10769,20 @@
       "whiffPct": 20.7,
       "contactPct": 79.3,
       "games": 25,
+      "levels": [
+        "AAA"
+      ]
+    },
+    "668933": {
+      "playerId": 668933,
+      "name": "Graham Ashcraft",
+      "pitches": 8,
+      "swings": 5,
+      "whiffs": 1,
+      "contacts": 4,
+      "whiffPct": 20,
+      "contactPct": 80,
+      "games": 1,
       "levels": [
         "AAA"
       ]
@@ -11745,13 +11787,13 @@
     "681410": {
       "playerId": 681410,
       "name": "Connor McCullough",
-      "pitches": 130,
-      "swings": 58,
-      "whiffs": 16,
-      "contacts": 42,
-      "whiffPct": 27.6,
-      "contactPct": 72.4,
-      "games": 2,
+      "pitches": 200,
+      "swings": 93,
+      "whiffs": 22,
+      "contacts": 71,
+      "whiffPct": 23.7,
+      "contactPct": 76.3,
+      "games": 3,
       "levels": [
         "AA"
       ]
@@ -12179,6 +12221,20 @@
       "games": 2,
       "levels": [
         "AA"
+      ]
+    },
+    "683175": {
+      "playerId": 683175,
+      "name": "Connor Phillips",
+      "pitches": 19,
+      "swings": 9,
+      "whiffs": 4,
+      "contacts": 5,
+      "whiffPct": 44.4,
+      "contactPct": 55.6,
+      "games": 1,
+      "levels": [
+        "AAA"
       ]
     },
     "683179": {
@@ -12663,15 +12719,16 @@
     "686844": {
       "playerId": 686844,
       "name": "Ben Wereski",
-      "pitches": 108,
-      "swings": 43,
-      "whiffs": 9,
-      "contacts": 34,
-      "whiffPct": 20.9,
-      "contactPct": 79.1,
-      "games": 1,
+      "pitches": 191,
+      "swings": 89,
+      "whiffs": 18,
+      "contacts": 71,
+      "whiffPct": 20.2,
+      "contactPct": 79.8,
+      "games": 2,
       "levels": [
-        "AA"
+        "AA",
+        "AAA"
       ]
     },
     "686946": {
@@ -13282,13 +13339,13 @@
     "689441": {
       "playerId": 689441,
       "name": "Coleman Crow",
-      "pitches": 1333,
-      "swings": 615,
-      "whiffs": 135,
-      "contacts": 480,
-      "whiffPct": 22,
-      "contactPct": 78,
-      "games": 16,
+      "pitches": 1414,
+      "swings": 661,
+      "whiffs": 143,
+      "contacts": 518,
+      "whiffPct": 21.6,
+      "contactPct": 78.4,
+      "games": 17,
       "levels": [
         "AAA"
       ]
@@ -14029,13 +14086,13 @@
     "693750": {
       "playerId": 693750,
       "name": "Yerlin Rodriguez",
-      "pitches": 829,
-      "swings": 296,
-      "whiffs": 95,
-      "contacts": 201,
-      "whiffPct": 32.1,
-      "contactPct": 67.9,
-      "games": 36,
+      "pitches": 864,
+      "swings": 309,
+      "whiffs": 99,
+      "contacts": 210,
+      "whiffPct": 32,
+      "contactPct": 68,
+      "games": 37,
       "levels": [
         "A+"
       ]
@@ -14043,13 +14100,13 @@
     "694207": {
       "playerId": 694207,
       "name": "Brayan Mendoza",
-      "pitches": 192,
-      "swings": 80,
-      "whiffs": 19,
-      "contacts": 61,
-      "whiffPct": 23.8,
-      "contactPct": 76.3,
-      "games": 4,
+      "pitches": 282,
+      "swings": 116,
+      "whiffs": 30,
+      "contacts": 86,
+      "whiffPct": 25.9,
+      "contactPct": 74.1,
+      "games": 5,
       "levels": [
         "A+"
       ]
@@ -14282,13 +14339,13 @@
     "694725": {
       "playerId": 694725,
       "name": "Michael Fowler",
-      "pitches": 598,
-      "swings": 258,
-      "whiffs": 70,
-      "contacts": 188,
-      "whiffPct": 27.1,
-      "contactPct": 72.9,
-      "games": 25,
+      "pitches": 629,
+      "swings": 269,
+      "whiffs": 74,
+      "contacts": 195,
+      "whiffPct": 27.5,
+      "contactPct": 72.5,
+      "games": 26,
       "levels": [
         "A+"
       ]
@@ -14578,13 +14635,13 @@
     "695534": {
       "playerId": 695534,
       "name": "Chase Petty",
-      "pitches": 79,
-      "swings": 39,
+      "pitches": 92,
+      "swings": 44,
       "whiffs": 7,
-      "contacts": 32,
-      "whiffPct": 17.9,
-      "contactPct": 82.1,
-      "games": 1,
+      "contacts": 37,
+      "whiffPct": 15.9,
+      "contactPct": 84.1,
+      "games": 2,
       "levels": [
         "AAA"
       ]
@@ -15098,13 +15155,13 @@
     "700291": {
       "playerId": 700291,
       "name": "Cesar Rojas",
-      "pitches": 58,
-      "swings": 12,
-      "whiffs": 5,
-      "contacts": 7,
-      "whiffPct": 41.7,
-      "contactPct": 58.3,
-      "games": 2,
+      "pitches": 76,
+      "swings": 19,
+      "whiffs": 8,
+      "contacts": 11,
+      "whiffPct": 42.1,
+      "contactPct": 57.9,
+      "games": 3,
       "levels": [
         "A"
       ]
@@ -15558,6 +15615,20 @@
         "AA"
       ]
     },
+    "701869": {
+      "playerId": 701869,
+      "name": "Kaleb Kantola",
+      "pitches": 18,
+      "swings": 4,
+      "whiffs": 3,
+      "contacts": 1,
+      "whiffPct": 75,
+      "contactPct": 25,
+      "games": 1,
+      "levels": [
+        "A"
+      ]
+    },
     "701951": {
       "playerId": 701951,
       "name": "Abel Mercedes",
@@ -15659,13 +15730,13 @@
     "702165": {
       "playerId": 702165,
       "name": "Jonathan Clark",
-      "pitches": 110,
-      "swings": 46,
-      "whiffs": 17,
-      "contacts": 29,
-      "whiffPct": 37,
-      "contactPct": 63,
-      "games": 4,
+      "pitches": 144,
+      "swings": 60,
+      "whiffs": 22,
+      "contacts": 38,
+      "whiffPct": 36.7,
+      "contactPct": 63.3,
+      "games": 5,
       "levels": [
         "AA"
       ]
@@ -16234,6 +16305,20 @@
         "A"
       ]
     },
+    "703670": {
+      "playerId": 703670,
+      "name": "Pierce George",
+      "pitches": 26,
+      "swings": 13,
+      "whiffs": 5,
+      "contacts": 8,
+      "whiffPct": 38.5,
+      "contactPct": 61.5,
+      "games": 1,
+      "levels": [
+        "AA"
+      ]
+    },
     "703725": {
       "playerId": 703725,
       "name": "Luis Gastelum",
@@ -16506,15 +16591,16 @@
     "800485": {
       "playerId": 800485,
       "name": "Wande Torres",
-      "pitches": 1908,
-      "swings": 891,
-      "whiffs": 237,
-      "contacts": 654,
-      "whiffPct": 26.6,
-      "contactPct": 73.4,
-      "games": 24,
+      "pitches": 1973,
+      "swings": 918,
+      "whiffs": 242,
+      "contacts": 676,
+      "whiffPct": 26.4,
+      "contactPct": 73.6,
+      "games": 25,
       "levels": [
-        "A+"
+        "A+",
+        "AA"
       ]
     },
     "800514": {
@@ -17524,13 +17610,13 @@
     "804973": {
       "playerId": 804973,
       "name": "Manuel Rodriguez",
-      "pitches": 1979,
-      "swings": 1019,
-      "whiffs": 229,
-      "contacts": 790,
+      "pitches": 2065,
+      "swings": 1065,
+      "whiffs": 240,
+      "contacts": 825,
       "whiffPct": 22.5,
       "contactPct": 77.5,
-      "games": 24,
+      "games": 25,
       "levels": [
         "AA"
       ]
@@ -17665,13 +17751,13 @@
     "805238": {
       "playerId": 805238,
       "name": "Cesar Espinal",
-      "pitches": 145,
-      "swings": 53,
-      "whiffs": 22,
-      "contacts": 31,
-      "whiffPct": 41.5,
-      "contactPct": 58.5,
-      "games": 7,
+      "pitches": 164,
+      "swings": 60,
+      "whiffs": 25,
+      "contacts": 35,
+      "whiffPct": 41.7,
+      "contactPct": 58.3,
+      "games": 8,
       "levels": [
         "A"
       ]
@@ -17756,6 +17842,20 @@
       "whiffPct": 21.4,
       "contactPct": 78.6,
       "games": 2,
+      "levels": [
+        "A+"
+      ]
+    },
+    "805430": {
+      "playerId": 805430,
+      "name": "Engel Peralta",
+      "pitches": 34,
+      "swings": 10,
+      "whiffs": 2,
+      "contacts": 8,
+      "whiffPct": 20,
+      "contactPct": 80,
+      "games": 1,
       "levels": [
         "A+"
       ]
@@ -18293,6 +18393,20 @@
       "games": 1,
       "levels": [
         "A"
+      ]
+    },
+    "807187": {
+      "playerId": 807187,
+      "name": "Mathias LaCombe",
+      "pitches": 11,
+      "swings": 5,
+      "whiffs": 1,
+      "contacts": 4,
+      "whiffPct": 20,
+      "contactPct": 80,
+      "games": 1,
+      "levels": [
+        "AA"
       ]
     },
     "807284": {
@@ -19992,13 +20106,13 @@
     "815868": {
       "playerId": 815868,
       "name": "Tyler Renz",
-      "pitches": 1631,
-      "swings": 707,
-      "whiffs": 156,
-      "contacts": 551,
-      "whiffPct": 22.1,
-      "contactPct": 77.9,
-      "games": 24,
+      "pitches": 1676,
+      "swings": 730,
+      "whiffs": 159,
+      "contacts": 571,
+      "whiffPct": 21.8,
+      "contactPct": 78.2,
+      "games": 25,
       "levels": [
         "A"
       ]
@@ -20607,6 +20721,20 @@
         "A+"
       ]
     },
+    "823333": {
+      "playerId": 823333,
+      "name": "Trevor Moore",
+      "pitches": 14,
+      "swings": 9,
+      "whiffs": 2,
+      "contacts": 7,
+      "whiffPct": 22.2,
+      "contactPct": 77.8,
+      "games": 1,
+      "levels": [
+        "A"
+      ]
+    },
     "823369": {
       "playerId": 823369,
       "name": "Yhoiker Fajardo",
@@ -20638,15 +20766,16 @@
     "823650": {
       "playerId": 823650,
       "name": "Miqueas Mercedes",
-      "pitches": 1263,
-      "swings": 559,
-      "whiffs": 130,
-      "contacts": 429,
-      "whiffPct": 23.3,
-      "contactPct": 76.7,
-      "games": 20,
+      "pitches": 1354,
+      "swings": 597,
+      "whiffs": 140,
+      "contacts": 457,
+      "whiffPct": 23.5,
+      "contactPct": 76.5,
+      "games": 21,
       "levels": [
-        "A"
+        "A",
+        "A+"
       ]
     },
     "823671": {
@@ -21313,6 +21442,20 @@
         "A"
       ]
     },
+    "829204": {
+      "playerId": 829204,
+      "name": "Ma'Kale Holden",
+      "pitches": 58,
+      "swings": 26,
+      "whiffs": 9,
+      "contacts": 17,
+      "whiffPct": 34.6,
+      "contactPct": 65.4,
+      "games": 1,
+      "levels": [
+        "A"
+      ]
+    },
     "829397": {
       "playerId": 829397,
       "name": "Berny Ortiz",
@@ -21906,13 +22049,13 @@
     "836078": {
       "playerId": 836078,
       "name": "Hayden Cuthbertson",
-      "pitches": 63,
-      "swings": 29,
-      "whiffs": 5,
-      "contacts": 24,
-      "whiffPct": 17.2,
-      "contactPct": 82.8,
-      "games": 3,
+      "pitches": 79,
+      "swings": 36,
+      "whiffs": 7,
+      "contacts": 29,
+      "whiffPct": 19.4,
+      "contactPct": 80.6,
+      "games": 4,
       "levels": [
         "A+"
       ]
@@ -22073,6 +22216,20 @@
         "A"
       ]
     },
+    "841166": {
+      "playerId": 841166,
+      "name": "Tyler Papenbrock",
+      "pitches": 19,
+      "swings": 9,
+      "whiffs": 2,
+      "contacts": 7,
+      "whiffPct": 22.2,
+      "contactPct": 77.8,
+      "games": 1,
+      "levels": [
+        "A"
+      ]
+    },
     "842192": {
       "playerId": 842192,
       "name": "Stephen Still",
@@ -22090,13 +22247,13 @@
     "842247": {
       "playerId": 842247,
       "name": "Noah Millikan",
-      "pitches": 81,
-      "swings": 36,
-      "whiffs": 8,
-      "contacts": 28,
+      "pitches": 147,
+      "swings": 63,
+      "whiffs": 14,
+      "contacts": 49,
       "whiffPct": 22.2,
       "contactPct": 77.8,
-      "games": 1,
+      "games": 2,
       "levels": [
         "A"
       ]
