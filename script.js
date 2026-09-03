@@ -12378,3 +12378,430 @@ function renderHomeStandingsTable(
     </div>
   `;
 }
+/* =========================================================
+   HOME RECENT TRANSACTIONS
+========================================================= */
+
+async function renderHomeTransactions(
+  biography = []
+) {
+
+  const container =
+    document.getElementById(
+      "recentTransactionsContent"
+    );
+
+
+  if (!container) {
+    return;
+  }
+
+
+  try {
+
+    const rows =
+      await loadSheet(
+        "Transactions"
+      );
+
+
+    const bioByPlayerId =
+      new Map();
+
+
+    const bioByMlbamId =
+      new Map();
+
+
+    biography.forEach(player => {
+
+      const playerId =
+        get(
+          player,
+          [
+            "Player-ID",
+            "Player ID"
+          ]
+        );
+
+
+      const mlbamId =
+        get(
+          player,
+          [
+            "MLBAM ID",
+            "MLB ID",
+            "MiLB ID"
+          ]
+        );
+
+
+      if (
+        isRealValue(playerId)
+      ) {
+
+        bioByPlayerId.set(
+          String(playerId).trim(),
+          player
+        );
+      }
+
+
+      if (
+        isRealValue(mlbamId)
+      ) {
+
+        bioByMlbamId.set(
+          String(mlbamId).trim(),
+          player
+        );
+      }
+    });
+
+
+    const clean =
+      rows
+        .filter(row => {
+
+          return (
+            isRealValue(
+              get(
+                row,
+                ["Player"]
+              )
+            ) ||
+            isRealValue(
+              get(
+                row,
+                ["Description"]
+              )
+            )
+          );
+        })
+        .sort((a, b) => {
+
+          const dateA =
+            parseTransactionDate(
+              get(
+                a,
+                [
+                  "Date",
+                  "Effective Date"
+                ]
+              )
+            );
+
+
+          const dateB =
+            parseTransactionDate(
+              get(
+                b,
+                [
+                  "Date",
+                  "Effective Date"
+                ]
+              )
+            );
+
+
+          return (
+            (dateB?.getTime() || 0) -
+            (dateA?.getTime() || 0)
+          );
+        })
+        .slice(
+          0,
+          5
+        );
+
+
+    if (!clean.length) {
+
+      container.innerHTML = `
+        <div class="home-empty">
+          No recent transactions.
+        </div>
+      `;
+
+      return;
+    }
+
+
+    container.innerHTML =
+      clean
+        .map(row => {
+
+          const playerName =
+            get(
+              row,
+              ["Player"]
+            );
+
+
+          const playerId =
+            get(
+              row,
+              [
+                "Player ID",
+                "Player-ID"
+              ]
+            );
+
+
+          const mlbamId =
+            get(
+              row,
+              [
+                "MLBAM ID",
+                "MLB ID",
+                "MiLB ID"
+              ]
+            );
+
+
+          const archived =
+            String(
+              get(
+                row,
+                ["Archived"]
+              ) || ""
+            )
+              .toLowerCase()
+              .trim() === "yes";
+
+
+          let bio = null;
+
+
+          if (
+            isRealValue(playerId)
+          ) {
+
+            bio =
+              bioByPlayerId.get(
+                String(
+                  playerId
+                ).trim()
+              ) || null;
+          }
+
+
+          if (
+            !bio &&
+            isRealValue(mlbamId)
+          ) {
+
+            bio =
+              bioByMlbamId.get(
+                String(
+                  mlbamId
+                ).trim()
+              ) || null;
+          }
+
+
+          const picture =
+            bio
+              ? getHomePlayerPicture(
+                  bio
+                )
+              : "";
+
+
+          const fallbackPicture =
+            isRealValue(mlbamId)
+              ? getHomeMlbamPicture(
+                  mlbamId
+                )
+              : "";
+
+
+          const finalPicture =
+            picture ||
+            fallbackPicture;
+
+
+          const finalPlayerId =
+            playerId ||
+            (
+              bio
+                ? get(
+                    bio,
+                    [
+                      "Player-ID",
+                      "Player ID"
+                    ]
+                  )
+                : ""
+            );
+
+
+          let href = "";
+
+
+          if (
+            isRealValue(
+              finalPlayerId
+            )
+          ) {
+
+            href =
+              `${
+                archived
+                  ? "archive-player.html"
+                  : "player.html"
+              }?id=${encodeURIComponent(
+                finalPlayerId
+              )}`;
+          }
+
+
+          const date =
+            parseTransactionDate(
+              get(
+                row,
+                [
+                  "Date",
+                  "Effective Date"
+                ]
+              )
+            );
+
+
+          const dateText =
+            date
+              ? date.toLocaleDateString(
+                  "en-US",
+                  {
+                    month: "short",
+                    day: "numeric"
+                  }
+                )
+              : "";
+
+
+          const description =
+            get(
+              row,
+              ["Description"]
+            );
+
+
+          return `
+
+            <div class="home-transaction-row">
+
+              ${
+                finalPicture
+                  ? `
+                    <a
+                      class="home-transaction-photo-link"
+                      ${
+                        href
+                          ? `href="${href}"`
+                          : ""
+                      }
+                    >
+
+                      <img
+                        class="home-transaction-photo"
+                        src="${escapeHomeHTML(
+                          finalPicture
+                        )}"
+                        alt="${escapeHomeHTML(
+                          playerName
+                        )}"
+                        loading="lazy"
+                        decoding="async"
+
+                        ${
+                          fallbackPicture &&
+                          finalPicture !==
+                            fallbackPicture
+                            ? `
+                              onerror="
+                                this.onerror=null;
+                                this.src='${fallbackPicture}';
+                              "
+                            `
+                            : `
+                              onerror="
+                                this.style.display='none';
+                              "
+                            `
+                        }
+                      >
+
+                    </a>
+                  `
+                  : ""
+              }
+
+
+              <div class="home-transaction-info">
+
+                <div class="home-transaction-topline">
+
+                  ${
+                    href
+                      ? `
+                        <a
+                          class="home-transaction-name"
+                          href="${href}"
+                        >
+                          ${escapeHomeHTML(
+                            playerName
+                          )}
+                        </a>
+                      `
+                      : `
+                        <span
+                          class="home-transaction-name"
+                        >
+                          ${escapeHomeHTML(
+                            playerName
+                          )}
+                        </span>
+                      `
+                  }
+
+
+                  <span class="home-transaction-date">
+                    ${escapeHomeHTML(
+                      dateText
+                    )}
+                  </span>
+
+                </div>
+
+
+                <div class="home-transaction-description">
+                  ${escapeHomeHTML(
+                    description
+                  )}
+                </div>
+
+              </div>
+
+            </div>
+          `;
+
+        })
+        .join("");
+
+
+  } catch (err) {
+
+    console.error(
+      "Homepage transactions:",
+      err
+    );
+
+
+    container.innerHTML = `
+      <div class="home-empty">
+        Transactions unavailable.
+      </div>
+    `;
+  }
+}
