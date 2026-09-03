@@ -2825,7 +2825,6 @@ tr:nth-child(even) {
   opacity: 0.6;
 }
 
-
 /* =========================
    PLAYER LIST
 ========================= */
@@ -2837,15 +2836,22 @@ tr:nth-child(even) {
 
 .yotf-player {
   display: grid;
-  grid-template-columns: 48px minmax(0, 1fr) 42px;
+
+  grid-template-columns:
+    44px
+    76px
+    minmax(0, 1fr);
+
   align-items: center;
+
   gap: 14px;
 
-  padding: 18px 4px;
+  padding:
+    12px 4px;
 
   border-bottom:
     1px solid
-    rgba(255, 255, 255, 0.10);
+    rgba(0, 0, 0, 0.08);
 }
 
 .yotf-player:last-child {
@@ -2862,21 +2868,56 @@ tr:nth-child(even) {
   align-items: center;
   justify-content: center;
 
-  width: 38px;
-  height: 38px;
+  width: 34px;
+  height: 34px;
 
   border-radius: 50%;
 
-  background: var(--gold, #fdb827);
+  background:
+    var(--gold, #fdb827);
+
   color: #111;
 
-  font-size: 1rem;
+  font-size: 0.95rem;
   font-weight: 900;
 }
 
 
 /* =========================
-   PLAYER
+   PLAYER PHOTO
+========================= */
+
+.yotf-photo-link {
+  display: block;
+
+  width: 76px;
+  height: 76px;
+
+  border-radius: 8px;
+
+  overflow: hidden;
+
+  background:
+    #eeeeee;
+
+  text-decoration: none;
+}
+
+.yotf-player-photo {
+  display: block;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  object-position:
+    center top;
+}
+
+
+/* =========================
+   PLAYER INFO
 ========================= */
 
 .yotf-player-main {
@@ -2886,10 +2927,13 @@ tr:nth-child(even) {
 .yotf-player-name {
   display: inline-block;
 
-  font-size: 1.15rem;
+  color: inherit;
+
+  font-size: 1.12rem;
   font-weight: 800;
 
-  color: inherit;
+  line-height: 1.15;
+
   text-decoration: none;
 }
 
@@ -2898,21 +2942,22 @@ tr:nth-child(even) {
 }
 
 .yotf-player-meta {
-  margin-top: 3px;
+  margin-top: 4px;
 
-  font-size: 0.82rem;
+  font-size: 0.80rem;
   font-weight: 600;
 
-  opacity: 0.65;
+  opacity: 0.62;
 }
 
 .yotf-player-line {
-  margin-top: 7px;
+  margin-top: 6px;
 
-  font-size: 1rem;
+  font-size: 0.98rem;
   font-weight: 700;
-}
 
+  line-height: 1.25;
+}
 
 /* =========================
    H / P BADGE
@@ -2963,41 +3008,60 @@ tr:nth-child(even) {
 @media (max-width: 600px) {
 
   .yotf-player {
+
     grid-template-columns:
-      38px
+      34px
+      58px
       minmax(0, 1fr);
 
-    gap: 10px;
+    gap: 9px;
 
     padding:
-      16px 0;
+      11px 0;
   }
+
 
   .yotf-number {
-    width: 32px;
-    height: 32px;
+
+    width: 30px;
+    height: 30px;
 
     font-size:
-      0.9rem;
+      0.85rem;
   }
 
-  .yotf-type {
-    display: none;
+
+  .yotf-photo-link {
+
+    width: 58px;
+    height: 58px;
+
+    border-radius:
+      6px;
   }
+
 
   .yotf-player-name {
+
     font-size:
-      1.05rem;
+      1rem;
   }
+
 
   .yotf-player-line {
+
+    margin-top:
+      4px;
+
     font-size:
-      0.92rem;
+      0.88rem;
   }
 
+
   .yotf-player-meta {
+
     font-size:
-      0.76rem;
+      0.71rem;
   }
 
 }
