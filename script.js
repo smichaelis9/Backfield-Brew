@@ -10303,7 +10303,12 @@ async function initHomeDashboard() {
           err
         );
       });
-
+      renderHomeStatsLeaders(cleanPlayers).catch(err => {
+        console.error(
+          "Homepage Stats Leaders:",
+          err
+        );
+      });
     /*
      * Yesterday on the Farm
      */
@@ -12804,4 +12809,677 @@ async function renderHomeTransactions(
       </div>
     `;
   }
+}
+/* =========================================================
+   HOME STATS LEADERS
+========================================================= */
+
+let homeStatsBiography = [];
+let homeStatsHitterRows = [];
+let homeStatsPitcherRows = [];
+
+
+async function renderHomeStatsLeaders(
+  biography = []
+) {
+
+  const container =
+    document.getElementById(
+      "statsLeadersContent"
+    );
+
+  const typeSelect =
+    document.getElementById(
+      "statsLeaderType"
+    );
+
+  const categorySelect =
+    document.getElementById(
+      "statsLeaderCategory"
+    );
+
+
+  if (
+    !container ||
+    !typeSelect ||
+    !categorySelect
+  ) {
+    return;
+  }
+
+
+  try {
+
+    homeStatsBiography =
+      biography;
+
+
+    const [
+      hitters,
+      pitchers
+    ] = await Promise.all([
+
+      loadSheet(
+        "Hitter Stats 2026"
+      ),
+
+      loadSheet(
+        "Pitcher Stats 2026"
+      )
+
+    ]);
+
+
+    homeStatsHitterRows =
+      hitters;
+
+    homeStatsPitcherRows =
+      pitchers;
+
+
+    /* =========================
+       SET CATEGORY OPTIONS
+    ========================= */
+
+    function updateCategories() {
+
+      const type =
+        typeSelect.value;
+
+
+      if (type === "pitcher") {
+
+        categorySelect.innerHTML = `
+          <option value="ERA">
+            ERA
+          </option>
+
+          <option value="FIP">
+            FIP
+          </option>
+
+          <option value="K%">
+            K%
+          </option>
+        `;
+
+      } else {
+
+        categorySelect.innerHTML = `
+          <option value="HR">
+            Home Runs
+          </option>
+
+          <option value="SB">
+            Stolen Bases
+          </option>
+
+          <option value="OPS">
+            OPS
+          </option>
+        `;
+
+      }
+    }
+
+
+    updateCategories();
+
+    renderHomeStatsCategory();
+
+
+    typeSelect.addEventListener(
+      "change",
+      () => {
+
+        updateCategories();
+
+        renderHomeStatsCategory();
+
+      }
+    );
+
+
+    categorySelect.addEventListener(
+      "change",
+      renderHomeStatsCategory
+    );
+
+
+  } catch (err) {
+
+    console.error(
+      "Homepage stats leaders:",
+      err
+    );
+
+
+    container.innerHTML = `
+      <div class="home-empty">
+        Statistical leaders unavailable.
+      </div>
+    `;
+  }
+}
+
+
+/* =========================================================
+   RENDER SELECTED STAT
+========================================================= */
+
+function renderHomeStatsCategory() {
+
+  const container =
+    document.getElementById(
+      "statsLeadersContent"
+    );
+
+  const type =
+    document.getElementById(
+      "statsLeaderType"
+    )?.value || "hitter";
+
+  const category =
+    document.getElementById(
+      "statsLeaderCategory"
+    )?.value || "HR";
+
+
+  if (!container) {
+    return;
+  }
+
+
+  const rows =
+    type === "pitcher"
+      ? homeStatsPitcherRows
+      : homeStatsHitterRows;
+
+
+  const bioMap =
+    new Map();
+
+
+  homeStatsBiography.forEach(
+    player => {
+
+      const playerId =
+        get(
+          player,
+          [
+            "Player-ID",
+            "Player ID"
+          ]
+        );
+
+
+      if (
+        isRealValue(playerId)
+      ) {
+
+        bioMap.set(
+          String(playerId).trim(),
+          player
+        );
+      }
+
+    }
+  );
+
+
+  /* =========================
+     FILTER
+  ========================= */
+
+  const filtered =
+    rows
+      .filter(row => {
+
+        const playerId =
+          get(
+            row,
+            [
+              "Player-ID",
+              "Player ID"
+            ]
+          );
+
+
+        const playerName =
+          get(
+            row,
+            [
+              "Player",
+              "PlayerName",
+              "Name"
+            ]
+          );
+
+
+        if (
+          !isRealValue(playerId) ||
+          !isRealValue(playerName)
+        ) {
+          return false;
+        }
+
+
+        const value =
+          parseHomeStatValue(
+            get(
+              row,
+              [category]
+            )
+          );
+
+
+        if (
+          !Number.isFinite(value)
+        ) {
+          return false;
+        }
+
+
+        /* =========================
+           HITTER QUALIFICATION
+        ========================= */
+
+        if (
+          type === "hitter" &&
+          category === "OPS"
+        ) {
+
+          const pa =
+            parseHomeStatValue(
+              get(
+                row,
+                ["PA"]
+              )
+            );
+
+
+          if (
+            !Number.isFinite(pa) ||
+            pa < 100
+          ) {
+            return false;
+          }
+        }
+
+
+        /* =========================
+           PITCHER QUALIFICATION
+        ========================= */
+
+        if (
+          type === "pitcher"
+        ) {
+
+          const ip =
+            parseHomeStatValue(
+              get(
+                row,
+                ["IP"]
+              )
+            );
+
+
+          if (
+            !Number.isFinite(ip) ||
+            ip < 30
+          ) {
+            return false;
+          }
+        }
+
+
+        return true;
+
+      });
+
+
+  /* =========================
+     SORT
+  ========================= */
+
+  filtered.sort(
+    (a, b) => {
+
+      const aValue =
+        parseHomeStatValue(
+          get(
+            a,
+            [category]
+          )
+        );
+
+
+      const bValue =
+        parseHomeStatValue(
+          get(
+            b,
+            [category]
+          )
+        );
+
+
+      /* Lower is better */
+
+      if (
+        category === "ERA" ||
+        category === "FIP"
+      ) {
+
+        return (
+          aValue - bValue
+        );
+      }
+
+
+      /* Higher is better */
+
+      return (
+        bValue - aValue
+      );
+
+    }
+  );
+
+
+  const leaders =
+    filtered.slice(
+      0,
+      5
+    );
+
+
+  if (!leaders.length) {
+
+    container.innerHTML = `
+      <div class="home-empty">
+        No qualifying players.
+      </div>
+    `;
+
+    return;
+  }
+
+
+  container.innerHTML = `
+    <div class="home-stats-grid">
+
+      ${leaders
+        .map(
+          (row, index) => {
+
+            const playerId =
+              get(
+                row,
+                [
+                  "Player-ID",
+                  "Player ID"
+                ]
+              );
+
+
+            const playerName =
+              get(
+                row,
+                [
+                  "Player",
+                  "PlayerName",
+                  "Name"
+                ]
+              );
+
+
+            const bio =
+              bioMap.get(
+                String(
+                  playerId
+                ).trim()
+              );
+
+
+            const picture =
+              bio
+                ? getHomePlayerPicture(
+                    bio
+                  )
+                : "";
+
+
+            const mlbamId =
+              bio
+                ? get(
+                    bio,
+                    [
+                      "MLBAM ID",
+                      "MLB ID",
+                      "MiLB ID"
+                    ]
+                  )
+                : "";
+
+
+            const fallbackPicture =
+              isRealValue(mlbamId)
+                ? getHomeMlbamPicture(
+                    mlbamId
+                  )
+                : "";
+
+
+            const finalPicture =
+              picture ||
+              fallbackPicture;
+
+
+            const level =
+              bio
+                ? get(
+                    bio,
+                    ["Level"]
+                  )
+                : "";
+
+
+            const value =
+              formatHomeStatValue(
+                get(
+                  row,
+                  [category]
+                ),
+                category
+              );
+
+
+            const href =
+              `player.html?id=${encodeURIComponent(
+                playerId
+              )}`;
+
+
+            return `
+
+              <div class="home-stat-card">
+
+                <div class="home-stat-place">
+                  #${index + 1}
+                </div>
+
+
+                <a
+                  href="${href}"
+                  class="home-stat-photo-link"
+                >
+
+                  ${
+                    finalPicture
+                      ? `
+                        <img
+                          class="home-stat-photo"
+                          src="${escapeHomeHTML(
+                            finalPicture
+                          )}"
+                          alt="${escapeHomeHTML(
+                            playerName
+                          )}"
+                          loading="lazy"
+                          decoding="async"
+
+                          ${
+                            fallbackPicture &&
+                            finalPicture !==
+                              fallbackPicture
+                              ? `
+                                onerror="
+                                  this.onerror=null;
+                                  this.src='${fallbackPicture}';
+                                "
+                              `
+                              : `
+                                onerror="
+                                  this.style.display='none';
+                                "
+                              `
+                          }
+                        >
+                      `
+                      : ""
+                  }
+
+                </a>
+
+
+                <a
+                  href="${href}"
+                  class="home-stat-name"
+                >
+                  ${escapeHomeHTML(
+                    playerName
+                  )}
+                </a>
+
+
+                <div class="home-stat-meta">
+                  ${escapeHomeHTML(
+                    level
+                  )}
+                </div>
+
+
+                <div class="home-stat-value">
+
+                  ${escapeHomeHTML(
+                    value
+                  )}
+
+                  <span>
+                    ${escapeHomeHTML(
+                      category
+                    )}
+                  </span>
+
+                </div>
+
+              </div>
+            `;
+
+          }
+        )
+        .join("")}
+
+    </div>
+  `;
+}
+
+
+/* =========================================================
+   STAT NUMBER
+========================================================= */
+
+function parseHomeStatValue(
+  value
+) {
+
+  if (
+    value === null ||
+    value === undefined ||
+    value === ""
+  ) {
+    return NaN;
+  }
+
+
+  const cleaned =
+    String(value)
+      .replace(/%/g, "")
+      .replace(/,/g, "")
+      .trim();
+
+
+  const number =
+    Number(cleaned);
+
+
+  return Number.isFinite(number)
+    ? number
+    : NaN;
+}
+
+
+/* =========================================================
+   STAT DISPLAY
+========================================================= */
+
+function formatHomeStatValue(
+  value,
+  category
+) {
+
+  const number =
+    parseHomeStatValue(
+      value
+    );
+
+
+  if (
+    !Number.isFinite(number)
+  ) {
+    return "—";
+  }
+
+
+  if (
+    category === "K%"
+  ) {
+
+    return (
+      number.toFixed(1) +
+      "%"
+    );
+  }
+
+
+  if (
+    category === "ERA" ||
+    category === "FIP"
+  ) {
+
+    return number.toFixed(2);
+  }
+
+
+  if (
+    category === "OPS"
+  ) {
+
+    return number.toFixed(3);
+  }
+
+
+  return String(
+    Math.round(number)
+  );
 }
