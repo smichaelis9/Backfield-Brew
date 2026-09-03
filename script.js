@@ -9777,7 +9777,6 @@ async function initYesterdayOnTheFarm() {
 
 }
 
-
 /* =========================================================
    RENDER YOTF PLAYER LIST
 ========================================================= */
@@ -9788,32 +9787,23 @@ function renderYotfPlayers(
   type
 ) {
 
-  container.innerHTML =
-    "";
+  container.innerHTML = "";
 
 
-  if (
-    !players.length
-  ) {
+  if (!players.length) {
 
-    container.innerHTML =
-
-      `
-        <div class="yotf-empty">
-          No qualifying performances.
-        </div>
-      `;
-
+    container.innerHTML = `
+      <div class="yotf-empty">
+        No qualifying performances.
+      </div>
+    `;
 
     return;
   }
 
 
   players.forEach(
-    (
-      player,
-      index
-    ) => {
+    (player, index) => {
 
       const item =
         document.createElement(
@@ -9838,93 +9828,85 @@ function renderYotfPlayers(
 
 
       const rankText =
-
-        Number.isFinite(
-          rank
-        ) &&
+        Number.isFinite(rank) &&
         rank > 0
-
           ? `#${rank} Prospect`
-
           : "";
 
 
-      const metaParts =
-        [
-
-          player.affiliate,
-
-          player.level,
-
-          rankText
-
-        ]
-          .filter(
-            Boolean
-          );
+      const metaParts = [
+        player.affiliate,
+        player.level,
+        rankText
+      ]
+        .filter(Boolean);
 
 
-      item.innerHTML =
-
-        `
-          <div class="yotf-number">
-            ${index + 1}
-          </div>
+      const headshotUrl =
+        getYotfHeadshot(
+          player.mlbamId
+        );
 
 
-          <div class="yotf-player-main">
+      item.innerHTML = `
 
-            <a
-              class="yotf-player-name"
-              href="${escapeYotfHtml(
-                playerUrl
-              )}"
-            >
-              ${escapeYotfHtml(
-                player.name ||
-                "Unknown Player"
-              )}
-            </a>
+        <div class="yotf-number">
+          ${index + 1}
+        </div>
 
 
-            <div class="yotf-player-meta">
+        <a
+          class="yotf-photo-link"
+          href="${escapeYotfHtml(playerUrl)}"
+        >
 
-              ${metaParts
-                .map(
-                  part =>
-                    escapeYotfHtml(
-                      part
-                    )
-                )
-                .join(
-                  " · "
-                )}
+          <img
+            class="yotf-player-photo"
+            src="${escapeYotfHtml(headshotUrl)}"
+            alt="${escapeYotfHtml(player.name || "Player")}"
+            loading="lazy"
+          >
 
-            </div>
+        </a>
 
 
-            <div class="yotf-player-line">
+        <div class="yotf-player-main">
 
-              ${escapeYotfHtml(
-                player.line ||
-                ""
-              )}
+          <a
+            class="yotf-player-name"
+            href="${escapeYotfHtml(playerUrl)}"
+          >
+            ${escapeYotfHtml(
+              player.name ||
+              "Unknown Player"
+            )}
+          </a>
 
-            </div>
+
+          <div class="yotf-player-meta">
+
+            ${metaParts
+              .map(
+                part =>
+                  escapeYotfHtml(part)
+              )
+              .join(" · ")}
 
           </div>
 
 
-          <div class="yotf-type">
+          <div class="yotf-player-line">
 
-            ${
-              type === "pitcher"
-                ? "P"
-                : "H"
-            }
+            ${escapeYotfHtml(
+              player.line ||
+              ""
+            )}
 
           </div>
-        `;
+
+        </div>
+
+      `;
 
 
       container.appendChild(
@@ -9935,7 +9917,39 @@ function renderYotfPlayers(
   );
 
 }
+/* =========================================================
+   YOTF PLAYER HEADSHOT
+========================================================= */
 
+function getYotfHeadshot(
+  mlbamId
+) {
+
+  const id =
+    Number(
+      mlbamId
+    );
+
+
+  if (!Number.isFinite(id)) {
+
+    return "";
+  }
+
+
+  return (
+    "https://img.mlbstatic.com/mlb-photos/" +
+    "image/upload/" +
+    "w_180," +
+    "d_people:generic:headshot:silo:current.png," +
+    "q_auto:best," +
+    "f_auto/" +
+    "v1/people/" +
+    id +
+    "/headshot/67/current"
+  );
+
+}
 
 /* =========================================================
    PLAYER LINK
@@ -9969,7 +9983,6 @@ function getYotfPlayerUrl(
   );
 
 }
-
 
 /* =========================================================
    DATE FORMAT
