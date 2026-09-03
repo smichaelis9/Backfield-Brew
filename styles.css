@@ -3063,3 +3063,788 @@ tr:nth-child(even) {
   }
 
 }
+/* =========================================================
+   HOME DASHBOARD
+========================================================= */
+
+.home-dashboard {
+  padding-bottom: 40px;
+}
+
+
+/* =========================
+   GRID
+========================= */
+
+.home-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 18px;
+
+  margin-bottom: 18px;
+}
+
+.home-grid-primary {
+  align-items: stretch;
+}
+
+
+/* =========================
+   PANELS
+========================= */
+
+.home-panel {
+  margin: 0;
+  min-width: 0;
+}
+
+.home-panel-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+
+  gap: 18px;
+
+  margin-bottom: 16px;
+}
+
+.home-panel-header h2 {
+  margin: 2px 0 0;
+
+  font-size: 1.35rem;
+  line-height: 1.15;
+}
+
+.home-panel-kicker {
+  font-size: 0.7rem;
+  font-weight: 800;
+
+  letter-spacing: 0.12em;
+
+  opacity: 0.55;
+}
+
+.home-panel-link {
+  flex-shrink: 0;
+
+  margin-top: 4px;
+
+  font-size: 0.78rem;
+  font-weight: 800;
+
+  color: inherit;
+
+  text-decoration: none;
+
+  opacity: 0.65;
+}
+
+.home-panel-link:hover {
+  opacity: 1;
+  text-decoration: underline;
+}
+
+.home-panel-content {
+  min-width: 0;
+}
+
+
+/* =========================
+   LOADING / EMPTY
+========================= */
+
+.home-loading,
+.home-empty {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  min-height: 120px;
+
+  padding: 20px;
+
+  text-align: center;
+
+  font-size: 0.9rem;
+
+  opacity: 0.55;
+}
+
+
+/* =========================================================
+   SHARED PLAYER ROW
+========================================================= */
+
+.home-player-row {
+  display: grid;
+
+  grid-template-columns:
+    34px
+    62px
+    minmax(0, 1fr)
+    auto;
+
+  align-items: center;
+
+  gap: 12px;
+
+  padding: 10px 0;
+
+  border-bottom:
+    1px solid
+    rgba(0, 0, 0, 0.08);
+}
+
+.home-player-row:last-child {
+  border-bottom: 0;
+}
+
+
+/* =========================
+   NUMBER / RANK
+========================= */
+
+.home-player-rank {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 30px;
+  height: 30px;
+
+  border-radius: 50%;
+
+  background:
+    var(--gold, #fdb827);
+
+  color: #111;
+
+  font-size: 0.82rem;
+  font-weight: 900;
+}
+
+
+/* =========================
+   PLAYER PHOTO
+========================= */
+
+.home-player-photo-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 62px;
+  height: 62px;
+
+  overflow: hidden;
+
+  border-radius: 7px;
+
+  background: #eeeeee;
+
+  text-decoration: none;
+}
+
+.home-player-photo {
+  display: block;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: contain;
+  object-position: center bottom;
+}
+
+
+/* =========================
+   PLAYER INFO
+========================= */
+
+.home-player-info {
+  min-width: 0;
+}
+
+.home-player-name {
+  display: inline-block;
+
+  color: inherit;
+
+  font-size: 1rem;
+  font-weight: 800;
+
+  line-height: 1.15;
+
+  text-decoration: none;
+}
+
+.home-player-name:hover {
+  text-decoration: underline;
+}
+
+.home-player-meta {
+  margin-top: 3px;
+
+  font-size: 0.75rem;
+  font-weight: 600;
+
+  opacity: 0.6;
+}
+
+.home-player-detail {
+  margin-top: 5px;
+
+  font-size: 0.88rem;
+  font-weight: 700;
+
+  line-height: 1.25;
+}
+
+
+/* =========================
+   VALUE
+========================= */
+
+.home-player-value {
+  padding-left: 10px;
+
+  text-align: right;
+
+  font-size: 1rem;
+  font-weight: 900;
+
+  white-space: nowrap;
+}
+
+
+/* =========================================================
+   TODAY ON THE FARM
+========================================================= */
+
+.home-game {
+  display: grid;
+
+  grid-template-columns:
+    minmax(0, 1fr)
+    auto;
+
+  align-items: center;
+
+  gap: 14px;
+
+  padding: 13px 0;
+
+  border-bottom:
+    1px solid
+    rgba(0, 0, 0, 0.08);
+}
+
+.home-game:last-child {
+  border-bottom: 0;
+}
+
+.home-game-affiliate {
+  font-size: 0.95rem;
+  font-weight: 800;
+}
+
+.home-game-matchup {
+  margin-top: 3px;
+
+  font-size: 0.82rem;
+
+  opacity: 0.7;
+}
+
+.home-game-starter {
+  display: flex;
+  align-items: center;
+
+  gap: 8px;
+
+  margin-top: 8px;
+}
+
+.home-game-starter-photo {
+  width: 38px;
+  height: 38px;
+
+  object-fit: contain;
+  object-position: center bottom;
+
+  border-radius: 5px;
+
+  background: #eeeeee;
+}
+
+.home-game-starter-info {
+  min-width: 0;
+
+  font-size: 0.75rem;
+
+  opacity: 0.7;
+}
+
+.home-game-starter-name {
+  display: block;
+
+  color: inherit;
+
+  font-size: 0.82rem;
+  font-weight: 800;
+
+  text-decoration: none;
+
+  opacity: 1;
+}
+
+.home-game-time {
+  text-align: right;
+
+  font-size: 0.82rem;
+  font-weight: 800;
+
+  white-space: nowrap;
+}
+
+
+/* =========================================================
+   YESTERDAY ON THE FARM
+========================================================= */
+
+.home-yotf-group + .home-yotf-group {
+  margin-top: 12px;
+}
+
+.home-yotf-label {
+  margin-bottom: 3px;
+
+  font-size: 0.68rem;
+  font-weight: 900;
+
+  letter-spacing: 0.1em;
+
+  opacity: 0.5;
+}
+
+.home-yotf-row {
+  display: grid;
+
+  grid-template-columns:
+    54px
+    minmax(0, 1fr);
+
+  align-items: center;
+
+  gap: 11px;
+
+  padding: 8px 0;
+
+  border-bottom:
+    1px solid
+    rgba(0, 0, 0, 0.08);
+}
+
+.home-yotf-row:last-child {
+  border-bottom: 0;
+}
+
+.home-yotf-photo {
+  display: block;
+
+  width: 54px;
+  height: 54px;
+
+  object-fit: contain;
+  object-position: center bottom;
+
+  border-radius: 6px;
+
+  background: #eeeeee;
+}
+
+.home-yotf-name {
+  color: inherit;
+
+  font-size: 0.95rem;
+  font-weight: 800;
+
+  text-decoration: none;
+}
+
+.home-yotf-name:hover {
+  text-decoration: underline;
+}
+
+.home-yotf-line {
+  margin-top: 4px;
+
+  font-size: 0.8rem;
+  font-weight: 700;
+
+  opacity: 0.75;
+}
+
+
+/* =========================================================
+   TRENDING
+========================================================= */
+
+.home-trending-arrow {
+  font-size: 1.1rem;
+  font-weight: 900;
+}
+
+.home-trending-arrow.up {
+  transform: translateY(-1px);
+}
+
+
+/* =========================================================
+   TRANSACTIONS
+========================================================= */
+
+.home-transaction {
+  display: grid;
+
+  grid-template-columns:
+    52px
+    minmax(0, 1fr);
+
+  align-items: center;
+
+  gap: 11px;
+
+  padding: 9px 0;
+
+  border-bottom:
+    1px solid
+    rgba(0, 0, 0, 0.08);
+}
+
+.home-transaction:last-child {
+  border-bottom: 0;
+}
+
+.home-transaction-photo {
+  display: block;
+
+  width: 52px;
+  height: 52px;
+
+  object-fit: contain;
+  object-position: center bottom;
+
+  border-radius: 6px;
+
+  background: #eeeeee;
+}
+
+.home-transaction-name {
+  color: inherit;
+
+  font-size: 0.92rem;
+  font-weight: 800;
+
+  text-decoration: none;
+}
+
+.home-transaction-name:hover {
+  text-decoration: underline;
+}
+
+.home-transaction-date {
+  margin-left: 6px;
+
+  font-size: 0.7rem;
+  font-weight: 600;
+
+  opacity: 0.5;
+}
+
+.home-transaction-description {
+  margin-top: 4px;
+
+  font-size: 0.78rem;
+  line-height: 1.3;
+
+  opacity: 0.72;
+}
+
+
+/* =========================================================
+   SELECTS
+========================================================= */
+
+.home-select {
+  max-width: 210px;
+
+  padding: 7px 28px 7px 9px;
+
+  border:
+    1px solid
+    rgba(0, 0, 0, 0.15);
+
+  border-radius: 6px;
+
+  background: inherit;
+  color: inherit;
+
+  font: inherit;
+
+  font-size: 0.78rem;
+  font-weight: 700;
+
+  cursor: pointer;
+}
+
+
+/* =========================================================
+   STANDINGS
+========================================================= */
+
+.home-standings-table {
+  width: 100%;
+
+  border-collapse: collapse;
+
+  font-size: 0.78rem;
+}
+
+.home-standings-table th {
+  padding: 7px 5px;
+
+  text-align: right;
+
+  font-size: 0.67rem;
+
+  opacity: 0.55;
+}
+
+.home-standings-table th:first-child {
+  text-align: left;
+}
+
+.home-standings-table td {
+  padding: 8px 5px;
+
+  text-align: right;
+
+  border-top:
+    1px solid
+    rgba(0, 0, 0, 0.07);
+}
+
+.home-standings-table td:first-child {
+  text-align: left;
+
+  font-weight: 700;
+}
+
+.home-standings-table tr.brewers-affiliate {
+  font-weight: 900;
+
+  background:
+    rgba(253, 184, 39, 0.12);
+}
+
+
+/* =========================================================
+   STATS LEADERS
+========================================================= */
+
+.home-stats-panel {
+  margin-top: 0;
+}
+
+.home-stats-controls {
+  display: flex;
+  align-items: center;
+
+  gap: 8px;
+}
+
+.home-stats-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(5, minmax(0, 1fr));
+
+  gap: 12px;
+}
+
+.home-stat-leader {
+  min-width: 0;
+
+  padding: 12px;
+
+  text-align: center;
+
+  border:
+    1px solid
+    rgba(0, 0, 0, 0.08);
+
+  border-radius: 8px;
+}
+
+.home-stat-rank {
+  margin-bottom: 5px;
+
+  font-size: 0.7rem;
+  font-weight: 900;
+
+  opacity: 0.5;
+}
+
+.home-stat-photo {
+  display: block;
+
+  width: 80px;
+  height: 80px;
+
+  margin: 0 auto 8px;
+
+  object-fit: contain;
+  object-position: center bottom;
+
+  border-radius: 8px;
+
+  background: #eeeeee;
+}
+
+.home-stat-name {
+  display: block;
+
+  overflow: hidden;
+
+  color: inherit;
+
+  font-size: 0.88rem;
+  font-weight: 800;
+
+  text-decoration: none;
+
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.home-stat-name:hover {
+  text-decoration: underline;
+}
+
+.home-stat-meta {
+  margin-top: 3px;
+
+  font-size: 0.68rem;
+
+  opacity: 0.55;
+}
+
+.home-stat-value {
+  margin-top: 8px;
+
+  font-size: 1.25rem;
+  font-weight: 900;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 900px) {
+
+  .home-stats-grid {
+    grid-template-columns:
+      repeat(3, minmax(0, 1fr));
+  }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 700px) {
+
+  .home-grid {
+    grid-template-columns: 1fr;
+
+    gap: 14px;
+
+    margin-bottom: 14px;
+  }
+
+
+  .home-panel-header {
+    gap: 10px;
+
+    margin-bottom: 12px;
+  }
+
+
+  .home-panel-header h2 {
+    font-size: 1.2rem;
+  }
+
+
+  .home-panel-link {
+    font-size: 0.7rem;
+  }
+
+
+  .home-select {
+    max-width: 155px;
+
+    font-size: 0.7rem;
+  }
+
+
+  .home-player-row {
+
+    grid-template-columns:
+      30px
+      52px
+      minmax(0, 1fr);
+
+    gap: 8px;
+  }
+
+
+  .home-player-photo-link {
+    width: 52px;
+    height: 52px;
+  }
+
+
+  .home-player-value {
+    grid-column: 3;
+
+    padding-left: 0;
+
+    text-align: left;
+
+    font-size: 0.85rem;
+  }
+
+
+  .home-stats-controls {
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+
+  .home-stats-grid {
+    grid-template-columns:
+      repeat(2, minmax(0, 1fr));
+
+    gap: 8px;
+  }
+
+
+  .home-stat-photo {
+    width: 68px;
+    height: 68px;
+  }
+
+}
