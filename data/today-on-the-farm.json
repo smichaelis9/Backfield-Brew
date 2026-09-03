@@ -1,6 +1,6 @@
 {
   "date": "2026-09-03",
-  "generatedAt": "2026-09-03T21:01:48.075Z",
+  "generatedAt": "2026-09-03T23:16:42.027Z",
   "affiliates": [
     {
       "teamId": 556,
@@ -100,17 +100,17 @@
       "opponentTeamId": 436,
       "venue": "Virginia Credit Union Stadium",
       "status": {
-        "key": "scheduled",
-        "label": "Pre-Game"
+        "key": "live",
+        "label": "In Progress"
       },
       "score": {
-        "away": 0,
-        "home": 0
+        "away": 2,
+        "home": 1
       },
       "inning": {
-        "inning": 1,
-        "state": "Top",
-        "ordinal": "1st"
+        "inning": 2,
+        "state": "Bottom",
+        "ordinal": "2nd"
       },
       "probablePitcher": {
         "mlbamId": 828069,
@@ -139,11 +139,18 @@
       "opponentTeamId": 554,
       "venue": "ABC Supply Stadium",
       "status": {
-        "key": "scheduled",
-        "label": "Scheduled"
+        "key": "live",
+        "label": "In Progress"
       },
-      "score": null,
-      "inning": null,
+      "score": {
+        "away": 0,
+        "home": 0
+      },
+      "inning": {
+        "inning": 1,
+        "state": "Bottom",
+        "ordinal": "1st"
+      },
       "probablePitcher": {
         "mlbamId": 803068,
         "name": "Chandler Welch",
@@ -172,10 +179,17 @@
       "venue": "First Horizon Park",
       "status": {
         "key": "scheduled",
-        "label": "Scheduled"
+        "label": "Pre-Game"
       },
-      "score": null,
-      "inning": null,
+      "score": {
+        "away": 0,
+        "home": 0
+      },
+      "inning": {
+        "inning": 1,
+        "state": "Top",
+        "ordinal": "1st"
+      },
       "probablePitcher": {
         "mlbamId": 687075,
         "name": "Brandon Sproat",
@@ -204,10 +218,17 @@
       "venue": "Keesler Federal Park",
       "status": {
         "key": "scheduled",
-        "label": "Scheduled"
+        "label": "Pre-Game"
       },
-      "score": null,
-      "inning": null,
+      "score": {
+        "away": 0,
+        "home": 0
+      },
+      "inning": {
+        "inning": 1,
+        "state": "Top",
+        "ordinal": "1st"
+      },
       "probablePitcher": {
         "mlbamId": 811309,
         "name": "Bishop Letson",
