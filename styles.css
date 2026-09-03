@@ -4107,3 +4107,82 @@ a.home-game-starter-name:hover {
   }
 
 }
+/* =========================================================
+   HOME RECENT TRANSACTIONS
+========================================================= */
+
+.home-transaction-row {
+  display: grid;
+  grid-template-columns: 58px minmax(0, 1fr);
+  gap: 10px;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(0,0,0,.07);
+}
+
+.home-transaction-row:last-child {
+  border-bottom: 0;
+}
+
+.home-transaction-photo-link {
+  display: block;
+  width: 58px;
+  height: 58px;
+  overflow: hidden;
+}
+
+.home-transaction-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center bottom;
+}
+
+.home-transaction-info {
+  min-width: 0;
+}
+
+.home-transaction-topline {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 3px;
+}
+
+.home-transaction-name {
+  color: var(--navy);
+  font-weight: 900;
+  text-decoration: none;
+}
+
+.home-transaction-name:hover {
+  text-decoration: underline;
+}
+
+.home-transaction-date {
+  flex: 0 0 auto;
+  font-size: .72rem;
+  font-weight: 800;
+  opacity: .55;
+}
+
+.home-transaction-description {
+  font-size: .78rem;
+  line-height: 1.35;
+  opacity: .78;
+}
+
+
+@media (max-width: 600px) {
+
+  .home-transaction-row {
+    grid-template-columns: 50px minmax(0, 1fr);
+  }
+
+  .home-transaction-photo-link {
+    width: 50px;
+    height: 50px;
+  }
+
+}
