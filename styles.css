@@ -4186,3 +4186,15 @@ a.home-game-starter-name:hover {
   }
 
 }
+.home-standings-table
+tr.home-standings-brewers,
+.home-standings-table
+tr.home-standings-brewers:nth-child(even) {
+  background: rgba(255, 197, 47, 0.28);
+}
+
+.home-standings-table
+tr.home-standings-brewers td {
+  font-weight: 800;
+  color: #1b2a4a;
+}
