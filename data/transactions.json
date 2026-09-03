@@ -1,5 +1,22 @@
 [
   {
+    "Transaction ID": "940910",
+    "Date": "2026-09-02",
+    "Effective Date": "2026-09-02",
+    "MLBAM ID": "669270",
+    "Player": "Joel Kuhnel",
+    "Position": "",
+    "From Team": "",
+    "To Team": "Milwaukee Brewers",
+    "Level": "MLB",
+    "Type": "Designated for Assignment",
+    "Description": "Milwaukee Brewers designated RHP Joel Kuhnel for assignment.",
+    "Source URL": "https://www.mlb.com/brewers/roster/transactions/2026/09",
+    "Imported At": "09/02/2026 17:46:27",
+    "Player ID": "",
+    "Archived?": ""
+  },
+  {
     "Transaction ID": "940760",
     "Date": "2026-09-01",
     "Effective Date": "2026-09-01",
