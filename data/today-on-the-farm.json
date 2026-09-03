@@ -1,0 +1,217 @@
+{
+  "date": "2026-09-03",
+  "generatedAt": "2026-09-03T14:37:02.244Z",
+  "affiliates": [
+    {
+      "teamId": 556,
+      "name": "Nashville Sounds",
+      "level": "AAA",
+      "sportId": 11,
+      "leagueId": 117,
+      "leagueName": "International League"
+    },
+    {
+      "teamId": 5015,
+      "name": "Biloxi Shuckers",
+      "level": "AA",
+      "sportId": 12,
+      "leagueId": 111,
+      "leagueName": "Southern League"
+    },
+    {
+      "teamId": 572,
+      "name": "Wisconsin Timber Rattlers",
+      "level": "A+",
+      "sportId": 13,
+      "leagueId": 118,
+      "leagueName": "Midwest League"
+    },
+    {
+      "teamId": 249,
+      "name": "Wilson Warbirds",
+      "level": "A",
+      "sportId": 14,
+      "leagueId": 122,
+      "leagueName": "Carolina League"
+    },
+    {
+      "teamId": 406,
+      "name": "ACL Brewers",
+      "level": "ACL",
+      "sportId": 16,
+      "leagueId": 121,
+      "leagueName": "Arizona Complex League"
+    },
+    {
+      "teamId": 2101,
+      "name": "DSL Brewers Gold",
+      "level": "DSL",
+      "sportId": 16,
+      "leagueId": 130,
+      "leagueName": "Dominican Summer League"
+    },
+    {
+      "teamId": 607,
+      "name": "DSL Brewers Blue",
+      "level": "DSL",
+      "sportId": 16,
+      "leagueId": 130,
+      "leagueName": "Dominican Summer League"
+    }
+  ],
+  "gameCount": 5,
+  "games": [
+    {
+      "key": "826775:249",
+      "gamePk": 826775,
+      "date": "2026-09-03",
+      "gameDate": "2026-09-03T21:10:00Z",
+      "affiliate": "Wilson Warbirds",
+      "affiliateTeamId": 249,
+      "level": "A",
+      "leagueId": 122,
+      "leagueName": "Carolina League",
+      "homeAway": "home",
+      "opponent": "Fredericksburg Nationals",
+      "opponentTeamId": 436,
+      "venue": "Virginia Credit Union Stadium",
+      "status": {
+        "key": "cancelled",
+        "label": "Cancelled"
+      },
+      "score": null,
+      "inning": null,
+      "probablePitcher": null,
+      "doubleHeader": "Y",
+      "gameNumber": 2
+    },
+    {
+      "key": "827162:249",
+      "gamePk": 827162,
+      "date": "2026-09-03",
+      "gameDate": "2026-09-03T22:35:00Z",
+      "affiliate": "Wilson Warbirds",
+      "affiliateTeamId": 249,
+      "level": "A",
+      "leagueId": 122,
+      "leagueName": "Carolina League",
+      "homeAway": "away",
+      "opponent": "Fredericksburg Nationals",
+      "opponentTeamId": 436,
+      "venue": "Virginia Credit Union Stadium",
+      "status": {
+        "key": "scheduled",
+        "label": "Scheduled"
+      },
+      "score": null,
+      "inning": null,
+      "probablePitcher": {
+        "mlbamId": 828069,
+        "name": "Luke Roupe",
+        "inDatabase": true,
+        "playerId": "Luke-Roupe",
+        "rank": 133,
+        "picture": "https://i.ibb.co/7tJ95K3j/Roupe.jpg",
+        "databaseLevel": "A"
+      },
+      "doubleHeader": "Y",
+      "gameNumber": 1
+    },
+    {
+      "key": "820177:572",
+      "gamePk": 820177,
+      "date": "2026-09-03",
+      "gameDate": "2026-09-03T23:05:00Z",
+      "affiliate": "Wisconsin Timber Rattlers",
+      "affiliateTeamId": 572,
+      "level": "A+",
+      "leagueId": 118,
+      "leagueName": "Midwest League",
+      "homeAway": "away",
+      "opponent": "Beloit Sky Carp",
+      "opponentTeamId": 554,
+      "venue": "ABC Supply Stadium",
+      "status": {
+        "key": "scheduled",
+        "label": "Scheduled"
+      },
+      "score": null,
+      "inning": null,
+      "probablePitcher": {
+        "mlbamId": 803848,
+        "name": "Jayden Dubanewicz",
+        "inDatabase": true,
+        "playerId": "Jayden-Dubanewicz",
+        "rank": 24,
+        "picture": "https://img.mlbstatic.com/mlb-photos/image/upload/c_fill,g_auto/w_180/v1/people/803848/headshot/milb/current",
+        "databaseLevel": "A+"
+      },
+      "doubleHeader": "N",
+      "gameNumber": 1
+    },
+    {
+      "key": "816083:556",
+      "gamePk": 816083,
+      "date": "2026-09-03",
+      "gameDate": "2026-09-03T23:35:00Z",
+      "affiliate": "Nashville Sounds",
+      "affiliateTeamId": 556,
+      "level": "AAA",
+      "leagueId": 117,
+      "leagueName": "International League",
+      "homeAway": "home",
+      "opponent": "Louisville Bats",
+      "opponentTeamId": 416,
+      "venue": "First Horizon Park",
+      "status": {
+        "key": "scheduled",
+        "label": "Scheduled"
+      },
+      "score": null,
+      "inning": null,
+      "probablePitcher": {
+        "mlbamId": 687075,
+        "name": "Brandon Sproat",
+        "inDatabase": false,
+        "playerId": "",
+        "rank": null,
+        "picture": "",
+        "databaseLevel": ""
+      },
+      "doubleHeader": "N",
+      "gameNumber": 1
+    },
+    {
+      "key": "818146:5015",
+      "gamePk": 818146,
+      "date": "2026-09-03",
+      "gameDate": "2026-09-03T23:35:00Z",
+      "affiliate": "Biloxi Shuckers",
+      "affiliateTeamId": 5015,
+      "level": "AA",
+      "leagueId": 111,
+      "leagueName": "Southern League",
+      "homeAway": "home",
+      "opponent": "Birmingham Barons",
+      "opponentTeamId": 247,
+      "venue": "Keesler Federal Park",
+      "status": {
+        "key": "scheduled",
+        "label": "Scheduled"
+      },
+      "score": null,
+      "inning": null,
+      "probablePitcher": {
+        "mlbamId": 811309,
+        "name": "Bishop Letson",
+        "inDatabase": true,
+        "playerId": "Bishop-Letson",
+        "rank": 10,
+        "picture": "https://img.mlbstatic.com/mlb-photos/image/upload/c_fill,g_auto/w_180/v1/people/811309/headshot/milb/current",
+        "databaseLevel": "AA"
+      },
+      "doubleHeader": "N",
+      "gameNumber": 1
+    }
+  ]
+}
