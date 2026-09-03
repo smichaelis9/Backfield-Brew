@@ -10273,7 +10273,12 @@ async function initHomeDashboard() {
     /*
      * Today on the Farm
      */
-    await renderHomeToday();
+    renderHomeToday().catch(err => {
+      console.error(
+         "Homepage Today on the Farm:",
+         err
+       );
+     });
 
 
     /*
