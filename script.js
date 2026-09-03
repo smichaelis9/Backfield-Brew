@@ -9607,6 +9607,7 @@ document.addEventListener(
 
   }
 );
+
 /* =========================================================
    YESTERDAY ON THE FARM
 ========================================================= */
@@ -9614,76 +9615,115 @@ document.addEventListener(
 async function initYesterdayOnTheFarm() {
 
   const dateElement =
-    document.getElementById(
-      "yotfDate"
-    );
-
+    document.getElementById("yotfDate");
 
   const hittersElement =
-    document.getElementById(
-      "yotfHitters"
-    );
-
+    document.getElementById("yotfHitters");
 
   const pitchersElement =
-    document.getElementById(
-      "yotfPitchers"
-    );
-
+    document.getElementById("yotfPitchers");
 
   const statusElement =
-    document.getElementById(
-      "yotfStatus"
-    );
+    document.getElementById("yotfStatus");
 
 
   if (
     !hittersElement ||
     !pitchersElement
   ) {
-
     return;
   }
 
 
   try {
 
-    const response =
-      await fetch(
+    const [
+      yotfResponse,
+      biographyResponse
+    ] = await Promise.all([
+
+      fetch(
         "data/yesterday-on-the-farm.json",
         {
-          cache:
-            "no-store"
+          cache: "no-store"
         }
-      );
+      ),
+
+      fetch(
+        "data/biography.json",
+        {
+          cache: "no-store"
+        }
+      )
+
+    ]);
 
 
-    if (
-      !response.ok
-    ) {
+    if (!yotfResponse.ok) {
 
       throw new Error(
-        `HTTP ${response.status}`
+        `YOTF HTTP ${yotfResponse.status}`
       );
+
     }
 
 
     const data =
-      await response.json();
+      await yotfResponse.json();
+
+
+    let biography = [];
+
+    if (biographyResponse.ok) {
+
+      biography =
+        await biographyResponse.json();
+
+    }
+
+
+    /* =========================
+       BIOGRAPHY LOOKUP
+    ========================== */
+
+    const biographyMap =
+      new Map();
+
+
+    biography.forEach(
+      player => {
+
+        const playerId =
+          String(
+            player["Player-ID"] || ""
+          ).trim();
+
+
+        if (!playerId) {
+          return;
+        }
+
+
+        biographyMap.set(
+          playerId,
+          player
+        );
+
+      }
+    );
 
 
     /* =========================
        DATE
     ========================== */
 
-    if (
-      dateElement
-    ) {
+    if (dateElement) {
 
       dateElement.textContent =
         formatYotfDate(
           data.date
         );
+
     }
 
 
@@ -9692,14 +9732,9 @@ async function initYesterdayOnTheFarm() {
     ========================== */
 
     renderYotfPlayers(
-
       hittersElement,
-
-      data.hitters ||
-      [],
-
-      "hitter"
-
+      data.hitters || [],
+      biographyMap
     );
 
 
@@ -9708,14 +9743,9 @@ async function initYesterdayOnTheFarm() {
     ========================== */
 
     renderYotfPlayers(
-
       pitchersElement,
-
-      data.pitchers ||
-      [],
-
-      "pitcher"
-
+      data.pitchers || [],
+      biographyMap
     );
 
 
@@ -9723,26 +9753,21 @@ async function initYesterdayOnTheFarm() {
        STATUS
     ========================== */
 
-    if (
-      statusElement
-    ) {
+    if (statusElement) {
 
       const gameCount =
         Number(
-          data.completedGames ||
-          0
+          data.completedGames || 0
         );
 
 
       statusElement.textContent =
-
         gameCount === 1
-
           ? "1 completed Brewers minor league game"
-
           : `${gameCount} completed Brewers minor league games`;
 
     }
+
 
   } catch (error) {
 
@@ -9752,30 +9777,26 @@ async function initYesterdayOnTheFarm() {
     );
 
 
-    if (
-      dateElement
-    ) {
+    if (dateElement) {
 
-      dateElement.textContent =
-        "";
+      dateElement.textContent = "";
+
     }
 
 
-    hittersElement.innerHTML =
-
-      `
-        <div class="yotf-empty">
-          Yesterday on the Farm is currently unavailable.
-        </div>
-      `;
+    hittersElement.innerHTML = `
+      <div class="yotf-empty">
+        Yesterday on the Farm is currently unavailable.
+      </div>
+    `;
 
 
-    pitchersElement.innerHTML =
-      "";
+    pitchersElement.innerHTML = "";
 
   }
 
 }
+
 
 /* =========================================================
    RENDER YOTF PLAYER LIST
@@ -9784,7 +9805,7 @@ async function initYesterdayOnTheFarm() {
 function renderYotfPlayers(
   container,
   players,
-  type
+  biographyMap
 ) {
 
   container.innerHTML = "";
@@ -9843,8 +9864,9 @@ function renderYotfPlayers(
 
 
       const headshotUrl =
-        getYotfHeadshot(
-          player.mlbamId
+        getYotfPlayerPhoto(
+          player,
+          biographyMap
         );
 
 
@@ -9863,8 +9885,15 @@ function renderYotfPlayers(
           <img
             class="yotf-player-photo"
             src="${escapeYotfHtml(headshotUrl)}"
-            alt="${escapeYotfHtml(player.name || "Player")}"
+            alt="${escapeYotfHtml(
+              player.name || "Player"
+            )}"
             loading="lazy"
+            onerror="this.onerror=null; this.src='${escapeYotfHtml(
+              getYotfMlbamHeadshot(
+                player.mlbamId
+              )
+            )}';"
           >
 
         </a>
@@ -9898,8 +9927,7 @@ function renderYotfPlayers(
           <div class="yotf-player-line">
 
             ${escapeYotfHtml(
-              player.line ||
-              ""
+              player.line || ""
             )}
 
           </div>
@@ -9917,11 +9945,80 @@ function renderYotfPlayers(
   );
 
 }
+
+
 /* =========================================================
-   YOTF PLAYER HEADSHOT
+   YOTF PLAYER PHOTO
 ========================================================= */
 
-function getYotfHeadshot(
+function getYotfPlayerPhoto(
+  player,
+  biographyMap
+) {
+
+  const playerId =
+    String(
+      player.playerId || ""
+    ).trim();
+
+
+  const rank =
+    Number(
+      player.rank
+    );
+
+
+  const biographyPlayer =
+    biographyMap.get(
+      playerId
+    );
+
+
+  const biographyPicture =
+    String(
+      biographyPlayer?.Picture || ""
+    ).trim();
+
+
+  /*
+    RANKED PLAYER
+
+    Use the Picture field from
+    Biography Info first.
+  */
+
+  if (
+    Number.isFinite(rank) &&
+    rank > 0 &&
+    biographyPicture
+  ) {
+
+    return biographyPicture;
+
+  }
+
+
+  /*
+    UNRANKED PLAYER
+
+    Or ranked player without
+    a Biography Info picture.
+
+    Use MLBAM headshot.
+  */
+
+  return getYotfMlbamHeadshot(
+    player.mlbamId
+  );
+
+}
+
+
+/* =========================================================
+   MLBAM FALLBACK HEADSHOT
+========================================================= */
+
+function getYotfMlbamHeadshot(
   mlbamId
 ) {
 
@@ -9933,7 +10030,13 @@ function getYotfHeadshot(
 
   if (!Number.isFinite(id)) {
 
-    return "";
+    return (
+      "https://img.mlbstatic.com/" +
+      "mlb-photos/image/upload/" +
+      "d_people:generic:headshot:silo:current.png/" +
+      "w_180/q_auto:best/f_auto"
+    );
+
   }
 
 
@@ -9951,6 +10054,7 @@ function getYotfHeadshot(
 
 }
 
+
 /* =========================================================
    PLAYER LINK
 ========================================================= */
@@ -9961,17 +10065,14 @@ function getYotfPlayerUrl(
 
   const playerId =
     String(
-      player.playerId ||
-      ""
-    )
-      .trim();
+      player.playerId || ""
+    ).trim();
 
 
-  if (
-    !playerId
-  ) {
+  if (!playerId) {
 
     return "index.html";
+
   }
 
 
@@ -9984,6 +10085,7 @@ function getYotfPlayerUrl(
 
 }
 
+
 /* =========================================================
    DATE FORMAT
 ========================================================= */
@@ -9992,11 +10094,10 @@ function formatYotfDate(
   dateString
 ) {
 
-  if (
-    !dateString
-  ) {
+  if (!dateString) {
 
     return "";
+
   }
 
 
@@ -10004,19 +10105,14 @@ function formatYotfDate(
     String(
       dateString
     )
-      .split(
-        "-"
-      )
-      .map(
-        Number
-      );
+      .split("-")
+      .map(Number);
 
 
-  if (
-    parts.length !== 3
-  ) {
+  if (parts.length !== 3) {
 
     return dateString;
+
   }
 
 
@@ -10024,8 +10120,7 @@ function formatYotfDate(
     year,
     month,
     day
-  ] =
-    parts;
+  ] = parts;
 
 
   const date =
@@ -10037,22 +10132,13 @@ function formatYotfDate(
 
 
   return date.toLocaleDateString(
-
     "en-US",
-
     {
-
-      month:
-        "long",
-
-      day:
-        "numeric",
-
-      year:
-        "numeric"
-
+      weekday: "long",
+      month: "long",
+      day: "numeric",
+      year: "numeric"
     }
-
   );
 
 }
