@@ -1,30 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
-  <title>Backfield Brew – Rankings</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="stylesheet" href="styles.css?v=14" />
-  <script defer src="script.js?v=53"></script>
+  <title>Backfield Brew</title>
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  />
+
+  <link
+    rel="stylesheet"
+    href="styles.css?v=34"
+  />
+
+  <script
+    defer
+    src="script.js?v=64"
+  ></script>
 
   <link
     rel="icon"
     type="image/png"
-    href="/favicon.png"
-  >
-  
-  <link
-    rel="icon"
-    type="image/png"
-    sizes="32x32"
-    href="/favicon.png"
-  >
-
-  <link
-    rel="icon"
-    type="image/png"
-    sizes="16x16"
     href="/favicon.png"
   >
 
@@ -32,27 +31,49 @@
     rel="apple-touch-icon"
     href="/favicon.png"
   >
-  
 </head>
 
+
 <body>
-  <!-- =========================
-       HEADER
-  ========================== -->
-  <header class="site-header">
-  <img src="BFB-Logo.png" alt="Backfield Brew" class="site-logo" />
+
+
+<!-- =========================
+     HEADER
+========================= -->
+
+<header class="site-header">
+
+  <img
+    src="BFB-Logo.png"
+    alt="Backfield Brew"
+    class="site-logo"
+  />
+
 </header>
 
+
 <div class="header-buttons">
-  <a href="index.html" id="backToRankings" style="display:none;">← Rankings</a>
 
-  <a href="archive.html">Archived Players</a>
-
-  <a href="https://www.patreon.com/BackfieldBrew"
-     target="_blank"
-     rel="noopener">
-     Patreon
+  <a href="index.html">
+    Home
   </a>
+
+  <a href="rankings.html">
+    Rankings
+  </a>
+
+  <a href="archive.html">
+    Archived Players
+  </a>
+
+  <a
+    href="https://www.patreon.com/BackfieldBrew"
+    target="_blank"
+    rel="noopener"
+  >
+    Patreon
+  </a>
+
 
   <div class="dropdown-nav">
 
@@ -61,80 +82,485 @@
     </button>
 
     <div class="dropdown-content">
-      <a href="depth.html">Organizational Depth Chart</a>
-      <a href="stats.html">Organizational Stats</a>
-      <a href="logs.html">Scouting Logs</a>
-      <a href="transactions.html">Transactions</a>
-      <a href="rule5.html">Rule 5 Eligibility</a>
-      <a href="freeagency.html">MiLB Free Agency</a>
-      <a href="draft.html">Draft History</a>
-      <a href="international.html">International History</a>
+
+      <a href="yesterday.html">
+        Yesterday on the Farm
+      </a>
+
+      <a href="depth.html">
+        Organizational Depth Chart
+      </a>
+
+      <a href="stats.html">
+        Organizational Stats
+      </a>
+
+      <a href="logs.html">
+        Scouting Logs
+      </a>
+
+      <a href="transactions.html">
+        Transactions
+      </a>
+
+      <a href="rule5.html">
+        Rule 5 Eligibility
+      </a>
+
+      <a href="freeagency.html">
+        MiLB Free Agency
+      </a>
+
+      <a href="draft.html">
+        Draft History
+      </a>
+
+      <a href="international.html">
+        International History
+      </a>
+
     </div>
 
   </div>
 
 </div>
+
+
+<!-- =========================
+     HOME DASHBOARD
+========================= -->
+
+<main class="container home-dashboard">
+
+
   <!-- =========================
-       MAIN
-  ========================== -->
-  <main class="container" data-access="rankings">
+       ROW 1
+       TODAY / YESTERDAY
+  ========================= -->
 
-    <!-- =========================
-         FILTERS
-    ========================== -->
-    <section class="card">
-      <div class="filter-grid">
-        <input type="text" id="searchBox" placeholder="Search player..." />
+  <div class="home-grid home-grid-primary">
 
-        <select id="typeFilter">
-          <option value="">All Types</option>
-          <option value="hitter">Hitters</option>
-          <option value="pitcher">Pitchers</option>
+
+    <!-- TODAY ON THE FARM -->
+
+    <section
+      class="card home-panel"
+      id="homeToday"
+    >
+
+      <div class="home-panel-header">
+
+        <div>
+
+          <div class="home-panel-kicker">
+            DAILY SCHEDULE
+          </div>
+
+          <h2>
+            Today on the Farm
+          </h2>
+
+        </div>
+
+      </div>
+
+
+      <div
+        id="todayOnFarmContent"
+        class="home-panel-content"
+      >
+
+        <div class="home-loading">
+          Loading today's games...
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- YESTERDAY ON THE FARM -->
+
+    <section
+      class="card home-panel"
+      id="homeYesterday"
+    >
+
+      <div class="home-panel-header">
+
+        <div>
+
+          <div class="home-panel-kicker">
+            DAILY PERFORMERS
+          </div>
+
+          <h2>
+            Yesterday on the Farm
+          </h2>
+
+        </div>
+
+
+        <a
+          href="yesterday.html"
+          class="home-panel-link"
+        >
+          Full Report →
+        </a>
+
+      </div>
+
+
+      <div
+        id="yesterdayHomeContent"
+        class="home-panel-content"
+      >
+
+        <div class="home-loading">
+          Loading top performers...
+        </div>
+
+      </div>
+
+    </section>
+
+
+  </div>
+
+
+
+  <!-- =========================
+       ROW 2
+       TOP 100 / TRENDING
+  ========================= -->
+
+  <div class="home-grid">
+
+
+    <!-- TOP 100 SNAPSHOT -->
+
+    <section
+      class="card home-panel"
+      id="homeTop100"
+    >
+
+      <div class="home-panel-header">
+
+        <div>
+
+          <div class="home-panel-kicker">
+            PROSPECT RANKINGS
+          </div>
+
+          <h2>
+            Top 100 Snapshot
+          </h2>
+
+        </div>
+
+
+        <a
+          href="rankings.html"
+          class="home-panel-link"
+        >
+          Full Rankings →
+        </a>
+
+      </div>
+
+
+      <div
+        id="top100SnapshotContent"
+        class="home-panel-content"
+      >
+
+        <div class="home-loading">
+          Loading rankings...
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- TRENDING UP -->
+
+    <section
+      class="card home-panel"
+      id="homeTrending"
+    >
+
+      <div class="home-panel-header">
+
+        <div>
+
+          <div class="home-panel-kicker">
+            RANKING MOVEMENT
+          </div>
+
+          <h2>
+            Trending Up
+          </h2>
+
+        </div>
+
+      </div>
+
+
+      <div
+        id="trendingUpContent"
+        class="home-panel-content"
+      >
+
+        <div class="home-loading">
+          Loading risers...
+        </div>
+
+      </div>
+
+    </section>
+
+
+  </div>
+
+
+
+  <!-- =========================
+       ROW 3
+       STANDINGS / TRANSACTIONS
+  ========================= -->
+
+  <div class="home-grid">
+
+
+    <!-- STANDINGS -->
+
+    <section
+      class="card home-panel"
+      id="homeStandings"
+    >
+
+      <div class="home-panel-header">
+
+        <div>
+
+          <div class="home-panel-kicker">
+            MILB
+          </div>
+
+          <h2>
+            Standings
+          </h2>
+
+        </div>
+
+
+        <select
+          id="standingsLeague"
+          class="home-select"
+          aria-label="Select league"
+        >
+
+          <option value="AAA">
+            International League
+          </option>
+
+          <option value="AA">
+            Southern League
+          </option>
+
+          <option value="A+">
+            Midwest League
+          </option>
+
+          <option value="A">
+            Carolina League
+          </option>
+
+          <option value="ACL">
+            Arizona Complex League
+          </option>
+
+          <option value="DSL">
+            Dominican Summer League
+          </option>
+
         </select>
 
-        <select id="positionFilter"></select>
-        <select id="levelFilter"></select>
-      </div>
-    </section>
-
-    <!-- =========================
-         RANKING TABLE
-    ========================== -->
-    <section class="card">
-      <div class="ranking-scroll">
-        <table id="rankingTable">
-          <thead>
-            <tr>
-              <th>Rank</th>
-              <th>Player</th>
-              <th>OFP</th>
-              <th>Risk</th>
-              <th>Trending</th>
-              <th>Pos</th>
-              <th>Level</th>
-              <th>Age</th>
-              <th>Height</th>
-              <th>Weight</th>
-            </tr>
-          </thead>
-          <tbody></tbody>
-        </table>
       </div>
 
-      <p id="status"></p>
+
+      <div
+        id="standingsContent"
+        class="home-panel-content"
+      >
+
+        <div class="home-loading">
+          Loading standings...
+        </div>
+
+      </div>
+
     </section>
 
-  </main>
+
+
+    <!-- RECENT TRANSACTIONS -->
+
+    <section
+      class="card home-panel"
+      id="homeTransactions"
+    >
+
+      <div class="home-panel-header">
+
+        <div>
+
+          <div class="home-panel-kicker">
+            ORGANIZATION
+          </div>
+
+          <h2>
+            Recent Transactions
+          </h2>
+
+        </div>
+
+
+        <a
+          href="transactions.html"
+          class="home-panel-link"
+        >
+          All Transactions →
+        </a>
+
+      </div>
+
+
+      <div
+        id="recentTransactionsContent"
+        class="home-panel-content"
+      >
+
+        <div class="home-loading">
+          Loading transactions...
+        </div>
+
+      </div>
+
+    </section>
+
+
+  </div>
+
+
 
   <!-- =========================
-       INIT SCRIPT
-  ========================== -->
- <script>
-  document.addEventListener("DOMContentLoaded", () => {
-    initRankingPage();
+       ROW 4
+       STAT LEADERS
+  ========================= -->
+
+  <section
+    class="card home-panel home-stats-panel"
+    id="homeStatsLeaders"
+  >
+
+
+    <div class="home-panel-header">
+
+      <div>
+
+        <div class="home-panel-kicker">
+          2026 ORGANIZATIONAL LEADERS
+        </div>
+
+        <h2>
+          Stats Leaders
+        </h2>
+
+      </div>
+
+
+      <div class="home-stats-controls">
+
+
+        <select
+          id="statsLeaderType"
+          class="home-select"
+        >
+
+          <option value="hitter">
+            Hitters
+          </option>
+
+          <option value="pitcher">
+            Pitchers
+          </option>
+
+        </select>
+
+
+        <select
+          id="statsLeaderCategory"
+          class="home-select"
+        >
+
+          <option value="HR">
+            Home Runs
+          </option>
+
+          <option value="SB">
+            Stolen Bases
+          </option>
+
+          <option value="OPS">
+            OPS
+          </option>
+
+        </select>
+
+
+      </div>
+
+    </div>
+
+
+    <div
+      id="statsLeadersContent"
+      class="home-panel-content"
+    >
+
+      <div class="home-loading">
+        Loading statistical leaders...
+      </div>
+
+    </div>
+
+
+  </section>
+
+
+</main>
+
+
+
+<script>
+
+document.addEventListener(
+  "DOMContentLoaded",
+  () => {
+
     handleHeaderButtons();
+
     setupMobileDropdown();
-  });
+
+  }
+);
+
 </script>
+
+
 </body>
 </html>
