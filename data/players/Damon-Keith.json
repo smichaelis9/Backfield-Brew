@@ -3,7 +3,7 @@
   "name": "Damon Keith",
   "archived": false,
   "playerType": "Hitter",
-  "generatedAt": "2026-09-03T09:52:49.275Z",
+  "generatedAt": "2026-09-03T14:15:05.828Z",
   "bio": {
     "Player-ID": "Damon-Keith",
     "MLBAM ID": "701618",
@@ -228,12 +228,12 @@
   },
   "gamedayWhiff": {
     "mlbamID": "701618",
-    "swings": 389,
-    "whiffs": 123,
-    "contacts": 266,
+    "swings": 396,
+    "whiffs": 125,
+    "contacts": 271,
     "whiffPct": 31.6,
     "contactPct": 68.4,
-    "games": 52,
+    "games": 53,
     "levels": [
       "AA"
     ]

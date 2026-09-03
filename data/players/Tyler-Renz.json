@@ -3,7 +3,7 @@
   "name": "Tyler Renz",
   "archived": false,
   "playerType": "Pitcher",
-  "generatedAt": "2026-09-03T09:52:49.275Z",
+  "generatedAt": "2026-09-03T14:15:05.828Z",
   "bio": {
     "Player-ID": "Tyler-Renz",
     "MLBAM ID": "815868",
@@ -231,7 +231,7 @@
       "BB%": "14.60%",
       "K-BB %": "5.80%",
       "SwStr %": "9.60%",
-      "Whiff%": "22.1%",
+      "Whiff%": "21.8%",
       "WHIP": "1.46",
       "BABIP": "0.259",
       "LOB%": "66.4%",
@@ -245,12 +245,12 @@
   },
   "gamedayWhiff": {
     "mlbamID": "815868",
-    "swings": 707,
-    "whiffs": 156,
-    "contacts": 551,
-    "whiffPct": 22.1,
-    "contactPct": 77.9,
-    "games": 24,
+    "swings": 730,
+    "whiffs": 159,
+    "contacts": 571,
+    "whiffPct": 21.8,
+    "contactPct": 78.2,
+    "games": 25,
     "levels": [
       "A"
     ]

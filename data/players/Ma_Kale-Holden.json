@@ -3,7 +3,7 @@
   "name": "Ma'Kale Holden",
   "archived": false,
   "playerType": "Pitcher",
-  "generatedAt": "2026-09-03T09:52:49.275Z",
+  "generatedAt": "2026-09-03T14:15:05.828Z",
   "bio": {
     "Player-ID": "Ma'Kale-Holden",
     "MLBAM ID": "829204",
@@ -243,7 +243,18 @@
       "Archived?": ""
     }
   },
-  "gamedayWhiff": null,
+  "gamedayWhiff": {
+    "mlbamID": "829204",
+    "swings": 26,
+    "whiffs": 9,
+    "contacts": 17,
+    "whiffPct": 34.6,
+    "contactPct": 65.4,
+    "games": 1,
+    "levels": [
+      "A"
+    ]
+  },
   "videos": [
     {
       "Player-ID": "Ma'Kale-Holden",

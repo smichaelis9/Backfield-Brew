@@ -3,7 +3,7 @@
   "name": "Filippo Di Turi",
   "archived": false,
   "playerType": "Hitter",
-  "generatedAt": "2026-09-03T09:52:49.275Z",
+  "generatedAt": "2026-09-03T14:15:05.828Z",
   "bio": {
     "Player-ID": "Filippo-Di-Turi",
     "MLBAM ID": "806995",
@@ -228,12 +228,12 @@
   },
   "gamedayWhiff": {
     "mlbamID": "806995",
-    "swings": 758,
-    "whiffs": 226,
-    "contacts": 532,
+    "swings": 764,
+    "whiffs": 228,
+    "contacts": 536,
     "whiffPct": 29.8,
     "contactPct": 70.2,
-    "games": 101,
+    "games": 102,
     "levels": [
       "A",
       "A+"

@@ -3,7 +3,7 @@
   "name": "Cesar Espinal",
   "archived": false,
   "playerType": "Pitcher",
-  "generatedAt": "2026-09-03T09:52:49.275Z",
+  "generatedAt": "2026-09-03T14:15:05.828Z",
   "bio": {
     "Player-ID": "Cesar-Espinal",
     "MLBAM ID": "805238",
@@ -231,7 +231,7 @@
       "BB%": "20.30%",
       "K-BB %": "6.80%",
       "SwStr %": "15.10%",
-      "Whiff%": "41.5%",
+      "Whiff%": "41.7%",
       "WHIP": "1.50",
       "BABIP": "0.254",
       "LOB%": "68.8%",
@@ -245,12 +245,12 @@
   },
   "gamedayWhiff": {
     "mlbamID": "805238",
-    "swings": 53,
-    "whiffs": 22,
-    "contacts": 31,
-    "whiffPct": 41.5,
-    "contactPct": 58.5,
-    "games": 7,
+    "swings": 60,
+    "whiffs": 25,
+    "contacts": 35,
+    "whiffPct": 41.7,
+    "contactPct": 58.3,
+    "games": 8,
     "levels": [
       "A"
     ]

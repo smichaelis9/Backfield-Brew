@@ -3,7 +3,7 @@
   "name": "Miqueas Mercedes",
   "archived": false,
   "playerType": "Pitcher",
-  "generatedAt": "2026-09-03T09:52:49.275Z",
+  "generatedAt": "2026-09-03T14:15:05.828Z",
   "bio": {
     "Player-ID": "Miqueas-Mercedes",
     "MLBAM ID": "823650",
@@ -231,7 +231,7 @@
       "BB%": "14.30%",
       "K-BB %": "8.30%",
       "SwStr %": "10.30%",
-      "Whiff%": "23.3%",
+      "Whiff%": "23.5%",
       "WHIP": "1.41",
       "BABIP": "0.297",
       "LOB%": "80.0%",
@@ -245,14 +245,15 @@
   },
   "gamedayWhiff": {
     "mlbamID": "823650",
-    "swings": 559,
-    "whiffs": 130,
-    "contacts": 429,
-    "whiffPct": 23.3,
-    "contactPct": 76.7,
-    "games": 20,
+    "swings": 597,
+    "whiffs": 140,
+    "contacts": 457,
+    "whiffPct": 23.5,
+    "contactPct": 76.5,
+    "games": 21,
     "levels": [
-      "A"
+      "A",
+      "A+"
     ]
   },
   "videos": [
