@@ -10265,7 +10265,10 @@ async function initHomeDashboard() {
     /*
      * Render biography-based sections.
      */
-    renderHomeTrending(
+    renderHomeTop100(
+     cleanPlayers
+    );
+     renderHomeTrending(
       cleanPlayers
     );
 
