@@ -10186,8 +10186,13 @@ function escapeYotfHtml(
    HOME DASHBOARD
    YOTF / TOP 100 / TRENDING
 ========================================================= */
-
+let homeArchivedPlayers = [];
 async function initHomeDashboard() {
+
+  const todayBox =
+    document.getElementById(
+      "todayOnFarmContent"
+    );
 
   const yesterdayBox =
     document.getElementById(
@@ -10205,18 +10210,33 @@ async function initHomeDashboard() {
     );
 
   const standingsBox =
-     document.getElementById(
-       "standingsContent"
-     );
-  /*
-   * If we're not on the homepage,
-   * don't do anything.
-   */
+    document.getElementById(
+      "standingsContent"
+    );
+
+  const transactionsBox =
+    document.getElementById(
+      "recentTransactionsContent"
+    );
+
+  const statsBox =
+    document.getElementById(
+      "statsLeadersContent"
+    );
+
+
+  /* =========================
+     NOT THE HOMEPAGE
+  ========================= */
+
   if (
-    !yesterdayBox &&
-    !top100Box &&
-    !trendingBox &&
-    !standingsBox
+    !todayBox ||
+    !yesterdayBox ||
+    !top100Box ||
+    !trendingBox ||
+    !standingsBox ||
+    !transactionsBox ||
+    !statsBox
   ) {
     return;
   }
@@ -10224,23 +10244,35 @@ async function initHomeDashboard() {
 
   try {
 
-    /*
-     * Load Biography Info once.
-     *
-     * loadSheet() already caches it,
-     * so other homepage sections will
-     * be able to reuse this later.
-     */
-    const biography =
-      await loadSheet(
-        "Biography Info"
-      );
+    /* =========================
+       LOAD CURRENT + ARCHIVED
+       PLAYER DATABASES
+    ========================= */
 
+    const [
+      players,
+      archivedPlayers
+    ] = await Promise.all([
+
+      loadSheet(
+        "Biography Info"
+      ),
+
+      loadSheet(
+        "Archived Biography Info"
+      )
+
+    ]);
+
+
+    /* =========================
+       CLEAN CURRENT PLAYERS
+    ========================= */
 
     const cleanPlayers =
-      biography.filter(player => {
+      players.filter(player => {
 
-        const playerId =
+        const id =
           get(
             player,
             [
@@ -10249,7 +10281,7 @@ async function initHomeDashboard() {
             ]
           );
 
-        const playerName =
+        const name =
           get(
             player,
             [
@@ -10259,104 +10291,213 @@ async function initHomeDashboard() {
           );
 
 
+        if (
+          isRealValue(id)
+        ) {
+          player["Player-ID"] =
+            id;
+        }
+
+
+        if (
+          isRealValue(name)
+        ) {
+          player["Player"] =
+            name;
+        }
+
+
         return (
-          isRealValue(playerId) &&
-          isRealValue(playerName)
+          isRealValue(id) &&
+          isRealValue(name)
         );
+
       });
 
 
-    /*
-     * Render biography-based sections.
-     */
+    /* =========================
+       CLEAN ARCHIVED PLAYERS
+    ========================= */
+
+    homeArchivedPlayers =
+      archivedPlayers.filter(
+        player => {
+
+          const id =
+            get(
+              player,
+              [
+                "Player-ID",
+                "Player ID"
+              ]
+            );
+
+          const name =
+            get(
+              player,
+              [
+                "Player",
+                "Name"
+              ]
+            );
+
+
+          if (
+            isRealValue(id)
+          ) {
+            player["Player-ID"] =
+              id;
+          }
+
+
+          if (
+            isRealValue(name)
+          ) {
+            player["Player"] =
+              name;
+          }
+
+
+          return (
+            isRealValue(id) &&
+            isRealValue(name)
+          );
+
+        }
+      );
+
+
+    /* =========================
+       TOP 100
+    ========================= */
+
     renderHomeTop100(
-     cleanPlayers
-    );
-     renderHomeTrending(
       cleanPlayers
     );
 
 
-    /*
-     * Today on the Farm
-     */
-    renderHomeToday().catch(err => {
-      console.error(
-         "Homepage Today on the Farm:",
-         err
-       );
-     });
+    /* =========================
+       TRENDING UP
+    ========================= */
 
-     /*
-      * Standings
-      */
-     renderHomeStandings().catch(err => {
+    renderHomeTrending(
+      cleanPlayers
+    );
+
+
+    /* =========================
+       TODAY ON THE FARM
+    ========================= */
+
+    renderHomeToday()
+      .catch(err => {
+
+        console.error(
+          "Homepage Today on the Farm:",
+          err
+        );
+
+      });
+
+
+    /* =========================
+       STANDINGS
+    ========================= */
+
+    renderHomeStandings()
+      .catch(err => {
 
         console.error(
           "Homepage Standings:",
           err
         );
-        });
-      renderHomeTransactions(cleanPlayers).catch(err => {
+
+      });
+
+
+    /* =========================
+       YESTERDAY ON THE FARM
+    ========================= */
+
+    await renderHomeYesterday(
+      cleanPlayers
+    );
+
+
+    /* =========================
+       RECENT TRANSACTIONS
+    ========================= */
+
+    renderHomeTransactions(
+      cleanPlayers
+    )
+      .catch(err => {
+
         console.error(
           "Homepage Transactions:",
           err
         );
+
       });
-      renderHomeStatsLeaders(cleanPlayers).catch(err => {
+
+
+    /* =========================
+       STATS LEADERS
+    ========================= */
+
+    renderHomeStatsLeaders(
+      cleanPlayers
+    )
+      .catch(err => {
+
         console.error(
           "Homepage Stats Leaders:",
           err
         );
+
       });
-    /*
-     * Yesterday on the Farm
-     */
-    await renderHomeYesterday(
-      cleanPlayers
-    );    
 
 
   } catch (err) {
 
     console.error(
-      "Home dashboard:",
+      "Homepage dashboard:",
       err
     );
 
 
-    if (top100Box) {
-
-      top100Box.innerHTML = `
-        <div class="home-empty">
-          Rankings unavailable.
-        </div>
-      `;
-    }
+    const errorHTML = `
+      <div class="home-empty">
+        Homepage data unavailable.
+      </div>
+    `;
 
 
-    if (trendingBox) {
+    [
+      todayBox,
+      yesterdayBox,
+      top100Box,
+      trendingBox,
+      standingsBox,
+      transactionsBox,
+      statsBox
+    ]
+      .filter(Boolean)
+      .forEach(box => {
 
-      trendingBox.innerHTML = `
-        <div class="home-empty">
-          Trending players unavailable.
-        </div>
-      `;
-    }
+        if (
+          box.querySelector(
+            ".home-loading"
+          )
+        ) {
+          box.innerHTML =
+            errorHTML;
+        }
 
-
-    if (yesterdayBox) {
-
-      yesterdayBox.innerHTML = `
-        <div class="home-empty">
-          Yesterday's performers unavailable.
-        </div>
-      `;
-    }
+      });
 
   }
 }
-
 
 /* =========================================================
    HOME PLAYER HELPERS
@@ -10531,7 +10672,147 @@ function getHomePlayerURL(
     )
   );
 }
+/* =========================================================
+   HOME CURRENT / ARCHIVED PLAYER LOOKUP
+========================================================= */
 
+function findHomePlayerRecord(
+  playerId,
+  mlbamId = "",
+  currentPlayers = []
+) {
+
+  /* =========================
+     CURRENT DATABASE
+  ========================= */
+
+  const current =
+    currentPlayers.find(
+      player => {
+
+        const id =
+          get(
+            player,
+            [
+              "Player-ID",
+              "Player ID"
+            ]
+          );
+
+        const mlbam =
+          get(
+            player,
+            [
+              "MLBAM ID",
+              "MLB ID",
+              "MiLB ID"
+            ]
+          );
+
+
+        const idMatch =
+          isRealValue(playerId) &&
+          isRealValue(id) &&
+          String(id).trim() ===
+            String(playerId).trim();
+
+
+        const mlbamMatch =
+          isRealValue(mlbamId) &&
+          isRealValue(mlbam) &&
+          String(mlbam).trim() ===
+            String(mlbamId).trim();
+
+
+        return (
+          idMatch ||
+          mlbamMatch
+        );
+
+      }
+    );
+
+
+  if (current) {
+
+    return {
+      player: current,
+      archived: false
+    };
+
+  }
+
+
+  /* =========================
+     ARCHIVED DATABASE
+  ========================= */
+
+  const archived =
+    homeArchivedPlayers.find(
+      player => {
+
+        const id =
+          get(
+            player,
+            [
+              "Player-ID",
+              "Player ID"
+            ]
+          );
+
+        const mlbam =
+          get(
+            player,
+            [
+              "MLBAM ID",
+              "MLB ID",
+              "MiLB ID"
+            ]
+          );
+
+
+        const idMatch =
+          isRealValue(playerId) &&
+          isRealValue(id) &&
+          String(id).trim() ===
+            String(playerId).trim();
+
+
+        const mlbamMatch =
+          isRealValue(mlbamId) &&
+          isRealValue(mlbam) &&
+          String(mlbam).trim() ===
+            String(mlbamId).trim();
+
+
+        return (
+          idMatch ||
+          mlbamMatch
+        );
+
+      }
+    );
+
+
+  if (archived) {
+
+    return {
+      player: archived,
+      archived: true
+    };
+
+  }
+
+
+  /* =========================
+     NO DATABASE MATCH
+  ========================= */
+
+  return {
+    player: null,
+    archived: false
+  };
+}
 
 /* =========================================================
    TOP 100 SNAPSHOT
