@@ -10296,7 +10296,12 @@ async function initHomeDashboard() {
           "Homepage Standings:",
           err
         );
-
+        });
+      renderHomeTransactions(cleanPlayers).catch(err => {
+        console.error(
+          "Homepage Transactions:",
+          err
+        );
       });
 
     /*
