@@ -13091,6 +13091,7 @@ async function renderHomeTransactions(
     `;
   }
 }
+
 /* =========================================================
    HOME STATS LEADERS
 ========================================================= */
@@ -13201,6 +13202,7 @@ async function renderHomeStatsLeaders(
         `;
 
       }
+
     }
 
 
@@ -13240,7 +13242,9 @@ async function renderHomeStatsLeaders(
         Statistical leaders unavailable.
       </div>
     `;
+
   }
+
 }
 
 
@@ -13277,16 +13281,16 @@ function renderHomeStatsCategory() {
       : homeStatsHitterRows;
 
 
-  const bioMap =
-    new Map();
+  /* =========================
+     FILTER
+  ========================= */
 
-
-  homeStatsBiography.forEach(
-    player => {
+  const filtered =
+    rows.filter(row => {
 
       const playerId =
         get(
-          player,
+          row,
           [
             "Player-ID",
             "Player ID"
@@ -13294,129 +13298,99 @@ function renderHomeStatsCategory() {
         );
 
 
-      if (
-        isRealValue(playerId)
-      ) {
-
-        bioMap.set(
-          String(playerId).trim(),
-          player
+      const playerName =
+        get(
+          row,
+          [
+            "Player",
+            "PlayerName",
+            "Name"
+          ]
         );
+
+
+      if (
+        !isRealValue(playerId) ||
+        !isRealValue(playerName)
+      ) {
+        return false;
       }
 
-    }
-  );
 
-
-  /* =========================
-     FILTER
-  ========================= */
-
-  const filtered =
-    rows
-      .filter(row => {
-
-        const playerId =
+      const value =
+        parseHomeStatValue(
           get(
             row,
-            [
-              "Player-ID",
-              "Player ID"
-            ]
-          );
+            [category]
+          )
+        );
 
 
-        const playerName =
-          get(
-            row,
-            [
-              "Player",
-              "PlayerName",
-              "Name"
-            ]
-          );
+      if (
+        !Number.isFinite(value)
+      ) {
+        return false;
+      }
 
 
-        if (
-          !isRealValue(playerId) ||
-          !isRealValue(playerName)
-        ) {
-          return false;
-        }
+      /* =========================
+         HITTER QUALIFICATION
+      ========================= */
 
+      if (
+        type === "hitter" &&
+        category === "OPS"
+      ) {
 
-        const value =
+        const pa =
           parseHomeStatValue(
             get(
               row,
-              [category]
+              ["PA"]
             )
           );
 
 
         if (
-          !Number.isFinite(value)
+          !Number.isFinite(pa) ||
+          pa < 100
         ) {
           return false;
         }
 
+      }
 
-        /* =========================
-           HITTER QUALIFICATION
-        ========================= */
+
+      /* =========================
+         PITCHER QUALIFICATION
+      ========================= */
+
+      if (
+        type === "pitcher"
+      ) {
+
+        const ip =
+          parseHomeStatValue(
+            get(
+              row,
+              ["IP"]
+            )
+          );
+
 
         if (
-          type === "hitter" &&
-          category === "OPS"
+          !Number.isFinite(ip) ||
+          ip < 30
         ) {
-
-          const pa =
-            parseHomeStatValue(
-              get(
-                row,
-                ["PA"]
-              )
-            );
-
-
-          if (
-            !Number.isFinite(pa) ||
-            pa < 100
-          ) {
-            return false;
-          }
+          return false;
         }
 
-
-        /* =========================
-           PITCHER QUALIFICATION
-        ========================= */
-
-        if (
-          type === "pitcher"
-        ) {
-
-          const ip =
-            parseHomeStatValue(
-              get(
-                row,
-                ["IP"]
-              )
-            );
+      }
 
 
-          if (
-            !Number.isFinite(ip) ||
-            ip < 30
-          ) {
-            return false;
-          }
-        }
+      return true;
 
-
-        return true;
-
-      });
+    });
 
 
   /* =========================
@@ -13444,7 +13418,7 @@ function renderHomeStatsCategory() {
         );
 
 
-      /* Lower is better */
+      /* LOWER IS BETTER */
 
       if (
         category === "ERA" ||
@@ -13454,10 +13428,11 @@ function renderHomeStatsCategory() {
         return (
           aValue - bValue
         );
+
       }
 
 
-      /* Higher is better */
+      /* HIGHER IS BETTER */
 
       return (
         bValue - aValue
@@ -13483,8 +13458,13 @@ function renderHomeStatsCategory() {
     `;
 
     return;
+
   }
 
+
+  /* =========================
+     BUILD CARDS
+  ========================= */
 
   container.innerHTML = `
     <div class="home-stats-grid">
@@ -13514,23 +13494,42 @@ function renderHomeStatsCategory() {
               );
 
 
-            const bio =
-              bioMap.get(
-                String(
-                  playerId
-                ).trim()
+            const statMlbamId =
+              get(
+                row,
+                [
+                  "MLBAM ID",
+                  "MLB ID",
+                  "MiLB ID"
+                ]
               );
 
 
-            const picture =
-              bio
-                ? getHomePlayerPicture(
-                    bio
-                  )
-                : "";
+            /* =========================
+               FIND CURRENT OR ARCHIVED
+            ========================= */
+
+            const playerMatch =
+              findHomePlayerRecord(
+                playerId,
+                statMlbamId,
+                homeStatsBiography
+              );
 
 
-            const mlbamId =
+            const bio =
+              playerMatch.player;
+
+
+            const isArchived =
+              playerMatch.archived;
+
+
+            /* =========================
+               MLBAM ID
+            ========================= */
+
+            const bioMlbamId =
               bio
                 ? get(
                     bio,
@@ -13539,6 +13538,32 @@ function renderHomeStatsCategory() {
                       "MLB ID",
                       "MiLB ID"
                     ]
+                  )
+                : "";
+
+
+            const mlbamId =
+              bioMlbamId ||
+              statMlbamId;
+
+
+            /* =========================
+               PICTURE
+
+               Current:
+               Biography picture
+
+               Archived:
+               Archived biography picture
+
+               Fallback:
+               MLBAM headshot
+            ========================= */
+
+            const picture =
+              bio
+                ? getHomePlayerPicture(
+                    bio
                   )
                 : "";
 
@@ -13556,6 +13581,10 @@ function renderHomeStatsCategory() {
               fallbackPicture;
 
 
+            /* =========================
+               LEVEL
+            ========================= */
+
             const level =
               bio
                 ? get(
@@ -13564,6 +13593,10 @@ function renderHomeStatsCategory() {
                   )
                 : "";
 
+
+            /* =========================
+               STAT VALUE
+            ========================= */
 
             const value =
               formatHomeStatValue(
@@ -13575,10 +13608,53 @@ function renderHomeStatsCategory() {
               );
 
 
+            /* =========================
+               PLAYER LINK
+            ========================= */
+
+            const finalPlayerId =
+              bio
+                ? get(
+                    bio,
+                    [
+                      "Player-ID",
+                      "Player ID"
+                    ]
+                  )
+                : playerId;
+
+
             const href =
-              `player.html?id=${encodeURIComponent(
-                playerId
-              )}`;
+              isRealValue(
+                finalPlayerId
+              )
+                ? `${
+                    isArchived
+                      ? "archive-player.html"
+                      : "player.html"
+                  }?id=${encodeURIComponent(
+                    finalPlayerId
+                  )}`
+                : "";
+
+
+            /* =========================
+               DISPLAY NAME
+
+               Prefer database name so
+               accents are preserved.
+            ========================= */
+
+            const displayName =
+              bio
+                ? get(
+                    bio,
+                    [
+                      "Player",
+                      "Name"
+                    ]
+                  ) || playerName
+                : playerName;
 
 
             return `
@@ -13590,10 +13666,21 @@ function renderHomeStatsCategory() {
                 </div>
 
 
-                <a
-                  href="${href}"
-                  class="home-stat-photo-link"
-                >
+                ${
+                  href
+                    ? `
+                      <a
+                        href="${href}"
+                        class="home-stat-photo-link"
+                      >
+                    `
+                    : `
+                      <div
+                        class="home-stat-photo-link"
+                      >
+                    `
+                }
+
 
                   ${
                     finalPicture
@@ -13604,7 +13691,7 @@ function renderHomeStatsCategory() {
                             finalPicture
                           )}"
                           alt="${escapeHomeHTML(
-                            playerName
+                            displayName
                           )}"
                           loading="lazy"
                           decoding="async"
@@ -13630,23 +13717,58 @@ function renderHomeStatsCategory() {
                       : ""
                   }
 
-                </a>
+
+                ${
+                  href
+                    ? `
+                      </a>
+                    `
+                    : `
+                      </div>
+                    `
+                }
 
 
-                <a
-                  href="${href}"
-                  class="home-stat-name"
-                >
-                  ${escapeHomeHTML(
-                    playerName
-                  )}
-                </a>
+                ${
+                  href
+                    ? `
+                      <a
+                        href="${href}"
+                        class="home-stat-name"
+                      >
+                        ${escapeHomeHTML(
+                          displayName
+                        )}
+                      </a>
+                    `
+                    : `
+                      <div
+                        class="home-stat-name"
+                      >
+                        ${escapeHomeHTML(
+                          displayName
+                        )}
+                      </div>
+                    `
+                }
 
 
                 <div class="home-stat-meta">
+
                   ${escapeHomeHTML(
                     level
                   )}
+
+                  ${
+                    isArchived
+                      ? `
+                        <span class="home-stat-archived">
+                          Archived
+                        </span>
+                      `
+                      : ""
+                  }
+
                 </div>
 
 
@@ -13673,6 +13795,7 @@ function renderHomeStatsCategory() {
 
     </div>
   `;
+
 }
 
 
@@ -13707,6 +13830,7 @@ function parseHomeStatValue(
   return Number.isFinite(number)
     ? number
     : NaN;
+
 }
 
 
@@ -13740,6 +13864,7 @@ function formatHomeStatValue(
       number.toFixed(1) +
       "%"
     );
+
   }
 
 
@@ -13749,6 +13874,7 @@ function formatHomeStatValue(
   ) {
 
     return number.toFixed(2);
+
   }
 
 
@@ -13757,10 +13883,12 @@ function formatHomeStatValue(
   ) {
 
     return number.toFixed(3);
+
   }
 
 
   return String(
     Math.round(number)
   );
+
 }
