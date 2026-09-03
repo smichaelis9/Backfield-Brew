@@ -1,6 +1,6 @@
 {
   "date": "2026-09-03",
-  "generatedAt": "2026-09-03T18:04:31.371Z",
+  "generatedAt": "2026-09-03T21:01:48.075Z",
   "affiliates": [
     {
       "teamId": 556,
@@ -101,10 +101,17 @@
       "venue": "Virginia Credit Union Stadium",
       "status": {
         "key": "scheduled",
-        "label": "Scheduled"
+        "label": "Pre-Game"
       },
-      "score": null,
-      "inning": null,
+      "score": {
+        "away": 0,
+        "home": 0
+      },
+      "inning": {
+        "inning": 1,
+        "state": "Top",
+        "ordinal": "1st"
+      },
       "probablePitcher": {
         "mlbamId": 828069,
         "name": "Luke Roupe",
@@ -138,12 +145,12 @@
       "score": null,
       "inning": null,
       "probablePitcher": {
-        "mlbamId": 803848,
-        "name": "Jayden Dubanewicz",
+        "mlbamId": 803068,
+        "name": "Chandler Welch",
         "inDatabase": true,
-        "playerId": "Jayden-Dubanewicz",
-        "rank": 24,
-        "picture": "https://img.mlbstatic.com/mlb-photos/image/upload/c_fill,g_auto/w_180/v1/people/803848/headshot/milb/current",
+        "playerId": "Chandler-Welch",
+        "rank": 179,
+        "picture": "https://img.mlbstatic.com/mlb-photos/image/upload/c_fill,g_auto/w_180/v1/people/803068/headshot/milb/current",
         "databaseLevel": "A+"
       },
       "doubleHeader": "N",
