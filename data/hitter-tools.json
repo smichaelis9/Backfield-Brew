@@ -130,6 +130,19 @@
     "Arm": "60/60"
   },
   {
+    "Player-ID": "Eric-Bitonti",
+    "Player": "Eric Bitonti",
+    "Last Updated": "2/13/2026",
+    "Hit": "25/35",
+    "Raw Power": "70/70",
+    "Game Power": "55/70",
+    "Bat to Ball": "25/35",
+    "Swing Decisions": "50/60",
+    "Speed": "45/40",
+    "Field": "40/55 (1B)",
+    "Arm": "55/55"
+  },
+  {
     "Player-ID": "Luke-Adams",
     "Player": "Luke Adams",
     "Last Updated": "2/10/2026",
@@ -167,19 +180,6 @@
     "Speed": "60/60",
     "Field": "35/55 (OF)",
     "Arm": "55/60"
-  },
-  {
-    "Player-ID": "Eric-Bitonti",
-    "Player": "Eric Bitonti",
-    "Last Updated": "2/13/2026",
-    "Hit": "25/35",
-    "Raw Power": "70/70",
-    "Game Power": "55/70",
-    "Bat to Ball": "25/35",
-    "Swing Decisions": "50/60",
-    "Speed": "45/40",
-    "Field": "40/55 (1B)",
-    "Arm": "55/55"
   },
   {
     "Player-ID": "Brailyn-Antunez",

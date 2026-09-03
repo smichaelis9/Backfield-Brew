@@ -72,6 +72,12 @@
     "archived": false
   },
   {
+    "id": "Eric-Bitonti",
+    "name": "Eric Bitonti",
+    "file": "Eric-Bitonti.json",
+    "archived": false
+  },
+  {
     "id": "Luke-Adams",
     "name": "Luke Adams",
     "file": "Luke-Adams.json",
@@ -105,12 +111,6 @@
     "id": "JD-Thompson",
     "name": "J.D. Thompson",
     "file": "JD-Thompson.json",
-    "archived": false
-  },
-  {
-    "id": "Eric-Bitonti",
-    "name": "Eric Bitonti",
-    "file": "Eric-Bitonti.json",
     "archived": false
   },
   {
