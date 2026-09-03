@@ -10204,7 +10204,10 @@ async function initHomeDashboard() {
       "trendingUpContent"
     );
 
-
+  const standingsBox =
+     document.getElementById(
+       "standingsContent"
+     );
   /*
    * If we're not on the homepage,
    * don't do anything.
@@ -10212,7 +10215,8 @@ async function initHomeDashboard() {
   if (
     !yesterdayBox &&
     !top100Box &&
-    !trendingBox
+    !trendingBox &&
+    !standingsBox
   ) {
     return;
   }
@@ -10283,6 +10287,17 @@ async function initHomeDashboard() {
        );
      });
 
+     /*
+      * Standings
+      */
+     renderHomeStandings().catch(err => {
+
+        console.error(
+          "Homepage Standings:",
+          err
+        );
+
+      });
 
     /*
      * Yesterday on the Farm
@@ -11961,4 +11976,400 @@ function formatHomeGameTime(
         "America/Chicago"
     }
   );
+}
+/* =========================================================
+   HOME STANDINGS
+========================================================= */
+
+let homeStandingsData = [];
+
+
+async function renderHomeStandings() {
+
+  const container =
+    document.getElementById(
+      "standingsContent"
+    );
+
+
+  const select =
+    document.getElementById(
+      "standingsLeagueSelect"
+    );
+
+
+  if (
+    !container ||
+    !select
+  ) {
+    return;
+  }
+
+
+  try {
+
+    const response =
+      await fetch(
+        "data/standings.json",
+        {
+          cache: "no-store"
+        }
+      );
+
+
+    if (!response.ok) {
+
+      throw new Error(
+        "Standings data unavailable"
+      );
+    }
+
+
+    const data =
+      await response.json();
+
+
+    homeStandingsData =
+      Array.isArray(data.standings)
+        ? data.standings
+        : [];
+
+
+    if (
+      !homeStandingsData.length
+    ) {
+
+      container.innerHTML = `
+        <div class="home-empty">
+          Standings unavailable.
+        </div>
+      `;
+
+      return;
+    }
+
+
+    /*
+     * Build dropdown from the
+     * actual generated data.
+     */
+
+    select.innerHTML =
+      homeStandingsData
+        .map((standing, index) => {
+
+          let label =
+            standing.affiliate;
+
+
+          if (
+            standing.level === "AAA"
+          ) {
+
+            label =
+              "Nashville";
+
+
+          } else if (
+            standing.level === "AA"
+          ) {
+
+            label =
+              "Biloxi";
+
+
+          } else if (
+            standing.level === "A+"
+          ) {
+
+            label =
+              "Wisconsin";
+
+
+          } else if (
+            standing.level === "A"
+          ) {
+
+            label =
+              "Wilson";
+
+
+          } else if (
+            standing.level === "ACL"
+          ) {
+
+            label =
+              "ACL Brewers";
+
+
+          } else if (
+            standing.affiliate
+              .toLowerCase()
+              .includes("gold")
+          ) {
+
+            label =
+              "DSL Gold";
+
+
+          } else if (
+            standing.affiliate
+              .toLowerCase()
+              .includes("blue")
+          ) {
+
+            label =
+              "DSL Blue";
+          }
+
+
+          return `
+            <option value="${index}">
+              ${escapeHomeHTML(label)}
+            </option>
+          `;
+
+        })
+        .join("");
+
+
+    /*
+     * Nashville default.
+     */
+
+    select.value = "0";
+
+
+    renderHomeStandingsTable(
+      homeStandingsData[0]
+    );
+
+
+    select.addEventListener(
+      "change",
+      () => {
+
+        const index =
+          Number(
+            select.value
+          );
+
+
+        const standing =
+          homeStandingsData[
+            index
+          ];
+
+
+        if (standing) {
+
+          renderHomeStandingsTable(
+            standing
+          );
+        }
+      }
+    );
+
+
+  } catch (err) {
+
+    console.error(
+      "Homepage standings:",
+      err
+    );
+
+
+    container.innerHTML = `
+      <div class="home-empty">
+        Standings unavailable.
+      </div>
+    `;
+  }
+}
+
+
+/* =========================================================
+   HOME STANDINGS TABLE
+========================================================= */
+
+function renderHomeStandingsTable(
+  standing
+) {
+
+  const container =
+    document.getElementById(
+      "standingsContent"
+    );
+
+
+  if (
+    !container ||
+    !standing
+  ) {
+    return;
+  }
+
+
+  const teams =
+    Array.isArray(
+      standing.teams
+    )
+      ? standing.teams
+      : [];
+
+
+  if (!teams.length) {
+
+    container.innerHTML = `
+      <div class="home-empty">
+        Standings unavailable.
+      </div>
+    `;
+
+    return;
+  }
+
+
+  const title =
+    standing.divisionName ||
+    standing.leagueName ||
+    "";
+
+
+  container.innerHTML = `
+
+    <div class="home-standings-name">
+      ${escapeHomeHTML(title)}
+    </div>
+
+    <div class="home-standings-table-wrap">
+
+      <table class="home-standings-table">
+
+        <thead>
+
+          <tr>
+
+            <th class="home-standings-rank">
+              #
+            </th>
+
+            <th class="home-standings-team">
+              Team
+            </th>
+
+            <th>
+              W
+            </th>
+
+            <th>
+              L
+            </th>
+
+            <th>
+              PCT
+            </th>
+
+            <th>
+              GB
+            </th>
+
+            <th>
+              STRK
+            </th>
+
+          </tr>
+
+        </thead>
+
+
+        <tbody>
+
+          ${teams
+            .map(team => {
+
+              const rank =
+                team.divisionRank ||
+                "";
+
+
+              const gamesBack =
+                team.gamesBack === "-" ||
+                team.gamesBack === ""
+                  ? "—"
+                  : team.gamesBack;
+
+
+              return `
+
+                <tr
+                  class="${
+                    team.isBrewersAffiliate
+                      ? "home-standings-brewers"
+                      : ""
+                  }"
+                >
+
+                  <td
+                    class="home-standings-rank"
+                  >
+                    ${escapeHomeHTML(rank)}
+                  </td>
+
+
+                  <td
+                    class="home-standings-team"
+                  >
+                    ${escapeHomeHTML(
+                      team.team
+                    )}
+                  </td>
+
+
+                  <td>
+                    ${escapeHomeHTML(
+                      team.wins
+                    )}
+                  </td>
+
+
+                  <td>
+                    ${escapeHomeHTML(
+                      team.losses
+                    )}
+                  </td>
+
+
+                  <td>
+                    ${escapeHomeHTML(
+                      team.pct
+                    )}
+                  </td>
+
+
+                  <td>
+                    ${escapeHomeHTML(
+                      gamesBack
+                    )}
+                  </td>
+
+
+                  <td>
+                    ${escapeHomeHTML(
+                      team.streak || "—"
+                    )}
+                  </td>
+
+                </tr>
+              `;
+
+            })
+            .join("")}
+
+        </tbody>
+
+      </table>
+
+    </div>
+  `;
 }
