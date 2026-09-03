@@ -10071,7 +10071,7 @@ function getYotfPlayerUrl(
 
   if (!playerId) {
 
-    return "index.html";
+    return "rankings.html";
 
   }
 
