@@ -3,7 +3,7 @@
   "name": "Blake Holub",
   "archived": false,
   "playerType": "Pitcher",
-  "generatedAt": "2026-09-03T14:15:05.828Z",
+  "generatedAt": "2026-09-03T17:55:07.165Z",
   "bio": {
     "Player-ID": "Blake-Holub",
     "MLBAM ID": "700183",
@@ -214,7 +214,7 @@
       "Player-ID": "Blake-Holub",
       "Player": "Blake Holub",
       "ERA": "2.22",
-      "FIP": "3.39",
+      "FIP": "3.38",
       "xFIP": "3.30",
       "IP": "48.2",
       "G": "44",

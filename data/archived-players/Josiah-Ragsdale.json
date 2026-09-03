@@ -3,7 +3,7 @@
   "name": "Josiah Ragsdale",
   "archived": true,
   "playerType": "Hitter",
-  "generatedAt": "2026-09-03T14:15:05.828Z",
+  "generatedAt": "2026-09-03T17:55:07.165Z",
   "bio": {
     "Player-ID": "Josiah-Ragsdale",
     "MLBAM ID": "828824",
@@ -206,7 +206,7 @@
       "OPS": "1.022",
       "wRC+": "162",
       "BABIP": "0.409",
-      "wOBA": "0.453",
+      "wOBA": "0.452",
       "K%": "25.8%",
       "BB%": "17.5%",
       "SwStr %": "10.0%",

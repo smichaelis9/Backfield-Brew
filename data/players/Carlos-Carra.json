@@ -3,7 +3,7 @@
   "name": "Carlos Carra",
   "archived": false,
   "playerType": "Pitcher",
-  "generatedAt": "2026-09-03T14:15:05.828Z",
+  "generatedAt": "2026-09-03T17:55:07.165Z",
   "bio": {
     "Player-ID": "Carlos-Carra",
     "MLBAM ID": "820902",
@@ -214,7 +214,7 @@
       "Player-ID": "Carlos-Carra",
       "Player": "Carlos Carra",
       "ERA": "5.30",
-      "FIP": "5.87",
+      "FIP": "5.88",
       "xFIP": "5.15",
       "IP": "93.1",
       "G": "23",

@@ -3,7 +3,7 @@
   "name": "J.D. Thompson",
   "archived": false,
   "playerType": "Pitcher",
-  "generatedAt": "2026-09-03T14:15:05.828Z",
+  "generatedAt": "2026-09-03T17:55:07.165Z",
   "bio": {
     "Player-ID": "JD-Thompson",
     "MLBAM ID": "702505",
@@ -214,7 +214,7 @@
       "Player-ID": "JD-Thompson",
       "Player": "J.D. Thompson",
       "ERA": "3.93",
-      "FIP": "4.12",
+      "FIP": "4.11",
       "xFIP": "4.41",
       "IP": "50.1",
       "G": "15",

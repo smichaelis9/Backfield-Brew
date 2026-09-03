@@ -3,7 +3,7 @@
   "name": "Diustin Mayorquin",
   "archived": false,
   "playerType": "Pitcher",
-  "generatedAt": "2026-09-03T14:15:05.828Z",
+  "generatedAt": "2026-09-03T17:55:07.165Z",
   "bio": {
     "Player-ID": "Diustin-Mayorquin",
     "MLBAM ID": "829944",
@@ -215,7 +215,7 @@
       "Player": "Diustin Mayorquin",
       "ERA": "4.88",
       "FIP": "5.32",
-      "xFIP": "5.12",
+      "xFIP": "5.13",
       "IP": "66.1",
       "G": "18",
       "GS": "6",

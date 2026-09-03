@@ -3,7 +3,7 @@
   "name": "Ryan Birchard",
   "archived": false,
   "playerType": "Pitcher",
-  "generatedAt": "2026-09-03T14:15:05.828Z",
+  "generatedAt": "2026-09-03T17:55:07.165Z",
   "bio": {
     "Player-ID": "Ryan-Birchard",
     "MLBAM ID": "804670",
@@ -215,7 +215,7 @@
       "Player": "Ryan Birchard",
       "ERA": "4.89",
       "FIP": "5.73",
-      "xFIP": "5.72",
+      "xFIP": "5.73",
       "IP": "46",
       "G": "30",
       "GS": "2",

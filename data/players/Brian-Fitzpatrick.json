@@ -3,7 +3,7 @@
   "name": "Brian Fitzpatrick",
   "archived": false,
   "playerType": "Pitcher",
-  "generatedAt": "2026-09-03T14:15:05.828Z",
+  "generatedAt": "2026-09-03T17:55:07.165Z",
   "bio": {
     "Player-ID": "Brian-Fitzpatrick",
     "MLBAM ID": "702153",
@@ -214,7 +214,7 @@
       "Player-ID": "Brian-Fitzpatrick",
       "Player": "Brian Fitzpatrick",
       "ERA": "1.13",
-      "FIP": "1.95",
+      "FIP": "1.94",
       "xFIP": "3.32",
       "IP": "16",
       "G": "15",

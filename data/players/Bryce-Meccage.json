@@ -3,7 +3,7 @@
   "name": "Bryce Meccage",
   "archived": false,
   "playerType": "Pitcher",
-  "generatedAt": "2026-09-03T14:15:05.828Z",
+  "generatedAt": "2026-09-03T17:55:07.165Z",
   "bio": {
     "Player-ID": "Bryce-Meccage",
     "MLBAM ID": "815501",
@@ -214,7 +214,7 @@
       "Player-ID": "Bryce-Meccage",
       "Player": "Bryce Meccage",
       "ERA": "6.48",
-      "FIP": "7.02",
+      "FIP": "7.01",
       "xFIP": "7.25",
       "IP": "16.2",
       "G": "5",

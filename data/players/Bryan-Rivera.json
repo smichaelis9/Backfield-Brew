@@ -3,7 +3,7 @@
   "name": "Bryan Rivera",
   "archived": false,
   "playerType": "Pitcher",
-  "generatedAt": "2026-09-03T14:15:05.828Z",
+  "generatedAt": "2026-09-03T17:55:07.165Z",
   "bio": {
     "Player-ID": "Bryan-Rivera",
     "MLBAM ID": "800469",
@@ -215,7 +215,7 @@
       "Player": "Bryan Rivera",
       "ERA": "9.39",
       "FIP": "7.88",
-      "xFIP": "8.08",
+      "xFIP": "8.09",
       "IP": "15.1",
       "G": "9",
       "GS": "0",

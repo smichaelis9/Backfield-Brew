@@ -3,7 +3,7 @@
   "name": "Chandler Welch",
   "archived": false,
   "playerType": "Pitcher",
-  "generatedAt": "2026-09-03T14:15:05.828Z",
+  "generatedAt": "2026-09-03T17:55:07.165Z",
   "bio": {
     "Player-ID": "Chandler-Welch",
     "MLBAM ID": "803068",
@@ -214,7 +214,7 @@
       "Player-ID": "Chandler-Welch",
       "Player": "Chandler Welch",
       "ERA": "6.08",
-      "FIP": "5.53",
+      "FIP": "5.52",
       "xFIP": "5.76",
       "IP": "63.2",
       "G": "26",

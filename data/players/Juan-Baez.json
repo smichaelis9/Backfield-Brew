@@ -3,7 +3,7 @@
   "name": "Juan Baez",
   "archived": false,
   "playerType": "Hitter",
-  "generatedAt": "2026-09-03T14:15:05.828Z",
+  "generatedAt": "2026-09-03T17:55:07.165Z",
   "bio": {
     "Player-ID": "Juan-Baez",
     "MLBAM ID": "800345",
@@ -206,7 +206,7 @@
       "OBP": "0.253",
       "SLG": "0.249",
       "OPS": "0.502",
-      "wRC+": "31",
+      "wRC+": "30",
       "BABIP": "0.214",
       "wOBA": "0.243",
       "K%": "18.3%",

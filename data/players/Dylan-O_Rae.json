@@ -3,7 +3,7 @@
   "name": "Dylan O'Rae",
   "archived": false,
   "playerType": "Hitter",
-  "generatedAt": "2026-09-03T14:15:05.828Z",
+  "generatedAt": "2026-09-03T17:55:07.165Z",
   "bio": {
     "Player-ID": "Dylan-O'Rae",
     "MLBAM ID": "802506",
@@ -220,9 +220,9 @@
       "GB%": "57.1%",
       "FB%": "20.5%",
       "IFFB %": "5.8%",
-      "SB": "54",
+      "SB": "55",
       "CS": "9",
-      "SB%": "85.7%",
+      "SB%": "85.9%",
       "Archived?": ""
     }
   },

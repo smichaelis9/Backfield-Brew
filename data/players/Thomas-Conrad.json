@@ -3,7 +3,7 @@
   "name": "Thomas Conrad",
   "archived": false,
   "playerType": "Pitcher",
-  "generatedAt": "2026-09-03T14:15:05.828Z",
+  "generatedAt": "2026-09-03T17:55:07.165Z",
   "bio": {
     "Player-ID": "Thomas-Conrad",
     "MLBAM ID": "835213",
@@ -214,7 +214,7 @@
       "Player-ID": "Thomas-Conrad",
       "Player": "Thomas Conrad",
       "ERA": "4.53",
-      "FIP": "5.30",
+      "FIP": "5.31",
       "xFIP": "5.14",
       "IP": "51.2",
       "G": "25",
