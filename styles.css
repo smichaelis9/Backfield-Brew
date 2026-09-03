@@ -4028,3 +4028,82 @@ a.home-game-starter-name:hover {
   }
 
 }
+/* =========================================================
+   HOME STANDINGS
+========================================================= */
+
+.home-standings-name {
+  margin-bottom: 8px;
+  font-size: .72rem;
+  font-weight: 900;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+  opacity: .55;
+}
+
+.home-standings-table-wrap {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.home-standings-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: .76rem;
+}
+
+.home-standings-table th {
+  padding: 6px 7px;
+  border-bottom: 1px solid rgba(0,0,0,.12);
+  font-size: .62rem;
+  font-weight: 900;
+  text-align: center;
+  text-transform: uppercase;
+  opacity: .55;
+}
+
+.home-standings-table td {
+  padding: 7px;
+  border-bottom: 1px solid rgba(0,0,0,.06);
+  text-align: center;
+}
+
+.home-standings-table tbody tr:last-child td {
+  border-bottom: 0;
+}
+
+.home-standings-table .home-standings-team {
+  text-align: left;
+  font-weight: 700;
+}
+
+.home-standings-table .home-standings-rank {
+  width: 25px;
+}
+
+.home-standings-brewers {
+  background: rgba(255, 198, 47, .16);
+}
+
+.home-standings-brewers td {
+  font-weight: 900;
+}
+
+.home-standings-brewers .home-standings-team {
+  color: var(--navy);
+}
+
+
+@media (max-width: 600px) {
+
+  .home-standings-table {
+    font-size: .69rem;
+  }
+
+  .home-standings-table th,
+  .home-standings-table td {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+}
