@@ -10265,22 +10265,23 @@ async function initHomeDashboard() {
     /*
      * Render biography-based sections.
      */
-    renderHomeTop100(
-      cleanPlayers
-    );
-
     renderHomeTrending(
       cleanPlayers
     );
 
 
     /*
-     * Yesterday on the Farm has
-     * its own generated JSON.
+     * Today on the Farm
+     */
+    await renderHomeToday();
+
+
+    /*
+     * Yesterday on the Farm
      */
     await renderHomeYesterday(
       cleanPlayers
-    );
+    );    
 
 
   } catch (err) {
@@ -11367,4 +11368,589 @@ function escapeHomeHTML(
       "'",
       "&#039;"
     );
+}
+/* =========================================================
+   HOME TODAY ON THE FARM
+========================================================= */
+
+async function renderHomeToday() {
+
+  const container =
+    document.getElementById(
+      "todayOnFarmContent"
+    );
+
+
+  if (!container) {
+    return;
+  }
+
+
+  try {
+
+    const response =
+      await fetch(
+        "data/today-on-the-farm.json",
+        {
+          cache: "no-store"
+        }
+      );
+
+
+    if (!response.ok) {
+
+      throw new Error(
+        "Today on the Farm data unavailable"
+      );
+    }
+
+
+    const data =
+      await response.json();
+
+
+    const games =
+      Array.isArray(data.games)
+        ? data.games
+        : [];
+
+
+    if (!games.length) {
+
+      container.innerHTML = `
+        <div class="home-empty">
+          No Brewers affiliate games today.
+        </div>
+      `;
+
+      return;
+    }
+
+
+    container.innerHTML =
+      games
+        .map(game =>
+          buildHomeTodayGame(game)
+        )
+        .join("");
+
+
+  } catch (err) {
+
+    console.error(
+      "Homepage Today on the Farm:",
+      err
+    );
+
+
+    container.innerHTML = `
+      <div class="home-empty">
+        Today's schedule unavailable.
+      </div>
+    `;
+  }
+}
+
+
+/* =========================================================
+   TODAY GAME
+========================================================= */
+
+function buildHomeTodayGame(game) {
+
+  const affiliate =
+    String(
+      game.affiliate || ""
+    );
+
+
+  const level =
+    String(
+      game.level || ""
+    );
+
+
+  const opponent =
+    String(
+      game.opponent || ""
+    );
+
+
+  const homeAway =
+    String(
+      game.homeAway || ""
+    );
+
+
+  const status =
+    game.status || {};
+
+
+  const statusKey =
+    String(
+      status.key || "scheduled"
+    );
+
+
+  const statusLabel =
+    String(
+      status.label || "Scheduled"
+    );
+
+
+  const probable =
+    game.probablePitcher || null;
+
+
+  /*
+   * MATCHUP
+   */
+
+  const matchup =
+    homeAway === "home"
+      ? `vs. ${opponent}`
+      : `@ ${opponent}`;
+
+
+  /*
+   * GAME STATUS / TIME
+   */
+
+  let gameDisplay = "";
+
+
+  if (
+    statusKey === "final"
+  ) {
+
+    gameDisplay =
+      buildHomeTodayScore(
+        game
+      );
+
+
+  } else if (
+    statusKey === "live"
+  ) {
+
+    gameDisplay =
+      buildHomeTodayLiveStatus(
+        game
+      );
+
+
+  } else if (
+    statusKey === "postponed" ||
+    statusKey === "cancelled" ||
+    statusKey === "delayed"
+  ) {
+
+    gameDisplay = `
+      <span
+        class="home-game-status ${escapeHomeHTML(statusKey)}"
+      >
+        ${escapeHomeHTML(statusLabel)}
+      </span>
+    `;
+
+
+  } else {
+
+    gameDisplay = `
+      <span class="home-game-time">
+        ${escapeHomeHTML(
+          formatHomeGameTime(
+            game.gameDate
+          )
+        )}
+      </span>
+    `;
+  }
+
+
+  /*
+   * PROBABLE STARTER
+   */
+
+  let probableHTML = "";
+
+
+  if (
+    probable &&
+    probable.name
+  ) {
+
+    const picture =
+      probable.picture ||
+      getHomeMlbamPicture(
+        probable.mlbamId
+      );
+
+
+    const href =
+      probable.playerId
+        ? (
+            "player.html?id=" +
+            encodeURIComponent(
+              probable.playerId
+            )
+          )
+        : "";
+
+
+    const nameHTML =
+      href
+
+        ? `
+          <a
+            href="${escapeHomeHTML(href)}"
+            class="home-game-starter-name"
+          >
+            ${escapeHomeHTML(
+              probable.name
+            )}
+          </a>
+        `
+
+        : `
+          <span
+            class="home-game-starter-name"
+          >
+            ${escapeHomeHTML(
+              probable.name
+            )}
+          </span>
+        `;
+
+
+    probableHTML = `
+
+      <div class="home-game-starter">
+
+        ${
+          href
+            ? `
+              <a
+                href="${escapeHomeHTML(href)}"
+                class="home-game-starter-photo-link"
+              >
+            `
+            : `
+              <div
+                class="home-game-starter-photo-link"
+              >
+            `
+        }
+
+          <img
+            src="${escapeHomeHTML(picture)}"
+            alt="${escapeHomeHTML(
+              probable.name
+            )}"
+            class="home-game-starter-photo"
+            loading="lazy"
+            onerror="
+              this.onerror=null;
+              this.src='${getHomeMlbamPicture(
+                probable.mlbamId
+              )}';
+            "
+          >
+
+        ${
+          href
+            ? `</a>`
+            : `</div>`
+        }
+
+
+        <div class="home-game-starter-info">
+
+          <span class="home-game-starter-label">
+            PROBABLE
+          </span>
+
+          ${nameHTML}
+
+          ${
+            probable.rank
+              ? `
+                <span class="home-game-starter-rank">
+                  #${escapeHomeHTML(
+                    probable.rank
+                  )} Prospect
+                </span>
+              `
+              : ""
+          }
+
+        </div>
+
+      </div>
+    `;
+  }
+
+
+  /*
+   * DOUBLEHEADER LABEL
+   */
+
+  const doubleheader =
+    String(
+      game.doubleHeader || ""
+    ) === "Y";
+
+
+  const gameNumber =
+    Number(
+      game.gameNumber || 1
+    );
+
+
+  const doubleheaderHTML =
+    doubleheader
+
+      ? `
+        <span class="home-game-doubleheader">
+          Game ${gameNumber}
+        </span>
+      `
+
+      : "";
+
+
+  return `
+
+    <div class="home-game-row">
+
+      <div class="home-game-main">
+
+        <div class="home-game-affiliate">
+
+          ${escapeHomeHTML(
+            affiliate
+          )}
+
+          ${
+            level
+              ? `
+                <span>
+                  ${escapeHomeHTML(level)}
+                </span>
+              `
+              : ""
+          }
+
+          ${doubleheaderHTML}
+
+        </div>
+
+
+        <div class="home-game-matchup">
+          ${escapeHomeHTML(matchup)}
+        </div>
+
+
+        ${probableHTML}
+
+      </div>
+
+
+      <div class="home-game-right">
+
+        ${gameDisplay}
+
+      </div>
+
+    </div>
+  `;
+}
+
+
+/* =========================================================
+   TODAY SCORE
+========================================================= */
+
+function buildHomeTodayScore(game) {
+
+  const score =
+    game.score;
+
+
+  if (!score) {
+
+    return `
+      <span class="home-game-status final">
+        Final
+      </span>
+    `;
+  }
+
+
+  const affiliateScore =
+    game.homeAway === "home"
+      ? score.home
+      : score.away;
+
+
+  const opponentScore =
+    game.homeAway === "home"
+      ? score.away
+      : score.home;
+
+
+  const result =
+    affiliateScore > opponentScore
+      ? "W"
+      : affiliateScore < opponentScore
+        ? "L"
+        : "";
+
+
+  return `
+    <div class="home-game-final">
+
+      <span class="home-game-result">
+        ${result}
+      </span>
+
+      <strong>
+        ${affiliateScore}-${opponentScore}
+      </strong>
+
+      <span>
+        Final
+      </span>
+
+    </div>
+  `;
+}
+
+
+/* =========================================================
+   TODAY LIVE STATUS
+========================================================= */
+
+function buildHomeTodayLiveStatus(game) {
+
+  const score =
+    game.score;
+
+
+  const inning =
+    game.inning;
+
+
+  let scoreHTML = "";
+
+
+  if (score) {
+
+    const affiliateScore =
+      game.homeAway === "home"
+        ? score.home
+        : score.away;
+
+
+    const opponentScore =
+      game.homeAway === "home"
+        ? score.away
+        : score.home;
+
+
+    scoreHTML = `
+      <strong>
+        ${affiliateScore}-${opponentScore}
+      </strong>
+    `;
+  }
+
+
+  let inningHTML =
+    "Live";
+
+
+  if (inning) {
+
+    const state =
+      String(
+        inning.state || ""
+      );
+
+
+    const ordinal =
+      String(
+        inning.ordinal || ""
+      );
+
+
+    if (
+      state &&
+      ordinal
+    ) {
+
+      inningHTML =
+        `${state} ${ordinal}`;
+
+    } else if (ordinal) {
+
+      inningHTML =
+        ordinal;
+    }
+  }
+
+
+  return `
+    <div class="home-game-live">
+
+      ${scoreHTML}
+
+      <span>
+        ${escapeHomeHTML(
+          inningHTML
+        )}
+      </span>
+
+    </div>
+  `;
+}
+
+
+/* =========================================================
+   TODAY GAME TIME
+========================================================= */
+
+function formatHomeGameTime(
+  gameDate
+) {
+
+  if (!gameDate) {
+    return "";
+  }
+
+
+  const date =
+    new Date(
+      gameDate
+    );
+
+
+  if (
+    Number.isNaN(
+      date.getTime()
+    )
+  ) {
+    return "";
+  }
+
+
+  return date.toLocaleTimeString(
+    "en-US",
+    {
+      hour: "numeric",
+      minute: "2-digit",
+      timeZone:
+        "America/Chicago"
+    }
+  );
 }
