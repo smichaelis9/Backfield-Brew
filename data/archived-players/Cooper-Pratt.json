@@ -3,7 +3,7 @@
   "name": "Cooper Pratt",
   "archived": true,
   "playerType": "Hitter",
-  "generatedAt": "2026-09-04T09:58:07.584Z",
+  "generatedAt": "2026-09-04T13:49:24.953Z",
   "bio": {
     "Player-ID": "Cooper-Pratt",
     "MLBAM ID": "806198",
@@ -206,7 +206,7 @@
       "OPS": "0.736",
       "wRC+": "99",
       "BABIP": "0.265",
-      "wOBA": "0.337",
+      "wOBA": "0.338",
       "K%": "14.0%",
       "BB%": "12.9%",
       "SwStr %": "6.3%",

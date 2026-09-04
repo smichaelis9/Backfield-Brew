@@ -3,7 +3,7 @@
   "name": "Jose Meneses",
   "archived": false,
   "playerType": "Pitcher",
-  "generatedAt": "2026-09-04T09:58:07.584Z",
+  "generatedAt": "2026-09-04T13:49:24.953Z",
   "bio": {
     "Player-ID": "Jose-Meneses",
     "MLBAM ID": "800427",
@@ -215,7 +215,7 @@
       "Player": "Jose Meneses",
       "ERA": "2.21",
       "FIP": "3.10",
-      "xFIP": "3.57",
+      "xFIP": "3.56",
       "IP": "57",
       "G": "37",
       "GS": "1",

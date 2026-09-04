@@ -3,7 +3,7 @@
   "name": "Peyton Niksch",
   "archived": false,
   "playerType": "Pitcher",
-  "generatedAt": "2026-09-04T09:58:07.584Z",
+  "generatedAt": "2026-09-04T13:49:24.953Z",
   "bio": {
     "Player-ID": "Peyton-Niksch",
     "MLBAM ID": "836172",
@@ -214,7 +214,7 @@
       "Player-ID": "Peyton-Niksch",
       "Player": "Peyton Niksch",
       "ERA": "4.52",
-      "FIP": "5.24",
+      "FIP": "5.23",
       "xFIP": "4.67",
       "IP": "61.2",
       "G": "28",

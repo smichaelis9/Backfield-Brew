@@ -3,7 +3,7 @@
   "name": "Jarrette Bonet",
   "archived": false,
   "playerType": "Pitcher",
-  "generatedAt": "2026-09-04T09:58:07.584Z",
+  "generatedAt": "2026-09-04T13:49:24.953Z",
   "bio": {
     "Player-ID": "Jarrette-Bonet",
     "MLBAM ID": "806426",
@@ -215,7 +215,7 @@
       "Player": "Jarrette Bonet",
       "ERA": "4.88",
       "FIP": "5.02",
-      "xFIP": "4.85",
+      "xFIP": "4.84",
       "IP": "114.1",
       "G": "25",
       "GS": "18",

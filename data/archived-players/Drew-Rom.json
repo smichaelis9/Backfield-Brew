@@ -3,7 +3,7 @@
   "name": "Drew Rom",
   "archived": true,
   "playerType": "Pitcher",
-  "generatedAt": "2026-09-04T09:58:07.584Z",
+  "generatedAt": "2026-09-04T13:49:24.953Z",
   "bio": {
     "Player-ID": "Drew-Rom",
     "MLBAM ID": "680723",
@@ -213,7 +213,7 @@
       "Player": "Drew Rom",
       "ERA": "2.20",
       "FIP": "1.87",
-      "xFIP": "3.03",
+      "xFIP": "3.02",
       "IP": "41",
       "G": "31",
       "GS": "0",

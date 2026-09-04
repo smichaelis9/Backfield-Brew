@@ -3,7 +3,7 @@
   "name": "Ismael Yanez",
   "archived": false,
   "playerType": "Pitcher",
-  "generatedAt": "2026-09-04T09:58:07.584Z",
+  "generatedAt": "2026-09-04T13:49:24.953Z",
   "bio": {
     "Player-ID": "Ismael-Yanez",
     "MLBAM ID": "808254",
@@ -215,7 +215,7 @@
       "Player": "Ismael Yanez",
       "ERA": "6.91",
       "FIP": "7.25",
-      "xFIP": "6.79",
+      "xFIP": "6.78",
       "IP": "28.2",
       "G": "25",
       "GS": "0",

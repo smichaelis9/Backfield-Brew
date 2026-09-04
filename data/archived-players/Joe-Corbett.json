@@ -3,7 +3,7 @@
   "name": "Joe Corbett",
   "archived": true,
   "playerType": "Pitcher",
-  "generatedAt": "2026-09-04T09:58:07.584Z",
+  "generatedAt": "2026-09-04T13:49:24.953Z",
   "bio": {
     "Player-ID": "Joe-Corbett",
     "MLBAM ID": "663782",
@@ -213,7 +213,7 @@
       "Player": "Joe Corbett",
       "ERA": "8.18",
       "FIP": "4.99",
-      "xFIP": "5.18",
+      "xFIP": "5.17",
       "IP": "11",
       "G": "10",
       "GS": "0",

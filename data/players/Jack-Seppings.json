@@ -3,7 +3,7 @@
   "name": "Jack Seppings",
   "archived": false,
   "playerType": "Pitcher",
-  "generatedAt": "2026-09-04T09:58:07.584Z",
+  "generatedAt": "2026-09-04T13:49:24.953Z",
   "bio": {
     "Player-ID": "Jack-Seppings",
     "MLBAM ID": "808952",
@@ -215,7 +215,7 @@
       "Player": "Jack Seppings",
       "ERA": "4.19",
       "FIP": "4.68",
-      "xFIP": "5.17",
+      "xFIP": "5.16",
       "IP": "73",
       "G": "26",
       "GS": "1",
