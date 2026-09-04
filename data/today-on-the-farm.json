@@ -1,6 +1,6 @@
 {
-  "date": "2026-09-03",
-  "generatedAt": "2026-09-04T01:09:18.431Z",
+  "date": "2026-09-04",
+  "generatedAt": "2026-09-04T05:53:36.748Z",
   "affiliates": [
     {
       "teamId": 556,
@@ -59,37 +59,13 @@
       "leagueName": "Dominican Summer League"
     }
   ],
-  "gameCount": 5,
+  "gameCount": 4,
   "games": [
     {
-      "key": "826775:249",
-      "gamePk": 826775,
-      "date": "2026-09-03",
-      "gameDate": "2026-09-03T21:10:00Z",
-      "affiliate": "Wilson Warbirds",
-      "affiliateTeamId": 249,
-      "level": "A",
-      "leagueId": 122,
-      "leagueName": "Carolina League",
-      "homeAway": "home",
-      "opponent": "Fredericksburg Nationals",
-      "opponentTeamId": 436,
-      "venue": "Virginia Credit Union Stadium",
-      "status": {
-        "key": "cancelled",
-        "label": "Cancelled"
-      },
-      "score": null,
-      "inning": null,
-      "probablePitcher": null,
-      "doubleHeader": "Y",
-      "gameNumber": 2
-    },
-    {
-      "key": "827162:249",
-      "gamePk": 827162,
-      "date": "2026-09-03",
-      "gameDate": "2026-09-03T22:35:00Z",
+      "key": "827160:249",
+      "gamePk": 827160,
+      "date": "2026-09-04",
+      "gameDate": "2026-09-04T22:35:00Z",
       "affiliate": "Wilson Warbirds",
       "affiliateTeamId": 249,
       "level": "A",
@@ -100,35 +76,28 @@
       "opponentTeamId": 436,
       "venue": "Virginia Credit Union Stadium",
       "status": {
-        "key": "live",
-        "label": "In Progress"
+        "key": "scheduled",
+        "label": "Scheduled"
       },
-      "score": {
-        "away": 3,
-        "home": 7
-      },
-      "inning": {
-        "inning": 8,
-        "state": "Bottom",
-        "ordinal": "8th"
-      },
+      "score": null,
+      "inning": null,
       "probablePitcher": {
-        "mlbamId": 828069,
-        "name": "Luke Roupe",
+        "mlbamId": 821250,
+        "name": "Dariel Jaquez",
         "inDatabase": true,
-        "playerId": "Luke-Roupe",
-        "rank": 133,
-        "picture": "https://i.ibb.co/7tJ95K3j/Roupe.jpg",
+        "playerId": "Dariel-Jaquez",
+        "rank": 156,
+        "picture": "https://i.ibb.co/73BGPWk/Jaquez.png",
         "databaseLevel": "A"
       },
-      "doubleHeader": "Y",
+      "doubleHeader": "N",
       "gameNumber": 1
     },
     {
-      "key": "820177:572",
-      "gamePk": 820177,
-      "date": "2026-09-03",
-      "gameDate": "2026-09-03T23:05:00Z",
+      "key": "820176:572",
+      "gamePk": 820176,
+      "date": "2026-09-04",
+      "gameDate": "2026-09-04T23:05:00Z",
       "affiliate": "Wisconsin Timber Rattlers",
       "affiliateTeamId": 572,
       "level": "A+",
@@ -139,35 +108,28 @@
       "opponentTeamId": 554,
       "venue": "ABC Supply Stadium",
       "status": {
-        "key": "live",
-        "label": "In Progress"
+        "key": "scheduled",
+        "label": "Scheduled"
       },
-      "score": {
-        "away": 0,
-        "home": 3
-      },
-      "inning": {
-        "inning": 6,
-        "state": "Bottom",
-        "ordinal": "6th"
-      },
+      "score": null,
+      "inning": null,
       "probablePitcher": {
-        "mlbamId": 803068,
-        "name": "Chandler Welch",
+        "mlbamId": 804986,
+        "name": "Andrew Healy",
         "inDatabase": true,
-        "playerId": "Chandler-Welch",
-        "rank": 179,
-        "picture": "https://img.mlbstatic.com/mlb-photos/image/upload/c_fill,g_auto/w_180/v1/people/803068/headshot/milb/current",
+        "playerId": "Andrew-Healy",
+        "rank": 132,
+        "picture": "https://img.mlbstatic.com/mlb-photos/image/upload/c_fill,g_auto/w_180/v1/people/804986/headshot/milb/current",
         "databaseLevel": "A+"
       },
       "doubleHeader": "N",
       "gameNumber": 1
     },
     {
-      "key": "816083:556",
-      "gamePk": 816083,
-      "date": "2026-09-03",
-      "gameDate": "2026-09-03T23:35:00Z",
+      "key": "816088:556",
+      "gamePk": 816088,
+      "date": "2026-09-04",
+      "gameDate": "2026-09-04T23:35:00Z",
       "affiliate": "Nashville Sounds",
       "affiliateTeamId": 556,
       "level": "AAA",
@@ -178,35 +140,28 @@
       "opponentTeamId": 416,
       "venue": "First Horizon Park",
       "status": {
-        "key": "live",
-        "label": "In Progress"
+        "key": "scheduled",
+        "label": "Scheduled"
       },
-      "score": {
-        "away": 3,
-        "home": 2
-      },
-      "inning": {
-        "inning": 4,
-        "state": "Top",
-        "ordinal": "4th"
-      },
+      "score": null,
+      "inning": null,
       "probablePitcher": {
-        "mlbamId": 687075,
-        "name": "Brandon Sproat",
-        "inDatabase": false,
-        "playerId": "",
-        "rank": null,
-        "picture": "",
-        "databaseLevel": ""
+        "mlbamId": 824620,
+        "name": "Tyson Hardin",
+        "inDatabase": true,
+        "playerId": "Tyson-Hardin",
+        "rank": 7,
+        "picture": "https://img.mlbstatic.com/mlb-photos/image/upload/c_fill,g_auto/w_180/v1/people/824620/headshot/milb/current",
+        "databaseLevel": "AAA"
       },
       "doubleHeader": "N",
       "gameNumber": 1
     },
     {
-      "key": "818146:5015",
-      "gamePk": 818146,
-      "date": "2026-09-03",
-      "gameDate": "2026-09-03T23:35:00Z",
+      "key": "818148:5015",
+      "gamePk": 818148,
+      "date": "2026-09-04",
+      "gameDate": "2026-09-04T23:35:00Z",
       "affiliate": "Biloxi Shuckers",
       "affiliateTeamId": 5015,
       "level": "AA",
@@ -217,25 +172,18 @@
       "opponentTeamId": 247,
       "venue": "Keesler Federal Park",
       "status": {
-        "key": "live",
-        "label": "In Progress"
+        "key": "scheduled",
+        "label": "Scheduled"
       },
-      "score": {
-        "away": 2,
-        "home": 2
-      },
-      "inning": {
-        "inning": 5,
-        "state": "End",
-        "ordinal": "5th"
-      },
+      "score": null,
+      "inning": null,
       "probablePitcher": {
-        "mlbamId": 811309,
-        "name": "Bishop Letson",
+        "mlbamId": 809229,
+        "name": "Jaron DeBerry",
         "inDatabase": true,
-        "playerId": "Bishop-Letson",
-        "rank": 10,
-        "picture": "https://img.mlbstatic.com/mlb-photos/image/upload/c_fill,g_auto/w_180/v1/people/811309/headshot/milb/current",
+        "playerId": "Jaron-DeBerry",
+        "rank": 17,
+        "picture": "https://img.mlbstatic.com/mlb-photos/image/upload/c_fill,g_auto/w_180/v1/people/809229/headshot/milb/current",
         "databaseLevel": "AA"
       },
       "doubleHeader": "N",
