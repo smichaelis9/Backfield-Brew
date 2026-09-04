@@ -1,5 +1,22 @@
 [
   {
+    "Transaction ID": "941288",
+    "Date": "2026-09-04",
+    "Effective Date": "2026-09-04",
+    "MLBAM ID": "669270",
+    "Player": "Joel Kuhnel",
+    "Position": "",
+    "From Team": "Milwaukee Brewers",
+    "To Team": "San Francisco Giants",
+    "Level": "MLB",
+    "Type": "Waiver Claim",
+    "Description": "San Francisco Giants claimed RHP Joel Kuhnel off waivers from Milwaukee Brewers.",
+    "Source URL": "https://www.mlb.com/brewers/roster/transactions/2026/09",
+    "Imported At": "09/04/2026 14:46:39",
+    "Player ID": "",
+    "Archived?": ""
+  },
+  {
     "Transaction ID": "941221",
     "Date": "2026-09-04",
     "Effective Date": "2026-09-04",
