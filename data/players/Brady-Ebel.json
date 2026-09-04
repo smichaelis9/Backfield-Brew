@@ -3,7 +3,7 @@
   "name": "Brady Ebel",
   "archived": false,
   "playerType": "Hitter",
-  "generatedAt": "2026-09-04T17:37:51.817Z",
+  "generatedAt": "2026-09-04T19:06:08.573Z",
   "bio": {
     "Player-ID": "Brady-Ebel",
     "MLBAM ID": "815816",
@@ -12,7 +12,7 @@
     "Rank": "3",
     "Trending": "",
     "Position": "SS",
-    "Level": "IL",
+    "Level": "A+",
     "Age": "19.1",
     "OFP": "50+",
     "OFP Updated": "7/20/2026",
@@ -397,6 +397,23 @@
     }
   ],
   "transactions": [
+    {
+      "Transaction ID": "941220",
+      "Date": "2026-09-04",
+      "Effective Date": "2026-09-04",
+      "MLBAM ID": "815816",
+      "Player": "Brady Ebel",
+      "Position": "",
+      "From Team": "",
+      "To Team": "Wisconsin Timber Rattlers",
+      "Level": "MiLB",
+      "Type": "Activated",
+      "Description": "Wisconsin Timber Rattlers activated SS Brady Ebel from the 7-day injured list.",
+      "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2026-09",
+      "Imported At": "09/04/2026 12:46:32",
+      "Player ID": "Brady-Ebel",
+      "Archived?": ""
+    },
     {
       "Transaction ID": "939644",
       "Date": "2026-08-26",

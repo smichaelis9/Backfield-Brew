@@ -3,7 +3,7 @@
   "name": "Thomas Conrad",
   "archived": false,
   "playerType": "Pitcher",
-  "generatedAt": "2026-09-04T17:37:51.817Z",
+  "generatedAt": "2026-09-04T19:06:08.573Z",
   "bio": {
     "Player-ID": "Thomas-Conrad",
     "MLBAM ID": "835213",
@@ -12,7 +12,7 @@
     "Rank": "142",
     "Trending": "",
     "Position": "RHP",
-    "Level": "A",
+    "Level": "A+",
     "Age": "20.9",
     "OFP": "30+",
     "OFP Updated": "",
@@ -413,6 +413,23 @@
     }
   ],
   "transactions": [
+    {
+      "Transaction ID": "941221",
+      "Date": "2026-09-04",
+      "Effective Date": "2026-09-04",
+      "MLBAM ID": "835213",
+      "Player": "Thomas Conrad",
+      "Position": "",
+      "From Team": "Wilson Warbirds",
+      "To Team": "Wisconsin Timber Rattlers",
+      "Level": "MiLB",
+      "Type": "Signed",
+      "Description": "RHP Thomas Conrad assigned to Wisconsin Timber Rattlers from Wilson Warbirds.",
+      "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2026-09",
+      "Imported At": "09/04/2026 12:46:32",
+      "Player ID": "Thomas-Conrad",
+      "Archived?": ""
+    },
     {
       "Transaction ID": "895618",
       "Date": "2026-03-31",
