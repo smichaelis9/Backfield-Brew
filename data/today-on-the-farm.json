@@ -1,6 +1,6 @@
 {
   "date": "2026-09-04",
-  "generatedAt": "2026-09-04T10:34:20.109Z",
+  "generatedAt": "2026-09-04T15:07:39.515Z",
   "affiliates": [
     {
       "teamId": 556,
@@ -86,8 +86,8 @@
         "name": "Dariel Jaquez",
         "inDatabase": true,
         "playerId": "Dariel-Jaquez",
-        "rank": 156,
-        "picture": "https://i.ibb.co/73BGPWk/Jaquez.png",
+        "rank": 155,
+        "picture": "https://img.mlbstatic.com/mlb-photos/image/upload/c_fill,g_auto/w_360/v1/people/821250/headshot/milb/current",
         "databaseLevel": "A"
       },
       "doubleHeader": "N",
@@ -118,7 +118,7 @@
         "name": "Andrew Healy",
         "inDatabase": true,
         "playerId": "Andrew-Healy",
-        "rank": 132,
+        "rank": 99,
         "picture": "https://img.mlbstatic.com/mlb-photos/image/upload/c_fill,g_auto/w_180/v1/people/804986/headshot/milb/current",
         "databaseLevel": "A+"
       },
@@ -150,7 +150,7 @@
         "name": "Tyson Hardin",
         "inDatabase": true,
         "playerId": "Tyson-Hardin",
-        "rank": 7,
+        "rank": 6,
         "picture": "https://img.mlbstatic.com/mlb-photos/image/upload/c_fill,g_auto/w_180/v1/people/824620/headshot/milb/current",
         "databaseLevel": "AAA"
       },
@@ -182,7 +182,7 @@
         "name": "Jaron DeBerry",
         "inDatabase": true,
         "playerId": "Jaron-DeBerry",
-        "rank": 17,
+        "rank": 16,
         "picture": "https://img.mlbstatic.com/mlb-photos/image/upload/c_fill,g_auto/w_180/v1/people/809229/headshot/milb/current",
         "databaseLevel": "AA"
       },
