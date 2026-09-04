@@ -4198,3 +4198,27 @@ tr.home-standings-brewers td {
   font-weight: 800;
   color: #1b2a4a;
 }
+/* =========================
+   HOME STATS LEADER RANK
+========================= */
+
+.home-stat-place {
+  color: #1b2a4a;
+  font-weight: 900;
+}
+
+.home-stats-header-right {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+@media (max-width: 600px) {
+
+  .home-stats-header-right {
+    align-items: flex-end;
+    flex-direction: column;
+    gap: 7px;
+  }
+
+}
