@@ -1,6 +1,6 @@
 {
   "date": "2026-09-04",
-  "generatedAt": "2026-09-04T20:15:26.541Z",
+  "generatedAt": "2026-09-04T22:27:01.587Z",
   "affiliates": [
     {
       "teamId": 556,
@@ -76,11 +76,18 @@
       "opponentTeamId": 436,
       "venue": "Virginia Credit Union Stadium",
       "status": {
-        "key": "scheduled",
-        "label": "Scheduled"
+        "key": "delayed",
+        "label": "Delayed Start"
       },
-      "score": null,
-      "inning": null,
+      "score": {
+        "away": 0,
+        "home": 0
+      },
+      "inning": {
+        "inning": 1,
+        "state": "Top",
+        "ordinal": "1st"
+      },
       "probablePitcher": {
         "mlbamId": 821250,
         "name": "Dariel Jaquez",
@@ -173,10 +180,17 @@
       "venue": "Keesler Federal Park",
       "status": {
         "key": "scheduled",
-        "label": "Scheduled"
+        "label": "Pre-Game"
       },
-      "score": null,
-      "inning": null,
+      "score": {
+        "away": 0,
+        "home": 0
+      },
+      "inning": {
+        "inning": 1,
+        "state": "Top",
+        "ordinal": "1st"
+      },
       "probablePitcher": {
         "mlbamId": 809229,
         "name": "Jaron DeBerry",
