@@ -457,7 +457,6 @@
     id="homeStatsLeaders"
   >
 
-
     <div class="home-panel-header">
 
       <div>
@@ -473,44 +472,54 @@
       </div>
 
 
-      <div class="home-stats-controls">
+      <div class="home-stats-header-right">
+
+        <div class="home-stats-controls">
+
+          <select
+            id="statsLeaderType"
+            class="home-select"
+          >
+
+            <option value="hitter">
+              Hitters
+            </option>
+  
+            <option value="pitcher">
+              Pitchers
+            </option>
+
+          </select>
 
 
-        <select
-          id="statsLeaderType"
-          class="home-select"
+          <select
+            id="statsLeaderCategory"
+            class="home-select"
+          >
+
+            <option value="HR">
+              Home Runs
+            </option>
+
+            <option value="SB">
+              Stolen Bases
+            </option>
+
+            <option value="OPS">
+              OPS
+            </option>
+
+          </select>
+
+        </div>
+
+
+        <a
+          href="stats.html"
+          class="home-panel-link"
         >
-
-          <option value="hitter">
-            Hitters
-          </option>
-
-          <option value="pitcher">
-            Pitchers
-          </option>
-
-        </select>
-
-
-        <select
-          id="statsLeaderCategory"
-          class="home-select"
-        >
-
-          <option value="HR">
-            Home Runs
-          </option>
-
-          <option value="SB">
-            Stolen Bases
-          </option>
-
-          <option value="OPS">
-            OPS
-          </option>
-
-        </select>
-
+          Full Organizational Stats →
+        </a>
 
       </div>
 
@@ -528,10 +537,8 @@
 
     </div>
 
-
   </section>
-
-
+  
 </main>
 
 
