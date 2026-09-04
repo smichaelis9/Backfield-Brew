@@ -26,32 +26,6 @@
     "Arm": "50/50"
   },
   {
-    "Player-ID": "Josh-Adamczewski",
-    "Player": "Josh Adamczewski",
-    "Last Updated": "5/8/2026",
-    "Hit": "45/55",
-    "Raw Power": "45/55",
-    "Game Power": "45/55",
-    "Bat to Ball": "45/55",
-    "Swing Decisions": "45/60",
-    "Speed": "50/50",
-    "Field": "45/55 (LF)",
-    "Arm": "45/45"
-  },
-  {
-    "Player-ID": "Luis-Lara",
-    "Player": "Luis Lara",
-    "Last Updated": "5/5/2026",
-    "Hit": "50/60",
-    "Raw Power": "40/45",
-    "Game Power": "40/40",
-    "Bat to Ball": "45/55",
-    "Swing Decisions": "50/55",
-    "Speed": "70/70",
-    "Field": "65/70 (CF)",
-    "Arm": "60/60"
-  },
-  {
     "Player-ID": "Brady-Ebel",
     "Player": "Brady Ebel",
     "Last Updated": "2/13/2026",
@@ -63,6 +37,19 @@
     "Speed": "50/50",
     "Field": "35/55 (SS)",
     "Arm": "65/70"
+  },
+  {
+    "Player-ID": "Josh-Adamczewski",
+    "Player": "Josh Adamczewski",
+    "Last Updated": "5/8/2026",
+    "Hit": "45/55",
+    "Raw Power": "45/55",
+    "Game Power": "45/55",
+    "Bat to Ball": "45/55",
+    "Swing Decisions": "45/60",
+    "Speed": "50/50",
+    "Field": "45/55 (LF)",
+    "Arm": "45/45"
   },
   {
     "Player-ID": "Braylon-Payne",
@@ -1324,6 +1311,19 @@
     "Speed": "60/60",
     "Field": "55/65",
     "Arm": "70/70"
+  },
+  {
+    "Player-ID": "Luis-Lara",
+    "Player": "Luis Lara",
+    "Last Updated": "5/5/2026",
+    "Hit": "50/60",
+    "Raw Power": "40/45",
+    "Game Power": "40/40",
+    "Bat to Ball": "45/55",
+    "Swing Decisions": "50/55",
+    "Speed": "70/70",
+    "Field": "65/70 (CF)",
+    "Arm": "60/60"
   },
   {
     "Player-ID": "Joey-Ortiz",
@@ -3079,6 +3079,19 @@
     "Speed": "60/60",
     "Field": "55/65",
     "Arm": "70/70"
+  },
+  {
+    "Player-ID": "Luis-Lara",
+    "Player": "Luis Lara",
+    "Last Updated": "5/5/2026",
+    "Hit": "50/60",
+    "Raw Power": "40/45",
+    "Game Power": "40/40",
+    "Bat to Ball": "45/55",
+    "Swing Decisions": "50/55",
+    "Speed": "70/70",
+    "Field": "65/70 (CF)",
+    "Arm": "60/60"
   },
   {
     "Player-ID": "Joey-Ortiz",

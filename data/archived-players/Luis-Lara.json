@@ -1,21 +1,20 @@
 {
   "id": "Luis-Lara",
   "name": "Luis Lara",
-  "archived": false,
+  "archived": true,
   "playerType": "Hitter",
-  "generatedAt": "2026-09-04T13:49:24.953Z",
+  "generatedAt": "2026-09-04T14:12:20.854Z",
   "bio": {
     "Player-ID": "Luis-Lara",
     "MLBAM ID": "800325",
     "Player Type": "Hitter",
     "Player": "Luis Lara",
     "Rank": "4",
-    "Trending": "",
+    "Archive Reason": "Graduated from prospect status on 8/21/2026",
     "Position": "OF",
     "Level": "MLB",
     "Age": "21.8",
     "OFP": "50+",
-    "OFP Updated": "5/7/2026",
     "Risk": "Medium",
     "School or Country": "Country",
     "School/Country": "Venezuela",
@@ -28,7 +27,7 @@
     "Weight": "155",
     "Bat / Throw": "Switch/Right",
     "Birthday": "11/17/2004",
-    "Rule 5 Eligible": "On 40-Man",
+    "Rule 5 Eligible": "",
     "Picture": "https://img.mlbstatic.com/mlb-photos/image/upload/c_fill,g_auto/w_180/v1/people/800325/headshot/milb/current",
     "Picture Source": "MiLB.com",
     "Notes Updated": "8/15/2025",
@@ -88,8 +87,7 @@
     "Instagram": "Instagram",
     "Instagram Link": "https://instagram.com/luis_alexlara21?igshid=YmMyMTA2M2Y=",
     "Other Social": "TikTok",
-    "Other Social Link": "https://www.tiktok.com/@alexanderlara923?lang=en",
-    "Previous Rank": "4"
+    "Other Social Link": "https://www.tiktok.com/@alexanderlara923?lang=en"
   },
   "tools": {
     "Player-ID": "Luis-Lara",
@@ -133,7 +131,7 @@
       "SB": "30",
       "CS": "10",
       "SB%": "75.0%",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     "2024": {
       "Player-ID": "Luis-Lara",
@@ -163,7 +161,7 @@
       "SB": "45",
       "CS": "14",
       "SB%": "76.3%",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     "2025": {
       "Player-ID": "Luis-Lara",
@@ -193,7 +191,7 @@
       "SB": "44",
       "CS": "7",
       "SB%": "86.3%",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     "2026": {
       "Player-ID": "Luis-Lara",
@@ -223,7 +221,7 @@
       "SB": "24",
       "CS": "7",
       "SB%": "77.4%",
-      "Archived?": ""
+      "Archived?": "yes"
     }
   },
   "gamedayWhiff": {
@@ -411,7 +409,7 @@
       "Source URL": "https://www.mlb.com/brewers/roster/transactions/2026/07",
       "Imported At": "08/13/2026 10:00:40",
       "Player ID": "Luis-Lara",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     {
       "Transaction ID": "917078",
@@ -428,7 +426,7 @@
       "Source URL": "https://www.mlb.com/brewers/roster/transactions/2026/06",
       "Imported At": "08/13/2026 10:00:37",
       "Player ID": "Luis-Lara",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     {
       "Transaction ID": "917077",
@@ -445,7 +443,7 @@
       "Source URL": "https://www.mlb.com/brewers/roster/transactions/2026/06",
       "Imported At": "08/13/2026 10:00:37",
       "Player ID": "Luis-Lara",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     {
       "Transaction ID": "893979",
@@ -462,7 +460,7 @@
       "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2026-03",
       "Imported At": "08/13/2026 10:21:44",
       "Player ID": "Luis-Lara",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     {
       "Transaction ID": "889938",
@@ -479,7 +477,7 @@
       "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2026-03",
       "Imported At": "08/13/2026 10:21:44",
       "Player ID": "Luis-Lara",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     {
       "Transaction ID": "882962",
@@ -496,7 +494,7 @@
       "Source URL": "https://www.mlb.com/brewers/roster/transactions/2026/01",
       "Imported At": "08/13/2026 10:00:15",
       "Player ID": "Luis-Lara",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     {
       "Transaction ID": "823975",
@@ -513,7 +511,7 @@
       "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2025-03",
       "Imported At": "08/13/2026 10:20:06",
       "Player ID": "Luis-Lara",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     {
       "Transaction ID": "818522",
@@ -530,7 +528,7 @@
       "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2025-03",
       "Imported At": "08/13/2026 10:20:06",
       "Player ID": "Luis-Lara",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     {
       "Transaction ID": "810881",
@@ -547,7 +545,7 @@
       "Source URL": "https://www.mlb.com/brewers/roster/transactions/2025/01",
       "Imported At": "08/13/2026 09:59:16",
       "Player ID": "Luis-Lara",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     {
       "Transaction ID": "778187",
@@ -564,7 +562,7 @@
       "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2024-06",
       "Imported At": "08/13/2026 10:19:02",
       "Player ID": "Luis-Lara",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     {
       "Transaction ID": "774253",
@@ -581,7 +579,7 @@
       "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2024-05",
       "Imported At": "08/13/2026 10:18:56",
       "Player ID": "Luis-Lara",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     {
       "Transaction ID": "753726",
@@ -598,7 +596,7 @@
       "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2024-03",
       "Imported At": "08/13/2026 10:18:41",
       "Player ID": "Luis-Lara",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     {
       "Transaction ID": "751351",
@@ -615,7 +613,7 @@
       "Source URL": "https://www.mlb.com/brewers/roster/transactions/2024/02",
       "Imported At": "08/13/2026 09:58:35",
       "Player ID": "Luis-Lara",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     {
       "Transaction ID": "719708",
@@ -632,7 +630,7 @@
       "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2023-08",
       "Imported At": "08/13/2026 10:17:52",
       "Player ID": "Luis-Lara",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     {
       "Transaction ID": "688216",
@@ -649,7 +647,7 @@
       "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2023-05",
       "Imported At": "08/13/2026 10:17:31",
       "Player ID": "Luis-Lara",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     {
       "Transaction ID": "677818",
@@ -666,7 +664,7 @@
       "Source URL": "https://www.mlb.com/brewers/roster/transactions/2023/03",
       "Imported At": "08/13/2026 09:57:52",
       "Player ID": "Luis-Lara",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     {
       "Transaction ID": "677201",
@@ -683,7 +681,7 @@
       "Source URL": "https://www.mlb.com/brewers/roster/transactions/2023/03",
       "Imported At": "08/13/2026 09:57:52",
       "Player ID": "Luis-Lara",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     {
       "Transaction ID": "627360",
@@ -700,7 +698,7 @@
       "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2022-06",
       "Imported At": "08/13/2026 10:16:07",
       "Player ID": "Luis-Lara",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     {
       "Transaction ID": "627359",
@@ -717,7 +715,7 @@
       "Source URL": "https://www.mlb.com/brewers/roster/transactions/2022/06",
       "Imported At": "08/13/2026 09:57:16",
       "Player ID": "Luis-Lara",
-      "Archived?": ""
+      "Archived?": "yes"
     }
   ]
 }

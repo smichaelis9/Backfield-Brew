@@ -12,21 +12,15 @@
     "archived": false
   },
   {
-    "id": "Josh-Adamczewski",
-    "name": "Josh Adamczewski",
-    "file": "Josh-Adamczewski.json",
-    "archived": false
-  },
-  {
-    "id": "Luis-Lara",
-    "name": "Luis Lara",
-    "file": "Luis-Lara.json",
-    "archived": false
-  },
-  {
     "id": "Brady-Ebel",
     "name": "Brady Ebel",
     "file": "Brady-Ebel.json",
+    "archived": false
+  },
+  {
+    "id": "Josh-Adamczewski",
+    "name": "Josh Adamczewski",
+    "file": "Josh-Adamczewski.json",
     "archived": false
   },
   {

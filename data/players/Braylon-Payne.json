@@ -3,13 +3,13 @@
   "name": "Braylon Payne",
   "archived": false,
   "playerType": "Hitter",
-  "generatedAt": "2026-09-04T13:49:24.953Z",
+  "generatedAt": "2026-09-04T14:12:20.854Z",
   "bio": {
     "Player-ID": "Braylon-Payne",
     "MLBAM ID": "815520",
     "Player Type": "Hitter",
     "Player": "Braylon Payne",
-    "Rank": "6",
+    "Rank": "5",
     "Trending": "Up",
     "Position": "OF",
     "Level": "AA",
@@ -89,7 +89,7 @@
     "Instagram Link": "https://www.instagram.com/payne_braylon/",
     "Other Social": "TikTok",
     "Other Social Link": "https://www.tiktok.com/@braypayne23",
-    "Previous Rank": "6"
+    "Previous Rank": "5"
   },
   "tools": {
     "Player-ID": "Braylon-Payne",
@@ -152,7 +152,7 @@
       "K%": "15.8%",
       "BB%": "15.8%",
       "SwStr %": "10.1%",
-      "Whiff%": "29.6%",
+      "Whiff%": "",
       "Pull %": "38.5%",
       "Cent %": "23.1%",
       "Oppo %": "38.5%",

@@ -3,7 +3,7 @@
   "name": "Carlos Canales",
   "archived": true,
   "playerType": "Pitcher",
-  "generatedAt": "2026-09-04T13:49:24.953Z",
+  "generatedAt": "2026-09-04T14:12:20.854Z",
   "bio": {
     "Player-ID": "Carlos-Canales",
     "MLBAM ID": "815766",
@@ -414,7 +414,7 @@
       "Description": "DSL Brewers Blue released RHP Carlos Canales.",
       "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2026-08",
       "Imported At": "08/23/2026 12:46:34",
-      "Player ID": "Carlos-Canales",
+      "Player ID": "",
       "Archived?": "yes"
     },
     {
@@ -431,7 +431,7 @@
       "Description": "RHP Carlos Canales assigned to DSL Brewers Blue from DSL Brewers Gold.",
       "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2026-08",
       "Imported At": "08/13/2026 10:22:09",
-      "Player ID": "Carlos-Canales",
+      "Player ID": "",
       "Archived?": "yes"
     },
     {
@@ -448,7 +448,7 @@
       "Description": "RHP Carlos Canales assigned to DSL Brewers Gold from DSL Brewers Blue.",
       "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2026-06",
       "Imported At": "08/13/2026 10:21:59",
-      "Player ID": "Carlos-Canales",
+      "Player ID": "",
       "Archived?": "yes"
     },
     {
@@ -465,7 +465,7 @@
       "Description": "RHP Carlos Canales assigned to DSL Brewers Blue from DSL Brewers Gold.",
       "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2026-06",
       "Imported At": "08/13/2026 10:21:59",
-      "Player ID": "Carlos-Canales",
+      "Player ID": "",
       "Archived?": "yes"
     },
     {
@@ -482,7 +482,7 @@
       "Description": "RHP Carlos Canales assigned to DSL Brewers Gold from DSL Brewers Blue.",
       "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2025-06",
       "Imported At": "08/13/2026 10:20:26",
-      "Player ID": "Carlos-Canales",
+      "Player ID": "",
       "Archived?": "yes"
     },
     {
@@ -499,7 +499,7 @@
       "Description": "RHP Carlos Canales assigned to DSL Brewers 1.",
       "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2023-08",
       "Imported At": "08/13/2026 10:17:52",
-      "Player ID": "Carlos-Canales",
+      "Player ID": "",
       "Archived?": "yes"
     },
     {
@@ -516,7 +516,7 @@
       "Description": "Milwaukee Brewers signed free agent RHP Carlos Canales to a minor league contract.",
       "Source URL": "https://www.mlb.com/brewers/roster/transactions/2023/07",
       "Imported At": "08/13/2026 09:58:09",
-      "Player ID": "Carlos-Canales",
+      "Player ID": "",
       "Archived?": "yes"
     }
   ]
