@@ -588,6 +588,12 @@
     "archived": false
   },
   {
+    "id": "Andrew-Healy",
+    "name": "Andrew Healy",
+    "file": "Andrew-Healy.json",
+    "archived": false
+  },
+  {
     "id": "Anfernny-Reyes",
     "name": "Anfernny Reyes",
     "file": "Anfernny-Reyes.json",
@@ -777,12 +783,6 @@
     "id": "Ramon-Rodriguez",
     "name": "Ramón Rodríguez",
     "file": "Ramon-Rodriguez.json",
-    "archived": false
-  },
-  {
-    "id": "Andrew-Healy",
-    "name": "Andrew Healy",
-    "file": "Andrew-Healy.json",
     "archived": false
   },
   {
