@@ -1,6 +1,6 @@
 {
-  "date": "2026-09-04",
-  "generatedAt": "2026-09-05T04:47:51.057Z",
+  "date": "2026-09-05",
+  "generatedAt": "2026-09-05T08:47:49.091Z",
   "affiliates": [
     {
       "teamId": 556,
@@ -59,130 +59,13 @@
       "leagueName": "Dominican Summer League"
     }
   ],
-  "gameCount": 4,
+  "gameCount": 5,
   "games": [
     {
-      "key": "827160:249",
-      "gamePk": 827160,
-      "date": "2026-09-04",
-      "gameDate": "2026-09-04T22:35:00Z",
-      "affiliate": "Wilson Warbirds",
-      "affiliateTeamId": 249,
-      "level": "A",
-      "leagueId": 122,
-      "leagueName": "Carolina League",
-      "homeAway": "away",
-      "opponent": "Fredericksburg Nationals",
-      "opponentTeamId": 436,
-      "venue": "Virginia Credit Union Stadium",
-      "status": {
-        "key": "final",
-        "label": "Final"
-      },
-      "score": {
-        "away": 2,
-        "home": 24
-      },
-      "inning": {
-        "inning": 9,
-        "state": "Top",
-        "ordinal": "9th"
-      },
-      "probablePitcher": {
-        "mlbamId": 821250,
-        "name": "Dariel Jaquez",
-        "inDatabase": true,
-        "playerId": "Dariel-Jaquez",
-        "rank": 155,
-        "picture": "https://img.mlbstatic.com/mlb-photos/image/upload/c_fill,g_auto/w_360/v1/people/821250/headshot/milb/current",
-        "databaseLevel": "A"
-      },
-      "doubleHeader": "N",
-      "gameNumber": 1
-    },
-    {
-      "key": "820176:572",
-      "gamePk": 820176,
-      "date": "2026-09-04",
-      "gameDate": "2026-09-04T23:05:00Z",
-      "affiliate": "Wisconsin Timber Rattlers",
-      "affiliateTeamId": 572,
-      "level": "A+",
-      "leagueId": 118,
-      "leagueName": "Midwest League",
-      "homeAway": "away",
-      "opponent": "Beloit Sky Carp",
-      "opponentTeamId": 554,
-      "venue": "ABC Supply Stadium",
-      "status": {
-        "key": "final",
-        "label": "Final"
-      },
-      "score": {
-        "away": 11,
-        "home": 12
-      },
-      "inning": {
-        "inning": 9,
-        "state": "Bottom",
-        "ordinal": "9th"
-      },
-      "probablePitcher": {
-        "mlbamId": 804986,
-        "name": "Andrew Healy",
-        "inDatabase": true,
-        "playerId": "Andrew-Healy",
-        "rank": 99,
-        "picture": "https://img.mlbstatic.com/mlb-photos/image/upload/c_fill,g_auto/w_180/v1/people/804986/headshot/milb/current",
-        "databaseLevel": "A+"
-      },
-      "doubleHeader": "N",
-      "gameNumber": 1
-    },
-    {
-      "key": "816088:556",
-      "gamePk": 816088,
-      "date": "2026-09-04",
-      "gameDate": "2026-09-04T23:35:00Z",
-      "affiliate": "Nashville Sounds",
-      "affiliateTeamId": 556,
-      "level": "AAA",
-      "leagueId": 117,
-      "leagueName": "International League",
-      "homeAway": "home",
-      "opponent": "Louisville Bats",
-      "opponentTeamId": 416,
-      "venue": "First Horizon Park",
-      "status": {
-        "key": "final",
-        "label": "Final"
-      },
-      "score": {
-        "away": 4,
-        "home": 5
-      },
-      "inning": {
-        "inning": 9,
-        "state": "Bottom",
-        "ordinal": "9th"
-      },
-      "probablePitcher": {
-        "mlbamId": 824620,
-        "name": "Tyson Hardin",
-        "inDatabase": true,
-        "playerId": "Tyson-Hardin",
-        "rank": 6,
-        "picture": "https://img.mlbstatic.com/mlb-photos/image/upload/c_fill,g_auto/w_180/v1/people/824620/headshot/milb/current",
-        "databaseLevel": "AAA"
-      },
-      "doubleHeader": "N",
-      "gameNumber": 1
-    },
-    {
-      "key": "818148:5015",
-      "gamePk": 818148,
-      "date": "2026-09-04",
-      "gameDate": "2026-09-04T23:35:00Z",
+      "key": "818149:5015",
+      "gamePk": 818149,
+      "date": "2026-09-05",
+      "gameDate": "2026-09-05T21:35:00Z",
       "affiliate": "Biloxi Shuckers",
       "affiliateTeamId": 5015,
       "level": "AA",
@@ -193,19 +76,139 @@
       "opponentTeamId": 247,
       "venue": "Keesler Federal Park",
       "status": {
-        "key": "postponed",
-        "label": "Postponed"
+        "key": "scheduled",
+        "label": "Scheduled"
       },
       "score": null,
       "inning": null,
       "probablePitcher": {
-        "mlbamId": 809229,
-        "name": "Jaron DeBerry",
+        "mlbamId": 702505,
+        "name": "J.D. Thompson",
         "inDatabase": true,
-        "playerId": "Jaron-DeBerry",
-        "rank": 16,
-        "picture": "https://img.mlbstatic.com/mlb-photos/image/upload/c_fill,g_auto/w_180/v1/people/809229/headshot/milb/current",
+        "playerId": "JD-Thompson",
+        "rank": 18,
+        "picture": "https://img.mlbstatic.com/mlb-photos/image/upload/c_fill,g_auto/w_180/v1/people/702505/headshot/milb/current",
         "databaseLevel": "AA"
+      },
+      "doubleHeader": "Y",
+      "gameNumber": 1
+    },
+    {
+      "key": "818148:5015",
+      "gamePk": 818148,
+      "date": "2026-09-05",
+      "gameDate": "2026-09-05T21:40:00Z",
+      "affiliate": "Biloxi Shuckers",
+      "affiliateTeamId": 5015,
+      "level": "AA",
+      "leagueId": 111,
+      "leagueName": "Southern League",
+      "homeAway": "home",
+      "opponent": "Birmingham Barons",
+      "opponentTeamId": 247,
+      "venue": "Keesler Federal Park",
+      "status": {
+        "key": "scheduled",
+        "label": "Scheduled"
+      },
+      "score": null,
+      "inning": null,
+      "probablePitcher": null,
+      "doubleHeader": "Y",
+      "gameNumber": 2
+    },
+    {
+      "key": "827161:249",
+      "gamePk": 827161,
+      "date": "2026-09-05",
+      "gameDate": "2026-09-05T22:35:00Z",
+      "affiliate": "Wilson Warbirds",
+      "affiliateTeamId": 249,
+      "level": "A",
+      "leagueId": 122,
+      "leagueName": "Carolina League",
+      "homeAway": "away",
+      "opponent": "Fredericksburg Nationals",
+      "opponentTeamId": 436,
+      "venue": "Virginia Credit Union Stadium",
+      "status": {
+        "key": "scheduled",
+        "label": "Scheduled"
+      },
+      "score": null,
+      "inning": null,
+      "probablePitcher": {
+        "mlbamId": 827980,
+        "name": "Frank Cairone",
+        "inDatabase": true,
+        "playerId": "Frank-Cairone",
+        "rank": 29,
+        "picture": "https://img.mlbstatic.com/mlb-photos/image/upload/c_fill,g_auto/w_360/v1/people/827980/headshot/milb/current",
+        "databaseLevel": "A"
+      },
+      "doubleHeader": "N",
+      "gameNumber": 1
+    },
+    {
+      "key": "816087:556",
+      "gamePk": 816087,
+      "date": "2026-09-05",
+      "gameDate": "2026-09-05T23:35:00Z",
+      "affiliate": "Nashville Sounds",
+      "affiliateTeamId": 556,
+      "level": "AAA",
+      "leagueId": 117,
+      "leagueName": "International League",
+      "homeAway": "home",
+      "opponent": "Louisville Bats",
+      "opponentTeamId": 416,
+      "venue": "First Horizon Park",
+      "status": {
+        "key": "scheduled",
+        "label": "Scheduled"
+      },
+      "score": null,
+      "inning": null,
+      "probablePitcher": {
+        "mlbamId": 804249,
+        "name": "Tate Kuehner",
+        "inDatabase": true,
+        "playerId": "Tate-Kuehner",
+        "rank": 36,
+        "picture": "https://img.mlbstatic.com/mlb-photos/image/upload/c_fill,g_auto/w_180/v1/people/804249/headshot/milb/current",
+        "databaseLevel": "AAA"
+      },
+      "doubleHeader": "N",
+      "gameNumber": 1
+    },
+    {
+      "key": "820169:572",
+      "gamePk": 820169,
+      "date": "2026-09-05",
+      "gameDate": "2026-09-05T23:35:00Z",
+      "affiliate": "Wisconsin Timber Rattlers",
+      "affiliateTeamId": 572,
+      "level": "A+",
+      "leagueId": 118,
+      "leagueName": "Midwest League",
+      "homeAway": "away",
+      "opponent": "Beloit Sky Carp",
+      "opponentTeamId": 554,
+      "venue": "ABC Supply Stadium",
+      "status": {
+        "key": "scheduled",
+        "label": "Scheduled"
+      },
+      "score": null,
+      "inning": null,
+      "probablePitcher": {
+        "mlbamId": 802192,
+        "name": "Daniel Corniel",
+        "inDatabase": true,
+        "playerId": "Daniel-Corniel",
+        "rank": 74,
+        "picture": "https://img.mlbstatic.com/mlb-photos/image/upload/c_fill,g_auto/w_180/v1/people/802192/headshot/milb/current",
+        "databaseLevel": "A+"
       },
       "doubleHeader": "N",
       "gameNumber": 1
