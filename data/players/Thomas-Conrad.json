@@ -3,7 +3,7 @@
   "name": "Thomas Conrad",
   "archived": false,
   "playerType": "Pitcher",
-  "generatedAt": "2026-09-05T12:07:29.481Z",
+  "generatedAt": "2026-09-05T15:16:13.760Z",
   "bio": {
     "Player-ID": "Thomas-Conrad",
     "MLBAM ID": "835213",
@@ -231,7 +231,7 @@
       "BB%": "14.70%",
       "K-BB %": "4.90%",
       "SwStr %": "12.30%",
-      "Whiff%": "27.5%",
+      "Whiff%": "27.1%",
       "WHIP": "1.51",
       "BABIP": "0.286",
       "LOB%": "71.6%",
@@ -245,14 +245,15 @@
   },
   "gamedayWhiff": {
     "mlbamID": "835213",
-    "swings": 378,
-    "whiffs": 104,
-    "contacts": 274,
-    "whiffPct": 27.5,
-    "contactPct": 72.5,
-    "games": 25,
+    "swings": 409,
+    "whiffs": 111,
+    "contacts": 298,
+    "whiffPct": 27.1,
+    "contactPct": 72.9,
+    "games": 26,
     "levels": [
-      "A"
+      "A",
+      "A+"
     ]
   },
   "videos": [

@@ -3,7 +3,7 @@
   "name": "Frederi Montero",
   "archived": false,
   "playerType": "Hitter",
-  "generatedAt": "2026-09-05T12:07:29.481Z",
+  "generatedAt": "2026-09-05T15:16:13.760Z",
   "bio": {
     "Player-ID": "Frederi-Montero",
     "MLBAM ID": "821149",
@@ -212,7 +212,7 @@
       "K%": "25.6%",
       "BB%": "15.1%",
       "SwStr %": "14.2%",
-      "Whiff%": "31.0%",
+      "Whiff%": "30.7%",
       "Pull %": "45.0%",
       "Cent %": "22.9%",
       "Oppo %": "32.2%",
@@ -228,12 +228,12 @@
   },
   "gamedayWhiff": {
     "mlbamID": "821149",
-    "swings": 781,
+    "swings": 789,
     "whiffs": 242,
-    "contacts": 539,
-    "whiffPct": 31,
-    "contactPct": 69,
-    "games": 103,
+    "contacts": 547,
+    "whiffPct": 30.7,
+    "contactPct": 69.3,
+    "games": 104,
     "levels": [
       "A"
     ]

@@ -3,7 +3,7 @@
   "name": "Ismael Yanez",
   "archived": false,
   "playerType": "Pitcher",
-  "generatedAt": "2026-09-05T12:07:29.481Z",
+  "generatedAt": "2026-09-05T15:16:13.760Z",
   "bio": {
     "Player-ID": "Ismael-Yanez",
     "MLBAM ID": "808254",
@@ -231,7 +231,7 @@
       "BB%": "24.80%",
       "K-BB %": "-0.70%",
       "SwStr %": "11.30%",
-      "Whiff%": "25.4%",
+      "Whiff%": "24.6%",
       "WHIP": "2.30",
       "BABIP": "0.377",
       "LOB%": "73.3%",
@@ -245,12 +245,12 @@
   },
   "gamedayWhiff": {
     "mlbamID": "808254",
-    "swings": 185,
-    "whiffs": 47,
-    "contacts": 138,
-    "whiffPct": 25.4,
-    "contactPct": 74.6,
-    "games": 18,
+    "swings": 203,
+    "whiffs": 50,
+    "contacts": 153,
+    "whiffPct": 24.6,
+    "contactPct": 75.4,
+    "games": 19,
     "levels": [
       "A"
     ]

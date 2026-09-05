@@ -3,7 +3,7 @@
   "name": "Joan Pena",
   "archived": false,
   "playerType": "Pitcher",
-  "generatedAt": "2026-09-05T12:07:29.481Z",
+  "generatedAt": "2026-09-05T15:16:13.760Z",
   "bio": {
     "Player-ID": "Joan-Pena",
     "MLBAM ID": "829877",
@@ -231,7 +231,7 @@
       "BB%": "16.20%",
       "K-BB %": "8.30%",
       "SwStr %": "13.00%",
-      "Whiff%": "23.2%",
+      "Whiff%": "27.3%",
       "WHIP": "1.94",
       "BABIP": "0.383",
       "LOB%": "56.9%",
@@ -245,12 +245,12 @@
   },
   "gamedayWhiff": {
     "mlbamID": "829877",
-    "swings": 99,
-    "whiffs": 23,
-    "contacts": 76,
-    "whiffPct": 23.2,
-    "contactPct": 76.8,
-    "games": 4,
+    "swings": 128,
+    "whiffs": 35,
+    "contacts": 93,
+    "whiffPct": 27.3,
+    "contactPct": 72.7,
+    "games": 5,
     "levels": [
       "A"
     ]

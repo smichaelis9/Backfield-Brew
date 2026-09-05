@@ -3,7 +3,7 @@
   "name": "Dariel Jaquez",
   "archived": false,
   "playerType": "Pitcher",
-  "generatedAt": "2026-09-05T12:07:29.481Z",
+  "generatedAt": "2026-09-05T15:16:13.760Z",
   "bio": {
     "Player-ID": "Dariel-Jaquez",
     "MLBAM ID": "821250",
@@ -231,7 +231,7 @@
       "BB%": "28.00%",
       "K-BB %": "-10.70%",
       "SwStr %": "9.50%",
-      "Whiff%": "34.0%",
+      "Whiff%": "21.4%",
       "WHIP": "2.50",
       "BABIP": "0.347",
       "LOB%": "60.9%",
@@ -243,7 +243,18 @@
       "Archived?": ""
     }
   },
-  "gamedayWhiff": null,
+  "gamedayWhiff": {
+    "mlbamID": "821250",
+    "swings": 14,
+    "whiffs": 3,
+    "contacts": 11,
+    "whiffPct": 21.4,
+    "contactPct": 78.6,
+    "games": 1,
+    "levels": [
+      "A"
+    ]
+  },
   "videos": [
     {
       "Player-ID": "Dariel-Jaquez",

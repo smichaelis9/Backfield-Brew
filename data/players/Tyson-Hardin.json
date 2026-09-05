@@ -3,7 +3,7 @@
   "name": "Tyson Hardin",
   "archived": false,
   "playerType": "Pitcher",
-  "generatedAt": "2026-09-05T12:07:29.481Z",
+  "generatedAt": "2026-09-05T15:16:13.760Z",
   "bio": {
     "Player-ID": "Tyson-Hardin",
     "MLBAM ID": "824620",
@@ -245,12 +245,12 @@
   },
   "gamedayWhiff": {
     "mlbamID": "824620",
-    "swings": 932,
-    "whiffs": 230,
-    "contacts": 702,
+    "swings": 983,
+    "whiffs": 243,
+    "contacts": 740,
     "whiffPct": 24.7,
     "contactPct": 75.3,
-    "games": 25,
+    "games": 26,
     "levels": [
       "AA",
       "AAA"

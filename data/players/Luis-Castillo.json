@@ -3,7 +3,7 @@
   "name": "Luis Castillo",
   "archived": false,
   "playerType": "Hitter",
-  "generatedAt": "2026-09-05T12:07:29.481Z",
+  "generatedAt": "2026-09-05T15:16:13.760Z",
   "bio": {
     "Player-ID": "Luis-Castillo",
     "MLBAM ID": "699127",
@@ -228,12 +228,12 @@
   },
   "gamedayWhiff": {
     "mlbamID": "699127",
-    "swings": 683,
-    "whiffs": 186,
-    "contacts": 497,
+    "swings": 690,
+    "whiffs": 188,
+    "contacts": 502,
     "whiffPct": 27.2,
     "contactPct": 72.8,
-    "games": 105,
+    "games": 106,
     "levels": [
       "A+"
     ]

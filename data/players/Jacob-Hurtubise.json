@@ -3,7 +3,7 @@
   "name": "Jacob Hurtubise",
   "archived": false,
   "playerType": "Hitter",
-  "generatedAt": "2026-09-05T12:07:29.481Z",
+  "generatedAt": "2026-09-05T15:16:13.760Z",
   "bio": {
     "Player-ID": "Jacob-Hurtubise",
     "MLBAM ID": "674441",
@@ -212,7 +212,7 @@
       "K%": "20.2%",
       "BB%": "14.5%",
       "SwStr %": "7.5%",
-      "Whiff%": "18.4%",
+      "Whiff%": "18.3%",
       "Pull %": "43.7%",
       "Cent %": "19.9%",
       "Oppo %": "36.4%",
@@ -228,12 +228,12 @@
   },
   "gamedayWhiff": {
     "mlbamID": "674441",
-    "swings": 408,
-    "whiffs": 75,
-    "contacts": 333,
-    "whiffPct": 18.4,
-    "contactPct": 81.6,
-    "games": 71,
+    "swings": 415,
+    "whiffs": 76,
+    "contacts": 339,
+    "whiffPct": 18.3,
+    "contactPct": 81.7,
+    "games": 72,
     "levels": [
       "AA",
       "AAA"
