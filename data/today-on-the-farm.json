@@ -1,6 +1,6 @@
 {
   "date": "2026-09-04",
-  "generatedAt": "2026-09-04T22:27:01.587Z",
+  "generatedAt": "2026-09-05T00:17:04.758Z",
   "affiliates": [
     {
       "teamId": 556,
@@ -76,17 +76,17 @@
       "opponentTeamId": 436,
       "venue": "Virginia Credit Union Stadium",
       "status": {
-        "key": "delayed",
-        "label": "Delayed Start"
+        "key": "live",
+        "label": "In Progress"
       },
       "score": {
-        "away": 0,
-        "home": 0
+        "away": 2,
+        "home": 11
       },
       "inning": {
-        "inning": 1,
-        "state": "Top",
-        "ordinal": "1st"
+        "inning": 3,
+        "state": "Bottom",
+        "ordinal": "3rd"
       },
       "probablePitcher": {
         "mlbamId": 821250,
@@ -115,11 +115,18 @@
       "opponentTeamId": 554,
       "venue": "ABC Supply Stadium",
       "status": {
-        "key": "scheduled",
-        "label": "Scheduled"
+        "key": "live",
+        "label": "In Progress"
       },
-      "score": null,
-      "inning": null,
+      "score": {
+        "away": 7,
+        "home": 4
+      },
+      "inning": {
+        "inning": 4,
+        "state": "Top",
+        "ordinal": "4th"
+      },
       "probablePitcher": {
         "mlbamId": 804986,
         "name": "Andrew Healy",
@@ -147,11 +154,18 @@
       "opponentTeamId": 416,
       "venue": "First Horizon Park",
       "status": {
-        "key": "scheduled",
-        "label": "Scheduled"
+        "key": "live",
+        "label": "In Progress"
       },
-      "score": null,
-      "inning": null,
+      "score": {
+        "away": 1,
+        "home": 0
+      },
+      "inning": {
+        "inning": 3,
+        "state": "Bottom",
+        "ordinal": "3rd"
+      },
       "probablePitcher": {
         "mlbamId": 824620,
         "name": "Tyson Hardin",
@@ -179,8 +193,8 @@
       "opponentTeamId": 247,
       "venue": "Keesler Federal Park",
       "status": {
-        "key": "scheduled",
-        "label": "Pre-Game"
+        "key": "delayed",
+        "label": "Delayed Start"
       },
       "score": {
         "away": 0,
