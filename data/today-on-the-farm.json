@@ -1,6 +1,6 @@
 {
   "date": "2026-09-05",
-  "generatedAt": "2026-09-05T19:19:43.116Z",
+  "generatedAt": "2026-09-05T21:28:54.360Z",
   "affiliates": [
     {
       "teamId": 556,
@@ -76,11 +76,18 @@
       "opponentTeamId": 247,
       "venue": "Keesler Federal Park",
       "status": {
-        "key": "scheduled",
-        "label": "Scheduled"
+        "key": "live",
+        "label": "Warmup"
       },
-      "score": null,
-      "inning": null,
+      "score": {
+        "away": 0,
+        "home": 0
+      },
+      "inning": {
+        "inning": 1,
+        "state": "Top",
+        "ordinal": "1st"
+      },
       "probablePitcher": {
         "mlbamId": 702505,
         "name": "J.D. Thompson",
