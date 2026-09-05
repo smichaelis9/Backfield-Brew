@@ -1,6 +1,6 @@
 {
   "date": "2026-09-04",
-  "generatedAt": "2026-09-05T00:17:04.758Z",
+  "generatedAt": "2026-09-05T04:47:51.057Z",
   "affiliates": [
     {
       "teamId": 556,
@@ -76,17 +76,17 @@
       "opponentTeamId": 436,
       "venue": "Virginia Credit Union Stadium",
       "status": {
-        "key": "live",
-        "label": "In Progress"
+        "key": "final",
+        "label": "Final"
       },
       "score": {
         "away": 2,
-        "home": 11
+        "home": 24
       },
       "inning": {
-        "inning": 3,
-        "state": "Bottom",
-        "ordinal": "3rd"
+        "inning": 9,
+        "state": "Top",
+        "ordinal": "9th"
       },
       "probablePitcher": {
         "mlbamId": 821250,
@@ -115,17 +115,17 @@
       "opponentTeamId": 554,
       "venue": "ABC Supply Stadium",
       "status": {
-        "key": "live",
-        "label": "In Progress"
+        "key": "final",
+        "label": "Final"
       },
       "score": {
-        "away": 7,
-        "home": 4
+        "away": 11,
+        "home": 12
       },
       "inning": {
-        "inning": 4,
-        "state": "Top",
-        "ordinal": "4th"
+        "inning": 9,
+        "state": "Bottom",
+        "ordinal": "9th"
       },
       "probablePitcher": {
         "mlbamId": 804986,
@@ -154,17 +154,17 @@
       "opponentTeamId": 416,
       "venue": "First Horizon Park",
       "status": {
-        "key": "live",
-        "label": "In Progress"
+        "key": "final",
+        "label": "Final"
       },
       "score": {
-        "away": 1,
-        "home": 0
+        "away": 4,
+        "home": 5
       },
       "inning": {
-        "inning": 3,
+        "inning": 9,
         "state": "Bottom",
-        "ordinal": "3rd"
+        "ordinal": "9th"
       },
       "probablePitcher": {
         "mlbamId": 824620,
@@ -193,18 +193,11 @@
       "opponentTeamId": 247,
       "venue": "Keesler Federal Park",
       "status": {
-        "key": "delayed",
-        "label": "Delayed Start"
+        "key": "postponed",
+        "label": "Postponed"
       },
-      "score": {
-        "away": 0,
-        "home": 0
-      },
-      "inning": {
-        "inning": 1,
-        "state": "Top",
-        "ordinal": "1st"
-      },
+      "score": null,
+      "inning": null,
       "probablePitcher": {
         "mlbamId": 809229,
         "name": "Jaron DeBerry",
