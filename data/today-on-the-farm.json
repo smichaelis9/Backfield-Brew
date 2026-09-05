@@ -1,6 +1,6 @@
 {
   "date": "2026-09-05",
-  "generatedAt": "2026-09-05T21:28:54.360Z",
+  "generatedAt": "2026-09-05T23:11:39.407Z",
   "affiliates": [
     {
       "teamId": 556,
@@ -77,16 +77,16 @@
       "venue": "Keesler Federal Park",
       "status": {
         "key": "live",
-        "label": "Warmup"
+        "label": "In Progress"
       },
       "score": {
-        "away": 0,
-        "home": 0
+        "away": 1,
+        "home": 1
       },
       "inning": {
-        "inning": 1,
+        "inning": 6,
         "state": "Top",
-        "ordinal": "1st"
+        "ordinal": "6th"
       },
       "probablePitcher": {
         "mlbamId": 702505,
@@ -139,11 +139,18 @@
       "opponentTeamId": 436,
       "venue": "Virginia Credit Union Stadium",
       "status": {
-        "key": "scheduled",
-        "label": "Scheduled"
+        "key": "delayed",
+        "label": "Delayed Start"
       },
-      "score": null,
-      "inning": null,
+      "score": {
+        "away": 0,
+        "home": 0
+      },
+      "inning": {
+        "inning": 1,
+        "state": "Top",
+        "ordinal": "1st"
+      },
       "probablePitcher": {
         "mlbamId": 827980,
         "name": "Frank Cairone",
@@ -172,10 +179,17 @@
       "venue": "First Horizon Park",
       "status": {
         "key": "scheduled",
-        "label": "Scheduled"
+        "label": "Pre-Game"
       },
-      "score": null,
-      "inning": null,
+      "score": {
+        "away": 0,
+        "home": 0
+      },
+      "inning": {
+        "inning": 1,
+        "state": "Top",
+        "ordinal": "1st"
+      },
       "probablePitcher": {
         "mlbamId": 804249,
         "name": "Tate Kuehner",
@@ -204,10 +218,17 @@
       "venue": "ABC Supply Stadium",
       "status": {
         "key": "scheduled",
-        "label": "Scheduled"
+        "label": "Pre-Game"
       },
-      "score": null,
-      "inning": null,
+      "score": {
+        "away": 0,
+        "home": 0
+      },
+      "inning": {
+        "inning": 1,
+        "state": "Top",
+        "ordinal": "1st"
+      },
       "probablePitcher": {
         "mlbamId": 802192,
         "name": "Daniel Corniel",
