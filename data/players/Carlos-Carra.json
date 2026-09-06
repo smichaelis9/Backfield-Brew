@@ -3,7 +3,7 @@
   "name": "Carlos Carra",
   "archived": false,
   "playerType": "Pitcher",
-  "generatedAt": "2026-09-06T14:09:03.894Z",
+  "generatedAt": "2026-09-06T17:05:14.252Z",
   "bio": {
     "Player-ID": "Carlos-Carra",
     "MLBAM ID": "820902",
@@ -413,6 +413,23 @@
     }
   ],
   "transactions": [
+    {
+      "Transaction ID": "941467",
+      "Date": "2026-09-06",
+      "Effective Date": "2026-09-06",
+      "MLBAM ID": "820902",
+      "Player": "Carlos Carra",
+      "Position": "",
+      "From Team": "",
+      "To Team": "Wilson Warbirds",
+      "Level": "MiLB",
+      "Type": "Activated",
+      "Description": "Wilson Warbirds activated RHP Carlos Carra from the 7-day injured list.",
+      "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2026-09",
+      "Imported At": "09/06/2026 11:46:43",
+      "Player ID": "Carlos-Carra",
+      "Archived?": ""
+    },
     {
       "Transaction ID": "939635",
       "Date": "2026-08-26",
