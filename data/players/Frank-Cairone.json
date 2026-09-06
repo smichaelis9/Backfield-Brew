@@ -3,7 +3,7 @@
   "name": "Frank Cairone",
   "archived": false,
   "playerType": "Pitcher",
-  "generatedAt": "2026-09-06T11:01:49.451Z",
+  "generatedAt": "2026-09-06T14:09:03.894Z",
   "bio": {
     "Player-ID": "Frank-Cairone",
     "MLBAM ID": "827980",
@@ -231,7 +231,7 @@
       "BB%": "23.30%",
       "K-BB %": "0.00%",
       "SwStr %": "12.40%",
-      "Whiff%": "47.1%",
+      "Whiff%": "36.8%",
       "WHIP": "1.69",
       "BABIP": "0.154",
       "LOB%": "41.7%",
@@ -243,7 +243,18 @@
       "Archived?": ""
     }
   },
-  "gamedayWhiff": null,
+  "gamedayWhiff": {
+    "mlbamID": "827980",
+    "swings": 19,
+    "whiffs": 7,
+    "contacts": 12,
+    "whiffPct": 36.8,
+    "contactPct": 63.2,
+    "games": 1,
+    "levels": [
+      "A"
+    ]
+  },
   "videos": [
     {
       "Player-ID": "Frank-Cairone",

@@ -3,7 +3,7 @@
   "name": "Brady Ebel",
   "archived": false,
   "playerType": "Hitter",
-  "generatedAt": "2026-09-06T11:01:49.451Z",
+  "generatedAt": "2026-09-06T14:09:03.894Z",
   "bio": {
     "Player-ID": "Brady-Ebel",
     "MLBAM ID": "815816",
@@ -228,12 +228,12 @@
   },
   "gamedayWhiff": {
     "mlbamID": "815816",
-    "swings": 874,
-    "whiffs": 201,
-    "contacts": 673,
+    "swings": 878,
+    "whiffs": 202,
+    "contacts": 676,
     "whiffPct": 23,
     "contactPct": 77,
-    "games": 113,
+    "games": 114,
     "levels": [
       "A",
       "A+"

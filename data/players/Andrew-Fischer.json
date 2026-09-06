@@ -3,7 +3,7 @@
   "name": "Andrew Fischer",
   "archived": false,
   "playerType": "Hitter",
-  "generatedAt": "2026-09-06T11:01:49.451Z",
+  "generatedAt": "2026-09-06T14:09:03.894Z",
   "bio": {
     "Player-ID": "Andrew-Fischer",
     "MLBAM ID": "702652",
@@ -212,7 +212,7 @@
       "K%": "34.2%",
       "BB%": "17.0%",
       "SwStr %": "15.6%",
-      "Whiff%": "36.4%",
+      "Whiff%": "36.2%",
       "Pull %": "56.7%",
       "Cent %": "25.0%",
       "Oppo %": "18.3%",
@@ -228,12 +228,12 @@
   },
   "gamedayWhiff": {
     "mlbamID": "702652",
-    "swings": 978,
-    "whiffs": 356,
-    "contacts": 622,
-    "whiffPct": 36.4,
-    "contactPct": 63.6,
-    "games": 117,
+    "swings": 996,
+    "whiffs": 361,
+    "contacts": 635,
+    "whiffPct": 36.2,
+    "contactPct": 63.8,
+    "games": 119,
     "levels": [
       "A+",
       "AA"

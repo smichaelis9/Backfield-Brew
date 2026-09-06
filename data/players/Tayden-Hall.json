@@ -3,7 +3,7 @@
   "name": "Tayden Hall",
   "archived": false,
   "playerType": "Hitter",
-  "generatedAt": "2026-09-06T11:01:49.451Z",
+  "generatedAt": "2026-09-06T14:09:03.894Z",
   "bio": {
     "Player-ID": "Tayden-Hall",
     "MLBAM ID": "695554",
@@ -212,7 +212,7 @@
       "K%": "23.7%",
       "BB%": "18.3%",
       "SwStr %": "10.4%",
-      "Whiff%": "27.1%",
+      "Whiff%": "27.2%",
       "Pull %": "42.2%",
       "Cent %": "24.8%",
       "Oppo %": "33.0%",
@@ -228,12 +228,12 @@
   },
   "gamedayWhiff": {
     "mlbamID": "695554",
-    "swings": 571,
-    "whiffs": 155,
-    "contacts": 416,
-    "whiffPct": 27.1,
-    "contactPct": 72.9,
-    "games": 90,
+    "swings": 578,
+    "whiffs": 157,
+    "contacts": 421,
+    "whiffPct": 27.2,
+    "contactPct": 72.8,
+    "games": 91,
     "levels": [
       "A+",
       "AA"

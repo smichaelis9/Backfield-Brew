@@ -3,7 +3,7 @@
   "name": "Rylan Mills",
   "archived": false,
   "playerType": "Hitter",
-  "generatedAt": "2026-09-06T11:01:49.451Z",
+  "generatedAt": "2026-09-06T14:09:03.894Z",
   "bio": {
     "Player-ID": "Rylan-Mills",
     "MLBAM ID": "836079",
@@ -212,7 +212,7 @@
       "K%": "33.7%",
       "BB%": "16.1%",
       "SwStr %": "16.4%",
-      "Whiff%": "38.5%",
+      "Whiff%": "38.7%",
       "Pull %": "50.4%",
       "Cent %": "25.6%",
       "Oppo %": "24.0%",
@@ -228,12 +228,12 @@
   },
   "gamedayWhiff": {
     "mlbamID": "836079",
-    "swings": 457,
-    "whiffs": 176,
-    "contacts": 281,
-    "whiffPct": 38.5,
-    "contactPct": 61.5,
-    "games": 59,
+    "swings": 463,
+    "whiffs": 179,
+    "contacts": 284,
+    "whiffPct": 38.7,
+    "contactPct": 61.3,
+    "games": 60,
     "levels": [
       "A"
     ]

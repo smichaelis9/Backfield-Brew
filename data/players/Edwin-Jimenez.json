@@ -3,7 +3,7 @@
   "name": "Edwin Jimenez",
   "archived": false,
   "playerType": "Pitcher",
-  "generatedAt": "2026-09-06T11:01:49.451Z",
+  "generatedAt": "2026-09-06T14:09:03.894Z",
   "bio": {
     "Player-ID": "Edwin-Jimenez",
     "MLBAM ID": "683720",
@@ -231,7 +231,7 @@
       "BB%": "7.20%",
       "K-BB %": "15.40%",
       "SwStr %": "11.10%",
-      "Whiff%": "23.1%",
+      "Whiff%": "22.8%",
       "WHIP": "1.32",
       "BABIP": "0.279",
       "LOB%": "86.6%",
@@ -245,12 +245,12 @@
   },
   "gamedayWhiff": {
     "mlbamID": "683720",
-    "swings": 368,
-    "whiffs": 85,
-    "contacts": 283,
-    "whiffPct": 23.1,
-    "contactPct": 76.9,
-    "games": 32,
+    "swings": 378,
+    "whiffs": 86,
+    "contacts": 292,
+    "whiffPct": 22.8,
+    "contactPct": 77.2,
+    "games": 33,
     "levels": [
       "AA"
     ]

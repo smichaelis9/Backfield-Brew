@@ -3,7 +3,7 @@
   "name": "Luis Peña",
   "archived": false,
   "playerType": "Hitter",
-  "generatedAt": "2026-09-06T11:01:49.451Z",
+  "generatedAt": "2026-09-06T14:09:03.894Z",
   "bio": {
     "Player-ID": "Luis-Pena",
     "MLBAM ID": "821270",
@@ -212,7 +212,7 @@
       "K%": "20.1%",
       "BB%": "10.4%",
       "SwStr %": "12.3%",
-      "Whiff%": "24.4%",
+      "Whiff%": "24.3%",
       "Pull %": "41.2%",
       "Cent %": "24.7%",
       "Oppo %": "34.0%",
@@ -228,12 +228,12 @@
   },
   "gamedayWhiff": {
     "mlbamID": "821270",
-    "swings": 505,
-    "whiffs": 123,
-    "contacts": 382,
-    "whiffPct": 24.4,
-    "contactPct": 75.6,
-    "games": 65,
+    "swings": 511,
+    "whiffs": 124,
+    "contacts": 387,
+    "whiffPct": 24.3,
+    "contactPct": 75.7,
+    "games": 67,
     "levels": [
       "A+",
       "AA"

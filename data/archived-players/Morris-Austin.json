@@ -3,7 +3,7 @@
   "name": "Morris Austin",
   "archived": true,
   "playerType": "Pitcher",
-  "generatedAt": "2026-09-06T11:01:49.451Z",
+  "generatedAt": "2026-09-06T14:09:03.894Z",
   "bio": {
     "Player-ID": "Morris-Austin",
     "MLBAM ID": "809459",
@@ -229,7 +229,7 @@
       "BB%": "",
       "K-BB %": "",
       "SwStr %": "",
-      "Whiff%": "25.5%",
+      "Whiff%": "23.7%",
       "WHIP": "",
       "BABIP": "",
       "LOB%": "",
@@ -243,12 +243,12 @@
   },
   "gamedayWhiff": {
     "mlbamID": "809459",
-    "swings": 47,
-    "whiffs": 12,
-    "contacts": 35,
-    "whiffPct": 25.5,
-    "contactPct": 74.5,
-    "games": 4,
+    "swings": 59,
+    "whiffs": 14,
+    "contacts": 45,
+    "whiffPct": 23.7,
+    "contactPct": 76.3,
+    "games": 5,
     "levels": [
       "AA",
       "AAA"
