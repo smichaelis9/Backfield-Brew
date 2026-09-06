@@ -1,6 +1,6 @@
 {
   "date": "2026-09-06",
-  "generatedAt": "2026-09-06T18:30:38.326Z",
+  "generatedAt": "2026-09-06T20:50:22.090Z",
   "affiliates": [
     {
       "teamId": 556,
@@ -76,17 +76,17 @@
       "opponentTeamId": 416,
       "venue": "First Horizon Park",
       "status": {
-        "key": "live",
-        "label": "In Progress"
+        "key": "final",
+        "label": "Final"
       },
       "score": {
         "away": 2,
-        "home": 2
+        "home": 4
       },
       "inning": {
-        "inning": 5,
-        "state": "Bottom",
-        "ordinal": "5th"
+        "inning": 9,
+        "state": "Top",
+        "ordinal": "9th"
       },
       "probablePitcher": {
         "mlbamId": 676467,
@@ -115,17 +115,17 @@
       "opponentTeamId": 436,
       "venue": "Virginia Credit Union Stadium",
       "status": {
-        "key": "live",
-        "label": "In Progress"
+        "key": "final",
+        "label": "Final"
       },
       "score": {
-        "away": 0,
-        "home": 2
+        "away": 2,
+        "home": 7
       },
       "inning": {
-        "inning": 3,
-        "state": "Bottom",
-        "ordinal": "3rd"
+        "inning": 9,
+        "state": "Top",
+        "ordinal": "9th"
       },
       "probablePitcher": {
         "mlbamId": 815300,
@@ -158,13 +158,13 @@
         "label": "In Progress"
       },
       "score": {
-        "away": 3,
-        "home": 1
+        "away": 8,
+        "home": 5
       },
       "inning": {
-        "inning": 1,
-        "state": "End",
-        "ordinal": "1st"
+        "inning": 9,
+        "state": "Top",
+        "ordinal": "9th"
       },
       "probablePitcher": {
         "mlbamId": 828475,
