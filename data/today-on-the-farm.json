@@ -1,6 +1,6 @@
 {
   "date": "2026-09-06",
-  "generatedAt": "2026-09-06T16:16:21.817Z",
+  "generatedAt": "2026-09-06T18:30:38.326Z",
   "affiliates": [
     {
       "teamId": 556,
@@ -76,11 +76,18 @@
       "opponentTeamId": 416,
       "venue": "First Horizon Park",
       "status": {
-        "key": "scheduled",
-        "label": "Scheduled"
+        "key": "live",
+        "label": "In Progress"
       },
-      "score": null,
-      "inning": null,
+      "score": {
+        "away": 2,
+        "home": 2
+      },
+      "inning": {
+        "inning": 5,
+        "state": "Bottom",
+        "ordinal": "5th"
+      },
       "probablePitcher": {
         "mlbamId": 676467,
         "name": "Colton Gordon",
@@ -108,11 +115,18 @@
       "opponentTeamId": 436,
       "venue": "Virginia Credit Union Stadium",
       "status": {
-        "key": "scheduled",
-        "label": "Scheduled"
+        "key": "live",
+        "label": "In Progress"
       },
-      "score": null,
-      "inning": null,
+      "score": {
+        "away": 0,
+        "home": 2
+      },
+      "inning": {
+        "inning": 3,
+        "state": "Bottom",
+        "ordinal": "3rd"
+      },
       "probablePitcher": {
         "mlbamId": 815300,
         "name": "Hayden Robinson",
@@ -140,11 +154,18 @@
       "opponentTeamId": 554,
       "venue": "ABC Supply Stadium",
       "status": {
-        "key": "scheduled",
-        "label": "Scheduled"
+        "key": "live",
+        "label": "In Progress"
       },
-      "score": null,
-      "inning": null,
+      "score": {
+        "away": 3,
+        "home": 1
+      },
+      "inning": {
+        "inning": 1,
+        "state": "End",
+        "ordinal": "1st"
+      },
       "probablePitcher": {
         "mlbamId": 828475,
         "name": "Ethan Dorchies",
