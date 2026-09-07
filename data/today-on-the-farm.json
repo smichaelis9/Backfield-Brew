@@ -1,6 +1,6 @@
 {
-  "date": "2026-09-06",
-  "generatedAt": "2026-09-07T00:21:05.942Z",
+  "date": "2026-09-07",
+  "generatedAt": "2026-09-07T05:01:21.575Z",
   "affiliates": [
     {
       "teamId": 556,
@@ -59,161 +59,29 @@
       "leagueName": "Dominican Summer League"
     }
   ],
-  "gameCount": 4,
+  "gameCount": 1,
   "games": [
     {
-      "key": "816084:556",
-      "gamePk": 816084,
-      "date": "2026-09-06",
-      "gameDate": "2026-09-06T17:05:00Z",
+      "key": "816678:556",
+      "gamePk": 816678,
+      "date": "2026-09-07",
+      "gameDate": "2026-09-07T21:05:00Z",
       "affiliate": "Nashville Sounds",
       "affiliateTeamId": 556,
       "level": "AAA",
       "leagueId": 117,
       "leagueName": "International League",
-      "homeAway": "home",
-      "opponent": "Louisville Bats",
-      "opponentTeamId": 416,
-      "venue": "First Horizon Park",
-      "status": {
-        "key": "final",
-        "label": "Final"
-      },
-      "score": {
-        "away": 2,
-        "home": 4
-      },
-      "inning": {
-        "inning": 9,
-        "state": "Top",
-        "ordinal": "9th"
-      },
-      "probablePitcher": {
-        "mlbamId": 676467,
-        "name": "Colton Gordon",
-        "inDatabase": false,
-        "playerId": "",
-        "rank": null,
-        "picture": "",
-        "databaseLevel": ""
-      },
-      "doubleHeader": "N",
-      "gameNumber": 1
-    },
-    {
-      "key": "827159:249",
-      "gamePk": 827159,
-      "date": "2026-09-06",
-      "gameDate": "2026-09-06T17:35:00Z",
-      "affiliate": "Wilson Warbirds",
-      "affiliateTeamId": 249,
-      "level": "A",
-      "leagueId": 122,
-      "leagueName": "Carolina League",
       "homeAway": "away",
-      "opponent": "Fredericksburg Nationals",
-      "opponentTeamId": 436,
-      "venue": "Virginia Credit Union Stadium",
+      "opponent": "Durham Bulls",
+      "opponentTeamId": 234,
+      "venue": "Durham Bulls Athletic Park",
       "status": {
-        "key": "final",
-        "label": "Final"
+        "key": "scheduled",
+        "label": "Scheduled"
       },
-      "score": {
-        "away": 2,
-        "home": 7
-      },
-      "inning": {
-        "inning": 9,
-        "state": "Top",
-        "ordinal": "9th"
-      },
-      "probablePitcher": {
-        "mlbamId": 815300,
-        "name": "Hayden Robinson",
-        "inDatabase": true,
-        "playerId": "Hayden-Robinson",
-        "rank": 71,
-        "picture": "https://img.mlbstatic.com/mlb-photos/image/upload/c_fill,g_auto/w_360/v1/people/815300/headshot/milb/current",
-        "databaseLevel": "A"
-      },
-      "doubleHeader": "N",
-      "gameNumber": 1
-    },
-    {
-      "key": "820167:572",
-      "gamePk": 820167,
-      "date": "2026-09-06",
-      "gameDate": "2026-09-06T18:05:00Z",
-      "affiliate": "Wisconsin Timber Rattlers",
-      "affiliateTeamId": 572,
-      "level": "A+",
-      "leagueId": 118,
-      "leagueName": "Midwest League",
-      "homeAway": "away",
-      "opponent": "Beloit Sky Carp",
-      "opponentTeamId": 554,
-      "venue": "ABC Supply Stadium",
-      "status": {
-        "key": "final",
-        "label": "Final"
-      },
-      "score": {
-        "away": 8,
-        "home": 5
-      },
-      "inning": {
-        "inning": 9,
-        "state": "Bottom",
-        "ordinal": "9th"
-      },
-      "probablePitcher": {
-        "mlbamId": 828475,
-        "name": "Ethan Dorchies",
-        "inDatabase": true,
-        "playerId": "Ethan-Dorchies",
-        "rank": 22,
-        "picture": "https://img.mlbstatic.com/mlb-photos/image/upload/c_fill,g_auto/w_180/v1/people/828475/headshot/milb/current",
-        "databaseLevel": "A+"
-      },
-      "doubleHeader": "N",
-      "gameNumber": 1
-    },
-    {
-      "key": "818150:5015",
-      "gamePk": 818150,
-      "date": "2026-09-06",
-      "gameDate": "2026-09-06T22:05:00Z",
-      "affiliate": "Biloxi Shuckers",
-      "affiliateTeamId": 5015,
-      "level": "AA",
-      "leagueId": 111,
-      "leagueName": "Southern League",
-      "homeAway": "home",
-      "opponent": "Birmingham Barons",
-      "opponentTeamId": 247,
-      "venue": "Keesler Federal Park",
-      "status": {
-        "key": "live",
-        "label": "In Progress"
-      },
-      "score": {
-        "away": 1,
-        "home": 7
-      },
-      "inning": {
-        "inning": 8,
-        "state": "Bottom",
-        "ordinal": "8th"
-      },
-      "probablePitcher": {
-        "mlbamId": 805807,
-        "name": "Josh Knoth",
-        "inDatabase": true,
-        "playerId": "Josh-Knoth",
-        "rank": 14,
-        "picture": "https://img.mlbstatic.com/mlb-photos/image/upload/c_fill,g_auto/w_180/v1/people/805807/headshot/milb/current",
-        "databaseLevel": "AA"
-      },
+      "score": null,
+      "inning": null,
+      "probablePitcher": null,
       "doubleHeader": "N",
       "gameNumber": 1
     }
