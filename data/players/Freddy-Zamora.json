@@ -3,7 +3,7 @@
   "name": "Freddy Zamora",
   "archived": false,
   "playerType": "Hitter",
-  "generatedAt": "2026-09-07T17:30:32.518Z",
+  "generatedAt": "2026-09-07T20:47:03.760Z",
   "bio": {
     "Player-ID": "Freddy-Zamora",
     "MLBAM ID": "668965",
@@ -396,6 +396,23 @@
     }
   ],
   "transactions": [
+    {
+      "Transaction ID": "941544",
+      "Date": "2026-09-07",
+      "Effective Date": "2026-09-07",
+      "MLBAM ID": "668965",
+      "Player": "Freddy Zamora",
+      "Position": "",
+      "From Team": "",
+      "To Team": "Nashville Sounds",
+      "Level": "MiLB",
+      "Type": "Activated",
+      "Description": "Nashville Sounds activated SS Freddy Zamora from the 7-day injured list.",
+      "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2026-09",
+      "Imported At": "09/07/2026 15:46:26",
+      "Player ID": "Freddy-Zamora",
+      "Archived?": ""
+    },
     {
       "Transaction ID": "938782",
       "Date": "2026-08-20",
