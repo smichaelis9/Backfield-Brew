@@ -3,7 +3,7 @@
   "name": "Edgardo Ordonez",
   "archived": false,
   "playerType": "Hitter",
-  "generatedAt": "2026-09-07T11:54:37.324Z",
+  "generatedAt": "2026-09-07T17:30:32.518Z",
   "bio": {
     "Player-ID": "Edgardo-Ordonez",
     "MLBAM ID": "699166",
@@ -212,7 +212,7 @@
       "K%": "31.0%",
       "BB%": "4.8%",
       "SwStr %": "16.9%",
-      "Whiff%": "35.1%",
+      "Whiff%": "36.1%",
       "Pull %": "59.3%",
       "Cent %": "18.5%",
       "Oppo %": "22.2%",
@@ -228,12 +228,12 @@
   },
   "gamedayWhiff": {
     "mlbamID": "699166",
-    "swings": 77,
-    "whiffs": 27,
-    "contacts": 50,
-    "whiffPct": 35.1,
-    "contactPct": 64.9,
-    "games": 13,
+    "swings": 83,
+    "whiffs": 30,
+    "contacts": 53,
+    "whiffPct": 36.1,
+    "contactPct": 63.9,
+    "games": 14,
     "levels": [
       "A+",
       "AA"

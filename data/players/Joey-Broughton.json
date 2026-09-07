@@ -3,7 +3,7 @@
   "name": "Joey Broughton",
   "archived": false,
   "playerType": "Pitcher",
-  "generatedAt": "2026-09-07T11:54:37.324Z",
+  "generatedAt": "2026-09-07T17:30:32.518Z",
   "bio": {
     "Player-ID": "Joey-Broughton",
     "MLBAM ID": "820833",
@@ -231,7 +231,7 @@
       "BB%": "14.70%",
       "K-BB %": "6.10%",
       "SwStr %": "8.80%",
-      "Whiff%": "20.4%",
+      "Whiff%": "20.8%",
       "WHIP": "1.80",
       "BABIP": "0.347",
       "LOB%": "62.6%",
@@ -245,12 +245,12 @@
   },
   "gamedayWhiff": {
     "mlbamID": "820833",
-    "swings": 329,
-    "whiffs": 67,
-    "contacts": 262,
-    "whiffPct": 20.4,
-    "contactPct": 79.6,
-    "games": 14,
+    "swings": 336,
+    "whiffs": 70,
+    "contacts": 266,
+    "whiffPct": 20.8,
+    "contactPct": 79.2,
+    "games": 15,
     "levels": [
       "A"
     ]

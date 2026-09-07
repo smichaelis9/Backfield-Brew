@@ -3,7 +3,7 @@
   "name": "Ethan Dorchies",
   "archived": false,
   "playerType": "Pitcher",
-  "generatedAt": "2026-09-07T11:54:37.324Z",
+  "generatedAt": "2026-09-07T17:30:32.518Z",
   "bio": {
     "Player-ID": "Ethan-Dorchies",
     "MLBAM ID": "828475",
@@ -231,7 +231,7 @@
       "BB%": "9.30%",
       "K-BB %": "10.50%",
       "SwStr %": "10.40%",
-      "Whiff%": "21.5%",
+      "Whiff%": "21.4%",
       "WHIP": "1.52",
       "BABIP": "0.319",
       "LOB%": "64.1%",
@@ -245,12 +245,12 @@
   },
   "gamedayWhiff": {
     "mlbamID": "828475",
-    "swings": 897,
-    "whiffs": 193,
-    "contacts": 704,
-    "whiffPct": 21.5,
-    "contactPct": 78.5,
-    "games": 24,
+    "swings": 926,
+    "whiffs": 198,
+    "contacts": 728,
+    "whiffPct": 21.4,
+    "contactPct": 78.6,
+    "games": 25,
     "levels": [
       "A+"
     ]
