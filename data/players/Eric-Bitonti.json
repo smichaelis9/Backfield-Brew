@@ -3,7 +3,7 @@
   "name": "Eric Bitonti",
   "archived": false,
   "playerType": "Hitter",
-  "generatedAt": "2026-09-08T18:54:00.362Z",
+  "generatedAt": "2026-09-08T21:40:43.569Z",
   "bio": {
     "Player-ID": "Eric-Bitonti",
     "MLBAM ID": "800724",
@@ -396,6 +396,23 @@
     }
   ],
   "transactions": [
+    {
+      "Transaction ID": "941665",
+      "Date": "2026-09-08",
+      "Effective Date": "2026-09-08",
+      "MLBAM ID": "800724",
+      "Player": "Eric Bitonti",
+      "Position": "",
+      "From Team": "Wisconsin Timber Rattlers",
+      "To Team": "Biloxi Shuckers",
+      "Level": "MiLB",
+      "Type": "Signed",
+      "Description": "1B Eric Bitonti assigned to Biloxi Shuckers from Wisconsin Timber Rattlers.",
+      "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2026-09",
+      "Imported At": "09/08/2026 14:46:37",
+      "Player ID": "Eric-Bitonti",
+      "Archived?": ""
+    },
     {
       "Transaction ID": "895426",
       "Date": "2026-03-31",

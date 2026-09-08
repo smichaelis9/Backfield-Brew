@@ -3,7 +3,7 @@
   "name": "Daniel Dickinson",
   "archived": false,
   "playerType": "Hitter",
-  "generatedAt": "2026-09-08T18:54:00.362Z",
+  "generatedAt": "2026-09-08T21:40:43.569Z",
   "bio": {
     "Player-ID": "Daniel-Dickinson",
     "MLBAM ID": "823658",
@@ -396,6 +396,23 @@
     }
   ],
   "transactions": [
+    {
+      "Transaction ID": "941664",
+      "Date": "2026-09-08",
+      "Effective Date": "2026-09-08",
+      "MLBAM ID": "823658",
+      "Player": "Daniel Dickinson",
+      "Position": "",
+      "From Team": "Wisconsin Timber Rattlers",
+      "To Team": "Biloxi Shuckers",
+      "Level": "MiLB",
+      "Type": "Signed",
+      "Description": "2B Daniel Dickinson assigned to Biloxi Shuckers from Wisconsin Timber Rattlers.",
+      "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2026-09",
+      "Imported At": "09/08/2026 14:46:37",
+      "Player ID": "Daniel-Dickinson",
+      "Archived?": ""
+    },
     {
       "Transaction ID": "895429",
       "Date": "2026-03-31",
