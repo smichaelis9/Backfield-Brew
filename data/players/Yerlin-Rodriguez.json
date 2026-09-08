@@ -3,7 +3,7 @@
   "name": "Yerlin Rodriguez",
   "archived": false,
   "playerType": "Pitcher",
-  "generatedAt": "2026-09-08T11:37:50.163Z",
+  "generatedAt": "2026-09-08T15:00:22.214Z",
   "bio": {
     "Player-ID": "Yerlin-Rodriguez",
     "MLBAM ID": "693750",
@@ -215,7 +215,7 @@
       "Player": "Yerlin Rodriguez",
       "ERA": "6.63",
       "FIP": "6.88",
-      "xFIP": "6.97",
+      "xFIP": "6.96",
       "IP": "38",
       "G": "37",
       "GS": "0",

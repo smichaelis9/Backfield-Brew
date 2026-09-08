@@ -3,7 +3,7 @@
   "name": "Quinton Low",
   "archived": false,
   "playerType": "Pitcher",
-  "generatedAt": "2026-09-08T11:37:50.163Z",
+  "generatedAt": "2026-09-08T15:00:22.214Z",
   "bio": {
     "Player-ID": "Quinton-Low",
     "MLBAM ID": "701703",
@@ -215,7 +215,7 @@
       "Player": "Quinton Low",
       "ERA": "9.35",
       "FIP": "6.17",
-      "xFIP": "6.09",
+      "xFIP": "6.08",
       "IP": "34.2",
       "G": "25",
       "GS": "0",

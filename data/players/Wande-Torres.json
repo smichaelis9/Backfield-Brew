@@ -3,7 +3,7 @@
   "name": "Wande Torres",
   "archived": false,
   "playerType": "Pitcher",
-  "generatedAt": "2026-09-08T11:37:50.163Z",
+  "generatedAt": "2026-09-08T15:00:22.214Z",
   "bio": {
     "Player-ID": "Wande-Torres",
     "MLBAM ID": "800485",
@@ -215,7 +215,7 @@
       "Player": "Wande Torres",
       "ERA": "3.98",
       "FIP": "4.50",
-      "xFIP": "4.64",
+      "xFIP": "4.63",
       "IP": "120",
       "G": "25",
       "GS": "18",

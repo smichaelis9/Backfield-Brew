@@ -3,7 +3,7 @@
   "name": "Enniel Cortez",
   "archived": false,
   "playerType": "Pitcher",
-  "generatedAt": "2026-09-08T11:37:50.163Z",
+  "generatedAt": "2026-09-08T15:00:22.214Z",
   "bio": {
     "Player-ID": "Enniel-Cortez",
     "MLBAM ID": "808308",
@@ -215,7 +215,7 @@
       "Player": "Enniel Cortez",
       "ERA": "7.47",
       "FIP": "5.96",
-      "xFIP": "5.42",
+      "xFIP": "5.41",
       "IP": "37.1",
       "G": "14",
       "GS": "8",

@@ -3,7 +3,7 @@
   "name": "Jayden Dubanewicz",
   "archived": false,
   "playerType": "Pitcher",
-  "generatedAt": "2026-09-08T11:37:50.163Z",
+  "generatedAt": "2026-09-08T15:00:22.214Z",
   "bio": {
     "Player-ID": "Jayden-Dubanewicz",
     "MLBAM ID": "803848",
@@ -215,7 +215,7 @@
       "Player": "Jayden Dubanewicz",
       "ERA": "4.41",
       "FIP": "4.89",
-      "xFIP": "5.37",
+      "xFIP": "5.35",
       "IP": "79.2",
       "G": "20",
       "GS": "15",

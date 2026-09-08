@@ -3,7 +3,7 @@
   "name": "Yorman Galindez",
   "archived": false,
   "playerType": "Pitcher",
-  "generatedAt": "2026-09-08T11:37:50.163Z",
+  "generatedAt": "2026-09-08T15:00:22.214Z",
   "bio": {
     "Player-ID": "Yorman-Galindez",
     "MLBAM ID": "800223",
@@ -214,8 +214,8 @@
       "Player-ID": "Yorman-Galindez",
       "Player": "Yorman Galindez",
       "ERA": "6.55",
-      "FIP": "5.26",
-      "xFIP": "5.48",
+      "FIP": "5.24",
+      "xFIP": "5.47",
       "IP": "67.1",
       "G": "26",
       "GS": "15",
@@ -414,6 +414,23 @@
     }
   ],
   "transactions": [
+    {
+      "Transaction ID": "941576",
+      "Date": "2026-09-07",
+      "Effective Date": "2026-09-07",
+      "MLBAM ID": "800223",
+      "Player": "Yorman Galindez",
+      "Position": "",
+      "From Team": "",
+      "To Team": "Biloxi Shuckers",
+      "Level": "MiLB",
+      "Type": "Injured List",
+      "Description": "Biloxi Shuckers placed RHP Yorman Galindez on the 7-day injured list.",
+      "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2026-09",
+      "Imported At": "09/08/2026 08:46:29",
+      "Player ID": "Yorman-Galindez",
+      "Archived?": ""
+    },
     {
       "Transaction ID": "911591",
       "Date": "2026-05-26",

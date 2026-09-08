@@ -3,7 +3,7 @@
   "name": "Luke Roupe",
   "archived": false,
   "playerType": "Pitcher",
-  "generatedAt": "2026-09-08T11:37:50.163Z",
+  "generatedAt": "2026-09-08T15:00:22.214Z",
   "bio": {
     "Player-ID": "Luke-Roupe",
     "MLBAM ID": "828069",
@@ -214,7 +214,7 @@
       "Player-ID": "Luke-Roupe",
       "Player": "Luke Roupe",
       "ERA": "9.24",
-      "FIP": "7.35",
+      "FIP": "7.36",
       "xFIP": "6.90",
       "IP": "37",
       "G": "15",

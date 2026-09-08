@@ -3,7 +3,7 @@
   "name": "Jadher Areinamo",
   "archived": true,
   "playerType": "Hitter",
-  "generatedAt": "2026-09-08T11:37:50.163Z",
+  "generatedAt": "2026-09-08T15:00:22.214Z",
   "bio": {
     "Player-ID": "Jadher-Areinamo",
     "MLBAM ID": "699130",
@@ -210,7 +210,7 @@
       "K%": "",
       "BB%": "",
       "SwStr %": "",
-      "Whiff%": "18.0%",
+      "Whiff%": "17.1%",
       "Pull %": "",
       "Cent %": "",
       "Oppo %": "",
@@ -226,14 +226,15 @@
   },
   "gamedayWhiff": {
     "mlbamID": "699130",
-    "swings": 133,
+    "swings": 140,
     "whiffs": 24,
-    "contacts": 109,
-    "whiffPct": 18,
-    "contactPct": 82,
-    "games": 15,
+    "contacts": 116,
+    "whiffPct": 17.1,
+    "contactPct": 82.9,
+    "games": 16,
     "levels": [
-      "AA"
+      "AA",
+      "AAA"
     ]
   },
   "videos": [

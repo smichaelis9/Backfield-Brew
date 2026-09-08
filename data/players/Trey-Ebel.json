@@ -3,7 +3,7 @@
   "name": "Trey Ebel",
   "archived": false,
   "playerType": "Hitter",
-  "generatedAt": "2026-09-08T11:37:50.163Z",
+  "generatedAt": "2026-09-08T15:00:22.214Z",
   "bio": {
     "Player-ID": "Trey-Ebel",
     "MLBAM ID": "821931",
@@ -208,7 +208,7 @@
       "OPS": "0.709",
       "wRC+": "111",
       "BABIP": "0.250",
-      "wOBA": "0.377",
+      "wOBA": "0.378",
       "K%": "22.0%",
       "BB%": "27.1%",
       "SwStr %": "7.4%",

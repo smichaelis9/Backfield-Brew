@@ -3,7 +3,7 @@
   "name": "Engel Paulino",
   "archived": false,
   "playerType": "Hitter",
-  "generatedAt": "2026-09-08T11:37:50.163Z",
+  "generatedAt": "2026-09-08T15:00:22.214Z",
   "bio": {
     "Player-ID": "Engel-Paulino",
     "MLBAM ID": "821162",
@@ -385,6 +385,23 @@
     }
   ],
   "transactions": [
+    {
+      "Transaction ID": "941580",
+      "Date": "2026-09-07",
+      "Effective Date": "2026-09-07",
+      "MLBAM ID": "821162",
+      "Player": "Engel Paulino",
+      "Position": "",
+      "From Team": "",
+      "To Team": "ACL Brewers",
+      "Level": "MiLB",
+      "Type": "Released",
+      "Description": "ACL Brewers released OF Engel Paulino.",
+      "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2026-09",
+      "Imported At": "09/08/2026 08:46:29",
+      "Player ID": "Engel-Paulino",
+      "Archived?": ""
+    },
     {
       "Transaction ID": "905233",
       "Date": "2025-04-30",

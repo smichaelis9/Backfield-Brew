@@ -3,7 +3,7 @@
   "name": "Tanner Gillis",
   "archived": false,
   "playerType": "Pitcher",
-  "generatedAt": "2026-09-08T11:37:50.163Z",
+  "generatedAt": "2026-09-08T15:00:22.214Z",
   "bio": {
     "Player-ID": "Tanner-Gillis",
     "MLBAM ID": "828705",
@@ -214,7 +214,7 @@
       "Player-ID": "Tanner-Gillis",
       "Player": "Tanner Gillis",
       "ERA": "3.32",
-      "FIP": "5.14",
+      "FIP": "5.12",
       "xFIP": "4.72",
       "IP": "57",
       "G": "15",

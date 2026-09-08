@@ -3,7 +3,7 @@
   "name": "Jhosep Ospino",
   "archived": false,
   "playerType": "Pitcher",
-  "generatedAt": "2026-09-08T11:37:50.163Z",
+  "generatedAt": "2026-09-08T15:00:22.214Z",
   "bio": {
     "Player-ID": "Jhosep-Ospino",
     "MLBAM ID": "815784",
@@ -402,6 +402,23 @@
     }
   ],
   "transactions": [
+    {
+      "Transaction ID": "941579",
+      "Date": "2026-09-07",
+      "Effective Date": "2026-09-07",
+      "MLBAM ID": "815784",
+      "Player": "Jhosep Ospino",
+      "Position": "",
+      "From Team": "",
+      "To Team": "ACL Brewers",
+      "Level": "MiLB",
+      "Type": "Released",
+      "Description": "ACL Brewers released RHP Jhosep Ospino.",
+      "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2026-09",
+      "Imported At": "09/08/2026 08:46:29",
+      "Player ID": "Jhosep-Ospino",
+      "Archived?": ""
+    },
     {
       "Transaction ID": "905221",
       "Date": "2026-05-02",

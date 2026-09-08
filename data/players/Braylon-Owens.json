@@ -3,7 +3,7 @@
   "name": "Braylon Owens",
   "archived": false,
   "playerType": "Pitcher",
-  "generatedAt": "2026-09-08T11:37:50.163Z",
+  "generatedAt": "2026-09-08T15:00:22.214Z",
   "bio": {
     "Player-ID": "Braylon-Owens",
     "MLBAM ID": "823182",
@@ -215,7 +215,7 @@
       "Player": "Braylon Owens",
       "ERA": "4.04",
       "FIP": "3.81",
-      "xFIP": "4.46",
+      "xFIP": "4.45",
       "IP": "93.2",
       "G": "21",
       "GS": "14",
