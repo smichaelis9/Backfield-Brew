@@ -1,7 +1,7 @@
 {
-  "date": "2026-09-07",
+  "date": "2026-09-08",
   "season": 2026,
-  "generatedAt": "2026-09-07T16:35:41.604Z",
+  "generatedAt": "2026-09-08T15:13:34.034Z",
   "standings": [
     {
       "affiliate": "Nashville Sounds",
@@ -29,14 +29,14 @@
         {
           "teamId": 556,
           "team": "Nashville Sounds",
-          "wins": 76,
+          "wins": 77,
           "losses": 61,
-          "pct": ".555",
-          "gamesBack": "1.0",
+          "pct": ".558",
+          "gamesBack": "0.5",
           "divisionRank": "2",
           "leagueRank": "3",
           "wildCardRank": "1",
-          "streak": "W1",
+          "streak": "W2",
           "isBrewersAffiliate": true
         },
         {
