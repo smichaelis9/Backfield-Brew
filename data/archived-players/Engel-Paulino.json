@@ -1,21 +1,20 @@
 {
   "id": "Engel-Paulino",
   "name": "Engel Paulino",
-  "archived": false,
+  "archived": true,
   "playerType": "Hitter",
-  "generatedAt": "2026-09-08T15:20:34.857Z",
+  "generatedAt": "2026-09-08T16:28:05.156Z",
   "bio": {
     "Player-ID": "Engel-Paulino",
     "MLBAM ID": "821162",
     "Player Type": "Hitter",
     "Player": "Engel Paulino",
-    "Rank": "145",
-    "Trending": "",
+    "Rank": "146",
+    "Archive Reason": "Released on 9/7/2026",
     "Position": "OF",
     "Level": "ACL",
     "Age": "19.8",
     "OFP": "30+",
-    "OFP Updated": "",
     "Risk": "Extreme",
     "School or Country": "Country",
     "School/Country": "Dominican Republic",
@@ -28,7 +27,7 @@
     "Weight": "162",
     "Bat / Throw": "Right/Right",
     "Birthday": "12/2/2006",
-    "Rule 5 Eligible": "2028",
+    "Rule 5 Eligible": "",
     "Picture": "https://i.ibb.co/fzKsMYCH/Engel.png",
     "Picture Source": "Brewers",
     "Notes Updated": "N/A",
@@ -88,8 +87,7 @@
     "Instagram": "Instagram",
     "Instagram Link": "https://www.instagram.com/lavainita_2/",
     "Other Social": "TikTok",
-    "Other Social Link": "https://www.tiktok.com/@lavainita_2https://www.tiktok.com/@lavainita_2",
-    "Previous Rank": "146"
+    "Other Social Link": "https://www.tiktok.com/@lavainita_2https://www.tiktok.com/@lavainita_2"
   },
   "tools": {
     "Player-ID": "Engel-Paulino",
@@ -133,37 +131,37 @@
       "SB": "",
       "CS": "",
       "SB%": "",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     "2024": {
       "Player-ID": "Engel-Paulino",
       "Player": "Engel Paulino",
-      "PA": "183",
-      "H": "37",
-      "2B": "8",
-      "3B": "6",
-      "HR": "1",
-      "OBP": "0.350",
-      "SLG": "0.390",
-      "OPS": "0.739",
-      "wRC+": "103",
-      "BABIP": "0.321",
-      "wOBA": "0.370",
-      "K%": "23.5%",
-      "BB%": "12.6%",
-      "SwStr %": "31.3%",
+      "PA": "",
+      "H": "",
+      "2B": "",
+      "3B": "",
+      "HR": "",
+      "OBP": "",
+      "SLG": "",
+      "OPS": "",
+      "wRC+": "",
+      "BABIP": "",
+      "wOBA": "",
+      "K%": "",
+      "BB%": "",
+      "SwStr %": "",
       "Whiff%": "",
-      "Pull %": "53.6%",
-      "Cent %": "21.8%",
-      "Oppo %": "24.5%",
-      "LD%": "19.2%",
-      "GB%": "40.4%",
-      "FB%": "40.4%",
-      "IFFB %": "26.2%",
-      "SB": "13",
-      "CS": "3",
-      "SB%": "81.3%",
-      "Archived?": ""
+      "Pull %": "",
+      "Cent %": "",
+      "Oppo %": "",
+      "LD%": "",
+      "GB%": "",
+      "FB%": "",
+      "IFFB %": "",
+      "SB": "",
+      "CS": "",
+      "SB%": "",
+      "Archived?": "yes"
     },
     "2025": {
       "Player-ID": "Engel-Paulino",
@@ -193,7 +191,7 @@
       "SB": "19",
       "CS": "2",
       "SB%": "90.5%",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     "2026": {
       "Player-ID": "Engel-Paulino",
@@ -223,7 +221,7 @@
       "SB": "10",
       "CS": "2",
       "SB%": "83.3%",
-      "Archived?": ""
+      "Archived?": "yes"
     }
   },
   "gamedayWhiff": null,
@@ -400,7 +398,7 @@
       "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2026-09",
       "Imported At": "09/08/2026 08:46:29",
       "Player ID": "Engel-Paulino",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     {
       "Transaction ID": "905233",
@@ -417,7 +415,7 @@
       "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2025-04",
       "Imported At": "08/13/2026 10:20:12",
       "Player ID": "Engel-Paulino",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     {
       "Transaction ID": "834450",
@@ -434,7 +432,7 @@
       "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2025-04",
       "Imported At": "08/13/2026 10:20:12",
       "Player ID": "Engel-Paulino",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     {
       "Transaction ID": "833043",
@@ -451,7 +449,7 @@
       "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2025-04",
       "Imported At": "08/13/2026 10:20:12",
       "Player ID": "Engel-Paulino",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     {
       "Transaction ID": "776673",
@@ -468,7 +466,7 @@
       "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2024-02",
       "Imported At": "08/13/2026 10:18:34",
       "Player ID": "Engel-Paulino",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     {
       "Transaction ID": "739099",
@@ -485,7 +483,7 @@
       "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2024-02",
       "Imported At": "08/13/2026 10:18:34",
       "Player ID": "Engel-Paulino",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     {
       "Transaction ID": "736977",
@@ -502,7 +500,7 @@
       "Source URL": "https://www.mlb.com/brewers/roster/transactions/2024/01",
       "Imported At": "08/13/2026 09:58:31",
       "Player ID": "Engel-Paulino",
-      "Archived?": ""
+      "Archived?": "yes"
     }
   ]
 }

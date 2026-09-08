@@ -3,10 +3,10 @@
   "name": "Linbel Jimenez",
   "archived": true,
   "playerType": "Pitcher",
-  "generatedAt": "2026-09-08T15:20:34.857Z",
+  "generatedAt": "2026-09-08T16:28:05.156Z",
   "bio": {
     "Player-ID": "Linbel-Jimenez",
-    "MLBAM ID": "808354",
+    "MLBAM ID": "",
     "Player Type": "Pitcher",
     "Player": "Linbel Jimenez",
     "Rank": "",
@@ -414,7 +414,7 @@
       "Description": "DSL Brewers Gold released RHP Linbel Jimenez.",
       "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2026-05",
       "Imported At": "08/13/2026 10:21:53",
-      "Player ID": "Linbel-Jimenez",
+      "Player ID": "",
       "Archived?": "yes"
     },
     {
@@ -431,7 +431,7 @@
       "Description": "DSL Brewers Gold activated RHP Linbel Jimenez.",
       "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2024-08",
       "Imported At": "08/13/2026 10:19:16",
-      "Player ID": "Linbel-Jimenez",
+      "Player ID": "",
       "Archived?": "yes"
     },
     {
@@ -448,7 +448,7 @@
       "Description": "RHP Linbel Jimenez assigned to DSL Brewers 2 from DSL Brewers 1.",
       "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2024-08",
       "Imported At": "08/13/2026 10:19:16",
-      "Player ID": "Linbel-Jimenez",
+      "Player ID": "",
       "Archived?": "yes"
     },
     {
@@ -465,7 +465,7 @@
       "Description": "RHP Linbel Jimenez assigned to DSL Brewers 1 from DSL Brewers 2.",
       "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2024-06",
       "Imported At": "08/13/2026 10:19:02",
-      "Player ID": "Linbel-Jimenez",
+      "Player ID": "",
       "Archived?": "yes"
     },
     {
@@ -482,7 +482,7 @@
       "Description": "RHP Linbel Jimenez assigned to DSL Brewers 2.",
       "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2023-06",
       "Imported At": "08/13/2026 10:17:38",
-      "Player ID": "Linbel-Jimenez",
+      "Player ID": "",
       "Archived?": "yes"
     },
     {
@@ -499,7 +499,7 @@
       "Description": "Milwaukee Brewers signed free agent RHP Linbel Jimenez to a minor league contract.",
       "Source URL": "https://www.mlb.com/brewers/roster/transactions/2023/01",
       "Imported At": "08/13/2026 09:57:46",
-      "Player ID": "Linbel-Jimenez",
+      "Player ID": "",
       "Archived?": "yes"
     }
   ]

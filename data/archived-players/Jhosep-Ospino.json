@@ -1,21 +1,20 @@
 {
   "id": "Jhosep-Ospino",
   "name": "Jhosep Ospino",
-  "archived": false,
+  "archived": true,
   "playerType": "Pitcher",
-  "generatedAt": "2026-09-08T15:20:34.857Z",
+  "generatedAt": "2026-09-08T16:28:05.156Z",
   "bio": {
     "Player-ID": "Jhosep-Ospino",
     "MLBAM ID": "815784",
     "Player Type": "Pitcher",
     "Player": "Jhosep Ospino",
     "Rank": "212",
-    "Trending": "",
+    "Archive Reason": "Released on 9/7/2026",
     "Position": "RHP",
     "Level": "ACL",
-    "Age": "22.0",
+    "Age": "",
     "OFP": "30",
-    "OFP Updated": "",
     "Risk": "Extreme",
     "School or Country": "Country",
     "School/Country": "Colombia",
@@ -28,17 +27,17 @@
     "Weight": "142",
     "Bat / Throw": "Right/Right",
     "Birthday": "9/6/2004",
-    "Rule 5 Eligible": "2027",
+    "Rule 5 Eligible": "",
     "Picture": "https://i.ibb.co/Kcg4Y0Bj/image.png",
     "Picture Source": "Instagram",
     "Notes Updated": "8/30/2025",
     "Scouting Notes": "Reliever\n Fastball shape looks ok, but velo is pretty low for a 20 year old\n Slider doesn't look bad, thrown in the 80ish range\n Splitter is in the 80 MPH range",
-    "Notes Updated 2": "N/A",
-    "Scouting Notes 2": "N/A",
-    "Notes Updated 3": "N/A",
-    "Scouting Notes 3": "N/A",
-    "Notes Updated 4": "N/A",
-    "Scouting Notes 4": "N/A",
+    "Notes Updated 2": "",
+    "Scouting Notes 2": "",
+    "Notes Updated 3": "",
+    "Scouting Notes 3": "",
+    "Notes Updated 4": "",
+    "Scouting Notes 4": "",
     "Full Report Updated": "",
     "Physical Description Report": "",
     "Hit / Mechanics Report": "",
@@ -88,8 +87,7 @@
     "Instagram": "Instagram",
     "Instagram Link": "https://www.instagram.com/j_ospino06/",
     "Other Social": "",
-    "Other Social Link": "",
-    "Previous Rank": "213"
+    "Other Social Link": ""
   },
   "tools": {
     "Player-ID": "Jhosep-Ospino",
@@ -144,7 +142,7 @@
       "FB%": "",
       "IFFB%": "",
       "HR/FB": "",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     "2024": {
       "Player-ID": "Jhosep-Ospino",
@@ -176,7 +174,7 @@
       "FB%": "31.0%",
       "IFFB%": "46.2%",
       "HR/FB": "0.00",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     "2025": {
       "Player-ID": "Jhosep-Ospino",
@@ -208,7 +206,7 @@
       "FB%": "40.6%",
       "IFFB%": "21.4%",
       "HR/FB": "0.04",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     "2026": {
       "Player-ID": "Jhosep-Ospino",
@@ -240,7 +238,7 @@
       "FB%": "43.8%",
       "IFFB%": "19.0%",
       "HR/FB": "0.19",
-      "Archived?": ""
+      "Archived?": "yes"
     }
   },
   "gamedayWhiff": null,
@@ -417,7 +415,7 @@
       "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2026-09",
       "Imported At": "09/08/2026 08:46:29",
       "Player ID": "Jhosep-Ospino",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     {
       "Transaction ID": "905221",
@@ -434,7 +432,7 @@
       "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2026-05",
       "Imported At": "08/13/2026 10:21:53",
       "Player ID": "Jhosep-Ospino",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     {
       "Transaction ID": "842849",
@@ -451,7 +449,7 @@
       "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2023-08",
       "Imported At": "08/13/2026 10:17:52",
       "Player ID": "Jhosep-Ospino",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     {
       "Transaction ID": "776653",
@@ -468,7 +466,7 @@
       "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2023-08",
       "Imported At": "08/13/2026 10:17:52",
       "Player ID": "Jhosep-Ospino",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     {
       "Transaction ID": "718779",
@@ -485,7 +483,7 @@
       "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2023-08",
       "Imported At": "08/13/2026 10:17:52",
       "Player ID": "Jhosep-Ospino",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     {
       "Transaction ID": "718778",
@@ -502,7 +500,7 @@
       "Source URL": "https://www.mlb.com/brewers/roster/transactions/2023/08",
       "Imported At": "08/13/2026 09:58:09",
       "Player ID": "Jhosep-Ospino",
-      "Archived?": ""
+      "Archived?": "yes"
     }
   ]
 }

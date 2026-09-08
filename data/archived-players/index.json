@@ -930,6 +930,12 @@
     "archived": true
   },
   {
+    "id": "Roderick-Flores",
+    "name": "Roderick Flores",
+    "file": "Roderick-Flores.json",
+    "archived": true
+  },
+  {
     "id": "Trevor-Tietz",
     "name": "Trevor Tietz",
     "file": "Trevor-Tietz.json",
@@ -1290,6 +1296,12 @@
     "archived": true
   },
   {
+    "id": "Engel-Paulino",
+    "name": "Engel Paulino",
+    "file": "Engel-Paulino.json",
+    "archived": true
+  },
+  {
     "id": "Bladimir-Restituyo",
     "name": "Bladimir Restituyo",
     "file": "Bladimir-Restituyo.json",
@@ -1617,6 +1629,12 @@
     "id": "Pedro-Tovar",
     "name": "Pedro Tovar",
     "file": "Pedro-Tovar.json",
+    "archived": true
+  },
+  {
+    "id": "Jhosep-Ospino",
+    "name": "Jhosep Ospino",
+    "file": "Jhosep-Ospino.json",
     "archived": true
   },
   {

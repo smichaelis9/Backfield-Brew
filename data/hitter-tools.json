@@ -689,19 +689,6 @@
     "Arm": "50/50"
   },
   {
-    "Player-ID": "Roderick-Flores",
-    "Player": "Roderick Flores",
-    "Last Updated": "8/1/2026",
-    "Hit": "30/45",
-    "Raw Power": "40/45",
-    "Game Power": "30/40",
-    "Bat to Ball": "25/40",
-    "Swing Decisions": "40/55",
-    "Speed": "45/45",
-    "Field": "40/50 (1B)",
-    "Arm": "50/50"
-  },
-  {
     "Player-ID": "Luis-Corobo",
     "Player": "Luis Corobo",
     "Last Updated": "2/21/2026",
@@ -882,19 +869,6 @@
     "Speed": "50/50",
     "Field": "40/50 (INF)",
     "Arm": "55/55"
-  },
-  {
-    "Player-ID": "Engel-Paulino",
-    "Player": "Engel Paulino",
-    "Last Updated": "1/5/2025",
-    "Hit": "30/40",
-    "Raw Power": "55/60",
-    "Game Power": "35/50",
-    "Bat to Ball": "30/40",
-    "Swing Decisions": "35/50",
-    "Speed": "55/55",
-    "Field": "35/50 (OF)",
-    "Arm": "45/50"
   },
   {
     "Player-ID": "Juan-Baez",
@@ -2171,6 +2145,19 @@
     "Arm": "45/45"
   },
   {
+    "Player-ID": "Roderick-Flores",
+    "Player": "Roderick Flores",
+    "Last Updated": "8/1/2026",
+    "Hit": "30/45",
+    "Raw Power": "40/45",
+    "Game Power": "30/40",
+    "Bat to Ball": "25/40",
+    "Swing Decisions": "40/55",
+    "Speed": "45/45",
+    "Field": "40/50 (1B)",
+    "Arm": "50/50"
+  },
+  {
     "Player-ID": "Jose-Acosta",
     "Player": "Jose Acosta",
     "Last Updated": "8/4/2024",
@@ -2585,6 +2572,19 @@
     "Speed": "40/40",
     "Field": "35/40",
     "Arm": "45/45"
+  },
+  {
+    "Player-ID": "Engel-Paulino",
+    "Player": "Engel Paulino",
+    "Last Updated": "1/5/2025",
+    "Hit": "30/40",
+    "Raw Power": "55/60",
+    "Game Power": "35/50",
+    "Bat to Ball": "30/40",
+    "Swing Decisions": "35/50",
+    "Speed": "55/55",
+    "Field": "35/50 (OF)",
+    "Arm": "45/50"
   },
   {
     "Player-ID": "Bladimir-Restituyo",
@@ -3939,6 +3939,19 @@
     "Arm": "45/45"
   },
   {
+    "Player-ID": "Roderick-Flores",
+    "Player": "Roderick Flores",
+    "Last Updated": "8/1/2026",
+    "Hit": "30/45",
+    "Raw Power": "40/45",
+    "Game Power": "30/40",
+    "Bat to Ball": "25/40",
+    "Swing Decisions": "40/55",
+    "Speed": "45/45",
+    "Field": "40/50 (1B)",
+    "Arm": "50/50"
+  },
+  {
     "Player-ID": "Jose-Acosta",
     "Player": "Jose Acosta",
     "Last Updated": "8/4/2024",
@@ -4353,6 +4366,19 @@
     "Speed": "40/40",
     "Field": "35/40",
     "Arm": "45/45"
+  },
+  {
+    "Player-ID": "Engel-Paulino",
+    "Player": "Engel Paulino",
+    "Last Updated": "1/5/2025",
+    "Hit": "30/40",
+    "Raw Power": "55/60",
+    "Game Power": "35/50",
+    "Bat to Ball": "30/40",
+    "Swing Decisions": "35/50",
+    "Speed": "55/55",
+    "Field": "35/50 (OF)",
+    "Arm": "45/50"
   },
   {
     "Player-ID": "Bladimir-Restituyo",

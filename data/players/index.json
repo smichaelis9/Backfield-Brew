@@ -690,12 +690,6 @@
     "archived": false
   },
   {
-    "id": "Roderick-Flores",
-    "name": "Roderick Flores",
-    "file": "Roderick-Flores.json",
-    "archived": false
-  },
-  {
     "id": "Joshua-Quezada",
     "name": "Joshua Quezada",
     "file": "Joshua-Quezada.json",
@@ -864,9 +858,9 @@
     "archived": false
   },
   {
-    "id": "Engel-Paulino",
-    "name": "Engel Paulino",
-    "file": "Engel-Paulino.json",
+    "id": "Ben-Moore",
+    "name": "Ben Moore",
+    "file": "Ben-Moore.json",
     "archived": false
   },
   {
@@ -1263,12 +1257,6 @@
     "id": "David-Garcia",
     "name": "David García",
     "file": "David-Garcia.json",
-    "archived": false
-  },
-  {
-    "id": "Jhosep-Ospino",
-    "name": "Jhosep Ospino",
-    "file": "Jhosep-Ospino.json",
     "archived": false
   },
   {
