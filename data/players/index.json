@@ -216,6 +216,12 @@
     "archived": false
   },
   {
+    "id": "Daniel-Dickinson",
+    "name": "Daniel Dickinson",
+    "file": "Daniel-Dickinson.json",
+    "archived": false
+  },
+  {
     "id": "Sean-Episcope",
     "name": "Sean Episcope",
     "file": "Sean-Episcope.json",
@@ -297,12 +303,6 @@
     "id": "Osiris-Ramirez",
     "name": "Osiris Ramirez",
     "file": "Osiris-Ramirez.json",
-    "archived": false
-  },
-  {
-    "id": "Daniel-Dickinson",
-    "name": "Daniel Dickinson",
-    "file": "Daniel-Dickinson.json",
     "archived": false
   },
   {
@@ -594,6 +594,12 @@
     "archived": false
   },
   {
+    "id": "Joshua-Quezada",
+    "name": "Joshua Quezada",
+    "file": "Joshua-Quezada.json",
+    "archived": false
+  },
+  {
     "id": "Manny-De-Los-Santos",
     "name": "Manny De Los Santos",
     "file": "Manny-De-Los-Santos.json",
@@ -681,12 +687,6 @@
     "id": "Jesus-Broca",
     "name": "Jesús Broca",
     "file": "Jesus-Broca.json",
-    "archived": false
-  },
-  {
-    "id": "Joshua-Quezada",
-    "name": "Joshua Quezada",
-    "file": "Joshua-Quezada.json",
     "archived": false
   },
   {

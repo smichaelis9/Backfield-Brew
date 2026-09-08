@@ -299,6 +299,19 @@
     "Arm": "50/55"
   },
   {
+    "Player-ID": "Daniel-Dickinson",
+    "Player": "Daniel Dickinson",
+    "Last Updated": "2/16/2026",
+    "Hit": "40/50",
+    "Raw Power": "40/45",
+    "Game Power": "40/45",
+    "Bat to Ball": "55/60",
+    "Swing Decisions": "45/50",
+    "Speed": "50/50",
+    "Field": "40/45 (2B)",
+    "Arm": "45/45"
+  },
+  {
     "Player-ID": "Dylan-O'Rae",
     "Player": "Dylan O'Rae",
     "Last Updated": "2/18/2026",
@@ -388,19 +401,6 @@
     "Speed": "55/50",
     "Field": "35/50 (3B)",
     "Arm": "50/50"
-  },
-  {
-    "Player-ID": "Daniel-Dickinson",
-    "Player": "Daniel Dickinson",
-    "Last Updated": "2/16/2026",
-    "Hit": "40/50",
-    "Raw Power": "40/45",
-    "Game Power": "40/45",
-    "Bat to Ball": "55/60",
-    "Swing Decisions": "45/50",
-    "Speed": "50/50",
-    "Field": "40/45 (2B)",
-    "Arm": "45/45"
   },
   {
     "Player-ID": "Kenny-Fenelon",
