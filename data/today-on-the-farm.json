@@ -1,6 +1,6 @@
 {
-  "date": "2026-09-07",
-  "generatedAt": "2026-09-08T00:38:17.324Z",
+  "date": "2026-09-08",
+  "generatedAt": "2026-09-08T05:15:24.471Z",
   "affiliates": [
     {
       "teamId": 556,
@@ -62,32 +62,25 @@
   "gameCount": 1,
   "games": [
     {
-      "key": "816678:556",
-      "gamePk": 816678,
-      "date": "2026-09-07",
-      "gameDate": "2026-09-07T21:05:00Z",
-      "affiliate": "Nashville Sounds",
-      "affiliateTeamId": 556,
-      "level": "AAA",
-      "leagueId": 117,
-      "leagueName": "International League",
+      "key": "817742:5015",
+      "gamePk": 817742,
+      "date": "2026-09-08",
+      "gameDate": "2026-09-08T23:05:00Z",
+      "affiliate": "Biloxi Shuckers",
+      "affiliateTeamId": 5015,
+      "level": "AA",
+      "leagueId": 111,
+      "leagueName": "Southern League",
       "homeAway": "away",
-      "opponent": "Durham Bulls",
-      "opponentTeamId": 234,
-      "venue": "Durham Bulls Athletic Park",
+      "opponent": "Pensacola Blue Wahoos",
+      "opponentTeamId": 4124,
+      "venue": "Blue Wahoos Stadium",
       "status": {
-        "key": "final",
-        "label": "Final"
+        "key": "scheduled",
+        "label": "Scheduled"
       },
-      "score": {
-        "away": 3,
-        "home": 0
-      },
-      "inning": {
-        "inning": 9,
-        "state": "Bottom",
-        "ordinal": "9th"
-      },
+      "score": null,
+      "inning": null,
       "probablePitcher": null,
       "doubleHeader": "N",
       "gameNumber": 1
