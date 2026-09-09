@@ -3,7 +3,7 @@
   "name": "Wande Torres",
   "archived": false,
   "playerType": "Pitcher",
-  "generatedAt": "2026-09-09T11:57:08.027Z",
+  "generatedAt": "2026-09-09T14:08:19.928Z",
   "bio": {
     "Player-ID": "Wande-Torres",
     "MLBAM ID": "800485",
@@ -231,7 +231,7 @@
       "BB%": "10.40%",
       "K-BB %": "14.50%",
       "SwStr %": "12.20%",
-      "Whiff%": "26.4%",
+      "Whiff%": "26.1%",
       "WHIP": "1.33",
       "BABIP": "0.310",
       "LOB%": "74.1%",
@@ -245,12 +245,12 @@
   },
   "gamedayWhiff": {
     "mlbamID": "800485",
-    "swings": 918,
-    "whiffs": 242,
-    "contacts": 676,
-    "whiffPct": 26.4,
-    "contactPct": 73.6,
-    "games": 25,
+    "swings": 952,
+    "whiffs": 248,
+    "contacts": 704,
+    "whiffPct": 26.1,
+    "contactPct": 73.9,
+    "games": 26,
     "levels": [
       "A+",
       "AA"
