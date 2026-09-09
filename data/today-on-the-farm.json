@@ -1,6 +1,6 @@
 {
-  "date": "2026-09-08",
-  "generatedAt": "2026-09-09T01:10:49.450Z",
+  "date": "2026-09-09",
+  "generatedAt": "2026-09-09T05:59:00.997Z",
   "affiliates": [
     {
       "teamId": 556,
@@ -59,13 +59,37 @@
       "leagueName": "Dominican Summer League"
     }
   ],
-  "gameCount": 1,
+  "gameCount": 2,
   "games": [
     {
-      "key": "817742:5015",
-      "gamePk": 817742,
-      "date": "2026-09-08",
-      "gameDate": "2026-09-08T23:05:00Z",
+      "key": "816683:556",
+      "gamePk": 816683,
+      "date": "2026-09-09",
+      "gameDate": "2026-09-09T22:45:00Z",
+      "affiliate": "Nashville Sounds",
+      "affiliateTeamId": 556,
+      "level": "AAA",
+      "leagueId": 117,
+      "leagueName": "International League",
+      "homeAway": "away",
+      "opponent": "Durham Bulls",
+      "opponentTeamId": 234,
+      "venue": "Durham Bulls Athletic Park",
+      "status": {
+        "key": "scheduled",
+        "label": "Scheduled"
+      },
+      "score": null,
+      "inning": null,
+      "probablePitcher": null,
+      "doubleHeader": "N",
+      "gameNumber": 1
+    },
+    {
+      "key": "817740:5015",
+      "gamePk": 817740,
+      "date": "2026-09-09",
+      "gameDate": "2026-09-09T23:05:00Z",
       "affiliate": "Biloxi Shuckers",
       "affiliateTeamId": 5015,
       "level": "AA",
@@ -76,25 +100,18 @@
       "opponentTeamId": 4124,
       "venue": "Blue Wahoos Stadium",
       "status": {
-        "key": "live",
-        "label": "In Progress"
+        "key": "scheduled",
+        "label": "Scheduled"
       },
-      "score": {
-        "away": 5,
-        "home": 4
-      },
-      "inning": {
-        "inning": 6,
-        "state": "Bottom",
-        "ordinal": "6th"
-      },
+      "score": null,
+      "inning": null,
       "probablePitcher": {
-        "mlbamId": 804973,
-        "name": "Manuel Rodriguez",
+        "mlbamId": 811309,
+        "name": "Bishop Letson",
         "inDatabase": true,
-        "playerId": "Manuel-Rodriguez",
-        "rank": 43,
-        "picture": "https://img.mlbstatic.com/mlb-photos/image/upload/c_fill,g_auto/w_180/v1/people/804973/headshot/milb/current",
+        "playerId": "Bishop-Letson",
+        "rank": 9,
+        "picture": "https://img.mlbstatic.com/mlb-photos/image/upload/c_fill,g_auto/w_180/v1/people/811309/headshot/milb/current",
         "databaseLevel": "AA"
       },
       "doubleHeader": "N",
