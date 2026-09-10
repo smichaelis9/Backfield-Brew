@@ -3,7 +3,7 @@
   "name": "Bishop Letson",
   "archived": false,
   "playerType": "Pitcher",
-  "generatedAt": "2026-09-10T13:34:39.687Z",
+  "generatedAt": "2026-09-10T17:01:18.412Z",
   "bio": {
     "Player-ID": "Bishop-Letson",
     "MLBAM ID": "811309",
@@ -231,7 +231,7 @@
       "BB%": "11.60%",
       "K-BB %": "11.10%",
       "SwStr %": "10.50%",
-      "Whiff%": "22.4%",
+      "Whiff%": "23.3%",
       "WHIP": "1.48",
       "BABIP": "0.310",
       "LOB%": "66.7%",
@@ -245,12 +245,12 @@
   },
   "gamedayWhiff": {
     "mlbamID": "811309",
-    "swings": 695,
-    "whiffs": 156,
-    "contacts": 539,
-    "whiffPct": 22.4,
-    "contactPct": 77.6,
-    "games": 21,
+    "swings": 734,
+    "whiffs": 171,
+    "contacts": 563,
+    "whiffPct": 23.3,
+    "contactPct": 76.7,
+    "games": 22,
     "levels": [
       "AA"
     ]

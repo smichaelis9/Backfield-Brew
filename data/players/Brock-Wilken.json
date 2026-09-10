@@ -3,7 +3,7 @@
   "name": "Brock Wilken",
   "archived": false,
   "playerType": "Hitter",
-  "generatedAt": "2026-09-10T13:34:39.687Z",
+  "generatedAt": "2026-09-10T17:01:18.412Z",
   "bio": {
     "Player-ID": "Brock-Wilken",
     "MLBAM ID": "694385",
@@ -212,7 +212,7 @@
       "K%": "28.1%",
       "BB%": "15.4%",
       "SwStr %": "9.3%",
-      "Whiff%": "24.6%",
+      "Whiff%": "24.5%",
       "Pull %": "48.2%",
       "Cent %": "23.9%",
       "Oppo %": "27.9%",
@@ -228,12 +228,12 @@
   },
   "gamedayWhiff": {
     "mlbamID": "694385",
-    "swings": 788,
-    "whiffs": 194,
-    "contacts": 594,
-    "whiffPct": 24.6,
-    "contactPct": 75.4,
-    "games": 119,
+    "swings": 796,
+    "whiffs": 195,
+    "contacts": 601,
+    "whiffPct": 24.5,
+    "contactPct": 75.5,
+    "games": 120,
     "levels": [
       "AAA"
     ]

@@ -3,7 +3,7 @@
   "name": "Jesús Made",
   "archived": false,
   "playerType": "Hitter",
-  "generatedAt": "2026-09-10T13:34:39.687Z",
+  "generatedAt": "2026-09-10T17:01:18.412Z",
   "bio": {
     "Player-ID": "Jesus-Made",
     "MLBAM ID": "815908",
@@ -228,12 +228,12 @@
   },
   "gamedayWhiff": {
     "mlbamID": "815908",
-    "swings": 904,
-    "whiffs": 166,
-    "contacts": 738,
+    "swings": 910,
+    "whiffs": 167,
+    "contacts": 743,
     "whiffPct": 18.4,
     "contactPct": 81.6,
-    "games": 120,
+    "games": 121,
     "levels": [
       "AA"
     ]

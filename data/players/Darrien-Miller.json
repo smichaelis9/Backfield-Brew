@@ -3,7 +3,7 @@
   "name": "Darrien Miller",
   "archived": false,
   "playerType": "Hitter",
-  "generatedAt": "2026-09-10T13:34:39.687Z",
+  "generatedAt": "2026-09-10T17:01:18.412Z",
   "bio": {
     "Player-ID": "Darrien-Miller",
     "MLBAM ID": "687152",
@@ -212,7 +212,7 @@
       "K%": "20.3%",
       "BB%": "16.9%",
       "SwStr %": "7.0%",
-      "Whiff%": "19.5%",
+      "Whiff%": "19.8%",
       "Pull %": "56.2%",
       "Cent %": "21.0%",
       "Oppo %": "22.8%",
@@ -228,12 +228,12 @@
   },
   "gamedayWhiff": {
     "mlbamID": "687152",
-    "swings": 487,
-    "whiffs": 95,
-    "contacts": 392,
-    "whiffPct": 19.5,
-    "contactPct": 80.5,
-    "games": 76,
+    "swings": 494,
+    "whiffs": 98,
+    "contacts": 396,
+    "whiffPct": 19.8,
+    "contactPct": 80.2,
+    "games": 77,
     "levels": [
       "AA",
       "AAA"

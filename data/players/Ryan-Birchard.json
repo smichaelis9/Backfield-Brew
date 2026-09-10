@@ -3,7 +3,7 @@
   "name": "Ryan Birchard",
   "archived": false,
   "playerType": "Pitcher",
-  "generatedAt": "2026-09-10T13:34:39.687Z",
+  "generatedAt": "2026-09-10T17:01:18.412Z",
   "bio": {
     "Player-ID": "Ryan-Birchard",
     "MLBAM ID": "804670",
@@ -231,7 +231,7 @@
       "BB%": "24.40%",
       "K-BB %": "9.80%",
       "SwStr %": "13.40%",
-      "Whiff%": "36.5%",
+      "Whiff%": "36.3%",
       "WHIP": "1.75",
       "BABIP": "0.267",
       "LOB%": "71.8%",
@@ -245,12 +245,12 @@
   },
   "gamedayWhiff": {
     "mlbamID": "804670",
-    "swings": 381,
-    "whiffs": 139,
-    "contacts": 242,
-    "whiffPct": 36.5,
-    "contactPct": 63.5,
-    "games": 32,
+    "swings": 388,
+    "whiffs": 141,
+    "contacts": 247,
+    "whiffPct": 36.3,
+    "contactPct": 63.7,
+    "games": 33,
     "levels": [
       "AA"
     ]

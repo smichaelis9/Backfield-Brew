@@ -3,7 +3,7 @@
   "name": "Jheremy Vargas",
   "archived": false,
   "playerType": "Hitter",
-  "generatedAt": "2026-09-10T13:34:39.687Z",
+  "generatedAt": "2026-09-10T17:01:18.412Z",
   "bio": {
     "Player-ID": "Jheremy-Vargas",
     "MLBAM ID": "691621",
@@ -212,7 +212,7 @@
       "K%": "18.4%",
       "BB%": "12.1%",
       "SwStr %": "8.9%",
-      "Whiff%": "19.9%",
+      "Whiff%": "19.8%",
       "Pull %": "41.4%",
       "Cent %": "16.4%",
       "Oppo %": "42.2%",
@@ -228,12 +228,12 @@
   },
   "gamedayWhiff": {
     "mlbamID": "691621",
-    "swings": 306,
+    "swings": 308,
     "whiffs": 61,
-    "contacts": 245,
-    "whiffPct": 19.9,
-    "contactPct": 80.1,
-    "games": 51,
+    "contacts": 247,
+    "whiffPct": 19.8,
+    "contactPct": 80.2,
+    "games": 52,
     "levels": [
       "AA",
       "AAA"
