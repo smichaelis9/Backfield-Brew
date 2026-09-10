@@ -1,6 +1,6 @@
 {
-  "date": "2026-09-09",
-  "generatedAt": "2026-09-10T01:17:27.701Z",
+  "date": "2026-09-10",
+  "generatedAt": "2026-09-10T06:19:38.944Z",
   "affiliates": [
     {
       "teamId": 556,
@@ -62,10 +62,10 @@
   "gameCount": 2,
   "games": [
     {
-      "key": "816683:556",
-      "gamePk": 816683,
-      "date": "2026-09-09",
-      "gameDate": "2026-09-09T22:45:00Z",
+      "key": "816680:556",
+      "gamePk": 816680,
+      "date": "2026-09-10",
+      "gameDate": "2026-09-10T22:45:00Z",
       "affiliate": "Nashville Sounds",
       "affiliateTeamId": 556,
       "level": "AAA",
@@ -76,27 +76,20 @@
       "opponentTeamId": 234,
       "venue": "Durham Bulls Athletic Park",
       "status": {
-        "key": "final",
-        "label": "Game Over"
+        "key": "scheduled",
+        "label": "Scheduled"
       },
-      "score": {
-        "away": 2,
-        "home": 10
-      },
-      "inning": {
-        "inning": 9,
-        "state": "Top",
-        "ordinal": "9th"
-      },
+      "score": null,
+      "inning": null,
       "probablePitcher": null,
       "doubleHeader": "N",
       "gameNumber": 1
     },
     {
-      "key": "817740:5015",
-      "gamePk": 817740,
-      "date": "2026-09-09",
-      "gameDate": "2026-09-09T23:05:00Z",
+      "key": "817736:5015",
+      "gamePk": 817736,
+      "date": "2026-09-10",
+      "gameDate": "2026-09-10T23:05:00Z",
       "affiliate": "Biloxi Shuckers",
       "affiliateTeamId": 5015,
       "level": "AA",
@@ -107,25 +100,18 @@
       "opponentTeamId": 4124,
       "venue": "Blue Wahoos Stadium",
       "status": {
-        "key": "live",
-        "label": "In Progress"
+        "key": "scheduled",
+        "label": "Scheduled"
       },
-      "score": {
-        "away": 5,
-        "home": 1
-      },
-      "inning": {
-        "inning": 8,
-        "state": "Bottom",
-        "ordinal": "8th"
-      },
+      "score": null,
+      "inning": null,
       "probablePitcher": {
-        "mlbamId": 811309,
-        "name": "Bishop Letson",
+        "mlbamId": 809229,
+        "name": "Jaron DeBerry",
         "inDatabase": true,
-        "playerId": "Bishop-Letson",
-        "rank": 9,
-        "picture": "https://img.mlbstatic.com/mlb-photos/image/upload/c_fill,g_auto/w_180/v1/people/811309/headshot/milb/current",
+        "playerId": "Jaron-DeBerry",
+        "rank": 16,
+        "picture": "https://img.mlbstatic.com/mlb-photos/image/upload/c_fill,g_auto/w_180/v1/people/809229/headshot/milb/current",
         "databaseLevel": "AA"
       },
       "doubleHeader": "N",
