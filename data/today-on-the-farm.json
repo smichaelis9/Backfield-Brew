@@ -1,6 +1,6 @@
 {
   "date": "2026-09-10",
-  "generatedAt": "2026-09-10T21:05:40.658Z",
+  "generatedAt": "2026-09-10T23:09:57.486Z",
   "affiliates": [
     {
       "teamId": 556,
@@ -76,11 +76,18 @@
       "opponentTeamId": 234,
       "venue": "Durham Bulls Athletic Park",
       "status": {
-        "key": "scheduled",
-        "label": "Scheduled"
+        "key": "live",
+        "label": "In Progress"
       },
-      "score": null,
-      "inning": null,
+      "score": {
+        "away": 0,
+        "home": 0
+      },
+      "inning": {
+        "inning": 2,
+        "state": "Top",
+        "ordinal": "2nd"
+      },
       "probablePitcher": {
         "mlbamId": 692230,
         "name": "Carlos Rodriguez",
@@ -108,11 +115,18 @@
       "opponentTeamId": 4124,
       "venue": "Blue Wahoos Stadium",
       "status": {
-        "key": "scheduled",
-        "label": "Scheduled"
+        "key": "live",
+        "label": "In Progress"
       },
-      "score": null,
-      "inning": null,
+      "score": {
+        "away": 0,
+        "home": 0
+      },
+      "inning": {
+        "inning": 1,
+        "state": "Top",
+        "ordinal": "1st"
+      },
       "probablePitcher": {
         "mlbamId": 809229,
         "name": "Jaron DeBerry",
