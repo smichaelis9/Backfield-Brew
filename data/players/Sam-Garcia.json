@@ -3,7 +3,7 @@
   "name": "Sam Garcia",
   "archived": false,
   "playerType": "Pitcher",
-  "generatedAt": "2026-09-10T13:04:02.372Z",
+  "generatedAt": "2026-09-10T13:34:39.687Z",
   "bio": {
     "Player-ID": "Sam-Garcia",
     "MLBAM ID": "822760",
@@ -215,7 +215,7 @@
       "Player": "Sam Garcia",
       "ERA": "5.21",
       "FIP": "3.85",
-      "xFIP": "4.52",
+      "xFIP": "4.53",
       "IP": "38",
       "G": "27",
       "GS": "1",

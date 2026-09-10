@@ -3,7 +3,7 @@
   "name": "Peter Strzelecki",
   "archived": true,
   "playerType": "Pitcher",
-  "generatedAt": "2026-09-10T13:04:02.372Z",
+  "generatedAt": "2026-09-10T13:34:39.687Z",
   "bio": {
     "Player-ID": "Peter-Strzelecki",
     "MLBAM ID": "657265",
@@ -213,7 +213,7 @@
       "Player": "Peter Strzelecki",
       "ERA": "3.42",
       "FIP": "3.53",
-      "xFIP": "3.79",
+      "xFIP": "3.78",
       "IP": "26.1",
       "G": "23",
       "GS": "1",

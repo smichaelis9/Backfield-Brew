@@ -3,7 +3,7 @@
   "name": "Craig Yoho",
   "archived": true,
   "playerType": "Pitcher",
-  "generatedAt": "2026-09-10T13:04:02.372Z",
+  "generatedAt": "2026-09-10T13:34:39.687Z",
   "bio": {
     "Player-ID": "Craig-Yoho",
     "MLBAM ID": "684974",
@@ -212,7 +212,7 @@
       "Player-ID": "Craig-Yoho",
       "Player": "Craig Yoho",
       "ERA": "0.78",
-      "FIP": "3.02",
+      "FIP": "3.01",
       "xFIP": "3.08",
       "IP": "23",
       "G": "19",

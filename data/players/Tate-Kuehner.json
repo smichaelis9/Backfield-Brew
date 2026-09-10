@@ -3,7 +3,7 @@
   "name": "Tate Kuehner",
   "archived": false,
   "playerType": "Pitcher",
-  "generatedAt": "2026-09-10T13:04:02.372Z",
+  "generatedAt": "2026-09-10T13:34:39.687Z",
   "bio": {
     "Player-ID": "Tate-Kuehner",
     "MLBAM ID": "804249",
@@ -215,7 +215,7 @@
       "Player": "Tate Kuehner",
       "ERA": "5.24",
       "FIP": "4.42",
-      "xFIP": "4.51",
+      "xFIP": "4.50",
       "IP": "55",
       "G": "13",
       "GS": "10",
