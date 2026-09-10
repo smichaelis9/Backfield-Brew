@@ -1,6 +1,6 @@
 {
   "date": "2026-09-09",
-  "generatedAt": "2026-09-09T23:16:04.612Z",
+  "generatedAt": "2026-09-10T01:17:27.701Z",
   "affiliates": [
     {
       "teamId": 556,
@@ -76,17 +76,17 @@
       "opponentTeamId": 234,
       "venue": "Durham Bulls Athletic Park",
       "status": {
-        "key": "live",
-        "label": "In Progress"
+        "key": "final",
+        "label": "Game Over"
       },
       "score": {
-        "away": 0,
-        "home": 1
+        "away": 2,
+        "home": 10
       },
       "inning": {
-        "inning": 3,
+        "inning": 9,
         "state": "Top",
-        "ordinal": "3rd"
+        "ordinal": "9th"
       },
       "probablePitcher": null,
       "doubleHeader": "N",
@@ -111,13 +111,13 @@
         "label": "In Progress"
       },
       "score": {
-        "away": 1,
-        "home": 0
+        "away": 5,
+        "home": 1
       },
       "inning": {
-        "inning": 1,
-        "state": "Middle",
-        "ordinal": "1st"
+        "inning": 8,
+        "state": "Bottom",
+        "ordinal": "8th"
       },
       "probablePitcher": {
         "mlbamId": 811309,
