@@ -3,7 +3,7 @@
   "name": "Eric Brown Jr.",
   "archived": false,
   "playerType": "Hitter",
-  "generatedAt": "2026-09-10T19:42:36.975Z",
+  "generatedAt": "2026-09-10T20:06:50.680Z",
   "bio": {
     "Player-ID": "Eric-Brown",
     "MLBAM ID": "687521",
@@ -206,7 +206,7 @@
       "OBP": "0.347",
       "SLG": "0.347",
       "OPS": "0.695",
-      "wRC+": "92",
+      "wRC+": "91",
       "BABIP": "0.291",
       "wOBA": "0.325",
       "K%": "23.9%",

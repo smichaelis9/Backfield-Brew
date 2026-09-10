@@ -3,7 +3,7 @@
   "name": "Carlos Rodriguez",
   "archived": false,
   "playerType": "Pitcher",
-  "generatedAt": "2026-09-10T19:42:36.975Z",
+  "generatedAt": "2026-09-10T20:06:50.680Z",
   "bio": {
     "Player-ID": "Carlos-Rodriguez",
     "MLBAM ID": "692230",
@@ -214,7 +214,7 @@
       "Player-ID": "Carlos-Rodriguez",
       "Player": "Carlos Rodriguez",
       "ERA": "8.50",
-      "FIP": "6.40",
+      "FIP": "6.41",
       "xFIP": "6.21",
       "IP": "47.2",
       "G": "20",

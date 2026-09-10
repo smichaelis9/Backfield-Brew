@@ -3,7 +3,7 @@
   "name": "Josh Knoth",
   "archived": false,
   "playerType": "Pitcher",
-  "generatedAt": "2026-09-10T19:42:36.975Z",
+  "generatedAt": "2026-09-10T20:06:50.680Z",
   "bio": {
     "Player-ID": "Josh-Knoth",
     "MLBAM ID": "805807",
@@ -215,7 +215,7 @@
       "Player": "Josh Knoth",
       "ERA": "4.35",
       "FIP": "4.72",
-      "xFIP": "4.42",
+      "xFIP": "4.43",
       "IP": "82.2",
       "G": "21",
       "GS": "19",
