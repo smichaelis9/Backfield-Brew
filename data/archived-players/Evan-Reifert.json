@@ -3,7 +3,7 @@
   "name": "Evan Reifert",
   "archived": true,
   "playerType": "Pitcher",
-  "generatedAt": "2026-09-11T12:58:44.513Z",
+  "generatedAt": "2026-09-11T14:48:59.896Z",
   "bio": {
     "Player-ID": "Evan-Reifert",
     "MLBAM ID": "682126",
@@ -229,7 +229,7 @@
       "BB%": "",
       "K-BB %": "",
       "SwStr %": "",
-      "Whiff%": "34.6%",
+      "Whiff%": "34.5%",
       "WHIP": "",
       "BABIP": "",
       "LOB%": "",
@@ -243,12 +243,12 @@
   },
   "gamedayWhiff": {
     "mlbamID": "682126",
-    "swings": 52,
-    "whiffs": 18,
-    "contacts": 34,
-    "whiffPct": 34.6,
-    "contactPct": 65.4,
-    "games": 5,
+    "swings": 58,
+    "whiffs": 20,
+    "contacts": 38,
+    "whiffPct": 34.5,
+    "contactPct": 65.5,
+    "games": 6,
     "levels": [
       "AAA"
     ]

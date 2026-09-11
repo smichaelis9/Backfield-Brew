@@ -3,7 +3,7 @@
   "name": "Manuel Rodriguez",
   "archived": false,
   "playerType": "Pitcher",
-  "generatedAt": "2026-09-11T12:58:44.513Z",
+  "generatedAt": "2026-09-11T14:48:59.896Z",
   "bio": {
     "Player-ID": "Manuel-Rodriguez",
     "MLBAM ID": "804973",
@@ -214,7 +214,7 @@
       "Player-ID": "Manuel-Rodriguez",
       "Player": "Manuel Rodriguez",
       "ERA": "4.92",
-      "FIP": "5.80",
+      "FIP": "5.79",
       "xFIP": "5.21",
       "IP": "128",
       "G": "26",

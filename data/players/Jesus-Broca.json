@@ -3,7 +3,7 @@
   "name": "Jesús Broca",
   "archived": false,
   "playerType": "Pitcher",
-  "generatedAt": "2026-09-11T12:58:44.513Z",
+  "generatedAt": "2026-09-11T14:48:59.896Z",
   "bio": {
     "Player-ID": "Jesus-Broca",
     "MLBAM ID": "695871",
@@ -215,7 +215,7 @@
       "Player": "Jesús Broca",
       "ERA": "5.18",
       "FIP": "5.05",
-      "xFIP": "4.88",
+      "xFIP": "4.87",
       "IP": "57.1",
       "G": "37",
       "GS": "0",
