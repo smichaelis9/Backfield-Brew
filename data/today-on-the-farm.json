@@ -1,6 +1,6 @@
 {
-  "date": "2026-09-10",
-  "generatedAt": "2026-09-11T01:04:39.931Z",
+  "date": "2026-09-11",
+  "generatedAt": "2026-09-11T05:58:36.142Z",
   "affiliates": [
     {
       "teamId": 556,
@@ -62,10 +62,10 @@
   "gameCount": 2,
   "games": [
     {
-      "key": "816680:556",
-      "gamePk": 816680,
-      "date": "2026-09-10",
-      "gameDate": "2026-09-10T22:45:00Z",
+      "key": "816677:556",
+      "gamePk": 816677,
+      "date": "2026-09-11",
+      "gameDate": "2026-09-11T22:45:00Z",
       "affiliate": "Nashville Sounds",
       "affiliateTeamId": 556,
       "level": "AAA",
@@ -76,35 +76,28 @@
       "opponentTeamId": 234,
       "venue": "Durham Bulls Athletic Park",
       "status": {
-        "key": "live",
-        "label": "In Progress"
+        "key": "scheduled",
+        "label": "Scheduled"
       },
-      "score": {
-        "away": 4,
-        "home": 1
-      },
-      "inning": {
-        "inning": 8,
-        "state": "Bottom",
-        "ordinal": "8th"
-      },
+      "score": null,
+      "inning": null,
       "probablePitcher": {
-        "mlbamId": 692230,
-        "name": "Carlos Rodriguez",
+        "mlbamId": 804249,
+        "name": "Tate Kuehner",
         "inDatabase": true,
-        "playerId": "Carlos-Rodriguez",
-        "rank": 68,
-        "picture": "https://img.mlbstatic.com/mlb-photos/image/upload/c_fill,g_auto/w_180/v1/people/692230/headshot/milb/current",
+        "playerId": "Tate-Kuehner",
+        "rank": 36,
+        "picture": "https://img.mlbstatic.com/mlb-photos/image/upload/c_fill,g_auto/w_180/v1/people/804249/headshot/milb/current",
         "databaseLevel": "AAA"
       },
       "doubleHeader": "N",
       "gameNumber": 1
     },
     {
-      "key": "817736:5015",
-      "gamePk": 817736,
-      "date": "2026-09-10",
-      "gameDate": "2026-09-10T23:05:00Z",
+      "key": "817733:5015",
+      "gamePk": 817733,
+      "date": "2026-09-11",
+      "gameDate": "2026-09-11T23:05:00Z",
       "affiliate": "Biloxi Shuckers",
       "affiliateTeamId": 5015,
       "level": "AA",
@@ -115,25 +108,18 @@
       "opponentTeamId": 4124,
       "venue": "Blue Wahoos Stadium",
       "status": {
-        "key": "live",
-        "label": "In Progress"
+        "key": "scheduled",
+        "label": "Scheduled"
       },
-      "score": {
-        "away": 2,
-        "home": 5
-      },
-      "inning": {
-        "inning": 7,
-        "state": "Bottom",
-        "ordinal": "7th"
-      },
+      "score": null,
+      "inning": null,
       "probablePitcher": {
-        "mlbamId": 809229,
-        "name": "Jaron DeBerry",
+        "mlbamId": 702505,
+        "name": "J.D. Thompson",
         "inDatabase": true,
-        "playerId": "Jaron-DeBerry",
-        "rank": 16,
-        "picture": "https://img.mlbstatic.com/mlb-photos/image/upload/c_fill,g_auto/w_180/v1/people/809229/headshot/milb/current",
+        "playerId": "JD-Thompson",
+        "rank": 18,
+        "picture": "https://img.mlbstatic.com/mlb-photos/image/upload/c_fill,g_auto/w_180/v1/people/702505/headshot/milb/current",
         "databaseLevel": "AA"
       },
       "doubleHeader": "N",
