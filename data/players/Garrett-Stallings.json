@@ -3,7 +3,7 @@
   "name": "Garrett Stallings",
   "archived": false,
   "playerType": "Pitcher",
-  "generatedAt": "2026-09-11T08:19:53.886Z",
+  "generatedAt": "2026-09-11T12:58:44.513Z",
   "bio": {
     "Player-ID": "Garrett-Stallings",
     "MLBAM ID": "668831",
@@ -413,6 +413,23 @@
     }
   ],
   "transactions": [
+    {
+      "Transaction ID": "942008",
+      "Date": "2026-09-10",
+      "Effective Date": "2026-09-10",
+      "MLBAM ID": "668831",
+      "Player": "Garrett Stallings",
+      "Position": "",
+      "From Team": "Nashville Sounds",
+      "To Team": "Milwaukee Brewers",
+      "Level": "MiLB",
+      "Type": "Recalled",
+      "Description": "Milwaukee Brewers recalled RHP Garrett Stallings from Nashville Sounds.",
+      "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2026-09",
+      "Imported At": "09/11/2026 07:46:35",
+      "Player ID": "Garrett-Stallings",
+      "Archived?": ""
+    },
     {
       "Transaction ID": "935815",
       "Date": "2026-08-04",

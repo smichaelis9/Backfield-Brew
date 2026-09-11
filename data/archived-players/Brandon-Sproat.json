@@ -3,7 +3,7 @@
   "name": "Brandon Sproat",
   "archived": true,
   "playerType": "Pitcher",
-  "generatedAt": "2026-09-11T08:19:53.886Z",
+  "generatedAt": "2026-09-11T12:58:44.513Z",
   "bio": {
     "Player-ID": "Brandon-Sproat",
     "MLBAM ID": "687075",
@@ -411,6 +411,23 @@
     }
   ],
   "transactions": [
+    {
+      "Transaction ID": "942007",
+      "Date": "2026-09-10",
+      "Effective Date": "2026-09-10",
+      "MLBAM ID": "687075",
+      "Player": "Brandon Sproat",
+      "Position": "",
+      "From Team": "Milwaukee Brewers",
+      "To Team": "Nashville Sounds",
+      "Level": "MiLB",
+      "Type": "Optioned",
+      "Description": "Milwaukee Brewers optioned RHP Brandon Sproat to Nashville Sounds.",
+      "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2026-09",
+      "Imported At": "09/11/2026 07:46:35",
+      "Player ID": "Brandon-Sproat",
+      "Archived?": "yes"
+    },
     {
       "Transaction ID": "941524",
       "Date": "2026-09-07",
