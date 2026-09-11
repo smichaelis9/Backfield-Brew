@@ -3,7 +3,7 @@
   "name": "Tyson Hardin",
   "archived": false,
   "playerType": "Pitcher",
-  "generatedAt": "2026-09-11T19:35:26.876Z",
+  "generatedAt": "2026-09-11T21:59:03.326Z",
   "bio": {
     "Player-ID": "Tyson-Hardin",
     "MLBAM ID": "824620",
@@ -414,6 +414,23 @@
     }
   ],
   "transactions": [
+    {
+      "Transaction ID": "942059",
+      "Date": "2026-09-11",
+      "Effective Date": "2026-09-10",
+      "MLBAM ID": "824620",
+      "Player": "Tyson Hardin",
+      "Position": "",
+      "From Team": "",
+      "To Team": "Nashville Sounds",
+      "Level": "MiLB",
+      "Type": "Injured List",
+      "Description": "Nashville Sounds placed RHP Tyson Hardin on the 7-day injured list retroactive to September 10, 2026.",
+      "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2026-09",
+      "Imported At": "09/11/2026 15:46:31",
+      "Player ID": "Tyson-Hardin",
+      "Archived?": ""
+    },
     {
       "Transaction ID": "909623",
       "Date": "2026-05-17",
