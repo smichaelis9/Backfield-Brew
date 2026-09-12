@@ -1,6 +1,6 @@
 {
-  "date": "2026-09-11",
-  "generatedAt": "2026-09-12T01:06:54.698Z",
+  "date": "2026-09-12",
+  "generatedAt": "2026-09-12T05:46:34.452Z",
   "affiliates": [
     {
       "teamId": 556,
@@ -62,10 +62,10 @@
   "gameCount": 2,
   "games": [
     {
-      "key": "816677:556",
-      "gamePk": 816677,
-      "date": "2026-09-11",
-      "gameDate": "2026-09-11T22:45:00Z",
+      "key": "816679:556",
+      "gamePk": 816679,
+      "date": "2026-09-12",
+      "gameDate": "2026-09-12T22:45:00Z",
       "affiliate": "Nashville Sounds",
       "affiliateTeamId": 556,
       "level": "AAA",
@@ -76,35 +76,28 @@
       "opponentTeamId": 234,
       "venue": "Durham Bulls Athletic Park",
       "status": {
-        "key": "live",
-        "label": "In Progress"
+        "key": "scheduled",
+        "label": "Scheduled"
       },
-      "score": {
-        "away": 3,
-        "home": 5
-      },
-      "inning": {
-        "inning": 8,
-        "state": "Middle",
-        "ordinal": "8th"
-      },
+      "score": null,
+      "inning": null,
       "probablePitcher": {
-        "mlbamId": 804249,
-        "name": "Tate Kuehner",
-        "inDatabase": true,
-        "playerId": "Tate-Kuehner",
-        "rank": 36,
-        "picture": "https://img.mlbstatic.com/mlb-photos/image/upload/c_fill,g_auto/w_180/v1/people/804249/headshot/milb/current",
-        "databaseLevel": "AAA"
+        "mlbamId": 676467,
+        "name": "Colton Gordon",
+        "inDatabase": false,
+        "playerId": "",
+        "rank": null,
+        "picture": "",
+        "databaseLevel": ""
       },
       "doubleHeader": "N",
       "gameNumber": 1
     },
     {
-      "key": "817733:5015",
-      "gamePk": 817733,
-      "date": "2026-09-11",
-      "gameDate": "2026-09-11T23:05:00Z",
+      "key": "817739:5015",
+      "gamePk": 817739,
+      "date": "2026-09-12",
+      "gameDate": "2026-09-12T23:05:00Z",
       "affiliate": "Biloxi Shuckers",
       "affiliateTeamId": 5015,
       "level": "AA",
@@ -115,25 +108,18 @@
       "opponentTeamId": 4124,
       "venue": "Blue Wahoos Stadium",
       "status": {
-        "key": "live",
-        "label": "In Progress"
+        "key": "scheduled",
+        "label": "Scheduled"
       },
-      "score": {
-        "away": 4,
-        "home": 4
-      },
-      "inning": {
-        "inning": 5,
-        "state": "Bottom",
-        "ordinal": "5th"
-      },
+      "score": null,
+      "inning": null,
       "probablePitcher": {
-        "mlbamId": 702505,
-        "name": "J.D. Thompson",
+        "mlbamId": 805807,
+        "name": "Josh Knoth",
         "inDatabase": true,
-        "playerId": "JD-Thompson",
-        "rank": 18,
-        "picture": "https://img.mlbstatic.com/mlb-photos/image/upload/c_fill,g_auto/w_180/v1/people/702505/headshot/milb/current",
+        "playerId": "Josh-Knoth",
+        "rank": 14,
+        "picture": "https://img.mlbstatic.com/mlb-photos/image/upload/c_fill,g_auto/w_180/v1/people/805807/headshot/milb/current",
         "databaseLevel": "AA"
       },
       "doubleHeader": "N",
