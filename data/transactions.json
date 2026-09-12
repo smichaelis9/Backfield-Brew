@@ -1,5 +1,22 @@
 [
   {
+    "Transaction ID": "942111",
+    "Date": "2026-09-11",
+    "Effective Date": "2026-09-11",
+    "MLBAM ID": "809699",
+    "Player": "Argenis Aparicio",
+    "Position": "",
+    "From Team": "",
+    "To Team": "ACL Brewers",
+    "Level": "MiLB",
+    "Type": "Released",
+    "Description": "ACL Brewers released RHP Argenis Aparicio.",
+    "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2026-09",
+    "Imported At": "09/12/2026 09:46:33",
+    "Player ID": "Argenis-Aparicio",
+    "Archived?": ""
+  },
+  {
     "Transaction ID": "942059",
     "Date": "2026-09-11",
     "Effective Date": "2026-09-10",

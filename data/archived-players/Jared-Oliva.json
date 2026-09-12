@@ -3,7 +3,7 @@
   "name": "Jared Oliva",
   "archived": true,
   "playerType": "Hitter",
-  "generatedAt": "2026-09-12T12:43:48.847Z",
+  "generatedAt": "2026-09-12T15:52:53.428Z",
   "bio": {
     "Player-ID": "Jared-Oliva",
     "MLBAM ID": "666931",
@@ -210,7 +210,7 @@
       "K%": "",
       "BB%": "",
       "SwStr %": "",
-      "Whiff%": "",
+      "Whiff%": "16.7%",
       "Pull %": "",
       "Cent %": "",
       "Oppo %": "",
@@ -224,7 +224,18 @@
       "Archived?": "yes"
     }
   },
-  "gamedayWhiff": null,
+  "gamedayWhiff": {
+    "mlbamID": "666931",
+    "swings": 6,
+    "whiffs": 1,
+    "contacts": 5,
+    "whiffPct": 16.7,
+    "contactPct": 83.3,
+    "games": 1,
+    "levels": [
+      "AAA"
+    ]
+  },
   "videos": [
     {
       "Player-ID": "Jared-Oliva",

@@ -3,7 +3,7 @@
   "name": "Ethan Murray",
   "archived": false,
   "playerType": "Hitter",
-  "generatedAt": "2026-09-12T12:43:48.847Z",
+  "generatedAt": "2026-09-12T15:52:53.428Z",
   "bio": {
     "Player-ID": "Ethan-Murray",
     "MLBAM ID": "696140",
@@ -212,7 +212,7 @@
       "K%": "22.7%",
       "BB%": "10.2%",
       "SwStr %": "12.8%",
-      "Whiff%": "28.0%",
+      "Whiff%": "27.7%",
       "Pull %": "45.4%",
       "Cent %": "22.9%",
       "Oppo %": "31.7%",
@@ -228,12 +228,12 @@
   },
   "gamedayWhiff": {
     "mlbamID": "696140",
-    "swings": 644,
-    "whiffs": 180,
-    "contacts": 464,
-    "whiffPct": 28,
-    "contactPct": 72,
-    "games": 98,
+    "swings": 653,
+    "whiffs": 181,
+    "contacts": 472,
+    "whiffPct": 27.7,
+    "contactPct": 72.3,
+    "games": 99,
     "levels": [
       "AAA"
     ]

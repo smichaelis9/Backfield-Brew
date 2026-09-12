@@ -3,7 +3,7 @@
   "name": "Andrick Nava",
   "archived": false,
   "playerType": "Hitter",
-  "generatedAt": "2026-09-12T12:43:48.847Z",
+  "generatedAt": "2026-09-12T15:52:53.428Z",
   "bio": {
     "Player-ID": "Andrick-Nava",
     "MLBAM ID": "682774",
@@ -212,7 +212,7 @@
       "K%": "19.6%",
       "BB%": "8.7%",
       "SwStr %": "12.8%",
-      "Whiff%": "25.2%",
+      "Whiff%": "26.5%",
       "Pull %": "49.2%",
       "Cent %": "24.6%",
       "Oppo %": "26.2%",
@@ -228,12 +228,12 @@
   },
   "gamedayWhiff": {
     "mlbamID": "682774",
-    "swings": 163,
-    "whiffs": 41,
-    "contacts": 122,
-    "whiffPct": 25.2,
-    "contactPct": 74.8,
-    "games": 25,
+    "swings": 170,
+    "whiffs": 45,
+    "contacts": 125,
+    "whiffPct": 26.5,
+    "contactPct": 73.5,
+    "games": 26,
     "levels": [
       "A+",
       "AAA"
