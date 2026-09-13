@@ -1,6 +1,6 @@
 {
   "date": "2026-09-13",
-  "generatedAt": "2026-09-13T05:23:39.772Z",
+  "generatedAt": "2026-09-13T10:28:36.082Z",
   "affiliates": [
     {
       "teamId": 556,
@@ -113,7 +113,15 @@
       },
       "score": null,
       "inning": null,
-      "probablePitcher": null,
+      "probablePitcher": {
+        "mlbamId": 804973,
+        "name": "Manuel Rodriguez",
+        "inDatabase": true,
+        "playerId": "Manuel-Rodriguez",
+        "rank": 43,
+        "picture": "https://img.mlbstatic.com/mlb-photos/image/upload/c_fill,g_auto/w_180/v1/people/804973/headshot/milb/current",
+        "databaseLevel": "AA"
+      },
       "doubleHeader": "N",
       "gameNumber": 1
     }
