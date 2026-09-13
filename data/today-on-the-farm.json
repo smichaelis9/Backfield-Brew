@@ -1,6 +1,6 @@
 {
   "date": "2026-09-12",
-  "generatedAt": "2026-09-12T22:53:36.153Z",
+  "generatedAt": "2026-09-13T00:36:37.731Z",
   "affiliates": [
     {
       "teamId": 556,
@@ -76,17 +76,17 @@
       "opponentTeamId": 234,
       "venue": "Durham Bulls Athletic Park",
       "status": {
-        "key": "delayed",
-        "label": "Delayed Start"
+        "key": "live",
+        "label": "In Progress"
       },
       "score": {
-        "away": 0,
-        "home": 0
+        "away": 1,
+        "home": 1
       },
       "inning": {
-        "inning": 1,
-        "state": "Top",
-        "ordinal": "1st"
+        "inning": 5,
+        "state": "Bottom",
+        "ordinal": "5th"
       },
       "probablePitcher": {
         "mlbamId": 676467,
@@ -115,17 +115,17 @@
       "opponentTeamId": 4124,
       "venue": "Blue Wahoos Stadium",
       "status": {
-        "key": "scheduled",
-        "label": "Pre-Game"
+        "key": "live",
+        "label": "In Progress"
       },
       "score": {
-        "away": 0,
+        "away": 2,
         "home": 0
       },
       "inning": {
-        "inning": 1,
+        "inning": 3,
         "state": "Top",
-        "ordinal": "1st"
+        "ordinal": "3rd"
       },
       "probablePitcher": {
         "mlbamId": 805807,
