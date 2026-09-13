@@ -1,6 +1,6 @@
 {
-  "date": "2026-09-12",
-  "generatedAt": "2026-09-13T00:36:37.731Z",
+  "date": "2026-09-13",
+  "generatedAt": "2026-09-13T05:23:39.772Z",
   "affiliates": [
     {
       "teamId": 556,
@@ -62,10 +62,10 @@
   "gameCount": 2,
   "games": [
     {
-      "key": "816679:556",
-      "gamePk": 816679,
-      "date": "2026-09-12",
-      "gameDate": "2026-09-12T22:45:00Z",
+      "key": "816681:556",
+      "gamePk": 816681,
+      "date": "2026-09-13",
+      "gameDate": "2026-09-13T17:05:00Z",
       "affiliate": "Nashville Sounds",
       "affiliateTeamId": 556,
       "level": "AAA",
@@ -76,21 +76,14 @@
       "opponentTeamId": 234,
       "venue": "Durham Bulls Athletic Park",
       "status": {
-        "key": "live",
-        "label": "In Progress"
+        "key": "scheduled",
+        "label": "Scheduled"
       },
-      "score": {
-        "away": 1,
-        "home": 1
-      },
-      "inning": {
-        "inning": 5,
-        "state": "Bottom",
-        "ordinal": "5th"
-      },
+      "score": null,
+      "inning": null,
       "probablePitcher": {
-        "mlbamId": 676467,
-        "name": "Colton Gordon",
+        "mlbamId": 623381,
+        "name": "Thomas Pannone",
         "inDatabase": false,
         "playerId": "",
         "rank": null,
@@ -101,10 +94,10 @@
       "gameNumber": 1
     },
     {
-      "key": "817739:5015",
-      "gamePk": 817739,
-      "date": "2026-09-12",
-      "gameDate": "2026-09-12T23:05:00Z",
+      "key": "817735:5015",
+      "gamePk": 817735,
+      "date": "2026-09-13",
+      "gameDate": "2026-09-13T18:05:00Z",
       "affiliate": "Biloxi Shuckers",
       "affiliateTeamId": 5015,
       "level": "AA",
@@ -115,27 +108,12 @@
       "opponentTeamId": 4124,
       "venue": "Blue Wahoos Stadium",
       "status": {
-        "key": "live",
-        "label": "In Progress"
+        "key": "scheduled",
+        "label": "Scheduled"
       },
-      "score": {
-        "away": 2,
-        "home": 0
-      },
-      "inning": {
-        "inning": 3,
-        "state": "Top",
-        "ordinal": "3rd"
-      },
-      "probablePitcher": {
-        "mlbamId": 805807,
-        "name": "Josh Knoth",
-        "inDatabase": true,
-        "playerId": "Josh-Knoth",
-        "rank": 14,
-        "picture": "https://img.mlbstatic.com/mlb-photos/image/upload/c_fill,g_auto/w_180/v1/people/805807/headshot/milb/current",
-        "databaseLevel": "AA"
-      },
+      "score": null,
+      "inning": null,
+      "probablePitcher": null,
       "doubleHeader": "N",
       "gameNumber": 1
     }
