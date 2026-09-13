@@ -1,6 +1,6 @@
 {
   "date": "2026-09-13",
-  "generatedAt": "2026-09-13T19:48:58.412Z",
+  "generatedAt": "2026-09-13T22:05:56.119Z",
   "affiliates": [
     {
       "teamId": 556,
@@ -115,17 +115,17 @@
       "opponentTeamId": 4124,
       "venue": "Blue Wahoos Stadium",
       "status": {
-        "key": "live",
-        "label": "In Progress"
+        "key": "final",
+        "label": "Final"
       },
       "score": {
         "away": 2,
-        "home": 0
+        "home": 1
       },
       "inning": {
-        "inning": 7,
-        "state": "Top",
-        "ordinal": "7th"
+        "inning": 9,
+        "state": "Bottom",
+        "ordinal": "9th"
       },
       "probablePitcher": {
         "mlbamId": 804973,
