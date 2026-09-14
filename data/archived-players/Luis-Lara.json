@@ -3,7 +3,7 @@
   "name": "Luis Lara",
   "archived": true,
   "playerType": "Hitter",
-  "generatedAt": "2026-09-14T10:42:13.656Z",
+  "generatedAt": "2026-09-14T14:49:16.704Z",
   "bio": {
     "Player-ID": "Luis-Lara",
     "MLBAM ID": "800325",
@@ -206,7 +206,7 @@
       "OPS": "0.902",
       "wRC+": "144",
       "BABIP": "0.359",
-      "wOBA": "0.408",
+      "wOBA": "0.407",
       "K%": "13.9%",
       "BB%": "15.6%",
       "SwStr %": "5.1%",

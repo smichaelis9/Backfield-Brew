@@ -3,7 +3,7 @@
   "name": "Dasan Brown",
   "archived": true,
   "playerType": "Hitter",
-  "generatedAt": "2026-09-14T10:42:13.656Z",
+  "generatedAt": "2026-09-14T14:49:16.704Z",
   "bio": {
     "Player-ID": "Dasan-Brown",
     "MLBAM ID": "672018",
@@ -204,7 +204,7 @@
       "OBP": "0.347",
       "SLG": "0.244",
       "OPS": "0.592",
-      "wRC+": "74",
+      "wRC+": "73",
       "BABIP": "0.302",
       "wOBA": "0.297",
       "K%": "29.2%",
