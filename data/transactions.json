@@ -14,7 +14,7 @@
     "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2026-09",
     "Imported At": "09/12/2026 09:46:33",
     "Player ID": "Argenis-Aparicio",
-    "Archived?": ""
+    "Archived?": "yes"
   },
   {
     "Transaction ID": "942059",
@@ -10758,7 +10758,7 @@
     "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2026-05",
     "Imported At": "08/13/2026 10:21:53",
     "Player ID": "Argenis-Aparicio",
-    "Archived?": ""
+    "Archived?": "yes"
   },
   {
     "Transaction ID": "910272",
@@ -10928,7 +10928,7 @@
     "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2026-05",
     "Imported At": "08/13/2026 10:21:53",
     "Player ID": "Argenis-Aparicio",
-    "Archived?": ""
+    "Archived?": "yes"
   },
   {
     "Transaction ID": "909604",
@@ -36682,7 +36682,7 @@
     "Description": "Milwaukee Brewers traded RHP Evan McKendry to Chicago White Sox for cash.",
     "Source URL": "https://www.mlb.com/brewers/roster/transactions/2025/05",
     "Imported At": "08/13/2026 09:59:42",
-    "Player ID": "Evan-McKendry",
+    "Player ID": "",
     "Archived?": "yes"
   },
   {
@@ -37958,7 +37958,7 @@
     "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2025-04",
     "Imported At": "08/13/2026 10:20:12",
     "Player ID": "Argenis-Aparicio",
-    "Archived?": ""
+    "Archived?": "yes"
   },
   {
     "Transaction ID": "833028",
@@ -40745,7 +40745,7 @@
     "Description": "Nashville Sounds activated RHP Evan McKendry.",
     "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2025-04",
     "Imported At": "08/13/2026 10:20:12",
-    "Player ID": "Evan-McKendry",
+    "Player ID": "",
     "Archived?": "yes"
   },
   {
@@ -41850,7 +41850,7 @@
     "Description": "Nashville Sounds transferred RHP Evan McKendry to the Development List.",
     "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2025-03",
     "Imported At": "08/13/2026 10:20:06",
-    "Player ID": "Evan-McKendry",
+    "Player ID": "",
     "Archived?": "yes"
   },
   {
@@ -44689,7 +44689,7 @@
     "Description": "RHP Evan McKendry assigned to Milwaukee Brewers.",
     "Source URL": "https://www.mlb.com/brewers/roster/transactions/2025/02",
     "Imported At": "08/13/2026 09:59:23",
-    "Player ID": "Evan-McKendry",
+    "Player ID": "",
     "Archived?": "yes"
   },
   {
@@ -59463,7 +59463,7 @@
     "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2024-06",
     "Imported At": "08/13/2026 10:19:02",
     "Player ID": "Argenis-Aparicio",
-    "Archived?": ""
+    "Archived?": "yes"
   },
   {
     "Transaction ID": "776674",
@@ -60805,7 +60805,7 @@
     "Description": "Nashville Sounds activated RHP Evan McKendry from the 7-day injured list.",
     "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2024-05",
     "Imported At": "08/13/2026 10:18:56",
-    "Player ID": "Evan-McKendry",
+    "Player ID": "",
     "Archived?": "yes"
   },
   {
@@ -63797,7 +63797,7 @@
     "Description": "Nashville Sounds placed RHP Evan McKendry on the 7-day injured list.",
     "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2024-04",
     "Imported At": "08/13/2026 10:18:49",
-    "Player ID": "Evan-McKendry",
+    "Player ID": "",
     "Archived?": "yes"
   },
   {
@@ -69594,7 +69594,7 @@
     "Description": "Milwaukee Brewers invited non-roster RHP Evan McKendry to spring training.",
     "Source URL": "https://www.mlb.com/brewers/roster/transactions/2024/01",
     "Imported At": "08/13/2026 09:58:31",
-    "Player ID": "Evan-McKendry",
+    "Player ID": "",
     "Archived?": "yes"
   },
   {
@@ -72977,7 +72977,7 @@
     "Description": "Nashville Sounds activated RHP Evan McKendry from the 7-day injured list.",
     "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2023-10",
     "Imported At": "08/13/2026 10:18:05",
-    "Player ID": "Evan-McKendry",
+    "Player ID": "",
     "Archived?": "yes"
   },
   {
@@ -73878,7 +73878,7 @@
     "Description": "Nashville Sounds placed RHP Evan McKendry on the 7-day injured list.",
     "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2023-09",
     "Imported At": "08/13/2026 10:17:59",
-    "Player ID": "Evan-McKendry",
+    "Player ID": "",
     "Archived?": "yes"
   },
   {
@@ -78094,7 +78094,7 @@
     "Description": "Nashville Sounds activated RHP Evan McKendry.",
     "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2023-08",
     "Imported At": "08/13/2026 10:17:52",
-    "Player ID": "Evan-McKendry",
+    "Player ID": "",
     "Archived?": "yes"
   },
   {
@@ -78179,7 +78179,7 @@
     "Description": "RHP Evan McKendry assigned to Nashville Sounds.",
     "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2023-08",
     "Imported At": "08/13/2026 10:17:52",
-    "Player ID": "Evan-McKendry",
+    "Player ID": "",
     "Archived?": "yes"
   },
   {
@@ -78196,7 +78196,7 @@
     "Description": "Milwaukee Brewers traded C Alex Jackson to Tampa Bay Rays for RHP Evan McKendry.",
     "Source URL": "https://www.mlb.com/brewers/roster/transactions/2023/08",
     "Imported At": "08/13/2026 09:58:09",
-    "Player ID": "Evan-McKendry",
+    "Player ID": "",
     "Archived?": "yes"
   },
   {
@@ -93939,7 +93939,7 @@
     "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2023-02",
     "Imported At": "08/13/2026 10:17:11",
     "Player ID": "Argenis-Aparicio",
-    "Archived?": ""
+    "Archived?": "yes"
   },
   {
     "Transaction ID": "672754",
@@ -93956,7 +93956,7 @@
     "Source URL": "https://www.mlb.com/brewers/roster/transactions/2023/02",
     "Imported At": "08/13/2026 09:57:49",
     "Player ID": "Argenis-Aparicio",
-    "Archived?": ""
+    "Archived?": "yes"
   },
   {
     "Transaction ID": "671972",

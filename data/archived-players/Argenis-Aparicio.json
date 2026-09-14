@@ -1,21 +1,20 @@
 {
   "id": "Argenis-Aparicio",
   "name": "Argenis Aparicio",
-  "archived": false,
+  "archived": true,
   "playerType": "Pitcher",
-  "generatedAt": "2026-09-14T14:49:16.704Z",
+  "generatedAt": "2026-09-14T15:04:03.460Z",
   "bio": {
     "Player-ID": "Argenis-Aparicio",
     "MLBAM ID": "809699",
     "Player Type": "Pitcher",
     "Player": "Argenis Aparicio",
     "Rank": "178",
-    "Trending": "",
+    "Archive Reason": "Released on 9/13/2026",
     "Position": "RHP",
     "Level": "ACL",
     "Age": "21.0",
     "OFP": "30+",
-    "OFP Updated": "",
     "Risk": "Extreme",
     "School or Country": "Country",
     "School/Country": "Venezuela",
@@ -28,7 +27,7 @@
     "Weight": "180",
     "Bat / Throw": "Switch/Right",
     "Birthday": "9/23/2005",
-    "Rule 5 Eligible": "2027",
+    "Rule 5 Eligible": "",
     "Picture": "https://i.ibb.co/rGpHjfx6/image.png",
     "Picture Source": "Brewers",
     "Notes Updated": "N/A",
@@ -88,8 +87,7 @@
     "Instagram": "Instagram",
     "Instagram Link": "https://www.instagram.com/argenisaparicio8/",
     "Other Social": "",
-    "Other Social Link": "",
-    "Previous Rank": "178"
+    "Other Social Link": ""
   },
   "tools": {
     "Player-ID": "Argenis-Aparicio",
@@ -144,7 +142,7 @@
       "FB%": "39.3%",
       "IFFB%": "36.4%",
       "HR/FB": "0.09",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     "2024": {
       "Player-ID": "Argenis-Aparicio",
@@ -176,7 +174,7 @@
       "FB%": "34.1%",
       "IFFB%": "23.8%",
       "HR/FB": "0.12",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     "2025": {
       "Player-ID": "Argenis-Aparicio",
@@ -208,7 +206,7 @@
       "FB%": "41.4%",
       "IFFB%": "12.2%",
       "HR/FB": "0.07",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     "2026": {
       "Player-ID": "Argenis-Aparicio",
@@ -240,7 +238,7 @@
       "FB%": "41.1%",
       "IFFB%": "17.4%",
       "HR/FB": "0.22",
-      "Archived?": ""
+      "Archived?": "yes"
     }
   },
   "gamedayWhiff": null,
@@ -417,7 +415,7 @@
       "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2026-09",
       "Imported At": "09/12/2026 09:46:33",
       "Player ID": "Argenis-Aparicio",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     {
       "Transaction ID": "910478",
@@ -434,7 +432,7 @@
       "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2026-05",
       "Imported At": "08/13/2026 10:21:53",
       "Player ID": "Argenis-Aparicio",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     {
       "Transaction ID": "909605",
@@ -451,7 +449,7 @@
       "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2026-05",
       "Imported At": "08/13/2026 10:21:53",
       "Player ID": "Argenis-Aparicio",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     {
       "Transaction ID": "833029",
@@ -468,7 +466,7 @@
       "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2025-04",
       "Imported At": "08/13/2026 10:20:12",
       "Player ID": "Argenis-Aparicio",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     {
       "Transaction ID": "776686",
@@ -485,7 +483,7 @@
       "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2024-06",
       "Imported At": "08/13/2026 10:19:02",
       "Player ID": "Argenis-Aparicio",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     {
       "Transaction ID": "672755",
@@ -502,7 +500,7 @@
       "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2023-02",
       "Imported At": "08/13/2026 10:17:11",
       "Player ID": "Argenis-Aparicio",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     {
       "Transaction ID": "672754",
@@ -519,7 +517,7 @@
       "Source URL": "https://www.mlb.com/brewers/roster/transactions/2023/02",
       "Imported At": "08/13/2026 09:57:49",
       "Player ID": "Argenis-Aparicio",
-      "Archived?": ""
+      "Archived?": "yes"
     }
   ]
 }
