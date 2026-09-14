@@ -3,7 +3,7 @@
   "name": "Brandon Sproat",
   "archived": true,
   "playerType": "Pitcher",
-  "generatedAt": "2026-09-14T15:04:03.460Z",
+  "generatedAt": "2026-09-14T16:37:53.389Z",
   "bio": {
     "Player-ID": "Brandon-Sproat",
     "MLBAM ID": "687075",
@@ -229,7 +229,7 @@
       "BB%": "12.60%",
       "K-BB %": "19.50%",
       "SwStr %": "11.30%",
-      "Whiff%": "28.5%",
+      "Whiff%": "27.1%",
       "WHIP": "1.13",
       "BABIP": "0.233",
       "LOB%": "73.3%",
@@ -243,12 +243,12 @@
   },
   "gamedayWhiff": {
     "mlbamID": "687075",
-    "swings": 144,
-    "whiffs": 41,
-    "contacts": 103,
-    "whiffPct": 28.5,
-    "contactPct": 71.5,
-    "games": 5,
+    "swings": 155,
+    "whiffs": 42,
+    "contacts": 113,
+    "whiffPct": 27.1,
+    "contactPct": 72.9,
+    "games": 6,
     "levels": [
       "AAA"
     ]

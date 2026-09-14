@@ -3,7 +3,7 @@
   "name": "Blake Burke",
   "archived": false,
   "playerType": "Hitter",
-  "generatedAt": "2026-09-14T15:04:03.460Z",
+  "generatedAt": "2026-09-14T16:37:53.389Z",
   "bio": {
     "Player-ID": "Blake-Burke",
     "MLBAM ID": "695501",
@@ -212,7 +212,7 @@
       "K%": "25.6%",
       "BB%": "10.2%",
       "SwStr %": "14.9%",
-      "Whiff%": "27.9%",
+      "Whiff%": "27.7%",
       "Pull %": "42.5%",
       "Cent %": "27.4%",
       "Oppo %": "30.1%",
@@ -228,12 +228,12 @@
   },
   "gamedayWhiff": {
     "mlbamID": "695501",
-    "swings": 1120,
+    "swings": 1126,
     "whiffs": 312,
-    "contacts": 808,
-    "whiffPct": 27.9,
-    "contactPct": 72.1,
-    "games": 122,
+    "contacts": 814,
+    "whiffPct": 27.7,
+    "contactPct": 72.3,
+    "games": 123,
     "levels": [
       "AA",
       "AAA"

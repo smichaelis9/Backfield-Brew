@@ -3,7 +3,7 @@
   "name": "Braylon Payne",
   "archived": false,
   "playerType": "Hitter",
-  "generatedAt": "2026-09-14T15:04:03.460Z",
+  "generatedAt": "2026-09-14T16:37:53.389Z",
   "bio": {
     "Player-ID": "Braylon-Payne",
     "MLBAM ID": "815520",
@@ -212,7 +212,7 @@
       "K%": "29.1%",
       "BB%": "10.5%",
       "SwStr %": "17.0%",
-      "Whiff%": "33.3%",
+      "Whiff%": "33.1%",
       "Pull %": "46.4%",
       "Cent %": "27.7%",
       "Oppo %": "25.9%",
@@ -228,12 +228,12 @@
   },
   "gamedayWhiff": {
     "mlbamID": "815520",
-    "swings": 927,
-    "whiffs": 309,
-    "contacts": 618,
-    "whiffPct": 33.3,
-    "contactPct": 66.7,
-    "games": 101,
+    "swings": 937,
+    "whiffs": 310,
+    "contacts": 627,
+    "whiffPct": 33.1,
+    "contactPct": 66.9,
+    "games": 102,
     "levels": [
       "A+",
       "AA"
