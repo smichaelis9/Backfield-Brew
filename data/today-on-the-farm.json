@@ -1,6 +1,6 @@
 {
   "date": "2026-09-15",
-  "generatedAt": "2026-09-15T20:15:58.897Z",
+  "generatedAt": "2026-09-15T23:01:37.769Z",
   "affiliates": [
     {
       "teamId": 556,
@@ -76,11 +76,18 @@
       "opponentTeamId": 4124,
       "venue": "Blue Wahoos Stadium",
       "status": {
-        "key": "scheduled",
-        "label": "Scheduled"
+        "key": "live",
+        "label": "Warmup"
       },
-      "score": null,
-      "inning": null,
+      "score": {
+        "away": 0,
+        "home": 0
+      },
+      "inning": {
+        "inning": 1,
+        "state": "Top",
+        "ordinal": "1st"
+      },
       "probablePitcher": {
         "mlbamId": 811309,
         "name": "Bishop Letson",
@@ -113,7 +120,15 @@
       },
       "score": null,
       "inning": null,
-      "probablePitcher": null,
+      "probablePitcher": {
+        "mlbamId": 689441,
+        "name": "Coleman Crow",
+        "inDatabase": true,
+        "playerId": "Coleman-Crow",
+        "rank": 27,
+        "picture": "https://img.mlbstatic.com/mlb-photos/image/upload/c_fill,g_auto/w_180/v1/people/689441/headshot/milb/current",
+        "databaseLevel": "AAA"
+      },
       "doubleHeader": "N",
       "gameNumber": 1
     }
