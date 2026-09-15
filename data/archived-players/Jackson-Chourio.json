@@ -3,7 +3,7 @@
   "name": "Jackson Chourio",
   "archived": true,
   "playerType": "Hitter",
-  "generatedAt": "2026-09-15T20:28:27.569Z",
+  "generatedAt": "2026-09-15T23:07:51.695Z",
   "bio": {
     "Player-ID": "Jackson-Chourio",
     "MLBAM ID": "694192",
@@ -394,6 +394,23 @@
     }
   ],
   "transactions": [
+    {
+      "Transaction ID": "942655",
+      "Date": "2026-09-15",
+      "Effective Date": "2026-09-15",
+      "MLBAM ID": "694192",
+      "Player": "Jackson Chourio",
+      "Position": "",
+      "From Team": "",
+      "To Team": "Milwaukee Brewers",
+      "Level": "MLB",
+      "Type": "Number Change",
+      "Description": "LF Jackson Chourio changed number to 21.",
+      "Source URL": "https://www.mlb.com/brewers/roster/transactions/2026/09",
+      "Imported At": "09/15/2026 16:46:31",
+      "Player ID": "Jackson-Chourio",
+      "Archived?": "yes"
+    },
     {
       "Transaction ID": "908363",
       "Date": "2026-05-04",

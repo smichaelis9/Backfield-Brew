@@ -3,7 +3,7 @@
   "name": "Luis Lara",
   "archived": true,
   "playerType": "Hitter",
-  "generatedAt": "2026-09-15T20:28:27.569Z",
+  "generatedAt": "2026-09-15T23:07:51.695Z",
   "bio": {
     "Player-ID": "Luis-Lara",
     "MLBAM ID": "800325",
@@ -394,6 +394,23 @@
     }
   ],
   "transactions": [
+    {
+      "Transaction ID": "942656",
+      "Date": "2026-09-15",
+      "Effective Date": "2026-09-15",
+      "MLBAM ID": "800325",
+      "Player": "Luis Lara",
+      "Position": "",
+      "From Team": "",
+      "To Team": "Milwaukee Brewers",
+      "Level": "MLB",
+      "Type": "Number Change",
+      "Description": "RF Luis Lara changed number to 21.",
+      "Source URL": "https://www.mlb.com/brewers/roster/transactions/2026/09",
+      "Imported At": "09/15/2026 16:46:31",
+      "Player ID": "Luis-Lara",
+      "Archived?": "yes"
+    },
     {
       "Transaction ID": "925497",
       "Date": "2026-07-07",
