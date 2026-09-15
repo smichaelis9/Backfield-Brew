@@ -1,6 +1,6 @@
 {
   "date": "2026-09-15",
-  "generatedAt": "2026-09-15T12:26:58.292Z",
+  "generatedAt": "2026-09-15T17:12:41.283Z",
   "affiliates": [
     {
       "teamId": 556,
@@ -81,7 +81,15 @@
       },
       "score": null,
       "inning": null,
-      "probablePitcher": null,
+      "probablePitcher": {
+        "mlbamId": 811309,
+        "name": "Bishop Letson",
+        "inDatabase": true,
+        "playerId": "Bishop-Letson",
+        "rank": 9,
+        "picture": "https://img.mlbstatic.com/mlb-photos/image/upload/c_fill,g_auto/w_180/v1/people/811309/headshot/milb/current",
+        "databaseLevel": "AA"
+      },
       "doubleHeader": "N",
       "gameNumber": 1
     },
