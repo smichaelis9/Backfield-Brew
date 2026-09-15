@@ -1,6 +1,6 @@
 {
-  "date": "2026-09-14",
-  "generatedAt": "2026-09-15T01:42:10.599Z",
+  "date": "2026-09-15",
+  "generatedAt": "2026-09-15T06:45:11.809Z",
   "affiliates": [
     {
       "teamId": 556,
@@ -59,6 +59,55 @@
       "leagueName": "Dominican Summer League"
     }
   ],
-  "gameCount": 0,
-  "games": []
+  "gameCount": 2,
+  "games": [
+    {
+      "key": "851012:5015",
+      "gamePk": 851012,
+      "date": "2026-09-15",
+      "gameDate": "2026-09-15T23:05:00Z",
+      "affiliate": "Biloxi Shuckers",
+      "affiliateTeamId": 5015,
+      "level": "AA",
+      "leagueId": 111,
+      "leagueName": "Southern League",
+      "homeAway": "away",
+      "opponent": "Pensacola Blue Wahoos",
+      "opponentTeamId": 4124,
+      "venue": "Blue Wahoos Stadium",
+      "status": {
+        "key": "scheduled",
+        "label": "Scheduled"
+      },
+      "score": null,
+      "inning": null,
+      "probablePitcher": null,
+      "doubleHeader": "N",
+      "gameNumber": 1
+    },
+    {
+      "key": "816080:556",
+      "gamePk": 816080,
+      "date": "2026-09-15",
+      "gameDate": "2026-09-15T23:35:00Z",
+      "affiliate": "Nashville Sounds",
+      "affiliateTeamId": 556,
+      "level": "AAA",
+      "leagueId": 117,
+      "leagueName": "International League",
+      "homeAway": "home",
+      "opponent": "Memphis Redbirds",
+      "opponentTeamId": 235,
+      "venue": "First Horizon Park",
+      "status": {
+        "key": "scheduled",
+        "label": "Scheduled"
+      },
+      "score": null,
+      "inning": null,
+      "probablePitcher": null,
+      "doubleHeader": "N",
+      "gameNumber": 1
+    }
+  ]
 }
