@@ -1,6 +1,6 @@
 {
-  "date": "2026-09-15",
-  "generatedAt": "2026-09-16T01:24:24.909Z",
+  "date": "2026-09-16",
+  "generatedAt": "2026-09-16T06:24:28.487Z",
   "affiliates": [
     {
       "teamId": 556,
@@ -59,52 +59,13 @@
       "leagueName": "Dominican Summer League"
     }
   ],
-  "gameCount": 2,
+  "gameCount": 1,
   "games": [
     {
-      "key": "851012:5015",
-      "gamePk": 851012,
-      "date": "2026-09-15",
-      "gameDate": "2026-09-15T23:05:00Z",
-      "affiliate": "Biloxi Shuckers",
-      "affiliateTeamId": 5015,
-      "level": "AA",
-      "leagueId": 111,
-      "leagueName": "Southern League",
-      "homeAway": "away",
-      "opponent": "Pensacola Blue Wahoos",
-      "opponentTeamId": 4124,
-      "venue": "Blue Wahoos Stadium",
-      "status": {
-        "key": "live",
-        "label": "In Progress"
-      },
-      "score": {
-        "away": 5,
-        "home": 3
-      },
-      "inning": {
-        "inning": 7,
-        "state": "Bottom",
-        "ordinal": "7th"
-      },
-      "probablePitcher": {
-        "mlbamId": 811309,
-        "name": "Bishop Letson",
-        "inDatabase": true,
-        "playerId": "Bishop-Letson",
-        "rank": 9,
-        "picture": "https://img.mlbstatic.com/mlb-photos/image/upload/c_fill,g_auto/w_180/v1/people/811309/headshot/milb/current",
-        "databaseLevel": "AA"
-      },
-      "doubleHeader": "N",
-      "gameNumber": 1
-    },
-    {
-      "key": "816080:556",
-      "gamePk": 816080,
-      "date": "2026-09-15",
-      "gameDate": "2026-09-15T23:35:00Z",
+      "key": "816078:556",
+      "gamePk": 816078,
+      "date": "2026-09-16",
+      "gameDate": "2026-09-16T23:35:00Z",
       "affiliate": "Nashville Sounds",
       "affiliateTeamId": 556,
       "level": "AAA",
@@ -115,25 +76,18 @@
       "opponentTeamId": 235,
       "venue": "First Horizon Park",
       "status": {
-        "key": "live",
-        "label": "In Progress"
+        "key": "scheduled",
+        "label": "Scheduled"
       },
-      "score": {
-        "away": 2,
-        "home": 3
-      },
-      "inning": {
-        "inning": 7,
-        "state": "Top",
-        "ordinal": "7th"
-      },
+      "score": null,
+      "inning": null,
       "probablePitcher": {
-        "mlbamId": 689441,
-        "name": "Coleman Crow",
+        "mlbamId": 692230,
+        "name": "Carlos Rodriguez",
         "inDatabase": true,
-        "playerId": "Coleman-Crow",
-        "rank": 27,
-        "picture": "https://img.mlbstatic.com/mlb-photos/image/upload/c_fill,g_auto/w_180/v1/people/689441/headshot/milb/current",
+        "playerId": "Carlos-Rodriguez",
+        "rank": 68,
+        "picture": "https://img.mlbstatic.com/mlb-photos/image/upload/c_fill,g_auto/w_180/v1/people/692230/headshot/milb/current",
         "databaseLevel": "AAA"
       },
       "doubleHeader": "N",
