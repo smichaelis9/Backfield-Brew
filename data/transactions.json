@@ -1,5 +1,22 @@
 [
   {
+    "Transaction ID": "943092",
+    "Date": "2026-09-17",
+    "Effective Date": "2026-09-17",
+    "MLBAM ID": "642239",
+    "Player": "Rob Zastryzny",
+    "Position": "",
+    "From Team": "",
+    "To Team": "Milwaukee Brewers",
+    "Level": "MLB",
+    "Type": "Designated for Assignment",
+    "Description": "Milwaukee Brewers designated LHP Rob Zastryzny for assignment.",
+    "Source URL": "https://www.mlb.com/brewers/roster/transactions/2026/09",
+    "Imported At": "09/17/2026 16:46:32",
+    "Player ID": "",
+    "Archived?": ""
+  },
+  {
     "Transaction ID": "942986",
     "Date": "2026-09-16",
     "Effective Date": "2026-09-16",
