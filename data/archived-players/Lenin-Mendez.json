@@ -3,7 +3,7 @@
   "name": "Lenin Mendez",
   "archived": true,
   "playerType": "Pitcher",
-  "generatedAt": "2026-09-17T15:20:14.804Z",
+  "generatedAt": "2026-09-17T15:29:34.052Z",
   "bio": {
     "Player-ID": "Lenin-Mendez",
     "MLBAM ID": "808213",
@@ -414,7 +414,7 @@
       "Description": "DSL Brewers Blue released RHP Lenin Mendez.",
       "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2025-08",
       "Imported At": "08/13/2026 10:20:43",
-      "Player ID": "",
+      "Player ID": "Lenin-Mendez",
       "Archived?": "yes"
     },
     {
@@ -431,7 +431,7 @@
       "Description": "RHP Lenin Mendez assigned to DSL Brewers Blue from DSL Brewers Gold.",
       "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2025-06",
       "Imported At": "08/13/2026 10:20:26",
-      "Player ID": "",
+      "Player ID": "Lenin-Mendez",
       "Archived?": "yes"
     },
     {
@@ -448,7 +448,7 @@
       "Description": "DSL Brewers 2 activated RHP Lenin Mendez.",
       "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2023-06",
       "Imported At": "08/13/2026 10:17:38",
-      "Player ID": "",
+      "Player ID": "Lenin-Mendez",
       "Archived?": "yes"
     },
     {
@@ -465,7 +465,7 @@
       "Description": "RHP Lenin Mendez assigned to DSL Brewers 2.",
       "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2023-06",
       "Imported At": "08/13/2026 10:17:38",
-      "Player ID": "",
+      "Player ID": "Lenin-Mendez",
       "Archived?": "yes"
     },
     {
@@ -482,7 +482,7 @@
       "Description": "Milwaukee Brewers signed free agent RHP Lenin Mendez to a minor league contract.",
       "Source URL": "https://www.mlb.com/brewers/roster/transactions/2023/01",
       "Imported At": "08/13/2026 09:57:46",
-      "Player ID": "",
+      "Player ID": "Lenin-Mendez",
       "Archived?": "yes"
     }
   ]

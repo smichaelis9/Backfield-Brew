@@ -3,7 +3,7 @@
   "name": "Joan Gutierrez",
   "archived": true,
   "playerType": "Hitter",
-  "generatedAt": "2026-09-17T15:20:14.804Z",
+  "generatedAt": "2026-09-17T15:29:34.052Z",
   "bio": {
     "Player-ID": "Joan-Gutierrez",
     "MLBAM ID": "808241",
@@ -397,7 +397,7 @@
       "Description": "DSL Brewers Blue released SS Joan Gutierrez.",
       "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2025-08",
       "Imported At": "08/13/2026 10:20:43",
-      "Player ID": "",
+      "Player ID": "Joan-Gutierrez",
       "Archived?": "yes"
     },
     {
@@ -414,7 +414,7 @@
       "Description": "DSL Brewers Blue activated SS Joan Gutierrez.",
       "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2023-06",
       "Imported At": "08/13/2026 10:17:38",
-      "Player ID": "",
+      "Player ID": "Joan-Gutierrez",
       "Archived?": "yes"
     },
     {
@@ -431,7 +431,7 @@
       "Description": "DSL Brewers 1 activated SS Joan Gutierrez.",
       "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2023-06",
       "Imported At": "08/13/2026 10:17:38",
-      "Player ID": "",
+      "Player ID": "Joan-Gutierrez",
       "Archived?": "yes"
     },
     {
@@ -448,7 +448,7 @@
       "Description": "SS Joan Gutierrez assigned to DSL Brewers 1.",
       "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2023-06",
       "Imported At": "08/13/2026 10:17:38",
-      "Player ID": "",
+      "Player ID": "Joan-Gutierrez",
       "Archived?": "yes"
     },
     {
@@ -465,7 +465,7 @@
       "Description": "Milwaukee Brewers signed free agent SS Joan Gutierrez to a minor league contract.",
       "Source URL": "https://www.mlb.com/brewers/roster/transactions/2023/01",
       "Imported At": "08/13/2026 09:57:46",
-      "Player ID": "",
+      "Player ID": "Joan-Gutierrez",
       "Archived?": "yes"
     }
   ]

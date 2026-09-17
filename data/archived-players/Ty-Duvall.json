@@ -3,7 +3,7 @@
   "name": "Ty Duvall",
   "archived": true,
   "playerType": "Hitter",
-  "generatedAt": "2026-09-17T15:20:14.804Z",
+  "generatedAt": "2026-09-17T15:29:34.052Z",
   "bio": {
     "Player-ID": "Ty-Duvall",
     "MLBAM ID": "669649",
@@ -397,7 +397,7 @@
       "Description": "Nashville Sounds released C Ty Duvall.",
       "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2025-07",
       "Imported At": "08/13/2026 10:20:35",
-      "Player ID": "",
+      "Player ID": "Ty-Duvall",
       "Archived?": "yes"
     },
     {
@@ -414,7 +414,7 @@
       "Description": "Nashville Sounds transferred C Ty Duvall to the Development List.",
       "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2025-03",
       "Imported At": "08/13/2026 10:20:06",
-      "Player ID": "",
+      "Player ID": "Ty-Duvall",
       "Archived?": "yes"
     },
     {
@@ -431,7 +431,7 @@
       "Description": "C Ty Duvall assigned to Nashville Sounds.",
       "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2025-03",
       "Imported At": "08/13/2026 10:20:06",
-      "Player ID": "",
+      "Player ID": "Ty-Duvall",
       "Archived?": "yes"
     },
     {
@@ -448,7 +448,7 @@
       "Description": "Milwaukee Brewers signed free agent C Ty Duvall to a minor league contract.",
       "Source URL": "https://www.mlb.com/brewers/roster/transactions/2025/03",
       "Imported At": "08/13/2026 09:59:34",
-      "Player ID": "",
+      "Player ID": "Ty-Duvall",
       "Archived?": "yes"
     }
   ]

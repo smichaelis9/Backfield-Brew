@@ -3,7 +3,7 @@
   "name": "Alejandro Parra",
   "archived": true,
   "playerType": "Pitcher",
-  "generatedAt": "2026-09-17T15:20:14.804Z",
+  "generatedAt": "2026-09-17T15:29:34.052Z",
   "bio": {
     "Player-ID": "Alejandro-Parra",
     "MLBAM ID": "815216",
@@ -414,7 +414,7 @@
       "Description": "DSL Brewers Gold released RHP Alejandro Parra.",
       "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2026-03",
       "Imported At": "08/13/2026 10:21:44",
-      "Player ID": "",
+      "Player ID": "Alejandro-Parra",
       "Archived?": "yes"
     },
     {
@@ -431,7 +431,7 @@
       "Description": "RHP Alejandro Parra assigned to DSL Brewers Gold from DSL Brewers Blue.",
       "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2025-08",
       "Imported At": "08/13/2026 10:20:43",
-      "Player ID": "",
+      "Player ID": "Alejandro-Parra",
       "Archived?": "yes"
     },
     {
@@ -448,7 +448,7 @@
       "Description": "DSL Brewers Blue placed RHP Alejandro Parra on the 60-day injured list.",
       "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2025-05",
       "Imported At": "08/13/2026 10:20:19",
-      "Player ID": "",
+      "Player ID": "Alejandro-Parra",
       "Archived?": "yes"
     },
     {
@@ -465,7 +465,7 @@
       "Description": "DSL Brewers Gold placed RHP Alejandro Parra on the 60-day injured list.",
       "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2025-05",
       "Imported At": "08/13/2026 10:20:19",
-      "Player ID": "",
+      "Player ID": "Alejandro-Parra",
       "Archived?": "yes"
     },
     {
@@ -482,7 +482,7 @@
       "Description": "DSL Brewers Gold placed RHP Alejandro Parra on the 60-day injured list.",
       "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2025-05",
       "Imported At": "08/13/2026 10:20:19",
-      "Player ID": "",
+      "Player ID": "Alejandro-Parra",
       "Archived?": "yes"
     },
     {
@@ -499,7 +499,7 @@
       "Description": "DSL Brewers 2 activated RHP Alejandro Parra from the 7-day injured list.",
       "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2024-09",
       "Imported At": "08/13/2026 10:19:22",
-      "Player ID": "",
+      "Player ID": "Alejandro-Parra",
       "Archived?": "yes"
     },
     {
@@ -516,7 +516,7 @@
       "Description": "DSL Brewers 2 placed RHP Alejandro Parra on the 7-day injured list.",
       "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2024-06",
       "Imported At": "08/13/2026 10:19:02",
-      "Player ID": "",
+      "Player ID": "Alejandro-Parra",
       "Archived?": "yes"
     },
     {
@@ -533,7 +533,7 @@
       "Description": "RHP Alejandro Parra assigned to DSL Brewers 2.",
       "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2024-06",
       "Imported At": "08/13/2026 10:19:02",
-      "Player ID": "",
+      "Player ID": "Alejandro-Parra",
       "Archived?": "yes"
     },
     {
@@ -550,7 +550,7 @@
       "Description": "RHP Alejandro Parra assigned to DSL Brewers 1.",
       "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2023-07",
       "Imported At": "08/13/2026 10:17:46",
-      "Player ID": "",
+      "Player ID": "Alejandro-Parra",
       "Archived?": "yes"
     },
     {
@@ -567,7 +567,7 @@
       "Description": "Milwaukee Brewers signed free agent RHP Alejandro Parra to a minor league contract.",
       "Source URL": "https://www.mlb.com/brewers/roster/transactions/2023/07",
       "Imported At": "08/13/2026 09:58:06",
-      "Player ID": "",
+      "Player ID": "Alejandro-Parra",
       "Archived?": "yes"
     }
   ]
