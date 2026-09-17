@@ -3,7 +3,7 @@
   "name": "Luke Adams",
   "archived": false,
   "playerType": "Hitter",
-  "generatedAt": "2026-09-17T11:43:56.105Z",
+  "generatedAt": "2026-09-17T15:20:14.804Z",
   "bio": {
     "Player-ID": "Luke-Adams",
     "MLBAM ID": "702726",
@@ -206,7 +206,7 @@
       "OBP": "0.423",
       "SLG": "0.547",
       "OPS": "0.969",
-      "wRC+": "153",
+      "wRC+": "154",
       "BABIP": "0.259",
       "wOBA": "0.426",
       "K%": "14.2%",

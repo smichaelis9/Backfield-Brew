@@ -3,7 +3,7 @@
   "name": "Andrick Nava",
   "archived": false,
   "playerType": "Hitter",
-  "generatedAt": "2026-09-17T11:43:56.105Z",
+  "generatedAt": "2026-09-17T15:20:14.804Z",
   "bio": {
     "Player-ID": "Andrick-Nava",
     "MLBAM ID": "682774",
@@ -206,7 +206,7 @@
       "OBP": "0.360",
       "SLG": "0.522",
       "OPS": "0.882",
-      "wRC+": "126",
+      "wRC+": "127",
       "BABIP": "0.328",
       "wOBA": "0.387",
       "K%": "19.0%",

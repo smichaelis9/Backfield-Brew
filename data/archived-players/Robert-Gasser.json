@@ -3,7 +3,7 @@
   "name": "Robert Gasser",
   "archived": true,
   "playerType": "Pitcher",
-  "generatedAt": "2026-09-17T11:43:56.105Z",
+  "generatedAt": "2026-09-17T15:20:14.804Z",
   "bio": {
     "Player-ID": "Robert-Gasser",
     "MLBAM ID": "688107",
@@ -213,7 +213,7 @@
       "Player": "Robert Gasser",
       "ERA": "3.37",
       "FIP": "2.02",
-      "xFIP": "2.91",
+      "xFIP": "2.90",
       "IP": "26.2",
       "G": "7",
       "GS": "7",
