@@ -1,6 +1,6 @@
 {
-  "date": "2026-09-16",
-  "generatedAt": "2026-09-17T00:45:33.071Z",
+  "date": "2026-09-17",
+  "generatedAt": "2026-09-17T05:42:37.241Z",
   "affiliates": [
     {
       "teamId": 556,
@@ -59,13 +59,13 @@
       "leagueName": "Dominican Summer League"
     }
   ],
-  "gameCount": 1,
+  "gameCount": 2,
   "games": [
     {
-      "key": "816078:556",
-      "gamePk": 816078,
-      "date": "2026-09-16",
-      "gameDate": "2026-09-16T23:35:00Z",
+      "key": "816079:556",
+      "gamePk": 816079,
+      "date": "2026-09-17",
+      "gameDate": "2026-09-17T23:35:00Z",
       "affiliate": "Nashville Sounds",
       "affiliateTeamId": 556,
       "level": "AAA",
@@ -76,26 +76,51 @@
       "opponentTeamId": 235,
       "venue": "First Horizon Park",
       "status": {
-        "key": "live",
-        "label": "In Progress"
+        "key": "scheduled",
+        "label": "Scheduled"
       },
-      "score": {
-        "away": 7,
-        "home": 0
-      },
-      "inning": {
-        "inning": 4,
-        "state": "Top",
-        "ordinal": "4th"
-      },
+      "score": null,
+      "inning": null,
       "probablePitcher": {
-        "mlbamId": 692230,
-        "name": "Carlos Rodriguez",
+        "mlbamId": 804249,
+        "name": "Tate Kuehner",
         "inDatabase": true,
-        "playerId": "Carlos-Rodriguez",
-        "rank": 68,
-        "picture": "https://img.mlbstatic.com/mlb-photos/image/upload/c_fill,g_auto/w_180/v1/people/692230/headshot/milb/current",
+        "playerId": "Tate-Kuehner",
+        "rank": 36,
+        "picture": "https://img.mlbstatic.com/mlb-photos/image/upload/c_fill,g_auto/w_180/v1/people/804249/headshot/milb/current",
         "databaseLevel": "AAA"
+      },
+      "doubleHeader": "N",
+      "gameNumber": 1
+    },
+    {
+      "key": "851005:5015",
+      "gamePk": 851005,
+      "date": "2026-09-17",
+      "gameDate": "2026-09-17T23:35:00Z",
+      "affiliate": "Biloxi Shuckers",
+      "affiliateTeamId": 5015,
+      "level": "AA",
+      "leagueId": 111,
+      "leagueName": "Southern League",
+      "homeAway": "home",
+      "opponent": "Pensacola Blue Wahoos",
+      "opponentTeamId": 4124,
+      "venue": "Keesler Federal Park",
+      "status": {
+        "key": "scheduled",
+        "label": "Scheduled"
+      },
+      "score": null,
+      "inning": null,
+      "probablePitcher": {
+        "mlbamId": 702505,
+        "name": "J.D. Thompson",
+        "inDatabase": true,
+        "playerId": "JD-Thompson",
+        "rank": 18,
+        "picture": "https://img.mlbstatic.com/mlb-photos/image/upload/c_fill,g_auto/w_180/v1/people/702505/headshot/milb/current",
+        "databaseLevel": "AA"
       },
       "doubleHeader": "N",
       "gameNumber": 1
