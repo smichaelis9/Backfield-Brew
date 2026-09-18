@@ -3,7 +3,7 @@
   "name": "Garrett Stallings",
   "archived": false,
   "playerType": "Pitcher",
-  "generatedAt": "2026-09-18T17:43:40.961Z",
+  "generatedAt": "2026-09-18T20:00:16.092Z",
   "bio": {
     "Player-ID": "Garrett-Stallings",
     "MLBAM ID": "668831",
@@ -413,6 +413,23 @@
     }
   ],
   "transactions": [
+    {
+      "Transaction ID": "943132",
+      "Date": "2026-09-18",
+      "Effective Date": "2026-09-18",
+      "MLBAM ID": "668831",
+      "Player": "Garrett Stallings",
+      "Position": "",
+      "From Team": "Milwaukee Brewers",
+      "To Team": "Nashville Sounds",
+      "Level": "MiLB",
+      "Type": "Optioned",
+      "Description": "Milwaukee Brewers optioned RHP Garrett Stallings to Nashville Sounds.",
+      "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2026-09",
+      "Imported At": "09/18/2026 14:46:28",
+      "Player ID": "Garrett-Stallings",
+      "Archived?": ""
+    },
     {
       "Transaction ID": "942008",
       "Date": "2026-09-10",
