@@ -3,7 +3,7 @@
   "name": "Edwin Jimenez",
   "archived": false,
   "playerType": "Pitcher",
-  "generatedAt": "2026-09-18T20:00:16.092Z",
+  "generatedAt": "2026-09-18T22:30:40.426Z",
   "bio": {
     "Player-ID": "Edwin-Jimenez",
     "MLBAM ID": "683720",
@@ -413,6 +413,23 @@
     }
   ],
   "transactions": [
+    {
+      "Transaction ID": "943163",
+      "Date": "2026-09-18",
+      "Effective Date": "2026-09-18",
+      "MLBAM ID": "683720",
+      "Player": "Edwin Jimenez",
+      "Position": "",
+      "From Team": "Biloxi Shuckers",
+      "To Team": "Nashville Sounds",
+      "Level": "MiLB",
+      "Type": "Signed",
+      "Description": "RHP Edwin Jimenez assigned to Nashville Sounds from Biloxi Shuckers.",
+      "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2026-09",
+      "Imported At": "09/18/2026 16:46:26",
+      "Player ID": "Edwin-Jimenez",
+      "Archived?": ""
+    },
     {
       "Transaction ID": "898804",
       "Date": "2026-04-14",
