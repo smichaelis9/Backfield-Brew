@@ -3,7 +3,7 @@
   "name": "Tate Kuehner",
   "archived": false,
   "playerType": "Pitcher",
-  "generatedAt": "2026-09-18T09:53:04.200Z",
+  "generatedAt": "2026-09-18T14:12:45.878Z",
   "bio": {
     "Player-ID": "Tate-Kuehner",
     "MLBAM ID": "804249",
@@ -231,7 +231,7 @@
       "BB%": "11.20%",
       "K-BB %": "11.60%",
       "SwStr %": "11.70%",
-      "Whiff%": "27.8%",
+      "Whiff%": "26.1%",
       "WHIP": "1.42",
       "BABIP": "0.295",
       "LOB%": "66.3%",
@@ -245,12 +245,12 @@
   },
   "gamedayWhiff": {
     "mlbamID": "804249",
-    "swings": 439,
-    "whiffs": 122,
-    "contacts": 317,
-    "whiffPct": 27.8,
-    "contactPct": 72.2,
-    "games": 14,
+    "swings": 476,
+    "whiffs": 124,
+    "contacts": 352,
+    "whiffPct": 26.1,
+    "contactPct": 73.9,
+    "games": 15,
     "levels": [
       "AAA"
     ]
