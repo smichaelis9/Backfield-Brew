@@ -1,6 +1,6 @@
 {
   "date": "2026-09-18",
-  "generatedAt": "2026-09-19T00:28:45.605Z",
+  "generatedAt": "2026-09-19T04:55:18.847Z",
   "affiliates": [
     {
       "teamId": 556,
@@ -76,17 +76,17 @@
       "opponentTeamId": 235,
       "venue": "First Horizon Park",
       "status": {
-        "key": "live",
-        "label": "In Progress"
+        "key": "final",
+        "label": "Final"
       },
       "score": {
-        "away": 0,
-        "home": 0
+        "away": 8,
+        "home": 6
       },
       "inning": {
-        "inning": 3,
+        "inning": 9,
         "state": "Bottom",
-        "ordinal": "3rd"
+        "ordinal": "9th"
       },
       "probablePitcher": {
         "mlbamId": 676467,
