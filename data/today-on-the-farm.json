@@ -1,6 +1,6 @@
 {
-  "date": "2026-09-18",
-  "generatedAt": "2026-09-19T04:55:18.847Z",
+  "date": "2026-09-19",
+  "generatedAt": "2026-09-19T09:10:56.084Z",
   "affiliates": [
     {
       "teamId": 556,
@@ -62,10 +62,10 @@
   "gameCount": 1,
   "games": [
     {
-      "key": "816081:556",
-      "gamePk": 816081,
-      "date": "2026-09-18",
-      "gameDate": "2026-09-18T23:35:00Z",
+      "key": "816077:556",
+      "gamePk": 816077,
+      "date": "2026-09-19",
+      "gameDate": "2026-09-19T23:35:00Z",
       "affiliate": "Nashville Sounds",
       "affiliateTeamId": 556,
       "level": "AAA",
@@ -76,21 +76,14 @@
       "opponentTeamId": 235,
       "venue": "First Horizon Park",
       "status": {
-        "key": "final",
-        "label": "Final"
+        "key": "scheduled",
+        "label": "Scheduled"
       },
-      "score": {
-        "away": 8,
-        "home": 6
-      },
-      "inning": {
-        "inning": 9,
-        "state": "Bottom",
-        "ordinal": "9th"
-      },
+      "score": null,
+      "inning": null,
       "probablePitcher": {
-        "mlbamId": 676467,
-        "name": "Colton Gordon",
+        "mlbamId": 623381,
+        "name": "Thomas Pannone",
         "inDatabase": false,
         "playerId": "",
         "rank": null,
