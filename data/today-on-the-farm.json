@@ -1,6 +1,6 @@
 {
   "date": "2026-09-19",
-  "generatedAt": "2026-09-19T16:29:44.612Z",
+  "generatedAt": "2026-09-19T18:47:31.824Z",
   "affiliates": [
     {
       "teamId": 556,
@@ -82,8 +82,8 @@
       "score": null,
       "inning": null,
       "probablePitcher": {
-        "mlbamId": 623381,
-        "name": "Thomas Pannone",
+        "mlbamId": 669060,
+        "name": "Bryse Wilson",
         "inDatabase": false,
         "playerId": "",
         "rank": null,
