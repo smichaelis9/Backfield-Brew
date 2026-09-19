@@ -1,6 +1,6 @@
 {
   "date": "2026-09-18",
-  "generatedAt": "2026-09-18T22:16:09.050Z",
+  "generatedAt": "2026-09-19T00:28:45.605Z",
   "affiliates": [
     {
       "teamId": 556,
@@ -76,11 +76,18 @@
       "opponentTeamId": 235,
       "venue": "First Horizon Park",
       "status": {
-        "key": "scheduled",
-        "label": "Scheduled"
+        "key": "live",
+        "label": "In Progress"
       },
-      "score": null,
-      "inning": null,
+      "score": {
+        "away": 0,
+        "home": 0
+      },
+      "inning": {
+        "inning": 3,
+        "state": "Bottom",
+        "ordinal": "3rd"
+      },
       "probablePitcher": {
         "mlbamId": 676467,
         "name": "Colton Gordon",
