@@ -3,7 +3,7 @@
   "name": "Daniel Guilarte",
   "archived": false,
   "playerType": "Hitter",
-  "generatedAt": "2026-09-19T09:33:14.279Z",
+  "generatedAt": "2026-09-19T13:28:44.781Z",
   "bio": {
     "Player-ID": "Daniel-Guilarte",
     "MLBAM ID": "694206",
@@ -228,12 +228,12 @@
   },
   "gamedayWhiff": {
     "mlbamID": "694206",
-    "swings": 345,
-    "whiffs": 101,
-    "contacts": 244,
+    "swings": 348,
+    "whiffs": 102,
+    "contacts": 246,
     "whiffPct": 29.3,
     "contactPct": 70.7,
-    "games": 55,
+    "games": 56,
     "levels": [
       "A+",
       "AA",

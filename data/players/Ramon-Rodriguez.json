@@ -3,7 +3,7 @@
   "name": "Ramón Rodríguez",
   "archived": false,
   "playerType": "Hitter",
-  "generatedAt": "2026-09-19T09:33:14.279Z",
+  "generatedAt": "2026-09-19T13:28:44.781Z",
   "bio": {
     "Player-ID": "Ramon-Rodriguez",
     "MLBAM ID": "670232",
@@ -212,7 +212,7 @@
       "K%": "14.9%",
       "BB%": "6.7%",
       "SwStr %": "8.8%",
-      "Whiff%": "17.5%",
+      "Whiff%": "17.0%",
       "Pull %": "32.1%",
       "Cent %": "23.9%",
       "Oppo %": "44.0%",
@@ -228,12 +228,12 @@
   },
   "gamedayWhiff": {
     "mlbamID": "670232",
-    "swings": 389,
+    "swings": 400,
     "whiffs": 68,
-    "contacts": 321,
-    "whiffPct": 17.5,
-    "contactPct": 82.5,
-    "games": 54,
+    "contacts": 332,
+    "whiffPct": 17,
+    "contactPct": 83,
+    "games": 55,
     "levels": [
       "AAA"
     ]
