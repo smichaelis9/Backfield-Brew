@@ -3,7 +3,7 @@
   "name": "Carlos Rodriguez",
   "archived": false,
   "playerType": "Pitcher",
-  "generatedAt": "2026-09-20T12:05:50.658Z",
+  "generatedAt": "2026-09-20T16:09:05.588Z",
   "bio": {
     "Player-ID": "Carlos-Rodriguez",
     "MLBAM ID": "692230",
@@ -231,7 +231,7 @@
       "BB%": "15.50%",
       "K-BB %": "2.20%",
       "SwStr %": "13.80%",
-      "Whiff%": "28.9%",
+      "Whiff%": "29.0%",
       "WHIP": "2.26",
       "BABIP": "0.387",
       "LOB%": "60.3%",
@@ -245,12 +245,12 @@
   },
   "gamedayWhiff": {
     "mlbamID": "692230",
-    "swings": 492,
-    "whiffs": 142,
-    "contacts": 350,
-    "whiffPct": 28.9,
-    "contactPct": 71.1,
-    "games": 21,
+    "swings": 507,
+    "whiffs": 147,
+    "contacts": 360,
+    "whiffPct": 29,
+    "contactPct": 71,
+    "games": 22,
     "levels": [
       "AAA"
     ]

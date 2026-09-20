@@ -3,7 +3,7 @@
   "name": "Patricio Aquino",
   "archived": false,
   "playerType": "Pitcher",
-  "generatedAt": "2026-09-20T12:05:50.658Z",
+  "generatedAt": "2026-09-20T16:09:05.588Z",
   "bio": {
     "Player-ID": "Patricio-Aquino",
     "MLBAM ID": "699223",
@@ -413,6 +413,23 @@
     }
   ],
   "transactions": [
+    {
+      "Transaction ID": "943291",
+      "Date": "2026-09-19",
+      "Effective Date": "2026-09-19",
+      "MLBAM ID": "699223",
+      "Player": "Patricio Aquino",
+      "Position": "",
+      "From Team": "",
+      "To Team": "Biloxi Shuckers",
+      "Level": "MiLB",
+      "Type": "Released",
+      "Description": "Biloxi Shuckers released RHP Patricio Aquino.",
+      "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2026-09",
+      "Imported At": "09/20/2026 08:46:39",
+      "Player ID": "Patricio-Aquino",
+      "Archived?": ""
+    },
     {
       "Transaction ID": "932244",
       "Date": "2026-07-27",

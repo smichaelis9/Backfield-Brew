@@ -3,7 +3,7 @@
   "name": "Blake Holub",
   "archived": false,
   "playerType": "Pitcher",
-  "generatedAt": "2026-09-20T12:05:50.658Z",
+  "generatedAt": "2026-09-20T16:09:05.588Z",
   "bio": {
     "Player-ID": "Blake-Holub",
     "MLBAM ID": "700183",
@@ -231,7 +231,7 @@
       "BB%": "9.30%",
       "K-BB %": "18.90%",
       "SwStr %": "11.70%",
-      "Whiff%": "24.8%",
+      "Whiff%": "24.5%",
       "WHIP": "1.24",
       "BABIP": "0.309",
       "LOB%": "77.3%",
@@ -245,12 +245,12 @@
   },
   "gamedayWhiff": {
     "mlbamID": "700183",
-    "swings": 431,
-    "whiffs": 107,
-    "contacts": 324,
-    "whiffPct": 24.8,
-    "contactPct": 75.2,
-    "games": 49,
+    "swings": 444,
+    "whiffs": 109,
+    "contacts": 335,
+    "whiffPct": 24.5,
+    "contactPct": 75.5,
+    "games": 50,
     "levels": [
       "AAA"
     ]
