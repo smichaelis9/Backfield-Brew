@@ -1,6 +1,6 @@
 {
-  "date": "2026-09-19",
-  "generatedAt": "2026-09-20T01:22:35.827Z",
+  "date": "2026-09-20",
+  "generatedAt": "2026-09-20T06:39:44.188Z",
   "affiliates": [
     {
       "teamId": 556,
@@ -59,13 +59,13 @@
       "leagueName": "Dominican Summer League"
     }
   ],
-  "gameCount": 1,
+  "gameCount": 2,
   "games": [
     {
-      "key": "816077:556",
-      "gamePk": 816077,
-      "date": "2026-09-19",
-      "gameDate": "2026-09-19T23:35:00Z",
+      "key": "816082:556",
+      "gamePk": 816082,
+      "date": "2026-09-20",
+      "gameDate": "2026-09-20T22:05:00Z",
       "affiliate": "Nashville Sounds",
       "affiliateTeamId": 556,
       "level": "AAA",
@@ -76,27 +76,44 @@
       "opponentTeamId": 235,
       "venue": "First Horizon Park",
       "status": {
-        "key": "live",
-        "label": "In Progress"
+        "key": "scheduled",
+        "label": "Scheduled"
       },
-      "score": {
-        "away": 3,
-        "home": 3
-      },
-      "inning": {
-        "inning": 7,
-        "state": "Top",
-        "ordinal": "7th"
-      },
+      "score": null,
+      "inning": null,
       "probablePitcher": {
-        "mlbamId": 669060,
-        "name": "Bryse Wilson",
-        "inDatabase": false,
-        "playerId": "",
-        "rank": null,
-        "picture": "",
-        "databaseLevel": ""
+        "mlbamId": 689441,
+        "name": "Coleman Crow",
+        "inDatabase": true,
+        "playerId": "Coleman-Crow",
+        "rank": 27,
+        "picture": "https://img.mlbstatic.com/mlb-photos/image/upload/c_fill,g_auto/w_180/v1/people/689441/headshot/milb/current",
+        "databaseLevel": "AAA"
       },
+      "doubleHeader": "N",
+      "gameNumber": 1
+    },
+    {
+      "key": "851008:5015",
+      "gamePk": 851008,
+      "date": "2026-09-20",
+      "gameDate": "2026-09-20T23:35:00Z",
+      "affiliate": "Biloxi Shuckers",
+      "affiliateTeamId": 5015,
+      "level": "AA",
+      "leagueId": 111,
+      "leagueName": "Southern League",
+      "homeAway": "home",
+      "opponent": "Rocket City Trash Pandas",
+      "opponentTeamId": 559,
+      "venue": "Keesler Federal Park",
+      "status": {
+        "key": "scheduled",
+        "label": "Scheduled"
+      },
+      "score": null,
+      "inning": null,
+      "probablePitcher": null,
       "doubleHeader": "N",
       "gameNumber": 1
     }
