@@ -1,6 +1,6 @@
 {
   "date": "2026-09-20",
-  "generatedAt": "2026-09-20T11:49:23.950Z",
+  "generatedAt": "2026-09-20T15:25:20.875Z",
   "affiliates": [
     {
       "teamId": 556,
@@ -113,7 +113,15 @@
       },
       "score": null,
       "inning": null,
-      "probablePitcher": null,
+      "probablePitcher": {
+        "mlbamId": 805807,
+        "name": "Josh Knoth",
+        "inDatabase": true,
+        "playerId": "Josh-Knoth",
+        "rank": 14,
+        "picture": "https://img.mlbstatic.com/mlb-photos/image/upload/c_fill,g_auto/w_180/v1/people/805807/headshot/milb/current",
+        "databaseLevel": "AA"
+      },
       "doubleHeader": "N",
       "gameNumber": 1
     }
