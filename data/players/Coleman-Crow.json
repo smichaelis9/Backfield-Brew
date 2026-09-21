@@ -3,7 +3,7 @@
   "name": "Coleman Crow",
   "archived": false,
   "playerType": "Pitcher",
-  "generatedAt": "2026-09-21T14:55:22.386Z",
+  "generatedAt": "2026-09-21T18:56:10.967Z",
   "bio": {
     "Player-ID": "Coleman-Crow",
     "MLBAM ID": "689441",
@@ -231,7 +231,7 @@
       "BB%": "8.00%",
       "K-BB %": "15.30%",
       "SwStr %": "9.70%",
-      "Whiff%": "20.2%",
+      "Whiff%": "20.4%",
       "WHIP": "1.26",
       "BABIP": "0.308",
       "LOB%": "75.6%",
@@ -245,12 +245,12 @@
   },
   "gamedayWhiff": {
     "mlbamID": "689441",
-    "swings": 743,
-    "whiffs": 150,
-    "contacts": 593,
-    "whiffPct": 20.2,
-    "contactPct": 79.8,
-    "games": 19,
+    "swings": 789,
+    "whiffs": 161,
+    "contacts": 628,
+    "whiffPct": 20.4,
+    "contactPct": 79.6,
+    "games": 20,
     "levels": [
       "AAA"
     ]

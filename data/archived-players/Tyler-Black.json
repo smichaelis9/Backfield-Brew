@@ -3,7 +3,7 @@
   "name": "Tyler Black",
   "archived": true,
   "playerType": "Hitter",
-  "generatedAt": "2026-09-21T14:55:22.386Z",
+  "generatedAt": "2026-09-21T18:56:10.967Z",
   "bio": {
     "Player-ID": "Tyler-Black",
     "MLBAM ID": "672012",
@@ -210,7 +210,7 @@
       "K%": "22.1%",
       "BB%": "14.9%",
       "SwStr %": "9.0%",
-      "Whiff%": "21.0%",
+      "Whiff%": "21.2%",
       "Pull %": "45.5%",
       "Cent %": "19.3%",
       "Oppo %": "35.2%",
@@ -226,12 +226,12 @@
   },
   "gamedayWhiff": {
     "mlbamID": "672012",
-    "swings": 766,
-    "whiffs": 161,
-    "contacts": 605,
-    "whiffPct": 21,
-    "contactPct": 79,
-    "games": 102,
+    "swings": 773,
+    "whiffs": 164,
+    "contacts": 609,
+    "whiffPct": 21.2,
+    "contactPct": 78.8,
+    "games": 103,
     "levels": [
       "AAA"
     ]
