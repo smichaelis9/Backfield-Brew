@@ -1,6 +1,6 @@
 {
-  "date": "2026-09-20",
-  "generatedAt": "2026-09-21T01:04:03.354Z",
+  "date": "2026-09-21",
+  "generatedAt": "2026-09-21T06:19:42.911Z",
   "affiliates": [
     {
       "teamId": 556,
@@ -59,85 +59,6 @@
       "leagueName": "Dominican Summer League"
     }
   ],
-  "gameCount": 2,
-  "games": [
-    {
-      "key": "816082:556",
-      "gamePk": 816082,
-      "date": "2026-09-20",
-      "gameDate": "2026-09-20T22:05:00Z",
-      "affiliate": "Nashville Sounds",
-      "affiliateTeamId": 556,
-      "level": "AAA",
-      "leagueId": 117,
-      "leagueName": "International League",
-      "homeAway": "home",
-      "opponent": "Memphis Redbirds",
-      "opponentTeamId": 235,
-      "venue": "First Horizon Park",
-      "status": {
-        "key": "final",
-        "label": "Final"
-      },
-      "score": {
-        "away": 3,
-        "home": 5
-      },
-      "inning": {
-        "inning": 9,
-        "state": "Top",
-        "ordinal": "9th"
-      },
-      "probablePitcher": {
-        "mlbamId": 689441,
-        "name": "Coleman Crow",
-        "inDatabase": true,
-        "playerId": "Coleman-Crow",
-        "rank": 27,
-        "picture": "https://img.mlbstatic.com/mlb-photos/image/upload/c_fill,g_auto/w_180/v1/people/689441/headshot/milb/current",
-        "databaseLevel": "AAA"
-      },
-      "doubleHeader": "N",
-      "gameNumber": 1
-    },
-    {
-      "key": "851008:5015",
-      "gamePk": 851008,
-      "date": "2026-09-20",
-      "gameDate": "2026-09-20T23:35:00Z",
-      "affiliate": "Biloxi Shuckers",
-      "affiliateTeamId": 5015,
-      "level": "AA",
-      "leagueId": 111,
-      "leagueName": "Southern League",
-      "homeAway": "home",
-      "opponent": "Rocket City Trash Pandas",
-      "opponentTeamId": 559,
-      "venue": "Keesler Federal Park",
-      "status": {
-        "key": "live",
-        "label": "In Progress"
-      },
-      "score": {
-        "away": 2,
-        "home": 4
-      },
-      "inning": {
-        "inning": 6,
-        "state": "Top",
-        "ordinal": "6th"
-      },
-      "probablePitcher": {
-        "mlbamId": 805807,
-        "name": "Josh Knoth",
-        "inDatabase": true,
-        "playerId": "Josh-Knoth",
-        "rank": 14,
-        "picture": "https://img.mlbstatic.com/mlb-photos/image/upload/c_fill,g_auto/w_180/v1/people/805807/headshot/milb/current",
-        "databaseLevel": "AA"
-      },
-      "doubleHeader": "N",
-      "gameNumber": 1
-    }
-  ]
+  "gameCount": 0,
+  "games": []
 }
