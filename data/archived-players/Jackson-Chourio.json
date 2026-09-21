@@ -3,7 +3,7 @@
   "name": "Jackson Chourio",
   "archived": true,
   "playerType": "Hitter",
-  "generatedAt": "2026-09-21T13:44:32.627Z",
+  "generatedAt": "2026-09-21T14:45:30.420Z",
   "bio": {
     "Player-ID": "Jackson-Chourio",
     "MLBAM ID": "694192",
@@ -206,7 +206,7 @@
       "OPS": "0.611",
       "wRC+": "106",
       "BABIP": "0.250",
-      "wOBA": "0.348",
+      "wOBA": "0.347",
       "K%": "22.2%",
       "BB%": "33.3%",
       "SwStr %": "10.5%",
