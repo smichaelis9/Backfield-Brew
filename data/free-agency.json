@@ -164,7 +164,7 @@
   {
     "2026": "Blayberg Diaz",
     "2027": "",
-    "2028": "Patricio Aquino",
+    "2028": "Will Rudy",
     "2029": "Ryan Birchard",
     "2030": "Hayden Robinson",
     "2031": "Rylan Mills",
@@ -172,7 +172,7 @@
     "2033": "Chance Ruby",
     "2026 Player ID": "Blayberg-Diaz",
     "2027 Player ID": "",
-    "2028 Player ID": "Patricio-Aquino",
+    "2028 Player ID": "Will-Rudy",
     "2029 Player ID": "Ryan-Birchard",
     "2030 Player ID": "Hayden-Robinson",
     "2031 Player ID": "Rylan-Mills",
@@ -182,7 +182,7 @@
   {
     "2026": "Freddy Zamora",
     "2027": "",
-    "2028": "Will Rudy",
+    "2028": "Edgardo Ordonez",
     "2029": "Brett Wichrowski",
     "2030": "Luis Lameda",
     "2031": "Daniel Dickinson",
@@ -190,7 +190,7 @@
     "2033": "Alexander Mercedes",
     "2026 Player ID": "Freddy-Zamora",
     "2027 Player ID": "",
-    "2028 Player ID": "Will-Rudy",
+    "2028 Player ID": "Edgardo-Ordonez",
     "2029 Player ID": "Brett-Wichrowski",
     "2030 Player ID": "Luis-Lameda",
     "2031 Player ID": "Daniel-Dickinson",
@@ -200,7 +200,7 @@
   {
     "2026": "David García",
     "2027": "",
-    "2028": "Edgardo Ordonez",
+    "2028": "Daniel Guilarte",
     "2029": "Jason Woodward",
     "2030": "Tanner Gillis",
     "2031": "Sean Episcope",
@@ -208,7 +208,7 @@
     "2033": "Enrique Lovera",
     "2026 Player ID": "David-Garcia",
     "2027 Player ID": "",
-    "2028 Player ID": "Edgardo-Ordonez",
+    "2028 Player ID": "Daniel-Guilarte",
     "2029 Player ID": "Jason-Woodward",
     "2030 Player ID": "Tanner-Gillis",
     "2031 Player ID": "Sean-Episcope",
@@ -218,7 +218,7 @@
   {
     "2026": "",
     "2027": "",
-    "2028": "Daniel Guilarte",
+    "2028": "",
     "2029": "Jose Meneses",
     "2030": "Tyler Rodriguez",
     "2031": "Juan Ortuno",
@@ -226,7 +226,7 @@
     "2033": "Carson Hart",
     "2026 Player ID": "",
     "2027 Player ID": "",
-    "2028 Player ID": "Daniel-Guilarte",
+    "2028 Player ID": "",
     "2029 Player ID": "Jose-Meneses",
     "2030 Player ID": "Tyler-Rodriguez",
     "2031 Player ID": "Juan-Ortuno",
@@ -583,7 +583,7 @@
     "2030": "",
     "2031": "Thomas Conrad",
     "2032": "Johanderson Tarazona",
-    "2033": "Francisco De Marchena",
+    "2033": "Josue Jean",
     "2026 Player ID": "",
     "2027 Player ID": "",
     "2028 Player ID": "",
@@ -591,7 +591,7 @@
     "2030 Player ID": "",
     "2031 Player ID": "Thomas-Conrad",
     "2032 Player ID": "Johanderson-Tarazona",
-    "2033 Player ID": "Francisco-De-Marchena"
+    "2033 Player ID": "Josue-Jean"
   },
   {
     "2026": "",
@@ -601,7 +601,7 @@
     "2030": "",
     "2031": "Dariel Jaquez",
     "2032": "Chase Mora",
-    "2033": "Josue Jean",
+    "2033": "Deivy Gonzalez",
     "2026 Player ID": "",
     "2027 Player ID": "",
     "2028 Player ID": "",
@@ -609,7 +609,7 @@
     "2030 Player ID": "",
     "2031 Player ID": "Dariel-Jaquez",
     "2032 Player ID": "Chase-Mora",
-    "2033 Player ID": "Josue-Jean"
+    "2033 Player ID": "Deivy-Gonzalez"
   },
   {
     "2026": "",
@@ -619,7 +619,7 @@
     "2030": "",
     "2031": "Carlos Done",
     "2032": "Steven Duran",
-    "2033": "Deivy Gonzalez",
+    "2033": "Noel Cepeda",
     "2026 Player ID": "",
     "2027 Player ID": "",
     "2028 Player ID": "",
@@ -627,7 +627,7 @@
     "2030 Player ID": "",
     "2031 Player ID": "Carlos-Done",
     "2032 Player ID": "Steven-Duran",
-    "2033 Player ID": "Deivy-Gonzalez"
+    "2033 Player ID": "Noel-Cepeda"
   },
   {
     "2026": "",
@@ -637,7 +637,7 @@
     "2030": "",
     "2031": "Caleb Nieman",
     "2032": "Bryan Regalado",
-    "2033": "Noel Cepeda",
+    "2033": "Jefrey Etienne",
     "2026 Player ID": "",
     "2027 Player ID": "",
     "2028 Player ID": "",
@@ -645,7 +645,7 @@
     "2030 Player ID": "",
     "2031 Player ID": "Caleb-Nieman",
     "2032 Player ID": "Bryan-Regalado",
-    "2033 Player ID": "Noel-Cepeda"
+    "2033 Player ID": "Jefrey-Etienne"
   },
   {
     "2026": "",
@@ -655,7 +655,7 @@
     "2030": "",
     "2031": "Wenderlyn King",
     "2032": "Daniel Garcia",
-    "2033": "Jefrey Etienne",
+    "2033": "",
     "2026 Player ID": "",
     "2027 Player ID": "",
     "2028 Player ID": "",
@@ -663,7 +663,7 @@
     "2030 Player ID": "",
     "2031 Player ID": "Wenderlyn-King",
     "2032 Player ID": "Daniel-Garcia",
-    "2033 Player ID": "Jefrey-Etienne"
+    "2033 Player ID": ""
   },
   {
     "2026": "",
@@ -816,7 +816,7 @@
     "2029": "",
     "2030": "",
     "2031": "Victor Garcia",
-    "2032": "Adrian Bello",
+    "2032": "Francisco De Marchena",
     "2033": "",
     "2026 Player ID": "",
     "2027 Player ID": "",
@@ -824,7 +824,7 @@
     "2029 Player ID": "",
     "2030 Player ID": "",
     "2031 Player ID": "Victor-Garcia",
-    "2032 Player ID": "Adrian-Bello",
+    "2032 Player ID": "Francisco-De-Marchena",
     "2033 Player ID": ""
   },
   {
@@ -834,7 +834,7 @@
     "2029": "",
     "2030": "",
     "2031": "Lukas Gonzalez",
-    "2032": "",
+    "2032": "Adrian Bello",
     "2033": "",
     "2026 Player ID": "",
     "2027 Player ID": "",
@@ -842,7 +842,7 @@
     "2029 Player ID": "",
     "2030 Player ID": "",
     "2031 Player ID": "Lukas-Gonzalez",
-    "2032 Player ID": "",
+    "2032 Player ID": "Adrian-Bello",
     "2033 Player ID": ""
   }
 ]

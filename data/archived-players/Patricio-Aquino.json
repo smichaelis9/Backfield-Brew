@@ -1,21 +1,20 @@
 {
   "id": "Patricio-Aquino",
   "name": "Patricio Aquino",
-  "archived": false,
+  "archived": true,
   "playerType": "Pitcher",
-  "generatedAt": "2026-09-21T14:45:30.420Z",
+  "generatedAt": "2026-09-21T14:55:22.386Z",
   "bio": {
     "Player-ID": "Patricio-Aquino",
     "MLBAM ID": "699223",
     "Player Type": "Pitcher",
     "Player": "Patricio Aquino",
     "Rank": "166",
-    "Trending": "",
+    "Archive Reason": "Released on 9/19/2026",
     "Position": "RHP",
-    "Level": "IL",
+    "Level": "AA",
     "Age": "23.4",
     "OFP": "30+",
-    "OFP Updated": "",
     "Risk": "Extreme",
     "School or Country": "Country",
     "School/Country": "Dominican Republic",
@@ -28,7 +27,7 @@
     "Weight": "175",
     "Bat / Throw": "Right/Right",
     "Birthday": "5/1/2003",
-    "Rule 5 Eligible": "2026",
+    "Rule 5 Eligible": "",
     "Picture": "https://img.mlbstatic.com/mlb-photos/image/upload/c_fill,g_auto/w_180/v1/people/699223/headshot/milb/current",
     "Picture Source": "MiLB.com",
     "Notes Updated": "4/20/2025",
@@ -88,8 +87,7 @@
     "Instagram": "Instagram",
     "Instagram Link": "https://instagram.com/el_asesino_13?igshid=YmMyMTA2M2Y=",
     "Other Social": "",
-    "Other Social Link": "",
-    "Previous Rank": "166"
+    "Other Social Link": ""
   },
   "tools": {
     "Player-ID": "Patricio-Aquino",
@@ -144,7 +142,7 @@
       "FB%": "32.4%",
       "IFFB%": "23.1%",
       "HR/FB": "0.08",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     "2024": {
       "Player-ID": "Patricio-Aquino",
@@ -176,7 +174,7 @@
       "FB%": "33.8%",
       "IFFB%": "27.2%",
       "HR/FB": "0.07",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     "2025": {
       "Player-ID": "Patricio-Aquino",
@@ -208,7 +206,7 @@
       "FB%": "31.4%",
       "IFFB%": "32.8%",
       "HR/FB": "0.03",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     "2026": {
       "Player-ID": "Patricio-Aquino",
@@ -240,7 +238,7 @@
       "FB%": "53.6%",
       "IFFB%": "26.7%",
       "HR/FB": "0.00",
-      "Archived?": ""
+      "Archived?": "yes"
     }
   },
   "gamedayWhiff": {
@@ -428,7 +426,7 @@
       "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2026-09",
       "Imported At": "09/20/2026 08:46:39",
       "Player ID": "Patricio-Aquino",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     {
       "Transaction ID": "932244",
@@ -445,7 +443,7 @@
       "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2026-07",
       "Imported At": "08/13/2026 10:22:03",
       "Player ID": "Patricio-Aquino",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     {
       "Transaction ID": "924563",
@@ -462,7 +460,7 @@
       "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2026-06",
       "Imported At": "08/13/2026 10:21:59",
       "Player ID": "Patricio-Aquino",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     {
       "Transaction ID": "916571",
@@ -479,7 +477,7 @@
       "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2026-06",
       "Imported At": "08/13/2026 10:21:59",
       "Player ID": "Patricio-Aquino",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     {
       "Transaction ID": "903634",
@@ -496,7 +494,7 @@
       "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2026-04",
       "Imported At": "08/13/2026 10:21:49",
       "Player ID": "Patricio-Aquino",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     {
       "Transaction ID": "895552",
@@ -513,7 +511,7 @@
       "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2026-03",
       "Imported At": "08/13/2026 10:21:44",
       "Player ID": "Patricio-Aquino",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     {
       "Transaction ID": "895407",
@@ -530,7 +528,7 @@
       "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2026-03",
       "Imported At": "08/13/2026 10:21:44",
       "Player ID": "Patricio-Aquino",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     {
       "Transaction ID": "887514",
@@ -547,7 +545,7 @@
       "Source URL": "https://www.mlb.com/brewers/roster/transactions/2026/02",
       "Imported At": "08/13/2026 10:00:20",
       "Player ID": "Patricio-Aquino",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     {
       "Transaction ID": "799650",
@@ -564,7 +562,7 @@
       "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2024-08",
       "Imported At": "08/13/2026 10:19:16",
       "Player ID": "Patricio-Aquino",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     {
       "Transaction ID": "794616",
@@ -581,7 +579,7 @@
       "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2024-08",
       "Imported At": "08/13/2026 10:19:16",
       "Player ID": "Patricio-Aquino",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     {
       "Transaction ID": "758609",
@@ -598,7 +596,7 @@
       "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2024-03",
       "Imported At": "08/13/2026 10:18:41",
       "Player ID": "Patricio-Aquino",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     {
       "Transaction ID": "753739",
@@ -615,7 +613,7 @@
       "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2024-03",
       "Imported At": "08/13/2026 10:18:41",
       "Player ID": "Patricio-Aquino",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     {
       "Transaction ID": "752448",
@@ -632,7 +630,7 @@
       "Source URL": "https://www.mlb.com/brewers/roster/transactions/2024/02",
       "Imported At": "08/13/2026 09:58:39",
       "Player ID": "Patricio-Aquino",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     {
       "Transaction ID": "698274",
@@ -649,7 +647,7 @@
       "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2023-06",
       "Imported At": "08/13/2026 10:17:38",
       "Player ID": "Patricio-Aquino",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     {
       "Transaction ID": "695833",
@@ -666,7 +664,7 @@
       "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2023-04",
       "Imported At": "08/13/2026 10:17:24",
       "Player ID": "Patricio-Aquino",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     {
       "Transaction ID": "680815",
@@ -683,7 +681,7 @@
       "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2023-04",
       "Imported At": "08/13/2026 10:17:24",
       "Player ID": "Patricio-Aquino",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     {
       "Transaction ID": "660703",
@@ -700,7 +698,7 @@
       "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2022-11",
       "Imported At": "08/13/2026 10:16:50",
       "Player ID": "Patricio-Aquino",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     {
       "Transaction ID": "646142",
@@ -717,7 +715,7 @@
       "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2022-08",
       "Imported At": "08/13/2026 10:16:28",
       "Player ID": "Patricio-Aquino",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     {
       "Transaction ID": "646106",
@@ -734,7 +732,7 @@
       "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2022-06",
       "Imported At": "08/13/2026 10:16:07",
       "Player ID": "Patricio-Aquino",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     {
       "Transaction ID": "627866",
@@ -751,7 +749,7 @@
       "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2022-06",
       "Imported At": "08/13/2026 10:16:07",
       "Player ID": "Patricio-Aquino",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     {
       "Transaction ID": "469438",
@@ -768,7 +766,7 @@
       "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2021-02",
       "Imported At": "08/13/2026 10:14:39",
       "Player ID": "Patricio-Aquino",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     {
       "Transaction ID": "460226",
@@ -785,7 +783,7 @@
       "Source URL": "https://www.mlb.com/brewers/roster/transactions/2021/01",
       "Imported At": "08/13/2026 09:56:11",
       "Player ID": "Patricio-Aquino",
-      "Archived?": ""
+      "Archived?": "yes"
     }
   ]
 }
