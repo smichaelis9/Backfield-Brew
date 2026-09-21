@@ -1,6 +1,6 @@
 {
   "date": "2026-09-20",
-  "generatedAt": "2026-09-20T23:06:14.517Z",
+  "generatedAt": "2026-09-21T01:04:03.354Z",
   "affiliates": [
     {
       "teamId": 556,
@@ -76,17 +76,17 @@
       "opponentTeamId": 235,
       "venue": "First Horizon Park",
       "status": {
-        "key": "live",
-        "label": "In Progress"
+        "key": "final",
+        "label": "Final"
       },
       "score": {
-        "away": 1,
-        "home": 0
+        "away": 3,
+        "home": 5
       },
       "inning": {
-        "inning": 4,
-        "state": "Bottom",
-        "ordinal": "4th"
+        "inning": 9,
+        "state": "Top",
+        "ordinal": "9th"
       },
       "probablePitcher": {
         "mlbamId": 689441,
@@ -115,17 +115,17 @@
       "opponentTeamId": 559,
       "venue": "Keesler Federal Park",
       "status": {
-        "key": "scheduled",
-        "label": "Pre-Game"
+        "key": "live",
+        "label": "In Progress"
       },
       "score": {
-        "away": 0,
-        "home": 0
+        "away": 2,
+        "home": 4
       },
       "inning": {
-        "inning": 1,
+        "inning": 6,
         "state": "Top",
-        "ordinal": "1st"
+        "ordinal": "6th"
       },
       "probablePitcher": {
         "mlbamId": 805807,
