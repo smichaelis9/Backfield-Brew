@@ -3,7 +3,7 @@
   "name": "Eric Brown Jr.",
   "archived": false,
   "playerType": "Hitter",
-  "generatedAt": "2026-09-22T11:58:23.069Z",
+  "generatedAt": "2026-09-22T16:47:59.619Z",
   "bio": {
     "Player-ID": "Eric-Brown",
     "MLBAM ID": "687521",
@@ -397,6 +397,23 @@
     }
   ],
   "transactions": [
+    {
+      "Transaction ID": "943529",
+      "Date": "2026-09-21",
+      "Effective Date": "2026-09-21",
+      "MLBAM ID": "687521",
+      "Player": "Eric Brown Jr.",
+      "Position": "",
+      "From Team": "",
+      "To Team": "Nashville Sounds",
+      "Level": "MiLB",
+      "Type": "Activated",
+      "Description": "Nashville Sounds activated OF Eric Brown Jr. from the 7-day injured list.",
+      "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2026-09",
+      "Imported At": "09/22/2026 10:46:38",
+      "Player ID": "Eric-Brown",
+      "Archived?": ""
+    },
     {
       "Transaction ID": "939673",
       "Date": "2026-08-27",
