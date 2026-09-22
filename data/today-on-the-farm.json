@@ -1,6 +1,6 @@
 {
-  "date": "2026-09-21",
-  "generatedAt": "2026-09-22T00:53:07.887Z",
+  "date": "2026-09-22",
+  "generatedAt": "2026-09-22T05:51:02.174Z",
   "affiliates": [
     {
       "teamId": 556,
@@ -59,6 +59,39 @@
       "leagueName": "Dominican Summer League"
     }
   ],
-  "gameCount": 0,
-  "games": []
+  "gameCount": 1,
+  "games": [
+    {
+      "key": "851009:5015",
+      "gamePk": 851009,
+      "date": "2026-09-22",
+      "gameDate": "2026-09-22T23:35:00Z",
+      "affiliate": "Biloxi Shuckers",
+      "affiliateTeamId": 5015,
+      "level": "AA",
+      "leagueId": 111,
+      "leagueName": "Southern League",
+      "homeAway": "away",
+      "opponent": "Rocket City Trash Pandas",
+      "opponentTeamId": 559,
+      "venue": "Toyota Field",
+      "status": {
+        "key": "scheduled",
+        "label": "Scheduled"
+      },
+      "score": null,
+      "inning": null,
+      "probablePitcher": {
+        "mlbamId": 811309,
+        "name": "Bishop Letson",
+        "inDatabase": true,
+        "playerId": "Bishop-Letson",
+        "rank": 9,
+        "picture": "https://img.mlbstatic.com/mlb-photos/image/upload/c_fill,g_auto/w_180/v1/people/811309/headshot/milb/current",
+        "databaseLevel": "AA"
+      },
+      "doubleHeader": "N",
+      "gameNumber": 1
+    }
+  ]
 }
