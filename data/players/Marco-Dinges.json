@@ -3,7 +3,7 @@
   "name": "Marco Dinges",
   "archived": false,
   "playerType": "Hitter",
-  "generatedAt": "2026-09-24T11:55:18.178Z",
+  "generatedAt": "2026-09-24T16:44:59.436Z",
   "bio": {
     "Player-ID": "Marco-Dinges",
     "MLBAM ID": "701392",
@@ -397,6 +397,23 @@
     }
   ],
   "transactions": [
+    {
+      "Transaction ID": "943824",
+      "Date": "2026-09-24",
+      "Effective Date": "2026-09-24",
+      "MLBAM ID": "701392",
+      "Player": "Marco Dinges",
+      "Position": "",
+      "From Team": "",
+      "To Team": "Biloxi Shuckers",
+      "Level": "MiLB",
+      "Type": "Activated",
+      "Description": "Biloxi Shuckers activated DH Marco Dinges from the 7-day injured list.",
+      "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2026-09",
+      "Imported At": "09/24/2026 10:46:33",
+      "Player ID": "Marco-Dinges",
+      "Archived?": ""
+    },
     {
       "Transaction ID": "937507",
       "Date": "2026-08-14",

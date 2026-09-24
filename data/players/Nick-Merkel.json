@@ -3,7 +3,7 @@
   "name": "Nick Merkel",
   "archived": false,
   "playerType": "Pitcher",
-  "generatedAt": "2026-09-24T11:55:18.178Z",
+  "generatedAt": "2026-09-24T16:44:59.436Z",
   "bio": {
     "Player-ID": "Nick-Merkel",
     "MLBAM ID": "806581",
@@ -413,6 +413,23 @@
     }
   ],
   "transactions": [
+    {
+      "Transaction ID": "943828",
+      "Date": "2026-09-24",
+      "Effective Date": "2026-09-24",
+      "MLBAM ID": "806581",
+      "Player": "Nick Merkel",
+      "Position": "",
+      "From Team": "",
+      "To Team": "Biloxi Shuckers",
+      "Level": "MiLB",
+      "Type": "Activated",
+      "Description": "Biloxi Shuckers activated RHP Nick Merkel from the 7-day injured list.",
+      "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2026-09",
+      "Imported At": "09/24/2026 10:46:33",
+      "Player ID": "Nick-Merkel",
+      "Archived?": ""
+    },
     {
       "Transaction ID": "931921",
       "Date": "2026-07-27",

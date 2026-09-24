@@ -3,7 +3,7 @@
   "name": "David García",
   "archived": false,
   "playerType": "Hitter",
-  "generatedAt": "2026-09-24T11:55:18.178Z",
+  "generatedAt": "2026-09-24T16:44:59.436Z",
   "bio": {
     "Player-ID": "David-Garcia",
     "MLBAM ID": "671272",
@@ -397,6 +397,23 @@
     }
   ],
   "transactions": [
+    {
+      "Transaction ID": "943831",
+      "Date": "2026-09-24",
+      "Effective Date": "2026-09-24",
+      "MLBAM ID": "671272",
+      "Player": "David García",
+      "Position": "",
+      "From Team": "",
+      "To Team": "Biloxi Shuckers",
+      "Level": "MiLB",
+      "Type": "Activated",
+      "Description": "Biloxi Shuckers activated C David García from the Development List.",
+      "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2026-09",
+      "Imported At": "09/24/2026 10:46:33",
+      "Player ID": "David-Garcia",
+      "Archived?": ""
+    },
     {
       "Transaction ID": "941667",
       "Date": "2026-09-08",

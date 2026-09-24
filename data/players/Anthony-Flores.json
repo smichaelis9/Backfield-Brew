@@ -3,7 +3,7 @@
   "name": "Anthony Flores",
   "archived": false,
   "playerType": "Pitcher",
-  "generatedAt": "2026-09-24T11:55:18.178Z",
+  "generatedAt": "2026-09-24T16:44:59.436Z",
   "bio": {
     "Player-ID": "Anthony-Flores",
     "MLBAM ID": "800260",
@@ -413,6 +413,23 @@
     }
   ],
   "transactions": [
+    {
+      "Transaction ID": "943825",
+      "Date": "2026-09-24",
+      "Effective Date": "2026-09-24",
+      "MLBAM ID": "800260",
+      "Player": "Anthony Flores",
+      "Position": "",
+      "From Team": "",
+      "To Team": "Biloxi Shuckers",
+      "Level": "MiLB",
+      "Type": "Activated",
+      "Description": "Biloxi Shuckers activated LHP Anthony Flores from the 7-day injured list.",
+      "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2026-09",
+      "Imported At": "09/24/2026 10:46:33",
+      "Player ID": "Anthony-Flores",
+      "Archived?": ""
+    },
     {
       "Transaction ID": "940092",
       "Date": "2026-08-30",
