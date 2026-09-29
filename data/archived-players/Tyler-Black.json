@@ -3,7 +3,7 @@
   "name": "Tyler Black",
   "archived": true,
   "playerType": "Hitter",
-  "generatedAt": "2026-09-29T13:55:40.486Z",
+  "generatedAt": "2026-09-29T19:12:13.987Z",
   "bio": {
     "Player-ID": "Tyler-Black",
     "MLBAM ID": "672012",
@@ -394,6 +394,23 @@
     }
   ],
   "transactions": [
+    {
+      "Transaction ID": "944646",
+      "Date": "2026-09-28",
+      "Effective Date": "2026-09-28",
+      "MLBAM ID": "672012",
+      "Player": "Tyler Black",
+      "Position": "",
+      "From Team": "Nashville Sounds",
+      "To Team": "Milwaukee Brewers",
+      "Level": "MiLB",
+      "Type": "Recalled",
+      "Description": "Milwaukee Brewers recalled DH Tyler Black from Nashville Sounds.",
+      "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2026-09",
+      "Imported At": "09/29/2026 11:46:51",
+      "Player ID": "Tyler-Black",
+      "Archived?": "yes"
+    },
     {
       "Transaction ID": "907838",
       "Date": "2026-05-12",

@@ -3,7 +3,7 @@
   "name": "Coleman Crow",
   "archived": false,
   "playerType": "Pitcher",
-  "generatedAt": "2026-09-29T13:55:40.486Z",
+  "generatedAt": "2026-09-29T19:12:13.987Z",
   "bio": {
     "Player-ID": "Coleman-Crow",
     "MLBAM ID": "689441",
@@ -413,6 +413,23 @@
     }
   ],
   "transactions": [
+    {
+      "Transaction ID": "944644",
+      "Date": "2026-09-28",
+      "Effective Date": "2026-09-28",
+      "MLBAM ID": "689441",
+      "Player": "Coleman Crow",
+      "Position": "",
+      "From Team": "Nashville Sounds",
+      "To Team": "Milwaukee Brewers",
+      "Level": "MiLB",
+      "Type": "Recalled",
+      "Description": "Milwaukee Brewers recalled RHP Coleman Crow from Nashville Sounds.",
+      "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2026-09",
+      "Imported At": "09/29/2026 11:46:51",
+      "Player ID": "Coleman-Crow",
+      "Archived?": ""
+    },
     {
       "Transaction ID": "927072",
       "Date": "2026-07-12",
