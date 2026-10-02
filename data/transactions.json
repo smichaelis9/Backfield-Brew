@@ -1,5 +1,22 @@
 [
   {
+    "Transaction ID": "944955",
+    "Date": "2026-10-02",
+    "Effective Date": "2026-10-02",
+    "MLBAM ID": "683734",
+    "Player": "Andrew Vaughn",
+    "Position": "",
+    "From Team": "",
+    "To Team": "Milwaukee Brewers",
+    "Level": "MLB",
+    "Type": "Activated",
+    "Description": "Milwaukee Brewers activated 1B Andrew Vaughn from the 10-day injured list.",
+    "Source URL": "https://www.mlb.com/brewers/roster/transactions/2026/10",
+    "Imported At": "10/02/2026 16:46:32",
+    "Player ID": "",
+    "Archived?": ""
+  },
+  {
     "Transaction ID": "944944",
     "Date": "2026-10-02",
     "Effective Date": "2026-10-02",
