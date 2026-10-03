@@ -3,7 +3,7 @@
   "name": "Coleman Crow",
   "archived": false,
   "playerType": "Pitcher",
-  "generatedAt": "2026-10-03T13:17:41.132Z",
+  "generatedAt": "2026-10-03T17:31:29.898Z",
   "bio": {
     "Player-ID": "Coleman-Crow",
     "MLBAM ID": "689441",
@@ -413,6 +413,23 @@
     }
   ],
   "transactions": [
+    {
+      "Transaction ID": "944979",
+      "Date": "2026-09-28",
+      "Effective Date": "2026-09-28",
+      "MLBAM ID": "689441",
+      "Player": "Coleman Crow",
+      "Position": "",
+      "From Team": "",
+      "To Team": "Milwaukee Brewers",
+      "Level": "MLB",
+      "Type": "Roster Status Change",
+      "Description": "RHP Coleman Crow roster status changed by Milwaukee Brewers.",
+      "Source URL": "https://www.mlb.com/brewers/roster/transactions/2026/09",
+      "Imported At": "10/03/2026 10:46:32",
+      "Player ID": "Coleman-Crow",
+      "Archived?": ""
+    },
     {
       "Transaction ID": "944644",
       "Date": "2026-09-28",
