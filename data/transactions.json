@@ -1,5 +1,22 @@
 [
   {
+    "Transaction ID": "945025",
+    "Date": "2026-10-03",
+    "Effective Date": "2026-10-03",
+    "MLBAM ID": "668831",
+    "Player": "Garrett Stallings",
+    "Position": "",
+    "From Team": "",
+    "To Team": "Milwaukee Brewers",
+    "Level": "MLB",
+    "Type": "Roster Status Change",
+    "Description": "RHP Garrett Stallings roster status changed by Milwaukee Brewers.",
+    "Source URL": "https://www.mlb.com/brewers/roster/transactions/2026/10",
+    "Imported At": "10/04/2026 08:46:31",
+    "Player ID": "Garrett-Stallings",
+    "Archived?": ""
+  },
+  {
     "Transaction ID": "944985",
     "Date": "2026-10-03",
     "Effective Date": "2026-10-03",
@@ -31,6 +48,23 @@
     "Source URL": "https://www.mlb.com/brewers/roster/transactions/2026/10",
     "Imported At": "10/03/2026 10:46:32",
     "Player ID": "",
+    "Archived?": ""
+  },
+  {
+    "Transaction ID": "945023",
+    "Date": "2026-10-02",
+    "Effective Date": "2026-10-02",
+    "MLBAM ID": "835915",
+    "Player": "Caleb Nieman",
+    "Position": "",
+    "From Team": "",
+    "To Team": "ACL Brewers",
+    "Level": "MiLB",
+    "Type": "Released",
+    "Description": "ACL Brewers released RHP Caleb Nieman.",
+    "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2026-10",
+    "Imported At": "10/04/2026 08:46:31",
+    "Player ID": "Caleb-Nieman",
     "Archived?": ""
   },
   {
@@ -82,6 +116,23 @@
     "Source URL": "https://www.mlb.com/brewers/roster/transactions/2026/10",
     "Imported At": "10/02/2026 10:46:28",
     "Player ID": "",
+    "Archived?": ""
+  },
+  {
+    "Transaction ID": "945024",
+    "Date": "2026-09-28",
+    "Effective Date": "2026-09-28",
+    "MLBAM ID": "668831",
+    "Player": "Garrett Stallings",
+    "Position": "",
+    "From Team": "Nashville Sounds",
+    "To Team": "Milwaukee Brewers",
+    "Level": "MiLB",
+    "Type": "Recalled",
+    "Description": "Milwaukee Brewers recalled RHP Garrett Stallings from Nashville Sounds.",
+    "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2026-09",
+    "Imported At": "10/04/2026 08:46:31",
+    "Player ID": "Garrett-Stallings",
     "Archived?": ""
   },
   {

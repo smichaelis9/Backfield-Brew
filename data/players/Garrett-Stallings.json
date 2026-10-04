@@ -3,7 +3,7 @@
   "name": "Garrett Stallings",
   "archived": false,
   "playerType": "Pitcher",
-  "generatedAt": "2026-10-04T08:51:32.969Z",
+  "generatedAt": "2026-10-04T14:41:39.924Z",
   "bio": {
     "Player-ID": "Garrett-Stallings",
     "MLBAM ID": "668831",
@@ -413,6 +413,40 @@
     }
   ],
   "transactions": [
+    {
+      "Transaction ID": "945025",
+      "Date": "2026-10-03",
+      "Effective Date": "2026-10-03",
+      "MLBAM ID": "668831",
+      "Player": "Garrett Stallings",
+      "Position": "",
+      "From Team": "",
+      "To Team": "Milwaukee Brewers",
+      "Level": "MLB",
+      "Type": "Roster Status Change",
+      "Description": "RHP Garrett Stallings roster status changed by Milwaukee Brewers.",
+      "Source URL": "https://www.mlb.com/brewers/roster/transactions/2026/10",
+      "Imported At": "10/04/2026 08:46:31",
+      "Player ID": "Garrett-Stallings",
+      "Archived?": ""
+    },
+    {
+      "Transaction ID": "945024",
+      "Date": "2026-09-28",
+      "Effective Date": "2026-09-28",
+      "MLBAM ID": "668831",
+      "Player": "Garrett Stallings",
+      "Position": "",
+      "From Team": "Nashville Sounds",
+      "To Team": "Milwaukee Brewers",
+      "Level": "MiLB",
+      "Type": "Recalled",
+      "Description": "Milwaukee Brewers recalled RHP Garrett Stallings from Nashville Sounds.",
+      "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2026-09",
+      "Imported At": "10/04/2026 08:46:31",
+      "Player ID": "Garrett-Stallings",
+      "Archived?": ""
+    },
     {
       "Transaction ID": "943132",
       "Date": "2026-09-18",
