@@ -1,5 +1,22 @@
 [
   {
+    "Transaction ID": "945392",
+    "Date": "2026-10-08",
+    "Effective Date": "2026-10-08",
+    "MLBAM ID": "676467",
+    "Player": "Colton Gordon",
+    "Position": "",
+    "From Team": "Biloxi Shuckers",
+    "To Team": "Milwaukee Brewers",
+    "Level": "MiLB",
+    "Type": "Recalled",
+    "Description": "Milwaukee Brewers recalled LHP Colton Gordon from Biloxi Shuckers.",
+    "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2026-10",
+    "Imported At": "10/08/2026 16:46:36",
+    "Player ID": "",
+    "Archived?": ""
+  },
+  {
     "Transaction ID": "945025",
     "Date": "2026-10-03",
     "Effective Date": "2026-10-03",
