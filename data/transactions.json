@@ -1,5 +1,22 @@
 [
   {
+    "Transaction ID": "946136",
+    "Date": "2026-10-14",
+    "Effective Date": "2026-10-14",
+    "MLBAM ID": "844488",
+    "Player": "Heeju Shin",
+    "Position": "",
+    "From Team": "",
+    "To Team": "DSL Brewers Gold",
+    "Level": "MiLB",
+    "Type": "Signed",
+    "Description": "OF Heeju Shin assigned to DSL Brewers Gold.",
+    "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2026-10",
+    "Imported At": "10/14/2026 09:46:35",
+    "Player ID": "Heeju-Shin",
+    "Archived?": ""
+  },
+  {
     "Transaction ID": "945449",
     "Date": "2026-10-08",
     "Effective Date": "2026-10-08",
