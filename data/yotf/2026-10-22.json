@@ -1,0 +1,63 @@
+{
+  "date": "2026-10-22",
+  "generatedAt": "2026-10-23T17:04:41.892Z",
+  "scoringVersion": 1,
+  "hitterRankBonuses": {
+    "1-5": 1.95,
+    "6-10": 1.6,
+    "11-20": 1.25,
+    "21-35": 1,
+    "36-50": 0.5,
+    "51+": 0.25,
+    "unranked": 0
+  },
+  "affiliates": [
+    {
+      "teamId": 556,
+      "name": "Nashville Sounds",
+      "level": "AAA",
+      "sportId": 11
+    },
+    {
+      "teamId": 5015,
+      "name": "Biloxi Shuckers",
+      "level": "AA",
+      "sportId": 12
+    },
+    {
+      "teamId": 572,
+      "name": "Wisconsin Timber Rattlers",
+      "level": "A+",
+      "sportId": 13
+    },
+    {
+      "teamId": 249,
+      "name": "Wilson Warbirds",
+      "level": "A",
+      "sportId": 14
+    },
+    {
+      "teamId": 406,
+      "name": "ACL Brewers",
+      "level": "ACL",
+      "sportId": 16
+    },
+    {
+      "teamId": 2101,
+      "name": "DSL Brewers Gold",
+      "level": "DSL",
+      "sportId": 16
+    },
+    {
+      "teamId": 607,
+      "name": "DSL Brewers Blue",
+      "level": "DSL",
+      "sportId": 16
+    }
+  ],
+  "completedGames": 0,
+  "hitters": [],
+  "pitchers": [],
+  "allHitters": [],
+  "allPitchers": []
+}
