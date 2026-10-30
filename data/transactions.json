@@ -1,5 +1,22 @@
 [
   {
+    "Transaction ID": "947511",
+    "Date": "2026-10-30",
+    "Effective Date": "2026-10-30",
+    "MLBAM ID": "669160",
+    "Player": "Dustin May",
+    "Position": "",
+    "From Team": "",
+    "To Team": "Milwaukee Brewers",
+    "Level": "MLB",
+    "Type": "Free Agency",
+    "Description": "RHP Dustin May elected free agency.",
+    "Source URL": "https://www.mlb.com/brewers/roster/transactions/2026/10",
+    "Imported At": "10/30/2026 17:46:32",
+    "Player ID": "",
+    "Archived?": ""
+  },
+  {
     "Transaction ID": "947480",
     "Date": "2026-10-29",
     "Effective Date": "2026-10-29",
