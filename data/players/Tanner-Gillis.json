@@ -3,7 +3,7 @@
   "name": "Tanner Gillis",
   "archived": false,
   "playerType": "Pitcher",
-  "generatedAt": "2026-11-03T17:37:56.428Z",
+  "generatedAt": "2026-11-03T22:33:17.717Z",
   "bio": {
     "Player-ID": "Tanner-Gillis",
     "MLBAM ID": "828705",
@@ -413,6 +413,23 @@
     }
   ],
   "transactions": [
+    {
+      "Transaction ID": "948053",
+      "Date": "2026-11-02",
+      "Effective Date": "2026-11-02",
+      "MLBAM ID": "828705",
+      "Player": "Tanner Gillis",
+      "Position": "",
+      "From Team": "",
+      "To Team": "Biloxi Shuckers",
+      "Level": "MiLB",
+      "Type": "Activated",
+      "Description": "Biloxi Shuckers activated RHP Tanner Gillis from the 60-day injured list.",
+      "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2026-11",
+      "Imported At": "11/03/2026 13:46:36",
+      "Player ID": "Tanner-Gillis",
+      "Archived?": ""
+    },
     {
       "Transaction ID": "933045",
       "Date": "2026-07-14",
