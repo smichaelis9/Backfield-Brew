@@ -3,7 +3,7 @@
   "name": "Chang Tzu-Chun Lin",
   "archived": false,
   "playerType": "Pitcher",
-  "generatedAt": "2026-11-03T22:33:17.717Z",
+  "generatedAt": "2026-11-04T02:45:09.627Z",
   "bio": {
     "Player-ID": "Chang-Tzu-Chun-Lin",
     "MLBAM ID": "835646",
@@ -402,6 +402,23 @@
     }
   ],
   "transactions": [
+    {
+      "Transaction ID": "948487",
+      "Date": "2026-11-02",
+      "Effective Date": "2026-11-02",
+      "MLBAM ID": "835646",
+      "Player": "Chang Tzu-Chun Lin",
+      "Position": "",
+      "From Team": "",
+      "To Team": "ACL Brewers",
+      "Level": "MiLB",
+      "Type": "Activated",
+      "Description": "ACL Brewers activated RHP Chang Tzu-Chun Lin from the full-season injured list.",
+      "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2026-11",
+      "Imported At": "11/03/2026 17:46:36",
+      "Player ID": "Chang-Tzu-Chun-Lin",
+      "Archived?": ""
+    },
     {
       "Transaction ID": "902392",
       "Date": "2026-03-17",

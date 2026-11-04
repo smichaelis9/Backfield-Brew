@@ -3,7 +3,7 @@
   "name": "Griffin Tobias",
   "archived": false,
   "playerType": "Pitcher",
-  "generatedAt": "2026-11-03T22:33:17.717Z",
+  "generatedAt": "2026-11-04T02:45:09.627Z",
   "bio": {
     "Player-ID": "Griffin-Tobias",
     "MLBAM ID": "827437",
@@ -402,6 +402,23 @@
     }
   ],
   "transactions": [
+    {
+      "Transaction ID": "948473",
+      "Date": "2026-11-02",
+      "Effective Date": "2026-11-02",
+      "MLBAM ID": "827437",
+      "Player": "Griffin Tobias",
+      "Position": "",
+      "From Team": "",
+      "To Team": "Wilson Warbirds",
+      "Level": "MiLB",
+      "Type": "Activated",
+      "Description": "Wilson Warbirds activated RHP Griffin Tobias from the full-season injured list.",
+      "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2026-11",
+      "Imported At": "11/03/2026 17:46:36",
+      "Player ID": "Griffin-Tobias",
+      "Archived?": ""
+    },
     {
       "Transaction ID": "928636",
       "Date": "2026-07-16",

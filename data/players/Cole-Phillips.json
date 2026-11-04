@@ -3,7 +3,7 @@
   "name": "Cole Phillips",
   "archived": false,
   "playerType": "Pitcher",
-  "generatedAt": "2026-11-03T22:33:17.717Z",
+  "generatedAt": "2026-11-04T02:45:09.627Z",
   "bio": {
     "Player-ID": "Cole-Phillips",
     "MLBAM ID": "702551",
@@ -402,6 +402,23 @@
     }
   ],
   "transactions": [
+    {
+      "Transaction ID": "948484",
+      "Date": "2026-11-02",
+      "Effective Date": "2026-11-02",
+      "MLBAM ID": "702551",
+      "Player": "Cole Phillips",
+      "Position": "",
+      "From Team": "",
+      "To Team": "ACL Brewers",
+      "Level": "MiLB",
+      "Type": "Activated",
+      "Description": "ACL Brewers activated RHP Cole Phillips from the 60-day injured list.",
+      "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2026-11",
+      "Imported At": "11/03/2026 17:46:36",
+      "Player ID": "Cole-Phillips",
+      "Archived?": ""
+    },
     {
       "Transaction ID": "892523",
       "Date": "2026-03-17",

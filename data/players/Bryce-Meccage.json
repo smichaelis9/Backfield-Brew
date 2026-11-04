@@ -3,7 +3,7 @@
   "name": "Bryce Meccage",
   "archived": false,
   "playerType": "Pitcher",
-  "generatedAt": "2026-11-03T22:33:17.717Z",
+  "generatedAt": "2026-11-04T02:45:09.627Z",
   "bio": {
     "Player-ID": "Bryce-Meccage",
     "MLBAM ID": "815501",
@@ -413,6 +413,23 @@
     }
   ],
   "transactions": [
+    {
+      "Transaction ID": "948286",
+      "Date": "2026-11-02",
+      "Effective Date": "2026-11-02",
+      "MLBAM ID": "815501",
+      "Player": "Bryce Meccage",
+      "Position": "",
+      "From Team": "",
+      "To Team": "Wisconsin Timber Rattlers",
+      "Level": "MiLB",
+      "Type": "Activated",
+      "Description": "Wisconsin Timber Rattlers activated RHP Bryce Meccage from the 60-day injured list.",
+      "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2026-11",
+      "Imported At": "11/03/2026 16:46:55",
+      "Player ID": "Bryce-Meccage",
+      "Archived?": ""
+    },
     {
       "Transaction ID": "924538",
       "Date": "2026-06-29",

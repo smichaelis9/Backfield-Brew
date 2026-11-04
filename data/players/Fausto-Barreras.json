@@ -3,7 +3,7 @@
   "name": "Fausto Barreras",
   "archived": false,
   "playerType": "Pitcher",
-  "generatedAt": "2026-11-03T22:33:17.717Z",
+  "generatedAt": "2026-11-04T02:45:09.627Z",
   "bio": {
     "Player-ID": "Fausto-Barreras",
     "MLBAM ID": "835618",
@@ -402,6 +402,23 @@
     }
   ],
   "transactions": [
+    {
+      "Transaction ID": "948557",
+      "Date": "2026-11-02",
+      "Effective Date": "2026-11-02",
+      "MLBAM ID": "835618",
+      "Player": "Fausto Barreras",
+      "Position": "",
+      "From Team": "",
+      "To Team": "DSL Brewers Blue",
+      "Level": "MiLB",
+      "Type": "Activated",
+      "Description": "DSL Brewers Blue activated RHP Fausto Barreras from the 60-day injured list.",
+      "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2026-11",
+      "Imported At": "11/03/2026 17:46:36",
+      "Player ID": "Fausto-Barreras",
+      "Archived?": ""
+    },
     {
       "Transaction ID": "911341",
       "Date": "2026-05-23",

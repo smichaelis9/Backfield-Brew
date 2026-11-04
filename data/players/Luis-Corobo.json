@@ -3,7 +3,7 @@
   "name": "Luis Corobo",
   "archived": false,
   "playerType": "Hitter",
-  "generatedAt": "2026-11-03T22:33:17.717Z",
+  "generatedAt": "2026-11-04T02:45:09.627Z",
   "bio": {
     "Player-ID": "Luis-Corobo",
     "MLBAM ID": "821818",
@@ -396,6 +396,23 @@
     }
   ],
   "transactions": [
+    {
+      "Transaction ID": "948482",
+      "Date": "2026-11-02",
+      "Effective Date": "2026-11-02",
+      "MLBAM ID": "821818",
+      "Player": "Luis Corobo",
+      "Position": "",
+      "From Team": "",
+      "To Team": "ACL Brewers",
+      "Level": "MiLB",
+      "Type": "Activated",
+      "Description": "ACL Brewers activated C Luis Corobo from the 60-day injured list.",
+      "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2026-11",
+      "Imported At": "11/03/2026 17:46:36",
+      "Player ID": "Luis-Corobo",
+      "Archived?": ""
+    },
     {
       "Transaction ID": "930813",
       "Date": "2026-07-23",
