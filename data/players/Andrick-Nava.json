@@ -3,7 +3,7 @@
   "name": "Andrick Nava",
   "archived": false,
   "playerType": "Hitter",
-  "generatedAt": "2026-11-04T02:45:09.627Z",
+  "generatedAt": "2026-11-04T17:55:51.803Z",
   "bio": {
     "Player-ID": "Andrick-Nava",
     "MLBAM ID": "682774",
@@ -397,6 +397,23 @@
     }
   ],
   "transactions": [
+    {
+      "Transaction ID": "948932",
+      "Date": "2026-11-02",
+      "Effective Date": "2026-11-02",
+      "MLBAM ID": "682774",
+      "Player": "Andrick Nava",
+      "Position": "",
+      "From Team": "",
+      "To Team": "Nashville Sounds",
+      "Level": "MiLB",
+      "Type": "Free Agency",
+      "Description": "C Andrick Nava elected free agency.",
+      "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2026-11",
+      "Imported At": "11/04/2026 10:46:37",
+      "Player ID": "Andrick-Nava",
+      "Archived?": ""
+    },
     {
       "Transaction ID": "936384",
       "Date": "2026-08-08",

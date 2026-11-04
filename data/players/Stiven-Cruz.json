@@ -3,7 +3,7 @@
   "name": "Stiven Cruz",
   "archived": false,
   "playerType": "Pitcher",
-  "generatedAt": "2026-11-04T02:45:09.627Z",
+  "generatedAt": "2026-11-04T17:55:51.803Z",
   "bio": {
     "Player-ID": "Stiven-Cruz",
     "MLBAM ID": "691602",
@@ -413,6 +413,23 @@
     }
   ],
   "transactions": [
+    {
+      "Transaction ID": "948828",
+      "Date": "2026-11-02",
+      "Effective Date": "2026-11-02",
+      "MLBAM ID": "691602",
+      "Player": "Stiven Cruz",
+      "Position": "",
+      "From Team": "",
+      "To Team": "Biloxi Shuckers",
+      "Level": "MiLB",
+      "Type": "Free Agency",
+      "Description": "RHP Stiven Cruz elected free agency.",
+      "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2026-11",
+      "Imported At": "11/04/2026 10:46:37",
+      "Player ID": "Stiven-Cruz",
+      "Archived?": ""
+    },
     {
       "Transaction ID": "887080",
       "Date": "2026-02-21",

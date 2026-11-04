@@ -3,7 +3,7 @@
   "name": "Freddy Zamora",
   "archived": false,
   "playerType": "Hitter",
-  "generatedAt": "2026-11-04T02:45:09.627Z",
+  "generatedAt": "2026-11-04T17:55:51.803Z",
   "bio": {
     "Player-ID": "Freddy-Zamora",
     "MLBAM ID": "668965",
@@ -396,6 +396,23 @@
     }
   ],
   "transactions": [
+    {
+      "Transaction ID": "949054",
+      "Date": "2026-11-02",
+      "Effective Date": "2026-11-02",
+      "MLBAM ID": "668965",
+      "Player": "Freddy Zamora",
+      "Position": "",
+      "From Team": "",
+      "To Team": "Nashville Sounds",
+      "Level": "MiLB",
+      "Type": "Free Agency",
+      "Description": "SS Freddy Zamora elected free agency.",
+      "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2026-11",
+      "Imported At": "11/04/2026 10:46:37",
+      "Player ID": "Freddy-Zamora",
+      "Archived?": ""
+    },
     {
       "Transaction ID": "941544",
       "Date": "2026-09-07",

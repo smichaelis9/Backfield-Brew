@@ -3,7 +3,7 @@
   "name": "Ben Moore",
   "archived": false,
   "playerType": "Pitcher",
-  "generatedAt": "2026-11-04T02:45:09.627Z",
+  "generatedAt": "2026-11-04T17:55:51.803Z",
   "bio": {
     "Player-ID": "Ben-Moore",
     "MLBAM ID": "832560",
@@ -402,6 +402,23 @@
     }
   ],
   "transactions": [
+    {
+      "Transaction ID": "948760",
+      "Date": "2026-11-02",
+      "Effective Date": "2026-11-02",
+      "MLBAM ID": "832560",
+      "Player": "Ben Moore",
+      "Position": "",
+      "From Team": "",
+      "To Team": "ACL Brewers",
+      "Level": "MiLB",
+      "Type": "Free Agency",
+      "Description": "LHP Ben Moore elected free agency.",
+      "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2026-11",
+      "Imported At": "11/04/2026 10:46:37",
+      "Player ID": "Ben-Moore",
+      "Archived?": ""
+    },
     {
       "Transaction ID": "941578",
       "Date": "2026-09-08",
