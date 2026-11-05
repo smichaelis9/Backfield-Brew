@@ -528,6 +528,12 @@
     "archived": true
   },
   {
+    "id": "Darrien-Miller",
+    "name": "Darrien Miller",
+    "file": "Darrien-Miller.json",
+    "archived": true
+  },
+  {
     "id": "Cam-Robinson",
     "name": "Cam Robinson",
     "file": "Cam-Robinson.json",
@@ -756,6 +762,12 @@
     "archived": true
   },
   {
+    "id": "Stiven-Cruz",
+    "name": "Stiven Cruz",
+    "file": "Stiven-Cruz.json",
+    "archived": true
+  },
+  {
     "id": "Arielbi-Gonzalez",
     "name": "Arielbi Gonzalez",
     "file": "Arielbi-Gonzalez.json",
@@ -954,6 +966,12 @@
     "archived": true
   },
   {
+    "id": "Eduardo-Garcia",
+    "name": "Eduardo Garcia",
+    "file": "Eduardo-Garcia.json",
+    "archived": true
+  },
+  {
     "id": "Easton-McGee",
     "name": "Easton McGee",
     "file": "Easton-McGee.json",
@@ -1104,6 +1122,12 @@
     "archived": true
   },
   {
+    "id": "Ramon-Rodriguez",
+    "name": "Ramón Rodríguez",
+    "file": "Ramon-Rodriguez.json",
+    "archived": true
+  },
+  {
     "id": "Ryne-Moore",
     "name": "Ryne Moore",
     "file": "Ryne-Moore.json",
@@ -1179,6 +1203,12 @@
     "id": "Caden-Lemons",
     "name": "Caden Lemons",
     "file": "Caden-Lemons.json",
+    "archived": true
+  },
+  {
+    "id": "Jacob-Hurtubise",
+    "name": "Jacob Hurtubise",
+    "file": "Jacob-Hurtubise.json",
     "archived": true
   },
   {
@@ -1398,6 +1428,12 @@
     "archived": true
   },
   {
+    "id": "Yerlin-Rodriguez",
+    "name": "Yerlin Rodriguez",
+    "file": "Yerlin-Rodriguez.json",
+    "archived": true
+  },
+  {
     "id": "Yhoswar-Garcia",
     "name": "Yhoswar Garcia",
     "file": "Yhoswar-Garcia.json",
@@ -1530,6 +1566,18 @@
     "archived": true
   },
   {
+    "id": "Jheremy-Vargas",
+    "name": "Jheremy Vargas",
+    "file": "Jheremy-Vargas.json",
+    "archived": true
+  },
+  {
+    "id": "Blayberg-Diaz",
+    "name": "Blayberg Diaz",
+    "file": "Blayberg-Diaz.json",
+    "archived": true
+  },
+  {
     "id": "Russell-Smith",
     "name": "Russell Smith",
     "file": "Russell-Smith.json",
@@ -1563,6 +1611,12 @@
     "id": "Manuel-Castro",
     "name": "Manuel Castro",
     "file": "Manuel-Castro.json",
+    "archived": true
+  },
+  {
+    "id": "Freddy-Zamora",
+    "name": "Freddy Zamora",
+    "file": "Freddy-Zamora.json",
     "archived": true
   },
   {
@@ -1638,6 +1692,12 @@
     "archived": true
   },
   {
+    "id": "David-Garcia",
+    "name": "David García",
+    "file": "David-Garcia.json",
+    "archived": true
+  },
+  {
     "id": "Pedro-Tovar",
     "name": "Pedro Tovar",
     "file": "Pedro-Tovar.json",
@@ -1689,6 +1749,12 @@
     "id": "Jake-Polancic",
     "name": "Jake Polancic",
     "file": "Jake-Polancic.json",
+    "archived": true
+  },
+  {
+    "id": "Andrick-Nava",
+    "name": "Andrick Nava",
+    "file": "Andrick-Nava.json",
     "archived": true
   },
   {

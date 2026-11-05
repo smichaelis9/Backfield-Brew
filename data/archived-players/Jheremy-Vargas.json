@@ -1,21 +1,20 @@
 {
   "id": "Jheremy-Vargas",
   "name": "Jheremy Vargas",
-  "archived": false,
+  "archived": true,
   "playerType": "Hitter",
-  "generatedAt": "2026-11-05T11:33:49.216Z",
+  "generatedAt": "2026-11-05T19:00:41.244Z",
   "bio": {
     "Player-ID": "Jheremy-Vargas",
     "MLBAM ID": "691621",
     "Player Type": "Hitter",
     "Player": "Jheremy Vargas",
     "Rank": "188",
-    "Trending": "",
+    "Archive Reason": "Minor League Free Agent on 11/2/2026",
     "Position": "3B",
     "Level": "AA",
     "Age": "23.5",
     "OFP": "30",
-    "OFP Updated": "",
     "Risk": "Extreme",
     "School or Country": "Country",
     "School/Country": "Venezuela",
@@ -28,7 +27,7 @@
     "Weight": "160",
     "Bat / Throw": "Right/Right",
     "Birthday": "5/10/2003",
-    "Rule 5 Eligible": "2026",
+    "Rule 5 Eligible": "",
     "Picture": "https://img.mlbstatic.com/mlb-photos/image/upload/c_fill,g_auto/w_180/v1/people/691621/headshot/milb/current",
     "Picture Source": "MiLB.com",
     "Notes Updated": "8/18/2022",
@@ -88,8 +87,7 @@
     "Instagram": "Instagram",
     "Instagram Link": "https://instagram.com/jhereoficial_13?igshid=YmMyMTA2M2Y=",
     "Other Social": "",
-    "Other Social Link": "",
-    "Previous Rank": "188"
+    "Other Social Link": ""
   },
   "tools": {
     "Player-ID": "Jheremy-Vargas",
@@ -133,37 +131,37 @@
       "SB": "11",
       "CS": "4",
       "SB%": "73.3%",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     "2024": {
       "Player-ID": "Jheremy-Vargas",
       "Player": "Jheremy Vargas",
-      "PA": "353",
-      "H": "65",
-      "2B": "11",
-      "3B": "1",
-      "HR": "5",
-      "OBP": "0.303",
-      "SLG": "0.301",
-      "OPS": "0.604",
-      "wRC+": "80",
-      "BABIP": "0.238",
-      "wOBA": "0.293",
-      "K%": "15.3%",
-      "BB%": "10.8%",
-      "SwStr %": "8.9%",
-      "Whiff%": "21.2%",
-      "Pull %": "43.2%",
-      "Cent %": "20.5%",
-      "Oppo %": "36.3%",
-      "LD%": "23.1%",
-      "GB%": "43.5%",
-      "FB%": "33.3%",
-      "IFFB %": "34.1%",
-      "SB": "23",
-      "CS": "8",
-      "SB%": "74.2%",
-      "Archived?": ""
+      "PA": "",
+      "H": "",
+      "2B": "",
+      "3B": "",
+      "HR": "",
+      "OBP": "",
+      "SLG": "",
+      "OPS": "",
+      "wRC+": "",
+      "BABIP": "",
+      "wOBA": "",
+      "K%": "",
+      "BB%": "",
+      "SwStr %": "",
+      "Whiff%": "",
+      "Pull %": "",
+      "Cent %": "",
+      "Oppo %": "",
+      "LD%": "",
+      "GB%": "",
+      "FB%": "",
+      "IFFB %": "",
+      "SB": "",
+      "CS": "",
+      "SB%": "",
+      "Archived?": "yes"
     },
     "2025": {
       "Player-ID": "Jheremy-Vargas",
@@ -193,7 +191,7 @@
       "SB": "13",
       "CS": "7",
       "SB%": "65.0%",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     "2026": {
       "Player-ID": "Jheremy-Vargas",
@@ -223,7 +221,7 @@
       "SB": "1",
       "CS": "4",
       "SB%": "20.0%",
-      "Archived?": ""
+      "Archived?": "yes"
     }
   },
   "gamedayWhiff": {
@@ -412,7 +410,7 @@
       "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2026-11",
       "Imported At": "11/04/2026 10:46:37",
       "Player ID": "Jheremy-Vargas",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     {
       "Transaction ID": "901925",
@@ -429,7 +427,7 @@
       "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2026-04",
       "Imported At": "08/13/2026 10:21:49",
       "Player ID": "Jheremy-Vargas",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     {
       "Transaction ID": "898802",
@@ -446,7 +444,7 @@
       "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2026-04",
       "Imported At": "08/13/2026 10:21:49",
       "Player ID": "Jheremy-Vargas",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     {
       "Transaction ID": "887513",
@@ -463,7 +461,7 @@
       "Source URL": "https://www.mlb.com/brewers/roster/transactions/2026/02",
       "Imported At": "08/13/2026 10:00:20",
       "Player ID": "Jheremy-Vargas",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     {
       "Transaction ID": "895576",
@@ -480,7 +478,7 @@
       "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2025-09",
       "Imported At": "08/13/2026 10:21:15",
       "Player ID": "Jheremy-Vargas",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     {
       "Transaction ID": "869895",
@@ -497,7 +495,7 @@
       "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2025-09",
       "Imported At": "08/13/2026 10:21:15",
       "Player ID": "Jheremy-Vargas",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     {
       "Transaction ID": "868873",
@@ -514,7 +512,7 @@
       "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2025-09",
       "Imported At": "08/13/2026 10:21:15",
       "Player ID": "Jheremy-Vargas",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     {
       "Transaction ID": "832541",
@@ -531,7 +529,7 @@
       "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2025-04",
       "Imported At": "08/13/2026 10:20:12",
       "Player ID": "Jheremy-Vargas",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     {
       "Transaction ID": "828803",
@@ -548,7 +546,7 @@
       "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2025-04",
       "Imported At": "08/13/2026 10:20:12",
       "Player ID": "Jheremy-Vargas",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     {
       "Transaction ID": "823973",
@@ -565,7 +563,7 @@
       "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2025-03",
       "Imported At": "08/13/2026 10:20:06",
       "Player ID": "Jheremy-Vargas",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     {
       "Transaction ID": "819103",
@@ -582,7 +580,7 @@
       "Source URL": "https://www.mlb.com/brewers/roster/transactions/2025/03",
       "Imported At": "08/13/2026 09:59:34",
       "Player ID": "Jheremy-Vargas",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     {
       "Transaction ID": "754582",
@@ -599,7 +597,7 @@
       "Source URL": "https://www.mlb.com/brewers/roster/transactions/2024/03",
       "Imported At": "08/13/2026 09:58:39",
       "Player ID": "Jheremy-Vargas",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     {
       "Transaction ID": "731518",
@@ -616,7 +614,7 @@
       "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2023-11",
       "Imported At": "08/13/2026 10:18:11",
       "Player ID": "Jheremy-Vargas",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     {
       "Transaction ID": "728176",
@@ -633,7 +631,7 @@
       "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2023-09",
       "Imported At": "08/13/2026 10:17:59",
       "Player ID": "Jheremy-Vargas",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     {
       "Transaction ID": "723010",
@@ -650,7 +648,7 @@
       "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2023-09",
       "Imported At": "08/13/2026 10:17:59",
       "Player ID": "Jheremy-Vargas",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     {
       "Transaction ID": "710193",
@@ -667,7 +665,7 @@
       "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2023-07",
       "Imported At": "08/13/2026 10:17:46",
       "Player ID": "Jheremy-Vargas",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     {
       "Transaction ID": "710048",
@@ -684,7 +682,7 @@
       "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2023-07",
       "Imported At": "08/13/2026 10:17:46",
       "Player ID": "Jheremy-Vargas",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     {
       "Transaction ID": "648391",
@@ -701,7 +699,7 @@
       "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2022-08",
       "Imported At": "08/13/2026 10:16:28",
       "Player ID": "Jheremy-Vargas",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     {
       "Transaction ID": "644355",
@@ -718,7 +716,7 @@
       "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2022-08",
       "Imported At": "08/13/2026 10:16:28",
       "Player ID": "Jheremy-Vargas",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     {
       "Transaction ID": "610704",
@@ -735,7 +733,7 @@
       "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2022-04",
       "Imported At": "08/13/2026 10:15:56",
       "Player ID": "Jheremy-Vargas",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     {
       "Transaction ID": "501207",
@@ -752,7 +750,7 @@
       "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2021-07",
       "Imported At": "08/13/2026 10:15:06",
       "Player ID": "Jheremy-Vargas",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     {
       "Transaction ID": "417791",
@@ -769,7 +767,7 @@
       "Source URL": "https://www.mlb.com/brewers/roster/transactions/2019/07",
       "Imported At": "08/13/2026 09:49:39",
       "Player ID": "Jheremy-Vargas",
-      "Archived?": ""
+      "Archived?": "yes"
     }
   ]
 }

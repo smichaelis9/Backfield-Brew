@@ -1,21 +1,20 @@
 {
   "id": "Andrick-Nava",
   "name": "Andrick Nava",
-  "archived": false,
+  "archived": true,
   "playerType": "Hitter",
-  "generatedAt": "2026-11-05T11:33:49.216Z",
+  "generatedAt": "2026-11-05T19:00:41.244Z",
   "bio": {
     "Player-ID": "Andrick-Nava",
     "MLBAM ID": "682774",
     "Player Type": "Hitter",
     "Player": "Andrick Nava",
     "Rank": "223",
-    "Trending": "",
+    "Archive Reason": "Minor League Free Agent on 11/2/2026",
     "Position": "C",
     "Level": "AAA",
     "Age": "25.1",
     "OFP": "25",
-    "OFP Updated": "",
     "Risk": "Low",
     "School or Country": "Country",
     "School/Country": "Venezuela",
@@ -88,8 +87,7 @@
     "Instagram": "Instagram",
     "Instagram Link": "https://www.instagram.com/andricksnava/?hl=en",
     "Other Social": "",
-    "Other Social Link": "",
-    "Previous Rank": "226"
+    "Other Social Link": ""
   },
   "tools": {
     "Player-ID": "Andrick-Nava",
@@ -133,7 +131,7 @@
       "SB": "",
       "CS": "",
       "SB%": "",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     "2024": {
       "Player-ID": "Andrick-Nava",
@@ -163,7 +161,7 @@
       "SB": "",
       "CS": "",
       "SB%": "",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     "2025": {
       "Player-ID": "Andrick-Nava",
@@ -193,7 +191,7 @@
       "SB": "2",
       "CS": "0",
       "SB%": "100.0%",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     "2026": {
       "Player-ID": "Andrick-Nava",
@@ -223,7 +221,7 @@
       "SB": "1",
       "CS": "2",
       "SB%": "33.3%",
-      "Archived?": ""
+      "Archived?": "yes"
     }
   },
   "gamedayWhiff": {
@@ -241,8 +239,8 @@
   },
   "videos": [
     {
-      "Player-ID": "Andrick-Nava",
-      "Player Type": "Hitter",
+      "Player-ID": "",
+      "Player Type": "",
       "Player": "Andrick Nava",
       "Video 1": "",
       "Video Link 1": "",
@@ -412,7 +410,7 @@
       "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2026-11",
       "Imported At": "11/04/2026 10:46:37",
       "Player ID": "Andrick-Nava",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     {
       "Transaction ID": "936384",
@@ -429,7 +427,7 @@
       "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2026-08",
       "Imported At": "08/13/2026 10:22:09",
       "Player ID": "Andrick-Nava",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     {
       "Transaction ID": "922968",
@@ -446,7 +444,7 @@
       "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2026-06",
       "Imported At": "08/13/2026 10:21:59",
       "Player ID": "Andrick-Nava",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     {
       "Transaction ID": "921630",
@@ -463,7 +461,7 @@
       "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2026-06",
       "Imported At": "08/13/2026 10:21:59",
       "Player ID": "Andrick-Nava",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     {
       "Transaction ID": "921427",
@@ -480,7 +478,7 @@
       "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2026-06",
       "Imported At": "08/13/2026 10:21:59",
       "Player ID": "Andrick-Nava",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     {
       "Transaction ID": "909336",
@@ -497,7 +495,7 @@
       "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2026-05",
       "Imported At": "08/13/2026 10:21:53",
       "Player ID": "Andrick-Nava",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     {
       "Transaction ID": "909025",
@@ -514,7 +512,7 @@
       "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2026-05",
       "Imported At": "08/13/2026 10:21:53",
       "Player ID": "Andrick-Nava",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     {
       "Transaction ID": "907896",
@@ -531,7 +529,7 @@
       "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2026-05",
       "Imported At": "08/13/2026 10:21:53",
       "Player ID": "Andrick-Nava",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     {
       "Transaction ID": "907134",
@@ -548,7 +546,7 @@
       "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2026-05",
       "Imported At": "08/13/2026 10:21:53",
       "Player ID": "Andrick-Nava",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     {
       "Transaction ID": "906080",
@@ -565,7 +563,7 @@
       "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2026-05",
       "Imported At": "08/13/2026 10:21:53",
       "Player ID": "Andrick-Nava",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     {
       "Transaction ID": "905536",
@@ -582,7 +580,7 @@
       "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2026-05",
       "Imported At": "08/13/2026 10:21:53",
       "Player ID": "Andrick-Nava",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     {
       "Transaction ID": "901747",
@@ -599,7 +597,7 @@
       "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2026-04",
       "Imported At": "08/13/2026 10:21:49",
       "Player ID": "Andrick-Nava",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     {
       "Transaction ID": "898067",
@@ -616,7 +614,7 @@
       "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2026-04",
       "Imported At": "08/13/2026 10:21:49",
       "Player ID": "Andrick-Nava",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     {
       "Transaction ID": "896690",
@@ -633,7 +631,7 @@
       "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2026-04",
       "Imported At": "08/13/2026 10:21:49",
       "Player ID": "Andrick-Nava",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     {
       "Transaction ID": "893980",
@@ -650,7 +648,7 @@
       "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2026-03",
       "Imported At": "08/13/2026 10:21:44",
       "Player ID": "Andrick-Nava",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     {
       "Transaction ID": "891536",
@@ -667,7 +665,7 @@
       "Source URL": "https://www.mlb.com/brewers/roster/transactions/2026/03",
       "Imported At": "08/13/2026 10:00:24",
       "Player ID": "Andrick-Nava",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     {
       "Transaction ID": "856255",
@@ -684,7 +682,7 @@
       "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2025-07",
       "Imported At": "08/13/2026 10:20:35",
       "Player ID": "Andrick-Nava",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     {
       "Transaction ID": "855869",
@@ -701,7 +699,7 @@
       "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2025-07",
       "Imported At": "08/13/2026 10:20:35",
       "Player ID": "Andrick-Nava",
-      "Archived?": ""
+      "Archived?": "yes"
     }
   ]
 }

@@ -1,21 +1,20 @@
 {
   "id": "Freddy-Zamora",
   "name": "Freddy Zamora",
-  "archived": false,
+  "archived": true,
   "playerType": "Hitter",
-  "generatedAt": "2026-11-05T11:33:49.216Z",
+  "generatedAt": "2026-11-05T19:00:41.244Z",
   "bio": {
     "Player-ID": "Freddy-Zamora",
     "MLBAM ID": "668965",
     "Player Type": "Hitter",
     "Player": "Freddy Zamora",
     "Rank": "198",
-    "Trending": "",
+    "Archive Reason": "Minor League Free Agent on 11/2/2026",
     "Position": "SS",
     "Level": "AAA",
     "Age": "28.0",
     "OFP": "30",
-    "OFP Updated": "",
     "Risk": "High",
     "School or Country": "College",
     "School/Country": "Miami",
@@ -28,7 +27,7 @@
     "Weight": "190",
     "Bat / Throw": "Right/Right",
     "Birthday": "11/1/1998",
-    "Rule 5 Eligible": "2026",
+    "Rule 5 Eligible": "",
     "Picture": "https://img.mlbstatic.com/mlb-photos/image/upload/c_fill,g_auto/w_180/v1/people/668965/headshot/milb/current",
     "Picture Source": "MiLB.com",
     "Notes Updated": "8/10/2022",
@@ -88,8 +87,7 @@
     "Instagram": "Instagram",
     "Instagram Link": "https://www.instagram.com/freddyzamoraa/",
     "Other Social": "",
-    "Other Social Link": "",
-    "Previous Rank": "198"
+    "Other Social Link": ""
   },
   "tools": {
     "Player-ID": "Freddy-Zamora",
@@ -133,37 +131,37 @@
       "SB": "17",
       "CS": "3",
       "SB%": "85.0%",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     "2024": {
       "Player-ID": "Freddy-Zamora",
       "Player": "Freddy Zamora",
-      "PA": "362",
-      "H": "59",
-      "2B": "9",
-      "3B": "0",
-      "HR": "4",
-      "OBP": "0.307",
-      "SLG": "0.261",
-      "OPS": "0.568",
-      "wRC+": "64",
-      "BABIP": "0.238",
-      "wOBA": "0.278",
-      "K%": "20.7%",
-      "BB%": "11.3%",
-      "SwStr %": "9.2%",
-      "Whiff%": "23.1%",
-      "Pull %": "54.7%",
-      "Cent %": "19.2%",
-      "Oppo %": "26.1%",
-      "LD%": "20.9%",
-      "GB%": "50.4%",
-      "FB%": "28.7%",
-      "IFFB %": "24.2%",
-      "SB": "9",
-      "CS": "3",
-      "SB%": "75.0%",
-      "Archived?": ""
+      "PA": "",
+      "H": "",
+      "2B": "",
+      "3B": "",
+      "HR": "",
+      "OBP": "",
+      "SLG": "",
+      "OPS": "",
+      "wRC+": "",
+      "BABIP": "",
+      "wOBA": "",
+      "K%": "",
+      "BB%": "",
+      "SwStr %": "",
+      "Whiff%": "",
+      "Pull %": "",
+      "Cent %": "",
+      "Oppo %": "",
+      "LD%": "",
+      "GB%": "",
+      "FB%": "",
+      "IFFB %": "",
+      "SB": "",
+      "CS": "",
+      "SB%": "",
+      "Archived?": "yes"
     },
     "2025": {
       "Player-ID": "Freddy-Zamora",
@@ -193,7 +191,7 @@
       "SB": "12",
       "CS": "7",
       "SB%": "63.2%",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     "2026": {
       "Player-ID": "Freddy-Zamora",
@@ -223,7 +221,7 @@
       "SB": "2",
       "CS": "0",
       "SB%": "100.0%",
-      "Archived?": ""
+      "Archived?": "yes"
     }
   },
   "gamedayWhiff": {
@@ -411,7 +409,7 @@
       "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2026-11",
       "Imported At": "11/04/2026 10:46:37",
       "Player ID": "Freddy-Zamora",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     {
       "Transaction ID": "941544",
@@ -428,7 +426,7 @@
       "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2026-09",
       "Imported At": "09/07/2026 15:46:26",
       "Player ID": "Freddy-Zamora",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     {
       "Transaction ID": "938782",
@@ -445,7 +443,7 @@
       "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2026-08",
       "Imported At": "08/21/2026 14:46:30",
       "Player ID": "Freddy-Zamora",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     {
       "Transaction ID": "938115",
@@ -462,7 +460,7 @@
       "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2026-08",
       "Imported At": "08/18/2026 13:46:30",
       "Player ID": "Freddy-Zamora",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     {
       "Transaction ID": "936538",
@@ -479,7 +477,7 @@
       "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2026-08",
       "Imported At": "08/13/2026 10:22:09",
       "Player ID": "Freddy-Zamora",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     {
       "Transaction ID": "925054",
@@ -496,7 +494,7 @@
       "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2026-07",
       "Imported At": "08/13/2026 10:22:03",
       "Player ID": "Freddy-Zamora",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     {
       "Transaction ID": "923144",
@@ -513,7 +511,7 @@
       "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2026-06",
       "Imported At": "08/13/2026 10:21:59",
       "Player ID": "Freddy-Zamora",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     {
       "Transaction ID": "887077",
@@ -530,7 +528,7 @@
       "Source URL": "https://www.mlb.com/brewers/roster/transactions/2026/02",
       "Imported At": "08/13/2026 10:00:20",
       "Player ID": "Freddy-Zamora",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     {
       "Transaction ID": "818974",
@@ -547,7 +545,7 @@
       "Source URL": "https://www.mlb.com/brewers/roster/transactions/2025/03",
       "Imported At": "08/13/2026 09:59:34",
       "Player ID": "Freddy-Zamora",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     {
       "Transaction ID": "893990",
@@ -564,7 +562,7 @@
       "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2024-07",
       "Imported At": "08/13/2026 10:19:10",
       "Player ID": "Freddy-Zamora",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     {
       "Transaction ID": "823327",
@@ -581,7 +579,7 @@
       "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2024-07",
       "Imported At": "08/13/2026 10:19:10",
       "Player ID": "Freddy-Zamora",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     {
       "Transaction ID": "789037",
@@ -598,7 +596,7 @@
       "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2024-07",
       "Imported At": "08/13/2026 10:19:10",
       "Player ID": "Freddy-Zamora",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     {
       "Transaction ID": "786559",
@@ -615,7 +613,7 @@
       "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2024-07",
       "Imported At": "08/13/2026 10:19:10",
       "Player ID": "Freddy-Zamora",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     {
       "Transaction ID": "774011",
@@ -632,7 +630,7 @@
       "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2024-05",
       "Imported At": "08/13/2026 10:18:56",
       "Player ID": "Freddy-Zamora",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     {
       "Transaction ID": "771310",
@@ -649,7 +647,7 @@
       "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2024-05",
       "Imported At": "08/13/2026 10:18:56",
       "Player ID": "Freddy-Zamora",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     {
       "Transaction ID": "754359",
@@ -666,7 +664,7 @@
       "Source URL": "https://www.mlb.com/brewers/roster/transactions/2024/03",
       "Imported At": "08/13/2026 09:58:39",
       "Player ID": "Freddy-Zamora",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     {
       "Transaction ID": "678407",
@@ -683,7 +681,7 @@
       "Source URL": "https://www.mlb.com/brewers/roster/transactions/2023/02",
       "Imported At": "08/13/2026 09:57:49",
       "Player ID": "Freddy-Zamora",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     {
       "Transaction ID": "673516",
@@ -700,7 +698,7 @@
       "Source URL": "https://www.mlb.com/brewers/roster/transactions/2023/02",
       "Imported At": "08/13/2026 09:57:49",
       "Player ID": "Freddy-Zamora",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     {
       "Transaction ID": "660082",
@@ -717,7 +715,7 @@
       "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2022-11",
       "Imported At": "08/13/2026 10:16:50",
       "Player ID": "Freddy-Zamora",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     {
       "Transaction ID": "631175",
@@ -734,7 +732,7 @@
       "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2022-05",
       "Imported At": "08/13/2026 10:16:01",
       "Player ID": "Freddy-Zamora",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     {
       "Transaction ID": "625264",
@@ -751,7 +749,7 @@
       "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2022-05",
       "Imported At": "08/13/2026 10:16:01",
       "Player ID": "Freddy-Zamora",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     {
       "Transaction ID": "621185",
@@ -768,7 +766,7 @@
       "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2022-05",
       "Imported At": "08/13/2026 10:16:01",
       "Player ID": "Freddy-Zamora",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     {
       "Transaction ID": "613586",
@@ -785,7 +783,7 @@
       "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2022-04",
       "Imported At": "08/13/2026 10:15:56",
       "Player ID": "Freddy-Zamora",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     {
       "Transaction ID": "612089",
@@ -802,7 +800,7 @@
       "Source URL": "https://www.mlb.com/brewers/roster/transactions/2022/03",
       "Imported At": "08/13/2026 09:57:05",
       "Player ID": "Freddy-Zamora",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     {
       "Transaction ID": "607136",
@@ -819,7 +817,7 @@
       "Source URL": "https://www.mlb.com/brewers/roster/transactions/2022/03",
       "Imported At": "08/13/2026 09:57:05",
       "Player ID": "Freddy-Zamora",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     {
       "Transaction ID": "513809",
@@ -836,7 +834,7 @@
       "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2021-08",
       "Imported At": "08/13/2026 10:15:12",
       "Player ID": "Freddy-Zamora",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     {
       "Transaction ID": "483168",
@@ -853,7 +851,7 @@
       "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2021-05",
       "Imported At": "08/13/2026 10:14:53",
       "Player ID": "Freddy-Zamora",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     {
       "Transaction ID": "474938",
@@ -870,7 +868,7 @@
       "Source URL": "https://www.mlb.com/brewers/roster/transactions/2021/02",
       "Imported At": "08/13/2026 09:56:19",
       "Player ID": "Freddy-Zamora",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     {
       "Transaction ID": "472924",
@@ -887,7 +885,7 @@
       "Source URL": "https://www.mlb.com/brewers/roster/transactions/2021/02",
       "Imported At": "08/13/2026 09:56:19",
       "Player ID": "Freddy-Zamora",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     {
       "Transaction ID": "446383",
@@ -904,7 +902,7 @@
       "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2020-07",
       "Imported At": "08/13/2026 10:14:04",
       "Player ID": "Freddy-Zamora",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     {
       "Transaction ID": "446382",
@@ -921,7 +919,7 @@
       "Source URL": "https://www.mlb.com/brewers/roster/transactions/2020/06",
       "Imported At": "08/13/2026 09:54:41",
       "Player ID": "Freddy-Zamora",
-      "Archived?": ""
+      "Archived?": "yes"
     }
   ]
 }

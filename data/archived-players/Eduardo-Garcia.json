@@ -1,21 +1,20 @@
 {
   "id": "Eduardo-Garcia",
   "name": "Eduardo Garcia",
-  "archived": false,
+  "archived": true,
   "playerType": "Hitter",
-  "generatedAt": "2026-11-05T11:33:49.216Z",
+  "generatedAt": "2026-11-05T19:00:41.244Z",
   "bio": {
     "Player-ID": "Eduardo-Garcia",
     "MLBAM ID": "682633",
     "Player Type": "Hitter",
     "Player": "Eduardo Garcia",
     "Rank": "118",
-    "Trending": "",
+    "Archive Reason": "Minor League Free Agent on 11/2/2026",
     "Position": "SS/OF",
-    "Level": "AAA",
+    "Level": "AA",
     "Age": "24.3",
     "OFP": "35",
-    "OFP Updated": "",
     "Risk": "Extreme",
     "School or Country": "Country",
     "School/Country": "Venezuela",
@@ -28,7 +27,7 @@
     "Weight": "180",
     "Bat / Throw": "Right/Right",
     "Birthday": "7/10/2002",
-    "Rule 5 Eligible": "2026",
+    "Rule 5 Eligible": "",
     "Picture": "https://img.mlbstatic.com/mlb-photos/image/upload/w_180,g_auto,c_fill/v1/people/682633/headshot/milb/current",
     "Picture Source": "MiLB.com",
     "Notes Updated": "7/20/2022",
@@ -88,8 +87,7 @@
     "Instagram": "Instagram",
     "Instagram Link": "https://instagram.com/garcia_elnino?utm_medium=copy_link",
     "Other Social": "",
-    "Other Social Link": "",
-    "Previous Rank": "119"
+    "Other Social Link": ""
   },
   "tools": {
     "Player-ID": "Eduardo-Garcia",
@@ -133,37 +131,37 @@
       "SB": "10",
       "CS": "2",
       "SB%": "83.3%",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     "2024": {
       "Player-ID": "Eduardo-Garcia",
       "Player": "Eduardo Garcia",
-      "PA": "298",
-      "H": "66",
-      "2B": "17",
-      "3B": "4",
-      "HR": "5",
-      "OBP": "0.305",
-      "SLG": "0.394",
-      "OPS": "0.699",
-      "wRC+": "100",
-      "BABIP": "0.347",
-      "wOBA": "0.325",
-      "K%": "30.9%",
-      "BB%": "3.0%",
-      "SwStr %": "17.8%",
-      "Whiff%": "35.6%",
-      "Pull %": "47.8%",
-      "Cent %": "24.7%",
-      "Oppo %": "27.5%",
-      "LD%": "23.6%",
-      "GB%": "36.0%",
-      "FB%": "40.4%",
-      "IFFB %": "31.9%",
-      "SB": "10",
-      "CS": "4",
-      "SB%": "71.4%",
-      "Archived?": ""
+      "PA": "",
+      "H": "",
+      "2B": "",
+      "3B": "",
+      "HR": "",
+      "OBP": "",
+      "SLG": "",
+      "OPS": "",
+      "wRC+": "",
+      "BABIP": "",
+      "wOBA": "",
+      "K%": "",
+      "BB%": "",
+      "SwStr %": "",
+      "Whiff%": "",
+      "Pull %": "",
+      "Cent %": "",
+      "Oppo %": "",
+      "LD%": "",
+      "GB%": "",
+      "FB%": "",
+      "IFFB %": "",
+      "SB": "",
+      "CS": "",
+      "SB%": "",
+      "Archived?": "yes"
     },
     "2025": {
       "Player-ID": "Eduardo-Garcia",
@@ -193,7 +191,7 @@
       "SB": "41",
       "CS": "7",
       "SB%": "85.4%",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     "2026": {
       "Player-ID": "Eduardo-Garcia",
@@ -223,7 +221,7 @@
       "SB": "21",
       "CS": "5",
       "SB%": "80.8%",
-      "Archived?": ""
+      "Archived?": "yes"
     }
   },
   "gamedayWhiff": {
@@ -412,7 +410,7 @@
       "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2026-11",
       "Imported At": "11/04/2026 10:46:37",
       "Player ID": "Eduardo-Garcia",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     {
       "Transaction ID": "939478",
@@ -429,7 +427,7 @@
       "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2026-08",
       "Imported At": "08/26/2026 09:46:30",
       "Player ID": "Eduardo-Garcia",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     {
       "Transaction ID": "938114",
@@ -446,7 +444,7 @@
       "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2026-08",
       "Imported At": "08/18/2026 13:46:30",
       "Player ID": "Eduardo-Garcia",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     {
       "Transaction ID": "918918",
@@ -463,7 +461,7 @@
       "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2026-06",
       "Imported At": "08/13/2026 10:21:59",
       "Player ID": "Eduardo-Garcia",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     {
       "Transaction ID": "898219",
@@ -480,7 +478,7 @@
       "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2026-04",
       "Imported At": "08/13/2026 10:21:49",
       "Player ID": "Eduardo-Garcia",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     {
       "Transaction ID": "896907",
@@ -497,7 +495,7 @@
       "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2026-04",
       "Imported At": "08/13/2026 10:21:49",
       "Player ID": "Eduardo-Garcia",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     {
       "Transaction ID": "880636",
@@ -514,7 +512,7 @@
       "Source URL": "https://www.mlb.com/brewers/roster/transactions/2026/01",
       "Imported At": "08/13/2026 10:00:15",
       "Player ID": "Eduardo-Garcia",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     {
       "Transaction ID": "895471",
@@ -531,7 +529,7 @@
       "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2025-08",
       "Imported At": "08/13/2026 10:20:43",
       "Player ID": "Eduardo-Garcia",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     {
       "Transaction ID": "862376",
@@ -548,7 +546,7 @@
       "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2025-08",
       "Imported At": "08/13/2026 10:20:43",
       "Player ID": "Eduardo-Garcia",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     {
       "Transaction ID": "820354",
@@ -565,7 +563,7 @@
       "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2025-03",
       "Imported At": "08/13/2026 10:20:06",
       "Player ID": "Eduardo-Garcia",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     {
       "Transaction ID": "816888",
@@ -582,7 +580,7 @@
       "Source URL": "https://www.mlb.com/brewers/roster/transactions/2025/02",
       "Imported At": "08/13/2026 09:59:23",
       "Player ID": "Eduardo-Garcia",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     {
       "Transaction ID": "781574",
@@ -599,7 +597,7 @@
       "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2024-06",
       "Imported At": "08/13/2026 10:19:02",
       "Player ID": "Eduardo-Garcia",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     {
       "Transaction ID": "781569",
@@ -616,7 +614,7 @@
       "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2024-06",
       "Imported At": "08/13/2026 10:19:02",
       "Player ID": "Eduardo-Garcia",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     {
       "Transaction ID": "781568",
@@ -633,7 +631,7 @@
       "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2024-06",
       "Imported At": "08/13/2026 10:19:02",
       "Player ID": "Eduardo-Garcia",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     {
       "Transaction ID": "779853",
@@ -650,7 +648,7 @@
       "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2024-06",
       "Imported At": "08/13/2026 10:19:02",
       "Player ID": "Eduardo-Garcia",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     {
       "Transaction ID": "764511",
@@ -667,7 +665,7 @@
       "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2024-04",
       "Imported At": "08/13/2026 10:18:49",
       "Player ID": "Eduardo-Garcia",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     {
       "Transaction ID": "758588",
@@ -684,7 +682,7 @@
       "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2024-03",
       "Imported At": "08/13/2026 10:18:41",
       "Player ID": "Eduardo-Garcia",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     {
       "Transaction ID": "752132",
@@ -701,7 +699,7 @@
       "Source URL": "https://www.mlb.com/brewers/roster/transactions/2024/02",
       "Imported At": "08/13/2026 09:58:35",
       "Player ID": "Eduardo-Garcia",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     {
       "Transaction ID": "721932",
@@ -718,7 +716,7 @@
       "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2023-08",
       "Imported At": "08/13/2026 10:17:52",
       "Player ID": "Eduardo-Garcia",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     {
       "Transaction ID": "719812",
@@ -735,7 +733,7 @@
       "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2023-08",
       "Imported At": "08/13/2026 10:17:52",
       "Player ID": "Eduardo-Garcia",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     {
       "Transaction ID": "714566",
@@ -752,7 +750,7 @@
       "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2023-07",
       "Imported At": "08/13/2026 10:17:46",
       "Player ID": "Eduardo-Garcia",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     {
       "Transaction ID": "712448",
@@ -769,7 +767,7 @@
       "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2023-07",
       "Imported At": "08/13/2026 10:17:46",
       "Player ID": "Eduardo-Garcia",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     {
       "Transaction ID": "643609",
@@ -786,7 +784,7 @@
       "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2022-08",
       "Imported At": "08/13/2026 10:16:28",
       "Player ID": "Eduardo-Garcia",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     {
       "Transaction ID": "643567",
@@ -803,7 +801,7 @@
       "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2022-08",
       "Imported At": "08/13/2026 10:16:28",
       "Player ID": "Eduardo-Garcia",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     {
       "Transaction ID": "609787",
@@ -820,7 +818,7 @@
       "Source URL": "https://www.mlb.com/brewers/roster/transactions/2022/04",
       "Imported At": "08/13/2026 09:57:09",
       "Player ID": "Eduardo-Garcia",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     {
       "Transaction ID": "612837",
@@ -837,7 +835,7 @@
       "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2021-09",
       "Imported At": "08/13/2026 10:15:18",
       "Player ID": "Eduardo-Garcia",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     {
       "Transaction ID": "516248",
@@ -854,7 +852,7 @@
       "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2021-09",
       "Imported At": "08/13/2026 10:15:18",
       "Player ID": "Eduardo-Garcia",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     {
       "Transaction ID": "502374",
@@ -871,7 +869,7 @@
       "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2021-07",
       "Imported At": "08/13/2026 10:15:06",
       "Player ID": "Eduardo-Garcia",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     {
       "Transaction ID": "453186",
@@ -888,7 +886,7 @@
       "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2020-09",
       "Imported At": "08/13/2026 10:14:13",
       "Player ID": "Eduardo-Garcia",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     {
       "Transaction ID": "449301",
@@ -905,7 +903,7 @@
       "Source URL": "https://www.mlb.com/brewers/roster/transactions/2020/08",
       "Imported At": "08/13/2026 09:54:49",
       "Player ID": "Eduardo-Garcia",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     {
       "Transaction ID": "443531",
@@ -922,7 +920,7 @@
       "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2020-01",
       "Imported At": "08/13/2026 10:13:35",
       "Player ID": "Eduardo-Garcia",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     {
       "Transaction ID": "443514",
@@ -939,7 +937,7 @@
       "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2019-09",
       "Imported At": "08/13/2026 10:13:13",
       "Player ID": "Eduardo-Garcia",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     {
       "Transaction ID": "443530",
@@ -956,7 +954,7 @@
       "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2019-07",
       "Imported At": "08/13/2026 10:13:03",
       "Player ID": "Eduardo-Garcia",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     {
       "Transaction ID": "405200",
@@ -973,7 +971,7 @@
       "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2019-06",
       "Imported At": "08/13/2026 10:12:59",
       "Player ID": "Eduardo-Garcia",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     {
       "Transaction ID": "375994",
@@ -990,7 +988,7 @@
       "Source URL": "https://www.mlb.com/brewers/roster/transactions/2018/07",
       "Imported At": "08/13/2026 09:42:09",
       "Player ID": "Eduardo-Garcia",
-      "Archived?": ""
+      "Archived?": "yes"
     }
   ]
 }

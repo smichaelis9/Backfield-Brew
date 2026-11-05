@@ -1,21 +1,20 @@
 {
   "id": "Ramon-Rodriguez",
   "name": "Ramón Rodríguez",
-  "archived": false,
+  "archived": true,
   "playerType": "Hitter",
-  "generatedAt": "2026-11-05T11:33:49.216Z",
+  "generatedAt": "2026-11-05T19:00:41.244Z",
   "bio": {
     "Player-ID": "Ramon-Rodriguez",
     "MLBAM ID": "670232",
     "Player Type": "Hitter",
     "Player": "Ramón Rodríguez",
     "Rank": "130",
-    "Trending": "",
+    "Archive Reason": "Minor League Free Agent on 11/2/2026",
     "Position": "C",
     "Level": "AAA",
     "Age": "28.0",
     "OFP": "35",
-    "OFP Updated": "",
     "Risk": "Medium",
     "School or Country": "High School",
     "School/Country": "Puerto Rico Baseball Academy, Gurabo, PR",
@@ -28,7 +27,7 @@
     "Weight": "210",
     "Bat / Throw": "Right/Right",
     "Birthday": "10/30/1998",
-    "Rule 5 Eligible": "2026",
+    "Rule 5 Eligible": "",
     "Picture": "https://img.mlbstatic.com/mlb-photos/image/upload/c_fill,g_auto/w_180/v1/people/670232/headshot/milb/current",
     "Picture Source": "MiLB.com",
     "Notes Updated": "N/A",
@@ -88,8 +87,7 @@
     "Instagram": "Instagram",
     "Instagram Link": "https://www.instagram.com/luisrodz13/",
     "Other Social": "",
-    "Other Social Link": "",
-    "Previous Rank": "131"
+    "Other Social Link": ""
   },
   "tools": {
     "Player-ID": "Ramon-Rodriguez",
@@ -133,37 +131,37 @@
       "SB": "",
       "CS": "",
       "SB%": "",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     "2024": {
       "Player-ID": "Ramon-Rodriguez",
       "Player": "Ramón Rodríguez",
-      "PA": "303",
-      "H": "66",
-      "2B": "16",
-      "3B": "0",
-      "HR": "10",
-      "OBP": "0.340",
-      "SLG": "0.427",
-      "OPS": "0.767",
-      "wRC+": "121",
-      "BABIP": "0.250",
-      "wOBA": "0.357",
-      "K%": "10.6%",
-      "BB%": "10.6%",
-      "SwStr %": "8.6%",
-      "Whiff%": "19.0%",
-      "Pull %": "47.4%",
-      "Cent %": "23.1%",
-      "Oppo %": "29.5%",
-      "LD%": "18.7%",
-      "GB%": "39.1%",
-      "FB%": "42.2%",
-      "IFFB %": "28.9%",
-      "SB": "5",
-      "CS": "2",
-      "SB%": "71.4%",
-      "Archived?": ""
+      "PA": "",
+      "H": "",
+      "2B": "",
+      "3B": "",
+      "HR": "",
+      "OBP": "",
+      "SLG": "",
+      "OPS": "",
+      "wRC+": "",
+      "BABIP": "",
+      "wOBA": "",
+      "K%": "",
+      "BB%": "",
+      "SwStr %": "",
+      "Whiff%": "",
+      "Pull %": "",
+      "Cent %": "",
+      "Oppo %": "",
+      "LD%": "",
+      "GB%": "",
+      "FB%": "",
+      "IFFB %": "",
+      "SB": "",
+      "CS": "",
+      "SB%": "",
+      "Archived?": "yes"
     },
     "2025": {
       "Player-ID": "Ramon-Rodriguez",
@@ -193,7 +191,7 @@
       "SB": "0",
       "CS": "0",
       "SB%": "",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     "2026": {
       "Player-ID": "Ramon-Rodriguez",
@@ -223,7 +221,7 @@
       "SB": "1",
       "CS": "0",
       "SB%": "100.0%",
-      "Archived?": ""
+      "Archived?": "yes"
     }
   },
   "gamedayWhiff": {
@@ -411,7 +409,7 @@
       "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2026-11",
       "Imported At": "11/04/2026 10:46:37",
       "Player ID": "Ramon-Rodriguez",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     {
       "Transaction ID": "937629",
@@ -428,7 +426,7 @@
       "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2026-08",
       "Imported At": "08/14/2026 17:46:34",
       "Player ID": "Ramon-Rodriguez",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     {
       "Transaction ID": "922967",
@@ -445,7 +443,7 @@
       "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2026-06",
       "Imported At": "08/13/2026 10:21:59",
       "Player ID": "Ramon-Rodriguez",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     {
       "Transaction ID": "893982",
@@ -462,7 +460,7 @@
       "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2026-03",
       "Imported At": "08/13/2026 10:21:44",
       "Player ID": "Ramon-Rodriguez",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     {
       "Transaction ID": "882965",
@@ -479,7 +477,7 @@
       "Source URL": "https://www.mlb.com/brewers/roster/transactions/2026/01",
       "Imported At": "08/13/2026 10:00:15",
       "Player ID": "Ramon-Rodriguez",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     {
       "Transaction ID": "874800",
@@ -496,7 +494,7 @@
       "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2025-11",
       "Imported At": "08/13/2026 10:21:24",
       "Player ID": "Ramon-Rodriguez",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     {
       "Transaction ID": "862980",
@@ -513,7 +511,7 @@
       "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2025-06",
       "Imported At": "08/13/2026 10:20:26",
       "Player ID": "Ramon-Rodriguez",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     {
       "Transaction ID": "843538",
@@ -530,7 +528,7 @@
       "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2025-06",
       "Imported At": "08/13/2026 10:20:26",
       "Player ID": "Ramon-Rodriguez",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     {
       "Transaction ID": "839235",
@@ -547,7 +545,7 @@
       "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2025-05",
       "Imported At": "08/13/2026 10:20:19",
       "Player ID": "Ramon-Rodriguez",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     {
       "Transaction ID": "823964",
@@ -564,7 +562,7 @@
       "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2025-03",
       "Imported At": "08/13/2026 10:20:06",
       "Player ID": "Ramon-Rodriguez",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     {
       "Transaction ID": "822686",
@@ -581,7 +579,7 @@
       "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2025-03",
       "Imported At": "08/13/2026 10:20:06",
       "Player ID": "Ramon-Rodriguez",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     {
       "Transaction ID": "807890",
@@ -598,7 +596,7 @@
       "Source URL": "https://www.mlb.com/brewers/roster/transactions/2024/11",
       "Imported At": "08/13/2026 09:59:09",
       "Player ID": "Ramon-Rodriguez",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     {
       "Transaction ID": "807888",
@@ -615,7 +613,7 @@
       "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2024-11",
       "Imported At": "08/13/2026 10:19:39",
       "Player ID": "Ramon-Rodriguez",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     {
       "Transaction ID": "758579",
@@ -632,7 +630,7 @@
       "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2024-03",
       "Imported At": "08/13/2026 10:18:41",
       "Player ID": "Ramon-Rodriguez",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     {
       "Transaction ID": "756605",
@@ -649,7 +647,7 @@
       "Source URL": "https://www.mlb.com/brewers/roster/transactions/2024/02",
       "Imported At": "08/13/2026 09:58:35",
       "Player ID": "Ramon-Rodriguez",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     {
       "Transaction ID": "751941",
@@ -666,7 +664,7 @@
       "Source URL": "https://www.mlb.com/brewers/roster/transactions/2024/02",
       "Imported At": "08/13/2026 09:58:35",
       "Player ID": "Ramon-Rodriguez",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     {
       "Transaction ID": "736354",
@@ -683,7 +681,7 @@
       "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2023-12",
       "Imported At": "08/13/2026 10:18:20",
       "Player ID": "Ramon-Rodriguez",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     {
       "Transaction ID": "736353",
@@ -700,7 +698,7 @@
       "Source URL": "https://www.mlb.com/brewers/roster/transactions/2023/12",
       "Imported At": "08/13/2026 09:58:27",
       "Player ID": "Ramon-Rodriguez",
-      "Archived?": ""
+      "Archived?": "yes"
     }
   ]
 }

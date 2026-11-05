@@ -1,21 +1,20 @@
 {
   "id": "Blayberg-Diaz",
   "name": "Blayberg Diaz",
-  "archived": false,
+  "archived": true,
   "playerType": "Hitter",
-  "generatedAt": "2026-11-05T11:33:49.216Z",
+  "generatedAt": "2026-11-05T19:00:41.244Z",
   "bio": {
     "Player-ID": "Blayberg-Diaz",
     "MLBAM ID": "691600",
     "Player Type": "Hitter",
     "Player": "Blayberg Diaz",
     "Rank": "190",
-    "Trending": "",
+    "Archive Reason": "Minor League Free Agent on 10/31/2026",
     "Position": "C",
     "Level": "A+",
     "Age": "23.8",
     "OFP": "30",
-    "OFP Updated": "",
     "Risk": "Extreme",
     "School or Country": "Country",
     "School/Country": "Venezuela",
@@ -28,7 +27,7 @@
     "Weight": "190",
     "Bat / Throw": "Right/Right",
     "Birthday": "1/31/2003",
-    "Rule 5 Eligible": "2026",
+    "Rule 5 Eligible": "",
     "Picture": "https://img.mlbstatic.com/mlb-photos/image/upload/c_fill,g_auto/w_180/v1/people/691600/headshot/milb/current",
     "Picture Source": "MiLB.com",
     "Notes Updated": "12/2/2024",
@@ -88,8 +87,7 @@
     "Instagram": "Instagram",
     "Instagram Link": "https://www.instagram.com/blaydiaz/",
     "Other Social": "",
-    "Other Social Link": "",
-    "Previous Rank": "190"
+    "Other Social Link": ""
   },
   "tools": {
     "Player-ID": "Blayberg-Diaz",
@@ -133,37 +131,37 @@
       "SB": "1",
       "CS": "1",
       "SB%": "50.0%",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     "2024": {
       "Player-ID": "Blayberg-Diaz",
       "Player": "Blayberg Diaz",
-      "PA": "258",
-      "H": "57",
-      "2B": "13",
-      "3B": "0",
-      "HR": "1",
-      "OBP": "0.326",
-      "SLG": "0.319",
-      "OPS": "0.644",
-      "wRC+": "96",
-      "BABIP": "0.315",
-      "wOBA": "0.318",
-      "K%": "20.2%",
-      "BB%": "7.4%",
-      "SwStr %": "11.3%",
-      "Whiff%": "22.4%",
-      "Pull %": "46.3%",
-      "Cent %": "22.0%",
-      "Oppo %": "31.6%",
-      "LD%": "22.8%",
-      "GB%": "43.9%",
-      "FB%": "33.3%",
-      "IFFB %": "29.8%",
-      "SB": "3",
-      "CS": "1",
-      "SB%": "75.0%",
-      "Archived?": ""
+      "PA": "",
+      "H": "",
+      "2B": "",
+      "3B": "",
+      "HR": "",
+      "OBP": "",
+      "SLG": "",
+      "OPS": "",
+      "wRC+": "",
+      "BABIP": "",
+      "wOBA": "",
+      "K%": "",
+      "BB%": "",
+      "SwStr %": "",
+      "Whiff%": "",
+      "Pull %": "",
+      "Cent %": "",
+      "Oppo %": "",
+      "LD%": "",
+      "GB%": "",
+      "FB%": "",
+      "IFFB %": "",
+      "SB": "",
+      "CS": "",
+      "SB%": "",
+      "Archived?": "yes"
     },
     "2025": {
       "Player-ID": "Blayberg-Diaz",
@@ -193,7 +191,7 @@
       "SB": "1",
       "CS": "3",
       "SB%": "25.0%",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     "2026": {
       "Player-ID": "Blayberg-Diaz",
@@ -223,7 +221,7 @@
       "SB": "0",
       "CS": "0",
       "SB%": "",
-      "Archived?": ""
+      "Archived?": "yes"
     }
   },
   "gamedayWhiff": {
@@ -411,7 +409,7 @@
       "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2026-11",
       "Imported At": "11/04/2026 10:46:37",
       "Player ID": "Blayberg-Diaz",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     {
       "Transaction ID": "887508",
@@ -428,7 +426,7 @@
       "Source URL": "https://www.mlb.com/brewers/roster/transactions/2026/02",
       "Imported At": "08/13/2026 10:00:20",
       "Player ID": "Blayberg-Diaz",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     {
       "Transaction ID": "895416",
@@ -445,7 +443,7 @@
       "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2025-04",
       "Imported At": "08/13/2026 10:20:12",
       "Player ID": "Blayberg-Diaz",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     {
       "Transaction ID": "833337",
@@ -462,7 +460,7 @@
       "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2025-04",
       "Imported At": "08/13/2026 10:20:12",
       "Player ID": "Blayberg-Diaz",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     {
       "Transaction ID": "832536",
@@ -479,7 +477,7 @@
       "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2025-04",
       "Imported At": "08/13/2026 10:20:12",
       "Player ID": "Blayberg-Diaz",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     {
       "Transaction ID": "817039",
@@ -496,7 +494,7 @@
       "Source URL": "https://www.mlb.com/brewers/roster/transactions/2025/02",
       "Imported At": "08/13/2026 09:59:23",
       "Player ID": "Blayberg-Diaz",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     {
       "Transaction ID": "823843",
@@ -513,7 +511,7 @@
       "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2024-04",
       "Imported At": "08/13/2026 10:18:49",
       "Player ID": "Blayberg-Diaz",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     {
       "Transaction ID": "761591",
@@ -530,7 +528,7 @@
       "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2024-04",
       "Imported At": "08/13/2026 10:18:49",
       "Player ID": "Blayberg-Diaz",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     {
       "Transaction ID": "761135",
@@ -547,7 +545,7 @@
       "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2024-04",
       "Imported At": "08/13/2026 10:18:49",
       "Player ID": "Blayberg-Diaz",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     {
       "Transaction ID": "759428",
@@ -564,7 +562,7 @@
       "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2024-04",
       "Imported At": "08/13/2026 10:18:49",
       "Player ID": "Blayberg-Diaz",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     {
       "Transaction ID": "754131",
@@ -581,7 +579,7 @@
       "Source URL": "https://www.mlb.com/brewers/roster/transactions/2024/03",
       "Imported At": "08/13/2026 09:58:39",
       "Player ID": "Blayberg-Diaz",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     {
       "Transaction ID": "680825",
@@ -598,7 +596,7 @@
       "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2023-04",
       "Imported At": "08/13/2026 10:17:24",
       "Player ID": "Blayberg-Diaz",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     {
       "Transaction ID": "612117",
@@ -615,7 +613,7 @@
       "Source URL": "https://www.mlb.com/brewers/roster/transactions/2022/04",
       "Imported At": "08/13/2026 09:57:09",
       "Player ID": "Blayberg-Diaz",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     {
       "Transaction ID": "610375",
@@ -632,7 +630,7 @@
       "Source URL": "https://www.mlb.com/brewers/roster/transactions/2022/04",
       "Imported At": "08/13/2026 09:57:09",
       "Player ID": "Blayberg-Diaz",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     {
       "Transaction ID": "509864",
@@ -649,7 +647,7 @@
       "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2021-08",
       "Imported At": "08/13/2026 10:15:12",
       "Player ID": "Blayberg-Diaz",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     {
       "Transaction ID": "501200",
@@ -666,7 +664,7 @@
       "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2021-07",
       "Imported At": "08/13/2026 10:15:06",
       "Player ID": "Blayberg-Diaz",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     {
       "Transaction ID": "457021",
@@ -683,7 +681,7 @@
       "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2020-11",
       "Imported At": "08/13/2026 10:14:25",
       "Player ID": "Blayberg-Diaz",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     {
       "Transaction ID": "417766",
@@ -700,7 +698,7 @@
       "Source URL": "https://www.mlb.com/brewers/roster/transactions/2019/07",
       "Imported At": "08/13/2026 09:49:39",
       "Player ID": "Blayberg-Diaz",
-      "Archived?": ""
+      "Archived?": "yes"
     }
   ]
 }

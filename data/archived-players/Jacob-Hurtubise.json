@@ -1,21 +1,20 @@
 {
   "id": "Jacob-Hurtubise",
   "name": "Jacob Hurtubise",
-  "archived": false,
+  "archived": true,
   "playerType": "Hitter",
-  "generatedAt": "2026-11-05T11:33:49.216Z",
+  "generatedAt": "2026-11-05T19:00:41.244Z",
   "bio": {
     "Player-ID": "Jacob-Hurtubise",
     "MLBAM ID": "674441",
     "Player Type": "Hitter",
     "Player": "Jacob Hurtubise",
     "Rank": "138",
-    "Trending": "",
+    "Archive Reason": "Minor League Free Agent on 11/2/2026",
     "Position": "OF",
     "Level": "AAA",
     "Age": "28.9",
     "OFP": "30+",
-    "OFP Updated": "",
     "Risk": "Low",
     "School or Country": "College",
     "School/Country": "Army",
@@ -28,7 +27,7 @@
     "Weight": "180",
     "Bat / Throw": "Left/Right",
     "Birthday": "12/11/1997",
-    "Rule 5 Eligible": "2026",
+    "Rule 5 Eligible": "",
     "Picture": "https://img.mlbstatic.com/mlb-photos/image/upload/c_fill,g_auto/w_180/v1/people/674441/headshot/milb/current",
     "Picture Source": "MiLB.com",
     "Notes Updated": "N/A",
@@ -88,8 +87,7 @@
     "Instagram": "Instagram",
     "Instagram Link": "https://www.instagram.com/hurtubise333/?hl=en",
     "Other Social": "",
-    "Other Social Link": "",
-    "Previous Rank": "140"
+    "Other Social Link": ""
   },
   "tools": {
     "Player-ID": "Jacob-Hurtubise",
@@ -133,7 +131,7 @@
       "SB": "",
       "CS": "",
       "SB%": "",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     "2024": {
       "Player-ID": "Jacob-Hurtubise",
@@ -163,7 +161,7 @@
       "SB": "",
       "CS": "",
       "SB%": "",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     "2025": {
       "Player-ID": "Jacob-Hurtubise",
@@ -193,7 +191,7 @@
       "SB": "",
       "CS": "",
       "SB%": "",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     "2026": {
       "Player-ID": "Jacob-Hurtubise",
@@ -223,7 +221,7 @@
       "SB": "21",
       "CS": "3",
       "SB%": "87.5%",
-      "Archived?": ""
+      "Archived?": "yes"
     }
   },
   "gamedayWhiff": {
@@ -412,7 +410,7 @@
       "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2026-11",
       "Imported At": "11/04/2026 10:46:37",
       "Player ID": "Jacob-Hurtubise",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     {
       "Transaction ID": "928157",
@@ -429,7 +427,7 @@
       "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2026-07",
       "Imported At": "08/13/2026 10:22:03",
       "Player ID": "Jacob-Hurtubise",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     {
       "Transaction ID": "917221",
@@ -446,7 +444,7 @@
       "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2026-06",
       "Imported At": "08/13/2026 10:21:59",
       "Player ID": "Jacob-Hurtubise",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     {
       "Transaction ID": "915276",
@@ -463,7 +461,7 @@
       "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2026-06",
       "Imported At": "08/13/2026 10:21:59",
       "Player ID": "Jacob-Hurtubise",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     {
       "Transaction ID": "912588",
@@ -480,7 +478,7 @@
       "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2026-05",
       "Imported At": "08/13/2026 10:21:53",
       "Player ID": "Jacob-Hurtubise",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     {
       "Transaction ID": "910641",
@@ -497,7 +495,7 @@
       "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2026-05",
       "Imported At": "08/13/2026 10:21:53",
       "Player ID": "Jacob-Hurtubise",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     {
       "Transaction ID": "897752",
@@ -514,7 +512,7 @@
       "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2026-04",
       "Imported At": "08/13/2026 10:21:49",
       "Player ID": "Jacob-Hurtubise",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     {
       "Transaction ID": "895579",
@@ -531,7 +529,7 @@
       "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2026-03",
       "Imported At": "08/13/2026 10:21:44",
       "Player ID": "Jacob-Hurtubise",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     {
       "Transaction ID": "893984",
@@ -548,7 +546,7 @@
       "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2026-03",
       "Imported At": "08/13/2026 10:21:44",
       "Player ID": "Jacob-Hurtubise",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     {
       "Transaction ID": "887495",
@@ -565,7 +563,7 @@
       "Source URL": "https://www.mlb.com/brewers/roster/transactions/2026/02",
       "Imported At": "08/13/2026 10:00:20",
       "Player ID": "Jacob-Hurtubise",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     {
       "Transaction ID": "884081",
@@ -582,7 +580,7 @@
       "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2026-02",
       "Imported At": "08/13/2026 10:21:37",
       "Player ID": "Jacob-Hurtubise",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     {
       "Transaction ID": "884080",
@@ -599,7 +597,7 @@
       "Source URL": "https://www.mlb.com/brewers/roster/transactions/2026/02",
       "Imported At": "08/13/2026 10:00:20",
       "Player ID": "Jacob-Hurtubise",
-      "Archived?": ""
+      "Archived?": "yes"
     }
   ]
 }

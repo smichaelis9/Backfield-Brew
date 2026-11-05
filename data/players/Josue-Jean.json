@@ -3,16 +3,16 @@
   "name": "Josue Jean",
   "archived": false,
   "playerType": "Hitter",
-  "generatedAt": "2026-11-05T11:33:49.216Z",
+  "generatedAt": "2026-11-05T19:00:41.244Z",
   "bio": {
     "Player-ID": "Josue-Jean",
     "MLBAM ID": "825657",
     "Player Type": "Hitter",
     "Player": "Josue Jean",
-    "Rank": "210",
+    "Rank": "200",
     "Trending": "",
     "Position": "OF",
-    "Level": "IL",
+    "Level": "DSL",
     "Age": "17.5",
     "OFP": "30",
     "OFP Updated": "",
@@ -89,7 +89,7 @@
     "Instagram Link": "https://www.instagram.com/jean_05_10/",
     "Other Social": "",
     "Other Social Link": "",
-    "Previous Rank": "212"
+    "Previous Rank": "200"
   },
   "tools": {
     "Player-ID": "Josue-Jean",
@@ -385,6 +385,23 @@
     }
   ],
   "transactions": [
+    {
+      "Transaction ID": "949600",
+      "Date": "2026-11-04",
+      "Effective Date": "2026-11-04",
+      "MLBAM ID": "825657",
+      "Player": "Josue Jean",
+      "Position": "",
+      "From Team": "",
+      "To Team": "DSL Brewers Blue",
+      "Level": "MiLB",
+      "Type": "Signed",
+      "Description": "OF Josue Jean assigned to DSL Brewers Blue.",
+      "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2026-11",
+      "Imported At": "11/05/2026 09:46:30",
+      "Player ID": "Josue-Jean",
+      "Archived?": ""
+    },
     {
       "Transaction ID": "903391",
       "Date": "2026-04-24",

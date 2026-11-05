@@ -3,16 +3,16 @@
   "name": "Jean Rodriguez",
   "archived": false,
   "playerType": "Pitcher",
-  "generatedAt": "2026-11-05T11:33:49.216Z",
+  "generatedAt": "2026-11-05T19:00:41.244Z",
   "bio": {
     "Player-ID": "Jean-Rodriguez",
     "MLBAM ID": "821177",
     "Player Type": "Pitcher",
     "Player": "Jean Rodriguez",
-    "Rank": "225",
+    "Rank": "215",
     "Trending": "",
     "Position": "RHP",
-    "Level": "IL",
+    "Level": "DSL",
     "Age": "19.4",
     "OFP": "25",
     "OFP Updated": "",
@@ -89,7 +89,7 @@
     "Instagram Link": "https://www.instagram.com/j_rodriguez.d/",
     "Other Social": "",
     "Other Social Link": "",
-    "Previous Rank": "228"
+    "Previous Rank": "218"
   },
   "tools": {
     "Player-ID": "Jean-Rodriguez",

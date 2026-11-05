@@ -1,21 +1,20 @@
 {
   "id": "Yerlin-Rodriguez",
   "name": "Yerlin Rodriguez",
-  "archived": false,
+  "archived": true,
   "playerType": "Pitcher",
-  "generatedAt": "2026-11-05T11:33:49.216Z",
+  "generatedAt": "2026-11-05T19:00:41.244Z",
   "bio": {
     "Player-ID": "Yerlin-Rodriguez",
     "MLBAM ID": "693750",
     "Player Type": "Pitcher",
     "Player": "Yerlin Rodriguez",
     "Rank": "161",
-    "Trending": "Down",
+    "Archive Reason": "Minor League Free Agent on 10/31/2026",
     "Position": "RHP",
     "Level": "A+",
     "Age": "24.6",
     "OFP": "30+",
-    "OFP Updated": "",
     "Risk": "High",
     "School or Country": "Country",
     "School/Country": "Dominican Republic",
@@ -28,7 +27,7 @@
     "Weight": "172",
     "Bat / Throw": "Right/Right",
     "Birthday": "3/22/2002",
-    "Rule 5 Eligible": "2026",
+    "Rule 5 Eligible": "",
     "Picture": "https://img.mlbstatic.com/mlb-photos/image/upload/c_fill,g_auto/w_180/v1/people/693750/headshot/milb/current",
     "Picture Source": "MiLB.com",
     "Notes Updated": "1/22/2024",
@@ -88,8 +87,7 @@
     "Instagram": "Instagram",
     "Instagram Link": "https://www.instagram.com/yerlin_rr_22/",
     "Other Social": "",
-    "Other Social Link": "",
-    "Previous Rank": "161"
+    "Other Social Link": ""
   },
   "tools": {
     "Player-ID": "Yerlin-Rodriguez",
@@ -144,7 +142,7 @@
       "FB%": "20.7%",
       "IFFB%": "5.6%",
       "HR/FB": "0.11",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     "2024": {
       "Player-ID": "Yerlin-Rodriguez",
@@ -176,7 +174,7 @@
       "FB%": "28.6%",
       "IFFB%": "28.1%",
       "HR/FB": "0.13",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     "2025": {
       "Player-ID": "Yerlin-Rodriguez",
@@ -208,7 +206,7 @@
       "FB%": "24.8%",
       "IFFB%": "21.4%",
       "HR/FB": "0.14",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     "2026": {
       "Player-ID": "Yerlin-Rodriguez",
@@ -240,7 +238,7 @@
       "FB%": "25.0%",
       "IFFB%": "29.2%",
       "HR/FB": "0.13",
-      "Archived?": ""
+      "Archived?": "yes"
     }
   },
   "gamedayWhiff": {
@@ -428,7 +426,7 @@
       "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2026-11",
       "Imported At": "11/04/2026 10:46:37",
       "Player ID": "Yerlin-Rodriguez",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     {
       "Transaction ID": "887503",
@@ -445,7 +443,7 @@
       "Source URL": "https://www.mlb.com/brewers/roster/transactions/2026/02",
       "Imported At": "08/13/2026 10:00:20",
       "Player ID": "Yerlin-Rodriguez",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     {
       "Transaction ID": "849291",
@@ -462,7 +460,7 @@
       "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2025-06",
       "Imported At": "08/13/2026 10:20:26",
       "Player ID": "Yerlin-Rodriguez",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     {
       "Transaction ID": "848364",
@@ -479,7 +477,7 @@
       "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2025-06",
       "Imported At": "08/13/2026 10:20:26",
       "Player ID": "Yerlin-Rodriguez",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     {
       "Transaction ID": "821571",
@@ -496,7 +494,7 @@
       "Source URL": "https://www.mlb.com/brewers/roster/transactions/2025/03",
       "Imported At": "08/13/2026 09:59:34",
       "Player ID": "Yerlin-Rodriguez",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     {
       "Transaction ID": "781139",
@@ -513,7 +511,7 @@
       "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2024-03",
       "Imported At": "08/13/2026 10:18:41",
       "Player ID": "Yerlin-Rodriguez",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     {
       "Transaction ID": "781130",
@@ -530,7 +528,7 @@
       "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2024-03",
       "Imported At": "08/13/2026 10:18:41",
       "Player ID": "Yerlin-Rodriguez",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     {
       "Transaction ID": "758616",
@@ -547,7 +545,7 @@
       "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2024-03",
       "Imported At": "08/13/2026 10:18:41",
       "Player ID": "Yerlin-Rodriguez",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     {
       "Transaction ID": "756395",
@@ -564,7 +562,7 @@
       "Source URL": "https://www.mlb.com/brewers/roster/transactions/2024/03",
       "Imported At": "08/13/2026 09:58:39",
       "Player ID": "Yerlin-Rodriguez",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     {
       "Transaction ID": "692056",
@@ -581,7 +579,7 @@
       "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2023-05",
       "Imported At": "08/13/2026 10:17:31",
       "Player ID": "Yerlin-Rodriguez",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     {
       "Transaction ID": "648962",
@@ -598,7 +596,7 @@
       "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2022-08",
       "Imported At": "08/13/2026 10:16:28",
       "Player ID": "Yerlin-Rodriguez",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     {
       "Transaction ID": "502348",
@@ -615,7 +613,7 @@
       "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2021-07",
       "Imported At": "08/13/2026 10:15:06",
       "Player ID": "Yerlin-Rodriguez",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     {
       "Transaction ID": "501198",
@@ -632,7 +630,7 @@
       "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2021-07",
       "Imported At": "08/13/2026 10:15:06",
       "Player ID": "Yerlin-Rodriguez",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     {
       "Transaction ID": "439476",
@@ -649,7 +647,7 @@
       "Source URL": "https://www.mlb.com/brewers/roster/transactions/2019/12",
       "Imported At": "08/13/2026 09:49:58",
       "Player ID": "Yerlin-Rodriguez",
-      "Archived?": ""
+      "Archived?": "yes"
     }
   ]
 }

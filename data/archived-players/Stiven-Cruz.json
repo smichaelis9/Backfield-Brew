@@ -1,21 +1,20 @@
 {
   "id": "Stiven-Cruz",
   "name": "Stiven Cruz",
-  "archived": false,
+  "archived": true,
   "playerType": "Pitcher",
-  "generatedAt": "2026-11-05T11:33:49.216Z",
+  "generatedAt": "2026-11-05T19:00:41.244Z",
   "bio": {
     "Player-ID": "Stiven-Cruz",
     "MLBAM ID": "691602",
     "Player Type": "Pitcher",
     "Player": "Stiven Cruz",
     "Rank": "103",
-    "Trending": "",
+    "Archive Reason": "Minor League Free Agent on 11/2/2026",
     "Position": "RHP",
     "Level": "AA",
     "Age": "25.0",
     "OFP": "35",
-    "OFP Updated": "",
     "Risk": "High",
     "School or Country": "Country",
     "School/Country": "Nicaragua",
@@ -28,7 +27,7 @@
     "Weight": "165",
     "Bat / Throw": "Right/Right",
     "Birthday": "11/14/2001",
-    "Rule 5 Eligible": "2026",
+    "Rule 5 Eligible": "",
     "Picture": "https://img.mlbstatic.com/mlb-photos/image/upload/c_fill,g_auto/w_180/v1/people/691602/headshot/milb/current",
     "Picture Source": "MiLB.com",
     "Notes Updated": "12/15/2024",
@@ -88,8 +87,7 @@
     "Instagram": "Instagram",
     "Instagram Link": "https://instagram.com/stivencruz181?igshid=YmMyMTA2M2Y=",
     "Other Social": "",
-    "Other Social Link": "",
-    "Previous Rank": "104"
+    "Other Social Link": ""
   },
   "tools": {
     "Player-ID": "Stiven-Cruz",
@@ -144,7 +142,7 @@
       "FB%": "48.0%",
       "IFFB%": "20.0%",
       "HR/FB": "0.12",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     "2024": {
       "Player-ID": "Stiven-Cruz",
@@ -176,7 +174,7 @@
       "FB%": "39.6%",
       "IFFB%": "29.2%",
       "HR/FB": "0.08",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     "2025": {
       "Player-ID": "Stiven-Cruz",
@@ -208,7 +206,7 @@
       "FB%": "40.7%",
       "IFFB%": "25.3%",
       "HR/FB": "0.06",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     "2026": {
       "Player-ID": "Stiven-Cruz",
@@ -240,7 +238,7 @@
       "FB%": "38.9%",
       "IFFB%": "17.6%",
       "HR/FB": "0.19",
-      "Archived?": ""
+      "Archived?": "yes"
     }
   },
   "gamedayWhiff": {
@@ -428,7 +426,7 @@
       "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2026-11",
       "Imported At": "11/04/2026 10:46:37",
       "Player ID": "Stiven-Cruz",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     {
       "Transaction ID": "887080",
@@ -445,7 +443,7 @@
       "Source URL": "https://www.mlb.com/brewers/roster/transactions/2026/02",
       "Imported At": "08/13/2026 10:00:20",
       "Player ID": "Stiven-Cruz",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     {
       "Transaction ID": "895555",
@@ -462,7 +460,7 @@
       "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2025-09",
       "Imported At": "08/13/2026 10:21:15",
       "Player ID": "Stiven-Cruz",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     {
       "Transaction ID": "895449",
@@ -479,7 +477,7 @@
       "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2025-09",
       "Imported At": "08/13/2026 10:21:15",
       "Player ID": "Stiven-Cruz",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     {
       "Transaction ID": "872148",
@@ -496,7 +494,7 @@
       "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2025-09",
       "Imported At": "08/13/2026 10:21:15",
       "Player ID": "Stiven-Cruz",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     {
       "Transaction ID": "869843",
@@ -513,7 +511,7 @@
       "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2025-09",
       "Imported At": "08/13/2026 10:21:15",
       "Player ID": "Stiven-Cruz",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     {
       "Transaction ID": "869842",
@@ -530,7 +528,7 @@
       "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2025-09",
       "Imported At": "08/13/2026 10:21:15",
       "Player ID": "Stiven-Cruz",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     {
       "Transaction ID": "868990",
@@ -547,7 +545,7 @@
       "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2025-09",
       "Imported At": "08/13/2026 10:21:15",
       "Player ID": "Stiven-Cruz",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     {
       "Transaction ID": "843978",
@@ -564,7 +562,7 @@
       "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2025-06",
       "Imported At": "08/13/2026 10:20:26",
       "Player ID": "Stiven-Cruz",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     {
       "Transaction ID": "823957",
@@ -581,7 +579,7 @@
       "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2025-03",
       "Imported At": "08/13/2026 10:20:06",
       "Player ID": "Stiven-Cruz",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     {
       "Transaction ID": "820096",
@@ -598,7 +596,7 @@
       "Source URL": "https://www.mlb.com/brewers/roster/transactions/2025/03",
       "Imported At": "08/13/2026 09:59:34",
       "Player ID": "Stiven-Cruz",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     {
       "Transaction ID": "646851",
@@ -615,7 +613,7 @@
       "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2022-08",
       "Imported At": "08/13/2026 10:16:28",
       "Player ID": "Stiven-Cruz",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     {
       "Transaction ID": "646718",
@@ -632,7 +630,7 @@
       "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2022-08",
       "Imported At": "08/13/2026 10:16:28",
       "Player ID": "Stiven-Cruz",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     {
       "Transaction ID": "620884",
@@ -649,7 +647,7 @@
       "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2022-05",
       "Imported At": "08/13/2026 10:16:01",
       "Player ID": "Stiven-Cruz",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     {
       "Transaction ID": "503159",
@@ -666,7 +664,7 @@
       "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2021-07",
       "Imported At": "08/13/2026 10:15:06",
       "Player ID": "Stiven-Cruz",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     {
       "Transaction ID": "417770",
@@ -683,7 +681,7 @@
       "Source URL": "https://www.mlb.com/brewers/roster/transactions/2019/07",
       "Imported At": "08/13/2026 09:49:39",
       "Player ID": "Stiven-Cruz",
-      "Archived?": ""
+      "Archived?": "yes"
     }
   ]
 }

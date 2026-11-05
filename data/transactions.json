@@ -1,5 +1,22 @@
 [
   {
+    "Transaction ID": "949600",
+    "Date": "2026-11-04",
+    "Effective Date": "2026-11-04",
+    "MLBAM ID": "825657",
+    "Player": "Josue Jean",
+    "Position": "",
+    "From Team": "",
+    "To Team": "DSL Brewers Blue",
+    "Level": "MiLB",
+    "Type": "Signed",
+    "Description": "OF Josue Jean assigned to DSL Brewers Blue.",
+    "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2026-11",
+    "Imported At": "11/05/2026 09:46:30",
+    "Player ID": "Josue-Jean",
+    "Archived?": ""
+  },
+  {
     "Transaction ID": "949514",
     "Date": "2026-11-02",
     "Effective Date": "2026-11-02",
@@ -65,7 +82,7 @@
     "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2026-11",
     "Imported At": "11/04/2026 10:46:37",
     "Player ID": "Freddy-Zamora",
-    "Archived?": ""
+    "Archived?": "yes"
   },
   {
     "Transaction ID": "949030",
@@ -82,7 +99,7 @@
     "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2026-11",
     "Imported At": "11/04/2026 10:46:37",
     "Player ID": "Ramon-Rodriguez",
-    "Archived?": ""
+    "Archived?": "yes"
   },
   {
     "Transaction ID": "949022",
@@ -99,7 +116,7 @@
     "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2026-11",
     "Imported At": "11/04/2026 10:46:37",
     "Player ID": "David-Garcia",
-    "Archived?": ""
+    "Archived?": "yes"
   },
   {
     "Transaction ID": "949005",
@@ -116,7 +133,7 @@
     "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2026-11",
     "Imported At": "11/04/2026 10:46:37",
     "Player ID": "Jacob-Hurtubise",
-    "Archived?": ""
+    "Archived?": "yes"
   },
   {
     "Transaction ID": "948936",
@@ -150,7 +167,7 @@
     "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2026-11",
     "Imported At": "11/04/2026 10:46:37",
     "Player ID": "Eduardo-Garcia",
-    "Archived?": ""
+    "Archived?": "yes"
   },
   {
     "Transaction ID": "948932",
@@ -167,7 +184,7 @@
     "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2026-11",
     "Imported At": "11/04/2026 10:46:37",
     "Player ID": "Andrick-Nava",
-    "Archived?": ""
+    "Archived?": "yes"
   },
   {
     "Transaction ID": "948877",
@@ -184,7 +201,7 @@
     "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2026-11",
     "Imported At": "11/04/2026 10:46:37",
     "Player ID": "Darrien-Miller",
-    "Archived?": ""
+    "Archived?": "yes"
   },
   {
     "Transaction ID": "948832",
@@ -201,7 +218,7 @@
     "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2026-11",
     "Imported At": "11/04/2026 10:46:37",
     "Player ID": "Jheremy-Vargas",
-    "Archived?": ""
+    "Archived?": "yes"
   },
   {
     "Transaction ID": "948831",
@@ -218,7 +235,7 @@
     "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2026-11",
     "Imported At": "11/04/2026 10:46:37",
     "Player ID": "Blayberg-Diaz",
-    "Archived?": ""
+    "Archived?": "yes"
   },
   {
     "Transaction ID": "948828",
@@ -235,7 +252,7 @@
     "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2026-11",
     "Imported At": "11/04/2026 10:46:37",
     "Player ID": "Stiven-Cruz",
-    "Archived?": ""
+    "Archived?": "yes"
   },
   {
     "Transaction ID": "948800",
@@ -252,7 +269,7 @@
     "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2026-11",
     "Imported At": "11/04/2026 10:46:37",
     "Player ID": "Yerlin-Rodriguez",
-    "Archived?": ""
+    "Archived?": "yes"
   },
   {
     "Transaction ID": "948760",
@@ -1050,7 +1067,7 @@
     "Description": "RHP Orlando Noguera assigned to DSL Brewers Blue.",
     "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2026-10",
     "Imported At": "10/02/2026 10:46:28",
-    "Player ID": "",
+    "Player ID": "Orlando-Noguera",
     "Archived?": ""
   },
   {
@@ -1067,7 +1084,7 @@
     "Description": "Milwaukee Brewers signed free agent RHP Orlando Noguera to a minor league contract.",
     "Source URL": "https://www.mlb.com/brewers/roster/transactions/2026/10",
     "Imported At": "10/02/2026 10:46:28",
-    "Player ID": "",
+    "Player ID": "Orlando-Noguera",
     "Archived?": ""
   },
   {
@@ -1391,7 +1408,7 @@
     "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2026-09",
     "Imported At": "09/24/2026 10:46:33",
     "Player ID": "David-Garcia",
-    "Archived?": ""
+    "Archived?": "yes"
   },
   {
     "Transaction ID": "943830",
@@ -2224,7 +2241,7 @@
     "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2026-09",
     "Imported At": "09/08/2026 14:46:37",
     "Player ID": "David-Garcia",
-    "Archived?": ""
+    "Archived?": "yes"
   },
   {
     "Transaction ID": "941666",
@@ -2394,7 +2411,7 @@
     "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2026-09",
     "Imported At": "09/07/2026 15:46:26",
     "Player ID": "Freddy-Zamora",
-    "Archived?": ""
+    "Archived?": "yes"
   },
   {
     "Transaction ID": "941525",
@@ -3057,7 +3074,7 @@
     "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2026-08",
     "Imported At": "08/26/2026 09:46:30",
     "Player ID": "Eduardo-Garcia",
-    "Archived?": ""
+    "Archived?": "yes"
   },
   {
     "Transaction ID": "940530",
@@ -3482,7 +3499,7 @@
     "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2026-08",
     "Imported At": "08/21/2026 14:46:30",
     "Player ID": "Freddy-Zamora",
-    "Archived?": ""
+    "Archived?": "yes"
   },
   {
     "Transaction ID": "938780",
@@ -3635,7 +3652,7 @@
     "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2026-08",
     "Imported At": "08/18/2026 13:46:30",
     "Player ID": "Freddy-Zamora",
-    "Archived?": ""
+    "Archived?": "yes"
   },
   {
     "Transaction ID": "938114",
@@ -3652,7 +3669,7 @@
     "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2026-08",
     "Imported At": "08/18/2026 13:46:30",
     "Player ID": "Eduardo-Garcia",
-    "Archived?": ""
+    "Archived?": "yes"
   },
   {
     "Transaction ID": "938059",
@@ -4009,7 +4026,7 @@
     "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2026-08",
     "Imported At": "08/14/2026 17:46:34",
     "Player ID": "Ramon-Rodriguez",
-    "Archived?": ""
+    "Archived?": "yes"
   },
   {
     "Transaction ID": "937508",
@@ -4077,7 +4094,7 @@
     "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2026-08",
     "Imported At": "08/14/2026 11:46:32",
     "Player ID": "Darrien-Miller",
-    "Archived?": ""
+    "Archived?": "yes"
   },
   {
     "Transaction ID": "937502",
@@ -4689,7 +4706,7 @@
     "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2026-08",
     "Imported At": "08/13/2026 10:22:09",
     "Player ID": "Freddy-Zamora",
-    "Archived?": ""
+    "Archived?": "yes"
   },
   {
     "Transaction ID": "936537",
@@ -4723,7 +4740,7 @@
     "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2026-08",
     "Imported At": "08/13/2026 10:22:09",
     "Player ID": "Andrick-Nava",
-    "Archived?": ""
+    "Archived?": "yes"
   },
   {
     "Transaction ID": "936383",
@@ -7426,7 +7443,7 @@
     "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2026-07",
     "Imported At": "08/13/2026 10:22:03",
     "Player ID": "Jacob-Hurtubise",
-    "Archived?": ""
+    "Archived?": "yes"
   },
   {
     "Transaction ID": "928156",
@@ -8701,7 +8718,7 @@
     "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2026-07",
     "Imported At": "08/13/2026 10:22:03",
     "Player ID": "Freddy-Zamora",
-    "Archived?": ""
+    "Archived?": "yes"
   },
   {
     "Transaction ID": "925053",
@@ -8956,7 +8973,7 @@
     "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2026-06",
     "Imported At": "08/13/2026 10:21:59",
     "Player ID": "David-Garcia",
-    "Archived?": ""
+    "Archived?": "yes"
   },
   {
     "Transaction ID": "923692",
@@ -9398,7 +9415,7 @@
     "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2026-06",
     "Imported At": "08/13/2026 10:21:59",
     "Player ID": "Freddy-Zamora",
-    "Archived?": ""
+    "Archived?": "yes"
   },
   {
     "Transaction ID": "923143",
@@ -9432,7 +9449,7 @@
     "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2026-06",
     "Imported At": "08/13/2026 10:21:59",
     "Player ID": "Darrien-Miller",
-    "Archived?": ""
+    "Archived?": "yes"
   },
   {
     "Transaction ID": "922968",
@@ -9449,7 +9466,7 @@
     "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2026-06",
     "Imported At": "08/13/2026 10:21:59",
     "Player ID": "Andrick-Nava",
-    "Archived?": ""
+    "Archived?": "yes"
   },
   {
     "Transaction ID": "922967",
@@ -9466,7 +9483,7 @@
     "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2026-06",
     "Imported At": "08/13/2026 10:21:59",
     "Player ID": "Ramon-Rodriguez",
-    "Archived?": ""
+    "Archived?": "yes"
   },
   {
     "Transaction ID": "922792",
@@ -9687,7 +9704,7 @@
     "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2026-06",
     "Imported At": "08/13/2026 10:21:59",
     "Player ID": "Andrick-Nava",
-    "Archived?": ""
+    "Archived?": "yes"
   },
   {
     "Transaction ID": "921629",
@@ -9755,7 +9772,7 @@
     "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2026-06",
     "Imported At": "08/13/2026 10:21:59",
     "Player ID": "Andrick-Nava",
-    "Archived?": ""
+    "Archived?": "yes"
   },
   {
     "Transaction ID": "921419",
@@ -10044,7 +10061,7 @@
     "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2026-06",
     "Imported At": "08/13/2026 10:21:59",
     "Player ID": "Eduardo-Garcia",
-    "Archived?": ""
+    "Archived?": "yes"
   },
   {
     "Transaction ID": "918548",
@@ -10282,7 +10299,7 @@
     "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2026-06",
     "Imported At": "08/13/2026 10:21:59",
     "Player ID": "Jacob-Hurtubise",
-    "Archived?": ""
+    "Archived?": "yes"
   },
   {
     "Transaction ID": "917376",
@@ -11183,7 +11200,7 @@
     "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2026-06",
     "Imported At": "08/13/2026 10:21:59",
     "Player ID": "Jacob-Hurtubise",
-    "Archived?": ""
+    "Archived?": "yes"
   },
   {
     "Transaction ID": "915275",
@@ -12169,7 +12186,7 @@
     "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2026-05",
     "Imported At": "08/13/2026 10:21:53",
     "Player ID": "Jacob-Hurtubise",
-    "Archived?": ""
+    "Archived?": "yes"
   },
   {
     "Transaction ID": "912573",
@@ -12832,7 +12849,7 @@
     "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2026-05",
     "Imported At": "08/13/2026 10:21:53",
     "Player ID": "Jacob-Hurtubise",
-    "Archived?": ""
+    "Archived?": "yes"
   },
   {
     "Transaction ID": "910640",
@@ -13240,7 +13257,7 @@
     "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2026-05",
     "Imported At": "08/13/2026 10:21:53",
     "Player ID": "Andrick-Nava",
-    "Archived?": ""
+    "Archived?": "yes"
   },
   {
     "Transaction ID": "909335",
@@ -13342,7 +13359,7 @@
     "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2026-05",
     "Imported At": "08/13/2026 10:21:53",
     "Player ID": "Andrick-Nava",
-    "Archived?": ""
+    "Archived?": "yes"
   },
   {
     "Transaction ID": "908989",
@@ -13427,7 +13444,7 @@
     "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2026-05",
     "Imported At": "08/13/2026 10:21:53",
     "Player ID": "Andrick-Nava",
-    "Archived?": ""
+    "Archived?": "yes"
   },
   {
     "Transaction ID": "907895",
@@ -13648,7 +13665,7 @@
     "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2026-05",
     "Imported At": "08/13/2026 10:21:53",
     "Player ID": "Andrick-Nava",
-    "Archived?": ""
+    "Archived?": "yes"
   },
   {
     "Transaction ID": "907123",
@@ -13699,7 +13716,7 @@
     "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2026-05",
     "Imported At": "08/13/2026 10:21:53",
     "Player ID": "Andrick-Nava",
-    "Archived?": ""
+    "Archived?": "yes"
   },
   {
     "Transaction ID": "905811",
@@ -13903,7 +13920,7 @@
     "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2026-05",
     "Imported At": "08/13/2026 10:21:53",
     "Player ID": "Andrick-Nava",
-    "Archived?": ""
+    "Archived?": "yes"
   },
   {
     "Transaction ID": "905515",
@@ -15144,7 +15161,7 @@
     "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2026-04",
     "Imported At": "08/13/2026 10:21:49",
     "Player ID": "Jheremy-Vargas",
-    "Archived?": ""
+    "Archived?": "yes"
   },
   {
     "Transaction ID": "901924",
@@ -15297,7 +15314,7 @@
     "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2026-04",
     "Imported At": "08/13/2026 10:21:49",
     "Player ID": "Andrick-Nava",
-    "Archived?": ""
+    "Archived?": "yes"
   },
   {
     "Transaction ID": "901672",
@@ -16521,7 +16538,7 @@
     "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2026-04",
     "Imported At": "08/13/2026 10:21:49",
     "Player ID": "Jheremy-Vargas",
-    "Archived?": ""
+    "Archived?": "yes"
   },
   {
     "Transaction ID": "898221",
@@ -16572,7 +16589,7 @@
     "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2026-04",
     "Imported At": "08/13/2026 10:21:49",
     "Player ID": "Eduardo-Garcia",
-    "Archived?": ""
+    "Archived?": "yes"
   },
   {
     "Transaction ID": "898207",
@@ -16657,7 +16674,7 @@
     "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2026-04",
     "Imported At": "08/13/2026 10:21:49",
     "Player ID": "Andrick-Nava",
-    "Archived?": ""
+    "Archived?": "yes"
   },
   {
     "Transaction ID": "898126",
@@ -16708,7 +16725,7 @@
     "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2026-04",
     "Imported At": "08/13/2026 10:21:49",
     "Player ID": "Jacob-Hurtubise",
-    "Archived?": ""
+    "Archived?": "yes"
   },
   {
     "Transaction ID": "897683",
@@ -16878,7 +16895,7 @@
     "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2026-04",
     "Imported At": "08/13/2026 10:21:49",
     "Player ID": "Eduardo-Garcia",
-    "Archived?": ""
+    "Archived?": "yes"
   },
   {
     "Transaction ID": "896906",
@@ -16997,7 +17014,7 @@
     "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2026-04",
     "Imported At": "08/13/2026 10:21:49",
     "Player ID": "Andrick-Nava",
-    "Archived?": ""
+    "Archived?": "yes"
   },
   {
     "Transaction ID": "896689",
@@ -18238,7 +18255,7 @@
     "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2026-03",
     "Imported At": "08/13/2026 10:21:44",
     "Player ID": "Jacob-Hurtubise",
-    "Archived?": ""
+    "Archived?": "yes"
   },
   {
     "Transaction ID": "893984",
@@ -18255,7 +18272,7 @@
     "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2026-03",
     "Imported At": "08/13/2026 10:21:44",
     "Player ID": "Jacob-Hurtubise",
-    "Archived?": ""
+    "Archived?": "yes"
   },
   {
     "Transaction ID": "893983",
@@ -18289,7 +18306,7 @@
     "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2026-03",
     "Imported At": "08/13/2026 10:21:44",
     "Player ID": "Ramon-Rodriguez",
-    "Archived?": ""
+    "Archived?": "yes"
   },
   {
     "Transaction ID": "893981",
@@ -18323,7 +18340,7 @@
     "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2026-03",
     "Imported At": "08/13/2026 10:21:44",
     "Player ID": "Andrick-Nava",
-    "Archived?": ""
+    "Archived?": "yes"
   },
   {
     "Transaction ID": "893979",
@@ -18918,7 +18935,7 @@
     "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2026-03",
     "Imported At": "08/13/2026 10:21:44",
     "Player ID": "Darrien-Miller",
-    "Archived?": ""
+    "Archived?": "yes"
   },
   {
     "Transaction ID": "892410",
@@ -19207,7 +19224,7 @@
     "Source URL": "https://www.mlb.com/brewers/roster/transactions/2026/03",
     "Imported At": "08/13/2026 10:00:24",
     "Player ID": "David-Garcia",
-    "Archived?": ""
+    "Archived?": "yes"
   },
   {
     "Transaction ID": "891723",
@@ -19241,7 +19258,7 @@
     "Source URL": "https://www.mlb.com/brewers/roster/transactions/2026/03",
     "Imported At": "08/13/2026 10:00:24",
     "Player ID": "Andrick-Nava",
-    "Archived?": ""
+    "Archived?": "yes"
   },
   {
     "Transaction ID": "892805",
@@ -20924,7 +20941,7 @@
     "Source URL": "https://www.mlb.com/brewers/roster/transactions/2026/02",
     "Imported At": "08/13/2026 10:00:20",
     "Player ID": "Jheremy-Vargas",
-    "Archived?": ""
+    "Archived?": "yes"
   },
   {
     "Transaction ID": "887512",
@@ -20992,7 +21009,7 @@
     "Source URL": "https://www.mlb.com/brewers/roster/transactions/2026/02",
     "Imported At": "08/13/2026 10:00:20",
     "Player ID": "Blayberg-Diaz",
-    "Archived?": ""
+    "Archived?": "yes"
   },
   {
     "Transaction ID": "887506",
@@ -21060,7 +21077,7 @@
     "Source URL": "https://www.mlb.com/brewers/roster/transactions/2026/02",
     "Imported At": "08/13/2026 10:00:20",
     "Player ID": "Yerlin-Rodriguez",
-    "Archived?": ""
+    "Archived?": "yes"
   },
   {
     "Transaction ID": "887502",
@@ -21196,7 +21213,7 @@
     "Source URL": "https://www.mlb.com/brewers/roster/transactions/2026/02",
     "Imported At": "08/13/2026 10:00:20",
     "Player ID": "Jacob-Hurtubise",
-    "Archived?": ""
+    "Archived?": "yes"
   },
   {
     "Transaction ID": "887494",
@@ -21587,7 +21604,7 @@
     "Source URL": "https://www.mlb.com/brewers/roster/transactions/2026/02",
     "Imported At": "08/13/2026 10:00:20",
     "Player ID": "Stiven-Cruz",
-    "Archived?": ""
+    "Archived?": "yes"
   },
   {
     "Transaction ID": "887079",
@@ -21638,7 +21655,7 @@
     "Source URL": "https://www.mlb.com/brewers/roster/transactions/2026/02",
     "Imported At": "08/13/2026 10:00:20",
     "Player ID": "Freddy-Zamora",
-    "Archived?": ""
+    "Archived?": "yes"
   },
   {
     "Transaction ID": "887076",
@@ -21927,7 +21944,7 @@
     "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2026-02",
     "Imported At": "08/13/2026 10:21:37",
     "Player ID": "Jacob-Hurtubise",
-    "Archived?": ""
+    "Archived?": "yes"
   },
   {
     "Transaction ID": "884080",
@@ -21944,7 +21961,7 @@
     "Source URL": "https://www.mlb.com/brewers/roster/transactions/2026/02",
     "Imported At": "08/13/2026 10:00:20",
     "Player ID": "Jacob-Hurtubise",
-    "Archived?": ""
+    "Archived?": "yes"
   },
   {
     "Transaction ID": "884079",
@@ -22131,7 +22148,7 @@
     "Source URL": "https://www.mlb.com/brewers/roster/transactions/2026/01",
     "Imported At": "08/13/2026 10:00:15",
     "Player ID": "Ramon-Rodriguez",
-    "Archived?": ""
+    "Archived?": "yes"
   },
   {
     "Transaction ID": "882964",
@@ -22777,7 +22794,7 @@
     "Source URL": "https://www.mlb.com/brewers/roster/transactions/2026/01",
     "Imported At": "08/13/2026 10:00:15",
     "Player ID": "Darrien-Miller",
-    "Archived?": ""
+    "Archived?": "yes"
   },
   {
     "Transaction ID": "880641",
@@ -22845,7 +22862,7 @@
     "Source URL": "https://www.mlb.com/brewers/roster/transactions/2026/01",
     "Imported At": "08/13/2026 10:00:15",
     "Player ID": "Eduardo-Garcia",
-    "Archived?": ""
+    "Archived?": "yes"
   },
   {
     "Transaction ID": "880117",
@@ -23457,7 +23474,7 @@
     "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2025-11",
     "Imported At": "08/13/2026 10:21:24",
     "Player ID": "David-Garcia",
-    "Archived?": ""
+    "Archived?": "yes"
   },
   {
     "Transaction ID": "895415",
@@ -24086,7 +24103,7 @@
     "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2025-11",
     "Imported At": "08/13/2026 10:21:24",
     "Player ID": "David-Garcia",
-    "Archived?": ""
+    "Archived?": "yes"
   },
   {
     "Transaction ID": "875711",
@@ -24341,7 +24358,7 @@
     "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2025-11",
     "Imported At": "08/13/2026 10:21:24",
     "Player ID": "Ramon-Rodriguez",
-    "Archived?": ""
+    "Archived?": "yes"
   },
   {
     "Transaction ID": "874799",
@@ -25820,7 +25837,7 @@
     "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2025-09",
     "Imported At": "08/13/2026 10:21:15",
     "Player ID": "Stiven-Cruz",
-    "Archived?": ""
+    "Archived?": "yes"
   },
   {
     "Transaction ID": "895459",
@@ -25854,7 +25871,7 @@
     "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2025-09",
     "Imported At": "08/13/2026 10:21:15",
     "Player ID": "Stiven-Cruz",
-    "Archived?": ""
+    "Archived?": "yes"
   },
   {
     "Transaction ID": "872151",
@@ -25922,7 +25939,7 @@
     "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2025-09",
     "Imported At": "08/13/2026 10:21:15",
     "Player ID": "Stiven-Cruz",
-    "Archived?": ""
+    "Archived?": "yes"
   },
   {
     "Transaction ID": "870212",
@@ -26126,7 +26143,7 @@
     "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2025-09",
     "Imported At": "08/13/2026 10:21:15",
     "Player ID": "Jheremy-Vargas",
-    "Archived?": ""
+    "Archived?": "yes"
   },
   {
     "Transaction ID": "869921",
@@ -26177,7 +26194,7 @@
     "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2025-09",
     "Imported At": "08/13/2026 10:21:15",
     "Player ID": "Jheremy-Vargas",
-    "Archived?": ""
+    "Archived?": "yes"
   },
   {
     "Transaction ID": "869818",
@@ -26551,7 +26568,7 @@
     "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2025-09",
     "Imported At": "08/13/2026 10:21:15",
     "Player ID": "Stiven-Cruz",
-    "Archived?": ""
+    "Archived?": "yes"
   },
   {
     "Transaction ID": "869355",
@@ -26585,7 +26602,7 @@
     "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2025-09",
     "Imported At": "08/13/2026 10:21:15",
     "Player ID": "Stiven-Cruz",
-    "Archived?": ""
+    "Archived?": "yes"
   },
   {
     "Transaction ID": "869062",
@@ -26670,7 +26687,7 @@
     "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2025-09",
     "Imported At": "08/13/2026 10:21:15",
     "Player ID": "Stiven-Cruz",
-    "Archived?": ""
+    "Archived?": "yes"
   },
   {
     "Transaction ID": "868873",
@@ -26687,7 +26704,7 @@
     "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2025-09",
     "Imported At": "08/13/2026 10:21:15",
     "Player ID": "Jheremy-Vargas",
-    "Archived?": ""
+    "Archived?": "yes"
   },
   {
     "Transaction ID": "868872",
@@ -29917,7 +29934,7 @@
     "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2025-08",
     "Imported At": "08/13/2026 10:20:43",
     "Player ID": "Eduardo-Garcia",
-    "Archived?": ""
+    "Archived?": "yes"
   },
   {
     "Transaction ID": "895450",
@@ -30070,7 +30087,7 @@
     "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2025-08",
     "Imported At": "08/13/2026 10:20:43",
     "Player ID": "Eduardo-Garcia",
-    "Archived?": ""
+    "Archived?": "yes"
   },
   {
     "Transaction ID": "862375",
@@ -32433,7 +32450,7 @@
     "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2025-07",
     "Imported At": "08/13/2026 10:20:35",
     "Player ID": "Andrick-Nava",
-    "Archived?": ""
+    "Archived?": "yes"
   },
   {
     "Transaction ID": "856254",
@@ -32586,7 +32603,7 @@
     "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2025-07",
     "Imported At": "08/13/2026 10:20:35",
     "Player ID": "Andrick-Nava",
-    "Archived?": ""
+    "Archived?": "yes"
   },
   {
     "Transaction ID": "855840",
@@ -34286,7 +34303,7 @@
     "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2025-06",
     "Imported At": "08/13/2026 10:20:26",
     "Player ID": "Yerlin-Rodriguez",
-    "Archived?": ""
+    "Archived?": "yes"
   },
   {
     "Transaction ID": "864338",
@@ -34813,7 +34830,7 @@
     "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2025-06",
     "Imported At": "08/13/2026 10:20:26",
     "Player ID": "Yerlin-Rodriguez",
-    "Archived?": ""
+    "Archived?": "yes"
   },
   {
     "Transaction ID": "848201",
@@ -35969,7 +35986,7 @@
     "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2025-06",
     "Imported At": "08/13/2026 10:20:26",
     "Player ID": "Stiven-Cruz",
-    "Archived?": ""
+    "Archived?": "yes"
   },
   {
     "Transaction ID": "862980",
@@ -35986,7 +36003,7 @@
     "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2025-06",
     "Imported At": "08/13/2026 10:20:26",
     "Player ID": "Ramon-Rodriguez",
-    "Archived?": ""
+    "Archived?": "yes"
   },
   {
     "Transaction ID": "843690",
@@ -36020,7 +36037,7 @@
     "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2025-06",
     "Imported At": "08/13/2026 10:20:26",
     "Player ID": "Ramon-Rodriguez",
-    "Archived?": ""
+    "Archived?": "yes"
   },
   {
     "Transaction ID": "913993",
@@ -37771,7 +37788,7 @@
     "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2025-05",
     "Imported At": "08/13/2026 10:20:19",
     "Player ID": "Ramon-Rodriguez",
-    "Archived?": ""
+    "Archived?": "yes"
   },
   {
     "Transaction ID": "851747",
@@ -37805,7 +37822,7 @@
     "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2025-05",
     "Imported At": "08/13/2026 10:20:19",
     "Player ID": "David-Garcia",
-    "Archived?": ""
+    "Archived?": "yes"
   },
   {
     "Transaction ID": "839891",
@@ -37822,7 +37839,7 @@
     "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2025-05",
     "Imported At": "08/13/2026 10:20:19",
     "Player ID": "David-Garcia",
-    "Archived?": ""
+    "Archived?": "yes"
   },
   {
     "Transaction ID": "839308",
@@ -40151,7 +40168,7 @@
     "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2025-04",
     "Imported At": "08/13/2026 10:20:12",
     "Player ID": "Blayberg-Diaz",
-    "Archived?": ""
+    "Archived?": "yes"
   },
   {
     "Transaction ID": "833337",
@@ -40168,7 +40185,7 @@
     "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2025-04",
     "Imported At": "08/13/2026 10:20:12",
     "Player ID": "Blayberg-Diaz",
-    "Archived?": ""
+    "Archived?": "yes"
   },
   {
     "Transaction ID": "832541",
@@ -40185,7 +40202,7 @@
     "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2025-04",
     "Imported At": "08/13/2026 10:20:12",
     "Player ID": "Jheremy-Vargas",
-    "Archived?": ""
+    "Archived?": "yes"
   },
   {
     "Transaction ID": "832539",
@@ -40253,7 +40270,7 @@
     "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2025-04",
     "Imported At": "08/13/2026 10:20:12",
     "Player ID": "Blayberg-Diaz",
-    "Archived?": ""
+    "Archived?": "yes"
   },
   {
     "Transaction ID": "832535",
@@ -40389,7 +40406,7 @@
     "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2025-04",
     "Imported At": "08/13/2026 10:20:12",
     "Player ID": "David-Garcia",
-    "Archived?": ""
+    "Archived?": "yes"
   },
   {
     "Transaction ID": "832341",
@@ -41426,7 +41443,7 @@
     "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2025-04",
     "Imported At": "08/13/2026 10:20:12",
     "Player ID": "Jheremy-Vargas",
-    "Archived?": ""
+    "Archived?": "yes"
   },
   {
     "Transaction ID": "828042",
@@ -43109,7 +43126,7 @@
     "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2025-03",
     "Imported At": "08/13/2026 10:20:06",
     "Player ID": "Jheremy-Vargas",
-    "Archived?": ""
+    "Archived?": "yes"
   },
   {
     "Transaction ID": "823966",
@@ -43143,7 +43160,7 @@
     "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2025-03",
     "Imported At": "08/13/2026 10:20:06",
     "Player ID": "Ramon-Rodriguez",
-    "Archived?": ""
+    "Archived?": "yes"
   },
   {
     "Transaction ID": "823960",
@@ -43177,7 +43194,7 @@
     "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2025-03",
     "Imported At": "08/13/2026 10:20:06",
     "Player ID": "Stiven-Cruz",
-    "Archived?": ""
+    "Archived?": "yes"
   },
   {
     "Transaction ID": "823956",
@@ -43313,7 +43330,7 @@
     "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2025-03",
     "Imported At": "08/13/2026 10:20:06",
     "Player ID": "David-Garcia",
-    "Archived?": ""
+    "Archived?": "yes"
   },
   {
     "Transaction ID": "823935",
@@ -43840,7 +43857,7 @@
     "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2025-03",
     "Imported At": "08/13/2026 10:20:06",
     "Player ID": "David-Garcia",
-    "Archived?": ""
+    "Archived?": "yes"
   },
   {
     "Transaction ID": "823217",
@@ -43993,7 +44010,7 @@
     "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2025-03",
     "Imported At": "08/13/2026 10:20:06",
     "Player ID": "David-Garcia",
-    "Archived?": ""
+    "Archived?": "yes"
   },
   {
     "Transaction ID": "822686",
@@ -44010,7 +44027,7 @@
     "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2025-03",
     "Imported At": "08/13/2026 10:20:06",
     "Player ID": "Ramon-Rodriguez",
-    "Archived?": ""
+    "Archived?": "yes"
   },
   {
     "Transaction ID": "822684",
@@ -44452,7 +44469,7 @@
     "Source URL": "https://www.mlb.com/brewers/roster/transactions/2025/03",
     "Imported At": "08/13/2026 09:59:34",
     "Player ID": "Yerlin-Rodriguez",
-    "Archived?": ""
+    "Archived?": "yes"
   },
   {
     "Transaction ID": "822685",
@@ -45149,7 +45166,7 @@
     "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2025-03",
     "Imported At": "08/13/2026 10:20:06",
     "Player ID": "Eduardo-Garcia",
-    "Archived?": ""
+    "Archived?": "yes"
   },
   {
     "Transaction ID": "820322",
@@ -45200,7 +45217,7 @@
     "Source URL": "https://www.mlb.com/brewers/roster/transactions/2025/03",
     "Imported At": "08/13/2026 09:59:34",
     "Player ID": "Stiven-Cruz",
-    "Archived?": ""
+    "Archived?": "yes"
   },
   {
     "Transaction ID": "820079",
@@ -45506,7 +45523,7 @@
     "Source URL": "https://www.mlb.com/brewers/roster/transactions/2025/03",
     "Imported At": "08/13/2026 09:59:34",
     "Player ID": "Jheremy-Vargas",
-    "Archived?": ""
+    "Archived?": "yes"
   },
   {
     "Transaction ID": "819102",
@@ -45574,7 +45591,7 @@
     "Source URL": "https://www.mlb.com/brewers/roster/transactions/2025/03",
     "Imported At": "08/13/2026 09:59:34",
     "Player ID": "Freddy-Zamora",
-    "Archived?": ""
+    "Archived?": "yes"
   },
   {
     "Transaction ID": "818550",
@@ -45812,7 +45829,7 @@
     "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2025-03",
     "Imported At": "08/13/2026 10:20:06",
     "Player ID": "Darrien-Miller",
-    "Archived?": ""
+    "Archived?": "yes"
   },
   {
     "Transaction ID": "818535",
@@ -46713,7 +46730,7 @@
     "Source URL": "https://www.mlb.com/brewers/roster/transactions/2025/02",
     "Imported At": "08/13/2026 09:59:23",
     "Player ID": "Blayberg-Diaz",
-    "Archived?": ""
+    "Archived?": "yes"
   },
   {
     "Transaction ID": "817038",
@@ -46849,7 +46866,7 @@
     "Source URL": "https://www.mlb.com/brewers/roster/transactions/2025/02",
     "Imported At": "08/13/2026 09:59:23",
     "Player ID": "Eduardo-Garcia",
-    "Archived?": ""
+    "Archived?": "yes"
   },
   {
     "Transaction ID": "816887",
@@ -47631,7 +47648,7 @@
     "Source URL": "https://www.mlb.com/brewers/roster/transactions/2025/01",
     "Imported At": "08/13/2026 09:59:16",
     "Player ID": "Darrien-Miller",
-    "Archived?": ""
+    "Archived?": "yes"
   },
   {
     "Transaction ID": "810875",
@@ -48991,7 +49008,7 @@
     "Source URL": "https://www.mlb.com/brewers/roster/transactions/2024/11",
     "Imported At": "08/13/2026 09:59:09",
     "Player ID": "Ramon-Rodriguez",
-    "Archived?": ""
+    "Archived?": "yes"
   },
   {
     "Transaction ID": "807888",
@@ -49008,7 +49025,7 @@
     "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2024-11",
     "Imported At": "08/13/2026 10:19:39",
     "Player ID": "Ramon-Rodriguez",
-    "Archived?": ""
+    "Archived?": "yes"
   },
   {
     "Transaction ID": "807882",
@@ -49025,7 +49042,7 @@
     "Source URL": "https://www.mlb.com/brewers/roster/transactions/2024/11",
     "Imported At": "08/13/2026 09:59:09",
     "Player ID": "David-Garcia",
-    "Archived?": ""
+    "Archived?": "yes"
   },
   {
     "Transaction ID": "807881",
@@ -49042,7 +49059,7 @@
     "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2024-11",
     "Imported At": "08/13/2026 10:19:39",
     "Player ID": "David-Garcia",
-    "Archived?": ""
+    "Archived?": "yes"
   },
   {
     "Transaction ID": "807876",
@@ -56369,7 +56386,7 @@
     "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2024-07",
     "Imported At": "08/13/2026 10:19:10",
     "Player ID": "Freddy-Zamora",
-    "Archived?": ""
+    "Archived?": "yes"
   },
   {
     "Transaction ID": "823327",
@@ -56386,7 +56403,7 @@
     "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2024-07",
     "Imported At": "08/13/2026 10:19:10",
     "Player ID": "Freddy-Zamora",
-    "Archived?": ""
+    "Archived?": "yes"
   },
   {
     "Transaction ID": "793876",
@@ -56454,7 +56471,7 @@
     "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2024-07",
     "Imported At": "08/13/2026 10:19:10",
     "Player ID": "Freddy-Zamora",
-    "Archived?": ""
+    "Archived?": "yes"
   },
   {
     "Transaction ID": "789036",
@@ -57338,7 +57355,7 @@
     "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2024-07",
     "Imported At": "08/13/2026 10:19:10",
     "Player ID": "Freddy-Zamora",
-    "Archived?": ""
+    "Archived?": "yes"
   },
   {
     "Transaction ID": "786463",
@@ -59140,7 +59157,7 @@
     "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2024-06",
     "Imported At": "08/13/2026 10:19:02",
     "Player ID": "Eduardo-Garcia",
-    "Archived?": ""
+    "Archived?": "yes"
   },
   {
     "Transaction ID": "781569",
@@ -59157,7 +59174,7 @@
     "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2024-06",
     "Imported At": "08/13/2026 10:19:02",
     "Player ID": "Eduardo-Garcia",
-    "Archived?": ""
+    "Archived?": "yes"
   },
   {
     "Transaction ID": "781563",
@@ -59718,7 +59735,7 @@
     "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2024-06",
     "Imported At": "08/13/2026 10:19:02",
     "Player ID": "Eduardo-Garcia",
-    "Archived?": ""
+    "Archived?": "yes"
   },
   {
     "Transaction ID": "780261",
@@ -59854,7 +59871,7 @@
     "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2024-06",
     "Imported At": "08/13/2026 10:19:02",
     "Player ID": "Eduardo-Garcia",
-    "Archived?": ""
+    "Archived?": "yes"
   },
   {
     "Transaction ID": "779826",
@@ -63186,7 +63203,7 @@
     "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2024-05",
     "Imported At": "08/13/2026 10:18:56",
     "Player ID": "Freddy-Zamora",
-    "Archived?": ""
+    "Archived?": "yes"
   },
   {
     "Transaction ID": "771480",
@@ -63237,7 +63254,7 @@
     "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2024-05",
     "Imported At": "08/13/2026 10:18:56",
     "Player ID": "Freddy-Zamora",
-    "Archived?": ""
+    "Archived?": "yes"
   },
   {
     "Transaction ID": "771309",
@@ -65192,7 +65209,7 @@
     "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2024-04",
     "Imported At": "08/13/2026 10:18:49",
     "Player ID": "Eduardo-Garcia",
-    "Archived?": ""
+    "Archived?": "yes"
   },
   {
     "Transaction ID": "764510",
@@ -66263,7 +66280,7 @@
     "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2024-04",
     "Imported At": "08/13/2026 10:18:49",
     "Player ID": "Blayberg-Diaz",
-    "Archived?": ""
+    "Archived?": "yes"
   },
   {
     "Transaction ID": "762074",
@@ -66314,7 +66331,7 @@
     "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2024-04",
     "Imported At": "08/13/2026 10:18:49",
     "Player ID": "Blayberg-Diaz",
-    "Archived?": ""
+    "Archived?": "yes"
   },
   {
     "Transaction ID": "761437",
@@ -66569,7 +66586,7 @@
     "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2024-04",
     "Imported At": "08/13/2026 10:18:49",
     "Player ID": "Blayberg-Diaz",
-    "Archived?": ""
+    "Archived?": "yes"
   },
   {
     "Transaction ID": "761134",
@@ -66858,7 +66875,7 @@
     "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2024-04",
     "Imported At": "08/13/2026 10:18:49",
     "Player ID": "Blayberg-Diaz",
-    "Archived?": ""
+    "Archived?": "yes"
   },
   {
     "Transaction ID": "779260",
@@ -66977,7 +66994,7 @@
     "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2024-04",
     "Imported At": "08/13/2026 10:18:49",
     "Player ID": "David-Garcia",
-    "Archived?": ""
+    "Archived?": "yes"
   },
   {
     "Transaction ID": "758734",
@@ -67232,7 +67249,7 @@
     "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2024-03",
     "Imported At": "08/13/2026 10:18:41",
     "Player ID": "Darrien-Miller",
-    "Archived?": ""
+    "Archived?": "yes"
   },
   {
     "Transaction ID": "895461",
@@ -67249,7 +67266,7 @@
     "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2024-03",
     "Imported At": "08/13/2026 10:18:41",
     "Player ID": "Darrien-Miller",
-    "Archived?": ""
+    "Archived?": "yes"
   },
   {
     "Transaction ID": "784701",
@@ -67283,7 +67300,7 @@
     "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2024-03",
     "Imported At": "08/13/2026 10:18:41",
     "Player ID": "Yerlin-Rodriguez",
-    "Archived?": ""
+    "Archived?": "yes"
   },
   {
     "Transaction ID": "781130",
@@ -67300,7 +67317,7 @@
     "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2024-03",
     "Imported At": "08/13/2026 10:18:41",
     "Player ID": "Yerlin-Rodriguez",
-    "Archived?": ""
+    "Archived?": "yes"
   },
   {
     "Transaction ID": "765526",
@@ -67402,7 +67419,7 @@
     "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2024-03",
     "Imported At": "08/13/2026 10:18:41",
     "Player ID": "Yerlin-Rodriguez",
-    "Archived?": ""
+    "Archived?": "yes"
   },
   {
     "Transaction ID": "758615",
@@ -67623,7 +67640,7 @@
     "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2024-03",
     "Imported At": "08/13/2026 10:18:41",
     "Player ID": "Darrien-Miller",
-    "Archived?": ""
+    "Archived?": "yes"
   },
   {
     "Transaction ID": "758588",
@@ -67640,7 +67657,7 @@
     "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2024-03",
     "Imported At": "08/13/2026 10:18:41",
     "Player ID": "Eduardo-Garcia",
-    "Archived?": ""
+    "Archived?": "yes"
   },
   {
     "Transaction ID": "758579",
@@ -67657,7 +67674,7 @@
     "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2024-03",
     "Imported At": "08/13/2026 10:18:41",
     "Player ID": "Ramon-Rodriguez",
-    "Archived?": ""
+    "Archived?": "yes"
   },
   {
     "Transaction ID": "758572",
@@ -68524,7 +68541,7 @@
     "Source URL": "https://www.mlb.com/brewers/roster/transactions/2024/03",
     "Imported At": "08/13/2026 09:58:39",
     "Player ID": "Yerlin-Rodriguez",
-    "Archived?": ""
+    "Archived?": "yes"
   },
   {
     "Transaction ID": "756317",
@@ -69255,7 +69272,7 @@
     "Source URL": "https://www.mlb.com/brewers/roster/transactions/2024/03",
     "Imported At": "08/13/2026 09:58:39",
     "Player ID": "Jheremy-Vargas",
-    "Archived?": ""
+    "Archived?": "yes"
   },
   {
     "Transaction ID": "754466",
@@ -69289,7 +69306,7 @@
     "Source URL": "https://www.mlb.com/brewers/roster/transactions/2024/03",
     "Imported At": "08/13/2026 09:58:39",
     "Player ID": "Freddy-Zamora",
-    "Archived?": ""
+    "Archived?": "yes"
   },
   {
     "Transaction ID": "754358",
@@ -69357,7 +69374,7 @@
     "Source URL": "https://www.mlb.com/brewers/roster/transactions/2024/03",
     "Imported At": "08/13/2026 09:58:39",
     "Player ID": "Blayberg-Diaz",
-    "Archived?": ""
+    "Archived?": "yes"
   },
   {
     "Transaction ID": "754130",
@@ -69901,7 +69918,7 @@
     "Source URL": "https://www.mlb.com/brewers/roster/transactions/2024/03",
     "Imported At": "08/13/2026 09:58:39",
     "Player ID": "Darrien-Miller",
-    "Archived?": ""
+    "Archived?": "yes"
   },
   {
     "Transaction ID": "752941",
@@ -70207,7 +70224,7 @@
     "Source URL": "https://www.mlb.com/brewers/roster/transactions/2024/02",
     "Imported At": "08/13/2026 09:58:35",
     "Player ID": "Eduardo-Garcia",
-    "Archived?": ""
+    "Archived?": "yes"
   },
   {
     "Transaction ID": "756605",
@@ -70224,7 +70241,7 @@
     "Source URL": "https://www.mlb.com/brewers/roster/transactions/2024/02",
     "Imported At": "08/13/2026 09:58:35",
     "Player ID": "Ramon-Rodriguez",
-    "Archived?": ""
+    "Archived?": "yes"
   },
   {
     "Transaction ID": "751949",
@@ -70343,7 +70360,7 @@
     "Source URL": "https://www.mlb.com/brewers/roster/transactions/2024/02",
     "Imported At": "08/13/2026 09:58:35",
     "Player ID": "Ramon-Rodriguez",
-    "Archived?": ""
+    "Archived?": "yes"
   },
   {
     "Transaction ID": "751940",
@@ -72740,7 +72757,7 @@
     "Source URL": "https://www.mlb.com/brewers/roster/transactions/2023/12",
     "Imported At": "08/13/2026 09:58:27",
     "Player ID": "David-Garcia",
-    "Archived?": ""
+    "Archived?": "yes"
   },
   {
     "Transaction ID": "736351",
@@ -72757,7 +72774,7 @@
     "Source URL": "https://www.mlb.com/brewers/roster/transactions/2023/12",
     "Imported At": "08/13/2026 09:58:27",
     "Player ID": "David-Garcia",
-    "Archived?": ""
+    "Archived?": "yes"
   },
   {
     "Transaction ID": "736350",
@@ -72774,7 +72791,7 @@
     "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2023-12",
     "Imported At": "08/13/2026 10:18:20",
     "Player ID": "David-Garcia",
-    "Archived?": ""
+    "Archived?": "yes"
   },
   {
     "Transaction ID": "736354",
@@ -72791,7 +72808,7 @@
     "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2023-12",
     "Imported At": "08/13/2026 10:18:20",
     "Player ID": "Ramon-Rodriguez",
-    "Archived?": ""
+    "Archived?": "yes"
   },
   {
     "Transaction ID": "736353",
@@ -72808,7 +72825,7 @@
     "Source URL": "https://www.mlb.com/brewers/roster/transactions/2023/12",
     "Imported At": "08/13/2026 09:58:27",
     "Player ID": "Ramon-Rodriguez",
-    "Archived?": ""
+    "Archived?": "yes"
   },
   {
     "Transaction ID": "757819",
@@ -73777,7 +73794,7 @@
     "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2023-11",
     "Imported At": "08/13/2026 10:18:11",
     "Player ID": "Jheremy-Vargas",
-    "Archived?": ""
+    "Archived?": "yes"
   },
   {
     "Transaction ID": "761426",
@@ -77075,7 +77092,7 @@
     "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2023-09",
     "Imported At": "08/13/2026 10:17:59",
     "Player ID": "Jheremy-Vargas",
-    "Archived?": ""
+    "Archived?": "yes"
   },
   {
     "Transaction ID": "728175",
@@ -77551,7 +77568,7 @@
     "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2023-09",
     "Imported At": "08/13/2026 10:17:59",
     "Player ID": "Jheremy-Vargas",
-    "Archived?": ""
+    "Archived?": "yes"
   },
   {
     "Transaction ID": "725836",
@@ -78027,7 +78044,7 @@
     "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2023-08",
     "Imported At": "08/13/2026 10:17:52",
     "Player ID": "Eduardo-Garcia",
-    "Archived?": ""
+    "Archived?": "yes"
   },
   {
     "Transaction ID": "722804",
@@ -79098,7 +79115,7 @@
     "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2023-08",
     "Imported At": "08/13/2026 10:17:52",
     "Player ID": "Eduardo-Garcia",
-    "Archived?": ""
+    "Archived?": "yes"
   },
   {
     "Transaction ID": "718907",
@@ -81036,7 +81053,7 @@
     "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2023-07",
     "Imported At": "08/13/2026 10:17:46",
     "Player ID": "Eduardo-Garcia",
-    "Archived?": ""
+    "Archived?": "yes"
   },
   {
     "Transaction ID": "734192",
@@ -81971,7 +81988,7 @@
     "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2023-07",
     "Imported At": "08/13/2026 10:17:46",
     "Player ID": "Eduardo-Garcia",
-    "Archived?": ""
+    "Archived?": "yes"
   },
   {
     "Transaction ID": "712433",
@@ -82889,7 +82906,7 @@
     "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2023-07",
     "Imported At": "08/13/2026 10:17:46",
     "Player ID": "Jheremy-Vargas",
-    "Archived?": ""
+    "Archived?": "yes"
   },
   {
     "Transaction ID": "710155",
@@ -82940,7 +82957,7 @@
     "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2023-07",
     "Imported At": "08/13/2026 10:17:46",
     "Player ID": "Jheremy-Vargas",
-    "Archived?": ""
+    "Archived?": "yes"
   },
   {
     "Transaction ID": "709844",
@@ -88397,7 +88414,7 @@
     "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2023-05",
     "Imported At": "08/13/2026 10:17:31",
     "Player ID": "Yerlin-Rodriguez",
-    "Archived?": ""
+    "Archived?": "yes"
   },
   {
     "Transaction ID": "692034",
@@ -92256,7 +92273,7 @@
     "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2023-04",
     "Imported At": "08/13/2026 10:17:24",
     "Player ID": "Blayberg-Diaz",
-    "Archived?": ""
+    "Archived?": "yes"
   },
   {
     "Transaction ID": "680824",
@@ -93667,7 +93684,7 @@
     "Source URL": "https://www.mlb.com/brewers/roster/transactions/2023/03",
     "Imported At": "08/13/2026 09:57:52",
     "Player ID": "Darrien-Miller",
-    "Archived?": ""
+    "Archived?": "yes"
   },
   {
     "Transaction ID": "677836",
@@ -94942,7 +94959,7 @@
     "Source URL": "https://www.mlb.com/brewers/roster/transactions/2023/02",
     "Imported At": "08/13/2026 09:57:49",
     "Player ID": "Freddy-Zamora",
-    "Archived?": ""
+    "Archived?": "yes"
   },
   {
     "Transaction ID": "678406",
@@ -95163,7 +95180,7 @@
     "Source URL": "https://www.mlb.com/brewers/roster/transactions/2023/02",
     "Imported At": "08/13/2026 09:57:49",
     "Player ID": "Freddy-Zamora",
-    "Archived?": ""
+    "Archived?": "yes"
   },
   {
     "Transaction ID": "673514",
@@ -99396,7 +99413,7 @@
     "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2022-11",
     "Imported At": "08/13/2026 10:16:50",
     "Player ID": "Freddy-Zamora",
-    "Archived?": ""
+    "Archived?": "yes"
   },
   {
     "Transaction ID": "660081",
@@ -101929,7 +101946,7 @@
     "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2022-08",
     "Imported At": "08/13/2026 10:16:28",
     "Player ID": "Darrien-Miller",
-    "Archived?": ""
+    "Archived?": "yes"
   },
   {
     "Transaction ID": "649806",
@@ -101963,7 +101980,7 @@
     "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2022-08",
     "Imported At": "08/13/2026 10:16:28",
     "Player ID": "Darrien-Miller",
-    "Archived?": ""
+    "Archived?": "yes"
   },
   {
     "Transaction ID": "649571",
@@ -102235,7 +102252,7 @@
     "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2022-08",
     "Imported At": "08/13/2026 10:16:28",
     "Player ID": "Yerlin-Rodriguez",
-    "Archived?": ""
+    "Archived?": "yes"
   },
   {
     "Transaction ID": "648961",
@@ -102524,7 +102541,7 @@
     "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2022-08",
     "Imported At": "08/13/2026 10:16:28",
     "Player ID": "Jheremy-Vargas",
-    "Archived?": ""
+    "Archived?": "yes"
   },
   {
     "Transaction ID": "648390",
@@ -103374,7 +103391,7 @@
     "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2022-08",
     "Imported At": "08/13/2026 10:16:28",
     "Player ID": "Stiven-Cruz",
-    "Archived?": ""
+    "Archived?": "yes"
   },
   {
     "Transaction ID": "646850",
@@ -103510,7 +103527,7 @@
     "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2022-08",
     "Imported At": "08/13/2026 10:16:28",
     "Player ID": "Stiven-Cruz",
-    "Archived?": ""
+    "Archived?": "yes"
   },
   {
     "Transaction ID": "646715",
@@ -104530,7 +104547,7 @@
     "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2022-08",
     "Imported At": "08/13/2026 10:16:28",
     "Player ID": "Jheremy-Vargas",
-    "Archived?": ""
+    "Archived?": "yes"
   },
   {
     "Transaction ID": "647328",
@@ -105142,7 +105159,7 @@
     "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2022-08",
     "Imported At": "08/13/2026 10:16:28",
     "Player ID": "Eduardo-Garcia",
-    "Archived?": ""
+    "Archived?": "yes"
   },
   {
     "Transaction ID": "643569",
@@ -105193,7 +105210,7 @@
     "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2022-08",
     "Imported At": "08/13/2026 10:16:28",
     "Player ID": "Eduardo-Garcia",
-    "Archived?": ""
+    "Archived?": "yes"
   },
   {
     "Transaction ID": "643523",
@@ -113370,7 +113387,7 @@
     "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2022-05",
     "Imported At": "08/13/2026 10:16:01",
     "Player ID": "Freddy-Zamora",
-    "Archived?": ""
+    "Archived?": "yes"
   },
   {
     "Transaction ID": "625265",
@@ -113404,7 +113421,7 @@
     "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2022-05",
     "Imported At": "08/13/2026 10:16:01",
     "Player ID": "Freddy-Zamora",
-    "Archived?": ""
+    "Archived?": "yes"
   },
   {
     "Transaction ID": "624983",
@@ -114203,7 +114220,7 @@
     "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2022-05",
     "Imported At": "08/13/2026 10:16:01",
     "Player ID": "Freddy-Zamora",
-    "Archived?": ""
+    "Archived?": "yes"
   },
   {
     "Transaction ID": "621181",
@@ -114339,7 +114356,7 @@
     "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2022-05",
     "Imported At": "08/13/2026 10:16:01",
     "Player ID": "Stiven-Cruz",
-    "Archived?": ""
+    "Archived?": "yes"
   },
   {
     "Transaction ID": "620854",
@@ -115461,7 +115478,7 @@
     "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2022-04",
     "Imported At": "08/13/2026 10:15:56",
     "Player ID": "Freddy-Zamora",
-    "Archived?": ""
+    "Archived?": "yes"
   },
   {
     "Transaction ID": "613584",
@@ -116209,7 +116226,7 @@
     "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2022-04",
     "Imported At": "08/13/2026 10:15:56",
     "Player ID": "Jheremy-Vargas",
-    "Archived?": ""
+    "Archived?": "yes"
   },
   {
     "Transaction ID": "610703",
@@ -116413,7 +116430,7 @@
     "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2022-04",
     "Imported At": "08/13/2026 10:15:56",
     "Player ID": "Darrien-Miller",
-    "Archived?": ""
+    "Archived?": "yes"
   },
   {
     "Transaction ID": "610681",
@@ -116549,7 +116566,7 @@
     "Source URL": "https://www.mlb.com/brewers/roster/transactions/2022/04",
     "Imported At": "08/13/2026 09:57:09",
     "Player ID": "Blayberg-Diaz",
-    "Archived?": ""
+    "Archived?": "yes"
   },
   {
     "Transaction ID": "612110",
@@ -116702,7 +116719,7 @@
     "Source URL": "https://www.mlb.com/brewers/roster/transactions/2022/04",
     "Imported At": "08/13/2026 09:57:09",
     "Player ID": "Blayberg-Diaz",
-    "Archived?": ""
+    "Archived?": "yes"
   },
   {
     "Transaction ID": "610374",
@@ -117144,7 +117161,7 @@
     "Source URL": "https://www.mlb.com/brewers/roster/transactions/2022/04",
     "Imported At": "08/13/2026 09:57:09",
     "Player ID": "Eduardo-Garcia",
-    "Archived?": ""
+    "Archived?": "yes"
   },
   {
     "Transaction ID": "612107",
@@ -118708,7 +118725,7 @@
     "Source URL": "https://www.mlb.com/brewers/roster/transactions/2022/03",
     "Imported At": "08/13/2026 09:57:05",
     "Player ID": "Freddy-Zamora",
-    "Archived?": ""
+    "Archived?": "yes"
   },
   {
     "Transaction ID": "607136",
@@ -118725,7 +118742,7 @@
     "Source URL": "https://www.mlb.com/brewers/roster/transactions/2022/03",
     "Imported At": "08/13/2026 09:57:05",
     "Player ID": "Freddy-Zamora",
-    "Archived?": ""
+    "Archived?": "yes"
   },
   {
     "Transaction ID": "607135",
@@ -123247,7 +123264,7 @@
     "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2021-09",
     "Imported At": "08/13/2026 10:15:18",
     "Player ID": "Eduardo-Garcia",
-    "Archived?": ""
+    "Archived?": "yes"
   },
   {
     "Transaction ID": "516375",
@@ -123281,7 +123298,7 @@
     "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2021-09",
     "Imported At": "08/13/2026 10:15:18",
     "Player ID": "Eduardo-Garcia",
-    "Archived?": ""
+    "Archived?": "yes"
   },
   {
     "Transaction ID": "516137",
@@ -124675,7 +124692,7 @@
     "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2021-08",
     "Imported At": "08/13/2026 10:15:12",
     "Player ID": "Freddy-Zamora",
-    "Archived?": ""
+    "Archived?": "yes"
   },
   {
     "Transaction ID": "513802",
@@ -126851,7 +126868,7 @@
     "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2021-08",
     "Imported At": "08/13/2026 10:15:12",
     "Player ID": "Blayberg-Diaz",
-    "Archived?": ""
+    "Archived?": "yes"
   },
   {
     "Transaction ID": "509863",
@@ -130540,7 +130557,7 @@
     "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2021-07",
     "Imported At": "08/13/2026 10:15:06",
     "Player ID": "Stiven-Cruz",
-    "Archived?": ""
+    "Archived?": "yes"
   },
   {
     "Transaction ID": "503157",
@@ -130965,7 +130982,7 @@
     "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2021-07",
     "Imported At": "08/13/2026 10:15:06",
     "Player ID": "Eduardo-Garcia",
-    "Archived?": ""
+    "Archived?": "yes"
   },
   {
     "Transaction ID": "502373",
@@ -131305,7 +131322,7 @@
     "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2021-07",
     "Imported At": "08/13/2026 10:15:06",
     "Player ID": "Yerlin-Rodriguez",
-    "Archived?": ""
+    "Archived?": "yes"
   },
   {
     "Transaction ID": "502347",
@@ -132070,7 +132087,7 @@
     "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2021-07",
     "Imported At": "08/13/2026 10:15:06",
     "Player ID": "Jheremy-Vargas",
-    "Archived?": ""
+    "Archived?": "yes"
   },
   {
     "Transaction ID": "501204",
@@ -132155,7 +132172,7 @@
     "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2021-07",
     "Imported At": "08/13/2026 10:15:06",
     "Player ID": "Blayberg-Diaz",
-    "Archived?": ""
+    "Archived?": "yes"
   },
   {
     "Transaction ID": "501199",
@@ -132189,7 +132206,7 @@
     "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2021-07",
     "Imported At": "08/13/2026 10:15:06",
     "Player ID": "Yerlin-Rodriguez",
-    "Archived?": ""
+    "Archived?": "yes"
   },
   {
     "Transaction ID": "501197",
@@ -139346,7 +139363,7 @@
     "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2021-05",
     "Imported At": "08/13/2026 10:14:53",
     "Player ID": "Freddy-Zamora",
-    "Archived?": ""
+    "Archived?": "yes"
   },
   {
     "Transaction ID": "483167",
@@ -139431,7 +139448,7 @@
     "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2021-05",
     "Imported At": "08/13/2026 10:14:53",
     "Player ID": "Darrien-Miller",
-    "Archived?": ""
+    "Archived?": "yes"
   },
   {
     "Transaction ID": "483144",
@@ -141811,7 +141828,7 @@
     "Source URL": "https://www.mlb.com/brewers/roster/transactions/2021/02",
     "Imported At": "08/13/2026 09:56:19",
     "Player ID": "Freddy-Zamora",
-    "Archived?": ""
+    "Archived?": "yes"
   },
   {
     "Transaction ID": "474937",
@@ -141879,7 +141896,7 @@
     "Source URL": "https://www.mlb.com/brewers/roster/transactions/2021/02",
     "Imported At": "08/13/2026 09:56:19",
     "Player ID": "Freddy-Zamora",
-    "Archived?": ""
+    "Archived?": "yes"
   },
   {
     "Transaction ID": "472921",
@@ -147625,7 +147642,7 @@
     "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2020-11",
     "Imported At": "08/13/2026 10:14:25",
     "Player ID": "Blayberg-Diaz",
-    "Archived?": ""
+    "Archived?": "yes"
   },
   {
     "Transaction ID": "501205",
@@ -150056,7 +150073,7 @@
     "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2020-09",
     "Imported At": "08/13/2026 10:14:13",
     "Player ID": "Eduardo-Garcia",
-    "Archived?": ""
+    "Archived?": "yes"
   },
   {
     "Transaction ID": "452966",
@@ -152028,7 +152045,7 @@
     "Source URL": "https://www.mlb.com/brewers/roster/transactions/2020/08",
     "Imported At": "08/13/2026 09:54:49",
     "Player ID": "Eduardo-Garcia",
-    "Archived?": ""
+    "Archived?": "yes"
   },
   {
     "Transaction ID": "449245",
@@ -153405,7 +153422,7 @@
     "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2020-07",
     "Imported At": "08/13/2026 10:14:04",
     "Player ID": "Freddy-Zamora",
-    "Archived?": ""
+    "Archived?": "yes"
   },
   {
     "Transaction ID": "446380",
@@ -153541,7 +153558,7 @@
     "Source URL": "https://www.mlb.com/brewers/roster/transactions/2020/06",
     "Imported At": "08/13/2026 09:54:41",
     "Player ID": "Freddy-Zamora",
-    "Archived?": ""
+    "Archived?": "yes"
   },
   {
     "Transaction ID": "446381",
@@ -156142,7 +156159,7 @@
     "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2020-01",
     "Imported At": "08/13/2026 10:13:35",
     "Player ID": "Eduardo-Garcia",
-    "Archived?": ""
+    "Archived?": "yes"
   },
   {
     "Transaction ID": "442938",
@@ -156227,7 +156244,7 @@
     "Source URL": "https://www.mlb.com/brewers/roster/transactions/2019/12",
     "Imported At": "08/13/2026 09:49:58",
     "Player ID": "Yerlin-Rodriguez",
-    "Archived?": ""
+    "Archived?": "yes"
   },
   {
     "Transaction ID": "443354",
@@ -158845,7 +158862,7 @@
     "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2019-09",
     "Imported At": "08/13/2026 10:13:13",
     "Player ID": "Eduardo-Garcia",
-    "Archived?": ""
+    "Archived?": "yes"
   },
   {
     "Transaction ID": "443364",
@@ -164948,7 +164965,7 @@
     "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2019-07",
     "Imported At": "08/13/2026 10:13:03",
     "Player ID": "Eduardo-Garcia",
-    "Archived?": ""
+    "Archived?": "yes"
   },
   {
     "Transaction ID": "417477",
@@ -165543,7 +165560,7 @@
     "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2019-07",
     "Imported At": "08/13/2026 10:13:03",
     "Player ID": "Darrien-Miller",
-    "Archived?": ""
+    "Archived?": "yes"
   },
   {
     "Transaction ID": "503207",
@@ -165679,7 +165696,7 @@
     "Source URL": "https://www.mlb.com/brewers/roster/transactions/2019/07",
     "Imported At": "08/13/2026 09:49:39",
     "Player ID": "Jheremy-Vargas",
-    "Archived?": ""
+    "Archived?": "yes"
   },
   {
     "Transaction ID": "417782",
@@ -165866,7 +165883,7 @@
     "Source URL": "https://www.mlb.com/brewers/roster/transactions/2019/07",
     "Imported At": "08/13/2026 09:49:39",
     "Player ID": "Stiven-Cruz",
-    "Archived?": ""
+    "Archived?": "yes"
   },
   {
     "Transaction ID": "417769",
@@ -165900,7 +165917,7 @@
     "Source URL": "https://www.mlb.com/brewers/roster/transactions/2019/07",
     "Imported At": "08/13/2026 09:49:39",
     "Player ID": "Blayberg-Diaz",
-    "Archived?": ""
+    "Archived?": "yes"
   },
   {
     "Transaction ID": "417764",
@@ -166002,7 +166019,7 @@
     "Source URL": "https://www.mlb.com/brewers/roster/transactions/2019/07",
     "Imported At": "08/13/2026 09:49:39",
     "Player ID": "Darrien-Miller",
-    "Archived?": ""
+    "Archived?": "yes"
   },
   {
     "Transaction ID": "414845",
@@ -170235,7 +170252,7 @@
     "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2019-06",
     "Imported At": "08/13/2026 10:12:59",
     "Player ID": "Eduardo-Garcia",
-    "Archived?": ""
+    "Archived?": "yes"
   },
   {
     "Transaction ID": "405199",
@@ -184124,7 +184141,7 @@
     "Source URL": "https://www.mlb.com/brewers/roster/transactions/2018/07",
     "Imported At": "08/13/2026 09:42:09",
     "Player ID": "Eduardo-Garcia",
-    "Archived?": ""
+    "Archived?": "yes"
   },
   {
     "Transaction ID": "367801",

@@ -494,19 +494,6 @@
     "Arm": "45/45"
   },
   {
-    "Player-ID": "Darrien-Miller",
-    "Player": "Darrien Miller",
-    "Last Updated": "12/5/2024",
-    "Hit": "35/45",
-    "Raw Power": "35/40",
-    "Game Power": "30/35",
-    "Bat to Ball": "60/60",
-    "Swing Decisions": "55/55",
-    "Speed": "40/40",
-    "Field": "35/40",
-    "Arm": "40/45"
-  },
-  {
     "Player-ID": "Damon-Keith",
     "Player": "Damon Keith",
     "Last Updated": "3/29/2026",
@@ -702,19 +689,6 @@
     "Arm": "65/65"
   },
   {
-    "Player-ID": "Eduardo-Garcia",
-    "Player": "Eduardo Garcia",
-    "Last Updated": "2/21/2026",
-    "Hit": "30/40",
-    "Raw Power": "45/55",
-    "Game Power": "40/45",
-    "Bat to Ball": "30/35",
-    "Swing Decisions": "35/40",
-    "Speed": "55/55",
-    "Field": "50/55 (SS) / 40/50 (OF)",
-    "Arm": "55/55"
-  },
-  {
     "Player-ID": "Josue-Rodriguez",
     "Player": "Josue Rodriguez",
     "Last Updated": "8/22/2026",
@@ -804,32 +778,6 @@
     "Speed": "60/60",
     "Field": "35/45 (3B) / 40/50 (COF)",
     "Arm": "50/50"
-  },
-  {
-    "Player-ID": "Ramon-Rodriguez",
-    "Player": "Ramón Rodríguez",
-    "Last Updated": "12/1/2024",
-    "Hit": "40/45",
-    "Raw Power": "45/50",
-    "Game Power": "35/45",
-    "Bat to Ball": "55/55",
-    "Swing Decisions": "45/50",
-    "Speed": "40/40",
-    "Field": "50/55",
-    "Arm": "55/55"
-  },
-  {
-    "Player-ID": "Jacob-Hurtubise",
-    "Player": "Jacob Hurtubise",
-    "Last Updated": "2/5/2026",
-    "Hit": "45/45",
-    "Raw Power": "30/30",
-    "Game Power": "30/30",
-    "Bat to Ball": "50/50",
-    "Swing Decisions": "55/55",
-    "Speed": "70/70",
-    "Field": "50/55 (OF)",
-    "Arm": "45/45"
   },
   {
     "Player-ID": "Cristopher-Acosta",
@@ -1040,19 +988,6 @@
     "Arm": "50/55"
   },
   {
-    "Player-ID": "Jheremy-Vargas",
-    "Player": "Jheremy Vargas",
-    "Last Updated": "12/13/2024",
-    "Hit": "40/50",
-    "Raw Power": "35/40",
-    "Game Power": "30/35",
-    "Bat to Ball": "50/55",
-    "Swing Decisions": "35/40",
-    "Speed": "50/50",
-    "Field": "45/55",
-    "Arm": "60/60"
-  },
-  {
     "Player-ID": "Yoneiker-Lugo",
     "Player": "Yoneiker Lugo",
     "Last Updated": "12/10/2024",
@@ -1064,19 +999,6 @@
     "Speed": "35/35",
     "Field": "30/45",
     "Arm": "50/50"
-  },
-  {
-    "Player-ID": "Blayberg-Diaz",
-    "Player": "Blayberg Diaz",
-    "Last Updated": "12/2/2024",
-    "Hit": "30/40",
-    "Raw Power": "45/50",
-    "Game Power": "25/40",
-    "Bat to Ball": "45/50",
-    "Swing Decisions": "30/35",
-    "Speed": "35/35",
-    "Field": "50/60",
-    "Arm": "60/60"
   },
   {
     "Player-ID": "Francis-Sosa",
@@ -1118,19 +1040,6 @@
     "Arm": "60/60"
   },
   {
-    "Player-ID": "Freddy-Zamora",
-    "Player": "Freddy Zamora",
-    "Last Updated": "12/10/2024",
-    "Hit": "30/40",
-    "Raw Power": "40/40",
-    "Game Power": "30/40",
-    "Bat to Ball": "45/55",
-    "Swing Decisions": "40/40",
-    "Speed": "45/45",
-    "Field": "50/55",
-    "Arm": "60/60"
-  },
-  {
     "Player-ID": "Roniel-Paulino",
     "Player": "Roniel Paulino",
     "Last Updated": "N/A",
@@ -1142,19 +1051,6 @@
     "Speed": "N/A",
     "Field": "N/A",
     "Arm": "N/A"
-  },
-  {
-    "Player-ID": "David-Garcia",
-    "Player": "David García",
-    "Last Updated": "11/25/2024",
-    "Hit": "35/40",
-    "Raw Power": "45/50",
-    "Game Power": "30/35",
-    "Bat to Ball": "45/50",
-    "Swing Decisions": "55/55",
-    "Speed": "40/40",
-    "Field": "50/50",
-    "Arm": "60/60"
   },
   {
     "Player-ID": "Francisco-De-Marchena",
@@ -1207,19 +1103,6 @@
     "Speed": "N/A",
     "Field": "N/A",
     "Arm": "N/A"
-  },
-  {
-    "Player-ID": "Andrick-Nava",
-    "Player": "Andrick Nava",
-    "Last Updated": "8/2/2025",
-    "Hit": "30/40",
-    "Raw Power": "40/40",
-    "Game Power": "30/40",
-    "Bat to Ball": "40/45",
-    "Swing Decisions": "50/55",
-    "Speed": "35/35",
-    "Field": "40/50",
-    "Arm": "55/55"
   },
   {
     "Player-ID": "Angel-Gonzalez",
@@ -1807,6 +1690,19 @@
     "Arm": "50/50"
   },
   {
+    "Player-ID": "Darrien-Miller",
+    "Player": "Darrien Miller",
+    "Last Updated": "12/5/2024",
+    "Hit": "35/45",
+    "Raw Power": "35/40",
+    "Game Power": "30/35",
+    "Bat to Ball": "60/60",
+    "Swing Decisions": "55/55",
+    "Speed": "40/40",
+    "Field": "35/40",
+    "Arm": "40/45"
+  },
+  {
     "Player-ID": "Ashton-McGee",
     "Player": "Ashton McGee",
     "Last Updated": "4/15/2022",
@@ -2171,6 +2067,19 @@
     "Arm": "45/45"
   },
   {
+    "Player-ID": "Eduardo-Garcia",
+    "Player": "Eduardo Garcia",
+    "Last Updated": "2/21/2026",
+    "Hit": "30/40",
+    "Raw Power": "45/55",
+    "Game Power": "40/45",
+    "Bat to Ball": "30/35",
+    "Swing Decisions": "35/40",
+    "Speed": "55/55",
+    "Field": "50/55 (SS) / 40/50 (OF)",
+    "Arm": "55/55"
+  },
+  {
     "Player-ID": "Yeison-Coca",
     "Player": "Yeison Coca",
     "Last Updated": "7/30/2022",
@@ -2327,6 +2236,19 @@
     "Arm": "55/55"
   },
   {
+    "Player-ID": "Ramon-Rodriguez",
+    "Player": "Ramón Rodríguez",
+    "Last Updated": "12/1/2024",
+    "Hit": "40/45",
+    "Raw Power": "45/50",
+    "Game Power": "35/45",
+    "Bat to Ball": "55/55",
+    "Swing Decisions": "45/50",
+    "Speed": "40/40",
+    "Field": "50/55",
+    "Arm": "55/55"
+  },
+  {
     "Player-ID": "Jose-Sibrian",
     "Player": "Jose Sibrian",
     "Last Updated": "8/5/2022",
@@ -2390,6 +2312,19 @@
     "Speed": "30/30",
     "Field": "50/50",
     "Arm": "50/50"
+  },
+  {
+    "Player-ID": "Jacob-Hurtubise",
+    "Player": "Jacob Hurtubise",
+    "Last Updated": "2/5/2026",
+    "Hit": "45/45",
+    "Raw Power": "30/30",
+    "Game Power": "30/30",
+    "Bat to Ball": "50/50",
+    "Swing Decisions": "55/55",
+    "Speed": "70/70",
+    "Field": "50/55 (OF)",
+    "Arm": "45/45"
   },
   {
     "Player-ID": "Jesus-Chirinos",
@@ -2795,6 +2730,32 @@
     "Arm": "55/55"
   },
   {
+    "Player-ID": "Jheremy-Vargas",
+    "Player": "Jheremy Vargas",
+    "Last Updated": "12/13/2024",
+    "Hit": "40/50",
+    "Raw Power": "35/40",
+    "Game Power": "30/35",
+    "Bat to Ball": "50/55",
+    "Swing Decisions": "35/40",
+    "Speed": "50/50",
+    "Field": "45/55",
+    "Arm": "60/60"
+  },
+  {
+    "Player-ID": "Blayberg-Diaz",
+    "Player": "Blayberg Diaz",
+    "Last Updated": "12/2/2024",
+    "Hit": "30/40",
+    "Raw Power": "45/50",
+    "Game Power": "25/40",
+    "Bat to Ball": "45/50",
+    "Swing Decisions": "30/35",
+    "Speed": "35/35",
+    "Field": "50/60",
+    "Arm": "60/60"
+  },
+  {
     "Player-ID": "Nicolas-Barrios",
     "Player": "Nicolas Barrios",
     "Last Updated": "1/28/2025",
@@ -2819,6 +2780,19 @@
     "Speed": "N/A",
     "Field": "N/A",
     "Arm": "N/A"
+  },
+  {
+    "Player-ID": "Freddy-Zamora",
+    "Player": "Freddy Zamora",
+    "Last Updated": "12/10/2024",
+    "Hit": "30/40",
+    "Raw Power": "40/40",
+    "Game Power": "30/40",
+    "Bat to Ball": "45/55",
+    "Swing Decisions": "40/40",
+    "Speed": "45/45",
+    "Field": "50/55",
+    "Arm": "60/60"
   },
   {
     "Player-ID": "Antony-Gomez",
@@ -2873,6 +2847,19 @@
     "Arm": "50/50"
   },
   {
+    "Player-ID": "David-Garcia",
+    "Player": "David García",
+    "Last Updated": "11/25/2024",
+    "Hit": "35/40",
+    "Raw Power": "45/50",
+    "Game Power": "30/35",
+    "Bat to Ball": "45/50",
+    "Swing Decisions": "55/55",
+    "Speed": "40/40",
+    "Field": "50/50",
+    "Arm": "60/60"
+  },
+  {
     "Player-ID": "Pedro-Tovar",
     "Player": "Pedro Tovar",
     "Last Updated": "N/A",
@@ -2895,6 +2882,19 @@
     "Bat to Ball": "30/35",
     "Swing Decisions": "35/45",
     "Speed": "40/40",
+    "Field": "40/50",
+    "Arm": "55/55"
+  },
+  {
+    "Player-ID": "Andrick-Nava",
+    "Player": "Andrick Nava",
+    "Last Updated": "8/2/2025",
+    "Hit": "30/40",
+    "Raw Power": "40/40",
+    "Game Power": "30/40",
+    "Bat to Ball": "40/45",
+    "Swing Decisions": "50/55",
+    "Speed": "35/35",
     "Field": "40/50",
     "Arm": "55/55"
   },
@@ -3601,6 +3601,19 @@
     "Arm": "50/50"
   },
   {
+    "Player-ID": "Darrien-Miller",
+    "Player": "Darrien Miller",
+    "Last Updated": "12/5/2024",
+    "Hit": "35/45",
+    "Raw Power": "35/40",
+    "Game Power": "30/35",
+    "Bat to Ball": "60/60",
+    "Swing Decisions": "55/55",
+    "Speed": "40/40",
+    "Field": "35/40",
+    "Arm": "40/45"
+  },
+  {
     "Player-ID": "Ashton-McGee",
     "Player": "Ashton McGee",
     "Last Updated": "4/15/2022",
@@ -3965,6 +3978,19 @@
     "Arm": "45/45"
   },
   {
+    "Player-ID": "Eduardo-Garcia",
+    "Player": "Eduardo Garcia",
+    "Last Updated": "2/21/2026",
+    "Hit": "30/40",
+    "Raw Power": "45/55",
+    "Game Power": "40/45",
+    "Bat to Ball": "30/35",
+    "Swing Decisions": "35/40",
+    "Speed": "55/55",
+    "Field": "50/55 (SS) / 40/50 (OF)",
+    "Arm": "55/55"
+  },
+  {
     "Player-ID": "Yeison-Coca",
     "Player": "Yeison Coca",
     "Last Updated": "7/30/2022",
@@ -4121,6 +4147,19 @@
     "Arm": "55/55"
   },
   {
+    "Player-ID": "Ramon-Rodriguez",
+    "Player": "Ramón Rodríguez",
+    "Last Updated": "12/1/2024",
+    "Hit": "40/45",
+    "Raw Power": "45/50",
+    "Game Power": "35/45",
+    "Bat to Ball": "55/55",
+    "Swing Decisions": "45/50",
+    "Speed": "40/40",
+    "Field": "50/55",
+    "Arm": "55/55"
+  },
+  {
     "Player-ID": "Jose-Sibrian",
     "Player": "Jose Sibrian",
     "Last Updated": "8/5/2022",
@@ -4184,6 +4223,19 @@
     "Speed": "30/30",
     "Field": "50/50",
     "Arm": "50/50"
+  },
+  {
+    "Player-ID": "Jacob-Hurtubise",
+    "Player": "Jacob Hurtubise",
+    "Last Updated": "2/5/2026",
+    "Hit": "45/45",
+    "Raw Power": "30/30",
+    "Game Power": "30/30",
+    "Bat to Ball": "50/50",
+    "Swing Decisions": "55/55",
+    "Speed": "70/70",
+    "Field": "50/55 (OF)",
+    "Arm": "45/45"
   },
   {
     "Player-ID": "Jesus-Chirinos",
@@ -4589,6 +4641,32 @@
     "Arm": "55/55"
   },
   {
+    "Player-ID": "Jheremy-Vargas",
+    "Player": "Jheremy Vargas",
+    "Last Updated": "12/13/2024",
+    "Hit": "40/50",
+    "Raw Power": "35/40",
+    "Game Power": "30/35",
+    "Bat to Ball": "50/55",
+    "Swing Decisions": "35/40",
+    "Speed": "50/50",
+    "Field": "45/55",
+    "Arm": "60/60"
+  },
+  {
+    "Player-ID": "Blayberg-Diaz",
+    "Player": "Blayberg Diaz",
+    "Last Updated": "12/2/2024",
+    "Hit": "30/40",
+    "Raw Power": "45/50",
+    "Game Power": "25/40",
+    "Bat to Ball": "45/50",
+    "Swing Decisions": "30/35",
+    "Speed": "35/35",
+    "Field": "50/60",
+    "Arm": "60/60"
+  },
+  {
     "Player-ID": "Nicolas-Barrios",
     "Player": "Nicolas Barrios",
     "Last Updated": "1/28/2025",
@@ -4613,6 +4691,19 @@
     "Speed": "N/A",
     "Field": "N/A",
     "Arm": "N/A"
+  },
+  {
+    "Player-ID": "Freddy-Zamora",
+    "Player": "Freddy Zamora",
+    "Last Updated": "12/10/2024",
+    "Hit": "30/40",
+    "Raw Power": "40/40",
+    "Game Power": "30/40",
+    "Bat to Ball": "45/55",
+    "Swing Decisions": "40/40",
+    "Speed": "45/45",
+    "Field": "50/55",
+    "Arm": "60/60"
   },
   {
     "Player-ID": "Antony-Gomez",
@@ -4667,6 +4758,19 @@
     "Arm": "50/50"
   },
   {
+    "Player-ID": "David-Garcia",
+    "Player": "David García",
+    "Last Updated": "11/25/2024",
+    "Hit": "35/40",
+    "Raw Power": "45/50",
+    "Game Power": "30/35",
+    "Bat to Ball": "45/50",
+    "Swing Decisions": "55/55",
+    "Speed": "40/40",
+    "Field": "50/50",
+    "Arm": "60/60"
+  },
+  {
     "Player-ID": "Pedro-Tovar",
     "Player": "Pedro Tovar",
     "Last Updated": "N/A",
@@ -4689,6 +4793,19 @@
     "Bat to Ball": "30/35",
     "Swing Decisions": "35/45",
     "Speed": "40/40",
+    "Field": "40/50",
+    "Arm": "55/55"
+  },
+  {
+    "Player-ID": "Andrick-Nava",
+    "Player": "Andrick Nava",
+    "Last Updated": "8/2/2025",
+    "Hit": "30/40",
+    "Raw Power": "40/40",
+    "Game Power": "30/40",
+    "Bat to Ball": "40/45",
+    "Swing Decisions": "50/55",
+    "Speed": "35/35",
     "Field": "40/50",
     "Arm": "55/55"
   },
