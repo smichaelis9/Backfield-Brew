@@ -1,21 +1,20 @@
 {
   "id": "Ben-Moore",
   "name": "Ben Moore",
-  "archived": false,
+  "archived": true,
   "playerType": "Pitcher",
-  "generatedAt": "2026-11-06T15:28:55.077Z",
+  "generatedAt": "2026-11-06T15:33:11.617Z",
   "bio": {
     "Player-ID": "Ben-Moore",
     "MLBAM ID": "832560",
     "Player Type": "Pitcher",
     "Player": "Ben Moore",
-    "Rank": "139",
-    "Trending": "New",
+    "Rank": "144",
+    "Archive Reason": "Minor League Free Agent on 11/2/2026",
     "Position": "LHP",
     "Level": "ACL",
     "Age": "22.6",
     "OFP": "30+",
-    "OFP Updated": "",
     "Risk": "High",
     "School or Country": "College",
     "School/Country": "Old Dominion",
@@ -28,7 +27,7 @@
     "Weight": "215",
     "Bat / Throw": "Left/Left",
     "Birthday": "3/24/2004",
-    "Rule 5 Eligible": "2028",
+    "Rule 5 Eligible": "",
     "Picture": "https://img.mlbstatic.com/mlb-photos/image/upload/c_fill,g_auto/w_360/v1/people/832560/headshot/milb/current",
     "Picture Source": "MiLB.com",
     "Notes Updated": "N/A",
@@ -88,8 +87,7 @@
     "Instagram": "Instagram",
     "Instagram Link": "https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwi94aqar9-WAxVSCYYAHd9uJ20QFnoECDMQAQ&url=https%3A%2F%2Fwww.instagram.com%2Fben.moore11%2F&usg=AOvVaw3S08iQwy7VIolmUpCbTP9Q&opi=89978449",
     "Other Social": "",
-    "Other Social Link": "",
-    "Previous Rank": "141"
+    "Other Social Link": ""
   },
   "tools": {
     "Player-ID": "Ben-Moore",
@@ -144,7 +142,7 @@
       "FB%": "",
       "IFFB%": "",
       "HR/FB": "",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     "2024": {
       "Player-ID": "Ben-Moore",
@@ -176,7 +174,7 @@
       "FB%": "",
       "IFFB%": "",
       "HR/FB": "",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     "2025": {
       "Player-ID": "Ben-Moore",
@@ -208,7 +206,7 @@
       "FB%": "",
       "IFFB%": "",
       "HR/FB": "",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     "2026": {
       "Player-ID": "Ben-Moore",
@@ -240,7 +238,7 @@
       "FB%": "",
       "IFFB%": "",
       "HR/FB": "",
-      "Archived?": ""
+      "Archived?": "yes"
     }
   },
   "gamedayWhiff": null,
@@ -417,7 +415,7 @@
       "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2026-11",
       "Imported At": "11/04/2026 10:46:37",
       "Player ID": "Ben-Moore",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     {
       "Transaction ID": "941578",
@@ -434,7 +432,7 @@
       "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2026-09",
       "Imported At": "09/08/2026 08:46:29",
       "Player ID": "Ben-Moore",
-      "Archived?": ""
+      "Archived?": "yes"
     },
     {
       "Transaction ID": "941577",
@@ -451,7 +449,7 @@
       "Source URL": "https://www.mlb.com/brewers/roster/transactions/2026/09",
       "Imported At": "09/08/2026 08:46:29",
       "Player ID": "Ben-Moore",
-      "Archived?": ""
+      "Archived?": "yes"
     }
   ]
 }

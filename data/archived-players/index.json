@@ -1278,6 +1278,12 @@
     "archived": true
   },
   {
+    "id": "Ben-Moore",
+    "name": "Ben Moore",
+    "file": "Ben-Moore.json",
+    "archived": true
+  },
+  {
     "id": "Andy-Yerzy",
     "name": "Andy Yerzy",
     "file": "Andy-Yerzy.json",
