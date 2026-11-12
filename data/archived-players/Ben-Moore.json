@@ -3,7 +3,7 @@
   "name": "Ben Moore",
   "archived": true,
   "playerType": "Pitcher",
-  "generatedAt": "2026-11-12T01:55:19.657Z",
+  "generatedAt": "2026-11-12T09:27:40.964Z",
   "bio": {
     "Player-ID": "Ben-Moore",
     "MLBAM ID": "832560",
@@ -400,6 +400,40 @@
     }
   ],
   "transactions": [
+    {
+      "Transaction ID": "950055",
+      "Date": "2026-11-11",
+      "Effective Date": "2026-11-11",
+      "MLBAM ID": "832560",
+      "Player": "Ben Moore",
+      "Position": "",
+      "From Team": "",
+      "To Team": "Nashville Sounds",
+      "Level": "MiLB",
+      "Type": "Signed",
+      "Description": "LHP Ben Moore assigned to Nashville Sounds.",
+      "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2026-11",
+      "Imported At": "11/11/2026 23:46:35",
+      "Player ID": "Ben-Moore",
+      "Archived?": "yes"
+    },
+    {
+      "Transaction ID": "950054",
+      "Date": "2026-11-11",
+      "Effective Date": "2026-11-11",
+      "MLBAM ID": "832560",
+      "Player": "Ben Moore",
+      "Position": "",
+      "From Team": "",
+      "To Team": "Milwaukee Brewers",
+      "Level": "MLB",
+      "Type": "Signed",
+      "Description": "Milwaukee Brewers signed free agent LHP Ben Moore to a minor league contract.",
+      "Source URL": "https://www.mlb.com/brewers/roster/transactions/2026/11",
+      "Imported At": "11/11/2026 23:46:35",
+      "Player ID": "Ben-Moore",
+      "Archived?": "yes"
+    },
     {
       "Transaction ID": "948760",
       "Date": "2026-11-02",
