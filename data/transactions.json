@@ -1,5 +1,22 @@
 [
   {
+    "Transaction ID": "950283",
+    "Date": "2026-11-15",
+    "Effective Date": "2026-11-15",
+    "MLBAM ID": "700183",
+    "Player": "Blake Holub",
+    "Position": "",
+    "From Team": "Milwaukee Brewers",
+    "To Team": "San Francisco Giants",
+    "Level": "MLB",
+    "Type": "Traded",
+    "Description": "San Francisco Giants traded RHP Ryan Walker to Milwaukee Brewers for RHP Blake Holub and RHP Gavin Perry.",
+    "Source URL": "https://www.mlb.com/brewers/roster/transactions/2026/11",
+    "Imported At": "11/15/2026 17:46:34",
+    "Player ID": "Blake-Holub",
+    "Archived?": ""
+  },
+  {
     "Transaction ID": "950055",
     "Date": "2026-11-11",
     "Effective Date": "2026-11-11",
