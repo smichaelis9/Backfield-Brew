@@ -444,12 +444,6 @@
     "archived": false
   },
   {
-    "id": "Blake-Holub",
-    "name": "Blake Holub",
-    "file": "Blake-Holub.json",
-    "archived": false
-  },
-  {
     "id": "Santiago-Martinez",
     "name": "Santiago Martinez",
     "file": "Santiago-Martinez.json",
@@ -618,6 +612,12 @@
     "archived": false
   },
   {
+    "id": "Stiven-Cruz",
+    "name": "Stiven Cruz",
+    "file": "Stiven-Cruz.json",
+    "archived": false
+  },
+  {
     "id": "Raymond-Sarmiento",
     "name": "Raymond Sarmiento",
     "file": "Raymond-Sarmiento.json",
@@ -687,12 +687,6 @@
     "id": "Luis-Corobo",
     "name": "Luis Corobo",
     "file": "Luis-Corobo.json",
-    "archived": false
-  },
-  {
-    "id": "Gavin-Perry",
-    "name": "Gavin Perry",
-    "file": "Gavin-Perry.json",
     "archived": false
   },
   {
@@ -855,6 +849,12 @@
     "id": "Carsten-Sabathia",
     "name": "Carsten Sabathia III",
     "file": "Carsten-Sabathia.json",
+    "archived": false
+  },
+  {
+    "id": "Ben-Moore",
+    "name": "Ben Moore",
+    "file": "Ben-Moore.json",
     "archived": false
   },
   {

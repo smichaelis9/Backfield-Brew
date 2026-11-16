@@ -558,6 +558,12 @@
     "archived": true
   },
   {
+    "id": "Blake-Holub",
+    "name": "Blake Holub",
+    "file": "Blake-Holub.json",
+    "archived": true
+  },
+  {
     "id": "Corey-Ray",
     "name": "Corey Ray",
     "file": "Corey-Ray.json",
@@ -936,6 +942,12 @@
     "archived": true
   },
   {
+    "id": "Gavin-Perry",
+    "name": "Gavin Perry",
+    "file": "Gavin-Perry.json",
+    "archived": true
+  },
+  {
     "id": "Matt-Hardy",
     "name": "Matt Hardy",
     "file": "Matt-Hardy.json",
@@ -1275,12 +1287,6 @@
     "id": "Patrick-Dorrian",
     "name": "Patrick Dorrian",
     "file": "Patrick-Dorrian.json",
-    "archived": true
-  },
-  {
-    "id": "Ben-Moore",
-    "name": "Ben Moore",
-    "file": "Ben-Moore.json",
     "archived": true
   },
   {
