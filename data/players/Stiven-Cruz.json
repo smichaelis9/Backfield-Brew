@@ -3,7 +3,7 @@
   "name": "Stiven Cruz",
   "archived": false,
   "playerType": "Pitcher",
-  "generatedAt": "2026-11-16T18:48:23.194Z",
+  "generatedAt": "2026-11-17T02:22:29.380Z",
   "bio": {
     "Player-ID": "Stiven-Cruz",
     "MLBAM ID": "691602",
@@ -568,6 +568,40 @@
     }
   ],
   "transactions": [
+    {
+      "Transaction ID": "950301",
+      "Date": "2026-11-14",
+      "Effective Date": "2026-11-14",
+      "MLBAM ID": "691602",
+      "Player": "Stiven Cruz",
+      "Position": "",
+      "From Team": "",
+      "To Team": "Nashville Sounds",
+      "Level": "MiLB",
+      "Type": "Signed",
+      "Description": "RHP Stiven Cruz assigned to Nashville Sounds.",
+      "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2026-11",
+      "Imported At": "11/16/2026 15:46:34",
+      "Player ID": "Stiven-Cruz",
+      "Archived?": "yes"
+    },
+    {
+      "Transaction ID": "950300",
+      "Date": "2026-11-14",
+      "Effective Date": "2026-11-14",
+      "MLBAM ID": "691602",
+      "Player": "Stiven Cruz",
+      "Position": "",
+      "From Team": "",
+      "To Team": "Milwaukee Brewers",
+      "Level": "MLB",
+      "Type": "Signed",
+      "Description": "Milwaukee Brewers signed free agent RHP Stiven Cruz to a minor league contract and invited him to spring training.",
+      "Source URL": "https://www.mlb.com/brewers/roster/transactions/2026/11",
+      "Imported At": "11/16/2026 15:46:34",
+      "Player ID": "Stiven-Cruz",
+      "Archived?": "yes"
+    },
     {
       "Transaction ID": "948828",
       "Date": "2026-11-02",
