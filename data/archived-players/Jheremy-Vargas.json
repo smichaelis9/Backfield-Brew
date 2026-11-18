@@ -3,7 +3,7 @@
   "name": "Jheremy Vargas",
   "archived": true,
   "playerType": "Hitter",
-  "generatedAt": "2026-11-18T09:52:52.497Z",
+  "generatedAt": "2026-11-18T18:43:29.802Z",
   "bio": {
     "Player-ID": "Jheremy-Vargas",
     "MLBAM ID": "691621",
@@ -395,6 +395,40 @@
     }
   ],
   "transactions": [
+    {
+      "Transaction ID": "950587",
+      "Date": "2026-11-18",
+      "Effective Date": "2026-11-18",
+      "MLBAM ID": "691621",
+      "Player": "Jheremy Vargas",
+      "Position": "",
+      "From Team": "",
+      "To Team": "Biloxi Shuckers",
+      "Level": "MiLB",
+      "Type": "Signed",
+      "Description": "3B Jheremy Vargas assigned to Biloxi Shuckers.",
+      "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2026-11",
+      "Imported At": "11/18/2026 09:46:36",
+      "Player ID": "Jheremy-Vargas",
+      "Archived?": "yes"
+    },
+    {
+      "Transaction ID": "950586",
+      "Date": "2026-11-17",
+      "Effective Date": "2026-11-17",
+      "MLBAM ID": "691621",
+      "Player": "Jheremy Vargas",
+      "Position": "",
+      "From Team": "",
+      "To Team": "Milwaukee Brewers",
+      "Level": "MLB",
+      "Type": "Signed",
+      "Description": "Milwaukee Brewers signed free agent 3B Jheremy Vargas to a minor league contract.",
+      "Source URL": "https://www.mlb.com/brewers/roster/transactions/2026/11",
+      "Imported At": "11/18/2026 09:46:36",
+      "Player ID": "Jheremy-Vargas",
+      "Archived?": "yes"
+    },
     {
       "Transaction ID": "948832",
       "Date": "2026-11-02",
