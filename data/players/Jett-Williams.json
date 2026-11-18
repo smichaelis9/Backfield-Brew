@@ -3,7 +3,7 @@
   "name": "Jett Williams",
   "archived": false,
   "playerType": "Hitter",
-  "generatedAt": "2026-11-17T19:45:11.429Z",
+  "generatedAt": "2026-11-18T01:53:26.963Z",
   "bio": {
     "Player-ID": "Jett-Williams",
     "MLBAM ID": "702518",
@@ -396,6 +396,23 @@
     }
   ],
   "transactions": [
+    {
+      "Transaction ID": "950498",
+      "Date": "2026-11-17",
+      "Effective Date": "2026-11-17",
+      "MLBAM ID": "702518",
+      "Player": "Jett Williams",
+      "Position": "",
+      "From Team": "Nashville Sounds",
+      "To Team": "Milwaukee Brewers",
+      "Level": "MiLB",
+      "Type": "Contract Selected",
+      "Description": "Milwaukee Brewers selected the contract of SS Jett Williams from Nashville Sounds.",
+      "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2026-11",
+      "Imported At": "11/17/2026 18:46:32",
+      "Player ID": "Jett-Williams",
+      "Archived?": ""
+    },
     {
       "Transaction ID": "943532",
       "Date": "2026-09-21",

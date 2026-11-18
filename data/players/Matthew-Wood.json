@@ -3,7 +3,7 @@
   "name": "Matthew Wood",
   "archived": false,
   "playerType": "Hitter",
-  "generatedAt": "2026-11-17T19:45:11.429Z",
+  "generatedAt": "2026-11-18T01:53:26.963Z",
   "bio": {
     "Player-ID": "Matthew-Wood",
     "MLBAM ID": "687783",
@@ -396,6 +396,23 @@
     }
   ],
   "transactions": [
+    {
+      "Transaction ID": "950496",
+      "Date": "2026-11-17",
+      "Effective Date": "2026-11-17",
+      "MLBAM ID": "687783",
+      "Player": "Matthew Wood",
+      "Position": "",
+      "From Team": "Biloxi Shuckers",
+      "To Team": "Milwaukee Brewers",
+      "Level": "MiLB",
+      "Type": "Contract Selected",
+      "Description": "Milwaukee Brewers selected the contract of C Matthew Wood from Biloxi Shuckers.",
+      "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2026-11",
+      "Imported At": "11/17/2026 18:46:32",
+      "Player ID": "Matthew-Wood",
+      "Archived?": ""
+    },
     {
       "Transaction ID": "889910",
       "Date": "2026-03-05",

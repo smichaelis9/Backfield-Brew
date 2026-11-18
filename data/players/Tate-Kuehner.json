@@ -3,7 +3,7 @@
   "name": "Tate Kuehner",
   "archived": false,
   "playerType": "Pitcher",
-  "generatedAt": "2026-11-17T19:45:11.429Z",
+  "generatedAt": "2026-11-18T01:53:26.963Z",
   "bio": {
     "Player-ID": "Tate-Kuehner",
     "MLBAM ID": "804249",
@@ -413,6 +413,23 @@
     }
   ],
   "transactions": [
+    {
+      "Transaction ID": "950502",
+      "Date": "2026-11-17",
+      "Effective Date": "2026-11-17",
+      "MLBAM ID": "804249",
+      "Player": "Tate Kuehner",
+      "Position": "",
+      "From Team": "Nashville Sounds",
+      "To Team": "Milwaukee Brewers",
+      "Level": "MiLB",
+      "Type": "Contract Selected",
+      "Description": "Milwaukee Brewers selected the contract of LHP Tate Kuehner from Nashville Sounds.",
+      "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2026-11",
+      "Imported At": "11/17/2026 18:46:32",
+      "Player ID": "Tate-Kuehner",
+      "Archived?": ""
+    },
     {
       "Transaction ID": "935817",
       "Date": "2026-06-29",

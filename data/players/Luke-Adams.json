@@ -3,7 +3,7 @@
   "name": "Luke Adams",
   "archived": false,
   "playerType": "Hitter",
-  "generatedAt": "2026-11-17T19:45:11.429Z",
+  "generatedAt": "2026-11-18T01:53:26.963Z",
   "bio": {
     "Player-ID": "Luke-Adams",
     "MLBAM ID": "702726",
@@ -396,6 +396,23 @@
     }
   ],
   "transactions": [
+    {
+      "Transaction ID": "950499",
+      "Date": "2026-11-17",
+      "Effective Date": "2026-11-17",
+      "MLBAM ID": "702726",
+      "Player": "Luke Adams",
+      "Position": "",
+      "From Team": "Nashville Sounds",
+      "To Team": "Milwaukee Brewers",
+      "Level": "MiLB",
+      "Type": "Contract Selected",
+      "Description": "Milwaukee Brewers selected the contract of 3B Luke Adams from Nashville Sounds.",
+      "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2026-11",
+      "Imported At": "11/17/2026 18:46:32",
+      "Player ID": "Luke-Adams",
+      "Archived?": ""
+    },
     {
       "Transaction ID": "943528",
       "Date": "2026-09-21",

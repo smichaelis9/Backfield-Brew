@@ -3,7 +3,7 @@
   "name": "Dylan O'Rae",
   "archived": false,
   "playerType": "Hitter",
-  "generatedAt": "2026-11-17T19:45:11.429Z",
+  "generatedAt": "2026-11-18T01:53:26.963Z",
   "bio": {
     "Player-ID": "Dylan-O'Rae",
     "MLBAM ID": "802506",
@@ -396,6 +396,23 @@
     }
   ],
   "transactions": [
+    {
+      "Transaction ID": "950497",
+      "Date": "2026-11-17",
+      "Effective Date": "2026-11-17",
+      "MLBAM ID": "802506",
+      "Player": "Dylan O'Rae",
+      "Position": "",
+      "From Team": "Biloxi Shuckers",
+      "To Team": "Milwaukee Brewers",
+      "Level": "MiLB",
+      "Type": "Contract Selected",
+      "Description": "Milwaukee Brewers selected the contract of CF Dylan O'Rae from Biloxi Shuckers.",
+      "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2026-11",
+      "Imported At": "11/17/2026 18:46:32",
+      "Player ID": "Dylan-O'Rae",
+      "Archived?": ""
+    },
     {
       "Transaction ID": "937454",
       "Date": "2026-08-13",

@@ -1,5 +1,107 @@
 [
   {
+    "Transaction ID": "950502",
+    "Date": "2026-11-17",
+    "Effective Date": "2026-11-17",
+    "MLBAM ID": "804249",
+    "Player": "Tate Kuehner",
+    "Position": "",
+    "From Team": "Nashville Sounds",
+    "To Team": "Milwaukee Brewers",
+    "Level": "MiLB",
+    "Type": "Contract Selected",
+    "Description": "Milwaukee Brewers selected the contract of LHP Tate Kuehner from Nashville Sounds.",
+    "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2026-11",
+    "Imported At": "11/17/2026 18:46:32",
+    "Player ID": "Tate-Kuehner",
+    "Archived?": ""
+  },
+  {
+    "Transaction ID": "950500",
+    "Date": "2026-11-17",
+    "Effective Date": "2026-11-17",
+    "MLBAM ID": "687726",
+    "Player": "Cameron Wagoner",
+    "Position": "",
+    "From Team": "Nashville Sounds",
+    "To Team": "Milwaukee Brewers",
+    "Level": "MiLB",
+    "Type": "Contract Selected",
+    "Description": "Milwaukee Brewers selected the contract of RHP Cameron Wagoner from Nashville Sounds.",
+    "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2026-11",
+    "Imported At": "11/17/2026 18:46:32",
+    "Player ID": "Cameron-Wagoner",
+    "Archived?": ""
+  },
+  {
+    "Transaction ID": "950499",
+    "Date": "2026-11-17",
+    "Effective Date": "2026-11-17",
+    "MLBAM ID": "702726",
+    "Player": "Luke Adams",
+    "Position": "",
+    "From Team": "Nashville Sounds",
+    "To Team": "Milwaukee Brewers",
+    "Level": "MiLB",
+    "Type": "Contract Selected",
+    "Description": "Milwaukee Brewers selected the contract of 3B Luke Adams from Nashville Sounds.",
+    "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2026-11",
+    "Imported At": "11/17/2026 18:46:32",
+    "Player ID": "Luke-Adams",
+    "Archived?": ""
+  },
+  {
+    "Transaction ID": "950498",
+    "Date": "2026-11-17",
+    "Effective Date": "2026-11-17",
+    "MLBAM ID": "702518",
+    "Player": "Jett Williams",
+    "Position": "",
+    "From Team": "Nashville Sounds",
+    "To Team": "Milwaukee Brewers",
+    "Level": "MiLB",
+    "Type": "Contract Selected",
+    "Description": "Milwaukee Brewers selected the contract of SS Jett Williams from Nashville Sounds.",
+    "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2026-11",
+    "Imported At": "11/17/2026 18:46:32",
+    "Player ID": "Jett-Williams",
+    "Archived?": ""
+  },
+  {
+    "Transaction ID": "950497",
+    "Date": "2026-11-17",
+    "Effective Date": "2026-11-17",
+    "MLBAM ID": "802506",
+    "Player": "Dylan O'Rae",
+    "Position": "",
+    "From Team": "Biloxi Shuckers",
+    "To Team": "Milwaukee Brewers",
+    "Level": "MiLB",
+    "Type": "Contract Selected",
+    "Description": "Milwaukee Brewers selected the contract of CF Dylan O'Rae from Biloxi Shuckers.",
+    "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2026-11",
+    "Imported At": "11/17/2026 18:46:32",
+    "Player ID": "Dylan-O'Rae",
+    "Archived?": ""
+  },
+  {
+    "Transaction ID": "950496",
+    "Date": "2026-11-17",
+    "Effective Date": "2026-11-17",
+    "MLBAM ID": "687783",
+    "Player": "Matthew Wood",
+    "Position": "",
+    "From Team": "Biloxi Shuckers",
+    "To Team": "Milwaukee Brewers",
+    "Level": "MiLB",
+    "Type": "Contract Selected",
+    "Description": "Milwaukee Brewers selected the contract of C Matthew Wood from Biloxi Shuckers.",
+    "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2026-11",
+    "Imported At": "11/17/2026 18:46:32",
+    "Player ID": "Matthew-Wood",
+    "Archived?": ""
+  },
+  {
     "Transaction ID": "950283",
     "Date": "2026-11-15",
     "Effective Date": "2026-11-15",
@@ -31,7 +133,7 @@
     "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2026-11",
     "Imported At": "11/16/2026 15:46:34",
     "Player ID": "Stiven-Cruz",
-    "Archived?": "yes"
+    "Archived?": ""
   },
   {
     "Transaction ID": "950300",
@@ -48,7 +150,7 @@
     "Source URL": "https://www.mlb.com/brewers/roster/transactions/2026/11",
     "Imported At": "11/16/2026 15:46:34",
     "Player ID": "Stiven-Cruz",
-    "Archived?": "yes"
+    "Archived?": ""
   },
   {
     "Transaction ID": "950055",
@@ -337,7 +439,7 @@
     "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2026-11",
     "Imported At": "11/04/2026 10:46:37",
     "Player ID": "Stiven-Cruz",
-    "Archived?": "yes"
+    "Archived?": ""
   },
   {
     "Transaction ID": "948800",
@@ -21689,7 +21791,7 @@
     "Source URL": "https://www.mlb.com/brewers/roster/transactions/2026/02",
     "Imported At": "08/13/2026 10:00:20",
     "Player ID": "Stiven-Cruz",
-    "Archived?": "yes"
+    "Archived?": ""
   },
   {
     "Transaction ID": "887079",
@@ -25922,7 +26024,7 @@
     "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2025-09",
     "Imported At": "08/13/2026 10:21:15",
     "Player ID": "Stiven-Cruz",
-    "Archived?": "yes"
+    "Archived?": ""
   },
   {
     "Transaction ID": "895459",
@@ -25956,7 +26058,7 @@
     "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2025-09",
     "Imported At": "08/13/2026 10:21:15",
     "Player ID": "Stiven-Cruz",
-    "Archived?": "yes"
+    "Archived?": ""
   },
   {
     "Transaction ID": "872151",
@@ -26024,7 +26126,7 @@
     "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2025-09",
     "Imported At": "08/13/2026 10:21:15",
     "Player ID": "Stiven-Cruz",
-    "Archived?": "yes"
+    "Archived?": ""
   },
   {
     "Transaction ID": "870212",
@@ -26653,7 +26755,7 @@
     "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2025-09",
     "Imported At": "08/13/2026 10:21:15",
     "Player ID": "Stiven-Cruz",
-    "Archived?": "yes"
+    "Archived?": ""
   },
   {
     "Transaction ID": "869355",
@@ -26687,7 +26789,7 @@
     "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2025-09",
     "Imported At": "08/13/2026 10:21:15",
     "Player ID": "Stiven-Cruz",
-    "Archived?": "yes"
+    "Archived?": ""
   },
   {
     "Transaction ID": "869062",
@@ -26772,7 +26874,7 @@
     "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2025-09",
     "Imported At": "08/13/2026 10:21:15",
     "Player ID": "Stiven-Cruz",
-    "Archived?": "yes"
+    "Archived?": ""
   },
   {
     "Transaction ID": "868873",
@@ -36071,7 +36173,7 @@
     "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2025-06",
     "Imported At": "08/13/2026 10:20:26",
     "Player ID": "Stiven-Cruz",
-    "Archived?": "yes"
+    "Archived?": ""
   },
   {
     "Transaction ID": "862980",
@@ -43279,7 +43381,7 @@
     "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2025-03",
     "Imported At": "08/13/2026 10:20:06",
     "Player ID": "Stiven-Cruz",
-    "Archived?": "yes"
+    "Archived?": ""
   },
   {
     "Transaction ID": "823956",
@@ -45302,7 +45404,7 @@
     "Source URL": "https://www.mlb.com/brewers/roster/transactions/2025/03",
     "Imported At": "08/13/2026 09:59:34",
     "Player ID": "Stiven-Cruz",
-    "Archived?": "yes"
+    "Archived?": ""
   },
   {
     "Transaction ID": "820079",
@@ -103476,7 +103578,7 @@
     "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2022-08",
     "Imported At": "08/13/2026 10:16:28",
     "Player ID": "Stiven-Cruz",
-    "Archived?": "yes"
+    "Archived?": ""
   },
   {
     "Transaction ID": "646850",
@@ -103612,7 +103714,7 @@
     "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2022-08",
     "Imported At": "08/13/2026 10:16:28",
     "Player ID": "Stiven-Cruz",
-    "Archived?": "yes"
+    "Archived?": ""
   },
   {
     "Transaction ID": "646715",
@@ -114441,7 +114543,7 @@
     "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2022-05",
     "Imported At": "08/13/2026 10:16:01",
     "Player ID": "Stiven-Cruz",
-    "Archived?": "yes"
+    "Archived?": ""
   },
   {
     "Transaction ID": "620854",
@@ -130642,7 +130744,7 @@
     "Source URL": "https://www.milb.com/nashville/roster/transactions/milwaukee-brewers/2021-07",
     "Imported At": "08/13/2026 10:15:06",
     "Player ID": "Stiven-Cruz",
-    "Archived?": "yes"
+    "Archived?": ""
   },
   {
     "Transaction ID": "503157",
@@ -165968,7 +166070,7 @@
     "Source URL": "https://www.mlb.com/brewers/roster/transactions/2019/07",
     "Imported At": "08/13/2026 09:49:39",
     "Player ID": "Stiven-Cruz",
-    "Archived?": "yes"
+    "Archived?": ""
   },
   {
     "Transaction ID": "417769",
